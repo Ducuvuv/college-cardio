@@ -1,0 +1,3688 @@
+{
+  "questions": [
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Une femme de 88 ans présente une perte de connaissance brutale à la marche, sans prodrome, avec traumatisme facial. Antécédents : diabète de type 2. Aux urgences : FC 85 bpm, PA 154/95 mmHg, examen neurologique normal. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chez le sujet âgé, l’hypotension orthostatique et les causes cardiaques (rythmiques ou obstructives) sont des hypothèses prioritaires.",
+          "why": "Vrai : HOA première cause de syncope ; le grand âge n’exclut pas une cause cardiaque."
+        },
+        {
+          "letter": "B",
+          "text": "Une syncope à l’emporte-pièce avec traumatisme facial oriente vers une cause rythmique jusqu’à preuve du contraire.",
+          "why": "Vrai : absence de prodromes et traumatisme grave sont des critères de gravité/rythmiques."
+        },
+        {
+          "letter": "C",
+          "text": "L’âge à lui seul permet d’affirmer une syncope vasovagale et d’éviter tout bilan.",
+          "why": "Faux : l’âge oriente mais est trompeur ; une syncope n’est jamais « forcément » vasovagale."
+        },
+        {
+          "letter": "D",
+          "text": "Un AIT du territoire carotidien est la cause la plus fréquente de ce tableau.",
+          "why": "Faux : l’AIT carotidien ne donne quasiment jamais de PDCB."
+        },
+        {
+          "letter": "E",
+          "text": "L’interrogatoire, l’examen clinique et l’ECG résolvent plus de 50 % des syncopes/lipothymies.",
+          "why": "Vrai : point du cours."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Chez le sujet âgé, HOA (souvent iatrogène) et causes cardiaques dominent. Une syncope sans prodrome avec traumatisme facial impose d’éliminer un trouble conductif ou une TV. L’AIT carotidien n’explique pas une PDCB."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant une perte de connaissance brève, quels éléments de l’interrogatoire (patient et témoins) sont particulièrement utiles ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Antécédents familiaux de mort subite à un jeune âge.",
+          "why": "Vrai : oriente vers une cause génétique."
+        },
+        {
+          "letter": "B",
+          "text": "Modification récente d’un traitement hypotenseur.",
+          "why": "Vrai : iatrogénie fréquente (HOA)."
+        },
+        {
+          "letter": "C",
+          "text": "Posture (debout, assis, couché) et activité (effort ou repos) au moment de l’épisode.",
+          "why": "Vrai : syncope couchée ou à l’effort = gravité cardiaque."
+        },
+        {
+          "letter": "D",
+          "text": "La notion d’abolition du pouls radial rapportée par un témoin paniqué suffit à affirmer un arrêt cardiaque.",
+          "why": "Faux : le pouls radial peut être imperceptible en hypotension ; donnée à prendre avec prudence."
+        },
+        {
+          "letter": "E",
+          "text": "Chez le sujet âgé, si l’on ne peut pas affirmer que la perte de connaissance a été complète, tout le bilan cardiovasculaire devient inutile.",
+          "why": "Faux : cet indice peut s’effacer derrière le terrain et l’ECG ; il faut parfois y renoncer sans arrêter l’enquête."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’interrogatoire cible le terrain (MS familiale, cardiopathie, médicaments), les circonstances (posture, effort, douleur, émotion) et la sémiologie des témoins. Le pouls « aboli » n’est pas fiable en climat de panique."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quel(s) élément(s) de l’examen clinique faut-il rechercher après une syncope ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Signes neurologiques déficitaires, qui feraient quitter le champ des syncopes pour une urgence neurovasculaire.",
+          "why": "Vrai : déficit = AVC/AIT, plus une syncope."
+        },
+        {
+          "letter": "B",
+          "text": "Souffle systolique éjectionnel (rétrécissement aortique ou CMH obstructive).",
+          "why": "Vrai : cause mécanique identifiable au lit."
+        },
+        {
+          "letter": "C",
+          "text": "Assourdissement des bruits d’une prothèse mécanique.",
+          "why": "Vrai : évoque une thrombose de valve."
+        },
+        {
+          "letter": "D",
+          "text": "Pression artérielle allongée puis toutes les minutes pendant 3 minutes d’orthostatisme.",
+          "why": "Vrai : protocole HOA du cours (après 5–10 min de repos)."
+        },
+        {
+          "letter": "E",
+          "text": "Une morsure du bout de la langue affirme une crise comitiale.",
+          "why": "Faux : la morsure du bout oriente vers la syncope ; le bord latéral oriente vers l’épilepsie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Examen neurologique (red flags), cardiovasculaire (souffle, prothèse, PA) et recherche d’HOA. La topographie de la morsure de langue discrimine syncope (bout) et épilepsie (bord latéral)."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant la physiopathologie des syncopes, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un arrêt brutal du flux sanguin cérébral aussi court que 6 à 8 secondes peut causer une syncope.",
+          "why": "Vrai : chiffre du cours."
+        },
+        {
+          "letter": "B",
+          "text": "Une baisse de la PAS à 50–60 mmHg au niveau du cœur, en position verticale, peut déclencher une syncope.",
+          "why": "Vrai : PA cérébrale alors 30–45 mmHg."
+        },
+        {
+          "letter": "C",
+          "text": "La syncope relève d’une ischémie cérébrale focale, comme un AVC lacunaire.",
+          "why": "Faux : baisse globale du flux ; mécanisme distinct des AVC."
+        },
+        {
+          "letter": "D",
+          "text": "Les myoclonies de syncope durent en général moins de 15 secondes et débutent après la perte de connaissance, souvent après la 30e seconde.",
+          "why": "Vrai : ne pas les confondre avec l’épilepsie."
+        },
+        {
+          "letter": "E",
+          "text": "Le terme de « syncope convulsivante » est recommandé pour ces myoclonies.",
+          "why": "Faux : le cours demande d’éviter ce terme."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Hypoperfusion globale (6–8 s ou PAS 50–60 mmHg). Myoclonies brèves et tardives ; ne pas parler de syncope convulsivante."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Parmi les causes très rares de PDCB, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un AIT du territoire vertébrobasilaire peut, rarement, s’accompagner d’une PDCB, avec déficit focal (vertiges, ataxie, diplopie, dysarthrie).",
+          "why": "Vrai : cause rare, déficit associé."
+        },
+        {
+          "letter": "B",
+          "text": "Le syndrome de vol sous-clavier donne un AIT déclenché par des mouvements intenses et répétés du membre supérieur gauche, avec asymétrie tensionnelle entre les deux bras.",
+          "why": "Vrai : description du cours."
+        },
+        {
+          "letter": "C",
+          "text": "Une hémorragie sous-arachnoïdienne peut altérer la conscience, mais plutôt de façon progressive, avec céphalées sévères et signes neurologiques.",
+          "why": "Vrai : ce n’est pas une syncope typique."
+        },
+        {
+          "letter": "D",
+          "text": "L’AIT carotidien est une cause fréquente de syncope isolée sans déficit.",
+          "why": "Faux : quasiment jamais de PDCB ; déficit focal."
+        },
+        {
+          "letter": "E",
+          "text": "Un coma toxique (CO, médicaments, alcool) est une PDCB car la conscience revient spontanément en moins d’une minute.",
+          "why": "Faux : perte prolongée, sortie progressive ou après traitement."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "AIT VB, vol sous-clavier et HSA sont rares et atypiques. L’AIT carotidien et les comas n’appartiennent pas aux PDCB."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels états ne sont pas des pertes de connaissance brèves ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La cataplexie : perte brusque du tonus, parfois avec chute, sans PDCB ni amnésie, déclenchée par une émotion.",
+          "why": "Vrai : pas de PDCB."
+        },
+        {
+          "letter": "B",
+          "text": "La confusion mentale : déficit d’attention, désorientation, sans perte de connaissance.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Les « drop-attacks » : terme à éviter, souvent chutes dont le patient se souvient parfaitement.",
+          "why": "Vrai : pas une PDCB ; terme confus."
+        },
+        {
+          "letter": "D",
+          "text": "L’arrêt cardiaque dont le retour à la conscience ne survient qu’après réanimation.",
+          "why": "Vrai : ni bref ni spontané."
+        },
+        {
+          "letter": "E",
+          "text": "La lipothymie, qui est une syncope complète avec amnésie.",
+          "why": "Faux : lipothymie = prodromes sans PDCB (présyncope)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Cataplexie, confusion, drop-attacks et arrêt cardiaque ne sont pas des PDCB. La lipothymie est l’inverse : symptômes sans perte de connaissance."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Un homme de 28 ans a une syncope à l’effort. Souffle systolique éjectionnel au bord gauche du sternum. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une cardiomyopathie hypertrophique obstructive (obstacle sur la chambre de chasse) peut expliquer ce tableau.",
+          "why": "Vrai : syncope d’effort ou juste après l’effort."
+        },
+        {
+          "letter": "B",
+          "text": "La CMH est le plus souvent génétique, mutations des protéines du sarcomère, transmission autosomique dominante.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "L’échocardiographie est l’examen de choix pour confirmer l’obstacle et l’hypertrophie septale.",
+          "why": "Vrai : ETT quasi systématique, diagnostique ici."
+        },
+        {
+          "letter": "D",
+          "text": "Une insuffisance cardiaque de stade IV explique à elle seule les syncopes d’effort de ce patient jeune.",
+          "why": "Faux : l’IC IV n’est jamais une cause de syncope en soi."
+        },
+        {
+          "letter": "E",
+          "text": "Un rétrécissement aortique serré donne aussi des syncopes d’effort, mais il est improbable à 28 ans sans autre contexte.",
+          "why": "Vrai : le RA serré est une cause classique d’effort, rare à cet âge."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Obstacle VG (CMH obstructive, plus rarement RA) : syncope d’effort, souffle éjectionnel, ETT. L’IC IV ne cause pas de syncope."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Un patient a fait une syncope. L’ECG ne montre ni BAV de haut degré, ni pause > 3 s, ni TV. Quelles anomalies n’ont qu’une valeur d’orientation (et non de diagnostic immédiat) ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Syndrome de Brugada : sus-décalage convexe du ST en V1–V3 sans miroir.",
+          "why": "Vrai : oriente vers une FV paroxystique possible."
+        },
+        {
+          "letter": "B",
+          "text": "Allongement de QT, qui oriente vers une torsade de pointes.",
+          "why": "Vrai : orientation, pas le diagnostic de l’épisode."
+        },
+        {
+          "letter": "C",
+          "text": "Préexcitation de type Wolff-Parkinson-White.",
+          "why": "Vrai : oriente vers une cause rythmique."
+        },
+        {
+          "letter": "D",
+          "text": "Extrasystoles ventriculaires nombreuses ou en salves.",
+          "why": "Vrai : oriente vers une TV."
+        },
+        {
+          "letter": "E",
+          "text": "BAV du 3e degré avec échappement lent.",
+          "why": "Faux : c’est une anomalie à valeur diagnostique immédiate."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Brugada, QT long, WPW, ESV en salves, HVG, onde Q, BBG, bifasciculaire, Mobitz 1 : orientation. Le BAV3 est diagnostique d’emblée."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Après l’évaluation clinique et l’ECG d’une syncope, quelle(s) proposition(s) sur les examens complémentaires est (sont) exacte(s) ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’échocardiographie est d’utilisation très large, quasi systématique (obstacle, CMH, séquelle d’infarctus, FEVG).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "BNP/NT-proBNP et troponine aident à identifier une cause cardiaque.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Le Holter (24 h à 3 semaines) est sensible pour la dysfonction sinusale et les troubles de conduction nodaux ; normal, il n’écarte ni une TV ni un BAV hissien/infrahissien paroxystique.",
+          "why": "Vrai : rendement faible mais non invasif."
+        },
+        {
+          "letter": "D",
+          "text": "Si l’ETT montre une cardiopathie du VG avec FEVG altérée, un DAI peut être proposé en prévention de mort subite sans autre examen.",
+          "why": "Vrai : selon le cours (chapitre DAI)."
+        },
+        {
+          "letter": "E",
+          "text": "L’épreuve d’effort est inutile si la syncope a eu lieu pendant l’effort.",
+          "why": "Faux : elle suggère alors une cause cardiaque (ex. BAV d’effort) ; après l’effort, une syncope réflexe."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ETT quasi systématique, biomarqueurs, Holter (limites), DAI si FEVG basse. L’effort est indiqué si syncope d’effort."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’étude électrophysiologique endocavitaire (EEP) dans le bilan de syncope, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Elle est proposée si syncope non élucidée avec cardiopathie ou anomalies ECG (bloc bifasciculaire, BBG) sans diagnostic ECG.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Elle analyse la conduction AV infranodale (intervalle HV) et tente de déclencher une TV par stimulation ventriculaire programmée.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Elle n’est pas proposée si cœur morphologiquement normal et ECG normal, sauf syncope précédée de palpitations.",
+          "why": "Vrai : probabilité d’anomalie très faible sinon."
+        },
+        {
+          "letter": "D",
+          "text": "Le déclenchement d’une TV a pour sanction thérapeutique la pose d’un défibrillateur.",
+          "why": "Vrai : les TV sont la 1re cause de mort subite des cardiaques."
+        },
+        {
+          "letter": "E",
+          "text": "L’examen se fait par voie artérielle fémorale sous anesthésie générale obligatoire.",
+          "why": "Faux : voie veineuse fémorale, anesthésie locale et sédation légère."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EEP si cardiopathie/anomalie ECG, HV + SVP, DAI si TV déclenchée. Voie veineuse, AL. Peu utile si cœur et ECG normaux (sauf palpitations)."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant le moniteur électrocardiographique implantable (MEI) après syncope, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Son autonomie dépasse 2 ans, ce qui est utile si les syncopes sont espacées.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Il n’est pas indiqué chez les patients à haut risque de mort subite, qui relèvent d’un DAI ou d’un stimulateur.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "On peut le proposer si EEP négative suspecte de faux négatif (BBG ou bifasciculaire avec HV normal, séquelle d’infarctus sans TV déclenchable).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Il peut être proposé en cas de syncopes cliniquement sévères, fréquentes et totalement inexpliquées.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Il remplace l’ETT et l’ECG 12 dérivations au premier contact.",
+          "why": "Faux : examens de 2e ligne après clinique, ECG, souvent Holter/EEP."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "MEI = corrélation électroclinique au long cours (> 2 ans), après EEP ou si syncopes rares inexpliquées ; jamais en 1re intention ni si haut risque de MS."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le massage du sinus carotidien dans le bilan de syncope, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Massage ferme unilatéral, au bord antérieur du sterno-cléido-mastoïdien au niveau du cricoïde, 5 à 10 secondes, couché puis debout.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Positif si pause ventriculaire > 3 s ou baisse de PAS > 50 mmHg reproduisant les symptômes.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Indiqué en cas de présomption de syncope réflexe sans cause identifiée.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Contre-indiqué après AIT, AVC, ou sténose carotidienne.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un massage positif affirme une compression du nœud sinusal.",
+          "why": "Faux : c’est le glomus (sinus) carotidien, pas le nœud sinusal."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Technique 5–10 s unilatérale, critères pause > 3 s ou ΔPAS > 50 mmHg avec reproduction. CI neurovasculaires. Ce n’est pas le nœud sinusal."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant le test d’inclinaison (tilt-test), indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Décubitus initial ≥ 5 minutes, puis inclinaison 60–70° tête en haut pendant 20 à 45 minutes au plus.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Sensibilisation possible par isoprénaline ou trinitrine sublinguale.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Positif si syncope vasovagale reproduite (hypotension et/ou bradycardie).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Il peut être positif chez un patient dont la cause est cardiaque et égarer le diagnostic ; son rôle est contesté dans les syncopes totalement inexpliquées.",
+          "why": "Vrai : utilisation prudente."
+        },
+        {
+          "letter": "E",
+          "text": "Il est l’examen de première intention de toute syncope d’effort chez un cardiaque.",
+          "why": "Faux : syncope d’effort = piste cardiaque (ETT, ECG, parfois EEP), pas un tilt en 1re ligne."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tilt 60–70°, 20–45 min, sensibilisation TNT/isoprénaline. Utile pour le vasovagal de station debout, mais faux positifs possibles si cause cardiaque."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "La prise en charge d’une syncope vasovagale typique sur cœur sain comporte :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Réassurance sur le caractère bénin et éducation à éviter les facteurs déclenchants.",
+          "why": "Vrai : mesures non pharmacologiques de 1re ligne."
+        },
+        {
+          "letter": "B",
+          "text": "Reconnaissance précoce des prodromes pour s’asseoir/se coucher et contractions musculaires isométriques.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Bonne hydratation, apports sodés suffisants, diminution des hypotenseurs si possible.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Implantation systématique d’un pacemaker dès le premier épisode.",
+          "why": "Faux : rarement, si composante bradycardie prédominante et documentée."
+        },
+        {
+          "letter": "E",
+          "text": "En phase aiguë : allonger le patient et surélever les jambes.",
+          "why": "Vrai."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Éducation, hydratation, isométrie, arrêt des hypotenseurs. PM exceptionnel. Phase aiguë : décubitus, jambes surélevées."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Chez un patient parkinsonien sous levodopa et antihypertenseur, une hypotension orthostatique symptomatique est documentée. Quelle(s) mesure(s) est (sont) conforme(s) au cours ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lutter contre l’hypovolémie (hydratation, apports sodés).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Diminuer ou arrêter les médicaments hypotenseurs si possible.",
+          "why": "Vrai : iatrogénie au premier plan."
+        },
+        {
+          "letter": "C",
+          "text": "Bas de contention, lever prudent, croisement des jambes ou accroupissement.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Midodrine (alpha-agoniste) ou fludrocortisone (rétention hydrosodée) peuvent être utilisés.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un bêtabloquant à dose élevée est le traitement de 1re intention de l’HOA.",
+          "why": "Faux : les vasodilatateurs/bradycardisants aggravent souvent l’HOA."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HOA : hydratation, arrêt des hypotenseurs, mesures physiques, midodrine ou fludrocortisone. Pas de majoration des bêtabloquants."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Un homme de 72 ans, infarctus ancien, FEVG 32 %, a une syncope en position couchée précédée de palpitations. ECG : séquelle antérieure, extrasystoles ventriculaires en salves. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’hypothèse dominante est une tachycardie ventriculaire, annonciatrice de mort subite.",
+          "why": "Vrai : cardiopathie, syncope couchée, palpitations, ESV."
+        },
+        {
+          "letter": "B",
+          "text": "Une syncope vasovagale peut être retenue d’emblée car le patient a plus de 70 ans.",
+          "why": "Faux : chez un cardiaque, le vasovagal est un diagnostic d’élimination après bilan complet."
+        },
+        {
+          "letter": "C",
+          "text": "Le diagnostic de TV peut reposer sur l’EEP (SVP) ou un MEI si l’EEP est négative.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "La sanction thérapeutique d’une TV documentée est en règle un défibrillateur.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le monitorage ECG aux urgences n’est pas nécessaire car l’épisode est passé.",
+          "why": "Faux : monitorage obligatoire si cause cardiaque avérée ou suspectée."
+        }
+      ],
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Syncope couchée + palpitations + cardiopathie à FEVG basse = TV jusqu’à preuve du contraire. Vasovagal d’élimination. Scope, EEP/MEI, DAI."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’orientation vers une crise comitiale et sa prise en charge initiale, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un EEG est indiqué si le malaise/PDCB est présumé d’origine épileptique.",
+          "why": "Vrai : rang A du cours."
+        },
+        {
+          "letter": "B",
+          "text": "Aura, survenue pendant le sommeil, confusion prolongée, cyanose, morsure du bord de langue et courbatures orientent vers l’épilepsie.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "La perte des urines et la somnolence post-critique sont très discriminantes en faveur de l’épilepsie.",
+          "why": "Faux : désormais peu discriminantes."
+        },
+        {
+          "letter": "D",
+          "text": "Le traitement d’une crise généralisée en urgence repose sur une benzodiazépine de courte durée d’action.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Toute PDCB psychogène impose un anticonvulsivant de fond dès les urgences.",
+          "why": "Faux : conversion ; rythme, PA et EEG normaux pendant l’épisode."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EEG si suspicion d’épilepsie. Sémiologie (aura, sommeil, confusion, bord de langue). BDZ en crise. Urines/somnolence peu discriminantes."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Un homme de 45 ans, myxome de l’oreillette gauche connu, présente une syncope. Quelles autres causes « mécaniques » de syncope faut-il aussi connaître ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Embolie pulmonaire à haut risque (thrombus occlusif du tronc ou de la chambre de chasse du VD).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Tamponnade comprimant les cavités à basse pression, notamment le VD.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Thrombose de valve mécanique mitrale, éventuellement associée à une endocardite.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Dissection aortique et hypertension pulmonaire sévère.",
+          "why": "Vrai : causes moins fréquentes listées."
+        },
+        {
+          "letter": "E",
+          "text": "Tachycardie jonctionnelle, cause mécanique habituelle par obstacle valvulaire.",
+          "why": "Faux : les TSV ne sont qu’exceptionnellement syncopales, et ce n’est pas un obstacle."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Obstacles : RA, CMH, EP haut risque, tamponnade, thrombose de valve, myxome, dissection, HTP sévère. Pas les TSV."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "ECG enregistré à 25 mm/s et 10 mm/mV. L’intervalle RR mesure 4 grands carreaux. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un grand carreau (5 mm) vaut 200 ms ; 1 mm vaut 40 ms et 0,1 mV.",
+          "why": "Vrai : 25 mm/s → 40 ms/mm."
+        },
+        {
+          "letter": "B",
+          "text": "La fréquence cardiaque vaut 300 / nombre de grands carreaux entre deux QRS, soit 75 bpm ici.",
+          "why": "Vrai : 300/4 = 75."
+        },
+        {
+          "letter": "C",
+          "text": "Si RR = 1 grand carreau, la FC est de 300 bpm ; si 2 grands carreaux, 150 bpm.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "La formule exacte est FC = 60 / période RR en secondes.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "À 25 mm/s, 1 mm vaut 200 ms.",
+          "why": "Faux : 1 mm = 40 ms ; 5 mm = 200 ms."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Papier standard : 25 mm/s, 40 ms/mm, grand carreau 200 ms, 1 mm = 0,1 mV. FC = 300/n grands carreaux = 60/RR(s)."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Pour affirmer qu’un ECG de repos d’adulte est normal, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rythme sinusal : onde P positive en DI et en inférieur, un QRS après chaque P et une P avant chaque QRS, FC 60–100 bpm.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "PR 120–200 ms, durée de P < 120 ms, QRS 70–110 ms, axe −30 à +90°.",
+          "why": "Vrai : valeurs du tableau 15.2."
+        },
+        {
+          "letter": "C",
+          "text": "ST isoélectrique, T positives sauf en aVR et V1 (parfois DIII et aVL), QTc < 450 ms à 60 bpm (en pratique 470–480 ms).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Sokolow < 35 mm ; pas d’onde Q de nécrose (largeur > 40 ms et profondeur > 1/3 du QRS).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Chez le jeune homme, un sus-décalage de J de V1 à V4 à ST descendant signe forcément un SCA ST+.",
+          "why": "Faux : repolarisation précoce physiologique possible, ST jonctionnel ascendant."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Check-list : rythme, conduction, repolarisation, morphologie. QTc < 450 ms (pratique 470–480). Repolarisation précoce du jeune ≠ SCA."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’électrophysiologie utile à la lecture de l’ECG, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le nœud sinusal a l’automatisme le plus fort : 60–80 bpm au repos.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "L’échappement jonctionnel (NAV/His) bat à 40–60 bpm ; l’échappement ventriculaire (branches/Purkinje) à 15–30 bpm.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Les structures spécialisées (NAV, His) génèrent une grande onde propre sur l’ECG de surface.",
+          "why": "Faux : trop peu de cellules ; pas d’onde propre."
+        },
+        {
+          "letter": "D",
+          "text": "Le plan fibreux valvulaire est isolant : le seul passage AV physiologique est le NAV.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Classe I = flécaïnide (Na+), II = bisoprolol, III = amiodarone/sotalol (K+), IV = vérapamil (Ca2+) ; la digoxine ralentit le NAV.",
+          "why": "Vrai : tableau de Vaughan-Williams du cours."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Automatisme hiérarchisé 60–80 / 40–60 / 15–30. Pas d’onde His/NAV. Classes I–IV + digoxine."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les dérivations et territoires, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Territoire inférieur : DII, DIII, aVF ; latéral haut : DI, aVL ; précordial gauche : V5–V6 ; postérieur : V7–V9.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le VD est exploré par V1, V2, V3R et V4R.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "V1 et V2 trop hautes/écartées (confondues avec les foyers auscultatoires) peuvent créer un aspect de pseudonécrose antérieure.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Les dérivations de Lewis (électrode rouge à la fourchette sternale, jaune au 5e EIC droit) démasquent l’activité atriale surtout en DI.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "L’axe de QRS se mesure dans le plan horizontal à partir de V1–V6.",
+          "why": "Faux : plan frontal, double triaxe de Bailey."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Territoires standard, précordiales droites, piège de position de V1–V2, Lewis pour l’atrial. Axe = plan frontal."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "ECG : DI positive, aVF négative, DII négative. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’axe est hypergauche (au-delà de −30°).",
+          "why": "Vrai : DI+ aVF− et DII−."
+        },
+        {
+          "letter": "B",
+          "text": "Un hémibloc antérieur gauche est une cause classique de cet axe.",
+          "why": "Vrai : HBAG = axe < −30°, DII négative."
+        },
+        {
+          "letter": "C",
+          "text": "Chez un obèse ou en cas de cardiomégalie, un axe plutôt horizontal (proche de 0°) peut être anatomique.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Un cœur vertical de patient filiforme a un axe proche de +90°.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "DI négative et aVF positive définissent un axe normal entre 0 et −30°.",
+          "why": "Faux : c’est un axe hyperdroit (+90 à +180°)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "DI+ aVF− DII− = hypergauche (HBAG). Cœur vertical → +90°, cœur horizontal → proche de 0°."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Rythme sinusal, QRS à 150 ms, V1 globalement positif en rSR′, V6 avec S traînante arrondie. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Il s’agit d’un bloc de branche droit complet (QRS > 120 ms, V1 positif).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "La discordance appropriée est attendue : T de polarité opposée au QRS, petit ST discordant.",
+          "why": "Vrai : QRS larges → repolarisation secondaire."
+        },
+        {
+          "letter": "C",
+          "text": "Un bloc de branche isolé provoque une bradycardie sinusale.",
+          "why": "Faux : les BB ne donnent pas de bradycardie."
+        },
+        {
+          "letter": "D",
+          "text": "Avant de conclure au BB, il faut décrire le rythme atrial pour ne pas manquer une TSV associée.",
+          "why": "Vrai : conseil du cours."
+        },
+        {
+          "letter": "E",
+          "text": "Un BB incomplet a les mêmes aspects avec QRS entre 110 et 120 ms, d’intérêt sémiologique faible.",
+          "why": "Vrai."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBD complet : QRS > 120, rSR′ V1, S V6. Discordance appropriée. Pas de bradycardie. Toujours lire l’atrial d’abord."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Douleur thoracique persistante. ECG : BBG complet, petit sus-décalage ST en V1–V2, T négatives en DI–V6. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La discordance appropriée du BBG peut mimer un SCA ST+ ; l’interprétation antérieure est difficile.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Il faut évoquer un infarctus antérieur et une évaluation cardiologique rapide, sans attendre la troponine.",
+          "why": "Vrai : clinique cruciale (TNT, choc, ETT)."
+        },
+        {
+          "letter": "C",
+          "text": "On peut rassurer et surseoir à toute imagerie tant que la troponine de H12 n’est pas revenue.",
+          "why": "Faux : ne pas attendre la troponine."
+        },
+        {
+          "letter": "D",
+          "text": "Un BBG de novo en douleur thoracique aiguë doit faire éliminer un SCA ST+ (ETT ± coronarographie).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le BBG n’est jamais considéré comme bénin ; il est dégénératif ou associé à une cardiopathie.",
+          "why": "Vrai : item 236/231."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBG + douleur = SCA ST+ jusqu’à preuve du contraire. Discordance appropriée trompeuse. Ne pas attendre la troponine."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Syncope. ECG : BBD complet + hémibloc antérieur gauche, PR 160 ms. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C’est un bloc bifasciculaire ; QRS > 120 ms.",
+          "why": "Vrai : sémiologies additionnées."
+        },
+        {
+          "letter": "B",
+          "text": "Syncope + bloc bifasciculaire = hospitalisation en cardiologie avec télémétrie (risque de BAV infrahissien paroxystique).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Un BAV1 associé ferait parler à coup sûr de bloc trifasciculaire vrai.",
+          "why": "Faux : le PR long peut être nodal ; seul l’EEP (HV) départage."
+        },
+        {
+          "letter": "D",
+          "text": "Un bloc alternant (BBD et BBG successifs) est une forme grave annonçant un BAV infrahissien, indication de PM même sans symptôme.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un hémibloc isolé a une forte probabilité de BAV infrahissien imminent.",
+          "why": "Faux : le reste du réseau semble fonctionnel, risque faible."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bifasciculaire + syncope = hospit. Trifasciculaire vrai ≠ bifasciculaire + BAV1. Alternance = PM. Hémibloc isolé peu grave."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Bradycardie à 38 bpm. Quelles propositions de lecture sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Si les P sont trop lentes ou absentes : le problème est le nœud sinusal (dysfonction sinusale).",
+          "why": "Vrai : algorithme 15.27."
+        },
+        {
+          "letter": "B",
+          "text": "Si les P sont régulières à fréquence normale, plus nombreuses que les QRS : le problème est le passage AV (BAV).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Un BSA du 2e degré donne une pause égale au double de l’intervalle PP/RR normal, avec un P-QRS-T manquant.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Un échappement jonctionnel peut montrer une P′ rétrograde derrière le QRS, négative en DII.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Seules trois structures (sinus, NAV et bundle de Kent) peuvent bradycarder le ventricule.",
+          "why": "Faux : seulement sinus (DS) ou NAV (BAV2/3) ; le Kent n’est pas un site de bradycardie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bradycardie : regarder les P. DS si P lentes/absentes ; BAV si P plus nombreuses. BSA2 = pause 2×. Kent hors sujet."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Tachycardie régulière à QRS fins à 150 bpm. Après Valsalva, ondes en dents de scie à 300/min, négatives en DII–DIII–aVF, positives en V1, négatives en V6. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aspect de flutter typique antihoraire (isthme cavotricuspide), fréquence atriale usuelle 300 bpm (240–340).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "La cadence ventriculaire à 150 bpm correspond à une conduction 2/1.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Il n’y a pas de retour à la ligne isoélectrique dans au moins une dérivation.",
+          "why": "Vrai : activité atriale permanente."
+        },
+        {
+          "letter": "D",
+          "text": "C’est une fibrillation atriale, seul diagnostic des tachycardies irrégulières à QRS fins.",
+          "why": "Faux : ici rythme régulier organisé ; la FA est irrégulièrement irrégulière."
+        },
+        {
+          "letter": "E",
+          "text": "Une manœuvre vagale ou l’adénosine peut démasquer les ondes F en ralentissant le ventricule.",
+          "why": "Vrai."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Flutter typique : F 300/min, polarité inférieure négative, V1+, V6−, ventricule souvent 150 (2/1). Pas une FA."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Tachycardie à QRS fins, ondes P monomorphes différentes de la P sinusale, retour à la ligne de base entre les P, accélération puis décélération progressives. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tableau de tachycardie atriale focale (hyperautomatisme), avec warm-up et cool-down.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le retour à la ligne isoélectrique entre les ondes P distingue la TAF du flutter.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Une TAF peut aussi se présenter en salves d’extrasystoles atriales monomorphes.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "C’est le mécanisme du flutter, toujours sans ligne de base.",
+          "why": "Faux : flutter = réentrée, pas de ligne isoélectrique."
+        },
+        {
+          "letter": "E",
+          "text": "La FA est le seul diagnostic si la tachycardie est complètement irrégulière à QRS fins.",
+          "why": "Vrai : point du cours."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TAF : P ectopiques, ligne de base, warm-up/cool-down. Flutter : pas de ligne isoélectrique. FA = irrégulière à QRS fins."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Tachycardie très régulière à QRS fins à 200 bpm, sans P visible, chez un adolescent. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Maladie de Bouveret / tachycardie jonctionnelle (130–260 bpm, souvent ~200).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Dans la réentrée intranodale, l’activation atriale est souvent invisible ou dans le ST (quasi synchrone).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Valsalva, compression carotidienne unilatérale (si pas d’athérome/souffle), eau froide, ou adénosine IV flash peuvent réduire la crise.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "La compression oculaire bilatérale reste recommandée.",
+          "why": "Faux : plus recommandée (décollement de rétine si myopie)."
+        },
+        {
+          "letter": "E",
+          "text": "L’adénosine est contre-indiquée en cas d’asthme et d’hypotension ; durée d’effet ~10 secondes.",
+          "why": "Vrai (ECG 231)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TJ régulière ~200 bpm, P souvent invisibles. Manœuvres vagales/adénosine. Pas de compression oculaire. CI adénosine : asthme, hypotension."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Tracé : trémulation de la ligne de base, QRS fins à intervalles RR sans commun multiple, FC 130 bpm. Un 2e tracé du même patient montre les mêmes mailles mais des QRS lents et parfaitement réguliers à 40 bpm. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le 1er tracé est une FA (tachycardie irrégulièrement irrégulière à QRS fins).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le 2e tracé évoque l’association FA + BAV du 3e degré (échappement automatique régulier).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Une FA peut s’associer à un BB, préexistant ou fonctionnel (phase III), donnant une tachycardie irrégulière à QRS larges.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "L’alternance FA / bradycardie sinusale définit la maladie de l’oreillette, avec pauses de régularisation possibles.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Toute tachycardie irrégulière à QRS fins est un flutter à conduction variable jusqu’à preuve du contraire.",
+          "why": "Faux : c’est la FA qui est le diagnostic de l’irrégulier à QRS fins."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA = irrégulière. FA+BAV3 = lente et régulière. BB associé fréquent. Maladie de l’oreillette = FA + DS."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Salve de 8 QRS à 180 bpm, largeur 140 ms, durant 8 secondes, puis retour sinusal. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "TV non soutenue : ≥ 3 QRS larges > 120 ms, FC > 100, durée < 30 s.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Toute tachycardie régulière à QRS larges est une TV jusqu’à preuve du contraire.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Il faut donner l’alerte (15) et se préparer à réanimer.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Sur cardiopathie, le mécanisme le plus fréquent est une réentrée autour d’une fibrose ; sur cœur sain, un automatisme anormal.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Une TV soutenue dure moins de 3 battements.",
+          "why": "Faux : soutenue si > 30 s ; < 3 QRS ce n’est pas une TV."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TVNS = 3 battements à 30 s. TQRSL = TV jusqu’à preuve du contraire. Alerte 15. TVS si > 30 s."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Tachycardie régulière à QRS très larges. On compte plus de QRS que d’ondes P ; un QRS fin précédé d’une P s’intercale ; QRS entièrement positif de V1 à V6 ; aVR positive. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La dissociation ventriculo-atriale (plus de QRS que de P) est un argument de certitude de TV.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le QRS fin intercalé est une capture (ou une fusion si morphologie intermédiaire).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "La concordance précordiale et l’axe extrême (aVR+) plaident pour une TV.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Ces signes affirment un BBG fonctionnel sur une tachycardie sinusale.",
+          "why": "Faux : BBG n’a ni dissociation VA ni concordance V1–V6 ni aVR+ typique."
+        },
+        {
+          "letter": "E",
+          "text": "Une mauvaise tolérance hémodynamique impose une cardioversion électrique externe.",
+          "why": "Vrai : algorithme des tachycardies."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Certitude TV : dissociation VA, captures/fusions. Concordance et aVR+ = arguments forts. CEE si mal tolérée."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant fibrillation ventriculaire et torsades de pointes, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La FV est une tachycardie irrégulière à QRS larges polymorphes ; CEE immédiat, massage en attendant le choc.",
+          "why": "Vrai : urgence absolue, débit nul, PDC en quelques secondes."
+        },
+        {
+          "letter": "B",
+          "text": "Les torsades surviennent sur QT long : bradycardie extrême, hypoK, hypoCa, hypoMg, médicaments, QT long congénital.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "TdP et FV sont parfois indiscernables sur le tracé ; le QT préalable et le contexte départagent.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "La prise en charge des TdP : corriger l’ionogramme, accélérer la FC, arrêter les médicaments allongeant le QT.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Une onde U d’hypokaliémie doit être incluse dans la mesure du QT.",
+          "why": "Faux : l’onde U n’entre pas dans le QT."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FV = CEE immédiat. TdP sur QT long (ionique, médicamenteux, bradycardie). Onde U exclue du QT."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "ECG : P à 3 mm pointue en DII ; P à 140 ms avec composante négative > 40 ms en V1 ; Sokolow (SV1 + RV5) = 42 mm, T négatives en DI, aVL, V5–V6. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypertrophie atriale droite : P > 2,5 mm en DII (ou > 2 mm en V1–V2).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Hypertrophie atriale gauche : durée de P > 110 ms (pratique 120 ms) et composante négative V1 > 40 ms.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "HVG : Sokolow normal < 35 mm ; ici 42 mm avec surcharge latérale (T−, ST−).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "L’étiologie la plus fréquente d’HVG est l’HTA, puis le rétrécissement aortique.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Une HVG sévère ne peut jamais mimer une nécrose (QS) ou un sus-ST en V1–V2.",
+          "why": "Faux : aspects trompeurs de pseudonécrose et pseudo-sus-ST."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HAD amplitude, HAG durée/V1, HVG Sokolow ≥ 35 mm + T− latérales. HTA > RA. Pièges QS/ST en V1–V2."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "BPCO sévère. ECG : axe à +110°, R en V1 à 8 mm, S en V6 à 9 mm, P pointues en DII. Pendant une dyspnée aiguë : S en DI, Q et T− en DIII, FA. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "HVD : axe > 90° (pratique), R V1 > 6 mm, S V5–V6 > 7 mm, souvent HAD et BBD.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "S1Q3T3 traduit une HVD aiguë, classique de l’embolie pulmonaire.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "T négatives asymétriques en V1–V3 d’une HVD sévère ne doivent pas être prises pour une ischémie sans contexte.",
+          "why": "Vrai : aspects trompeurs."
+        },
+        {
+          "letter": "D",
+          "text": "Le premier diagnostic si DI est négative est toujours un HBPG, jamais une inversion d’électrodes.",
+          "why": "Faux : le 1er diagnostic d’une DI négative (avec P−) est l’inversion d’électrodes frontales."
+        },
+        {
+          "letter": "E",
+          "text": "Un HBPG donne aussi un axe droit > +90° (S1Q3) mais est rare, à n’évoquer qu’en l’absence de pathologie du VD ou de morphotype longiligne.",
+          "why": "Vrai."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HVD : axe droit, R V1 > 6, S V6 > 7, HAD. EP : S1Q3T3. HBPG = diagnostic d’élimination. Inversion d’électrodes si P− en DI."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Patient dialysé. ECG : T amples, pointues, symétriques, PR 240 ms, QRS 130 ms, bradycardie sinusale. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tableau d’hyperkaliémie (T géantes, PR long, QRS large, BAV, TV, dysfonction sinusale).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "L’hyperK peut donner des troubles conductifs à tous les étages.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "C’est le tracé typique d’hypokaliémie (T plates, onde U, QT long).",
+          "why": "Faux : c’est l’inverse."
+        },
+        {
+          "letter": "D",
+          "text": "Devant tout trouble conductif, une hyperK (surtout si IRC ou médicaments hyperK) doit être recherchée.",
+          "why": "Vrai : item 236."
+        },
+        {
+          "letter": "E",
+          "text": "Les QRS restent toujours fins dans l’hyperkaliémie.",
+          "why": "Faux : élargissement classique, puis BAV."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HyperK : T pointues symétriques, PR↑, QRS large, DS/BAV/TV. Cause réversible à chercher devant tout trouble conductif."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "ECG : T plates diffuses, ST sous-décalé, QT long, onde U, QRS fins, quelques ESV. Kaliémie 2,4 mmol/L. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypokaliémie : T plates/négatives, ST−, QT long, onde U, QRS normal.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Risque d’ESV, TV, torsades de pointes, FV.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "L’onde U ne doit pas être intégrée dans le QT.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "L’hypocalcémie et l’hypomagnésémie allongent aussi le QT et favorisent les TdP.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "L’hypoK élargit typiquement le QRS et pointe les T comme l’hyperK.",
+          "why": "Faux : QRS normal, T plates."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HypoK : T plates, U, QT long, QRS fin, arythmies ventriculaires. U hors QT. HypoCa/Mg = même risque TdP."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Douleur thoracique positionnelle. ECG : sus-ST concave vers le haut, diffus, sans miroir, sous-décalage de PQ, microvoltage. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Phase 1 de péricardite aiguë (microvoltage, ST concave diffus concordant, PQ−).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Phase 2 : T plates, ST isoélectrique ; phase 3 : T négatives persistantes ; phase 4 : normalisation.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "L’absence de miroir suffit à exclure un SCA ST+.",
+          "why": "Faux : le miroir peut manquer ; ne pas conclure à tort à une péricardite."
+        },
+        {
+          "letter": "D",
+          "text": "Un sus-ST significatif de SCA exige ≥ 2 mm de V1 à V3 et ≥ 1 mm ailleurs, sur ≥ 2 dérivations adjacentes.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un sous-ST en V1–V3 peut être le miroir d’un sus-ST postérieur : ECG 18 dérivations devant toute douleur thoracique.",
+          "why": "Vrai."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Péricardite phase 1 : ST concave diffus, PQ−, pas de miroir. Ne pas écarter un SCA pour autant. Seuils ST et 18D."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "ECG de repos : PR 90 ms, empâtement du pied de QRS (onde δ), QRS 130 ms. Un autre tracé montre une tachycardie irrégulière à QRS de largeur variable « en accordéon ». Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Préexcitation : PR < 120 ms + onde delta par faisceau de Kent.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le 2e tracé est un super-Wolff : FA conduite par la voie accessoire, sans filtrage décrémentiel.",
+          "why": "Vrai : risque de FV."
+        },
+        {
+          "letter": "C",
+          "text": "L’adénosine est alors contre-indiquée (avec l’asthme), car elle bloque le NAV et force le passage par le Kent.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Massage/adénosine peuvent démasquer une préexcitation minime en rythme sinusal, mais pas en FA.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le syndrome de WPW désigne une préexcitation jamais arythmogène.",
+          "why": "Faux : WPW = voie antérograde + palpitations par TJ."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "WPW : PR court, delta. Super-Wolff = FA + Kent, CI adénosine. Risque de mort subite si période réfractaire courte."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Dans quelles situations un ECG 12 dérivations (ou plus) est-il indiqué selon le cours ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bilans de santé, aptitude professionnelle (conducteurs, pilotes) ou sportive (risque, compétition, professionnels).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Bilan préopératoire après 65 ans, et patients/interventions à risque.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Obligatoirement dans le bilan d’hypertension artérielle.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Symptômes : palpitations, douleur thoracique, dyspnée, malaise, syncope ; bilan/surveillance de cardiopathie, diabète, AVC.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Enquêtes familiales de cardiopathies héréditaires : jamais d’ECG, seulement une génétique d’emblée.",
+          "why": "Faux : l’ECG y est indiqué."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Indications larges : dépistage, préop > 65 ans, HTA obligatoire, symptômes, cardiopathies, diabète, AVC, enquêtes familiales."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le monitorage et le Holter, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Monitorage indiqué : urgences/réa/transferts, USIC (SCA), syncope rythmique suspectée, perop/SSPI, réadaptation.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Holter 2–12 dérivations, 24 à 96 h, analyse différée, si symptômes susceptibles de se répéter pendant l’enregistrement.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Symptômes rares : enregistrement jusqu’à 21 jours ou enregistreur d’événements (montres ECG).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Holter sous-cutané jusqu’à 3 ans : syncopes inexpliquées ou FA silencieuse.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le Holter 24 h n’a aucun rôle après infarctus ou pour régler un pacemaker.",
+          "why": "Faux : détection de salves de TV, efficacité des bradycardisants, réglage de PM."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Scope si urgence/SCA/syncope rythmique. Holter 24–96 h si crises fréquentes, 21 j si rares, MEI jusqu’à 3 ans. Aussi TV post-IDM et PM."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la définition de la fibrillation atriale, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tachycardie irrégulière supraventriculaire par activité atriale anarchique à 400–600/min, contractions atriales désynchronisées, perte d’efficacité hémodynamique.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "La réponse ventriculaire dépend du filtrage du NAV (tonus autonome, bradycardisants).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Le diagnostic de FA clinique repose sur un ECG (monopiste ou 12D) sans onde P individualisable.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Une durée minimale d’enregistrement de 30 secondes reste exigée.",
+          "why": "Faux : il n’y a plus de durée minimale de 30 s."
+        },
+        {
+          "letter": "E",
+          "text": "Le diagnostic par photopléthysmographie n’est pas validé.",
+          "why": "Vrai."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA = 400–600/min anarchique, diagnostic ECG, plus de seuil de 30 s. PPG non valide."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant l’épidémiologie de la FA, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Trouble du rythme le plus fréquent : 500 000 à 750 000 patients en France.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Rare avant 50 ans, elle touche 10 % de la population après 80 ans.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "L’obésité augmente la fréquence de 30 % par tranche de 5 kg/m² d’IMC.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Elle est responsable de 20–25 % de tous les AVC (embolie cérébrale).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Elle n’est jamais associée à un flutter atrial.",
+          "why": "Faux : elle peut faire suite ou s’associer à un flutter typique ou atypique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "500–750 k, 10 % après 80 ans, +30 %/5 kg/m², 20–25 % des AVC. Lien fréquent avec le flutter."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant la classification en « P » de la FA, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Paroxystique : retour en rythme sinusal (spontané ou cardioversion) en moins de 7 jours.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Persistante : retour (spontané ou cardioversion) au-delà de 7 jours.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Permanente : échec de cardioversion et/ou décision de ne pas restaurer le sinus (contrôle de fréquence).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Premier épisode : FA non encore classable.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "On appelle « paroxystique » toute FA qui a duré plus de 3 mois.",
+          "why": "Faux : le seuil est 7 jours."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "P-P-P-P : < 7 j / > 7 j / permanente / premier épisode. Cardioversion = restauration du sinus."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Un homme de 78 ans consulte pour chutes inexpliquées, bouffées de chaleur et œdèmes des membres inférieurs. Pouls irrégulier. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ces symptômes trompeurs peuvent révéler une FA (comme les lipothymies ou l’impression que le cœur bat trop lentement).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "La corrélation entre pouls/palpitations et réalité de la FA est mauvaise : l’ECG (ou Holter) est indispensable.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "L’examen initial apprécie la tolérance (FC, PA, diurèse, FR, conscience) et cherche OAP, embolie, cardiopathie, facteurs déclenchants.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "La prise du pouls suffit à porter le diagnostic de FA clinique sans tracé.",
+          "why": "Faux : diagnostic seulement sur ECG."
+        },
+        {
+          "letter": "E",
+          "text": "Une FA peut être découverte chez un patient totalement asymptomatique.",
+          "why": "Vrai."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Symptômes parfois trompeurs ou absents. Diagnostic = ECG. Bilan de tolérance et de complications d’emblée."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels facteurs déclenchants d’un accès de FA sont cités par le cours ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypokaliémie, fièvre, privation de sommeil.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Réaction vagale, alcool/ivresse, substances illicites, électrocution.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "On oppose FA de cause aiguë (postopératoire, infarctus, infection pulmonaire, péricardite) et FA récidivantes.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "L’âge est le facteur de prédisposition le plus puissant.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un apparenté du 1er degré atteint diminue de 40 % le risque (protection génétique).",
+          "why": "Faux : il l’augmente de 40 %."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Déclencheurs : K+, fièvre, sommeil, vagal, alcool, toxiques, électrocution. Âge = FDR majeur. Histoire familiale +40 %."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Parmi les causes et comorbidités de FA, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’HTA (souvent avec HVG) est la cause la plus fréquente, surtout chez le sujet âgé.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Valvulopathies surtout mitrales ; cardiomyopathies ; SCA/séquelles ; hyperthyroïdie ; péricardites ; CIA.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "SAOS, pneumopathies, EP, cœur pulmonaire ; le SAOS est souvent méconnu (polygraphie à encourager chez l’obèse).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Sports de grande endurance (marathon) et consommation excessive d’alcool sont des prédispositions modifiables.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le dépistage du SAOS par questionnaire seul est désormais la méthode recommandée de 1re intention.",
+          "why": "Faux : le dépistage par questionnaire n’est plus indiqué."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HTA +++. Mitrales, thyréotoxicose, SAOS (polygraphie, plus de questionnaire). Endurance et alcool = FDR modifiables."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 76 ans, HTA traitée, diabète, AOMI, pas d’insuffisance cardiaque ni d’AVC, pas de valvulopathie mécanique ni de RM. Calculer le CHA2DS2-VA. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Âge > 75 ans = 2 points ; HTA = 1 ; diabète = 1 ; atteinte vasculaire (AOMI) = 1 ; total = 5.",
+          "why": "Vrai : C0 H1 A2 D1 S0 V1 A0 = 5 (le A 65–74 ne se cumule pas)."
+        },
+        {
+          "letter": "B",
+          "text": "Le sexe féminin ajoute 1 point dans le CHA2DS2-VA du cours CNEC 3e.",
+          "why": "Faux : le score CNEC n’a plus le « Sc » sexe ; 0 à 8 points."
+        },
+        {
+          "letter": "C",
+          "text": "Score > 1 : anticoagulation orale indiscutable ; AOD à favoriser (hors mécanique/RM).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Chaque palier du score augmente globalement le risque annuel thromboembolique d’environ 2 % (1 à 18 % de 0 à 8).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le caractère paroxystique de la FA autorise à ne pas anticoaguler malgré un score à 5.",
+          "why": "Faux : le type P n’intervient pas dans la décision d’ACO."
+        }
+      ],
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "CHA2DS2-VA sans le sexe. Ici 5 points → ACO indiscutable, AOD. Le type de FA ne change pas l’indication."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 52 ans, FA, cœur sain, CHA2DS2-VA = 0. Un second patient a un score = 1. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Score 0 : pas d’antithrombotique au long cours.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Score = 1 : anticoagulants conseillés, discussion bénéfice/risque au cas par cas.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "SAOS et insuffisance rénale sévère, absents du score, existent comme facteurs supplémentaires.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Une CMH ou une amylose cardiaque font anticoaguler indépendamment du score.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Score 0 : Aspirine au long cours obligatoire en prévention de l’AVC de FA.",
+          "why": "Faux : pas d’antithrombotique si score nul."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "0 = pas d’ACO ; 1 = discussion ; > 1 = ACO. CMH/amylose = ACO d’emblée. Pas d’aspirine « à la place » si score 0."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant la fermeture de l’auricule gauche, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Percutanée transseptale, indiquée si FA sans prothèse mécanique/RM, CHA2DS2-VA > 2, et CI formelle permanente aux ACO (comité pluridisciplinaire).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Lors d’une chirurgie cardiaque chez un patient en FA, la fermeture chirurgicale de l’auricule est désormais indiquée.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "La fermeture chirurgicale permet d’arrêter définitivement l’anticoagulation dans tous les cas.",
+          "why": "Faux : elle ne permet pas de s’affranchir de l’ACO."
+        },
+        {
+          "letter": "D",
+          "text": "Les thrombi se forment préférentiellement dans l’auricule gauche (stase).",
+          "why": "Vrai : rationnel hémodynamique."
+        },
+        {
+          "letter": "E",
+          "text": "Elle est le traitement de 1re ligne de toute FA à score 0.",
+          "why": "Faux : score 0 = pas d’ACO, pas de fermeture."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Fermeture percutanée si haut risque et CI définitive aux ACO. Fermeture chirurgicale concomitante n’arrête pas l’ACO."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "FA persistante depuis 10 jours, stable, pas d’ETO. On programme une cardioversion. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Au moins 3 semaines d’anticoagulation efficace documentée avant, puis 4 semaines après (risque de tous les patients, 4 semaines au minimum).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le délai de 3 semaines peut être évité si ETO sans thrombus OG, ou si FA parfaitement datée < 24 h (rare).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Ici, une FA de 10 jours sans ETO autorise une cardioversion immédiate sans ACO.",
+          "why": "Faux : > 24 h, pas d’ETO → 3 semaines d’ACO."
+        },
+        {
+          "letter": "D",
+          "text": "Après les 4 semaines, la poursuite de l’ACO dépend du risque chronique (CHA2DS2-VA, sauf mécanique/RM/CMH/amylose).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le CHA2DS2-VA sert à décider si l’on anticoagule ou non autour de la cardioversion.",
+          "why": "Faux : autour de la CV, tout patient est à risque ; le score ne s’applique pas à cette phase."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "3 semaines avant + 4 après, sauf ETO propre ou FA < 24 h. Le score ne dispense pas de l’ACO péri-CV."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Premier épisode de FA à 115 bpm, PA 70/40 mmHg, marbrures. Un second patient a un premier épisode bien toléré. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Choc électrique immédiat si urgence vitale (choc) ; situation rare, FA très rapide résistante aux freinateurs.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Si l’on envisage une cardioversion, l’ACO est obligatoire quel que soit le contexte.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Après un premier épisode réduit, on n’entreprend en règle pas d’antiarythmique chronique de prévention.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "En attente, on peut débuter un AOD d’emblée s’il n’y a pas déjà un ACO efficace, hors CI.",
+          "why": "Vrai ; HBPM non approuvées dans ce contexte de 1er épisode."
+        },
+        {
+          "letter": "E",
+          "text": "Le flécaïnide au long cours est obligatoire dès le premier accès, même réduit.",
+          "why": "Faux : pas d’AA chronique après un 1er épisode."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "CEE si choc. ACO si CV. 1er épisode : AOD, pas d’AA d’entretien après réduction."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "FA permanente bien tolérée. Quelles propositions sur le contrôle de la fréquence sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Objectif : FC < 110 bpm pour un effort modeste de marche normale, vérifié par Holter.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Freinateurs : bêtabloquant, vérapamil ou diltiazem, digoxine.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Chez l’insuffisant cardiaque, vérapamil et diltiazem sont interdits ; en urgence, digoxine IV si kaliémie normale.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "La cardioversion fait partie de la définition de la FA permanente.",
+          "why": "Faux : permanente = pas de volonté/échec de restaurer le sinus."
+        },
+        {
+          "letter": "E",
+          "text": "Le flécaïnide est le freinateur nodal de 1re intention dans l’IC à FEVG altérée.",
+          "why": "Faux : le flécaïnide est interdit dans l’IC ; ce n’est pas un freinateur nodal."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Contrôle de fréquence : < 110 bpm à la marche, Holter. ICa CI si IC. Digoxine IV si K+ normale. Pas de CV si permanente."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Choix d’un antiarythmique pour prévenir les récidives de FA. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cœur sain : flécaïnide (ou propafénone) en 1re intention possible ; ablation aussi envisageable.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Coronarien et/ou insuffisant cardiaque : seule l’amiodarone est utilisable comme AA.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Le flécaïnide est interdit en cas d’insuffisance cardiaque.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Informer sur les EI de l’amiodarone : thyroïde, photosensibilisation, dépôts cornéens.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le vérapamil est l’antiarythmique de choix pour maintenir le sinus chez l’insuffisant cardiaque.",
+          "why": "Faux : ICa bradycardisant interdit dans l’IC ; ce n’est pas un AA de maintien du sinus."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Flécaïnide si cœur sain ; amiodarone seule si coronaire/IC. Éducation thyroïde/soleil/cornée."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant l’ablation de FA par isolation des veines pulmonaires, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "En FA paroxystique, elle est désormais recommandée en 1re ligne, équivalente à un AA, selon évaluation et préférences.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Supérieure aux médicaments pour maintenir le sinus au long cours.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Recommandée si suspicion de tachycardiomyopathie (FEVG altérée induite par la FA).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "À considérer chez des patients sélectionnés avec IC à FEVG altérée.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Elle interdit toute anticoagulation ultérieure, quel que soit le CHA2DS2-VA.",
+          "why": "Faux : l’ACO reste guidée par le terrain/score, pas par le succès de l’ablation seul."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ablation VP : 1re ligne possible si paroxystique, tachycardiomyopathie, certains IC. L’ACO n’est pas arrêtée « parce que ablaté »."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "FA persistante révélée par un OAP sur cardiopathie ischémique. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La FA peut être cause ou conséquence de la décompensation ; difficile à départager.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Cardioversion généralement différée le temps d’une ACO efficace ; contrôle de fréquence en attendant.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Maintien du sinus : amiodarone ; ablation discutable ; si échec, FA respectée + BB.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Risque embolique élevé : ACO avant la CV puis au long cours dans tous les cas.",
+          "why": "Vrai (congestion = au moins 1 point, plus le terrain ischémique)."
+        },
+        {
+          "letter": "E",
+          "text": "Le flécaïnide est préféré à l’amiodarone pour le maintien du sinus dans ce contexte.",
+          "why": "Faux : flécaïnide interdit si IC ; amiodarone seule."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA + IC : ACO, freinage, CV différée, amiodarone ± ablation. Pas de flécaïnide."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "FA sur valve mécanique mitrale. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Seules les AVK sont recommandées ; AOD non indiqués.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "INR cible 3–4,5 (valve mécanique mitrale ou à disque) ; sinon 2,5 (2–3) pour les autres mécaniques/RM.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "S’assurer de l’absence de thrombose de valve.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Le maintien du sinus est souvent difficile (dilatation atriale) : contrôle de fréquence fréquent.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un CHA2DS2-VA à 0 autorise l’arrêt des AVK.",
+          "why": "Faux : le score ne s’applique pas ; risque d’emblée maximal."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA valvulaire mécanique : AVK exclusifs, INR 3–4,5 si mitrale/disque. Score inapplicable."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Femme de 82 ans, HTA, FA méconnue révélée par un infarctus sylvien. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tableau typique : FA silencieuse, femme âgée, HTA, embolie souvent sylvienne superficielle gauche.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "En aigu, AVK et héparines ne sont pas utilisables (transformation hémorragique) ; prise en charge en UNV (thrombolyse/thrombectomie).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "L’ACO au long cours est impérative à la sortie.",
+          "why": "Vrai (S2 = 2 points au minimum)."
+        },
+        {
+          "letter": "D",
+          "text": "En cas d’embolie cryptogénique, un monitoring prolongé est indiqué pour dépister une FA.",
+          "why": "Vrai : item dépistage."
+        },
+        {
+          "letter": "E",
+          "text": "Une HBPM à dose curative est le traitement immédiat de référence dès la phase aiguë de l’AVC.",
+          "why": "Faux : pas d’héparine/AVK en aigu."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "AVC révélateur : pas d’ACO/héparine en aigu, UNV, ACO impérative ensuite. Monitoring si cryptogénique."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Sujet âgé : FA paroxystique rapide alternant avec des pauses sinusales syncopales. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Maladie de l’oreillette (syndrome tachy-brady) ; pauses de régularisation possibles.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Les bradycardisants pour contrôler la FA sont périlleux (aggravation de la DS) : recours fréquent au PM.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "PM si pauses sinusales symptomatiques (en règle > 3 s) ou bradycardie sinusale symptomatique non iatrogène (< 50 bpm en pratique).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Si pause réductionnelle symptomatique, l’ablation des veines pulmonaires est à considérer.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "C’est le même cadre que la bradyarythmie d’une FA permanente avec BAV.",
+          "why": "Faux : bradyarythmie = FA permanente lente ; maladie de l’oreillette = FA paroxystique + DS."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tachy-brady : PM fréquent, ablation VP si pauses réductionnelles. ≠ bradyarythmie sur FA permanente."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Éducation et surveillance d’un patient sous anticoagulant pour FA. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AVK : INR au minimum 1 fois/mois à l’équilibre ; cible 2,5 (2–3) sauf valve mitrale mécanique.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "AOD : surveillance clinique ; fonction rénale au moins 1 fois/an ; doses souvent réduites après 80 ans.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Fluindione : 2e intention (risque d’atteinte rénale immunoallergique) ; warfarine/acénocoumarol en 1re ligne d’AVK.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Idarucizumab : antidote spécifique du dabigatran.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "La FA expose à un risque élevé de mort subite, comparable à la TV.",
+          "why": "Faux : informer « pas de risque de mort subite » mais risque cérébral embolique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "INR mensuel, AOD et rein annuel, fluindione 2e intention, idarucizumab. Pronostic : embolie, pas MS."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Conséquences hémodynamiques et évolution de la FA. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Perte de la systole atriale et de l’adaptation de la FC à l’effort ; risque d’IC et de thrombus de l’auricule gauche (grande circulation).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Cercle vicieux : fibrose puis dilatation atriale qui pérennise la FA ; plus tardivement, atteinte du nœud sinusal et du NAV.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Les deux risques principaux sont l’IC (cadence rapide/irrégulière) et l’embolie systémique, pas l’embolie pulmonaire à partir de l’OG.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Une syncope de FA est le plus souvent liée à une pause de régularisation, rarement au contraire.",
+          "why": "Vrai : rarement syncope."
+        },
+        {
+          "letter": "E",
+          "text": "Le caillot atrial gauche migre dans la petite circulation (EP).",
+          "why": "Faux : grande circulation (AVC, embolie artérielle)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Perte de systole atriale, IC, thrombus d’auricule → embolie systémique. Remodelage autoaggravant. Pas d’EP d’origine OG."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant l’anatomie et la vascularisation des voies de conduction, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le nœud sinusal est vascularisé par une branche de la coronaire droite ou de la circonflexe.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le NAV est le plus souvent vascularisé par une branche de la CD née de la croix des sillons (artère du NAV).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "His et branches : 1re septale de l’IVA + artère du NAV.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "NAV et nœud sinusal sont fortement influencés par le SNA ; le His-Purkinje l’est peu (conduction tout ou rien).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "La conduction nodale est rapide et non décrémentielle, contrairement au His-Purkinje.",
+          "why": "Faux : c’est l’inverse (NAV lent décrémentiel)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "NS : CD ou Cx. NAV : artère du NAV (CD). His : 1re septale IVA. SNA = tissu nodal, pas His-Purkinje."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Quelles causes extrinsèques (souvent réversibles) de dysfonction sinusale faut-il rechercher ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Médicaments : BB, ICa bradycardisant, amiodarone, ivabradine, digitalique, clonidine (y compris collyres).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Hypertonie vagale de l’athlète, réflexe vagal, hypersensibilité sinocarotidienne.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Hyperkaliémie, hypoxie/hypercapnie/acidose, SAOS, hypothermie, hypothyroïdie, ictère rétentionnel, HIC.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Chez le sportif d’endurance asymptomatique, une DS vagale ne doit pas être appareillée.",
+          "why": "Vrai : il ne faut pas traiter."
+        },
+        {
+          "letter": "E",
+          "text": "La maladie de Lenègre est la cause extrinsèque la plus réversible.",
+          "why": "Faux : Lenègre = dégénérescence fibreuse intrinsèque des BAV."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "DS extrinsèque : médicaments, vagal, ionique, SAOS, thyroïde. Sportif : ne pas implanter. Lenègre = intrinsèque."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant les blocs sino-atriaux, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le BSA du 1er degré (allongement sino-atrial) n’a pas de traduction ECG.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "BSA 2 type I : P irrégulières puis pause < 2 fois le cycle sinusal le plus court (Wenckebach sino-atrial).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "BSA 2 type II : pauses inopinées multiples du cycle sinusal (2/1, 3/1).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "BSA du 3e degré : échappement jonctionnel à QRS fins, sans P sinusale (P′ rétrograde possible).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le BSA 1 est l’indication la plus urgente de pacemaker.",
+          "why": "Faux : invisible, pas d’indication ; urgences = BSA3 et syncopes avec DS."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BSA1 invisible ; BSA2 I/II selon la pause ; BSA3 = échappement jonctionnel. PM si BSA3/symptômes, pas BSA1."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Incompétence chronotrope et hypervagotonie. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Incompétence chronotrope : FC maximale d’effort < 75 % de la FC maximale théorique ; courbe Holter aplatie.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le test d’effort est utile pour ce diagnostic.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Un PM peut être considéré si insuffisance chronotrope et symptômes d’effort (classe IIa).",
+          "why": "Vrai : tableau ESC 2021 du cours."
+        },
+        {
+          "letter": "D",
+          "text": "Hypervagotonie du jeune athlète : DS fréquente, asymptomatique, pas de stimulation.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Toute bradycardie < 50 bpm diurne chez un marathonien impose un PM double chambre.",
+          "why": "Faux : si asymptomatique/vagale, non indiqué."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Seuil 75 % FMT, effort/Holter. PM possible si symptômes d’effort. Athlète : abstention."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "BAV au cours d’un infarctus. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Plus fréquent dans l’IDM inférieur (siège nodal > 90 %, souvent régressif, QRS fins, bon pronostic du bloc en soi).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "IDM inférieur : atropine efficace ; isoprénaline contre-indiquée en IDM aigu ; BB contre-indiqués tant que le BAV est présent.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Non régressif à J5 : discuter un stimulateur.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "IDM antérieur : BAV infranodal rare, brutal, souvent précédé d’un BB, nécrose étendue, mortalité élevée, stim temporaire fréquente.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "L’isoprénaline est le traitement de choix du BAV de l’IDM antérieur aigu.",
+          "why": "Faux : isoprénaline CI dans l’IDM aigu."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Inférieur = nodal, atropine, régressif (stim si persiste J5). Antérieur = infrahissien grave. Pas d’isoprénaline en IDM."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Syncope + BBD + HBAG. EEP : HV 85 ms. Un autre tracé montre un BAV 2/1 à QRS larges. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "HV > 70 ms signe une atteinte infrahissienne et indique un PM (syncope).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le BAV 2/1 est inclassable en Mobitz 1 ou 2 ; QRS larges orientent vers un siège infranodal.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Un BAV intrahissien est un piège : QRS souvent fins malgré un siège hissien.",
+          "why": "Vrai (H dédoublé H1–H2)."
+        },
+        {
+          "letter": "D",
+          "text": "Si l’EEP est normale, un MEI peut chercher un BAV de haut degré paroxystique.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un BBD/bifasciculaire asymptomatique est une indication de classe I de stimulation.",
+          "why": "Faux : non recommandé (classe III) si asymptomatique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HV > 70 ms = PM si syncope. 2/1 inclassable. Intrahissien à QRS fins. Pas de PM si bifasciculaire asymptomatique."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant le BAV congénital, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3 à 5 % des BAV ; plutôt les filles (60 %) ; 1 naissance / 20 000.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Souvent immunologique : anticorps maternels anti-Ro/SSA (lupus ou Gougerot-Sjögren).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Peut se révéler par une bradycardie fœtale ou néonatale.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Toujours lié à une ischémie de l’IVA du nouveau-né.",
+          "why": "Faux : immunologique/génétique, pas un SCA néonatal."
+        },
+        {
+          "letter": "E",
+          "text": "Des formes génétiques existent.",
+          "why": "Vrai."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV congénital : anti-Ro/SSA, filles, 1/20 000, bradycardie fœtale. Pas un IDM néonatal."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Bradycardie mal tolérée (choc, syncope) hors IDM aigu. Quelles propositions thérapeutiques sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Atropine IV : action transitoire, uniquement DS et BAV nodaux.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Isoprénaline en perfusion : action prolongée, efficace en général sur l’ensemble des troubles conductifs.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Stimulation temporaire percutanée (SES) si échec de l’isoprénaline ; complications possibles (tamponnade, thrombose).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Stimulation transthoracique externe : douloureuse, solution de secours.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "L’atropine est le traitement de référence des BAV infrahissiens à QRS larges.",
+          "why": "Faux : peu/pas d’effet infrahissien ; isoprénaline ou stim."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Atropine = nodal/DS, transitoire. Isoprénaline = perfusion large spectre. SES si échec ; externe = secours. Pas d’atropine infrahissienne."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Choix et code d’un stimulateur. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Code : 1re lettre = cavité stimulée (A/V/D), 2e = détectée, 3e = I/T/D, 4e R = asservissement d’effort.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "DS ou BAV en rythme sinusal : double chambre (DDD).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Bradyarythmie (BAV sur FA permanente) : simple chambre VVI.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "BAV et FEVG < 50 % : biventriculaire (resynchronisation) ou stimulation de l’aire de la branche gauche.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un stimulateur sans sonde actuel stimule déjà couramment oreillette et ventricule gauche.",
+          "why": "Faux : pour l’instant VD seulement ; double chambre sans sonde en développement."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "DDD si sinus, VVI si FA permanente, CRT/branche gauche si FEVG < 50 %. Capsule = VD."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Insuffisant cardiaque, FEVG 30 %, BBG à 150 ms, rythme sinusal. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un BBG > 130 ms et FEVG < 35 % doit faire discuter une resynchronisation (stim ou DAI biventriculaire).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Le BBG peut contribuer à l’IC par désynchronisation (activation tardive de la paroi latérale).",
+          "why": "Vrai (231)."
+        },
+        {
+          "letter": "C",
+          "text": "Un BBD isolé typique chez un jeune asymptomatique à examen normal peut être une variante de la normale.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Tout BBG isolé, même asymptomatique, est une variante bénigne du sujet jeune.",
+          "why": "Faux : le BBG n’est jamais bénin ; chercher HTA/cardiopathie."
+        },
+        {
+          "letter": "E",
+          "text": "Le bloc alternant, même asymptomatique, nécessite un appareillage (équivalent BAV de haut degré).",
+          "why": "Vrai."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "CRT si BBG > 130 ms et FEVG < 35 %. BBG jamais bénin. BBD jeune possible. Alternance = PM."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Éducation d’un patient implanté d’un stimulateur. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carte/carnet de la prothèse ; contrôle 1–3 mois puis annuel (télémétrie, usure, sondes).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Changement de boîtier en fin de vie de batterie, environ tous les 8 à 12 ans.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "La plupart des dispositifs récents sont IRM-conditionnels après réglage spécifique, puis reprogrammation.",
+          "why": "Vrai : CI absolue en cours de disparition."
+        },
+        {
+          "letter": "D",
+          "text": "Consulter si rougeur/écoulement du loge, fièvre inexpliquée, infections respiratoires à répétition.",
+          "why": "Vrai : infection de matériel."
+        },
+        {
+          "letter": "E",
+          "text": "Le télésuivi est interdit sur les stimulateurs récents.",
+          "why": "Faux : standard, alertes nocturnes, réduit hospit/décès."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Carte, suivi annuel, pile 8–12 ans, IRM conditionnelle, signes locaux. Télésuivi recommandé."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "BAV complet à 28 bpm, QRS larges, QT long, salves de QRS polymorphes torsadés. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Torsades favorisées par la bradycardie et l’allongement du QT du BAV3.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Accélérer la FC (isoprénaline et/ou stimulation) ; corriger hypoK/hypoMg ; arrêter les médicaments QT+.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Un BAV complet est toujours plus grave qu’une dysfonction sinusale (asystolie, TdP).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Éviter les molécules allongeant le QT tant que la bradycardie n’est pas corrigée.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un bêtabloquant IV est le traitement immédiat de ces torsades sur BAV.",
+          "why": "Faux : il aggraverait la bradycardie ; on accélère."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TdP sur BAV : accélérer (isoprénaline/stim), iono, stop QT+. BAV3 > DS en gravité. Pas de BB."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "FA permanente à 35 bpm, pauses > 3 s, QRS réguliers. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bradyarythmie : FA permanente lente (BAV 2 ou 3), à ne pas confondre avec la maladie rythmique atriale.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Rythme ventriculaire régulier lent = FA + BAV3.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Indication de PM (FA + BAV 3/haut degré, ± symptômes) ; en pratique VVI.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Chez le sujet jeune < 50 ans ou contexte évocateur, approfondir (IRM, myocardite, génétique).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le diagnostic de bradyarythmie se fait sans ECG, sur le seul pouls irrégulier.",
+          "why": "Faux : ECG obligatoire ; un pouls irrégulier est le contraire d’un BAV3."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bradyarythmie ≠ maladie de l’oreillette. FA+BAV3 = régulier lent → VVI. Bilan élargi si jeune."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Étiologies des BAV. Quelles associations sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cause la plus fréquente du sujet âgé : dégénérescence fibreuse ± calcifications (maladie de Lenègre).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "RA calcifié, TAVI, chirurgie valvulaire ; endocardite (abcès d’anneau) ; Lyme ; myocardites.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Causes infiltratives (sarcoïdose, amylose), radiques, héréditaires, dystrophies musculaires.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Toujours rechercher une cause aiguë réversible : ischémie, métabolique (hyperK), infectieuse, médicamenteuse.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Le His-Purkinje, très sensible au vagal, explique la plupart des BAV d’effort du sportif, toujours bénins.",
+          "why": "Faux : His-Purkinje peu sensible au SNA ; BAV d’effort = souvent infrahissien, grave."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Lenègre, valves/TAVI, Lyme, sarcoïdose, hyperK, médicaments. BAV d’effort infrahissien ≠ vagal bénin."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Bilan de première intention de palpitations. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biologie de routine : ionogramme, NFS, TSH, β-hCG selon le contexte, éventuellement alcoolémie.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "ETT systématique (FEVG, cinétique, oreillettes, CMH, dilatation).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "ECG 12 dérivations systématique même si l’examen est normal.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "IRM, coronarographie, épreuve d’effort : selon le contexte, pas d’emblée chez tous.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "On peut se passer d’ECG et d’ETT si les palpitations « sonnent » psychogènes dès l’accueil.",
+          "why": "Faux : inacceptable de conclure au psychogène sans bilan minimal."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Iono, NFS, TSH, β-hCG, ECG, ETT. Imagerie/effort ciblés. Jamais « névrose » d’emblée."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Palpitations paroxystiques. Comment choisir l’enregistrement pour obtenir une corrélation électroclinique ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Crises fréquentes : Holter 24–96 heures.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Moins d’une fois par semaine : ECG ambulatoire de longue durée jusqu’à 21 jours.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Crises très rares : holter implantable 3 à 5 ans (parasternale sous-cutanée) ± télécardiologie.",
+          "why": "Vrai (237) ; 231 cite jusqu’à 3 ans."
+        },
+        {
+          "letter": "D",
+          "text": "Plus l’enregistrement est long, meilleure est la sensibilité de la corrélation.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Un ECG 12D de 10 secondes aux urgences, hors crise, suffit toujours à corriger le diagnostic.",
+          "why": "Faux : corrélation rarement obtenue hors crise."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Adapter la durée à la fréquence des crises : 24–96 h / 21 j / implant 3–5 ans. L’ECG hors crise est souvent normal."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Pendant une tachycardie à QRS fins bien tolérée, on injecte de l’adénosine en flash. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Interruption brutale : très évocateur de tachycardie jonctionnelle (TRIN ou Kent).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Ralentissement ventriculaire démasquant l’atrial : FA, flutter ou tachycardie atriale.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "En général, pas d’effet sur la FC d’une TV (indépendante du NAV).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Contre-indications selon ce chapitre : asthme et HTA non contrôlée.",
+          "why": "Vrai (237) ; 231 ajoute l’hypotension."
+        },
+        {
+          "letter": "E",
+          "text": "L’adénosine est le traitement de choix d’une FA préexcitée (super-Wolff).",
+          "why": "Faux : formellement contre-indiquée (NAV bloqué, Kent ouvert)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Adénosine : stoppe la TJ, démasque FA/flutter, n’agit pas sur la TV. CI asthme/HTA. Jamais en super-Wolff."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 22 ans, cœur sain : palpitations à début et fin brutaux, polyurie en fin d’accès, arrêt par Valsalva. Quelles propositions sur la TRIN sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Réentrée nodale : descente voie lente, remontée voie rapide ; trigger souvent une ESA bloquée dans la voie rapide.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "ECG de repos le plus souvent normal ; en crise, 130–250 bpm, QRS fins, P′ parfois collées à la fin du QRS.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Traitement de référence : ablation de la voie lente (risque faible de BAV complet).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "La dualité nodale concerne environ 20 % de la population.",
+          "why": "Vrai (231)."
+        },
+        {
+          "letter": "E",
+          "text": "Un traitement de fond par digitalique est obligatoire chez toute femme jeune après un 1er accès.",
+          "why": "Faux : abstention, pill in the pocket ou ablation selon la gêne."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TRIN du sujet jeune : clinique Bouveret, ablation de la voie lente. Dualité ~20 %. Pas de digitalique systématique."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Tachycardie régulière chez un patient avec préexcitation connue. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Orthodromique (la plus fréquente) : descente NAV, remontée Kent → QRS fins, P′ rétrograde à distance.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Antidromique (rare) : descente Kent, remontée NAV → QRS larges préexcités.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "La préexcitation de repos augmente avec les manœuvres vagales et diminue/disparaît avec l’atropine.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Des voies cachées (rétrogrades seules) rendent l’ECG de repos normal.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Toute tachycardie à QRS larges sur Kent est une TV jusqu’à preuve du contraire, sans autre hypothèse.",
+          "why": "Faux : l’antidromique est une TJ à QRS larges ; la règle « TQRSL = TV » reste cependant la conduite urgente."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ortho = QRS fins ; anti = QRS larges. Vagal démasque le delta. Voies cachées = ECG normal. En urgence, TQRSL traitée comme TV."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 19 ans, instable, tachycardie irrégulière à QRS larges variables. Préexcitation connue. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "FA sur Kent (super-Wolff) : cardioversion électrique en urgence si instabilité.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Si stable : antiarythmique de classe Ic ou amiodarone.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Adénosine, inhibiteurs calciques, bêtabloquants et digitaliques sont formellement contre-indiqués.",
+          "why": "Vrai : bloquent le NAV sans ralentir le Kent."
+        },
+        {
+          "letter": "D",
+          "text": "L’ablation de la voie est indiscutable si FA rapide et voie très perméable.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "La digoxine IV est le freinateur de choix, comme dans la FA de l’insuffisant cardiaque.",
+          "why": "Faux : digitaliques CI en préexcitation."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Super-Wolff instable = CEE. Stable = Ic ou amio. CI : adénosine, ICa, BB, digitaliques. Ablation si voie maligne."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelle(s) proposition(s) sur la « malignité » d’une voie accessoire est (sont) exacte(s) ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Voie maligne si période réfractaire antérograde très courte (< 250 ms).",
+          "why": "Vrai : rythme ventriculaire potentiellement très rapide."
+        },
+        {
+          "letter": "B",
+          "text": "Indication formelle d’ablation dans ce cas.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Ces patients ont plus d’accès de FA du fait de l’activation rétrograde.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "L’ablation près des voies nodohissiennes peut se compliquer d’un BAV.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Une période réfractaire < 250 ms autorise l’adénosine en cas de FA préexcitée.",
+          "why": "Faux : c’est précisément la situation où l’adénosine est la plus dangereuse."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Maligne = PRE < 250 ms → ablation formelle. Plus de FA. Risque de BAV si ablation septale. Jamais d’adénosine en FA+Kent."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Extrasystoles fréquentes. Quelles causes extracardiaques et quelle conduite sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Alcool, électrocution, pathologies respiratoires, hyperthyroïdie, ionogramme, anxiété, grossesse, SAOS.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Bilan : ETT, épreuve d’effort, Holter (charge, morphologies, couplage court).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Chez l’obèse, le diabétique ou l’hypertendu, répéter les Holter pour chercher une FA à risque embolique.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Un couplage court (ESV sur l’onde T, phénomène R/T) est un indicateur majeur de risque d’arythmie ventriculaire maligne.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Les extrasystoles interpolées ont toujours un repos compensateur égal à deux cycles.",
+          "why": "Faux : interpolées = pas de repos compensateur ; le repos total équivaut à 2 périodes dans l’autre cas."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Causes extracardiaques nombreuses. ETT + effort + Holter. R/T = danger. Interpolée ≠ repos compensateur."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Tachycardie à 108 bpm, P sinusales, début et fin progressifs, chez un patient avec embolie pulmonaire. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tachycardie sinusale adaptative : traiter la cause suffit le plus souvent.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Autres causes adaptatives : fièvre/sepsis, anémie, hypovolémie, hypoxie, hyperthyroïdie, grossesse, SAOS, sevrage en BB, sympathomimétiques.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Elle peut aussi accompagner IC, EP, épanchement péricardique.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Exceptionnellement isolée non adaptative : tachycardie sinusale inappropriée (orthostatisme, anxiété).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Une TS se distingue d’une TSV par des « marches d’escalier » de fréquence, sans P sinusales.",
+          "why": "Faux : c’est l’inverse : TS = P sinusales et variation progressive ; TSV = marches d’escalier."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TS = P sinusales, début/fin progressifs, cause à traiter. Inappropriée = exception. Marches d’escalier = TSV."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Palpitations itératives, tous les examens (ECG de crise inclus, Holter long, ETT) normaux. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "On peut alors évoquer une « névrose cardiaque » / attaques de panique, diagnostic d’élimination.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Il faut savoir arrêter les investigations et éviter un langage iatrogène.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Un avis psychiatrique est souhaitable.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Ce diagnostic se pose à l’accueil des urgences dès que le patient paraît anxieux, sans tracé.",
+          "why": "Faux : inacceptable sans bilan minimal et sans documentation."
+        },
+        {
+          "letter": "E",
+          "text": "Les palpitations s’effacent derrière une syncope, une douleur thoracique ou une dyspnée associées, qui priment.",
+          "why": "Vrai : point du cours."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Psychogène = élimination après corrélation négative. Stopper l’escalade. Les symptômes graves priment."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Apport des outils connectés et de l’EEP dans les palpitations. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Montre/smartphone : tracé souvent de bonne qualité, classiquement une piste DI, automatique ou à la demande.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "Ils facilitent le diagnostic des palpitations peu fréquentes, mal documentées par un Holter classique.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "L’EEP cherche une dualité nodale, une voie accessoire, déclenche une TSV ou une TV (SVP en 2 sites : apex et infundibulum).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "L’EEP peut traiter dans le même temps (TRIN, Kent, arythmie atriale).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "La photopléthysmographie d’une montre suffit à porter le diagnostic de FA clinique.",
+          "why": "Faux : PPG non validée (232) ; il faut un tracé ECG."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG connecté (DI) utile si crises rares. EEP diagnostique et thérapeutique. PPG ≠ diagnostic de FA."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Palpitations exclusivement à l’effort. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’épreuve d’effort a un double intérêt : documenter les palpitations d’effort et chercher un angor.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "B",
+          "text": "IRM, coronarographie, tests d’ajmaline/isoprénaline, potentiels tardifs : selon hypothèses (DAVD, Brugada, etc.).",
+          "why": "Vrai."
+        },
+        {
+          "letter": "C",
+          "text": "Un antécédent familial de mort subite avant 35 ans ou du nourrisson oriente vers une canalopathie/DAVD : faire l’arbre généalogique.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "D",
+          "text": "Une crise polyurique finale et un démarrage au changement brusque de position orientent vers une tachycardie jonctionnelle, pas vers une TS d’effort.",
+          "why": "Vrai."
+        },
+        {
+          "letter": "E",
+          "text": "Toute palpitation d’effort chez un sujet jeune est une tachycardie sinusale physiologique, sans ECG d’effort.",
+          "why": "Faux : l’effort est précisément le moment à documenter (TV, BAV, CMH…)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Palpitations d’effort → épreuve d’effort. Terrain génétique si MS familiale. Polyurie/brutal = TJ. Ne pas banaliser l’effort."
+    }
+  ]
+}

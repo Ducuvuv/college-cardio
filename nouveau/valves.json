@@ -1,0 +1,888 @@
+{
+  "questions": [
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'auscultation du rétrécissement aortique (RA), quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Souffle mésosystolique éjectionnel, intense, rude et râpeux, maximal au 2e espace intercostal droit, irradiant dans les vaisseaux du cou"},
+        {"letter": "B", "text": "Le souffle se renforce après une diastole longue"},
+        {"letter": "C", "text": "L'abolition de B2 est un argument de RA serré calcifié"},
+        {"letter": "D", "text": "Souffle holosystolique en jet de vapeur, maximal à la pointe, irradiant dans l'aisselle"},
+        {"letter": "E", "text": "Dans le RA évolué avec bas débit, le souffle peut devenir moins intense, voire quasiment inaudible"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'auscultation typique du RA est un souffle losangique mésosystolique éjectionnel râpeux au foyer aortique, irradiant vers les carotides, qui se renforce après une diastole longue. B2 est aboli dans les RA serrés calcifiés. En bas débit, le souffle s'atténue ; le souffle apexo-axillaire en jet de vapeur est celui de l'insuffisance mitrale."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la définition et les étiologies du rétrécissement aortique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Le RA est la valvulopathie la plus fréquente"},
+        {"letter": "B", "text": "Après 65-70 ans, l'étiologie de loin la plus fréquente est le RA dégénératif (maladie de Mönckeberg)"},
+        {"letter": "C", "text": "Entre 30 et 65 ans, la bicuspidie est l'étiologie la plus fréquente"},
+        {"letter": "D", "text": "Le RA post-rhumatismal est devenu la cause dominante du sujet âgé en France"},
+        {"letter": "E", "text": "Une bicuspidie aortique est présente chez 1 à 2 % de la population générale"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le RA est un obstacle à l'éjection du VG, le plus souvent valvulaire. Deux étiologies dominent : bicuspidie avant 65-70 ans, forme dégénérative calcifiée ensuite. Le RAA est devenu rare, encore rencontré notamment chez les migrants, souvent associé à une IA et une atteinte mitrale."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels critères échocardiographiques permettent de retenir un rétrécissement aortique serré ?",
+      "options": [
+        {"letter": "A", "text": "Vitesse maximale transaortique > 4 m/s en doppler continu"},
+        {"letter": "B", "text": "Gradient moyen VG-aorte > 40 mmHg"},
+        {"letter": "C", "text": "Surface valvulaire aortique < 1 cm² ou < 0,6 cm²/m²"},
+        {"letter": "D", "text": "Un RA peut être serré malgré un gradient moyen < 40 mmHg si le débit cardiaque est bas"},
+        {"letter": "E", "text": "La surface d'une valve aortique normale est de 0,5 à 1 cm²"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'ETT est l'examen clé : elle confirme le RA, quantifie la sévérité et évalue le retentissement. Un RA serré associe en général Vmax > 4 m/s, gradient moyen > 40 mmHg et surface < 1 cm² (ou < 0,6 cm²/m²). La surface normale est de 2 à 3,5 cm² ; en bas débit, le seul gradient peut sous-estimer la sévérité."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les signes fonctionnels du rétrécissement aortique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Les trois maîtres symptômes sont la dyspnée d'effort, l'angor d'effort et la syncope d'effort"},
+        {"letter": "B", "text": "Leur apparition au cours d'un RA serré s'accompagne d'un mauvais pronostic en l'absence de traitement"},
+        {"letter": "C", "text": "Un patient peut se dire asymptomatique alors qu'il a progressivement limité ses activités"},
+        {"letter": "D", "text": "La syncope de repos au lit est le symptôme inaugural le plus fréquent du RA peu serré"},
+        {"letter": "E", "text": "Une longue période asymptomatique, parfois de plusieurs années, précède souvent les symptômes"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le RA reste longtemps asymptomatique. Dyspnée, angor et syncope d'effort marquent une cassure évolutive de mauvais pronostic sans traitement spécifique. L'interrogatoire doit rechercher une restriction progressive des efforts, le patient pouvant se croire asymptomatique."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la physiopathologie du rétrécissement aortique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "L'obstacle à l'éjection crée un gradient de pression systolique VG-aorte et une hypertrophie concentrique du VG"},
+        {"letter": "B", "text": "Le VG se dilate précocement, dès le stade de RA peu serré, par surcharge volumique"},
+        {"letter": "C", "text": "La fibrillation atriale est en général mal tolérée du fait de la perte de la systole atriale"},
+        {"letter": "D", "text": "Lorsque le gradient moyen VG-aorte atteint 40 mmHg, le RA est considéré comme serré"},
+        {"letter": "E", "text": "Au début, la performance systolique globale du VG est le plus souvent préservée"}
+      ],
+      "correct": ["A", "C", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La réduction de l'orifice aortique impose une hyperpression VG, un gradient et une hypertrophie concentrique qui normalise les contraintes (loi de Laplace) et maintient longtemps la FEVG. La compliance diastolique s'altère ; la contraction atriale devient cruciale, d'où la mauvaise tolérance d'une FA. La dilatation VG n'est pas le remodelage initial."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le traitement interventionnel du rétrécissement aortique serré, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Tout RA serré symptomatique doit être pris en charge (remplacement valvulaire ou TAVI), sous réserve d'un état général conservé"},
+        {"letter": "B", "text": "Un RA peu serré asymptomatique justifie un TAVI systématique après 65 ans"},
+        {"letter": "C", "text": "Le TAVI est recommandé chez les patients inopérables ou à risque opératoire, quel que soit l'âge"},
+        {"letter": "D", "text": "Le TAVI est recommandé en 1re intention après 75 ans, quel que soit le risque chirurgical, si une voie fémorale est possible"},
+        {"letter": "E", "text": "La valvuloplastie aortique au ballon (sans prothèse) reste le traitement de 1re intention du sujet jeune"}
+      ],
+      "correct": ["A", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le RA serré symptomatique a un risque vital et doit être traité pratiquement sans limite d'âge si l'état général le permet. Le TAVI, discuté en Heart Team, est indiqué chez les inopérables ou à risque opératoire à tout âge, et en 1re intention après 75 ans si abord fémoral possible. La valvuloplastie au ballon est quasiment abandonnée (resténose précoce), hormis un pont vers une chirurgie non cardiaque urgente."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la bicuspidie aortique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Elle est souvent associée à un anévrisme de l'aorte ascendante qu'il faut rechercher"},
+        {"letter": "B", "text": "Une coarctation aortique, beaucoup plus rare, doit également être recherchée"},
+        {"letter": "C", "text": "Un dépistage familial des apparentés du 1er degré est indiqué lorsqu'une bicuspidie a été détectée"},
+        {"letter": "D", "text": "Elle ne peut jamais être responsable d'une insuffisance aortique"},
+        {"letter": "E", "text": "Elle est en général bien tolérée pendant l'enfance et l'adolescence"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La bicuspidie est une malformation évolutive, souvent bien tolérée dans l'enfance, qui peut aboutir à un RA à l'âge adulte ou à une IA. Il faut mesurer l'aorte ascendante, chercher une coarctation, et dépister les apparentés du 1er degré. La forme la plus fréquente est le type I avec raphé (fusion antéro-gauche et antéro-droite)."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles complications du rétrécissement aortique faut-il connaître ?",
+      "options": [
+        {"letter": "A", "text": "Mort subite, surtout en cas de RA serré symptomatique"},
+        {"letter": "B", "text": "Fibrillation atriale, en général mal tolérée"},
+        {"letter": "C", "text": "Anémie ferriprive par angiodysplasies intestinales avec anomalie acquise du facteur Willebrand (syndrome de Heyde)"},
+        {"letter": "D", "text": "L'endocardite infectieuse est la complication la plus fréquente du RA"},
+        {"letter": "E", "text": "Embolies calcaires systémiques, pouvant intéresser l'artère centrale de la rétine"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'apparition de symptômes ou de complications impose un traitement spécifique. Mort subite, FA mal tolérée, troubles de conduction et insuffisance cardiaque sont au premier plan. L'EI et les embolies calcaires sont rares ; le syndrome de Heyde associe angiodysplasies digestives et déficit acquis en Willebrand."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant un rétrécissement aortique, quelles propositions concernant les examens complémentaires sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "L'échocardiographie doppler transthoracique est l'examen clé"},
+        {"letter": "B", "text": "L'absence d'hypertrophie ventriculaire gauche électrique exclut un RA serré"},
+        {"letter": "C", "text": "L'ECG des RA serrés montre le plus souvent une HVG de type surcharge systolique"},
+        {"letter": "D", "text": "L'ETT confirme le diagnostic, quantifie la sévérité, évalue le VG et cherche une atteinte mitrale associée"},
+        {"letter": "E", "text": "Le cathétérisme cardiaque est habituellement réalisé pour mesurer le gradient VG-aorte"}
+      ],
+      "correct": ["A", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'ETT confirme le RA (valve remaniée, vitesses > 2,5 m/s), quantifie et apprécie le retentissement. L'ECG est souvent anormal (HVG de surcharge systolique, HAG, troubles de conduction) mais une HVG électrique absente n'exclut pas un RA serré. Le cathétérisme n'est plus habituel, réservé aux discordances clinico-échographiques."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le bilan préopératoire et la conduite pratique devant un RA, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Une imagerie des coronaires est indiquée en préopératoire selon l'âge (homme > 40 ans, femme ménopausée), les facteurs de risque, un angor ou une insuffisance cardiaque"},
+        {"letter": "B", "text": "La taille de l'aorte doit être évaluée, notamment en cas de bicuspidie"},
+        {"letter": "C", "text": "Le patient connu pour un RA doit consulter en urgence si des symptômes d'effort apparaissent"},
+        {"letter": "D", "text": "Une épreuve d'effort est l'examen de 1re intention après une syncope d'effort sur souffle systolique"},
+        {"letter": "E", "text": "Une fièvre chez un patient porteur d'un RA doit faire évoquer une endocardite infectieuse"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le bilan préopératoire évalue le risque : coronaires (l'angor du RA peut être purement fonctionnel), aorte (bicuspidie), foyers ORL/dentaires. L'éducation porte sur la prévention de l'EI et l'adressage urgent si symptômes d'effort. L'épreuve d'effort n'est pas l'examen initial d'un RA serré déjà symptomatique (syncope) ; elle sert surtout à objectiver le caractère asymptomatique."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'auscultation de l'insuffisance mitrale, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Souffle holosystolique de régurgitation, débutant dès B1, maximal à la pointe ou apexo-axillaire, de timbre en jet de vapeur"},
+        {"letter": "B", "text": "L'irradiation se fait le plus souvent vers l'aisselle"},
+        {"letter": "C", "text": "En cas de prolapsus du feuillet postérieur, l'irradiation peut se faire vers la base du cœur (foyer aortique)"},
+        {"letter": "D", "text": "Le souffle se renforce nettement après une diastole longue, comme celui du RA"},
+        {"letter": "E", "text": "Dans le prolapsus, un clic mésosystolique peut précéder un souffle méso- ou télésystolique"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IM s'ausculte en souffle holosystolique apexo-axillaire en jet de vapeur, qui ne se renforce pas après une diastole longue. Le jet du prolapsus postérieur, dirigé vers le septum interatrial, peut irradier au foyer aortique. Un clic de mise en tension des cordages est évocateur de prolapsus. Le souffle des IM secondaires est souvent discret, mal corrélé à la sévérité."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les mécanismes et étiologies de l'insuffisance mitrale, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Dans l'IM primaire (organique), l'anomalie initiale siège sur les feuillets ou les cordages"},
+        {"letter": "B", "text": "Dans l'IM secondaire ventriculaire, les feuillets sont normaux ; le remodelage du VG éloigne les piliers (type IIIb de Carpentier)"},
+        {"letter": "C", "text": "L'IM dystrophique par prolapsus est l'étiologie la plus fréquente des fuites mitrales sévères"},
+        {"letter": "D", "text": "Le type II de Carpentier correspond à un jeu valvulaire restreint en systole et en diastole"},
+        {"letter": "E", "text": "L'IM atriale relève d'une dilatation de l'anneau sans atteinte des feuillets (type I)"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "On oppose IM primaire (valve malade) et IM secondaire (VG ou AG malades, feuillets normaux). Le type I a un jeu normal (perforation, dilatation annulaire) ; le type II un jeu excessif (prolapsus, ruptures de cordages) ; le type III un jeu restreint (IIIa rhumatismal, IIIb ischémique/dilaté). L'IM dystrophique (Barlow ou fibroélastique) est la 1re cause d'IM sévère."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'échocardiographie de l'insuffisance mitrale, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "L'ETT est l'examen clé pour le diagnostic positif, le mécanisme, la quantification et le retentissement"},
+        {"letter": "B", "text": "La méthode PISA permet de calculer la surface de l'orifice régurgitant (SOR)"},
+        {"letter": "C", "text": "Dans les IM secondaires, le seuil de sévérité retenu pour la SOR est de 30 mm²"},
+        {"letter": "D", "text": "L'ETO est obligatoire devant toute IM minime (grade I) de découverte fortuite"},
+        {"letter": "E", "text": "L'ETO est fondamentale et obligatoire pour le diagnostic des IM sur endocardite (végétations parfois invisibles en ETT)"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'ETT confirme le jet holosystolique, précise le mécanisme selon Carpentier et quantifie la fuite (SOR, volume régurgité) ainsi que le retentissement (DTS VG, FEVG, AG, PAP). Le seuil de sévérité des IM secondaires est une SOR à 30 mm², après optimisation du traitement de l'IC. L'ETO n'est pas systématique en IM minime ; elle l'est en cas d'EI et aide à planifier une plastie."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'insuffisance mitrale aiguë, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Elle peut résulter d'une rupture de cordages (dystrophie, endocardite, traumatisme), d'une rupture ou dysfonction ischémique de pilier, ou d'une perforation infectieuse"},
+        {"letter": "B", "text": "Elle réalise le plus souvent un tableau hémodynamique grave relevant d'une urgence vitale"},
+        {"letter": "C", "text": "La rupture de pilier mitral au cours d'un infarctus est le plus souvent une urgence chirurgicale"},
+        {"letter": "D", "text": "Elle est en règle bien tolérée grâce à une dilatation immédiate de l'atrium gauche"},
+        {"letter": "E", "text": "Un œdème pulmonaire unilatéral est possible si le jet régurgitant n'intéresse que les veines pulmonaires d'un seul poumon"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IM aiguë (rupture de cordage, de pilier, perforation, traumatisme) s'abat sur un AG non dilaté, à compliance inadaptée, d'où une HTP d'emblée et souvent un OAP. La rupture de pilier en IDM entraîne choc et régurgitation massive : chirurgie urgente le plus souvent. Un jet excentré peut donner un OAP unilatéral."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles sont des indications chirurgicales reconnues d'une insuffisance mitrale chronique primaire importante (grade III ou IV) ?",
+      "options": [
+        {"letter": "A", "text": "Patient symptomatique : chirurgie en privilégiant si possible la plastie reconstructrice"},
+        {"letter": "B", "text": "Patient asymptomatique avec diamètre télésystolique du VG > 40 mm et/ou FEVG < 60 %"},
+        {"letter": "C", "text": "Patient asymptomatique avec PAP systolique > 50 mmHg, fibrillation atriale (même paroxystique) ou atrium gauche > 60 mL/m²"},
+        {"letter": "D", "text": "IM isolée de grade I ou II : remplacement valvulaire mitral d'emblée"},
+        {"letter": "E", "text": "Une IM aiguë mal tolérée requiert une chirurgie urgente"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "On opère les IM primaires importantes symptomatiques, et les asymptomatiques dès qu'il existe un retentissement VG (DTS > 40 mm, FEVG < 60 %), une HTP (PAP systolique > 50 mmHg), une FA ou une dilatation importante de l'AG. L'IM aiguë mal tolérée est une urgence. Les grades I-II ne relèvent pas d'un remplacement d'emblée."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les modalités de traitement de l'insuffisance mitrale primaire, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "La plastie reconstructrice, lorsqu'elle est possible, entraîne moins de dysfonction VG postopératoire et un moindre risque d'endocardite que le remplacement"},
+        {"letter": "B", "text": "Elle est particulièrement indiquée dans les prolapsus, avec ou sans rupture de cordages"},
+        {"letter": "C", "text": "Une prothèse mécanique impose un traitement anticoagulant et est plutôt choisie avant 65 ans"},
+        {"letter": "D", "text": "Une bioprothèse évite les anticoagulants au long cours, expose à une dégénérescence, et est plutôt indiquée après 70 ans"},
+        {"letter": "E", "text": "La réparation bord à bord percutanée (clip) est le traitement de 1re intention de toute IM primaire du sujet jeune opérable"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La réparation chirurgicale est la technique de référence des prolapsus : elle préserve l'appareil sous-valvulaire. Le remplacement n'est envisagé que si la plastie est impossible (et n'est pas envisageable si FE < 30 %, contrairement à la plastie). Le clip se discute chez les patients à haut risque ou inopérables, en clinique des valves, pas en 1re intention du sujet opérable."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la physiopathologie de l'insuffisance mitrale, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "La régurgitation entraîne une surcharge volumique du VG et une hypertrophie excentrique"},
+        {"letter": "B", "text": "La fraction d'éjection est surestimée car le VG est déchargé vers l'AG ; on parle de dysfonction en dessous de 60 %"},
+        {"letter": "C", "text": "Dans l'IM primaire chronique, la dilatation de l'AG peut maintenir longtemps une PAP normale ou peu élevée"},
+        {"letter": "D", "text": "Dans l'IM aiguë, l'AG non dilaté explique une hypertension pulmonaire d'emblée importante"},
+        {"letter": "E", "text": "Le remodelage ventriculaire de l'IM chronique est une hypertrophie concentrique identique à celle du RA"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le VG reçoit en diastole le volume pulmonaire plus le volume régurgité : dilatation et hypertrophie excentrique, distinctes de l'hypertrophie concentrique du RA. La FEVG surestime la fonction (fuite vers l'AG). L'AG compliant de l'IM chronique tamponne la PAP ; à l'inverse, l'IM aiguë crée une HTP immédiate."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le suivi et les associations valvulaires de l'insuffisance mitrale, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Une IM significative, même asymptomatique, justifie un suivi régulier avec ETT annuelle"},
+        {"letter": "B", "text": "Une fuite tricuspide même non sévère avec un anneau tricuspide > 40 mm (coupe apicale 4 cavités) justifie de planifier une annuloplastie tricuspide si un geste mitral est prévu"},
+        {"letter": "C", "text": "Une antibioprophylaxie systématique avant tout soin dentaire est recommandée pour toute IM native minime"},
+        {"letter": "D", "text": "Une fièvre chez un patient porteur d'IM doit faire évoquer une endocardite infectieuse"},
+        {"letter": "E", "text": "Le souffle des IM secondaires est souvent très discret, parfois inaudible, et mal corrélé à la sévérité"}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les IM chroniques sont longtemps bien tolérées : le suivi clinique et échographique ne doit pas attendre l'IC tardive. Il faut vérifier la tricuspide avant chirurgie mitrale. L'éducation porte sur l'hygiène et l'EI (fièvre, souffle modifié) ; l'antibioprophylaxie n'est plus le socle de la prévention des IM natives minimes/modérées. Le souffle fonctionnel secondaire peut manquer."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'auscultation de l'insuffisance aortique chronique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Souffle diastolique prédominant au foyer aortique, irradiant le long du bord gauche du sternum"},
+        {"letter": "B", "text": "Il est mieux perçu patient penché en avant, assis ou debout, en expiration bloquée"},
+        {"letter": "C", "text": "Un souffle holodiastolique oriente vers une IA importante ; un souffle plus court vers une IA moindre"},
+        {"letter": "D", "text": "Un souffle systolique éjectionnel d'accompagnement au foyer aortique est fréquent (hyperdébit antérograde)"},
+        {"letter": "E", "text": "Le souffle isolé est mésosystolique râpeux irradiant aux carotides, sans composante diastolique"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le souffle d'IA est diastolique, le long du bord sternal gauche, recherché penché en avant en expiration. Il est holodiastolique si la fuite est importante. Un souffle systolique d'accompagnement traduit l'augmentation du volume d'éjection. Un roulement de Flint apexien témoigne d'une IA sévère. Le souffle isolé du RA n'a pas de composante diastolique."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels signes cliniques périphériques orientent vers une insuffisance aortique sévère ?",
+      "options": [
+        {"letter": "A", "text": "Hyperpulsatilité des pouls artériels périphériques"},
+        {"letter": "B", "text": "Élargissement de la pression artérielle différentielle avec abaissement de la pression diastolique"},
+        {"letter": "C", "text": "Choc de pointe étalé, dévié en bas et à gauche (choc en dôme) en cas de dilatation du VG"},
+        {"letter": "D", "text": "Pincement de la pression différentielle avec élévation de la pression diastolique"},
+        {"letter": "E", "text": "Roulement de Flint apexien possible, témoin d'une IA sévère"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IA volumineuse augmente le volume d'éjection (PAS élevée) et vide l'aorte en diastole (PAD basse) : grande pression différentielle et hyperpulsatilité. Le VG se dilate (choc en dôme). Un Flint ou un galop traduisent une fuite sévère. Une PAD élevée n'est pas le profil de l'IA importante."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les étiologies de l'insuffisance aortique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "La dilatation de la racine aortique (maladie annuloectasiante, Marfan, Loeys-Dietz, Ehlers-Danlos, dilatation idiopathique) est une cause fréquente en Occident"},
+        {"letter": "B", "text": "La bicuspidie aortique (1 à 2 % de la population) est une cause fréquente d'IA, souvent par prolapsus de la cusp la plus grande"},
+        {"letter": "C", "text": "L'endocardite infectieuse peut perforer ou détruire une cusp, ou créer un abcès de l'anneau"},
+        {"letter": "D", "text": "L'IA est la valvulopathie la plus fréquente du sujet âgé"},
+        {"letter": "E", "text": "Une aortite (Takayasu, Horton, Behçet, spondylarthrite ankylosante, syphilis) peut dilater la racine et créer une IA"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IA, valvulopathie peu fréquente, relève d'un mouvement de cusp normal, excessif (prolapsus) ou restreint. En Occident dominent la dystrophie, la dilatation de racine (penser au Marfan et au risque de dissection) et la bicuspidie. L'EI est la grande cause d'IA aiguë. Le RA, non l'IA, est la valvulopathie la plus fréquente du sujet âgé."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'insuffisance aortique aiguë, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Les causes principales sont l'endocardite infectieuse, la dissection aortique atteignant l'anneau et le traumatisme valvulaire"},
+        {"letter": "B", "text": "La surcharge volumétrique brutale sur un VG peu dilaté élève d'emblée les pressions de remplissage et peut conduire à un OAP"},
+        {"letter": "C", "text": "Le souffle d'IA aiguë peut être peu audible"},
+        {"letter": "D", "text": "L'indication chirurgicale est urgente en cas de dissection ; elle peut être un peu différée en cas d'EI ou de traumatisme selon la tolérance"},
+        {"letter": "E", "text": "Le VG se dilate instantanément, ce qui rend l'IA aiguë habituellement bien tolérée"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IA aiguë (EI, dissection, traumatisme) surcharge un VG de taille normale : OAP, hypoperfusion coronaire diastolique, parfois souffle discret. Une chirurgie précoce est habituelle, immédiate si dissection. À l'inverse de l'IA chronique, il n'y a pas le temps d'un remodelage compensateur."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le traitement médical et la prophylaxie de l'endocardite au cours de l'insuffisance aortique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Aucun traitement médicamenteux spécifique n'a démontré un bénéfice pour prévenir le remodelage de l'IA"},
+        {"letter": "B", "text": "Les IEC ne sont pas recommandés pour prévenir le remodelage ou l'insuffisance cardiaque dans l'IA modérée à sévère"},
+        {"letter": "C", "text": "Les bêtabloquants sont classiquement contre-indiqués dans l'IA car ils allongent la diastole et aggravent la fuite"},
+        {"letter": "D", "text": "Dans le syndrome de Marfan, et par extension en cas de dilatation aortique, les bêtabloquants sont le traitement validé pour protéger l'aorte"},
+        {"letter": "E", "text": "Une antibioprophylaxie systématique avant tout soin dentaire est indiquée pour toute IA sur valve native"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Il n'existe pas de traitement médicamenteux efficace de l'IA ; les IEC ne préviennent pas le remodelage. Les bêtabloquants aggravent la fuite (diastole plus longue) sauf dans le Marfan/dilatation aortique où ils protègent l'aorte (ARA2 si intolérance). L'antibioprophylaxie n'est plus systématique sur valve native : hygiène buccodentaire et examen dentaire semestriel restent recommandés."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'échodoppler de l'insuffisance aortique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Il confirme l'IA (reflux diastolique aorte vers VG), la quantifie, précise l'étiologie et le retentissement sur le VG et l'aorte"},
+        {"letter": "B", "text": "Seules les fuites de grades 3 et 4 entraînent une surcharge volumétrique significative"},
+        {"letter": "C", "text": "Chez l'adulte, un flux rétrograde télédiastolique dans l'isthme aortique > 20 cm/s est en faveur d'une IA sévère"},
+        {"letter": "D", "text": "La dilatation diastolique du VG signe une surcharge volumétrique significative de grade > 3"},
+        {"letter": "E", "text": "L'IRM ou le scanner remplacent l'ETT en 1re intention pour toute IA minime de découverte fortuite"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'ETT combine critères indirects (hyperdébit de chambre de chasse, dilatation VG, flux isthmique rétrograde) et directs (vena contracta, PISA). Grades 3-4 seuls surchargeant vraiment le VG. L'ETO est réservée à une échogénicité insuffisante, à l'aorte, à l'EI ou à une dissection. Scanner et IRM précisent surtout les diamètres aortiques, ils ne remplacent pas l'ETT initiale."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les indications opératoires de l'insuffisance aortique sévère, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "IA chronique sévère symptomatique (dyspnée, insuffisance cardiaque)"},
+        {"letter": "B", "text": "Dilatation du VG > 50 mm en télésystole (ou 25 mm/m²)"},
+        {"letter": "C", "text": "Fraction d'éjection abaissée < 50 %"},
+        {"letter": "D", "text": "Une dilatation importante de l'aorte ascendante peut faire porter l'indication même si la fuite n'est pas au premier plan"},
+        {"letter": "E", "text": "Le TAVI est le traitement de 1re intention de l'IA du sujet jeune à faible risque chirurgical"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "On opère souvent des patients encore asymptomatiques, car le remodelage VG peut devenir irréversible. Les critères rang A reposent sur les symptômes, un DTS VG > 50 mm (ou 25 mm/m²), une FEVG < 50 % ou une dilatation aortique menaçante (risque de dissection). Le TAVI n'est pas conçu pour l'IA (peu de calcifications d'ancrage) et reste exceptionnel, à très haut risque, hors EI."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'évolution et la surveillance de l'insuffisance aortique chronique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "L'IA chronique peut rester longtemps silencieuse et asymptomatique"},
+        {"letter": "B", "text": "Une IA sévère doit être surveillée de façon attentive, au moins une fois par an (clinique, ECG, ETT)"},
+        {"letter": "C", "text": "Un dépistage familial des apparentés du 1er degré est nécessaire dans le Marfan ; il peut aussi être proposé en cas de bicuspidie"},
+        {"letter": "D", "text": "Le sport de compétition est contre-indiqué en cas d'IA sévère"},
+        {"letter": "E", "text": "L'apparition de symptômes n'a pas de valeur pronostique et n'impose pas d'avis chirurgical"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IA chronique est longtemps bien tolérée grâce à la compliance du VG, mais les symptômes marquent un tournant de mauvais pronostic. La surveillance d'une fuite sévère est au moins annuelle, plus rapprochée si besoin, en surveillant VG, FEVG et diamètres aortiques. Marfan : dépistage familial. Compétition contre-indiquée si IA sévère ; l'endurance de loisir modérée est encouragée."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles situations classent un patient dans le groupe à haut risque d'endocardite infectieuse ?",
+      "options": [
+        {"letter": "A", "text": "Antécédent d'endocardite infectieuse"},
+        {"letter": "B", "text": "Prothèse valvulaire chirurgicale ou percutanée (TAVI inclus) et matériel utilisé pour la réparation valvulaire"},
+        {"letter": "C", "text": "Cardiopathie congénitale cyanogène non traitée, ou cardiopathie congénitale réparée avec matériel prothétique (6 mois, ou à vie s'il existe un shunt résiduel)"},
+        {"letter": "D", "text": "Bicuspidie aortique isolée"},
+        {"letter": "E", "text": "Valvulopathie dégénérative ou prolapsus mitral isolé"}
+      ],
+      "correct": ["A", "B", "C"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le haut risque regroupe antécédent d'EI, prothèses valvulaires (TAVI inclus) et matériel de réparation, cardiopathies congénitales cyanogènes, et matériel prothétique de correction pendant 6 mois (à vie si shunt résiduel). Bicuspidie, valvulopathies dégénératives, RAA, CMH et stimulateurs relèvent du risque intermédiaire : mesures d'hygiène sans antibioprophylaxie de principe."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les micro-organismes de l'endocardite infectieuse et leurs portes d'entrée, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Staphylococcus aureus est actuellement la cause la plus fréquente ; la porte d'entrée est cutanée (plaies, cathéters, toxicomanie IV, matériel implantable)"},
+        {"letter": "B", "text": "Les streptocoques oraux ont une porte d'entrée buccodentaire"},
+        {"letter": "C", "text": "Streptococcus gallolyticus (ex-bovis) a une porte digestive (cancer, polypes, diverticules) justifiant une coloscopie"},
+        {"letter": "D", "text": "Les bacilles à Gram négatif communautaires sont de loin les germes les plus souvent isolés"},
+        {"letter": "E", "text": "Les entérocoques ont une porte digestive ou urinaire"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ce sont surtout des cocci Gram+ : S. aureus (~30 %, cutané), streptocoques oraux (~20 %, dentaire), S. gallolyticus (~13 %, digestif), staphylocoques coagulase-négative et entérocoques (~10 %). Le groupe HACEK est buccodentaire. La porte n'est identifiée que dans 50 % des cas ; elle guide les examens (panoramique, coloscopie, ECBU)."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels tableaux cliniques doivent faire évoquer une endocardite infectieuse ?",
+      "options": [
+        {"letter": "A", "text": "Cardiopathie à risque et fièvre"},
+        {"letter": "B", "text": "Souffle cardiaque et fièvre, surtout si le souffle est nouveau ou modifié"},
+        {"letter": "C", "text": "Accident ischémique et fièvre"},
+        {"letter": "D", "text": "Purpura et fièvre, ou lombalgie et fièvre"},
+        {"letter": "E", "text": "L'absence de souffle permet d'exclure le diagnostic"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'EI est une maladie systémique polymorphe. L'association d'un syndrome infectieux et d'une atteinte endocardique (cardiopathie à risque, souffle, événement embolique, purpura, spondylodiscite) est très évocatrice. Toute IC fébrile doit faire penser à l'EI. L'absence de souffle n'élimine pas le diagnostic."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les hémocultures dans le diagnostic d'endocardite infectieuse, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Idéalement trois prélèvements veineux, à au moins 30 minutes d'intervalle, avant toute antibiothérapie, en aéro-anaérobie"},
+        {"letter": "B", "text": "Le sang ne doit pas être prélevé sur un cathéter déjà en place"},
+        {"letter": "C", "text": "La suspicion d'EI doit être signalée au laboratoire (germes à croissance difficile : HACEK, Brucella, levures)"},
+        {"letter": "D", "text": "Il faut débuter les antibiotiques avant les hémocultures dès qu'une EI est évoquée"},
+        {"letter": "E", "text": "Les hémocultures isolent le germe dans environ 90 % des cas (10 % d'EI à hémocultures négatives)"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Hémocultures et échographie sont les deux piliers du diagnostic. Prélever avant tout antibiotique, sur veine périphérique, en répétant si les premières sont négatives. L'antibiothérapie préalable est la 1re cause d'hémocultures négatives, avec les germes à croissance lente ou intracellulaires (Coxiella, Bartonella, Tropheryma, etc.)."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'imagerie cardiaque de l'endocardite infectieuse, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Une ETT est systématiquement réalisée en 1re intention"},
+        {"letter": "B", "text": "Une ETO est indiquée si l'ETT est positive, si elle est négative avec forte suspicion, et systématiquement en cas de matériel intracardiaque"},
+        {"letter": "C", "text": "Une échographie normale n'élimine pas le diagnostic et doit être répétée après 7 à 10 jours (ETT + ETO)"},
+        {"letter": "D", "text": "Le TEP-scanner au 18FDG est l'examen de 1re intention, avant toute échographie"},
+        {"letter": "E", "text": "Le scanner cardiaque injecté peut montrer des abcès ou des végétations non vus en échographie, notamment sur prothèse"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'échographie cherche végétations, destructions, abcès, fistules, désinsertions et évalue les fuites. L'ETO est plus sensible et obligatoire sur matériel. Une echo normale n'exclut pas l'EI. TEP-scan et scintigraphie aux leucocytes marqués aident surtout si le diagnostic reste douteux sur prothèse, pacemaker ou DAI ; ils ne précèdent pas l'ETT."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les principes de l'antibiothérapie de l'endocardite infectieuse, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Antibiothérapie bactéricide, synergique, à fortes doses, par voie IV, pendant 4 à 6 semaines"},
+        {"letter": "B", "text": "Une antibiothérapie probabiliste est débutée après les hémocultures en cas de forte suspicion, de sepsis sévère ou de chirurgie urgente"},
+        {"letter": "C", "text": "La durée de traitement reste la même même si une chirurgie cardiaque est nécessaire"},
+        {"letter": "D", "text": "Un traitement de moins d'une semaine par voie orale suffit dans toutes les EI"},
+        {"letter": "E", "text": "Un relais oral ou une poursuite parentérale ambulatoire est possible après au moins 10 jours d'IV (ou 7 jours après chirurgie) si le patient est stable, sans abcès ni indication opératoire résiduelle"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le traitement est long, IV, bactéricide et adapté à l'antibiogramme avec l'infectiologue. On ne démarre l'empirique qu'après les prélèvements, sauf urgence. La chirurgie n'abrège pas la durée. Chez des EI gauches à strepto, entérocoques ou staphylocoques stables, un relais peut être discuté après 10 jours d'IV bien menée."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la chirurgie en phase active d'endocardite infectieuse, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Une indication chirurgicale existe dans environ 50 % des cas, sans attendre la fin de l'antibiothérapie"},
+        {"letter": "B", "text": "Les indications sont hémodynamiques, infectieuses ou emboliques"},
+        {"letter": "C", "text": "Une insuffisance cardiaque gauche réfractaire ou un choc cardiogénique relèvent d'une chirurgie très urgente (dans les 24 heures)"},
+        {"letter": "D", "text": "Des végétations gauches > 10 mm persistantes après un ou plusieurs épisodes emboliques sous antibiothérapie adaptée relèvent d'une chirurgie urgente (3 à 5 jours)"},
+        {"letter": "E", "text": "Il faut toujours terminer 6 semaines d'antibiotiques avant toute chirurgie, y compris en choc cardiogénique"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Un chirurgien doit être prévenu dès le diagnostic. Le délai est très urgent (24 h) si choc ou IC réfractaire ; urgent (3-5 j) si IC, infection locale non contrôlée (abcès, fistule, BAV, désinsertion), EI sur prothèse à S. aureus, hémocultures positives > 7 jours, ou végétations > 10 mm après embolie ; non urgent (même hospitalisation) si EI fongique ou germe multirésistant."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la prévention de l'endocardite infectieuse, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Les mesures d'hygiène cutanée et buccodentaire concernent tous les patients ayant une cardiopathie à risque d'EI"},
+        {"letter": "B", "text": "L'antibioprophylaxie est limitée aux patients à haut risque avant des soins dentaires avec manipulation gingivale ou périapicale, ou en cas d'effraction muqueuse"},
+        {"letter": "C", "text": "Chez l'adulte non allergique, on administre amoxicilline (ou ampicilline) 2 g per os ou IV, 30 à 60 minutes avant le geste"},
+        {"letter": "D", "text": "Une antibioprophylaxie est indiquée avant toute coloscopie chez un porteur de prothèse valvulaire"},
+        {"letter": "E", "text": "Il faut éviter tatouages et piercings, limiter les voies veineuses, et consulter rapidement en cas de fièvre sans automédication antibiotique"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'éducation (hygiène, désinfection des plaies, asepsie, pas d'automédication) s'adresse à tous les patients à risque. L'antibioprophylaxie n'a d'indication que chez les hauts risques pour certains gestes dentaires : amoxicilline 2 g 30-60 min avant. Une coloscopie n'est pas une situation d'antibioprophylaxie dans ce chapitre."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'endocardite du cœur droit et l'endocardite sur prothèse, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "L'EI droite touche surtout toxicomanes IV, porteurs de stimulateur/défibrillateur, de voie veineuse centrale, et certaines cardiopathies congénitales droites"},
+        {"letter": "B", "text": "Les végétations droites embolisent dans le poumon : pneumopathies infectieuses récidivantes souvent abcédées"},
+        {"letter": "C", "text": "Les staphylocoques sont les germes les plus fréquents chez le toxicomane et le porteur de pacemaker ou de DAI"},
+        {"letter": "D", "text": "En cas d'EI sur stimulateur, défibrillateur ou cathéter central, le matériel doit être extrait en plus de l'antibiothérapie"},
+        {"letter": "E", "text": "Une EI sur prothèse est dite précoce lorsqu'elle survient plus d'un an après l'implantation"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'EI droite se manifeste par des embolies pulmonaires septiques plus que par des AVC. Le matériel infecté doit être retiré. Sur prothèse, l'EI précoce survient dans l'année (contamination périopératoire) ; l'EI tardive au-delà d'un an. Le risque est identique sur bio et mécanique, le pronostic plus sévère que sur valve native."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les complications et signes extracardiaques de l'endocardite infectieuse, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "La mortalité hospitalière est de l'ordre de 15 à 30 % ; les principales causes de décès sont l'insuffisance cardiaque aiguë et les complications neurologiques"},
+        {"letter": "B", "text": "Un abcès septal d'EI aortique peut interrompre les voies de conduction et se manifester par un BAV, des syncopes ou des lipothymies"},
+        {"letter": "C", "text": "Les nodosités d'Osler sont considérées comme pathognomoniques ; les placards palmoplantaires de Janeway sont des phénomènes vasculaires"},
+        {"letter": "D", "text": "Les signes cutanéomuqueux (purpura, Osler, Janeway, hémorragies sous-unguéales) sont présents dans plus de 80 % des EI"},
+        {"letter": "E", "text": "Staphylococcus aureus et les champignons sont des micro-organismes de mauvais pronostic"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'EI reste grave (IC, embolies, anévrismes mycotiques, choc, BAV, foyers secondaires). Les signes cutanés ne s'observent que dans 5 à 15 % des cas, mais Osler a une grande valeur. Mauvais pronostic : IC aiguë, neurologique, sepsis non contrôlé, abcès, prothèse, végétations volumineuses, S. aureus ou champignons, terrain fragile."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les types de prothèses valvulaires, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "On distingue deux grands types : prothèses mécaniques et prothèses biologiques"},
+        {"letter": "B", "text": "Parmi les bioprothèses, on sépare les prothèses chirurgicales et les prothèses percutanées (TAVI/TAVR)"},
+        {"letter": "C", "text": "Les mécaniques actuellement les plus implantées sont les valves à double ailette"},
+        {"letter": "D", "text": "Toute prothèse, corps étranger, majore le risque d'endocardite infectieuse par rapport à une valve native"},
+        {"letter": "E", "text": "Les anticoagulants oraux directs sont le traitement de 1re intention des prothèses mécaniques"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mécaniques (titane/carbone, collerette en dacron) et bio (xénogreffes chirurgicales ou TAVI, plus rarement homo/autogreffes). Les double ailettes sont moins thrombogènes que bille ou monodisque. Les AOD sont formellement contre-indiqués sur mécanique, même transitoirement. Toute prothèse justifie une prophylaxie d'EI soigneuse."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'anticoagulation des porteurs de prothèse valvulaire, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Une prothèse mécanique impose un traitement par AVK à vie ; les AOD sont formellement contre-indiqués, même de façon transitoire"},
+        {"letter": "B", "text": "Un relais peut faire appel à l'héparine non fractionnée ou aux HBPM"},
+        {"letter": "C", "text": "Les bioprothèses aortiques en rythme sinusal ne nécessitent pas d'anticoagulation au long cours"},
+        {"letter": "D", "text": "Après TAVI, en rythme sinusal, une antiagrégation par aspirine à faible dose au long cours est recommandée"},
+        {"letter": "E", "text": "Au-delà du 3e mois, les AOD restent contre-indiqués sur toute bioprothèse, y compris en cas de fibrillation atriale"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mécanique = AVK à vie, jamais d'AOD. Bio aortique : aspirine ou AVK 3 mois puis rien si sinus ; bio mitrale : AVK 3 mois. TAVI : aspirine seule au long cours si sinus, anticoagulation si FA. Sur bioprothèse, les AOD sont autorisés après 3 mois si l'indication n'est pas valvulaire, et envisageables plus tôt en FA."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les valeurs cibles d'INR des prothèses mécaniques, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "La cible d'INR dépend du risque thrombotique de la prothèse et des facteurs de risque liés au patient"},
+        {"letter": "B", "text": "Les facteurs de risque patient comprennent notamment la position mitrale ou tricuspide, un antécédent thromboembolique, une FA, une sténose mitrale et une FEVG < 35 %"},
+        {"letter": "C", "text": "Pour une prothèse à faible risque thrombotique sans facteur de risque patient, l'INR cible est de 2,5"},
+        {"letter": "D", "text": "Les prothèses de Starr (cage à bille) et de Björk-Shiley (disque) sont à risque thrombotique élevé"},
+        {"letter": "E", "text": "Après la première année, la surveillance de l'INR peut être arrêtée si le patient est asymptomatique"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'INR cible va de 2,5 à 4,0 selon le couple « prothèse / patient ». Une variation de 0,5 point autour de la cible est tolérée. La surveillance est initiale 1-2 fois/semaine puis au moins mensuelle, à vie. L'éducation et, si possible, l'auto-INR (remboursé pour les mécaniques) visent un équilibre parfait, objectif principal du suivi par le médecin traitant."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant une suspicion de thrombose obstructive de prothèse mécanique, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "L'auscultation peut montrer une diminution des bruits de prothèse et l'apparition ou le renforcement d'un souffle (systolique si aortique, roulement diastolique si mitrale)"},
+        {"letter": "B", "text": "Le tableau peut être brutal : OAP, syncope, choc, voire mort subite"},
+        {"letter": "C", "text": "Un traitement anticoagulant insuffisant est souvent en cause : l'INR doit être vérifié en urgence"},
+        {"letter": "D", "text": "Le patient est hospitalisé en USIC et placé sous héparine IV et aspirine"},
+        {"letter": "E", "text": "Un AOD est débuté d'emblée pour « déboucher » la prothèse mécanique"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La thrombose obstructive bloque le jeu de l'élément mobile : bruits diminués, gradients élevés, thrombus en ETO/scanner, parfois radiocinéma. C'est une urgence (USIC, HNF + aspirine). La chirurgie de changement peut s'imposer ; la thrombolyse se discute si contre-indication opératoire. Les AOD n'ont aucune place sur une mécanique."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la dégénérescence des bioprothèses et la désinsertion de prothèse, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "La détérioration tissulaire des bioprothèses est inexorable (calcifications ou déchirure) et conduit à une sténose et/ou une fuite"},
+        {"letter": "B", "text": "Elle survient en général en 5 à 15 ans, plus précoce en position mitrale et chez le sujet jeune"},
+        {"letter": "C", "text": "Une désinsertion crée une fuite paraprothétique ; une endocardite doit toujours être évoquée"},
+        {"letter": "D", "text": "Une hémolyse mécanique se traduit par une élévation des LDH, une baisse de l'haptoglobine et des schizocytes"},
+        {"letter": "E", "text": "Les prothèses mécaniques présentent la même dégénérescence tissulaire calcifiée que les bioprothèses, en moyenne à 10 ans"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La bio se calcifie ou se déchire ; le diagnostic repose sur un souffle modifié, des symptômes d'effort et l'ETT (scanner pour distinguer une thrombose). La désinsertion (lâchage de suture ou EI) donne une fuite para-prothétique et souvent une hémolyse mécanique. Les mécaniques n'ont pas cette dégénérescence tissulaire ; leur durabilité est prévue pour la vie du patient hors complication."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la surveillance au long cours d'un porteur de prothèse valvulaire, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Le patient doit détenir une carte précisant type, diamètre et numéro de série de la prothèse"},
+        {"letter": "B", "text": "Le suivi dentaire est au moins biannuel, avec antibioprophylaxie car le patient est à haut risque d'EI"},
+        {"letter": "C", "text": "L'ETT réalisée au 2e-4e mois postopératoire est l'examen de référence"},
+        {"letter": "D", "text": "Le suivi cardiologique ultérieur est de 1 à 2 fois par an"},
+        {"letter": "E", "text": "Une ETO annuelle systématique est recommandée chez tout porteur asymptomatique de prothèse mécanique"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Carte de prothèse, carnet d'INR si mécanique, carte d'antibioprophylaxie dentaire. L'ETT précoce (J8 puis 2e-4e mois) sert de référence ; ensuite ETT tous les 1-2 ans (mécanique) ou annuelle (bio). L'ETO n'est pas un examen de routine : elle est indiquée si suspicion de thrombose, d'EI ou de désinsertion, surtout en position mitrale."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant une fièvre inexpliquée chez un porteur de prothèse valvulaire, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Des hémocultures systématiques sont indispensables avant toute antibiothérapie prescrite à l'aveugle"},
+        {"letter": "B", "text": "L'ETT et l'ETO cherchent végétations, désinsertion avec fuite paraprothétique et abcès"},
+        {"letter": "C", "text": "L'EI postopératoire précoce (jusqu'à 1 an) est souvent staphylococcique, se complique d'abcès et de désinsertion, et a une mortalité de l'ordre de 50 %"},
+        {"letter": "D", "text": "Le TEP-scanner peut aider lorsque le diagnostic d'EI sur prothèse reste difficile"},
+        {"letter": "E", "text": "Une antibiothérapie orale d'emblée pendant 48 heures est recommandée, les hémocultures étant réalisées ensuite si la fièvre persiste"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Toute fièvre sur prothèse est une EI jusqu'à preuve du contraire : hémocultures d'abord, jamais d'antibiotique à l'aveugle. L'imagerie multimodale (ETO, scanner, TEP) dresse le bilan. L'EI précoce, souvent nosocomiale à staphylocoque, est particulièrement grave et nécessite souvent une réintervention. Le dossier relève de l'équipe endocardite."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le choix d'une prothèse et l'auscultation de surveillance, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Les mécaniques sont généralement préférées avant 60 ans en position aortique et avant 65 ans en position mitrale"},
+        {"letter": "B", "text": "Les bioprothèses sont généralement indiquées à partir de 65 ans en aortique et de 70 ans en mitral"},
+        {"letter": "C", "text": "Après 75 ans, il y a un consensus pour envisager le TAVI en 1re intention si l'anatomie est favorable"},
+        {"letter": "D", "text": "Les prothèses mécaniques ont des bruits d'ouverture et surtout de fermeture intenses, claqués, métalliques"},
+        {"letter": "E", "text": "La perception de bruits métalliques d'une mécanique récente impose un changement de prothèse"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le choix balance thrombose/hémorragie (mécanique) et dégénérescence/réintervention (bio), en tenant compte de l'âge, du rythme, du désir de grossesse et du souhait du patient. Le TAVI est 1re intention après 75 ans si anatomie favorable. Les bruits métalliques sont l'auscultation normale d'une mécanique ; c'est leur diminution, un souffle nouveau ou un roulement diastolique qui sont pathologiques."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la fréquence et la nature des souffles cardiaques de l'enfant, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "90 % des souffles du nourrisson sont organiques"},
+        {"letter": "B", "text": "Plus des trois quarts des souffles de l'enfant d'âge scolaire sont fonctionnels"},
+        {"letter": "C", "text": "Un souffle innocent est rencontré au cours de l'enfance chez un tiers à la moitié des enfants d'âge scolaire"},
+        {"letter": "D", "text": "Les malformations cardiaques congénitales touchent 1 % des enfants à la naissance"},
+        {"letter": "E", "text": "En Occident, les valvulopathies rhumatismales restent la première cause de souffle organique de l'enfant"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'âge oriente d'emblée : organique chez le nourrisson, le plus souvent innocent à l'âge scolaire. Les cardiopathies organiques de l'enfant sont presque toujours congénitales (1 % des naissances) ; les valvulopathies rhumatismales ont disparu en Occident. Le souffle, source d'anxiété parentale, est parfois le seul point d'appel d'une malformation."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles sont les caractéristiques d'un souffle anorganique (« innocent ») de l'enfant ?",
+      "options": [
+        {"letter": "A", "text": "Isolé, chez un enfant asymptomatique, sans autre anomalie de l'examen cardiovasculaire"},
+        {"letter": "B", "text": "Systolique (jamais diastolique), parfois continu s'il s'agit d'un souffle veineux du cou"},
+        {"letter": "C", "text": "Proto- ou mésosystolique, bref (premier tiers de la systole), jamais télésystolique, d'intensité < 3/6"},
+        {"letter": "D", "text": "Souvent d'intensité variable avec la position, doux, sans irradiation ni frémissement"},
+        {"letter": "E", "text": "Holodiastolique, intense 4/6, avec thrill précordial"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le souffle innocent n'a aucun substrat anatomique : cœur sain, disparition fréquente avec l'âge. Il est bref, peu intense, peu irradiant, parfois musical et variable. Un souffle diastolique, un thrill, une irradiation large ou un holodiastolique sont organiques. B1 et B2 ne sont pas modifiés (un DB2 variable reste possible)."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels éléments auscultatoires font retenir un souffle organique plutôt qu'innocent chez l'enfant ?",
+      "options": [
+        {"letter": "A", "text": "Un souffle diastolique ou un double souffle est toujours organique"},
+        {"letter": "B", "text": "Un souffle frémissant (thrill) est toujours organique"},
+        {"letter": "C", "text": "Un souffle bruyant, irradiant largement, est a priori organique"},
+        {"letter": "D", "text": "Un souffle variable dans le temps et avec la position est pratiquement toujours innocent"},
+        {"letter": "E", "text": "Un souffle 2/6 proto-mésosystolique, sans irradiation, chez un écolier asymptomatique est a priori organique"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Diastolique, thrill, irradiation large, clic, DB2 fixe, éclat de B2 orientent vers l'organique. À l'inverse, variabilité positionnelle et intensité faible sans irradiation plaident pour l'innocent (caractère inconstant). Il n'y a pas de corrélation entre l'intensité d'un souffle et la gravité : une petite CIV peut être très bruyante, une cardiopathie grave silencieuse."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant un souffle cardiaque en période néonatale, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Même si le nouveau-né est asymptomatique, le souffle est toujours potentiellement pathologique"},
+        {"letter": "B", "text": "Une échographie cardiaque est nécessaire avant la sortie de maternité"},
+        {"letter": "C", "text": "La coarctation aortique s'accompagne de pouls fémoraux abolis et d'un souffle systolique doux sous-claviculaire gauche irradiant en interscapulaire"},
+        {"letter": "D", "text": "La transposition des gros vaisseaux est une cause classique de cyanose néonatale, généralement sans souffle"},
+        {"letter": "E", "text": "On peut rassurer sans examen car 90 % des souffles néonataux sont innocents"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le souffle du nouveau-né n'est pas « innocent par défaut » : ETT avant la sortie. La coarctation se révèle souvent à la fermeture du canal artériel (pouls fémoraux abolis, chirurgie urgente). La TGV est l'urgence cyanotique typique sans souffle. Les souffles innocents sont rares chez le nouveau-né et le nourrisson, à l'inverse de l'âge scolaire."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les particularités de l'auscultation cardiaque de l'enfant, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Une arythmie sinusale respiratoire, physiologique, peut être très marquée"},
+        {"letter": "B", "text": "Un dédoublement de B2 variable avec la respiration, le long du bord sternal gauche, est fréquent et physiologique"},
+        {"letter": "C", "text": "Un dédoublement de B2 large et fixe est anormal (communication interatriale ou bloc de branche droit)"},
+        {"letter": "D", "text": "Un B3 à l'apex est fréquent (environ 50 % des enfants) et physiologique"},
+        {"letter": "E", "text": "Un éclat de B2 le long du bord sternal gauche est toujours physiologique chez l'enfant"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Chez l'enfant, tachycardie, arythmie sinusale respiratoire, DB2 variable et B3 apical sont banals. En revanche, un DB2 large fixe, un éclat de B2 (HTAP), un clic protosystolique (sténose d'un gros vaisseau) ou un clic mésosystolique apexien (prolapsus) sont anormaux et font adresser à un cardiopédiatre."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Lorsqu'un souffle innocent typique est identifié chez un enfant d'âge scolaire, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Si toutes les caractéristiques d'un souffle innocent sont réunies, aucun examen complémentaire n'est indiqué"},
+        {"letter": "B", "text": "Aucune thérapeutique, surveillance particulière ni restriction d'activité n'est justifiée ; tous les sports, y compris en compétition, sont autorisés"},
+        {"letter": "C", "text": "Il est inutile de revoir l'enfant ; une conclusion ferme dès le premier examen rassure la famille"},
+        {"letter": "D", "text": "Fièvre, effort, émotion, anémie ou hyperthyroïdie peuvent majorer un souffle innocent"},
+        {"letter": "E", "text": "Une contre-indication au sport et un traitement bêtabloquant s'imposent jusqu'à une ETT de contrôle annuelle"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'enfant n'est pas malade : cœur sain, pas d'ETT si le tableau est typique, pas de suivi ni de restriction. L'ETT n'est faite qu'en cas de doute. L'hyperdébit (fièvre, anémie, etc.) et certains thorax (dos plat, entonnoir) favorisent le souffle. Une conclusion claire évite l'anxiété iatrogène."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels signes associés à un souffle doivent faire adresser l'enfant à un cardiopédiatre ?",
+      "options": [
+        {"letter": "A", "text": "Frémissement précordial ou sus-sternal (toujours pathologique)"},
+        {"letter": "B", "text": "Hypertension artérielle avec diminution ou abolition des pouls fémoraux (coarctation)"},
+        {"letter": "C", "text": "Hépatomégalie, signe le plus pertinent d'insuffisance cardiaque chez le nourrisson et l'enfant"},
+        {"letter": "D", "text": "Cyanose, retard staturopondéral non expliqué, dédoublement fixe de B2, éclat de B2, clic protosystolique ou galop"},
+        {"letter": "E", "text": "Des œdèmes des membres inférieurs sont le signe cardinal et constant d'insuffisance cardiaque chez l'enfant"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IC de l'enfant se manifeste surtout par polypnée, difficultés alimentaires, cassure pondérale, tachycardie et hépatomégalie ; les OMI sont exceptionnels. Cyanose cardiaque (hypoxie réfractaire à l'O2), anomalie des pouls, thrill et bruits surajoutés imposent l'avis spécialisé. Un syndrome polymalformatif (T21, 22q11, Turner, Williams, Noonan, CHARGE, Marfan) justifie une ETT même sans souffle."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les contextes et signes d'appel d'une cardiopathie de l'enfant, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Trisomie 21, microdélétion 22q11, Turner, Williams-Beuren, Noonan, CHARGE et Marfan s'accompagnent fréquemment de cardiopathies : échocardiographie systématique"},
+        {"letter": "B", "text": "Un contexte de cardiopathie congénitale chez un apparenté du 1er degré doit faire adresser l'enfant au cardiopédiatre"},
+        {"letter": "C", "text": "Chez le nouveau-né et le nourrisson, cyanose et/ou insuffisance cardiaque (difficultés alimentaires, retard staturopondéral, polypnée) font suspecter une cardiopathie"},
+        {"letter": "D", "text": "L'hypoxie d'origine cardiaque est réfractaire à l'oxygène, contrairement à l'hypoxie bronchopulmonaire"},
+        {"letter": "E", "text": "Il existe toujours un parallélisme entre l'intensité du souffle et la gravité de la cardiopathie sous-jacente"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Certains syndromes et antécédents familiaux imposent une ETT, souffle ou non. Chez le petit, l'IC est souvent « digestive » ou respiratoire. La SaO2 confirme la cyanose (clinique < 85 %) et sa réfractaire à l'O2 oriente vers le cœur. Une cardiopathie grave peut être sans souffle (TGV) ; une petite CIV peut être très intense."
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QCM cardio — collège CNEC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f3efe6;
+      --card: #faf7f0;
+      --ink: #1a2a22;
+      --muted: #5a6a60;
+      --line: #cfc6b4;
+      --ok: #166534;
+      --ok-bg: #dcfce7;
+      --bad: #991b1b;
+      --bad-bg: #fee2e2;
+      --accent: #1f5c45;
+      --warn: #8a5a12;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Manrope", system-ui, sans-serif;
+      background: radial-gradient(90% 60% at 100% 0%, #e5ecdf, transparent 50%), var(--bg);
+      color: var(--ink);
+      line-height: 1.45;
+    }
+    main { max-width: 42rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+    h1 { font-size: 1.25rem; margin: 0 0 0.35rem; }
+    .sub { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem; }
+    .meta { color: var(--muted); font-size: 0.9rem; }
+    a { color: var(--accent); }
+    .nav-chips {
+      display: flex; flex-wrap: wrap; gap: 0.4rem;
+      margin: 0 0 1.15rem; padding: 0; list-style: none;
+    }
+    .nav-chips button {
+      font-size: 0.78rem; font-weight: 600; color: var(--muted);
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 999px; padding: 0.4rem 0.7rem; cursor: pointer; font-family: inherit;
+    }
+    .nav-chips button.active { color: #fff; background: var(--accent); border-color: var(--accent); }
+    .card {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.1rem 1.15rem; margin-bottom: 1rem;
+    }
+    .card h2 {
+      font-size: 0.95rem; margin: 0 0 0.75rem;
+      letter-spacing: 0.02em; text-transform: uppercase; color: var(--muted);
+    }
+    .chapters { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem 0.75rem; }
+    @media (max-width: 520px) { .chapters { grid-template-columns: 1fr; } }
+    .chapters label {
+      display: flex; gap: 0.5rem; align-items: flex-start;
+      font-size: 0.92rem; cursor: pointer; padding: 0.35rem 0.2rem;
+    }
+    .group-title { font-size: 0.8rem; color: var(--muted); margin: 0.7rem 0 0.25rem; grid-column: 1 / -1; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: end; }
+    .field label { display: block; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.3rem; }
+    input[type="number"], select {
+      font: inherit; padding: 0.4rem 0.55rem; border-radius: 8px;
+      border: 1px solid var(--line); background: #fff; min-width: 5.5rem;
+    }
+    .hint { font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem; }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 0.65rem; }
+    header.quiz-bar {
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      gap: 0.75rem; align-items: center; margin-bottom: 1rem;
+    }
+    .stem { font-size: 1.05rem; margin: 0 0 1rem; white-space: pre-wrap; }
+    .choice {
+      display: flex; gap: 0.65rem; align-items: flex-start;
+      padding: 0.65rem 0.7rem; border: 1px solid var(--line);
+      border-radius: 10px; margin-bottom: 0.5rem; cursor: pointer; background: var(--card);
+    }
+    .choice:has(input:checked) { border-color: var(--accent); background: #e3efe8; }
+    .choice.reveal-ok { border-color: #86efac; background: var(--ok-bg); }
+    .choice.reveal-bad { border-color: #fca5a5; background: var(--bad-bg); }
+    .choice.reveal-miss { border-color: #86efac; background: var(--ok-bg); outline: 1px dashed var(--ok); }
+    .choice input { margin-top: 0.2rem; }
+    .why { display: none; margin: 0.35rem 0 0; font-size: 0.9rem; color: var(--muted); }
+    .revealed .why { display: block; }
+    .mark { font-weight: 700; font-size: 0.85rem; }
+    .mark.ok { color: var(--ok); }
+    .mark.bad { color: var(--bad); }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+    button.pill, .actions button {
+      border: 1px solid var(--accent); background: var(--accent); color: #fff;
+      border-radius: 999px; padding: 0.55rem 1rem; font: inherit; font-weight: 650; cursor: pointer;
+    }
+    button.secondary, .actions button.secondary {
+      background: var(--card); color: var(--ink); border-color: var(--line);
+    }
+    button:disabled { opacity: 0.45; cursor: not-allowed; }
+    .score-box {
+      margin-top: 0.85rem; padding: 0.7rem 0.8rem; border-radius: 10px;
+      background: #ebe6dc; display: none;
+    }
+    .score-box.show { display: block; }
+    .tags { margin-top: 0.75rem; font-size: 0.8rem; color: var(--muted); }
+    .hidden { display: none !important; }
+    .big-score {
+      font-size: 2.4rem; font-weight: 700; letter-spacing: -0.03em; margin: 0.25rem 0 0.5rem;
+    }
+    .feedback-block { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+    .feedback-block h3 { font-size: 1rem; margin: 0 0 0.5rem; }
+    .feedback-block ul { margin: 0; padding-left: 1.15rem; }
+    .feedback-block li { margin-bottom: 0.4rem; }
+    .weak-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
+    .chip {
+      font-size: 0.8rem; padding: 0.2rem 0.55rem; border-radius: 999px;
+      background: #fef3c7; border: 1px solid #fcd34d;
+    }
+    .recap { margin-top: 1rem; font-size: 0.9rem; color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th, td { padding: 0.45rem 0.35rem; border-bottom: 1px solid var(--line); text-align: left; }
+    th { color: var(--muted); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; }
+    .bar { height: 8px; background: #ebe6dc; border-radius: 99px; min-width: 70px; overflow: hidden; display: inline-block; vertical-align: middle; }
+    .bar > i { display: block; height: 100%; background: var(--ok); }
+    .bar.warn > i { background: var(--warn); }
+    .bar.bad > i { background: var(--bad); }
+    img.qimg { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; margin: 0 0 1rem; background: #fff; }
+    .err { color: var(--bad); }
+  </style>
+</head>
+<body>
+  <main>
+    <ul class="nav-chips">
+      <li><button type="button" id="tab-setup" class="active">Session</button></li>
+      <li><button type="button" id="tab-suivi">Suivi</button></li>
+    </ul>
+    <div id="view"></div>
+    <p class="hint">Si la banque ne charge pas : <code>lancer.bat</code> puis http://127.0.0.1:8765/</p>
+  </main>
+<script>
+const STORE = "college-cardio-qcm-v1";
+const UNESS = ["234", "233RA", "233IM", "232", "339", "231", "152", "342", "226", "230"];
+let BANK = null;
+let view = "setup";
+let session = null;
+let originMode = "nouveau";
+let formatMode = "all";
+
+const $ = (id) => document.getElementById(id);
+const viewEl = $("view");
+
+function loadStats() {
+  try { return JSON.parse(localStorage.getItem(STORE)) || { byItem: {}, sessions: [] }; }
+  catch { return { byItem: {}, sessions: [] }; }
+}
+function saveStats(s) { localStorage.setItem(STORE, JSON.stringify(s)); }
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function scoreQ(q, selected) {
+  const sel = new Set(selected);
+  const cor = new Set(q.correct);
+  const letters = q.options.map((o) => o.letter);
+  const pczMiss = (q.pcz || []).some((l) => !sel.has(l));
+  const sczHit = (q.scz || []).some((l) => sel.has(l));
+  if (pczMiss || sczHit) return { exact: false, pts: 0, max: letters.length, pczMiss, sczHit };
+  let pts = 0;
+  for (const L of letters) if (sel.has(L) === cor.has(L)) pts++;
+  return { exact: pts === letters.length && sel.size === cor.size, pts, max: letters.length, pczMiss: false, sczHit: false };
+}
+
+function itemLabel(id) {
+  return (BANK.items.find((x) => x.id === id) || {}).label || id;
+}
+
+function countFor(it) {
+  if (originMode === "nouveau") return it.nNouveau || 0;
+  if (originMode === "college") return it.nCollege || 0;
+  return (it.nNouveau || 0) + (it.nCollege || 0);
+}
+
+function poolFor(ids) {
+  return BANK.questions.filter((q) => {
+    if (!ids.includes(q.item)) return false;
+    if (originMode !== "both" && (q.origin || "college") !== originMode) return false;
+    if (formatMode === "all") return true;
+    return (q.format || "standard") === formatMode;
+  });
+}
+
+function selectedIds() {
+  return [...document.querySelectorAll("#chapter-list input:checked")].map((i) => i.value);
+}
+
+async function boot() {
+  try {
+    BANK = await (await fetch("bank.json")).json();
+  } catch (e) {
+    viewEl.innerHTML = `<div class="card err">Impossible de charger <code>bank.json</code>. Lance <code>lancer.bat</code>.</div>`;
+    return;
+  }
+  $("tab-setup").onclick = () => {
+    if (session && session.phase === "quiz") view = "quiz";
+    else if (session && session.phase === "done") view = "results";
+    else view = "setup";
+    render();
+  };
+  $("tab-suivi").onclick = () => { view = "suivi"; render(); };
+  render();
+}
+
+function render() {
+  $("tab-setup").classList.toggle("active", view !== "suivi");
+  $("tab-suivi").classList.toggle("active", view === "suivi");
+  if (view === "setup") renderSetup();
+  else if (view === "quiz") renderQuiz();
+  else if (view === "results") renderResults();
+  else renderSuivi();
+}
+
+function updatePoolHint() {
+  const hint = $("pool-hint");
+  const start = $("btn-start");
+  const qcount = $("qcount");
+  if (!hint) return;
+  const ids = selectedIds();
+  const n = poolFor(ids).length;
+  const nN = (BANK.origins || {}).nouveau || 0;
+  const nC = (BANK.origins || {}).college || 0;
+  const nCase = (BANK.formats || {}).cas_clinique || 0;
+  if (!ids.length) hint.textContent = "Coche au moins un item.";
+  else hint.textContent = `${n} question${n > 1 ? "s" : ""} dans le lot · banque : ${nN} neuves · ${nC} QI livre · ${nCase} cas cliniques.`;
+  if (qcount) {
+    qcount.max = Math.max(1, n || 1);
+    if (Number(qcount.value) > n && n > 0) qcount.value = n;
+  }
+  if (start) start.disabled = !ids.length || n === 0;
+}
+
+function renderSetup() {
+  const groups = {};
+  for (const it of BANK.items) (groups[it.group] ||= []).push(it);
+  let list = "";
+  for (const [g, items] of Object.entries(groups)) {
+    list += `<div class="group-title">${g}</div>`;
+    for (const it of items) {
+      list += `<label><input type="checkbox" value="${it.id}" checked /> <span>${it.label} <span class="meta">(${countFor(it)}${it.highYield ? " · prio" : ""})</span></span></label>`;
+    }
+  }
+  viewEl.innerHTML = `
+    <h1>Test QCM — Cardiologie</h1>
+    <p class="sub">Coche les items, lance, valide : le corrigé s’affiche tout de suite. « Prio » = items qui tombent le plus aux partiels.</p>
+    <div class="card">
+      <h2>Items</h2>
+      <div class="toolbar">
+        <button type="button" class="secondary pill" id="btn-all">Tout</button>
+        <button type="button" class="secondary pill" id="btn-none">Aucun</button>
+        <button type="button" class="secondary pill" id="btn-uness">Priorité partiels</button>
+      </div>
+      <div class="chapters" id="chapter-list">${list}</div>
+    </div>
+    <div class="card">
+      <h2>Session</h2>
+      <div class="row">
+        <div class="field">
+          <label for="origin">Banque</label>
+          <select id="origin">
+            <option value="nouveau"${originMode === "nouveau" ? " selected" : ""}>Questions neuves</option>
+            <option value="college"${originMode === "college" ? " selected" : ""}>QI du livre</option>
+            <option value="both"${originMode === "both" ? " selected" : ""}>Les deux</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="format">Format</label>
+          <select id="format">
+            <option value="all"${formatMode === "all" ? " selected" : ""}>Tout</option>
+            <option value="standard"${formatMode === "standard" ? " selected" : ""}>QCM standards</option>
+            <option value="cas_clinique"${formatMode === "cas_clinique" ? " selected" : ""}>Cas cliniques</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="qcount">Nombre de questions</label>
+          <input type="number" id="qcount" min="1" max="800" value="20" />
+        </div>
+      </div>
+      <p class="hint" id="pool-hint">—</p>
+      <div class="actions">
+        <button type="button" id="btn-start">Commencer</button>
+      </div>
+    </div>`;
+  $("origin").onchange = () => { originMode = $("origin").value; renderSetup(); };
+  $("format").onchange = () => { formatMode = $("format").value; updatePoolHint(); };
+  $("btn-all").onclick = () => { document.querySelectorAll("#chapter-list input").forEach((i) => i.checked = true); updatePoolHint(); };
+  $("btn-none").onclick = () => { document.querySelectorAll("#chapter-list input").forEach((i) => i.checked = false); updatePoolHint(); };
+  $("btn-uness").onclick = () => {
+    document.querySelectorAll("#chapter-list input").forEach((i) => i.checked = UNESS.includes(i.value));
+    updatePoolHint();
+  };
+  $("chapter-list").onchange = updatePoolHint;
+  $("qcount").oninput = updatePoolHint;
+  $("btn-start").onclick = () => {
+    const ids = selectedIds();
+    const n = Math.min(Math.max(1, Number($("qcount").value) || 20), poolFor(ids).length);
+    beginSession(ids, n);
+  };
+  updatePoolHint();
+}
+
+function beginSession(ids, nWanted) {
+  if (!ids.length) { alert("Choisis au moins un item."); return; }
+  let pool = shuffle(poolFor(ids));
+  const n = Math.min(nWanted, pool.length);
+  if (!n) { alert("Pas de questions pour ces items."); return; }
+  session = {
+    phase: "quiz",
+    items: ids,
+    qs: pool.slice(0, n).map((q) => ({ ...q, picked: [], revealed: false })),
+    i: 0,
+  };
+  view = "quiz";
+  render();
+}
+
+function renderQuiz() {
+  const q = session.qs[session.i];
+  const n = session.qs.length;
+  const revealed = !!q.revealed;
+  const cor = new Set(q.correct);
+  const sel = new Set(q.picked);
+  const kind = q.kind === "QRU" ? "QRU" : "QRM";
+  const origin = q.origin === "nouveau" ? "neuve" : "QI livre";
+  const format = q.format === "cas_clinique" ? "cas clinique" : "standard";
+  if (revealed && !q._sc) q._sc = scoreQ(q, q.picked);
+
+  let choices = "";
+  for (const o of q.options) {
+    const should = cor.has(o.letter);
+    const did = sel.has(o.letter);
+    let cls = "choice";
+    if (revealed) {
+      if (should) cls += did ? " reveal-ok" : " reveal-miss";
+      else if (did) cls += " reveal-bad";
+    }
+    const pcz = (q.pcz || []).includes(o.letter) ? " · PCZ" : "";
+    const scz = (q.scz || []).includes(o.letter) ? " · SCZ" : "";
+    const extra = o.why ? ` — ${esc(o.why)}` : "";
+    const why = revealed
+      ? `<span class="why"><span class="mark ${should ? "ok" : "bad"}">${should ? "Vrai" : "Faux"}</span>${pcz}${scz}${extra}</span>`
+      : `<span class="why"></span>`;
+    const type = q.kind === "QRU" ? "radio" : "checkbox";
+    choices += `<label class="${cls}" data-letter="${o.letter}">
+      <input type="${type}" name="choice" value="${o.letter}" ${did ? "checked" : ""} ${revealed ? "disabled" : ""} />
+      <span><strong>${o.letter}.</strong> ${esc(o.text)}${why}</span>
+    </label>`;
+  }
+
+  let scoreBox = "";
+  if (revealed) {
+    const sc = q._sc;
+    const pickedTxt = q.picked.length ? q.picked.join(", ") : "(rien)";
+    scoreBox = sc.exact
+      ? `<strong>OK</strong> — réponse <strong>${q.correct.join(", ")}</strong>.`
+      : `<strong>À revoir</strong> — tu as coché <strong>${pickedTxt}</strong> · corrigé <strong>${q.correct.join(", ")}</strong>${sc.pczMiss ? " · PCZ manqué (0)" : ""}${sc.sczHit ? " · SCZ coché (0)" : ""}.`;
+    scoreBox += `<div style="margin-top:0.55rem">${esc(q.explanation).replace(/\*\*/g, "")}</div>`;
+  }
+
+  viewEl.innerHTML = `
+    <header class="quiz-bar">
+      <h1>Session en cours</h1>
+      <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · ${kind} · ${format} · ${origin}</div>
+    </header>
+    <div class="card ${revealed ? "revealed" : ""}">
+      <p class="stem">${esc(q.prompt)}</p>
+      ${(q.images || []).map((im) => `<img class="qimg" alt="${esc(im.alt)}" src="${esc(im.src)}" />`).join("")}
+      <div id="choices">${choices}</div>
+      <div class="score-box ${revealed ? "show" : ""}">${scoreBox}</div>
+      <div class="actions">
+        <button type="button" id="btn-validate" ${revealed ? "disabled" : ""}>Valider / Corrigé</button>
+        <button type="button" class="secondary" id="btn-next" ${revealed ? "" : "disabled"}>${session.i === n - 1 ? "Résultat" : "Suivant"}</button>
+        <button type="button" class="secondary" id="btn-abort">Abandonner</button>
+      </div>
+    </div>`;
+
+  if (!revealed) {
+    viewEl.querySelectorAll("#choices input").forEach((inp) => {
+      inp.onchange = () => {
+        if (q.kind === "QRU") q.picked = [inp.value];
+        else q.picked = [...viewEl.querySelectorAll("#choices input:checked")].map((i) => i.value).sort();
+      };
+    });
+    $("btn-validate").onclick = () => {
+      if (q.kind === "QRU") {
+        const one = viewEl.querySelector("#choices input:checked");
+        q.picked = one ? [one.value] : [];
+      } else {
+        q.picked = [...viewEl.querySelectorAll("#choices input:checked")].map((i) => i.value).sort();
+      }
+      q.revealed = true;
+      q._sc = scoreQ(q, q.picked);
+      renderQuiz();
+    };
+  } else {
+    $("btn-next").onclick = () => {
+      if (session.i === n - 1) finishSession();
+      else { session.i++; render(); }
+    };
+  }
+  $("btn-abort").onclick = () => {
+    const done = session.qs.some((x) => x.revealed);
+    if (done) finishSession();
+    else { session = null; view = "setup"; render(); }
+  };
+}
+
+function finishSession() {
+  const answered = session.qs.filter((q) => q.revealed);
+  if (!answered.length) { session = null; view = "setup"; render(); return; }
+  const stats = loadStats();
+  const perItem = {};
+  let exactN = 0, pts = 0, max = 0;
+  for (const q of answered) {
+    const sc = q._sc || scoreQ(q, q.picked);
+    q._sc = sc;
+    if (sc.exact) exactN++;
+    pts += sc.pts; max += sc.max;
+    const b = perItem[q.item] ||= { n: 0, exact: 0, pts: 0, max: 0 };
+    b.n++; b.exact += sc.exact ? 1 : 0; b.pts += sc.pts; b.max += sc.max;
+  }
+  const rec = { ts: Date.now(), n: answered.length, exact: exactN, pts, max, items: session.items };
+  stats.sessions.unshift(rec);
+  stats.sessions = stats.sessions.slice(0, 40);
+  for (const [id, b] of Object.entries(perItem)) {
+    const cur = stats.byItem[id] ||= { seen: 0, exact: 0, pts: 0, max: 0 };
+    cur.seen += b.n; cur.exact += b.exact; cur.pts += b.pts; cur.max += b.max;
+    cur.last = rec.ts;
+  }
+  saveStats(stats);
+  session.phase = "done";
+  session.answered = answered;
+  session.summary = { exactN, pts, max, perItem, n: answered.length };
+  view = "results";
+  render();
+}
+
+function renderResults() {
+  const { exactN, pts, max, perItem, n } = session.summary;
+  const pct = n ? Math.round(100 * exactN / n) : 0;
+  const wrong = (session.answered || session.qs).filter((q) => q.revealed && q._sc && !q._sc.exact);
+  let feedback;
+  if (pct >= 85) feedback = "Très bon niveau sur ce lot. Tu maîtrises bien les notions tirées — garde un rythme de révision courte pour figer.";
+  else if (pct >= 65) feedback = "Base solide, avec encore des trous. Relis les explications des items ratés avant de relancer une session ciblée.";
+  else if (pct >= 40) feedback = "Session fragile : plusieurs notions ne sont pas encore stabilisées. Mieux vaut revoir le cours sur les thèmes faibles, puis refaire 10–15 QCM.";
+  else feedback = "Beaucoup d’erreurs : priorise le cours sur le (les) item(s), puis recommence avec moins de questions.";
+
+  const advice = [];
+  if (!wrong.length) {
+    advice.push("Parfait : enchaîne sur d’autres items ou augmente le nombre de questions.");
+    advice.push("Teste un mix multi-items pour vérifier le transfert.");
+  } else {
+    advice.push(`Relis le corrigé des ${wrong.length} question${wrong.length > 1 ? "s" : ""} manquée${wrong.length > 1 ? "s" : ""} (surtout les distracteurs « presque vrais »).`);
+    const weak = Object.entries(perItem).filter(([, b]) => b.exact < b.n).sort((a, b) => (b[1].n - b[1].exact) - (a[1].n - a[1].exact));
+    if (weak.length) {
+      advice.push(`Item(s) à revoir : ${weak.slice(0, 3).map(([id, b]) => `${itemLabel(id)} (${b.n - b.exact} erreur${b.n - b.exact > 1 ? "s" : ""})`).join(", ")}.`);
+    }
+    if (pct < 65) advice.push("Fais une session courte (8–12 Q) sur un seul item faible avant de remélanger.");
+    else advice.push("Refais une session aléatoire du même pool dans 24–48 h pour consolider.");
+    advice.push("En QRM, vérifie chaque proposition A–E : une seule erreur fait rater la question.");
+  }
+
+  const chips = Object.entries(perItem)
+    .filter(([, b]) => b.exact < b.n)
+    .map(([id, b]) => `<span class="chip">${itemLabel(id)} ×${b.n - b.exact}</span>`)
+    .join("");
+
+  viewEl.innerHTML = `
+    <h1>Résultat</h1>
+    <p class="sub">${session.items.length} item${session.items.length > 1 ? "s" : ""} · ${n} question${n > 1 ? "s" : ""}</p>
+    <div class="card">
+      <div class="meta">Score</div>
+      <div class="big-score">${exactN} / ${n}</div>
+      <p>${pct} % de questions exactes · ${pts}/${max} propositions A–E</p>
+      <div class="feedback-block">
+        <h3>Feedback</h3>
+        <p>${feedback}</p>
+      </div>
+      <div class="feedback-block">
+        <h3>Conseils</h3>
+        <ul>${advice.map((a) => `<li>${a}</li>`).join("")}</ul>
+        <div class="weak-tags">${chips}</div>
+      </div>
+      <p class="recap">${exactN} bonne${exactN > 1 ? "s" : ""} · ${wrong.length} à revoir · ${n} question${n > 1 ? "s" : ""}.</p>
+      <div class="actions">
+        <button type="button" id="again">Rejouer (mêmes réglages)</button>
+        <button type="button" class="secondary" id="home">Changer d’items</button>
+        <button type="button" class="secondary" id="missed">Refaire les erreurs</button>
+        <button type="button" class="secondary" id="to-suivi">Voir le suivi</button>
+      </div>
+    </div>`;
+  $("home").onclick = () => { session = null; view = "setup"; render(); };
+  $("again").onclick = () => beginSession(session.items, n);
+  $("to-suivi").onclick = () => { view = "suivi"; render(); };
+  $("missed").onclick = () => {
+    if (!wrong.length) { alert("Aucune erreur dans cette session."); return; }
+    session = { phase: "quiz", items: session.items, qs: shuffle(wrong.map((q) => ({ ...q, picked: [], _sc: null, revealed: false }))), i: 0 };
+    view = "quiz";
+    render();
+  };
+}
+
+function renderSuivi() {
+  const stats = loadStats();
+  const cible = BANK.cible || { seenHigh: 12, pctHigh: 80, seenOther: 8, pctOther: 70 };
+  const rows = BANK.items.map((it) => {
+    const s = stats.byItem[it.id] || { seen: 0, exact: 0, pts: 0, max: 0 };
+    const pct = s.max ? Math.round(100 * s.pts / s.max) : null;
+    const needSeen = it.highYield ? cible.seenHigh : cible.seenOther;
+    const needPct = it.highYield ? cible.pctHigh : cible.pctOther;
+    const ready = s.seen >= needSeen && pct !== null && pct >= needPct;
+    return { ...it, ...s, pct, needSeen, needPct, ready };
+  });
+  const high = rows.filter((r) => r.highYield);
+  const other = rows.filter((r) => !r.highYield);
+  const highOk = high.filter((r) => r.ready).length;
+  const otherOk = other.filter((r) => r.ready).length;
+  const veryGood = highOk === high.length && otherOk >= Math.ceil(0.8 * other.length);
+  const weak = rows.filter((r) => r.seen && !r.ready).sort((a, b) => (a.pct ?? 0) - (b.pct ?? 0));
+
+  let body = "";
+  for (const r of rows) {
+    const cls = r.ready ? "" : r.pct == null ? "bad" : r.pct >= r.needPct ? "warn" : "bad";
+    const bar = r.pct == null ? "—" : `<span class="bar ${cls}"><i style="width:${r.pct}%"></i></span> ${r.pct} %`;
+    body += `<tr><td>${r.label}${r.highYield ? " · prio" : ""}</td><td>${r.needSeen}/${r.needPct}%</td><td>${r.seen}${r.ready ? " OK" : ""}</td><td>${r.seen ? r.exact + "/" + r.seen : "—"}</td><td>${bar}</td></tr>`;
+  }
+
+  viewEl.innerHTML = `
+    <h1>Suivi</h1>
+    <p class="sub">${highOk}/${high.length} items prio au seuil · ${otherOk}/${other.length} autres · ${veryGood ? "très bon niveau" : "pas encore au seuil"}.</p>
+    <div class="card">
+      <h2>Par item</h2>
+      <p class="hint" style="margin-top:0">Prio : ${cible.seenHigh} vues et ${cible.pctHigh} %. Autres : ${cible.seenOther} vues et ${cible.pctOther} %. ${stats.sessions.length} session(s) ici.</p>
+      ${weak.length ? `<div class="weak-tags" style="margin-bottom:0.75rem">${weak.map((w) => `<span class="chip">${w.label}</span>`).join("")}</div>
+        <div class="actions" style="margin-top:0"><button type="button" id="drill">Session 20 Q sur ces items</button></div>` : ""}
+      <table style="margin-top:12px"><thead><tr><th>Item</th><th>Cible</th><th>Vues</th><th>Exactes</th><th>Options</th></tr></thead><tbody>${body}</tbody></table>
+      <div class="actions">
+        <button type="button" class="secondary" id="reset">Réinitialiser le suivi</button>
+      </div>
+    </div>`;
+  $("reset").onclick = () => {
+    if (confirm("Effacer tout le suivi local ?")) { localStorage.removeItem(STORE); render(); }
+  };
+  const drill = $("drill");
+  if (drill) drill.onclick = () => beginSession(weak.map((w) => w.id), 20);
+}
+
+function esc(s) {
+  return String(s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+boot();
+</script>
+</body>
+</html>

@@ -1,0 +1,3148 @@
+{
+  "questions": [
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "M. L., 58 ans, diabétique et hypertendu, consulte aux urgences pour une douleur thoracique rétrosternale constrictive apparue au repos 90 minutes avant, irradiant vers le bras gauche, non soulagée par la trinitrine sublinguale. FC 88/min, PA 145/85 mmHg. L'ECG montre un sus-décalage du segment ST de 3 mm en V2-V4. Troponine ultrasensible en cours. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'angioplastie primaire est la stratégie de revascularisation privilégiée si disponible dans les délais recommandés.",
+          "why": "Revascularisation mécanique immédiate du SCA ST+."
+        },
+        {
+          "letter": "B",
+          "text": "La fibrinolyse est une alternative si l'angioplastie primaire n'est pas réalisable dans le délai cible.",
+          "why": "Option de désobstruction médicamenteuse."
+        },
+        {
+          "letter": "C",
+          "text": "L'aspirine doit être administrée dès le diagnostic suspecté.",
+          "why": "Antiagrégant indiqué dès la suspicion de SCA."
+        },
+        {
+          "letter": "D",
+          "text": "La bithérapie antiagrégante par prasugrel ou ticagrélor est indiquée en 1re intention si angioplastie primaire.",
+          "why": "Modalité collège pour SCA ST+ traité par angioplastie."
+        },
+        {
+          "letter": "E",
+          "text": "La coronarographie peut être différée au-delà de 72 heures en l'absence de complication.",
+          "why": "Faux : urgence de revascularisation immédiate."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "SCA ST+ : sus-décalage persistant, douleur > 30 min non soulagée par TNT. Revascularisation immédiate (angioplastie ou fibrinolyse). Aspirine dès la suspicion ; bithérapie P2Y12 selon stratégie invasive."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 72 ans, tabagique sevrée, douleur thoracique à l'effort modéré depuis 2 heures, résolue à l'admission. ECG : sous-décalage transitoire de 2 mm en antérieur. Troponine ultrasensible : 850 ng/L (99e percentile 40 ng/L). PA 130/70 mmHg. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le diagnostic d'IDM sans sus-décalage persistant (NSTEMI) est retenu.",
+          "why": "Troponine élevée + contexte d'ischémie."
+        },
+        {
+          "letter": "B",
+          "text": "Une stratégie invasive avec coronarographie est indiquée, typiquement dans les 24 heures pour les patients à haut risque.",
+          "why": "Prise en charge du SCA ST- à risque."
+        },
+        {
+          "letter": "C",
+          "text": "La bithérapie antiagrégante n'est pas recommandée d'emblée avant coronarographie en Usic.",
+          "why": "Risque hémorragique sans bénéfice démontré."
+        },
+        {
+          "letter": "D",
+          "text": "Le diagnostic d'angor instable est retenu si la troponine est normale.",
+          "why": "Angor instable = SCA ST- sans troponine élevée."
+        },
+        {
+          "letter": "E",
+          "text": "Un sus-décalage per-critique régressif après TNT oriente vers un SCA ST-.",
+          "why": "Caractéristique du SCA sans sus-décalage persistant."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "SCA ST- : troponine élevée = NSTEMI. Coronaro dans les 24 h si haut risque. Pas de double antiagrégation systématique avant coronarographie."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 64 ans décrit depuis 3 mois une oppression rétrosternale à la marche rapide, cédant en 5 minutes au repos. ECG de repos normal. Troponine négative. Épreuve d'effort : angor à 85 % de la FC max théorique. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le tableau est compatible avec un angor stable d'effort.",
+          "why": "Douleur typique, provoquée par l'effort, transitoire."
+        },
+        {
+          "letter": "B",
+          "text": "La coronarographie est indiquée si symptômes persistants malgré traitement optimal ou test positif.",
+          "why": "Stratégie invasive selon symptômes et tests."
+        },
+        {
+          "letter": "C",
+          "text": "Le traitement inclut aspirine et statine.",
+          "why": "Prévention secondaire."
+        },
+        {
+          "letter": "D",
+          "text": "La douleur persistante > 30 min au repos non soulagée par TNT définit un angor stable.",
+          "why": "Critère de SCA aigu."
+        },
+        {
+          "letter": "E",
+          "text": "Les dérivés nitrés et les bêtabloquants sont des traitements anti-ischémiques de 1re intention.",
+          "why": "Classes thérapeutiques de l'angor stable."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Angor stable : douleur d'effort transitoire. Traitement : aspirine, statine, nitrés, bêtabloquants. Coronaro si symptômes réfractaires ou test positif."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Patient de 55 ans, SCA ST+ traité par angioplastie primaire avec stent. J3 : souffle systolique nouveau, dyspnée, crépitants pulmonaires. PA 90/60 mmHg, FC 110/min. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une complication mécanique post-IDM (rupture de pilier mitral ou CIV) doit être évoquée.",
+          "why": "Souffle nouveau + décompensation."
+        },
+        {
+          "letter": "B",
+          "text": "L'échocardiographie transthoracique est l'examen clé en urgence.",
+          "why": "Diagnostic et orientation thérapeutique."
+        },
+        {
+          "letter": "C",
+          "text": "Une thrombose de stent est la cause la plus probable à J3 avec souffle mitral aigu.",
+          "why": "Thrombose = douleur récurrente sans souffle mitral aigu typique."
+        },
+        {
+          "letter": "D",
+          "text": "L'insuffisance mitrale aiguë par rupture de pilier peut se compliquer d'OAP et de choc.",
+          "why": "Mécanisme classique."
+        },
+        {
+          "letter": "E",
+          "text": "L'échocardiographie ne doit pas retarder la prise en charge si l'instabilité est majeure.",
+          "why": "Urgence hémodynamique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Souffle systolique nouveau post-IDM + instabilité : complication mécanique (rupture pilier mitral, CIV). ETT urgente."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 48 ans, douleur thoracique aiguë. ECG : sus-décalage 2 mm en inférieur (DII, DIII, aVF), réciproque en antérieur. FC 52/min, PA 118/72 mmHg. Douleur persistante 45 minutes. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La localisation inférieure suggère une occlusion de la coronaire droite ou d'une branche.",
+          "why": "Territoire inférieur = coronaire droite le plus souvent."
+        },
+        {
+          "letter": "B",
+          "text": "Une bradycardie peut accompagner un IDM inférieur par atteinte du nœud sinusal ou AV.",
+          "why": "Coronaire droite nourrit souvent le nœud sinusal."
+        },
+        {
+          "letter": "C",
+          "text": "L'appel du SAMU-Centre 15 est indiqué en extrahospitalier.",
+          "why": "Urgence vitale du SCA ST+."
+        },
+        {
+          "letter": "D",
+          "text": "Le sous-décalage transitoire définit un SCA ST+.",
+          "why": "Sous-décalage = SCA ST-."
+        },
+        {
+          "letter": "E",
+          "text": "La troponine peut être normale en début de SCA ST+.",
+          "why": "Élévation souvent retardée."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IDM inférieur : sus-décalage DII-DIII-aVF, bradycardie possible. SAMU 15. Troponine peut être initialement normale."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 62 ans, hypertendu, douleur thoracique transfixiante maximale à l'instant T, irradiant vers le dos et l'interscapulaire. PA asymétrique : 180/110 mmHg à droite, 130/70 mmHg à gauche. FC 110/min. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La dissection aortique doit être évoquée en 1re intention.",
+          "why": "Douleur transfixiante + asymétrie tensionnelle."
+        },
+        {
+          "letter": "B",
+          "text": "Un scanner thoracique avec injection est l'examen de référence si disponible rapidement.",
+          "why": "Imagerie de confirmation."
+        },
+        {
+          "letter": "C",
+          "text": "Le SCA est le diagnostic le plus probable.",
+          "why": "SCA : douleur constrictive, pas transfixiante avec asymétrie PA."
+        },
+        {
+          "letter": "D",
+          "text": "La différence tensionnelle > 20 mmHg entre les deux bras est un argument en faveur de la dissection.",
+          "why": "Signe clinique classique."
+        },
+        {
+          "letter": "E",
+          "text": "L'échographie transthoracique ne suffit pas à confirmer ou exclure la dissection.",
+          "why": "Sensibilité insuffisante seule."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Dissection aortique : douleur transfixiante, irradiation dorsale, asymétrie PA. Scanner thoracique injecté = examen clé."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 45 ans, douleur thoracique latérale gauche reproduite à la palpation et à la toux. FC 78/min, PA 120/75 mmHg. ECG normal, troponine négative, radio thorax normale. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une cause musculo-squelettique ou pleurale est probable.",
+          "why": "Douleur reproduite à la palpation."
+        },
+        {
+          "letter": "B",
+          "text": "Les quatre urgences cardiovasculaires (PIED) ne sont pas évoquées en 1re intention.",
+          "why": "Tableau non évocateur."
+        },
+        {
+          "letter": "C",
+          "text": "Un ECG doit être réalisé devant toute douleur thoracique aiguë.",
+          "why": "Conduite systématique."
+        },
+        {
+          "letter": "D",
+          "text": "La troponine n'est jamais utile si l'ECG est normal.",
+          "why": "Utile si suspicion SCA."
+        },
+        {
+          "letter": "E",
+          "text": "La recherche d'une détresse vitale reste la première étape.",
+          "why": "Polypnée, collapsus, troubles conscience."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Douleur reproduite à la palpation : orientation musculo-squelettique. Toujours détresse vitale + ECG."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 70 ans, dyspnée brutale et douleur latérale droite après immobilisation 5 jours pour fracture du poignet. FC 105/min, PA 100/70 mmHg, SpO2 89 %. ECG : tachycardie sinusale, S1Q3. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'embolie pulmonaire doit être évoquée parmi les urgences cardiovasculaires.",
+          "why": "PIED inclut EP."
+        },
+        {
+          "letter": "B",
+          "text": "La radiographie thoracique peut être normale dans l'EP.",
+          "why": "Signe fréquent."
+        },
+        {
+          "letter": "C",
+          "text": "Les D-dimères peuvent aider si la probabilité clinique est faible ou intermédiaire.",
+          "why": "VPN élevée si normal."
+        },
+        {
+          "letter": "D",
+          "text": "La coronarographie est l'examen de 1re intention.",
+          "why": "Examen coronarien, pas pour EP."
+        },
+        {
+          "letter": "E",
+          "text": "L'immobilisation > 3 jours est un facteur de risque temporaire majeur de MTEV.",
+          "why": "Facteur prédisposant."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EP : dyspnée + contexte immobilisation. Radio peut être normale. D-dimères si probabilité non forte."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 58 ans, douleur rétrosternale avec fièvre 38,5 °C, majorée en décubitus et à l'inspiration. ECG : sus-décalage diffus du ST n'englobant pas l'onde T. Troponine normale. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La péricardite aiguë est une des quatre urgences cardiovasculaires.",
+          "why": "PIED."
+        },
+        {
+          "letter": "B",
+          "text": "Le sus-décalage diffus sans englobement de l'onde T oriente vers la péricardite.",
+          "why": "Signe ECG distinctif."
+        },
+        {
+          "letter": "C",
+          "text": "La douleur majorée en décubitus et à l'inspiration est évocatrice.",
+          "why": "Sémiologie classique."
+        },
+        {
+          "letter": "D",
+          "text": "Une troponine normale exclut toute atteinte myocardique associée.",
+          "why": "Myocardite possible avec troponine élevée."
+        },
+        {
+          "letter": "E",
+          "text": "La tamponnade se manifeste par hypotension, pouls paradoxal et signes droits.",
+          "why": "Urgence."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Péricardite : douleur positionnelle, sus-décalage diffus ST. Tamponnade = hypotension, pouls paradoxal."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "M. R., 72 ans, HTA, diabète, obésité (IMC 32), tabac sevré, BPCO. Dyspnée aiguë au repos, polypnée 28/min, PA 172/82 mmHg, rythme irrégulier 130/min, crépitants des bases. SpO2 88 %. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un œdème aigu pulmonaire cardiogénique doit être évoqué.",
+          "why": "Dyspnée aiguë + crépitants + contexte CV."
+        },
+        {
+          "letter": "B",
+          "text": "Le dosage du BNP ou NT-proBNP est recommandé en 1re intention.",
+          "why": "Marqueur diagnostique."
+        },
+        {
+          "letter": "C",
+          "text": "Un BNP < 100 pg/mL ou NT-proBNP < 300 pg/mL rend l'IC très improbable en dyspnée aiguë.",
+          "why": "Seuils collège."
+        },
+        {
+          "letter": "D",
+          "text": "Diurétiques de l'anse, dérivés nitrés et oxygénothérapie sont le traitement d'urgence.",
+          "why": "Prise en charge OAP."
+        },
+        {
+          "letter": "E",
+          "text": "Une pneumopathie se manifeste typiquement par des crépitants diffus bilatéraux des bases.",
+          "why": "Pneumopathie = foyer localisé."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "OAP : BNP/NT-proBNP en 1re intention. Seuils négatifs éliminent IC. Traitement urgent : diurétiques anse, nitrés, O2."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 65 ans, dyspnée d'effort (NYHA II), orthopnée, prise de poids 4 kg en 2 semaines, œdèmes des chevilles. ETT : FEVG 28 %. BNP 450 pg/mL. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le diagnostic d'insuffisance cardiaque à FEVG diminuée (HFrEF) est posé.",
+          "why": "FEVG < 40 %."
+        },
+        {
+          "letter": "B",
+          "text": "Le traitement inclut IEC (ou sacubitril/valsartan), bêtabloquant, antialdostérone et gliflozine.",
+          "why": "Classes HFrEF."
+        },
+        {
+          "letter": "C",
+          "text": "Une origine ischémique doit être recherchée par coronarographie ou coroscanner.",
+          "why": "Étiologie fréquente."
+        },
+        {
+          "letter": "D",
+          "text": "Une FEVG > 50 % est nécessaire pour diagnostiquer une IC.",
+          "why": "HFpEF possible."
+        },
+        {
+          "letter": "E",
+          "text": "Les diurétiques de l'anse traitent les symptômes mais ne réduisent pas la mortalité à long terme.",
+          "why": "Symptomatique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HFrEF FEVG 28 % : IEC/ARNI, bêta-bloquant, spironolactone, gliflozine. Rechercher ischémie."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 58 ans, IDM antérieur, FEVG 32 %, NYHA III, QRS 150 ms. Traitement optimal instauré. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une resynchronisation cardiaque (CRT) peut être indiquée.",
+          "why": "QRS ≥ 130 ms + HFrEF symptomatique."
+        },
+        {
+          "letter": "B",
+          "text": "Un DAI est indiqué si FEVG ≤ 35 % et NYHA II-IV après optimisation.",
+          "why": "Prévention mort subite."
+        },
+        {
+          "letter": "C",
+          "text": "Un dispositif CRT-DAI peut être choisi si les deux indications sont présentes.",
+          "why": "Combinaison possible."
+        },
+        {
+          "letter": "D",
+          "text": "L'amiodarone est le seul antiarythmique prescritable en IC à FEVG diminuée.",
+          "why": "Antiarythmique toléré."
+        },
+        {
+          "letter": "E",
+          "text": "La CRT est indiquée si QRS < 100 ms.",
+          "why": "Seuil QRS ≥ 130 ms."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HFrEF FEVG 32 %, QRS 150 ms : CRT + DAI possibles. Amiodarone seul antiarythmique en HFrEF."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 74 ans, HTA longue durée, dyspnée d'effort, FEVG 58 %, hypertrophie VG concentrique, BNP 180 pg/mL, remplissage atrial gauche augmenté. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une insuffisance cardiaque à FEVG conservée (HFpEF) est probable.",
+          "why": "FEVG > 50 % + symptômes."
+        },
+        {
+          "letter": "B",
+          "text": "L'hypertension artérielle est une étiologie fréquente de HFpEF.",
+          "why": "HTA = cause majeure."
+        },
+        {
+          "letter": "C",
+          "text": "Les gliflozines sont recommandées dans l'IC à FEVG conservée.",
+          "why": "Traitement validé."
+        },
+        {
+          "letter": "D",
+          "text": "Une FEVG entre 41 et 49 % définit une IC à FEVG modérément diminuée.",
+          "why": "Classification ESC."
+        },
+        {
+          "letter": "E",
+          "text": "Le diagnostic de HFpEF ne nécessite aucun marqueur biologique.",
+          "why": "BNP contribue au diagnostic."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HFpEF : FEVG 58 %, HTA, BNP élevé. Gliflozines recommandées."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 68 ans, choc cardiogénique post-IDM : PA 75/50 mmHg, marbrures, oligurie, confusion. Crépitants diffus, galop B3, FC 115/min. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le choc cardiogénique est une défaillance aiguë sévère avec hypoperfusion.",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "Les inotropes et le traitement de l'OAP associé sont indiqués en urgence.",
+          "why": "Prise en charge."
+        },
+        {
+          "letter": "C",
+          "text": "Le choc se définit uniquement par l'hypotension artérielle.",
+          "why": "Nécessite aussi hypoperfusion."
+        },
+        {
+          "letter": "D",
+          "text": "L'échocardiographie aide à évaluer la fonction VG et les complications mécaniques.",
+          "why": "ETT en urgence."
+        },
+        {
+          "letter": "E",
+          "text": "Les diurétiques peuvent être nécessaires si surcharge pulmonaire associée.",
+          "why": "OAP fréquent."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Choc cardiogénique : hypotension + hypoperfusion. ETT urgente. Inotropes + diurétiques si congestion."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Mme E., 68 ans, dyspnée apparue brutalement depuis 1 semaine après voyage long-courrier (> 6 h). PA 110/90 mmHg, FC 100/min, auscultation normale, pas de signes de TVP. ECG : tachycardie sinusale, ondes T inversées V2-V3. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'embolie pulmonaire doit être évoquée.",
+          "why": "Dyspnée + contexte voyage."
+        },
+        {
+          "letter": "B",
+          "text": "Un score de probabilité clinique (Genève ou Wells) doit être calculé.",
+          "why": "Stratégie diagnostique EP."
+        },
+        {
+          "letter": "C",
+          "text": "Les D-dimères peuvent exclure l'EP si probabilité faible ou intermédiaire et test < 500 ng/mL.",
+          "why": "VPN élevée."
+        },
+        {
+          "letter": "D",
+          "text": "L'angioscanner pulmonaire est l'examen de confirmation si probabilité forte ou D-dimères positifs.",
+          "why": "Imagerie de référence."
+        },
+        {
+          "letter": "E",
+          "text": "L'absence de signes de TVP exclut une EP.",
+          "why": "30-50 % d'EP sans TVP clinique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EP : score clinique, D-dimères si probabilité non forte, angioscanner pour confirmation. TVP clinique absente ne exclut pas EP."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 55 ans, jambe gauche tuméfiée, chaude, douloureuse depuis 48 h après immobilisation plâtrée 10 jours. Différence de circonférence mollet > 3 cm vs controlatéral. Score de Wells : 3 points. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La probabilité clinique de TVP est forte (score Wells ≥ 3).",
+          "why": "Interprétation Wells."
+        },
+        {
+          "letter": "B",
+          "text": "L'échodoppler veineux des membres inférieurs est l'examen de 1re intention pour confirmer.",
+          "why": "Examen clé TVP."
+        },
+        {
+          "letter": "C",
+          "text": "Les D-dimères ne sont pas utiles si la probabilité clinique est forte.",
+          "why": "Test confirmatoire requis."
+        },
+        {
+          "letter": "D",
+          "text": "Une TVP proximale (sus-poplitée) a un risque d'EP plus important qu'une TVP distale.",
+          "why": "Localisation prognostique."
+        },
+        {
+          "letter": "E",
+          "text": "La compression élastique classe 3 est recommandée dès le diagnostic si pas de contre-indication.",
+          "why": "Réduction du SPT."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TVP forte probabilité : échodoppler veineux. TVP proximale = risque EP majeur. Compression élastique 30-40 mmHg cheville, ≥ 6 mois."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 42 ans, EP confirmée par angioscanner après chirurgie orthopédique du genou 2 semaines avant. Pas de cancer connu, pas de thrombophilie. PA 125/80 mmHg, FC 95/min. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La MTEV est dite provoquée par un facteur temporaire majeur.",
+          "why": "Chirurgie AG > 30 min / 3 mois."
+        },
+        {
+          "letter": "B",
+          "text": "La durée d'anticoagulation recommandée est de 3 mois.",
+          "why": "MTEV provoquée facteur majeur transitoire."
+        },
+        {
+          "letter": "C",
+          "text": "Une HBPM ou un AOD en dose curative est le traitement de 1re intention.",
+          "why": "Anticoagulation curative."
+        },
+        {
+          "letter": "D",
+          "text": "L'anticoagulation au long cours est indiquée d'emblée.",
+          "why": "3 mois suffisent si facteur transitoire."
+        },
+        {
+          "letter": "E",
+          "text": "La contraception œstroprogestative est contre-indiquée après MTEV.",
+          "why": "Risque thromboembolique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EP provoquée post-chirurgie : anticoagulation 3 mois. HBPM ou AOD. Contre-indication contraception œstroprogestative."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 72 ans, EP avec hypotension : PA 80/50 mmHg persistante > 15 min, FC 120/min, SpO2 85 %. Angioscanner : embolies bilatérales proximales. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Il s'agit d'une EP à haut risque (grave).",
+          "why": "Choc ou hypotension artérielle."
+        },
+        {
+          "letter": "B",
+          "text": "La fibrinolyse doit être envisagée en réanimation ou soins intensifs.",
+          "why": "EP grave."
+        },
+        {
+          "letter": "C",
+          "text": "L'échocardiographie peut montrer une dilatation et une hypokinésie du VD.",
+          "why": "Marqueurs de gravité."
+        },
+        {
+          "letter": "D",
+          "text": "Un EP à haut risque a une mortalité > 15 %.",
+          "why": "Pronostic."
+        },
+        {
+          "letter": "E",
+          "text": "Le traitement ambulatoire est approprié si PESI = 0.",
+          "why": "EP grave = hospitalisation."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EP grave : hypotension/choc. Fibrinolyse en réanimation. ETT : dysfonction VD. Hospitalisation obligatoire."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 35 ans, TVP distale (veines surales) confirmée par échodoppler, sans EP, facteur provoquant : voyage > 6 h. Pas d'antécédent thrombotique. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'anticoagulation est recommandée dès la mise en évidence d'une TVP distale.",
+          "why": "Recommandation collège."
+        },
+        {
+          "letter": "B",
+          "text": "La TVP distale a un risque d'extension proximale dans environ 20 % des cas asymptomatiques postop.",
+          "why": "Évolution possible."
+        },
+        {
+          "letter": "C",
+          "text": "La compression élastique réduit de 50 % le risque de syndrome post-thrombotique.",
+          "why": "Bénéfice démontré."
+        },
+        {
+          "letter": "D",
+          "text": "La TVP distale isolée ne nécessite jamais d'anticoagulation.",
+          "why": "Anticoagulation recommandée."
+        },
+        {
+          "letter": "E",
+          "text": "La contention veineuse est contre-indiquée si IPS < 0,6 (AOMI).",
+          "why": "Contre-indication compression."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TVP distale : anticoagulation recommandée. Compression élastique si pas d'AOMI sévère (IPS < 0,6)."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 60 ans, hypertendu, palpitations persistantes et dyspnée d'effort inhabituelle depuis 48 h. PA satisfaisante, FC 115/min irrégulière. ECG : absence d'ondes P, activité atriale anarchique, QRS irréguliers. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le diagnostic de fibrillation atriale est confirmé sur l'ECG.",
+          "why": "Pas d'ondes P, rythme irrégulier."
+        },
+        {
+          "letter": "B",
+          "text": "Il n'y a plus de durée minimale de 30 secondes pour diagnostiquer la FA sur ECG 12 dérivations.",
+          "why": "Nouvelle définition."
+        },
+        {
+          "letter": "C",
+          "text": "Un échocardiographie transthoracique fait partie du bilan de 1re intention.",
+          "why": "Recherche cardiopathie."
+        },
+        {
+          "letter": "D",
+          "text": "La FA est toujours symptomatique.",
+          "why": "Peut être asymptomatique."
+        },
+        {
+          "letter": "E",
+          "text": "Le score CHA2DS2-VA doit être calculé pour évaluer le risque thromboembolique.",
+          "why": "Anticoagulation."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA : ECG sans ondes P, rythme irrégulier. ETT en bilan. CHA2DS2-VA pour risque embolique."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 78 ans, FA permanente connue, HTA, diabète, AVC ischémique 3 ans avant. Pas d'insuffisance rénale. HAS-BLED 2. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une anticoagulation au long cours est indiquée.",
+          "why": "CHA2DS2-VA élevé."
+        },
+        {
+          "letter": "B",
+          "text": "Les AOD (rivaroxaban, apixaban, dabigatran) sont préférés aux AVK en 1re intention.",
+          "why": "Recommandations actuelles."
+        },
+        {
+          "letter": "C",
+          "text": "L'aspirine seule est suffisante si CHA2DS2-VA ≥ 2.",
+          "why": "Anticoagulation, pas antiagrégant seul."
+        },
+        {
+          "letter": "D",
+          "text": "Le score HAS-BLED évalue le risque hémorragique.",
+          "why": "Balance bénéfice-risque."
+        },
+        {
+          "letter": "E",
+          "text": "La FA est responsable de 20 à 25 % de tous les AVC.",
+          "why": "Épidémiologie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA + CHA2DS2-VA élevé : anticoagulation AOD en 1re intention. HAS-BLED pour risque hémorragique."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 45 ans, FA paroxystique récente (< 48 h), tolérée, sans cardiopathie structurelle. FC 140/min. Pas d'anticoagulation au long cours. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un contrôle de la fréquence cardiaque par bêtabloquant ou inhibiteur calcique non dihydropyridinique est indiqué.",
+          "why": "Stratégie contrôle fréquence."
+        },
+        {
+          "letter": "B",
+          "text": "Une cardioversion peut être envisagée si FA récente et bien tolérée.",
+          "why": "Contrôle du rythme."
+        },
+        {
+          "letter": "C",
+          "text": "La cardioversion sans anticoagulation préalable est possible si FA < 48 h et pas de cardiopathie.",
+          "why": "Règle 48 h."
+        },
+        {
+          "letter": "D",
+          "text": "La FA paroxystique ne nécessite jamais d'anticoagulation.",
+          "why": "CHA2DS2-VA guide l'indication."
+        },
+        {
+          "letter": "E",
+          "text": "La correction des facteurs de risque (HTA, obésité, SAOS) fait partie de la prise en charge.",
+          "why": "Prise en charge globale."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA récente tolérée : contrôle fréquence ou cardioversion. Anticoagulation selon CHA2DS2-VA, pas selon type FA seul."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 82 ans, FA avec FC 165/min, PA 85/55 mmHg, dyspnée au repos, crépitants pulmonaires. SpO2 90 %. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Il s'agit d'une FA mal tolérée hémodynamiquement.",
+          "why": "Instabilité."
+        },
+        {
+          "letter": "B",
+          "text": "Une cardioversion urgente ou une réduction de fréquence rapide est indiquée.",
+          "why": "Urgence."
+        },
+        {
+          "letter": "C",
+          "text": "L'amiodarone IV peut être utilisée en urgence pour contrôle du rythme ou fréquence.",
+          "why": "Traitement urgent."
+        },
+        {
+          "letter": "D",
+          "text": "La FA mal tolérée peut être traitée uniquement en ambulatoire.",
+          "why": "Hospitalisation."
+        },
+        {
+          "letter": "E",
+          "text": "L'insuffisance cardiaque peut être décompensée par la FA rapide.",
+          "why": "Conséquence hémodynamique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA mal tolérée : cardioversion urgente ou contrôle fréquence rapide. Peut décompenser l'IC."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 55 ans, FA découverte lors d'un bilan système. FC 72/min, asymptomatique. ETT : VG non dilaté, FEVG 60 %. CHA2DS2-VA 1 (HTA). Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La FA asymptomatique nécessite la même évaluation du risque thromboembolique que la FA symptomatique.",
+          "why": "CHA2DS2-VA."
+        },
+        {
+          "letter": "B",
+          "text": "Un dépistage de la fibrillation atriale est recommandé chez les sujets > 65 ans.",
+          "why": "Dépistage."
+        },
+        {
+          "letter": "C",
+          "text": "La prévalence de la FA augmente avec l'âge (10 % après 80 ans).",
+          "why": "Épidémiologie."
+        },
+        {
+          "letter": "D",
+          "text": "L'absence de symptômes exclut le besoin d'échocardiographie.",
+          "why": "ETT recommandée."
+        },
+        {
+          "letter": "E",
+          "text": "La FA peut s'associer à un flutter atrial typique ou atypique.",
+          "why": "Association fréquente."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA asymptomatique : même bilan et CHA2DS2-VA. Dépistage > 65 ans. ETT recommandée."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 52 ans, douleur thoracique. ECG : sus-décalage ST 2 mm en DII, DIII, aVF avec sous-décalage réciproque en antérieur. FC 58/min. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ischémie inférieure est évocateur d'une atteinte de la coronaire droite ou de la coronaire circonflexe.",
+          "why": "Territoire ECG."
+        },
+        {
+          "letter": "B",
+          "text": "La bradycardie peut accompagner un IDM inférieur.",
+          "why": "Atteinte nœud sinusal/AV."
+        },
+        {
+          "letter": "C",
+          "text": "Le sus-décalage doit être persistant après TNT pour définir un SCA ST+.",
+          "why": "Critère SCA ST+."
+        },
+        {
+          "letter": "D",
+          "text": "Un sus-décalage en antérieur (V1-V4) oriente vers une atteinte du territoire antérieur.",
+          "why": "Localisation."
+        },
+        {
+          "letter": "E",
+          "text": "L'ECG doit être réalisé dès le premier contact devant toute douleur thoracique suspecte.",
+          "why": "Conduite à tenir."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG inférieur : DII-DIII-aVF. Bradycardie possible. ECG immédiat devant douleur thoracique."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 68 ans, syncope. ECG : BAV 3e degré, fréquence ventriculaire 35/min, QRS larges 140 ms. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le BAV 3e degré avec QRS larges suggère un bloc infrahissien.",
+          "why": "Bloc distal au nœud AV."
+        },
+        {
+          "letter": "B",
+          "text": "Une stimulation cardiaque définitive est indiquée en l'absence de cause réversible.",
+          "why": "Indication pacemaker."
+        },
+        {
+          "letter": "C",
+          "text": "Le BAV 3e degré est une cause cardiaque rythmique de syncope.",
+          "why": "Étiologie."
+        },
+        {
+          "letter": "D",
+          "text": "Un BAV 1er degré avec PR > 200 ms définit un BAV 3e degré.",
+          "why": "BAV 1 = allongement PR seul."
+        },
+        {
+          "letter": "E",
+          "text": "En urgence, atropine ou stimulation transcutanée peuvent être utilisées si mauvaise tolérance.",
+          "why": "Traitement temporaire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV 3 QRS larges = infrahissien, indication pacemaker. Atropine/stimulation transcutanée si urgence."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 40 ans, palpitations. ECG : tachycardie régulière 180/min, QRS fins, pas d'ondes P visibles, pseudo-rythme sinusal en début de trace. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une tachycardie jonctionnelle est une hypothèse.",
+          "why": "QRS fins, régulière, 150-250/min."
+        },
+        {
+          "letter": "B",
+          "text": "Une tachycardie ventriculaire est improbable avec QRS fins.",
+          "why": "TV = QRS larges le plus souvent."
+        },
+        {
+          "letter": "C",
+          "text": "La manœuvre de Valsalva ou l'adénosine peuvent aider au diagnostic et traitement.",
+          "why": "Tests diagnostiques/therapeutiques."
+        },
+        {
+          "letter": "D",
+          "text": "Un syndrome de Wolff-Parkinson-White doit être recherché si tachycardie récurrente.",
+          "why": "Pré-excitation."
+        },
+        {
+          "letter": "E",
+          "text": "Les extrasystoles ventriculaires isolées définissent une tachycardie jonctionnelle.",
+          "why": "ESV ≠ tachycardie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tachycardie régulière QRS fins : jonctionnelle ou FA/flutter. Adénosine/Valsalva. Rechercher WPW si récidive."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "ECG d'un homme de 25 ans asymptomatique : PR 120 ms, QRS 80 ms, axe normal, pas d'hypertrophie. FC 72/min. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ECG est normal.",
+          "why": "Paramètres dans les normes."
+        },
+        {
+          "letter": "B",
+          "text": "Un PR < 120 ms est la norme.",
+          "why": "PR normal 120-200 ms."
+        },
+        {
+          "letter": "C",
+          "text": "La durée normale du QRS est < 120 ms.",
+          "why": "Norme QRS."
+        },
+        {
+          "letter": "D",
+          "text": "Un sus-décalage ST en antérieur est normal en jeune.",
+          "why": "Rémunération normale V1-V3 jeune."
+        },
+        {
+          "letter": "E",
+          "text": "L'axe du QRS normal est entre -30° et +90°.",
+          "why": "Norme axe."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG normal : PR 120-200 ms, QRS < 120 ms, axe -30 à +90°."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 70 ans, HTA. ECG : hypertrophie ventriculaire gauche (index Sokolow > 35 mm), strain pattern en latéral. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'hypertrophie VG sur ECG est compatible avec une HTA chronique.",
+          "why": "Cause fréquente."
+        },
+        {
+          "letter": "B",
+          "text": "Le strain pattern (sous-décalage ST, T négatives latérales) signe une surcharge VG.",
+          "why": "Repolarisation."
+        },
+        {
+          "letter": "C",
+          "text": "L'index Sokolow-Lyon utilise S V1 + R V5 ou V6.",
+          "why": "Critère ECG HVG."
+        },
+        {
+          "letter": "D",
+          "text": "Une HVG sur ECG exclut toute cardiopathie hypertrophique.",
+          "why": "CMH aussi possible."
+        },
+        {
+          "letter": "E",
+          "text": "L'ECG peut orienter vers une cardiopathie mais l'échocardiographie confirme.",
+          "why": "ETT complémentaire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HVG sur ECG : HTA fréquente. Strain pattern = surcharge. ETT pour confirmation et étiologie."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Monsieur H, 80 ans, fièvre > 39 °C avec frissons 2 semaines. Porteur TAVI aortique 3 ans avant. Dyspnée d'effort, souffle diastolique intense foyer aortique, crépitants pulmonaires. FC 35/min, PA 145/45 mmHg. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'endocardite infectieuse sur prothèse valvulaire doit être évoquée en priorité.",
+          "why": "Fièvre + souffle nouveau + TAVI."
+        },
+        {
+          "letter": "B",
+          "text": "Trois paires d'hémocultures doivent être prélevées avant toute antibiothérapie.",
+          "why": "Diagnostic microbiologique."
+        },
+        {
+          "letter": "C",
+          "text": "Une antibiothérapie probabiliste doit être initiée rapidement après prélèvements.",
+          "why": "Urgence."
+        },
+        {
+          "letter": "D",
+          "text": "L'échocardiographie transthoracique suffit toujours pour confirmer l'EI.",
+          "why": "ETO souvent nécessaire sur prothèse."
+        },
+        {
+          "letter": "E",
+          "text": "Staphylococcus aureus est le germe le plus fréquent actuellement.",
+          "why": "Épidémiologie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EI sur TAVI : hémocultures avant ATB, ATB probabiliste, ETT puis ETO. S. aureus le plus fréquent."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 45 ans, toxicomane IV, fièvre, nouveaux lésions cutanées (microhémorragies conjonctivales, nodules d'Osler). Souffle systolique apexien. CRP 180 mg/L. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Staphylococcus aureus est le germe le plus probable.",
+          "why": "Toxicomanie IV."
+        },
+        {
+          "letter": "B",
+          "text": "La porte d'entrée est le plus souvent cutanée.",
+          "why": "Injection IV."
+        },
+        {
+          "letter": "C",
+          "text": "Des embolies systémiques (cérébrales, pulmonaires) sont une complication possible.",
+          "why": "Complications emboliques."
+        },
+        {
+          "letter": "D",
+          "text": "L'antibioprophylaxie dentaire est indiquée pour tous les patients après guérison.",
+          "why": "Éducation post-EI."
+        },
+        {
+          "letter": "E",
+          "text": "Les lésions cutanéo-muqueuses (Janeway, Osler) sont des signes immunologiques.",
+          "why": "Signes périphériques."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EI IV toxicomane : S. aureus, porte cutanée. Signes périphériques et embolies. Prophylaxie dentaire post-EI."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 55 ans, fièvre, souffle mitral, hémocultures positives pour Streptococcus gallolyticus (bovis). Pas de cardiopathie connue. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une porte d'entrée digestive (cancer colorectal, polypes) doit être recherchée.",
+          "why": "S. gallolyticus = digestive."
+        },
+        {
+          "letter": "B",
+          "text": "Une coloscopie fait partie du bilan étiologique.",
+          "why": "Recherche cancer colorectal."
+        },
+        {
+          "letter": "C",
+          "text": "Les streptocoques oraux ont une porte d'entrée buccodentaire.",
+          "why": "S. gallolyticus = digestive, pas oral."
+        },
+        {
+          "letter": "D",
+          "text": "L'EI sur valve native mitrale est possible.",
+          "why": "Valve native."
+        },
+        {
+          "letter": "E",
+          "text": "Le traitement antibiotique doit être adapté à l'antibiogramme.",
+          "why": "Durée prolongée."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EI S. gallolyticus : coloscopie obligatoire (cancer colorectal). ATB adaptée, durée prolongée."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 62 ans, EI mitrale native confirmée (végétation 12 mm), insuffisance cardiaque réfractaire aux diurétiques, fistule aorto-mitrale sur ETO. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une indication chirurgicale est présente (IC réfractaire, fistule).",
+          "why": "Indication chirurgicale."
+        },
+        {
+          "letter": "B",
+          "text": "La prise en charge doit être multidisciplinaire (équipe endocardite).",
+          "why": "Équipe spécialisée."
+        },
+        {
+          "letter": "C",
+          "text": "La chirurgie peut être réalisée pendant l'antibiothérapie active.",
+          "why": "Chirurgie sous ATB."
+        },
+        {
+          "letter": "D",
+          "text": "Toute EI doit être traitée uniquement par antibiothérapie médicale.",
+          "why": "Chirurgie souvent nécessaire."
+        },
+        {
+          "letter": "E",
+          "text": "Les complications cardiaques incluent rupture valvulaire, fistules et embolies.",
+          "why": "Complications."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EI compliquée : IC réfractaire, fistule = chirurgie. Équipe endocardite. ATB + chirurgie si indication."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 82 ans, syncope à l'effort, dyspnée croissante depuis plusieurs semaines. HTA, souffle systolique connu. Auscultation : souffle systolique 4/6 foyer aortique irradiant carotides, B2 abolie. PA 130/70 mmHg. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le rétrécissement aortique serré doit être évoqué.",
+          "why": "Syncope effort + souffle aortique + B2 abolie."
+        },
+        {
+          "letter": "B",
+          "text": "L'échocardiographie est l'examen clé pour confirmer et quantifier la sévérité.",
+          "why": "ETT primordiale."
+        },
+        {
+          "letter": "C",
+          "text": "La syncope à l'effort est un symptôme de gravité du RA.",
+          "why": "Indication chirurgicale."
+        },
+        {
+          "letter": "D",
+          "text": "Le souffle du RA est typiquement diastolique.",
+          "why": "RA = souffle systolique éjectionnel."
+        },
+        {
+          "letter": "E",
+          "text": "Une surface valvulaire aortique < 1 cm² définit un RA sévère.",
+          "why": "Critère échographique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "RA serré : syncope effort, souffle systolique, B2 abolie. ETT pour sévérité. Surface < 1 cm² = sévère."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 75 ans, RA sévère symptomatique (dyspnée NYHA III). ETT : surface 0,7 cm², gradient moyen 45 mmHg, FEVG 55 %. Pas de comorbidités majeures. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une intervention (chirurgie ou TAVI) est indiquée.",
+          "why": "RA sévère symptomatique."
+        },
+        {
+          "letter": "B",
+          "text": "La TAVI est une option pour les patients à risque chirurgical élevé ou refus de chirurgie.",
+          "why": "Alternative percutanée."
+        },
+        {
+          "letter": "C",
+          "text": "Le traitement médical seul est suffisant pour un RA sévère symptomatique.",
+          "why": "Intervention recommandée."
+        },
+        {
+          "letter": "D",
+          "text": "Un gradient moyen > 40 mmHg signe un RA sévère.",
+          "why": "Critère hémodynamique."
+        },
+        {
+          "letter": "E",
+          "text": "La FEVG basse avant intervention est un facteur de risque post-opératoire.",
+          "why": "Dysfonction VG."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "RA sévère symptomatique : chirurgie ou TAVI. Gradient moyen > 40 mmHg = sévère."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 68 ans, souffle systolique aortique asymptomatique. ETT : RA modéré, surface 1,5 cm², FEVG 62 %. Épreuve d'effort : angor à l'effort sans modification ECG. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'apparition de symptômes à l'épreuve d'effort est un critère d'intervention.",
+          "why": "Test d'effort."
+        },
+        {
+          "letter": "B",
+          "text": "La surveillance clinique et échographique régulière est indiquée si asymptomatique.",
+          "why": "Suivi RA modéré."
+        },
+        {
+          "letter": "C",
+          "text": "Un RA modéré nécessite toujours une intervention immédiate.",
+          "why": "Surveillance si asymptomatique."
+        },
+        {
+          "letter": "D",
+          "text": "L'épreuve d'effort peut révéler une symptomatologie occulte.",
+          "why": "Dépistage symptômes."
+        },
+        {
+          "letter": "E",
+          "text": "Le RA calcifique dégénératif est la cause la plus fréquente chez le sujet âgé.",
+          "why": "Étiologie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "RA modéré asymptomatique : surveillance. Épreuve d'effort si doute. Symptômes = indication intervention."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 70 ans, RA sévère, FEVG 38 %, dyspnée NYHA II. Gradient moyen 38 mmHg, surface 0,9 cm². Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un RA sévère avec FEVG basse est un RA à flux bas possible.",
+          "why": "Low-flow low-gradient."
+        },
+        {
+          "letter": "B",
+          "text": "L'intervention peut être discutée si symptômes et sévérité confirmée.",
+          "why": "RA sévère symptomatique."
+        },
+        {
+          "letter": "C",
+          "text": "Une FEVG basse exclut toute intervention valvulaire.",
+          "why": "Discutée si symptômes."
+        },
+        {
+          "letter": "D",
+          "text": "Le dobutamine en échographie peut aider à confirmer la sévérité si gradient bas.",
+          "why": "Test de stress."
+        },
+        {
+          "letter": "E",
+          "text": "Le RA entraîne une hypertrophie VG concentrique par surcharge de pression.",
+          "why": "Physiopathologie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "RA + FEVG basse : low-flow possible. Dobutamine écho si besoin. Intervention si sévère symptomatique."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "M. B, 63 ans, souffle systolique apexien holosystolique 3/6 irradiant aisselle. ETT : IM sévère par prolapsus P2 (rupture cordage), SOR 50 mm², VR 67 mL, VG dilaté (DTD 43 mm), FEVG 65 %, AG dilaté 65 mL/m². Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une intervention (plastie ou remplacement) est indiquée.",
+          "why": "IM sévère symptomatique + critères échographiques."
+        },
+        {
+          "letter": "B",
+          "text": "Le prolapsus mitral avec rupture de cordage est une cause fréquente d'IM.",
+          "why": "Étiologie."
+        },
+        {
+          "letter": "C",
+          "text": "Une IM sévère asymptomatique sans critères VG/AG ne nécessite pas toujours une intervention immédiate.",
+          "why": "Surveillance possible."
+        },
+        {
+          "letter": "D",
+          "text": "Le souffle de l'IM est systolique holosystolique apexien.",
+          "why": "Sémiologie."
+        },
+        {
+          "letter": "E",
+          "text": "Une IM légère nécessite toujement une chirurgie.",
+          "why": "Seuil sévérité."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IM sévère prolapsus : indication chirurgicale si symptômes ou critères remplissage. Souffle holosystolique apexien."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 55 ans, dyspnée aiguë après EI mitrale. ETT : IM aiguë sévère, VG non dilaté, pression capillaire pulmonaire élevée, FEVG 60 %. PA 90/60 mmHg, crépitants diffus. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'IM aiguë se manifeste par une OAP sans dilatation VG préalable.",
+          "why": "Régurgitation brutale."
+        },
+        {
+          "letter": "B",
+          "text": "Une chirurgie urgente peut être nécessaire.",
+          "why": "IM aiguë sévère + IC."
+        },
+        {
+          "letter": "C",
+          "text": "L'endocardite est une cause d'IM aiguë.",
+          "why": "Destruction valvulaire."
+        },
+        {
+          "letter": "D",
+          "text": "L'IM chronique et l'IM aiguë ont la même présentation clinique.",
+          "why": "Aiguë = OAP brutal."
+        },
+        {
+          "letter": "E",
+          "text": "Les diurétiques et vasodilatateurs sont le traitement initial de l'IM aiguë sévère.",
+          "why": "Réduction postcharge."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IM aiguë : OAP sans dilatation VG. EI = cause. Chirurgie urgente si instabilité. Diurétiques + vasodilatateurs."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 48 ans, IM modérée asymptomatique, prolapsus mitral isolé. FEVG 68 %, AG 42 mL/m², SOR 25 mm². Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une surveillance clinique et échographique annuelle est indiquée.",
+          "why": "IM modérée asymptomatique."
+        },
+        {
+          "letter": "B",
+          "text": "Le prolapsus mitral isolé est souvent bénin si IM légère à modérée.",
+          "why": "Pronostic."
+        },
+        {
+          "letter": "C",
+          "text": "Une IM modérée asymptomatique nécessite toujours une intervention.",
+          "why": "Surveillance."
+        },
+        {
+          "letter": "D",
+          "text": "L'épreuve d'effort peut être utile si symptômes douteux.",
+          "why": "Test fonctionnel."
+        },
+        {
+          "letter": "E",
+          "text": "La rupture de cordage transforme une IM modérée en IM aiguë sévère.",
+          "why": "Complication."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IM modérée asymptomatique : surveillance. Rupture cordage = IM aiguë."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 72 ans, IM sévère symptomatique, FEVG 55 %, refus de chirurgie, risque chirurgical élevé. IM fonctionnelle sur VG dilaté ischémique. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le MitraClip® (réparation percutanée) peut être une alternative.",
+          "why": "Option percutanée IM."
+        },
+        {
+          "letter": "B",
+          "text": "Le traitement médical de l'IC associée est indispensable.",
+          "why": "IC sous-jacente."
+        },
+        {
+          "letter": "C",
+          "text": "Une IM ischémique est une IM secondaire à dilatation VG post-IDM.",
+          "why": "IM fonctionnelle."
+        },
+        {
+          "letter": "D",
+          "text": "La plastie mitrale est toujours préférée au remplacement si réparable.",
+          "why": "Chirurgie si possible."
+        },
+        {
+          "letter": "E",
+          "text": "L'IM fonctionnelle ne peut jamais être traitée percutanément.",
+          "why": "MitraClip possible."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IM sévère sur VG dilaté : MitraClip si chirurgie impossible. Traitement IC. IM ischémique = secondaire."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 51 ans, dyspnée à la montée de deux étages. Souffle systolique 2/6 foyer aortique et diastolique 3/6 bord gauche sternum. PA 152/58 mmHg (pulsus bisferiens). Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'insuffisance aortique doit être évoquée.",
+          "why": "Souffle diastolique + PA large."
+        },
+        {
+          "letter": "B",
+          "text": "Le souffle diastolique au bord gauche du sternum est typique de l'IA.",
+          "why": "Sémiologie."
+        },
+        {
+          "letter": "C",
+          "text": "La pression artérielle avec chute tensionnelle (PAS élevée, PAD basse) est évocatrice.",
+          "why": "Pulsus bisferiens."
+        },
+        {
+          "letter": "D",
+          "text": "L'IA se manifeste uniquement par un souffle systolique.",
+          "why": "IA = souffle diastolique."
+        },
+        {
+          "letter": "E",
+          "text": "L'échocardiographie confirme le diagnostic et quantifie la sévérité.",
+          "why": "ETT clé."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IA : souffle diastolique, PA large, pulsus bisferiens. ETT pour sévérité."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 28 ans, Marfan, souffle diastolique aortique. ETT : IA sévère, dilatation aorte ascendante 45 mm. FEVG 58 %. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un bêtabloquant est indiqué dans le syndrome de Marfan avec IA.",
+          "why": "Traitement médical Marfan."
+        },
+        {
+          "letter": "B",
+          "text": "La chirurgie est indiquée si IA sévère symptomatique ou dilatation aortique.",
+          "why": "Indications."
+        },
+        {
+          "letter": "C",
+          "text": "Le Marfan est une cause fréquente d'IA chez le sujet jeune.",
+          "why": "Étiologie."
+        },
+        {
+          "letter": "D",
+          "text": "L'IA du Marfan ne nécessite jamais de traitement médical.",
+          "why": "Bêtabloquant recommandé."
+        },
+        {
+          "letter": "E",
+          "text": "La dilatation de l'aorte ascendante est une indication chirurgicale associée.",
+          "why": "Critère aorte."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IA Marfan : bêtabloquant. Chirurgie si IA sévère ou aorte > seuil. Marfan = cause jeune."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 65 ans, IA chronique sévère asymptomatique. FEVG 52 %, VG dilaté (DTD 58 mm), vena contracta 6 mm. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une surveillance échographique régulière est indiquée.",
+          "why": "IA sévère asymptomatique."
+        },
+        {
+          "letter": "B",
+          "text": "L'intervention est indiquée si FEVG < 55 % ou VG très dilaté.",
+          "why": "Critères échographiques."
+        },
+        {
+          "letter": "C",
+          "text": "L'IA chronique entraîne une dilatation VG par surcharge volumique.",
+          "why": "Physiopathologie."
+        },
+        {
+          "letter": "D",
+          "text": "Une IA sévère asymptomatique ne nécessite jamais de chirurgie.",
+          "why": "Critères FEVG/VG."
+        },
+        {
+          "letter": "E",
+          "text": "L'apparition de symptômes est une indication d'intervention.",
+          "why": "Dyspnée, angor."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IA sévère asymptomatique : surveillance. Chirurgie si FEVG < 55 %, dilatation VG ou symptômes."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 25 ans, perte de connaissance brève (< 30 s) après station prolongée debout en cocktail, contexte chaleur, pas de prodromes. Reprise immédiate, pas de confusion. PA orthostatique : chute PAS 25 mmHg à 2 min. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une syncope vasovagale réflexe est le diagnostic le plus probable.",
+          "why": "Contexte situationnel."
+        },
+        {
+          "letter": "B",
+          "text": "Une hypotension orthostatique est définie par une chute PAS ≥ 20 mmHg ou PAD ≥ 10 mmHg à l'orthostatisme.",
+          "why": "Définition."
+        },
+        {
+          "letter": "C",
+          "text": "L'épilepsie est plus probable devant une reprise immédiate sans confusion.",
+          "why": "Syncope = récupération rapide."
+        },
+        {
+          "letter": "D",
+          "text": "Un ECG est recommandé dans le bilan d'une syncope.",
+          "why": "Recherche cause cardiaque."
+        },
+        {
+          "letter": "E",
+          "text": "Les myoclonies post-syncope durent souvent > 1 minute et précèdent la perte de connaissance.",
+          "why": "Myoclonies post-PC, pas pré."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Syncope vasovagale : contexte, récupération rapide. Hypotension orthostatique si chute PA. ECG systématique."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 82 ans, syncope à l'effort sans prodromes, récupération complète. Souffle systolique 3/6 bord gauche sternum irradiant apex. ECG : HVG. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un rétrécissement aortique serré doit être évoqué.",
+          "why": "Syncope effort + souffle."
+        },
+        {
+          "letter": "B",
+          "text": "Une cardiomyopathie hypertrophique est une autre cause d'obstacle à l'effort.",
+          "why": "CMH."
+        },
+        {
+          "letter": "C",
+          "text": "La syncope à l'effort oriente vers une cause cardiaque par obstacle mécanique.",
+          "why": "Classification."
+        },
+        {
+          "letter": "D",
+          "text": "Une syncope vasovagale est la cause la plus probable.",
+          "why": "Vasovagale = prodromes, pas effort."
+        },
+        {
+          "letter": "E",
+          "text": "L'échocardiographie est indiquée pour rechercher une cardiopathie structurelle.",
+          "why": "ETT."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Syncope effort : RA serré, CMH. ETT obligatoire. Vasovagale peu probable sans prodromes."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 75 ans, syncope avec chute, ECG : BAV 3e degré, FC 38/min, QRS larges. Pas de cardiopathie connue. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une cause cardiaque rythmique (BAV) est identifiée.",
+          "why": "Bradycardie extrême."
+        },
+        {
+          "letter": "B",
+          "text": "Une stimulation cardiaque définitive est indiquée.",
+          "why": "Pacemaker."
+        },
+        {
+          "letter": "C",
+          "text": "Les pauses > 6 secondes en dysfonction sinusale peuvent causer une syncope.",
+          "why": "Seuil dysfonction sinusale."
+        },
+        {
+          "letter": "D",
+          "text": "Un BAV 1er degré cause typiquement des syncopes.",
+          "why": "BAV 1 asymptomatique."
+        },
+        {
+          "letter": "E",
+          "text": "En urgence, atropine ou stimulation transcutanée si mauvaise tolérance.",
+          "why": "Traitement temporaire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Syncope + BAV 3 : pacemaker. Pauses > 6 s dysfonction sinusale. Atropine si urgence."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 40 ans, pertes de connaissance répétées plusieurs fois par jour, durée > 15 min, résistance à l'ouverture des yeux, ECG et PA normaux au moment des faits. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une PDCB psychogène doit être évoquée.",
+          "why": "Répétition, durée prolongée."
+        },
+        {
+          "letter": "B",
+          "text": "L'épilepsie se manifeste par des crises tonicocloniques généralisées.",
+          "why": "Crises généralisées."
+        },
+        {
+          "letter": "C",
+          "text": "La durée > 15 minutes et la répétition fréquente orientent vers PDCB psychogène.",
+          "why": "Critères."
+        },
+        {
+          "letter": "D",
+          "text": "Un ECG normal exclut toute cause cardiaque de syncope.",
+          "why": "Cause cardiaque possible entre crises."
+        },
+        {
+          "letter": "E",
+          "text": "La syncope se résout spontaniquement en quelques secondes à minutes.",
+          "why": "Brève résolution."
+        }
+      ],
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "PDCB psychogène : répétition, durée > 15 min. Syncope = brève résolution spontanée."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 81 ans, asthénie et dyspnée 2 jours, FC 32/min, PA 110/70 mmHg. ECG : BAV 3e degré, QRS fins 100 ms, fréquence échappement 32/min. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le BAV 3e degré est une urgence si mauvaise tolérance.",
+          "why": "Bradycardie extrême."
+        },
+        {
+          "letter": "B",
+          "text": "Des QRS fins suggèrent un bloc suprahissien (nodal).",
+          "why": "Bloc proximal."
+        },
+        {
+          "letter": "C",
+          "text": "Atropine et stimulation transcutanée sont des traitements temporaires.",
+          "why": "Urgence."
+        },
+        {
+          "letter": "D",
+          "text": "Un pacemaker définitif est indiqué en l'absence de cause réversible.",
+          "why": "Stimulation."
+        },
+        {
+          "letter": "E",
+          "text": "Un BAV 3 QRS fins a toujours une fréquence d'échappement > 60/min.",
+          "why": "Échappement junctionnel variable."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV 3 : QRS fins = suprahissien. Pacemaker si pas réversible. Atropine/stimulation transcutanée si urgence."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 68 ans, IDM inférieur récent. ECG : BAV 2 Mobitz 2, FC 50/min, QRS larges 130 ms. Pas de syncope. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le BAV 2 Mobitz 2 est un bloc infrahissien à haut risque de progression.",
+          "why": "Bloc distal."
+        },
+        {
+          "letter": "B",
+          "text": "Une stimulation cardiaque est indiquée même sans syncope.",
+          "why": "Mobitz 2 = indication pacemaker."
+        },
+        {
+          "letter": "C",
+          "text": "L'IDM inférieur peut compliquer en BAV par atteinte du nœud AV.",
+          "why": "Complication IDM."
+        },
+        {
+          "letter": "D",
+          "text": "Le Mobitz 1 (Wenckebach) a le même pronostic que Mobitz 2.",
+          "why": "Mobitz 1 souvent suprahissien."
+        },
+        {
+          "letter": "E",
+          "text": "Les QRS larges en Mobitz 2 signent un bloc infrahissien.",
+          "why": "Critère gravité."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV Mobitz 2 post-IDM inférieur : pacemaker indiqué. QRS larges = infrahissien. Mobitz 2 ≠ Mobitz 1."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 70 ans, bradycardie 45/min, ECG : pauses sinusales 4 secondes, FA paroxystique antérieure. Syncopes répétées. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le syndrome tachycardie-bradycardie (maladie de l'oreillette) est probable.",
+          "why": "FA + pauses."
+        },
+        {
+          "letter": "B",
+          "text": "Une stimulation cardiaque est indiquée.",
+          "why": "Dysfonction sinusale."
+        },
+        {
+          "letter": "C",
+          "text": "Les antiarythmiques seuls suffisent sans pacemaker.",
+          "why": "Pacemaker + antiarythmique."
+        },
+        {
+          "letter": "D",
+          "text": "Les pauses de régularisation post-FA sont caractéristiques.",
+          "why": "Retour sinusale."
+        },
+        {
+          "letter": "E",
+          "text": "L'hyperkaliémie est une cause réversible de bradycardie à éliminer.",
+          "why": "Cause réversible."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tachycardie-bradycardie : FA + pauses. Pacemaker. Éliminer hyperkaliémie."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Mme T, 45 ans, palpitations paroxystiques 30-45 min, sans FDR CV, examen normal, ECG repos normal. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un ECG 12 dérivations est le 1er examen à réaliser.",
+          "why": "Documentation."
+        },
+        {
+          "letter": "B",
+          "text": "Un Holter ECG ou un enregistreur d'événements peut documenter la crise.",
+          "why": "Enregistrement prolongé."
+        },
+        {
+          "letter": "C",
+          "text": "L'interrogatoire (durée, régularité, facteurs déclenchants) oriente le diagnostic.",
+          "why": "Clé diagnostique."
+        },
+        {
+          "letter": "D",
+          "text": "Un ECG normal au repos exclut toute arythmie.",
+          "why": "Arythmie paroxystique."
+        },
+        {
+          "letter": "E",
+          "text": "La thyroïdienne et l'ionogramme font partie du bilan biologique initial.",
+          "why": "Bilan initial."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Palpitations : ECG, interrogatoire, Holter si besoin. Bilan thyroïdien, ionogramme. ECG repos normal possible."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 35 ans, palpitations régulières brutales, FC perçue 200/min, durée 20 min, sans cardiopathie. ECG pendant crise : tachycardie régulière 190/min, QRS fins, pas d'ondes P. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une tachycardie supraventriculaire paroxystique est probable.",
+          "why": "Tachycardie régulière QRS fins."
+        },
+        {
+          "letter": "B",
+          "text": "La manœuvre de Valsalva ou l'adénosine IV peuvent terminer la crise.",
+          "why": "Traitement."
+        },
+        {
+          "letter": "C",
+          "text": "Une tachycardie ventriculaire est improbable avec QRS fins.",
+          "why": "TV = QRS larges."
+        },
+        {
+          "letter": "D",
+          "text": "Un syndrome de Wolff-Parkinson-White doit être recherché.",
+          "why": "Pré-excitation."
+        },
+        {
+          "letter": "E",
+          "text": "Les palpitations isolées sans arythmie documentée nécessitent toujours une hospitalisation.",
+          "why": "Ambulatoire si stable."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TSV QRS fins : Valsalva/adénosine. Rechercher WPW. TV improbable si QRS fins."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 58 ans, IDM antérieur, palpitations avec malaise, PA 80/50 mmHg. ECG : tachycardie régulière 160/min, QRS larges 160 ms, axe -30°. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une tachycardie ventriculaire doit être évoquée en urgence.",
+          "why": "QRS larges + cardiopathie."
+        },
+        {
+          "letter": "B",
+          "text": "C'est une situation de gravité avec risque de dégénérescence en FV.",
+          "why": "Urgence."
+        },
+        {
+          "letter": "C",
+          "text": "La cardioversion électrique est indiquée si instabilité hémodynamique.",
+          "why": "TV mal tolérée."
+        },
+        {
+          "letter": "D",
+          "text": "Il s'agit probablement d'une tachycardie sinusale.",
+          "why": "QRS larges = ventriculaire."
+        },
+        {
+          "letter": "E",
+          "text": "L'amiodarone IV peut être utilisée si stable.",
+          "why": "Antiarythmique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TV post-IDM + instabilité : cardioversion urgente. QRS larges + cardiopathie = TV."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 52 ans, dépistage : PA 148/92 mmHg à 3 reprises en consultation. Pas de symptômes. Créatinine normale, pas de protéinurie. ECG : HVG. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le diagnostic d'hypertension artérielle est confirmé par des mesures répétées ≥ 140/90 mmHg.",
+          "why": "Définition HTA."
+        },
+        {
+          "letter": "B",
+          "text": "Un bilan initial inclut créatinine, ionogramme, glycémie, ECG et recherche de FDR.",
+          "why": "Bilan HTA."
+        },
+        {
+          "letter": "C",
+          "text": "Le traitement initial peut inclure un IEC ou un ARA2 en 1re intention.",
+          "why": "Classes thérapeutiques."
+        },
+        {
+          "letter": "D",
+          "text": "Une PA isolée élevée en consultation suffit sans confirmation.",
+          "why": "Mesures répétées nécessaires."
+        },
+        {
+          "letter": "E",
+          "text": "L'HVG sur ECG signe une atteinte organique liée à l'HTA.",
+          "why": "Atteinte cible."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HTA : PA ≥ 140/90 mmHg répétée. Bilan : créatinine, ionogramme, glycémie, ECG. IEC/ARA2 1re intention."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 38 ans, PA 170/110 mmHg découverte en grossesse à 32 SA. Protéinurie 24 h 5 g, créatinine normale, œdèmes des membres inférieurs. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une hypertension artérielle gravidique compliquée (pré-éclampsie) doit être évoquée.",
+          "why": "HTA + protéinurie."
+        },
+        {
+          "letter": "B",
+          "text": "Le risque d'éclampsie impose une surveillance rapprochée et un traitement antihypertenseur.",
+          "why": "Urgence obstétricale."
+        },
+        {
+          "letter": "C",
+          "text": "Les IEC et ARA2 sont contre-indiqués pendant la grossesse.",
+          "why": "Tératogènes."
+        },
+        {
+          "letter": "D",
+          "text": "La pré-éclampsie se définit uniquement par l'HTA sans protéinurie.",
+          "why": "Protéinurie associée."
+        },
+        {
+          "letter": "E",
+          "text": "Le méthyldopa, labétalol ou nifédipine sont des options thérapeutiques.",
+          "why": "Antihypertenseurs grossesse."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Pré-éclampsie : HTA + protéinurie. Pas IEC/ARA2. Méthyldopa, labétalol, nifédipine."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 45 ans, HTA résistante (PA 155/95 mmHg sous 3 classes incluant diurétique). Kaliémie 3,0 mmol/L, créatinine normale. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une hyperaldostéronisme primaire doit être recherché.",
+          "why": "HTA + hypokaliémie."
+        },
+        {
+          "letter": "B",
+          "text": "Le dosage de la rénine et de l'aldostérone fait partie du bilan.",
+          "why": "Bilan hormonal."
+        },
+        {
+          "letter": "C",
+          "text": "Une hypokaliémie peut être liée au traitement diurétique ou à l'hyperaldostéronisme.",
+          "why": "Deux causes."
+        },
+        {
+          "letter": "D",
+          "text": "L'HTA résistante est définie par PA non contrôlée sous 2 classes.",
+          "why": "3 classes incluant diurétique."
+        },
+        {
+          "letter": "E",
+          "text": "Une sténose des artères rénales est une cause d'HTA secondaire à rechercher.",
+          "why": "HTA secondaire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HTA résistante + hypokaliémie : hyperaldostéronisme primaire. Bilan rénine/aldostérone. Sténose artères rénales."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Adolescent de 16 ans, PA 135/85 mmHg à plusieurs reprises. Poids 95 kg (IMC 31), pas de symptômes. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une HTA peut être diagnostiquée en pédiatrie selon des seuils adaptés à l'âge.",
+          "why": "Normes pédiatriques."
+        },
+        {
+          "letter": "B",
+          "text": "L'obésité est un facteur de risque d'HTA chez l'enfant et l'adolescent.",
+          "why": "FDR."
+        },
+        {
+          "letter": "C",
+          "text": "Une prise en charge hygiénodiététique (activité physique, alimentation) est indiquée.",
+          "why": "Mesures initiales."
+        },
+        {
+          "letter": "D",
+          "text": "L'HTA enfant nécessite toujours un traitement médicamenteux immédiat.",
+          "why": "Hygiène de vie d'abord."
+        },
+        {
+          "letter": "E",
+          "text": "Un bilan de HTA secondaire doit être envisagé selon le contexte.",
+          "why": "Causes secondaires."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HTA adolescent : seuils pédiatriques, obésité FDR. Hygiène de vie. Bilan secondaire si besoin."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 57 ans, fumeur, crampe mollet gauche à 250 m. PA asymétrique 150/80 vs 140/80 mmHg, souffle fémoral gauche, pouls d'aval gauches abolis. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'échodoppler artériel des MI avec IPS confirme l'AOMI.",
+          "why": "Examen de 1re intention."
+        },
+        {
+          "letter": "B",
+          "text": "Un IPS < 0,9 est pathologique au repos.",
+          "why": "Seuil IPS."
+        },
+        {
+          "letter": "C",
+          "text": "L'aspirine et une statine sont indiquées en prévention secondaire.",
+          "why": "Traitement."
+        },
+        {
+          "letter": "D",
+          "text": "Une asymétrie tensionnelle > 15 mmHg reproduite est évocatrice de sténose sous-clavienne.",
+          "why": "Seuil 15 mmHg."
+        },
+        {
+          "letter": "E",
+          "text": "Le dépistage d'AAA est indiqué de principe à 57 ans chez l'homme.",
+          "why": "Dépistage homme > 65 ans."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "AOMI : échodoppler + IPS. IPS < 0,9 pathologique. Aspirine + statine. Dépistage AAA homme > 65 ans."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 70 ans, douleur brutale du mollet droit, pâleur, impotence fonctionnelle, pouls poplité absent. IPS impossible. Délai 4 heures. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une ischémie aiguë du membre inférieur doit être évoquée.",
+          "why": "Tableau aigu."
+        },
+        {
+          "letter": "B",
+          "text": "Une emboie artérielle (FA, endocardite) ou une thrombose sur plaque sont des mécanismes.",
+          "why": "Étiologies."
+        },
+        {
+          "letter": "C",
+          "text": "Une revascularisation urgente est nécessaire.",
+          "why": "Urgence vasculaire."
+        },
+        {
+          "letter": "D",
+          "text": "L'ischémie chronique se manifeste par des crampes à l'effort.",
+          "why": "Claudication."
+        },
+        {
+          "letter": "E",
+          "text": "La dopamine est le traitement de l'ischémie aiguë du membre.",
+          "why": "Revascularisation."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ischémie aiguë MI : urgence revascularisation. Embolie ou thrombose. Différent de claudication chronique."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 68 ans, AAA infra-rénal 55 mm découvert au dépistage, asymptomatique, pas de comorbidités majeures. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une intervention est indiquée si diamètre ≥ 55 mm.",
+          "why": "Seuil chirurgie AAA."
+        },
+        {
+          "letter": "B",
+          "text": "Le dépistage d'AAA est recommandé chez l'homme fumeur ou ancien fumeur > 65 ans.",
+          "why": "Dépistage."
+        },
+        {
+          "letter": "C",
+          "text": "Une surveillance échographique est indiquée si diamètre < seuil opératoire.",
+          "why": "Suivi."
+        },
+        {
+          "letter": "D",
+          "text": "Un AAA < 40 mm nécessite toujours une chirurgie immédiate.",
+          "why": "Surveillance si petit."
+        },
+        {
+          "letter": "E",
+          "text": "La rupture d'AAA se manifeste par douleur abdominale ou dorsale et collapsus.",
+          "why": "Urgence."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "AAA ≥ 55 mm : chirurgie. Dépistage homme > 65 ans fumeur. Rupture = urgence."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 55 ans, IDM récent, LDL-C 2,8 mmol/L (110 mg/dL) sous atorvastatine 40 mg. Pas d'intolérance. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'objectif LDL-C post-IDM est < 1,4 mmol/L (55 mg/dL) ou réduction ≥ 50 %.",
+          "why": "Objectif ESC."
+        },
+        {
+          "letter": "B",
+          "text": "L'intensification de la statine ou l'ajout d'ézétimibe est indiqué.",
+          "why": "LDL non à l'objectif."
+        },
+        {
+          "letter": "C",
+          "text": "Les statines réduisent la mortalité en prévention secondaire.",
+          "why": "Bénéfice démontré."
+        },
+        {
+          "letter": "D",
+          "text": "Un LDL > 2,6 mmol/L est acceptable après IDM.",
+          "why": "Objectif plus strict."
+        },
+        {
+          "letter": "E",
+          "text": "Le contrôle lipidique est un pilier de la prévention secondaire post-SCA.",
+          "why": "Prévention."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Post-IDM : LDL < 1,4 mmol/L ou -50 %. Intensifier statine ou ézétimibe."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 40 ans, xanthomes tendineux, LDL-C 6,5 mmol/L, antécédent familial IDM jeune père 48 ans. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une hypercholestérolémie familiale doit être suspectée.",
+          "why": "LDL très élevé + ATCD familial."
+        },
+        {
+          "letter": "B",
+          "text": "Un bilan familial (cascade screening) est recommandé.",
+          "why": "Dépistage famille."
+        },
+        {
+          "letter": "C",
+          "text": "Une statine à haute dose est indiquée dès le diagnostic.",
+          "why": "Traitement."
+        },
+        {
+          "letter": "D",
+          "text": "Les xanthomes sont des dépôts de cholestérol pathognomoniques.",
+          "why": "Signe clinique."
+        },
+        {
+          "letter": "E",
+          "text": "L'hypercholestérolémie familiale ne augmente pas le risque CV.",
+          "why": "Risque majeur."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Hypercholestérolémie familiale : LDL élevé, xanthomes, ATCD familial. Statine haute dose. Dépistage famille."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 26 ans, sportif, douleur thoracique intense rétrosternale, majorée en décubitus et à l'inspiration, contexte virose ORL récente. FC 95/min, PA 125/80 mmHg. ECG : sus-décalage diffus ST sans englobement T. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La péricardite aiguë virale est le diagnostic le plus probable.",
+          "why": "Contexte viral + ECG."
+        },
+        {
+          "letter": "B",
+          "text": "Le traitement inclut AINS (ibuprofène) et colchicine.",
+          "why": "Traitement bénin."
+        },
+        {
+          "letter": "C",
+          "text": "L'activité physique doit être interrompue au moins 1 mois.",
+          "why": "Repos sportif."
+        },
+        {
+          "letter": "D",
+          "text": "La troponine élevée exclut la péricardite.",
+          "why": "Myopéricardite possible."
+        },
+        {
+          "letter": "E",
+          "text": "L'aspirine 1 g soulage souvent la douleur.",
+          "why": "Test diagnostique/therapeutique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Péricardite virale : AINS + colchicine. Repos sportif 1 mois. Aspirine soulage."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 58 ans, péricardite connue, aggravation : PA 75/50 mmHg, veines jugulaires turgescentes, pouls paradoxal, bruits cardiaques assourdis. ETT : épanchement péricardique 25 mm. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une tamponnade cardiaque doit être évoquée.",
+          "why": "Choc obstructif."
+        },
+        {
+          "letter": "B",
+          "text": "Un drainage péricardique percutané est indiqué en urgence.",
+          "why": "Traitement tamponnade."
+        },
+        {
+          "letter": "C",
+          "text": "Le pouls paradoxal est une dépression du pouls à l'inspiration.",
+          "why": "Signe clinique."
+        },
+        {
+          "letter": "D",
+          "text": "La tamponnade se traite uniquement par diurétiques.",
+          "why": "Drainage."
+        },
+        {
+          "letter": "E",
+          "text": "L'hypotension, turgescence jugulaire et assourdissement des bruits sont des signes de gravité.",
+          "why": "Triade tamponnade."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tamponnade : drainage urgent. Pouls paradoxal. Triade : hypotension, TJ, bruits assourdis."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Patient de 54 ans, post-angioplastie IDM J1, ne répond plus, scope : fibrillation ventriculaire. Massage cardiaque externe en cours. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Il s'agit d'un arrêt cardiocirculatoire.",
+          "why": "FV = ACR."
+        },
+        {
+          "letter": "B",
+          "text": "La défibrillation doit être réalisée dès que possible.",
+          "why": "FV = rythme chocable."
+        },
+        {
+          "letter": "C",
+          "text": "L'adrénaline 1 mg IV est indiquée après le 2e choc si FV persistante.",
+          "why": "Algorithme ALS."
+        },
+        {
+          "letter": "D",
+          "text": "Le massage doit être interrompu pendant plus de 30 secondes pour le scope.",
+          "why": "Minimiser interruptions."
+        },
+        {
+          "letter": "E",
+          "text": "L'origine coronarienne est la cause la plus fréquente d'ACR adulte.",
+          "why": "Étiologie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ACR FV post-IDM : défibrillation immédiate. Adrénaline après 2e choc. Cause coronarienne fréquente."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 62 ans, collapsus en rue. Secouriste : pas de réponse, pas de ventilation efficace. Défibrillateur public : rythme chocable. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le diagnostic d'ACR est : absence de réponse + ventilation inefficace.",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "La chaîne de survie inclut alerte, RCP, défibrillation, soins avancés.",
+          "why": "Maillons."
+        },
+        {
+          "letter": "C",
+          "text": "La RCP doit débuter immédiatement si pas de défibrillateur.",
+          "why": "RCP précoce."
+        },
+        {
+          "letter": "D",
+          "text": "L'ACR se définit par une bradycardie extrême.",
+          "why": "Arrêt activité efficace."
+        },
+        {
+          "letter": "E",
+          "text": "Le no-flow prolongé altère le pronostic neurologique.",
+          "why": "Temps sans perfusion."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ACR : pas de réponse + ventilation inefficace. Chaîne de survie. RCP immédiate. No-flow = pronostic."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 72 ans sous rivaroxaban 20 mg/j pour FA, chute avec hématome frontal étendu, Glasgow 12, scanner : hématome sous-dural 8 mm avec effet de masse. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C'est un accident hémorragique majeur lié à l'anticoagulant.",
+          "why": "ACO + hémorragie intracrânienne."
+        },
+        {
+          "letter": "B",
+          "text": "Le rivaroxaban doit être immédiatement suspendu.",
+          "why": "Arrêt ACO."
+        },
+        {
+          "letter": "C",
+          "text": "L'andexanet alfa est un antidote spécifique des anti-Xa (rivaroxaban, apixaban).",
+          "why": "Antidote."
+        },
+        {
+          "letter": "D",
+          "text": "La vitamine K est l'antidote du rivaroxaban.",
+          "why": "Vitamine K = AVK."
+        },
+        {
+          "letter": "E",
+          "text": "Une neurochirurgie peut être nécessaire.",
+          "why": "Hématome compressif."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Hémorragie intracrânienne sous AOD : arrêt ACO, andexanet si anti-Xa. Vitamine K inefficace."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Homme de 65 ans, stent coronaire 6 mois, aspirine + clopidogrel. Doit subir une extraction dentaire simple sans gingivite. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La double antiagrégation ne doit pas être interrompue pour un geste dentaire simple.",
+          "why": "Continuer DAPT."
+        },
+        {
+          "letter": "B",
+          "text": "L'aspirine seule peut être maintenue si interruption DAPT nécessaire.",
+          "why": "Aspirine continue."
+        },
+        {
+          "letter": "C",
+          "text": "L'interruption de la DAPT précoce augmente le risque de thrombose de stent.",
+          "why": "Risque stent."
+        },
+        {
+          "letter": "D",
+          "text": "Tous les gestes dentaires nécessitent l'arrêt de la double antiagrégation.",
+          "why": "Geste simple = continuer."
+        },
+        {
+          "letter": "E",
+          "text": "La durée de DAPT post-stent est typiquement 6-12 mois selon indication.",
+          "why": "Durée DAPT."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "DAPT post-stent : ne pas interrompre pour dentaire simple. Thrombose stent si arrêt précoce."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 80 ans sous warfarine (AVK), INR 8,2, pas de hémorragie. Indication FA, CHA2DS2-VA 4. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'INR cible en FA est 2-3.",
+          "why": "Cible AVK."
+        },
+        {
+          "letter": "B",
+          "text": "En absence d'hémorragie, la vitamine K per os peut être utilisée.",
+          "why": "Correction INR."
+        },
+        {
+          "letter": "C",
+          "text": "L'arrêt temporaire de l'AVK et surveillance INR est indiqué.",
+          "why": "Surdosage."
+        },
+        {
+          "letter": "D",
+          "text": "Un INR > 8 sans hémorragie ne nécessite aucune action.",
+          "why": "Correction nécessaire."
+        },
+        {
+          "letter": "E",
+          "text": "Le risque thromboembolique doit être réévalué avant reprise.",
+          "why": "Balance risque."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "INR 8,2 sans hémorragie : vitamine K, arrêt temporaire AVK. Cible INR 2-3 en FA."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Enfant de 6 ans, examen système sans symptômes. Souffle systolique 2/6 apexien, diminue en position assise, pas d'irradiation, pas de thrill. ECG et radio thorax normales. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un souffle innocent (fonctionnel) est probable.",
+          "why": "Caractéristiques benignes."
+        },
+        {
+          "letter": "B",
+          "text": "Le souffle innocent diminue en position assise ou debout.",
+          "why": "Manière positionnelle."
+        },
+        {
+          "letter": "C",
+          "text": "Un souffle pathologique est souvent plus intense, avec irradiation ou thrill.",
+          "why": "Signes de gravité."
+        },
+        {
+          "letter": "D",
+          "text": "Tous les souffles cardiaques enfant nécessitent une échocardiographie.",
+          "why": "ECG/radio normales = probable innocent."
+        },
+        {
+          "letter": "E",
+          "text": "Le souffle de Still est un souffle innocent classique.",
+          "why": "Type fréquent."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Souffle innocent enfant : faible intensité, diminue assis, pas irradiation. Souffle de Still."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Nourrisson de 3 mois, cyanose à l'alimentation, souffle systolique 3/6, SpO2 88 % au repos. Saturation différentielle membres sup vs inf. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une cardiopathie congénitale cyanogène doit être évoquée.",
+          "why": "Cyanose + SpO2 basse."
+        },
+        {
+          "letter": "B",
+          "text": "Une échocardiographie en urgence est indiquée.",
+          "why": "Diagnostic étiologique."
+        },
+        {
+          "letter": "C",
+          "text": "La saturation différentielle (membres sup > inf) oriente vers une CIV ou persistance canal artériel.",
+          "why": "Cyanose différentielle."
+        },
+        {
+          "letter": "D",
+          "text": "Un souffle innocent explique la cyanose.",
+          "why": "Cyanose = pathologique."
+        },
+        {
+          "letter": "E",
+          "text": "La cardiopathie congénitale est une cause de souffle pathologique enfant.",
+          "why": "Étiologie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Cyanose nourrisson + souffle : cardiopathie congénitale. ETT urgente. Saturation différentielle = ductus/CIV."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 67 ans, diabétique, dyspnée aiguë et fatigue sans douleur typique. ECG : sus-décalage 1,5 mm en antérieur. Troponine 1200 ng/L. PA 100/65 mmHg, SpO2 91 %. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Il s'agit d'un équivalent ischémique possible dans le contexte diabétique.", "why": "Présentation atypique fréquente."},
+        {"letter": "B", "text": "Le SCA ST+ doit être évoqué devant le sus-décalage même sans douleur typique.", "why": "ECG guide la classification."},
+        {"letter": "C", "text": "L'ischémie transmurale aiguë est le mécanisme du sus-décalage persistant.", "why": "Occlusion coronarienne."},
+        {"letter": "D", "text": "L'absence de douleur thoracique exclut un SCA.", "why": "Faux : équivalents ischémiques."},
+        {"letter": "E", "text": "La prise en charge est identique à celle d'un SCA ST+ avec douleur typique.", "why": "Urgence de revascularisation."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [], "scz": [],
+      "explanation": "SCA chez diabétique : dyspnée/fatigue = équivalents ischémiques. Sus-décalage = ST+ quelle que soit la symptomatologie."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Femme de 55 ans, dyspnée aiguë, BNP 80 pg/mL, radiographie : opacité alvéolaire lobaire inférieure droite, fièvre 38,8 °C, CRP 120 mg/L, crépitants localisés au foyer droit. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Une pneumopathie aiguë est le diagnostic le plus probable.", "why": "Foyer infectieux."},
+        {"letter": "B", "text": "Le BNP bas rend l'origine cardiogénique peu probable.", "why": "BNP < 100 pg/mL."},
+        {"letter": "C", "text": "L'OAP se manifeste par un syndrome alvéolo-interstitiel gravitodépendant bilatéral.", "why": "Redistribution vasculaire."},
+        {"letter": "D", "text": "Les crépitants diffus des bases orientent vers OAP plutôt que pneumopathie.", "why": "OAP = bilatéral."},
+        {"letter": "E", "text": "L'exacerbation de BPCO est un diagnostic différentiel de dyspnée aiguë.", "why": "DD classiques."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [], "scz": [],
+      "explanation": "BNP 80 + foyer lobaire + fièvre = pneumopathie plutôt qu'OAP."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "format": "cas_clinique",
+      "prompt": "Patient porteur de valve mécanique aortique, doit subir une extraction dentaire avec gingivite. Pas d'antécédent d'EI. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Une antibioprophylaxie est indiquée avant le geste dentaire.", "why": "Valve mécanique = indication."},
+        {"letter": "B", "text": "L'amoxicilline 2 g per os 1 heure avant est le schéma de référence.", "why": "Posologie standard."},
+        {"letter": "C", "text": "L'antibioprophylaxie est indiquée pour tous les gestes dentaires sans gingivite.", "why": "Gingivite ou manipulation gingivale."},
+        {"letter": "D", "text": "La prophylaxie vise les streptocoques oraux.", "why": "Germes buccodentaires."},
+        {"letter": "E", "text": "Aucune prophylaxie n'est nécessaire pour une valve mécanique.", "why": "Prophylaxie indiquée."}
+      ],
+      "correct": ["A", "B", "D"],
+      "pcz": [], "scz": [],
+      "explanation": "Prophylaxie EI : valve mécanique + geste dentaire avec gingivite. Amoxicilline 2 g 1 h avant."
+    }
+  ]
+}
