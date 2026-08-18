@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+CARDIO 3e.pdf
+
+_tmp_*.txt
+_tmp*.txt
+

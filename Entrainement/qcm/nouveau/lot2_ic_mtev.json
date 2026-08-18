@@ -1,0 +1,4029 @@
+{
+  "questions": [
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Un homme de 74 ans, IC connue, décrit une pesanteur de l’hypocondre droit à la marche. Examen : turgescence jugulaire en demi-assis, reflux hépatojugulaire, hépatomégalie ferme douloureuse, œdèmes malléolaires mous blancs prenant le godet. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ces signes traduisent la stase veineuse systémique liée à l’élévation de pression dans les cavités droites.",
+          "why": "Physiopathologie des signes droits."
+        },
+        {
+          "letter": "B",
+          "text": "La turgescence jugulaire est un signe très spécifique, parfois difficile chez l’obèse.",
+          "why": "Le collège le souligne."
+        },
+        {
+          "letter": "C",
+          "text": "Une ascite précoce est le signe le plus fréquent d’IC droite, avant tout œdème déclive.",
+          "why": "L’ascite est souvent tardive, sauf IT organique ou constriction."
+        },
+        {
+          "letter": "D",
+          "text": "L’IC gauche est la cause la plus fréquente d’IC droite (IC globale).",
+          "why": "Transmission post-capillaire."
+        },
+        {
+          "letter": "E",
+          "text": "Hors poussée, la présence de signes physiques d’IC est un élément de gravité.",
+          "why": "Examen souvent pauvre sous traitement."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Signes droits = stase veineuse systémique. L’IC gauche en est la 1re cause. L’ascite est tardive. Des signes congestifs persistants marquent la gravité."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Une femme de 79 ans, HTA, obèse, a une dyspnée d’effort et des OMI. ETT : FEVG 56 %, masse VG indexée 118 g/m², volume AG indexé 42 mL/m² ; NT-proBNP élevé. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le tableau est compatible avec une HFpEF, qui représente au moins 50 % des IC, surtout chez la femme âgée hypertendue ou obèse.",
+          "why": "Prédominance HFpEF."
+        },
+        {
+          "letter": "B",
+          "text": "Le diagnostic associe clinique, FEVG > 50 % (sans valvulopathie significative, anomalie rythmique/conductrice ni péricarde), peptides élevés, et HVG, dilatation AG ou pressions de remplissage.",
+          "why": "Critères du collège."
+        },
+        {
+          "letter": "C",
+          "text": "HVG : masse VG > 115 g/m² (homme) ou > 95 g/m² (femme) ; dilatation AG : volume indexé > 34 mL/m².",
+          "why": "Seuils écho."
+        },
+        {
+          "letter": "D",
+          "text": "L’absence de cardiomégalie radiologique élimine une IC.",
+          "why": "Le VG n’est souvent pas dilaté en HFpEF."
+        },
+        {
+          "letter": "E",
+          "text": "Les gliflozines sont recommandées I-A pour réduire mortalité CV et hospitalisations en HFpEF.",
+          "why": "Seul pilier de haut niveau de preuve."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HFpEF : FEVG > 50 % + clinique + BNP + HVG/AG/pressions. Radio normale n’élimine pas. Gliflozines I-A."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’introduction d’un IEC dans l’HFrEF, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "On commence à faibles doses, puis on vise si possible les doses d’essais (énalapril 20 mg, captopril 150 mg, ramipril 10 mg) si tolérées.",
+          "why": "Titration."
+        },
+        {
+          "letter": "B",
+          "text": "PA, créatininémie et kaliémie sont contrôlées à 1 semaine puis à chaque palier.",
+          "why": "Encadré 18.3."
+        },
+        {
+          "letter": "C",
+          "text": "On baisse ou on arrête si hypotension symptomatique ou créatinine +20–30 %.",
+          "why": "Seuil de tolérance."
+        },
+        {
+          "letter": "D",
+          "text": "IEC et antialdostérone doivent être introduits le même jour.",
+          "why": "Introduction simultanée à éviter (hyperK, IR)."
+        },
+        {
+          "letter": "E",
+          "text": "Prudence si sujet âgé, déshydraté, sous fortes doses de diurétiques, diabétique, IR, ou PAS < 100 mmHg.",
+          "why": "Populations à risque."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IEC : faibles doses, surveillance J7, créatinine +20–30 % = baisser. Pas d’introduction simultanée avec un antialdostérone."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les bêtabloquants de l’HFrEF, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Seuls carvédilol, métoprolol, bisoprolol et nébivolol ont une efficacité démontrée.",
+          "why": "Quatre molécules."
+        },
+        {
+          "letter": "B",
+          "text": "Introduction chez un patient stabilisé, à très faibles doses (carvédilol 3,125 mg × 2/j ou bisoprolol 1,25 mg/j), paliers hebdomadaires.",
+          "why": "Encadré 18.4."
+        },
+        {
+          "letter": "C",
+          "text": "Les introduire d’emblée pendant une poussée aiguë serait une faute.",
+          "why": "Texte explicite."
+        },
+        {
+          "letter": "D",
+          "text": "Chez un patient déjà sous BB, l’arrêt est recommandé d’emblée à chaque hospitalisation pour IC.",
+          "why": "On n’arrête que si mauvaise réponse ou choc."
+        },
+        {
+          "letter": "E",
+          "text": "CI : asthme ou BPCO sévère, bradycardie ou hypotension symptomatique, BAV 2 ou 3.",
+          "why": "Encadré 18.4."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Quatre BB, titration lente, jamais pendant la poussée. On ne les coupe pas d’emblée en décompensation, sauf choc."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 62 ans, IDM antérieur il y a 3 mois, NYHA II, FEVG 28 % sous ttt optimal, pas de TV, survie estimée > 1 an. Indiquer la ou les proposition(s) exacte(s) sur le DAI.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prévention primaire possible : FEVG < 35 %, NYHA II–III, cardiopathie ischémique ≥ 6 semaines après IDM ou revascularisation.",
+          "why": "Critères primaires."
+        },
+        {
+          "letter": "B",
+          "text": "Prévention secondaire : FV récupérée ou TV symptomatique.",
+          "why": "Définition."
+        },
+        {
+          "letter": "C",
+          "text": "Le NYHA IV relève d’un DAI de principe car le risque de mort subite y est maximal.",
+          "why": "NYHA IV : DAI non indiqué (survie < 1 an) sauf greffe/assistance."
+        },
+        {
+          "letter": "D",
+          "text": "En non ischémique, on attend ≥ 3 mois de traitement médical bien conduit.",
+          "why": "Délai."
+        },
+        {
+          "letter": "E",
+          "text": "Complications : infections de sonde et chocs inappropriés.",
+          "why": "Cités."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "DAI primaire si NYHA II–III, FEVG < 35 %, délais respectés, survie > 1 an. Pas au stade IV de principe."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Femme de 58 ans, CMD non ischémique, NYHA III, FEVG 32 %, QRS 160 ms en BBG. Indiquer la ou les proposition(s) exacte(s) sur la resynchronisation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Indication : IC symptomatique NYHA II–IV, FEVG ≤ 35 %, QRS ≥ 130 ms.",
+          "why": "Critères."
+        },
+        {
+          "letter": "B",
+          "text": "Sondes : atrium droit, VD, et paroi latérale du VG via le sinus coronaire.",
+          "why": "Technique."
+        },
+        {
+          "letter": "C",
+          "text": "Meilleure réponse si BBG, QRS ≥ 150 ms et cardiopathie non ischémique.",
+          "why": "Facteurs de réponse."
+        },
+        {
+          "letter": "D",
+          "text": "Un QRS fin (< 120 ms) est le meilleur prédicteur de réponse.",
+          "why": "C’est l’élargissement qui fonde l’indication."
+        },
+        {
+          "letter": "E",
+          "text": "Un dispositif combinant DAI et resynchronisation est possible si les deux indications coexistent.",
+          "why": "CRT-D."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "CRT si NYHA II–IV, FEVG ≤ 35 %, QRS ≥ 130 ms. Meilleure si BBG large non ischémique. CRT-D si DAI aussi indiqué."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant le traitement de l’HFpEF (FEVG > 50 %), indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les gliflozines ont une recommandation I-A sur mortalité CV et hospitalisations.",
+          "why": "Haut niveau de preuve."
+        },
+        {
+          "letter": "B",
+          "text": "Le moyen mnémotechnique ABCDEFG inclut le ralentissement de la FC (BB ou ICa ralentisseur) pour allonger la diastole.",
+          "why": "Item A."
+        },
+        {
+          "letter": "C",
+          "text": "Diurétiques (thiazidique ou anse) si congestion, avec surveillance rénale.",
+          "why": "Item D."
+        },
+        {
+          "letter": "D",
+          "text": "Le tafamidis est un traitement spécifique de l’amylose ATTR.",
+          "why": "Rang A du paragraphe."
+        },
+        {
+          "letter": "E",
+          "text": "Toute activité physique est contre-indiquée en HFpEF.",
+          "why": "Au contraire, exercices adaptés recommandés."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HFpEF : gliflozines I-A, FC/PA, diurétiques si congestion, comorbidités, exercice, tafamidis si amylose ATTR."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant un OAP ou un choc, le collège fait rechercher des causes spécifiques (CHAMPIT). Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C : SCA ; H : urgence hypertensive.",
+          "why": "Deux premières lettres."
+        },
+        {
+          "letter": "B",
+          "text": "A : arythmie ; M : cause mécanique d’un SCA (rupture, CIV, IM aiguë).",
+          "why": "Lettres A et M."
+        },
+        {
+          "letter": "C",
+          "text": "P : embolie pulmonaire ; I : infections ; T : tamponnade.",
+          "why": "Lettres P, I, T."
+        },
+        {
+          "letter": "D",
+          "text": "T signifie thrombose veineuse superficielle, qui impose une fibrinolyse systématique.",
+          "why": "T = tamponnade."
+        },
+        {
+          "letter": "E",
+          "text": "Ce dépistage s’ajoute au traitement symptomatique urgent, il ne le remplace pas.",
+          "why": "Diurétique, nitrés ou inotropes selon le tableau."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "CHAMPIT = SCA, HTA maligne, arythmie, mécanique de SCA, EP, infection, tamponnade. En parallèle du ttt d’urgence."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 70 ans, marbré, oligurique, obnubilé, PAS 78 mmHg, extrémités froides ; ETT : bas débit VG. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inotrope : dobutamine IV, ou inhibiteur des phosphodiestérases (milrinone, énoximone) si le patient est sous BB.",
+          "why": "Algorithme du choc."
+        },
+        {
+          "letter": "B",
+          "text": "Sonde urinaire et monitorage invasif de la PA (cathéter radial).",
+          "why": "Surveillance."
+        },
+        {
+          "letter": "C",
+          "text": "Nitrés IV à forte dose tant que la PAS n’est pas corrigée.",
+          "why": "Nitrés si PAS > 110 mmHg dans l’OAP, pas dans le choc."
+        },
+        {
+          "letter": "D",
+          "text": "Si échec : ECMO, assistance, cœur artificiel ou greffe en urgence.",
+          "why": "Escalade."
+        },
+        {
+          "letter": "E",
+          "text": "Le lévosimendan (inotrope et vasodilatateur) est parfois utilisé si sevrage difficile des inotropes.",
+          "why": "Mentionné."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Choc : dobutamine (milrinone si BB), sonde urinaire, PA invasive. Pas de nitrés. Escalade assistance/greffe."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Au domicile, femme de 81 ans en OAP, consciente, PAS 145/80 mmHg. Indiquer la ou les mesure(s) immédiate(s) exacte(s) selon le collège.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Position assise ou demi-assise.",
+          "why": "Premier geste."
+        },
+        {
+          "letter": "B",
+          "text": "Furosémide IV 1 mg/kg, à répéter si besoin.",
+          "why": "Dose domicile."
+        },
+        {
+          "letter": "C",
+          "text": "Nitrés sublinguaux si PAS > 100 mmHg.",
+          "why": "Seuil domicile (à l’hôpital : nitrés IV si PAS > 110)."
+        },
+        {
+          "letter": "D",
+          "text": "Appel du Samu selon gravité et hospitalisation.",
+          "why": "Urgence."
+        },
+        {
+          "letter": "E",
+          "text": "IEC à dose maximale avant l’arrivée du Samu.",
+          "why": "IEC/ARNI seulement après la poussée."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Domicile : assis, furosémide 1 mg/kg IV, nitrés SL si PAS > 100, Samu. Pas d’IEC pendant la poussée."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la radiographie thoracique dans l’IC, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cardiomégalie si RCT > 0,5 ; son absence n’élimine pas une IC, surtout à FE préservée.",
+          "why": "Piège HFpEF."
+        },
+        {
+          "letter": "B",
+          "text": "Stase par gravité croissante : redistribution vers les sommets, puis Kerley/flou hilaire, puis œdème alvéolaire.",
+          "why": "Séquence."
+        },
+        {
+          "letter": "C",
+          "text": "Œdème alvéolaire : opacités floconneuses, souvent « ailes de papillon », parfois unilatérales trompeuses.",
+          "why": "Sémiologie."
+        },
+        {
+          "letter": "D",
+          "text": "Épanchements pleuraux uni- ou bilatéraux possibles.",
+          "why": "Associés."
+        },
+        {
+          "letter": "E",
+          "text": "La radio n’a plus aucune place en dyspnée aiguë depuis l’ETT.",
+          "why": "Elle reste primordiale pour le retentissement pleuropulmonaire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Radio : RCT, redistribution, Kerley, ailes de papillon, pleurésie. Pas de cardiomégalie n’élimine pas l’HFpEF."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 48 ans, HFrEF de novo, FEVG 25 %, VG dilaté, coronaire inconnue. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les cardiopathies ischémiques sont la 1re cause d’IC : il faut l’éliminer (coro, ou coroscanner si jeune/probabilité faible).",
+          "why": "Notion indispensable."
+        },
+        {
+          "letter": "B",
+          "text": "Coronaire normale : CMD (maladie du muscle), familiale dans ~25 % des cas.",
+          "why": "Après exclusion ischémique/valvulaire/HTA."
+        },
+        {
+          "letter": "C",
+          "text": "Causes de CMD : alcool, cocaïne, myocardite, auto-immun, endocrine, carence, chimiothérapie, péripartum, takotsubo.",
+          "why": "Liste."
+        },
+        {
+          "letter": "D",
+          "text": "Une valvulopathie gauche ne se complique jamais d’IC tant que la FEVG reste > 40 %.",
+          "why": "Toute valvulopathie peut décompenser ; le RM peut donner un OAP à VG sain."
+        },
+        {
+          "letter": "E",
+          "text": "L’HTA agit par HVG/fibrose (souvent HFpEF), par maladie coronaire, et/ou par postcharge chronique.",
+          "why": "Mécanismes."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Toujours chercher une ischémie devant une HFrEF. Sinon CMD (25 % familiales). HTA : HFpEF et/ou HFrEF. Les valves, y compris le RM, peuvent décompenser."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’IC droite isolée, indiquer la ou les étiologie(s) retenue(s) par le collège.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cœur pulmonaire des pneumopathies hypoxémiantes et cœur pulmonaire aigu de l’EP massive.",
+          "why": "Poumon/EP."
+        },
+        {
+          "letter": "B",
+          "text": "HTAP primitive ou secondaire à une connectivite (sclérodermie).",
+          "why": "HTAP."
+        },
+        {
+          "letter": "C",
+          "text": "DAVD, infarctus du VD, péricardite constrictive.",
+          "why": "Causes cardiaques/péricardiques."
+        },
+        {
+          "letter": "D",
+          "text": "IT isolée : traumatique, endocardite du toxicomane, carcinoïde.",
+          "why": "Tricuspide."
+        },
+        {
+          "letter": "E",
+          "text": "Elle est presque toujours due à un RM serré avec VG dilaté.",
+          "why": "Le RM donne un OAP ; l’IC gauche reste la 1re cause d’ICD (forme globale)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ICD isolée : poumon, EP, HTAP, DAVD, infarctus VD, constriction, IT organique. L’IC gauche reste toutefois la 1re cause d’ICD."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’ETT dans l’IC, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Examen clé : type d’IC selon la FEVG, étiologie curable, hémodynamique, traitement.",
+          "why": "Rôle central."
+        },
+        {
+          "letter": "B",
+          "text": "Elle évalue VG/VD/atria, FEVG (normale > 50–60 %), VCI, valves, pressions de remplissage, débit et PAP.",
+          "why": "Paramètres."
+        },
+        {
+          "letter": "C",
+          "text": "Cinétique segmentaire → ischémie ; HVG asymétrique septale → CMH.",
+          "why": "Orients."
+        },
+        {
+          "letter": "D",
+          "text": "L’ETT n’est indiquée qu’après échec du BNP, jamais si les peptides sont élevés.",
+          "why": "Au contraire : ETT si BNP > 35 ou NT-proBNP > 125 en chronique, ou forte suspicion."
+        },
+        {
+          "letter": "E",
+          "text": "Hors urgence, seuils d’exclusion : BNP < 35 pg/mL ou NT-proBNP < 125 pg/mL.",
+          "why": "Seuils chroniques (différents des seuils d’urgence déjà traités)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ETT indispensable. En chronique, BNP < 35 ou NT-proBNP < 125 rendent l’IC improbable ; au-delà, ETT."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles mesures hygiénodiététiques de l’IC chronique sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cible de 5 à 6 g de sel par jour.",
+          "why": "Régime."
+        },
+        {
+          "letter": "B",
+          "text": "Pesée : consulter si +2 à 3 kg, a fortiori en 2–3 jours ; une perte progressive sans œdème oriente vers une dénutrition de mauvais pronostic.",
+          "why": "Alerte pondérale."
+        },
+        {
+          "letter": "C",
+          "text": "Marche régulière non essoufflante hors décompensation ; le repos strict n’est plus souhaitable.",
+          "why": "Déconditionnement."
+        },
+        {
+          "letter": "D",
+          "text": "Seule la vaccination antigrippale est retenue ; pneumocoque et Covid-19 n’ont pas leur place.",
+          "why": "Les trois vaccins (grippe, Covid-19, pneumocoque) sont recommandés."
+        },
+        {
+          "letter": "E",
+          "text": "En CMD alcoolique, une consommation modérée d’alcool est recommandée pour le HDL.",
+          "why": "Arrêt total, parfois régression de la CMD."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sel 5–6 g/j, poids (+2–3 kg/2–3 j), activité hors poussée, vaccins, arrêt alcool/tabac."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les traitements de 2e intention de l’HFrEF encore symptomatique, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ivabradine (bloc If) si NYHA II–IV, rythme sinusal, FC > 70 ou 75/min malgré BB (ou CI) : réduit les hospitalisations.",
+          "why": "Indication."
+        },
+        {
+          "letter": "B",
+          "text": "Digoxine : symptômes ± FA pour ralentir la FC ; effet neutre sur la survie ; marge étroite, dosage plasmatique.",
+          "why": "Profil."
+        },
+        {
+          "letter": "C",
+          "text": "Amiodarone : seul antiarythmique de l’HFrEF (TV graves, prévention des récidives de FA) ; pas de baisse de mortalité prouvée.",
+          "why": "Seul AA autorisé."
+        },
+        {
+          "letter": "D",
+          "text": "Le flécaïnide est l’antiarythmique de 1re intention en HFrEF pour la FA.",
+          "why": "Classe I contre-indiquée."
+        },
+        {
+          "letter": "E",
+          "text": "Nitrés oraux : appoint si pressions de remplissage encore élevées.",
+          "why": "Vasodilatateurs veineux."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "2e ligne : ivabradine (sinusal, FC élevée), digoxine, nitrés d’appoint, amiodarone. Pas de flécaïnide."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’évolution chiffrée de l’IC, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mortalité ~50 % à 5 ans ; jusqu’à 40–50 % par an en NYHA IV.",
+          "why": "Chiffres."
+        },
+        {
+          "letter": "B",
+          "text": "Décès : mort subite (TV/FV) ou IC réfractaire.",
+          "why": "Mécanismes."
+        },
+        {
+          "letter": "C",
+          "text": "Une hospitalisation pour décompensation est toujours un facteur de gravité ; l’IC est une des 1res causes d’hospitalisation après 65 ans.",
+          "why": "Réhospitalisations."
+        },
+        {
+          "letter": "D",
+          "text": "Prévalence 1–2 % ; âge moyen du diagnostic en Europe 75–80 ans (~78 ans dans les Points).",
+          "why": "Épidémiologie."
+        },
+        {
+          "letter": "E",
+          "text": "QRS fin et natrémie normale sont les deux facteurs les plus péjoratifs.",
+          "why": "Péjoratifs : NYHA III–IV, FEVG basse, QRS > 120 ms, hyponatrémie, BNP, pic VO2 bas."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Prévalence 1–2 %, diagnostic vers 75–80 ans, mortalité ~50 % à 5 ans. Gravité : réhospitalisations, NYHA III–IV, QRS large, hyponatrémie."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 66 ans, OAP, PAS 198/102 mmHg, sans choc. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une poussée hypertensive peut accompagner un OAP ; une PAS élevée n’élimine pas le diagnostic.",
+          "why": "OAP hypertensif."
+        },
+        {
+          "letter": "B",
+          "text": "Nitrés IV indiqués car PAS > 110 mmHg.",
+          "why": "Seuil hospitalier."
+        },
+        {
+          "letter": "C",
+          "text": "Nicardipine IV 1 à 5 mg/h possible pour la poussée hypertensive.",
+          "why": "Posologie du ttt d’OAP."
+        },
+        {
+          "letter": "D",
+          "text": "La dobutamine est le traitement de 1re intention de cet OAP sans hypoperfusion.",
+          "why": "Inotropes = choc."
+        },
+        {
+          "letter": "E",
+          "text": "HBPM préventive systématique à l’hôpital.",
+          "why": "Mesure associée."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "OAP hypertensif : nitrés si PAS > 110, nicardipine 1–5 mg/h, diurétique, HBPM. Pas de dobutamine sans choc."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Selon l’ESC 2021, quels examens biologiques simples sont demandés devant une IC, en plus d’ECG, ETT et radio ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Natrémie, kaliémie, créatininémie.",
+          "why": "Rein et iono."
+        },
+        {
+          "letter": "B",
+          "text": "BNP ou NT-proBNP, glycémie à jeun et HbA1c, bilan lipidique et hépatique, TSHus.",
+          "why": "Terrain métabolique."
+        },
+        {
+          "letter": "C",
+          "text": "NFS, ferritine et CST ne font pas partie du bilan ESC, réservés à l’hématologue.",
+          "why": "NFS et bilan martial sont demandés (anémie, carence fréquentes)."
+        },
+        {
+          "letter": "D",
+          "text": "Hémocultures et coproculture systématiques même sans fièvre.",
+          "why": "Non prévu."
+        },
+        {
+          "letter": "E",
+          "text": "Ces comorbidités (fer, IR, thyroïde) décompensent et limitent la tolérance des cardioprotecteurs.",
+          "why": "Paragraphe comorbidités."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bilan ESC : Na, K, créatinine, peptides, glucose/HbA1c, lipides, foie, TSH, NFS, fer. Traiter les comorbidités."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles situations correspondent à une IC à débit augmenté ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anémies chroniques.",
+          "why": "Haut débit."
+        },
+        {
+          "letter": "B",
+          "text": "Fistules artérioveineuses (dialyse, Rendu-Osler).",
+          "why": "Citées."
+        },
+        {
+          "letter": "C",
+          "text": "Hyperthyroïdie, carence en thiamine (béribéri), maladie de Paget (rare).",
+          "why": "Liste."
+        },
+        {
+          "letter": "D",
+          "text": "Rétrécissement aortique serré par obstacle à l’éjection.",
+          "why": "Surcharge de pression, pas haut débit."
+        },
+        {
+          "letter": "E",
+          "text": "Une augmentation permanente du débit peut surcharger le cœur en volume.",
+          "why": "Mécanisme."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Haut débit : anémie chronique, FAV, hyperthyroïdie, béribéri, Paget. Le RA est l’inverse."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le sacubitril/valsartan dans l’HFrEF, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inhibition AT1 + néprilysine → potentialisation des peptides natriurétiques.",
+          "why": "Mécanisme."
+        },
+        {
+          "letter": "B",
+          "text": "Supériorité vs énalapril sur mortalité et hospitalisations pour IC aiguë.",
+          "why": "Étude princeps."
+        },
+        {
+          "letter": "C",
+          "text": "1re intention IIb-B, ou relais d’IEC si symptômes persistants sous ttt optimal (I-B).",
+          "why": "Double positionnement."
+        },
+        {
+          "letter": "D",
+          "text": "Introduction en pleine poussée d’OAP, avant tout diurétique.",
+          "why": "ARNI seulement après la poussée."
+        },
+        {
+          "letter": "E",
+          "text": "Les ARA2 isolés sont surtout réservés aux intolérants aux IEC (moins de toux).",
+          "why": "Place des ARA2."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ARNI > IEC sur mortalité/hospitalisations ; 1re intention IIb ou relais si symptômes. Pas pendant l’OAP."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 71 ans, IC ischémique, deux hospitalisations en 6 mois, NYHA III, PAS 95 mmHg, QRS 140 ms, Na 128 mmol/L, NT-proBNP très élevé, pic VO2 bas. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "NYHA III–IV, réhospitalisations, étiologie ischémique et hypotension sont péjoratifs.",
+          "why": "Facteurs cliniques."
+        },
+        {
+          "letter": "B",
+          "text": "QRS > 120 ms (BBG) est un facteur ECG péjoratif, avec une implication de resynchronisation possible.",
+          "why": "Pont CRT."
+        },
+        {
+          "letter": "C",
+          "text": "Hyponatrémie et BNP/NT-proBNP élevés sont des biomarqueurs de mauvais pronostic.",
+          "why": "Biologie."
+        },
+        {
+          "letter": "D",
+          "text": "Un pic VO2 très abaissé a une valeur pronostique et peut faire discuter une greffe si le patient est éligible.",
+          "why": "VO2."
+        },
+        {
+          "letter": "E",
+          "text": "Un pic VO2 bas impose d’arrêter les quatre classes cardioprotectrices et contre-indique toute greffe.",
+          "why": "C’est l’inverse : le pic bas oriente vers la greffe ; CI si RAP > 5 UW."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Péjoratifs : NYHA III–IV, réhospitalisations, ischémie, hypotension, QRS large, hyponatrémie, BNP, pic VO2 bas (discussion de greffe)."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 69 ans, HTA, 15 PA, IMC 32, essoufflement depuis six semaines. Indiquer la ou les proposition(s) exacte(s) sur le bilan d’une dyspnée chronique.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le bilan peut se faire sans urgence, contrairement à la dyspnée aiguë.",
+          "why": "Distinction."
+        },
+        {
+          "letter": "B",
+          "text": "NFS d’abord : toujours éliminer une anémie avant des investigations plus poussées.",
+          "why": "Consigne."
+        },
+        {
+          "letter": "C",
+          "text": "On discute EFR-GDS, ECG, ETT-Doppler, radio, épreuve d’effort avec gaz et VO2.",
+          "why": "Liste."
+        },
+        {
+          "letter": "D",
+          "text": "L’épreuve d’effort n’a aucun intérêt : seule l’EVA cote objectivement la gêne.",
+          "why": "L’épreuve d’effort métabolique objective la gêne et oriente cœur vs poumon."
+        },
+        {
+          "letter": "E",
+          "text": "Un angioscanner est systématique en 1re intention, avant la NFS.",
+          "why": "Pas le bilan chronique d’emblée."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Chronique : pas d’urgence, NFS d’abord, puis EFR, ECG, ETT, radio, épreuve d’effort. Angioscanner non systématique."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’HTAP définie dans ce chapitre, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "HTAP précapillaire : PAPm > 25 mmHg au repos (ou > 30 à l’effort) et pression capillaire < 15 mmHg au cathétérisme droit.",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "Le terme HTAP est réservé à l’élévation isolée des pressions artérielles pulmonaires ; sinon on parle d’HTP (gauche, respiratoire, post-embolique).",
+          "why": "Terminologie."
+        },
+        {
+          "letter": "C",
+          "text": "Étiologies : idiopathique, familiale, sclérodermie, shunt, VIH, anorexigènes (dexfenfluramine).",
+          "why": "Liste."
+        },
+        {
+          "letter": "D",
+          "text": "Dyspnée à tout âge, examen et radio souvent pauvres ; évoquée à l’ETT, confirmée par le cathétérisme.",
+          "why": "Parcours."
+        },
+        {
+          "letter": "E",
+          "text": "La radio de thorax suffit à affirmer l’HTAP sans cathétérisme.",
+          "why": "Confirmation hémodynamique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HTAP : PAPm > 25 (ou > 30 à l’effort) et PCAP < 15 mmHg. ETT puis cathétérisme droit."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Chez l’enfant, concernant la dyspnée aiguë, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Étiologies les plus fréquentes : corps étranger, laryngite, épiglottite.",
+          "why": "Points."
+        },
+        {
+          "letter": "B",
+          "text": "Causes laryngées : dyspnée inspiratoire, cornage, tirage, souvent dysphonie.",
+          "why": "Sémiologie."
+        },
+        {
+          "letter": "C",
+          "text": "La gravité du Quincke et des causes neuromusculaires (polyradiculonévrite) est souvent sous-estimée.",
+          "why": "Mise en garde."
+        },
+        {
+          "letter": "D",
+          "text": "Le corps étranger inhalé concerne surtout l’adulte âgé, rarement l’enfant.",
+          "why": "Surtout l’enfant."
+        },
+        {
+          "letter": "E",
+          "text": "Un œdème de Quincke avec œdème de glotte s’intègre souvent à un choc anaphylactique.",
+          "why": "Contexte."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Enfant : corps étranger, laryngite, épiglottite. Inspiratoire + cornage. Ne pas sous-estimer Quincke et Guillain-Barré."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le SDRA, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Défaillance pulmonaire aiguë sévère, perméabilité alvéolocapillaire accrue, mortalité élevée.",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "Œdème lésionnel, principal DD : OAP hémodynamique.",
+          "why": "Lien item 234."
+        },
+        {
+          "letter": "C",
+          "text": "Causes : pneumopathie, sepsis, inhalation, EP, traumatisme, choc, toxiques.",
+          "why": "Liste."
+        },
+        {
+          "letter": "D",
+          "text": "Hospitalisation en réanimation.",
+          "why": "Urgence."
+        },
+        {
+          "letter": "E",
+          "text": "Un furosémide 1 mg/kg IV suffit en règle, comme dans l’OAP cardiogénique.",
+          "why": "PEC de réanimation, pas un simple diurétique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "SDRA = œdème lésionnel de réanimation. Ne pas le traiter comme un OAP."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme longiligne de 22 ans, fumeur : douleur latérothoracique brutale à l’effort, tympanisme, abolition des VV et du MV. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le tableau oriente vers un pneumothorax.",
+          "why": "Terrain + physique."
+        },
+        {
+          "letter": "B",
+          "text": "La radio recherche une hyperclarté.",
+          "why": "Signe."
+        },
+        {
+          "letter": "C",
+          "text": "L’épanchement pleural est une autre cause pleurale de dyspnée aiguë.",
+          "why": "Même paragraphe."
+        },
+        {
+          "letter": "D",
+          "text": "Crépitants en marée montante et expectoration saumonée sont attendus.",
+          "why": "Signes d’OAP, pas de PNO."
+        },
+        {
+          "letter": "E",
+          "text": "Un traumatisme peut associer PNO, hémothorax, volet, contusion, hémopéricarde.",
+          "why": "Traumatismes."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "PNO : longiligne/tabac, silence + tympanisme, hyperclarté. Pas de crépitants d’OAP."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant causes extrathoraciques et pièges, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acidose et anémie entraînent davantage une polypnée qu’une dyspnée.",
+          "why": "Points."
+        },
+        {
+          "letter": "B",
+          "text": "Toujours penser à l’anémie, y compris en chronique.",
+          "why": "Indispensable."
+        },
+        {
+          "letter": "C",
+          "text": "CO, méthémoglobinémie et sulfhémoglobinémie sont des causes de trouble du transport de l’O2.",
+          "why": "Autres causes."
+        },
+        {
+          "letter": "D",
+          "text": "L’OAP est souvent porté par excès chez le BPCO encombré.",
+          "why": "Piège."
+        },
+        {
+          "letter": "E",
+          "text": "La NFS est inutile si l’auscultation pulmonaire est anormale.",
+          "why": "La NFS reste un examen de 1re intention."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Anémie/acidose : polypnée. Piège OAP chez le BPCO. NFS toujours."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Un BPCO de 72 ans, ronchi et expectoration, est étiqueté OAP d’emblée. Quelles mises en garde du collège s’appliquent ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chez le BPCO, l’encombrement fait souvent porter à tort un OAP.",
+          "why": "Point."
+        },
+        {
+          "letter": "B",
+          "text": "L’EP sur terrain emphysémateux est un tableau trompeur.",
+          "why": "Piège."
+        },
+        {
+          "letter": "C",
+          "text": "Le pseudoasthme cardiaque (subœdème bronchospastique) peut mimer une crise d’asthme.",
+          "why": "Piège inverse."
+        },
+        {
+          "letter": "D",
+          "text": "Des sibilants éliminent toute cause cardiaque.",
+          "why": "Le pseudoasthme cardiaque a des sibilants ± crépitants."
+        },
+        {
+          "letter": "E",
+          "text": "Exacerbation de BPCO : majoration de dyspnée, toux, volume ou purulence des expectorations, souvent surinfectée.",
+          "why": "Définition."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ne pas étiqueter OAP tout BPCO encombré. Penser EP. Les sibilants n’excluent pas le cœur."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les échelles d’intensité autres que la NYHA, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "MRC 0 (exercice intense) à 4 (empêche de sortir ou survient à l’habillement).",
+          "why": "Échelle pneumo."
+        },
+        {
+          "letter": "B",
+          "text": "MRC 3 : arrêt après ~100 m ou quelques minutes.",
+          "why": "Stade 3."
+        },
+        {
+          "letter": "C",
+          "text": "EVA 10 cm possible pour une dyspnée aiguë.",
+          "why": "Outil."
+        },
+        {
+          "letter": "D",
+          "text": "Borg 0–10, y compris après un exercice prédéterminé.",
+          "why": "Outil."
+        },
+        {
+          "letter": "E",
+          "text": "Le nombre d’oreillers n’a aucun lien avec l’orthopnée.",
+          "why": "Le collège le recueille précisément pour coter l’orthopnée."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "MRC 0–4, EVA, Borg, nombre d’oreillers. Complémentaires de la NYHA."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 35 ans : dyspnée inspiratoire brutale, cornage, tirage, urticaire et collapsus après un repas. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Évoquer un œdème de Quincke avec œdème de glotte, souvent anaphylactique.",
+          "why": "Cause laryngée."
+        },
+        {
+          "letter": "B",
+          "text": "La gravité des causes laryngées est fréquemment sous-estimée.",
+          "why": "Points."
+        },
+        {
+          "letter": "C",
+          "text": "Dysphonie fréquente si origine laryngée.",
+          "why": "Signe."
+        },
+        {
+          "letter": "D",
+          "text": "Le tableau typique est une dyspnée expiratoire à sibilants, identique à l’asthme.",
+          "why": "Laryngé = inspiratoire + cornage."
+        },
+        {
+          "letter": "E",
+          "text": "Sténose tumorale, granulome post-intubation et corps étranger figurent parmi les causes trachéales.",
+          "why": "Liste."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Quincke : inspiratoire, cornage, anaphylaxie. Urgence sous-estimée. Différent de l’asthme."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant platypnée-orthodéoxie et HTP post-embolique, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dyspnée en orthostatisme avec désaturation : rechercher un shunt D-G (FOP).",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "L’HTP post-embolique est une complication grave précapillaire persistante après une ou plusieurs EP.",
+          "why": "Rang A."
+        },
+        {
+          "letter": "C",
+          "text": "La platypnée est synonyme d’orthopnée.",
+          "why": "Platypnée = debout ; orthopnée = décubitus."
+        },
+        {
+          "letter": "D",
+          "text": "Les dyspnées chroniques sont le plus souvent cardiaques ou pulmonaires.",
+          "why": "Synthèse."
+        },
+        {
+          "letter": "E",
+          "text": "Constriction péricardique et toutes causes d’IC figurent parmi les causes cardiaques chroniques.",
+          "why": "Liste."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Platypnée-orthodéoxie = FOP. HTP-TEC = complication de la MTEV. Chronique : cœur ou poumon."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Asthmatique qui ne peut plus parler, thorax bloqué en inflation, plus de sibilants ni de MV. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Il faut distinguer crise d’asthme et asthme aigu grave, urgence vitale.",
+          "why": "Distinction."
+        },
+        {
+          "letter": "B",
+          "text": "Asthme aigu grave : thorax bloqué, silence auscultatoire, pouls paradoxal possible, élocution impossible.",
+          "why": "Signes."
+        },
+        {
+          "letter": "C",
+          "text": "La crise non grave est une dyspnée expiratoire à sibilants.",
+          "why": "Tableau simple."
+        },
+        {
+          "letter": "D",
+          "text": "La disparition des sibilants signe toujours la guérison, autorisant le retour à domicile.",
+          "why": "C’est un signe d’extrême gravité."
+        },
+        {
+          "letter": "E",
+          "text": "Gravité d’une BPCO décompensée : dyspnée de repos, cyanose, désaturation, FR > 25/min, choc ou signes neuro, hypercapnie.",
+          "why": "Critères BPCO."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Silence auscultatoire = asthme aigu grave, pas une guérison. Transposer les signes de gravité à la BPCO."
+    },
+    {
+      "item": "203",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "MRC, Cheyne-Stokes et causes neurologiques : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "MRC 2 : marche à plat plus lente que les gens du même âge, ou arrêt si le patient marche à son rythme.",
+          "why": "Stade 2."
+        },
+        {
+          "letter": "B",
+          "text": "Cheyne-Stokes (origine centrale, bas débit des centres) se voit dans l’IC grave.",
+          "why": "Mécanisme."
+        },
+        {
+          "letter": "C",
+          "text": "Kussmaul (inspiration-pause-expiration-pause) oriente vers une acidose métabolique.",
+          "why": "Cause extrathoracique."
+        },
+        {
+          "letter": "D",
+          "text": "Causes neuro aiguës : bulbe, polyradiculonévrite, myasthénie.",
+          "why": "Rang A."
+        },
+        {
+          "letter": "E",
+          "text": "Cheyne-Stokes signe une EP à haut risque et impose une fibrinolyse.",
+          "why": "C’est un signe d’IC grave, pas d’EP."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "MRC 2 = ralentissement à plat. Cheyne-Stokes : IC grave. Kussmaul : acidose. Neuro : bulbe, Guillain-Barré, myasthénie."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 64 ans en choc (PAS 75 mmHg depuis 20 min), dyspnée brutale, sans sepsis ni saignement. ETT au lit : VD dilaté, septum paradoxal ; scanner impossible. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "EP à haut risque (choc/hypotension) : mortalité > 15 %, PEC en USIC/réanimation.",
+          "why": "Filière."
+        },
+        {
+          "letter": "B",
+          "text": "Si l’angioscanner est impossible, la surcharge droite à l’ETT peut suffire à fibrinolyser.",
+          "why": "Algo haut risque."
+        },
+        {
+          "letter": "C",
+          "text": "Fibrinolyse recommandée en EP grave hors CI ; sinon embolectomie d’urgence.",
+          "why": "Traitement."
+        },
+        {
+          "letter": "D",
+          "text": "Hors choc, pas de fibrinolyse systématique en EP intermédiaire.",
+          "why": "Texte explicite."
+        },
+        {
+          "letter": "E",
+          "text": "L’absence de surcharge droite en choc rend l’EP très probable et impose la fibrinolyse de principe.",
+          "why": "L’absence de signes droits rend l’EP peu probable."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Haut risque = choc → USIC + fibrinolyse (ou embolectomie). ETT si scanner impossible. Pas de fibrinolyse systématique hors choc."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’échodoppler veineux des MI, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Examen de 1re intention pour une TVP, Se et Sp > 95 %.",
+          "why": "Performance."
+        },
+        {
+          "letter": "B",
+          "text": "Veine normale : pas de matériel, compressible, Doppler respiratoire augmenté par la chasse.",
+          "why": "Critères de normalité."
+        },
+        {
+          "letter": "C",
+          "text": "TVP : thrombus direct et/ou incompressibilité ; Doppler diminué/aboli.",
+          "why": "Critères positifs."
+        },
+        {
+          "letter": "D",
+          "text": "En suspicion d’EP, une TVP distale isolée suffit à confirmer l’EP sans imagerie pulmonaire.",
+          "why": "Seule une TVP proximale confirme une suspicion d’EP."
+        },
+        {
+          "letter": "E",
+          "text": "Un Doppler veineux normal n’élimine pas une EP.",
+          "why": "Notion clé."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EDV = référence de la TVP. Proximale + suspicion d’EP = diagnostic d’EP. Distale ou Doppler normal ≠ exclusion d’EP."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant une jambe douloureuse unilatérale à signes dissociés, quels diagnostics différentiels de TVP le collège cite-t-il ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Claquage, kyste synovial, insuffisance veineuse ou SPT.",
+          "why": "Musculo-veineux."
+        },
+        {
+          "letter": "B",
+          "text": "Érysipèle, lymphangite, cellulite, lymphœdème.",
+          "why": "Infectieux/lymphatique."
+        },
+        {
+          "letter": "C",
+          "text": "Compression extrinsèque (adénopathies, tumeur, utérus gravide), sciatique.",
+          "why": "Compressif."
+        },
+        {
+          "letter": "D",
+          "text": "IC droite, insuffisance rénale ou hépatique (œdèmes souvent bilatéraux).",
+          "why": "Général."
+        },
+        {
+          "letter": "E",
+          "text": "La clinique seule confirme une TVP dès qu’il existe une douleur de mollet.",
+          "why": "Orientation seulement ; preuve objective obligatoire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Clinique insuffisante. Différentiel large : traumatisme, kyste, infection cutanée, lymphœdème, compression, causes générales."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’HNF dans la MTEV (chapitre 226), indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "500 UI/kg/j, TCA 1,5–2,5 × témoin ou anti-Xa 0,3–0,7 U.",
+          "why": "Schéma 226."
+        },
+        {
+          "letter": "B",
+          "text": "Indiquée si ClCr < 30 mL/min, instabilité, geste imminent, ou fibrinolyse.",
+          "why": "Indications résiduelles."
+        },
+        {
+          "letter": "C",
+          "text": "Plaquettes 2×/semaine pendant 21 jours ; NFS avant toute héparine.",
+          "why": "TIH."
+        },
+        {
+          "letter": "D",
+          "text": "Cette surveillance n’est plus nécessaire au-delà d’un mois.",
+          "why": "Mention."
+        },
+        {
+          "letter": "E",
+          "text": "En IR sévère, les HBPM restent préférées car elles n’imposent aucune surveillance.",
+          "why": "HBPM/fonda CI si DFG < 30 ; l’HNF est alors indiquée."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HNF 226 : 500 UI/kg/j, TCA 1,5–2,5, IR sévère/instabilité/fibrinolyse, plaquettes 21 j."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le filtre cave, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Suggéré si CI aux anticoagulants.",
+          "why": "1re indication."
+        },
+        {
+          "letter": "B",
+          "text": "Aussi si récidive sous traitement bien conduit, ou après embolectomie d’EP massive.",
+          "why": "Autres indications."
+        },
+        {
+          "letter": "C",
+          "text": "Le filtre temporaire doit être retiré dès que la CI n’existe plus (risque thrombotique).",
+          "why": "Retrait."
+        },
+        {
+          "letter": "D",
+          "text": "Recommandé d’emblée dans toute TVP distale ambulatoire.",
+          "why": "Pas une indication."
+        },
+        {
+          "letter": "E",
+          "text": "Ce n’est pas un substitut de l’anticoagulation lorsqu’elle est possible.",
+          "why": "Pas un ttt de routine."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Filtre : CI aux ACO, récidive sous ttt, post-embolectomie. À retirer. Pas de principe."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Homme de 71 ans, EP et cancer colique en chimiothérapie. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "HBPM prolongée : moins de récidives que les AVK dans les études citées.",
+          "why": "Supériorité HBPM."
+        },
+        {
+          "letter": "B",
+          "text": "Daltéparine 200 UI/kg/j 1 mois puis 150 ; tinzaparine 175 UI/kg/j ; énoxaparine 150 UI/kg/j.",
+          "why": "Doses d’études."
+        },
+        {
+          "letter": "C",
+          "text": "Plaquettes < 50 G/L : interrompre l’HBPM, reprendre au-dessus de ce seuil.",
+          "why": "Thrombopénie chimio."
+        },
+        {
+          "letter": "D",
+          "text": "Certains AOD d’emblée possibles, sauf cancers digestifs et génito-urinaires.",
+          "why": "Restriction organe."
+        },
+        {
+          "letter": "E",
+          "text": "Relais AVK INR 3–4 dès J1 pendant 6 mois, préféré aux HBPM.",
+          "why": "6 premiers mois : HBPM."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Cancer : HBPM (doses d’études) tant que le cancer est actif ; stop si plaquettes < 50 G/L. AOD hors cancers digestifs/GU."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme enceinte 28 SA, dyspnée brutale. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "D-dimères souvent faussement positifs.",
+          "why": "Limite."
+        },
+        {
+          "letter": "B",
+          "text": "EDV en 1re intention.",
+          "why": "Stratégie."
+        },
+        {
+          "letter": "C",
+          "text": "L’angioscanner est formellement contre-indiqué tout au long de la grossesse, quelle que soit la technique.",
+          "why": "Le cours indique que scanner et scintigraphie peuvent être utilisés avec les techniques actuelles."
+        },
+        {
+          "letter": "D",
+          "text": "Traitement : HBPM ; AVK non recommandés aux 1er et 3e trimestres.",
+          "why": "PEC."
+        },
+        {
+          "letter": "E",
+          "text": "Le rivaroxaban d’emblée est le traitement de référence tout au long de la grossesse.",
+          "why": "Le collège retient les HBPM."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Grossesse : D-dimères peu spécifiques, EDV d’abord ; scanner/scinti possibles si besoin. HBPM, pas d’AVK aux T1/T3."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "TVP distale jambière symptomatique isolée confirmée. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une TVP distale diagnostiquée se prend en charge comme une proximale (ACO).",
+          "why": "Rang A."
+        },
+        {
+          "letter": "B",
+          "text": "1er épisode provoqué, sans facteur persistant : ACO raccourci à 6 semaines.",
+          "why": "Durée."
+        },
+        {
+          "letter": "C",
+          "text": "≥ 3 mois si idiopathique, facteur persistant, récidive ou cancer.",
+          "why": "Prolongation."
+        },
+        {
+          "letter": "D",
+          "text": "AOD de référence ; HBPM/fonda possibles en initial.",
+          "why": "Moyens."
+        },
+        {
+          "letter": "E",
+          "text": "Alitement strict de 3 semaines pour éviter l’EP.",
+          "why": "Lever précoce."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Distale objectivée = ACO. 6 semaines si 1er épisode provoqué ; ≥ 3 mois sinon. Lever précoce."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant les thromboses veineuses superficielles, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’EDV confirme, localise, cherche une TVP (~10 %) et le caractère variqueux.",
+          "why": "Rôle."
+        },
+        {
+          "letter": "B",
+          "text": "Sur veines saines : cancer, Buerger, Behçet, hémopathie, auto-immunité, thrombophilie.",
+          "why": "TVS non variqueuse."
+        },
+        {
+          "letter": "C",
+          "text": "Pas d’AINS généraux ni d’ACO curatif de 1re intention, sauf TVS étendue à la jonction saphéno-fémorale.",
+          "why": "Ce qui n’est pas recommandé."
+        },
+        {
+          "letter": "D",
+          "text": "Fondaparinux prophylactique 6 semaines (CALISTO) suggéré.",
+          "why": "Étude."
+        },
+        {
+          "letter": "E",
+          "text": "Toute TVS impose fibrinolyse et filtre cave.",
+          "why": "Hors sujet."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TVS : EDV (10 % de TVP). Compression ± fonda 6 sem. Curatif/chirurgie si jonction SF."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la prévention de la MTEV, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’aspirine n’est pas indiquée en prévention de la MTEV.",
+          "why": "Phrase explicite."
+        },
+        {
+          "letter": "B",
+          "text": "Voyage > 6 h : hydratation, contractions des mollets, vêtements non serrés ; si FDR, chaussettes classe 2–3 ± HBPM avant le départ.",
+          "why": "Voyage."
+        },
+        {
+          "letter": "C",
+          "text": "Médical : énoxaparine 0,4 mL/24 h SC ou fondaparinux 2,5 mg/24 h.",
+          "why": "Posologies."
+        },
+        {
+          "letter": "D",
+          "text": "Ortho lourde (PTH) : 4–6 semaines ; PTG : 10–15 jours ; énoxa, fonda ou AOD selon protocoles.",
+          "why": "Durées."
+        },
+        {
+          "letter": "E",
+          "text": "Toute hospitalisation médicale impose une fibrinolyse préventive à dose pleine.",
+          "why": "Prévention = HBPM/fonda prophylactiques."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Pas d’aspirine préventive. Voyage : mesures mécaniques ± HBPM. Médical : énoxa 0,4 ou fonda 2,5. Ortho : 4–6 sem (hanche)."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant le bilan de thrombophilie après MTEV, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pas de bilan constitutionnel systématique après un 1er épisode, ni après 50 ans.",
+          "why": "Non-prescription."
+        },
+        {
+          "letter": "B",
+          "text": "Suggéré avant 50 ans si 1er épisode proximal/EP non provoqué + ATCD familial au 1er degré, si récidives, ou site atypique.",
+          "why": "Indications."
+        },
+        {
+          "letter": "C",
+          "text": "À 3–6 mois, AOD arrêtés 72 h : AT, PC, PS, FV Leiden, FII G20210A.",
+          "why": "Timing et panel."
+        },
+        {
+          "letter": "D",
+          "text": "Héparine perturbe AT et lupique ; AVK perturbent PC/PS ; AOD perturbent circulants et inhibiteurs.",
+          "why": "Interférences."
+        },
+        {
+          "letter": "E",
+          "text": "Prélever le bilan à J0 sous héparine pour décider d’une fibrinolyse.",
+          "why": "À distance, pas sous héparine, et cela ne guide pas la fibrinolyse."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Pas de thrombophilie systématique ni après 50 ans. Ciblée si jeune/familial/récidive/site atypique. À 3–6 mois."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 55 ans, dyspnée brutale et douleur pleurale. ECG : tachycardie sinusale, S1Q3, T− de V1 à V4. GDS : hypoxémie-hypocapnie. Radio peu spécifique. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dans 90 % des cas, l’EP est suspectée devant dyspnée, douleur thoracique ou syncope.",
+          "why": "Triade."
+        },
+        {
+          "letter": "B",
+          "text": "ECG : TS, S1Q3, BBD, T− V1–V4 (piège SCA par ischémie du VD).",
+          "why": "Signes droits."
+        },
+        {
+          "letter": "C",
+          "text": "GDS normale dans 20 % des cas ; quasiment plus pratiquée sauf SpO2 < 90 % en air.",
+          "why": "Limites."
+        },
+        {
+          "letter": "D",
+          "text": "Radio normale n’élimine pas l’EP (atélectasie en bande, pleurésie, coupole, infarctus triangulaire).",
+          "why": "Aspécifique."
+        },
+        {
+          "letter": "E",
+          "text": "Ces examens de routine suffisent à confirmer l’EP sans imagerie ni scores.",
+          "why": "Orientation seulement."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Clinique + ECG droit + GDS inconstante + radio aspécifique = suspicion, pas preuve. 20–30 % d’EP spontanées."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Jambe bleue, très douloureuse, œdémateuse, cyanosée, signes d’ischémie. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Phlegmatia cerulea (phlébite bleue), rare mais grave.",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "Ischémie par obstruction extensive, œdème compressif et spasme.",
+          "why": "Mécanisme."
+        },
+        {
+          "letter": "C",
+          "text": "Un état de choc est possible.",
+          "why": "Mention."
+        },
+        {
+          "letter": "D",
+          "text": "Thrombolytiques non recommandés en 1re intention dans une TVP, sauf sauvetage de membre (phlegmatia/syndrome obstructif sévère).",
+          "why": "Exception."
+        },
+        {
+          "letter": "E",
+          "text": "Compression classe 3 seule, sans anticoagulation.",
+          "why": "La phlegmatia est une CI à la compression ; l’ACO s’impose."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Phlegmatia cerulea : ischémie sur TV extensive, CI à la compression. Thrombolyse veineuse seulement en sauvetage de membre."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant HERDOO2 et certaines durées (tableau 19.3), indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "HERDOO2 (femme) : signes de TVP, D-dimères > 250 µg/L, IMC > 30, âge > 65 ans.",
+          "why": "Items."
+        },
+        {
+          "letter": "B",
+          "text": "Femme, 1er épisode non provoqué par un facteur majeur et HERDOO2 < 1, ou femme < 50 ans : 3–6 mois.",
+          "why": "Ligne faible."
+        },
+        {
+          "letter": "C",
+          "text": "SAPL : anticoagulation non limitée par AVK (INR 2–3).",
+          "why": "Risque élevé."
+        },
+        {
+          "letter": "D",
+          "text": "La préférence du patient peut entrer dans la décision de durée.",
+          "why": "Rang A."
+        },
+        {
+          "letter": "E",
+          "text": "Un HERDOO2 élevé chez l’homme autorise l’arrêt à 6 semaines d’une EP proximale.",
+          "why": "Score féminin ; 6 semaines n’est pas la durée d’une EP."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HERDOO2 = femme. Aide à limiter à 3–6 mois si score bas. SAPL : AVK au long cours."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "EP confirmée, femme 48 ans, sPESI = 0, rein normal, pas de saignement, bon entourage. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hospitalisation de règle, mais discutable si PESI/sPESI = 0 et pas d’autre facteur d’hospit.",
+          "why": "Bas risque."
+        },
+        {
+          "letter": "B",
+          "text": "Ambulatoire : diagnostic de certitude, éducation, surveillance organisée, évaluation des risques.",
+          "why": "Conditions."
+        },
+        {
+          "letter": "C",
+          "text": "On n’hospitalise jamais une EP, même iliocave ou en IR sévère.",
+          "why": "On hospitalise IR sévère, haut risque hémorragique, TVP iliocave, mauvais environnement."
+        },
+        {
+          "letter": "D",
+          "text": "sPESI ≥ 1 ≈ 10 % de mortalité ; + souffrance VD → USIC + ACO (intermédiaire haut).",
+          "why": "Filière Points."
+        },
+        {
+          "letter": "E",
+          "text": "sPESI = 0 impose fibrinolyse et filtre cave avant le retour à domicile.",
+          "why": "Bas risque = ACO ± ambulatoire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "sPESI = 0 : ACO, séjour court ou ambulatoire si logistique OK. Hospitaliser IR, hémorragie, iliocave. Pas de fibrinolyse."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Scintigraphie V/Q et ETT hors choc : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "EP : mismatch (perfusion défaillante, ventilation conservée).",
+          "why": "Principe."
+        },
+        {
+          "letter": "B",
+          "text": "Compte rendu en 3 niveaux : élevée, non diagnostique, normale.",
+          "why": "Standard."
+        },
+        {
+          "letter": "C",
+          "text": "Scinti normale + score clinique faible : on peut exclure l’EP.",
+          "why": "Règle."
+        },
+        {
+          "letter": "D",
+          "text": "Hors choc, un cœur pulmonaire aigu à l’ETT classe le patient à risque intermédiaire.",
+          "why": "Pronostic."
+        },
+        {
+          "letter": "E",
+          "text": "Une pathologie cardiorespiratoire chronique améliore la performance de la scintigraphie.",
+          "why": "Elle la limite."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "V/Q : mismatch, 3 niveaux ; normale + clinique faible = exclusion. Moins fiable si poumon chronique. ETT : stratification."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Avant d’arrêter un anticoagulant après une EP, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Toujours éliminer une HTP post-embolique.",
+          "why": "Rang A."
+        },
+        {
+          "letter": "B",
+          "text": "HTP-TEC chez 0,5–5 % des traités ; endartériectomie = traitement de choix en centre expert.",
+          "why": "Chiffres + ttt."
+        },
+        {
+          "letter": "C",
+          "text": "EDV de fin de traitement pour les séquelles de TVP.",
+          "why": "Suivi."
+        },
+        {
+          "letter": "D",
+          "text": "Pas d’imagerie de routine pendant le ttt, sauf HTAP initiale (contrôle PAP par ETT).",
+          "why": "Indication ciblée."
+        },
+        {
+          "letter": "E",
+          "text": "Une scintigraphie mensuelle pendant 2 ans est obligatoire avant tout arrêt.",
+          "why": "Pas de suivi d’imagerie systématique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Avant l’arrêt : éliminer l’HTP-TEC. ETT si HTAP initiale, EDV de séquelles. Deux tiers reperfusent."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Posologies parentérales curatives (HBPM, fondaparinux) : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Énoxaparine 1 mg/kg/12 h ; tinzaparine 175 UI/kg/24 h (AMM EP ± TVP).",
+          "why": "AMM."
+        },
+        {
+          "letter": "B",
+          "text": "Daltéparine 100 UI/kg/12 h ; nadroparine 85 UI/kg/12 h ou 171 UI/kg/24 h.",
+          "why": "Autres HBPM."
+        },
+        {
+          "letter": "C",
+          "text": "Fondaparinux 7,5 mg/24 h si poids 50–100 kg, sans anti-Xa systématique.",
+          "why": "Fonda."
+        },
+        {
+          "letter": "D",
+          "text": "Anti-Xa HBPM seulement si risque d’accumulation (IR modérée, âge, petit poids, obésité), à H4.",
+          "why": "Surveillance ciblée."
+        },
+        {
+          "letter": "E",
+          "text": "Surveillance plaquettaire systématique sous fondaparinux, comme sous HNF.",
+          "why": "Pas de plaquettes de routine sous fonda."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Curatif : énoxa 1 mg/kg/12 h, tinza 175/j, fonda 7,5 mg (50–100 kg). Anti-Xa HBPM seulement si accumulation."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Histoire naturelle et SPT : indiquer la ou les proposition(s) chiffrée(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Contention initiale ≥ 3 mois : −50 % de SPT.",
+          "why": "Chiffre."
+        },
+        {
+          "letter": "B",
+          "text": "SPT en moyenne dans les 2 premières années.",
+          "why": "Délai."
+        },
+        {
+          "letter": "C",
+          "text": "Sans ACO, 50 % des MTEV symptomatiques récidivent en 3 mois ; à 1 an : 9 % si non provoquée vs 3 % si provoquée.",
+          "why": "Récidive."
+        },
+        {
+          "letter": "D",
+          "text": "EP dans les 3–7 jours après une TVP ; mortelle dès la 1re heure dans 10 % des cas.",
+          "why": "Chronologie."
+        },
+        {
+          "letter": "E",
+          "text": "Une TVP distale asymptomatique postopératoire s’étend en proximal dans ~80 % des cas, toujours avec EP clinique.",
+          "why": "Extension ~20 %, rarement pulmonaire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Contention précoce −50 % de SPT. Sans ACO : 50 % de récidive à 3 mois. EP à J3–J7, 10 % mortelle d’emblée."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Thrombus mobile dans les cavités droites au cours d’une EP. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Haut risque de mortalité précoce, surtout si mobile.",
+          "why": "Forme particulière."
+        },
+        {
+          "letter": "B",
+          "text": "Traitement urgent ; place relative thrombolyse vs embolectomie encore mal validée.",
+          "why": "Incertitude."
+        },
+        {
+          "letter": "C",
+          "text": "L’ETT peut exceptionnellement voir un thrombus des gros troncs pulmonaires.",
+          "why": "Signe rare."
+        },
+        {
+          "letter": "D",
+          "text": "Embolies non cruoriques : septique, gazeuse, graisseuse, amniotique, tumorale — ttt étiologique.",
+          "why": "EP non thrombotique."
+        },
+        {
+          "letter": "E",
+          "text": "Si sPESI = 0, abstention thérapeutique possible.",
+          "why": "Traitement urgent, pas d’abstention."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Thrombus droit mobile = urgence. Penser aussi aux EP non fibrinocruoriques."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Un patient a un frottement à J4 d’un IDM transmural reperméabilisé. Un autre, 8 semaines après IDM, a fièvre, péricardite, pleurésie, arthralgies et QT long. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Péricardite précoce J3–J5 après IDM transmural, évolution le plus souvent favorable.",
+          "why": "Forme précoce."
+        },
+        {
+          "letter": "B",
+          "text": "Péricardite tardive (2e–16e semaine) = Dressler : fièvre, péricarde, plèvre, arthralgies, AEG, inflammation, QT long.",
+          "why": "Dressler."
+        },
+        {
+          "letter": "C",
+          "text": "Le Dressler est devenu rare depuis la reperfusion précoce.",
+          "why": "Historique."
+        },
+        {
+          "letter": "D",
+          "text": "Toute péricardite à J4 d’IDM impose une fibrinolyse itérative.",
+          "why": "Pas de fibrinolyse ; les thrombolytiques sont même CI en péricardite aiguë."
+        },
+        {
+          "letter": "E",
+          "text": "Syndrome post-péricardiotomie : jours à mois après chirurgie/greffe ; la chirurgie cardiaque est la 1re cause actuelle de constriction.",
+          "why": "Postop."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Deux péricardites post-IDM : précoce J3–J5 et Dressler tardif (rare depuis la reperfusion). Post-péricardiotomie = 1re cause de constriction."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’ETT et la radio d’une péricardite, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’ETT peut être normale (péricardite sèche).",
+          "why": "Fréquent."
+        },
+        {
+          "letter": "B",
+          "text": "Abondance : < 10 mm minime, 10–20 mm modéré, > 20 mm abondant.",
+          "why": "Grades."
+        },
+        {
+          "letter": "C",
+          "text": "Elle apprécie topographie et tolérance, et confirme une tamponnade.",
+          "why": "Rôle."
+        },
+        {
+          "letter": "D",
+          "text": "Radio souvent normale ; rectitude du bord gauche ou cœur en carafe si gros épanchement.",
+          "why": "Radio."
+        },
+        {
+          "letter": "E",
+          "text": "Un épanchement minime suffit à lui seul, sans autre critère, à porter le diagnostic.",
+          "why": "Il faut 2 critères parmi douleur, frottement, ECG, épanchement."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ETT parfois normale. Grades <10 / 10–20 / >20 mm. Carafe si abondant. L’épanchement n’est qu’un des 4 critères."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Outre les 4 facteurs majeurs ESC 2015, quels facteurs mineurs peuvent faire discuter une hospitalisation ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Immunodépression.",
+          "why": "Mineur."
+        },
+        {
+          "letter": "B",
+          "text": "Traitement anticoagulant.",
+          "why": "Risque d’hémopéricarde."
+        },
+        {
+          "letter": "C",
+          "text": "Suites d’un traumatisme thoracique.",
+          "why": "Mineur."
+        },
+        {
+          "letter": "D",
+          "text": "Myocardite associée (troponine élevée ± trouble de cinétique).",
+          "why": "Mineur."
+        },
+        {
+          "letter": "E",
+          "text": "Un fébricule à 37,8 °C chez un jeune, sans autre anomalie, impose USIC et drainage.",
+          "why": "Majeur = fièvre > 38 °C ; drainage = tamponnade."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mineurs : immunodépression, ACO, traumatisme, myocardite. Un fébricule < 38 °C n’impose ni USIC ni drainage."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles sont les indications d’une ponction ou d’un drainage péricardique ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tamponnade.",
+          "why": "Indication vitale."
+        },
+        {
+          "letter": "B",
+          "text": "Forte suspicion néoplasique.",
+          "why": "But étiologique."
+        },
+        {
+          "letter": "C",
+          "text": "Épanchement abondant symptomatique malgré 1 semaine de ttt médical bien conduit.",
+          "why": "Résistance."
+        },
+        {
+          "letter": "D",
+          "text": "Suspicion purulente : drainage chirurgical à privilégier.",
+          "why": "Voie chir."
+        },
+        {
+          "letter": "E",
+          "text": "Ponction systématique de toute forme virale typique pour PCR de routine.",
+          "why": "Inutile dans les formes typiques non graves."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ponction : tamponnade, néoplasie, épanchement abondant résistant à J7. Chirurgical si purulent."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant la péricardite constrictive, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Constriction modérée dans < 10 % des cas, par péricarde fibreux ou fibrocalcaire.",
+          "why": "Incidence."
+        },
+        {
+          "letter": "B",
+          "text": "Adiastolie avec égalisation des pressions télédiastoliques des 4 cavités ; dip-plateau au cathétérisme droit.",
+          "why": "Hémodynamique."
+        },
+        {
+          "letter": "C",
+          "text": "IC droite souvent prédominante (TJ, ascite) ; DD : cardiomyopathie restrictive.",
+          "why": "Clinique."
+        },
+        {
+          "letter": "D",
+          "text": "Traitement parfois chirurgical (péricardectomie).",
+          "why": "TTT."
+        },
+        {
+          "letter": "E",
+          "text": "Des corticoïdes à forte dose dès J1 d’une péricardite virale préviennent toujours la constriction.",
+          "why": "Corticoïdes non indiqués en 1re intention (récidives)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Constriction < 10 % : adiastolie, dip-plateau, IC droite. Péricardectomie. Pas de corticoïdes préventifs de routine."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant la péricardite purulente, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rare mais grave ; staphylocoque, pneumocoque, streptocoque, BGN.",
+          "why": "Germes."
+        },
+        {
+          "letter": "B",
+          "text": "Terrain : immunodéprimé, septicémie, pleuropneumopathie, postop cardiaque/thoracique.",
+          "why": "Contexte."
+        },
+        {
+          "letter": "C",
+          "text": "Tamponnade fréquente, constriction possible.",
+          "why": "Évolution."
+        },
+        {
+          "letter": "D",
+          "text": "ATB adaptée au germe du liquide ; drainage chirurgical souvent nécessaire.",
+          "why": "PEC."
+        },
+        {
+          "letter": "E",
+          "text": "Ibuprofène seul 3 jours en ambulatoire est le standard.",
+          "why": "Urgence médico-chirurgicale."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Purulente : rare, grave, immunodéprimé/postop. ATB + drainage chirurgical."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant la péricardite tuberculeuse, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Subaiguë liquidienne, AEG, fièvre persistante ; terrain : TB, âge, greffe, VIH, alcool.",
+          "why": "Clinique."
+        },
+        {
+          "letter": "B",
+          "text": "IDR faussement négative dans près d’un tiers des cas ; radio pulmonaire souvent anormale.",
+          "why": "Limites."
+        },
+        {
+          "letter": "C",
+          "text": "ADA élevée, PCR et cultures (tubage, expectoration, liquides) aident au diagnostic.",
+          "why": "Outils."
+        },
+        {
+          "letter": "D",
+          "text": "Antituberculeux ; corticoïdes parfois pour diminuer le risque de constriction.",
+          "why": "PEC."
+        },
+        {
+          "letter": "E",
+          "text": "Tamponnade et constriction sont exceptionnelles, ce qui autorise l’abstention d’antituberculeux.",
+          "why": "Complications fréquentes ; ttt indispensable."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TB : subaiguë, AEG, VIH/alcool. ADA/PCR/cultures. Antituberculeux ± corticoïdes."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Cancer bronchique et tamponnade. Indiquer la ou les proposition(s) exacte(s) sur la péricardite néoplasique.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Métastases 40 fois plus fréquentes que le mésothéliome ; sources : bronche, sein, mélanome, leucémies, lymphomes, Kaposi.",
+          "why": "Épidémio."
+        },
+        {
+          "letter": "B",
+          "text": "Épanchement souvent hémorragique ; tamponnade fréquente → ponction urgente.",
+          "why": "Présentation."
+        },
+        {
+          "letter": "C",
+          "text": "Cytologie ou biopsie essentielles ; TDM/IRM parfois utiles.",
+          "why": "Preuve."
+        },
+        {
+          "letter": "D",
+          "text": "Récidive fréquente : suivi clinique et ETT.",
+          "why": "Évolution."
+        },
+        {
+          "letter": "E",
+          "text": "Colchicine 3 mois sans drainage est le ttt unique de la tamponnade néoplasique.",
+          "why": "La tamponnade se draine."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Néoplasique : secondaires (poumon, sein, mélanome, hémopathies), hémorragique, tamponnade. Drainage + preuve cyto."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Sportif de 26 ans : douleur rétrosternale majorée en décubitus, calmée penché en avant, résistante à la TNT, après une virose. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sémiologie typique de péricardite.",
+          "why": "Clinique."
+        },
+        {
+          "letter": "B",
+          "text": "SCA, EP et dissection restent à évoquer d’emblée.",
+          "why": "Différentiel vital."
+        },
+        {
+          "letter": "C",
+          "text": "Frottement systolodiastolique variable (« cuir neuf ») : confirme mais son absence n’élimine pas.",
+          "why": "Inconstant."
+        },
+        {
+          "letter": "D",
+          "text": "Réponse à 1 g d’aspirine, CRP élevée et minime décollement confortent, sans dispenser d’un ECG répété.",
+          "why": "Vignette du livre."
+        },
+        {
+          "letter": "E",
+          "text": "Un sus-ST territorialisés avec miroir, trinitrino-sensible, oriente vers une péricardite plutôt qu’un SCA.",
+          "why": "Profil du SCA, pas de la péricardite."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Douleur positionnelle TNT-résistante. Différentiel SCA/EP/dissection. Le sus-ST en miroir n’est pas une péricardite."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Échec AINS + colchicine : corticoïdes et interactions. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Corticoïdes non indiqués en 1re intention (risque de récidive).",
+          "why": "Notion inacceptable."
+        },
+        {
+          "letter": "B",
+          "text": "Si échec : prednisone 0,25–0,5 mg/kg/j, en poursuivant la bithérapie.",
+          "why": "Dose ESC."
+        },
+        {
+          "letter": "C",
+          "text": "Interactions CYP3A4 : macrolides, ciclosporine, vérapamil, statines ; surveiller ASAT, créatinine, CPK, NFS.",
+          "why": "PV."
+        },
+        {
+          "letter": "D",
+          "text": "Diarrhée : baisser la dose ; arrêt progressif la dernière semaine à 0,5 mg 1 j/2.",
+          "why": "Sevrage."
+        },
+        {
+          "letter": "E",
+          "text": "Pas de limite de dose en IR terminale.",
+          "why": "CI en IR sévère ; demi-dose si DFG < 35, âge > 70 ou poids < 70 kg."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Pas de corticoïdes d’emblée. Si échec : 0,25–0,5 mg/kg/j. Colchicine : CYP3A4, CI IR sévère."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quel suivi après une péricardite aiguë bénigne ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "J7 (MT), M1 (cardiologue + ETT), M3 et M6.",
+          "why": "Calendrier."
+        },
+        {
+          "letter": "B",
+          "text": "Vérifier symptômes, CRP, ETT, et gérer l’arrêt progressif.",
+          "why": "Objectifs."
+        },
+        {
+          "letter": "C",
+          "text": "Une fois la douleur calmée, le sport de compétition peut reprendre dès J3, sans contrôle de CRP ni d’ETT.",
+          "why": "Repos jusqu’à disparition des symptômes et normalisation CRP, ECG et ETT (en général le 1er mois)."
+        },
+        {
+          "letter": "D",
+          "text": "Récidive souvent par ttt trop court, entre 3 mois et 3 ans ; la colchicine la prévient.",
+          "why": "Prévention."
+        },
+        {
+          "letter": "E",
+          "text": "Coronarographie systématique à J7 chez tout sujet jeune à ETT normale.",
+          "why": "Pas d’indication."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Suivi J7 / M1 (ETT) / M3 / M6. Sport après normalisation CRP/ECG/ETT. Colchicine anti-récidive."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 62 ans sous AVK, dyspnéique, PAS 82 mmHg, TJ, bruits assourdis, pouls paradoxal. Radio en carafe, microvoltage, alternance électrique. Indiquer la ou les proposition(s) exacte(s) de PEC.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "USIC : tamponnade = urgence, risque d’arrêt par adiastolie.",
+          "why": "Filière."
+        },
+        {
+          "letter": "B",
+          "text": "Remplissage par macromolécules ; discuter arrêt/neutralisation des ACO.",
+          "why": "Attente."
+        },
+        {
+          "letter": "C",
+          "text": "Ponction écho-guidée ou drainage ; ETT : collapsus droit, septum paradoxal inspiratoire, swinging heart.",
+          "why": "Geste."
+        },
+        {
+          "letter": "D",
+          "text": "Contextes : néoplasie, traumatisme, TB, hémopéricarde ; exceptionnelle dans la forme virale.",
+          "why": "Étiologies."
+        },
+        {
+          "letter": "E",
+          "text": "Nitrés IV et furosémide 1 mg/kg comme dans un OAP.",
+          "why": "Choc obstructif : remplissage + drainage, pas de déplétion."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tamponnade : USIC, remplissage, stop ACO, drainage. Pas de nitrés/diurétiques d’OAP."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "0 h 30, USIC, homme 54 ans J1 de primaire d’IDM, inconscient. Scope : FV ; MCE déjà commencé. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ACR par FV ; no-flow quasi nul si MCE immédiat.",
+          "why": "Vignette du livre."
+        },
+        {
+          "letter": "B",
+          "text": "Traitement immédiat : CEE, seul ttt efficace de la FV.",
+          "why": "Rythme chocable."
+        },
+        {
+          "letter": "C",
+          "text": "Cause la plus probable : ischémique (SCA récent).",
+          "why": "1re étiologie."
+        },
+        {
+          "letter": "D",
+          "text": "ROSC en 3 min : pronostic neuro bien meilleur qu’après 10 min de no-flow.",
+          "why": "Déterminant."
+        },
+        {
+          "letter": "E",
+          "text": "On attend un ECG 12 dérivations avant le premier choc.",
+          "why": "CEE immédiat."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FV post-IDM en USIC : CEE immédiat, no-flow minime, cause ischémique."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant l’adrénaline en RCP médicalisée, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 mg / 4 min, IV ou endotrachéal.",
+          "why": "Posologie."
+        },
+        {
+          "letter": "B",
+          "text": "Incontournable en asystolie ; en FV/TV persistante, après 2 min de RCP, juste avant le 2e ou 3e choc.",
+          "why": "Séquence."
+        },
+        {
+          "letter": "C",
+          "text": "Au-delà de 1–2 mg cumulés, survie faible et survie sans séquelle lourde quasi nulle.",
+          "why": "Pronostic lié à la dose."
+        },
+        {
+          "letter": "D",
+          "text": "Effet utile surtout alpha ; effets bêta controversés.",
+          "why": "Pharmacologie."
+        },
+        {
+          "letter": "E",
+          "text": "Elle remplace MCE et CEE en FV : on l’injecte d’abord.",
+          "why": "MCE et CEE restent prioritaires."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Adrénaline 1 mg/4 min. Asystolie ; en FV avant le 2e–3e choc. Jamais un substitut du massage/choc."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Amiodarone et autres antiarythmiques de RCP : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Amiodarone 300 mg dans 20–30 mL de NaCl, rapidement, juste avant le 3e choc si TV/FV réfractaire.",
+          "why": "Dose/timing."
+        },
+        {
+          "letter": "B",
+          "text": "Reboost 150 mg si persistante après le 3e CEE ou récidivante.",
+          "why": "Reboost."
+        },
+        {
+          "letter": "C",
+          "text": "Lidocaïne seulement si pas d’amiodarone : 1,5 mg/kg, total ≤ 3 mg/kg.",
+          "why": "Alternative."
+        },
+        {
+          "letter": "D",
+          "text": "MgSO4 2 g IVD si torsades ou suspicion d’hypomagnésémie.",
+          "why": "Indication."
+        },
+        {
+          "letter": "E",
+          "text": "L’amiodarone 300 mg se substitue au premier CEE en FV.",
+          "why": "Le 1er geste est le choc."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Amiodarone 300 mg avant le 3e choc, puis 150 mg. Lidocaïne si pas d’amio. Mg 2 g si torsades."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Énergie des chocs et DSA : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biphasique jusqu’à 200 J, plus sûr/efficace que le monophasique 360 J.",
+          "why": "Énergies."
+        },
+        {
+          "letter": "B",
+          "text": "Survie FV : 40–60 % si CEE à 1–3 min, 35 % à 4–6 min, 25 % à 7–10 min ; < 5 % au-delà de 10 min.",
+          "why": "Délai."
+        },
+        {
+          "letter": "C",
+          "text": "Premier CEE idéalement dans les 3 minutes.",
+          "why": "Objectif."
+        },
+        {
+          "letter": "D",
+          "text": "Le DSA n’envoie un choc que si le rythme est chocable.",
+          "why": "Sécurité."
+        },
+        {
+          "letter": "E",
+          "text": "Un DSA choque d’emblée toute asystolie, sans analyse.",
+          "why": "L’asystolie n’est pas chocable."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Biphasique ≤ 200 J. Chaque minute compte. DSA : analyse puis choc si FV/TV. Jamais de choc d’asystolie."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "ACR réfractaire et limites éthiques : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Définition française discutée : pas de ROSC après 30 min de RCP médicale bien conduite.",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "Hors hypothermie, no-flow > 10 min : licite de s’interroger sur l’éthique de la réanimation.",
+          "why": "Seuil."
+        },
+        {
+          "letter": "C",
+          "text": "Si no-flow bref, un low-flow long mais de qualité peut encore permettre une récupération.",
+          "why": "Hiérarchie."
+        },
+        {
+          "letter": "D",
+          "text": "Arrêt de réanimation collégial, orienté par un algo de neuropronostication.",
+          "why": "Points."
+        },
+        {
+          "letter": "E",
+          "text": "Au-delà de 5 min de no-flow, la survie sans séquelle reste > 50 % dans toutes les séries.",
+          "why": "Survie 7–8 % après 5 min, ~0 % après 10 min."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Réfractaire ≈ 30 min sans ROSC. No-flow > 10 min : question éthique. Arrêt collégial."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "ROSC chez un homme de 62 ans qui avait une douleur thoracique ; ECG : sus-ST. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Coronarographie ± angioplastie si SCA avéré ou suspecté (douleur, sus-ST, BBG).",
+          "why": "Reco post-ACR."
+        },
+        {
+          "letter": "B",
+          "text": "< 30 ans : coronaire rare → TV non ischémique, congénitales.",
+          "why": "Âge."
+        },
+        {
+          "letter": "C",
+          "text": "Un ROSC n’est pas synonyme de survie ni de récupération neurologique.",
+          "why": "Point."
+        },
+        {
+          "letter": "D",
+          "text": "5e maillon : O2, éviter hypoxie/hypercapnie, contrôler glycémie et température.",
+          "why": "Post-resuscitation care."
+        },
+        {
+          "letter": "E",
+          "text": "Toute coronarographie est contre-indiquée dans les 24 h post-ROSC, même en sus-ST.",
+          "why": "C’est précisément l’indication."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Post-ROSC : coro si SCA (surtout sus-ST). Soins : O2, PaCO2, glycémie, thermie. ROSC ≠ survie."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Préservation cérébrale après ACR : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’hyperthermie aggrave l’ischémie-reperfusion : la prévenir (contrôle thermique).",
+          "why": "Message fort."
+        },
+        {
+          "letter": "B",
+          "text": "Hypothermie ~34 °C : place encore débattue.",
+          "why": "Cooling."
+        },
+        {
+          "letter": "C",
+          "text": "Lutter contre l’hyperglycémie ; sédation pour baisser la consommation d’O2.",
+          "why": "Métabo/sédation."
+        },
+        {
+          "letter": "D",
+          "text": "Neuropronostic : Glasgow, EEG, PES, répétés entre J1 et J3.",
+          "why": "Encadré 21.4."
+        },
+        {
+          "letter": "E",
+          "text": "Hypercapnie et hypoxie sont recherchées pour vasodilater le cerveau.",
+          "why": "Elles entraînent une HIC fatale."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Cerveau : éviter hyperthermie, hyperglycémie, hypoxie, hypercapnie. Neuropronostic J1–J3."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Après ROSC, FEVG transitoirement très altérée. Indiquer la ou les proposition(s) exacte(s) sur la sidération.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Favorisée par no-flow/low-flow prolongés, fortes doses de vasopresseurs, nombre et intensité des CEE.",
+          "why": "Facteurs."
+        },
+        {
+          "letter": "B",
+          "text": "Dobutamine = ttt de choix des troubles de contractilité.",
+          "why": "Inotrope."
+        },
+        {
+          "letter": "C",
+          "text": "Assistance (ECMO, décharge VG) si dobutamine insuffisante.",
+          "why": "Escalade."
+        },
+        {
+          "letter": "D",
+          "text": "Monitoring ETT ± pressions invasives.",
+          "why": "Surveillance."
+        },
+        {
+          "letter": "E",
+          "text": "La sidération contre-indique toute coronarographie, même en sus-ST.",
+          "why": "La coro pour SCA n’est pas CI."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sidération : no-flow, adrénaline, chocs. Dobutamine ± assistance. La coro pour SCA reste indiquée."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "ACR intrahospitalier sur BAV 3 sans pouls. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Atropine et isoprénaline : seulement si étiologie conductive ou vagale maligne, en milieu médicalisé.",
+          "why": "Cadre."
+        },
+        {
+          "letter": "B",
+          "text": "Atropine 1 mg / 3–5 min, total 0,04 mg/kg, si bradycardie sinusale extrême.",
+          "why": "Posologie."
+        },
+        {
+          "letter": "C",
+          "text": "Isoprénaline : 5 amp. 0,2 mg dans 250 mL G5 %, cible FC ≥ 50–60/min, utile dans le BAV 3.",
+          "why": "Préparation."
+        },
+        {
+          "letter": "D",
+          "text": "Asystolie vraie : MCE + adrénaline, pas de CEE.",
+          "why": "Non chocable."
+        },
+        {
+          "letter": "E",
+          "text": "L’atropine 1 mg remplace le massage tant que le BAV n’est pas résolu.",
+          "why": "MCE prioritaire tant qu’il n’y a pas de pouls."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV/bradycardie : atropine, isoprénaline, toujours sur un MCE sans pouls. Asystolie : pas de choc."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "RCP SMUR : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compressions de qualité, interruptions minimales ; intubation ≤ 30 s.",
+          "why": "Encadré 21.3."
+        },
+        {
+          "letter": "B",
+          "text": "O2 dès que possible, capnographe (EtCO2), VVP ± artérielle.",
+          "why": "Monitoring."
+        },
+        {
+          "letter": "C",
+          "text": "Si intubation difficile : ventilation au masque plutôt que d’interrompre longtemps le MCE.",
+          "why": "Priorité circulation."
+        },
+        {
+          "letter": "D",
+          "text": "Discuter ECMO ; préparer le ttt étiologique (intoxication, revascularisation).",
+          "why": "Escalade."
+        },
+        {
+          "letter": "E",
+          "text": "Interrompre le MCE 2 min toutes les 30 s pour palper le pouls radial.",
+          "why": "Interruptions à minimiser."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "SMUR : MCE de qualité, EtCO2, O2, VVP, intubation courte ou masque, étiologie, ECMO."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Bicarbonate et thrombolyse préhospitalière : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acidose et hyperK dès 3–4 min d’ACR.",
+          "why": "Désordres."
+        },
+        {
+          "letter": "B",
+          "text": "Bicarbonate : pas d’amélioration claire de survie ; réservé aux RCP prolongées, hyperK, acidose préalable, toxiques (tricycliques, phénobarbital).",
+          "why": "Indications restreintes."
+        },
+        {
+          "letter": "C",
+          "text": "Thrombolyse préhosp non recommandée en routine ; cas par cas si IDM ou EP massive avérés/fortement suspectés.",
+          "why": "Position."
+        },
+        {
+          "letter": "D",
+          "text": "20–40 % des ACR compliquent un IDM ; jusqu’à ~70 % des ACR extra-hospitaliers réanimés auraient un IDM ou une EP massive.",
+          "why": "Chiffres."
+        },
+        {
+          "letter": "E",
+          "text": "Tout ACR extra-hospitalier reçoit une thrombolyse pleine dose avant le 1er CEE.",
+          "why": "Non recommandé, et jamais avant le CEE d’une FV."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bicarbonate non routinier. Thrombolyse préhosp au cas par cas IDM/EP massive."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Épidémiologie chiffrée de l’ACR dans ce chapitre : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "France : ~40 000 décès/an, incidence 0,75 ‰.",
+          "why": "Intro."
+        },
+        {
+          "letter": "B",
+          "text": "Survie sans séquelle 2–4 % ; survie des arrêts intra-hospitaliers 40–50 %.",
+          "why": "Contraste."
+        },
+        {
+          "letter": "C",
+          "text": "Survie −10 % par minute sans RCP.",
+          "why": "Pente."
+        },
+        {
+          "letter": "D",
+          "text": "ILCOR : 2–10 % sortent pour une vie normale dans les villes bien équipées en DSA.",
+          "why": "Fourchette."
+        },
+        {
+          "letter": "E",
+          "text": "En France, 80 % de la population est formée à la RCP.",
+          "why": "Seulement 10–15 % ; maillons publics encore faibles."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "40 000 morts/an. Survie sans séquelle 2–4 %, −10 %/min sans RCP. Formation grand public 10–15 %."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Témoin formé, MCE à 100/min, DSA apporté. Quelles précisions techniques sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Amplitude 4–5 cm ; relais toutes les 2 min.",
+          "why": "Paramètres."
+        },
+        {
+          "letter": "B",
+          "text": "Après un choc DSA : 2 min de RCP avant de vérifier la circulation.",
+          "why": "Post-choc."
+        },
+        {
+          "letter": "C",
+          "text": "Pas de bouche-à-bouche chez l’adulte (cause souvent rythmique) ; essentiel chez l’enfant (cause souvent hypoxique).",
+          "why": "Différence d’âge."
+        },
+        {
+          "letter": "D",
+          "text": "Canule de Guedel dès que les secours/le milieu médicalisé le permettent.",
+          "why": "Airway."
+        },
+        {
+          "letter": "E",
+          "text": "Compressions de 1 cm à 40/min pour éviter les fractures de côtes.",
+          "why": "Cible 4–5 cm à 100/min."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "MCE 4–5 cm, 100/min, relais 2 min. Post-choc : 2 min de RCP. Pas de bouche-à-bouche adulte."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "50 % des FV se dégradent en asystolie entre la 4e et la 8e minute. Indiquer la ou les conséquence(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L’asystolie marque souvent un arrêt déjà ancien, de mauvais pronostic.",
+          "why": "Dégradation."
+        },
+        {
+          "letter": "B",
+          "text": "Au début de la RCP, une FV n’est vue que dans 40–70 % des cas selon la rapidité.",
+          "why": "Prévalence."
+        },
+        {
+          "letter": "C",
+          "text": "ILCOR 2015 : rythme initial le plus fréquent encore une FV (70–80 %) ; 15–20 % de bradycardie/asystolie.",
+          "why": "Répartition."
+        },
+        {
+          "letter": "D",
+          "text": "DEM : poursuivre le MCE malgré une activité électrique, sans mécanique efficace.",
+          "why": "PEA."
+        },
+        {
+          "letter": "E",
+          "text": "Toute asystolie se choque à 360 J avant tout massage.",
+          "why": "Asystolie : massage, pas de CEE."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FV → asystolie avec le temps. Asystolie et DEM se massent, elles ne se choquent pas."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "SCA stenté, homme 68 ans, 82 kg, sans AVC. Indiquer la ou les proposition(s) exacte(s) sur prasugrel et ticagrélor.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prasugrel : charge 60 mg puis 10 mg/j, SCA angioplasté, âge < 75 ans.",
+          "why": "Indication."
+        },
+        {
+          "letter": "B",
+          "text": "CI absolue du prasugrel : ATCD d’AVC ; CI relatives : poids < 60 kg, âge > 75 ans.",
+          "why": "CI."
+        },
+        {
+          "letter": "C",
+          "text": "Ticagrélor : charge 180 mg puis 90 mg × 2/j ; EI principal : dyspnée (18 %).",
+          "why": "Posologie/EI."
+        },
+        {
+          "letter": "D",
+          "text": "Inhibition P2Y12 plus rapide et plus forte que le clopidogrel (70–80 % vs 40–50 %).",
+          "why": "Puissance."
+        },
+        {
+          "letter": "E",
+          "text": "Le prasugrel est l’anti-P2Y12 de choix après fibrinolyse et après un AVC.",
+          "why": "Post-fibrinolyse : clopidogrel ; AVC = CI du prasugrel."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Prasugrel 60 puis 10 (CI AVC). Ticagrélor 180 puis 90×2 (dyspnée 18 %). Plus puissants que le clopidogrel."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le clopidogrel, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prodrogue CYP2C19 ; 15–25 % de mauvais métaboliseurs.",
+          "why": "PGx."
+        },
+        {
+          "letter": "B",
+          "text": "Charge 300–600 mg puis 75 mg/j.",
+          "why": "Dose."
+        },
+        {
+          "letter": "C",
+          "text": "Angioplastie programmée et SCA si prasugrel/ticagrélor non indiqués, ou après fibrinolyse ; DAPT 3–12 mois.",
+          "why": "Place."
+        },
+        {
+          "letter": "D",
+          "text": "Pas de test biologique fiable de routine pour guider la dose.",
+          "why": "Surveillance."
+        },
+        {
+          "letter": "E",
+          "text": "Inhibiteur réversible de la COX-1, effet 24 h, arrêt la veille d’une chirurgie.",
+          "why": "Il bloque le P2Y12 ; l’aspirine est irréversible 7–10 j."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Clopidogrel : prodrogue CYP2C19, 300–600 puis 75, post-fibrinolyse. Pas un AINS COX."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Patient sous warfarine (INR cible 2–3) : soins dentaires, puis plus tard chirurgie urologique. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Geste à risque modéré (dents, petite chir, certaines biopsies) : souvent sans arrêter l’AVK, INR dans la fourchette basse.",
+          "why": "Règle 1."
+        },
+        {
+          "letter": "B",
+          "text": "Risque hémorragique plus élevé et risque thrombotique modéré (TVP/EP > 3 mois, FA bas risque) : arrêt 3–4 j, reprise le soir, sans relais.",
+          "why": "Arrêt simple."
+        },
+        {
+          "letter": "C",
+          "text": "Relais héparine si TVP/EP < 3 mois, FA à haut risque, ou valve mécanique.",
+          "why": "Haut risque thrombotique."
+        },
+        {
+          "letter": "D",
+          "text": "Les relais héparine sont source de complications hémorragiques et thrombotiques.",
+          "why": "Mise en garde."
+        },
+        {
+          "letter": "E",
+          "text": "Pour une valve mécanique, on remplace l’AVK par un AOD 48 h avant le geste.",
+          "why": "AOD CI sur valve mécanique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Geste modéré : on maintient l’AVK. Geste à risque : arrêt court ou relais héparine si valve/EP récente/FA haut risque. Pas d’AOD sur valve."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Thrombolytiques (item 330) : indications et surveillance. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "IDM < 6–12 h s’il n’y a pas d’angioplastie possible (Samu).",
+          "why": "Coronaire."
+        },
+        {
+          "letter": "B",
+          "text": "AVC ischémique < 4 h 30 après exclusion d’une hémorragie.",
+          "why": "Neuro."
+        },
+        {
+          "letter": "C",
+          "text": "EP grave.",
+          "why": "MTEV."
+        },
+        {
+          "letter": "D",
+          "text": "HIC 0,7–2 % ; groupage systématique ; tests de coag perturbés ~24 h.",
+          "why": "Risque."
+        },
+        {
+          "letter": "E",
+          "text": "La streptokinase reste le ttt de 1re intention en bolus oral.",
+          "why": "Plus commercialisée ; ténectéplase = bolus IV."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Fibrinolyse : IDM sans PCI, AVC < 4 h 30, EP grave. HIC 0,7–2 %. Ténectéplase en bolus IV."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles CI aux thrombolytiques figurent dans le collège ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Allergie, coagulopathie/thrombopathie/thrombopénie sévère, ulcère < 6 mois.",
+          "why": "Hémorragie."
+        },
+        {
+          "letter": "B",
+          "text": "Chir générale < 10 j, chir vasculaire < 1 mois, traumatisme/ponction de gros vaisseaux, RCP prolongée.",
+          "why": "Trauma/chir."
+        },
+        {
+          "letter": "C",
+          "text": "HTA > 200 mmHg non contrôlée, AVC étendu < 6 mois, AVK, IH sévère.",
+          "why": "Tension/iatrogénie."
+        },
+        {
+          "letter": "D",
+          "text": "Péricardite aiguë, endocardite, grossesse, malformation vasculaire cérébrale.",
+          "why": "Cardio/obst."
+        },
+        {
+          "letter": "E",
+          "text": "Un SCA sus-ST de moins de 3 h sans PCI contre-indique la fibrinolyse.",
+          "why": "C’est une indication."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Nombreuses CI. L’IDM sans PCI est une indication, pas une CI."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "HNF IV, homme 70 kg, EP instable. Posologies du chapitre 330 : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bolus 70–80 UI/kg (~5 000 UI) puis 18 UI/kg/h (~500 UI/kg/j, ~30 000 UI/24 h).",
+          "why": "Schéma 330."
+        },
+        {
+          "letter": "B",
+          "text": "TCA 2–3 × témoin et/ou anti-Xa 0,5–0,8 ; 1er TCA vers H5.",
+          "why": "Cibles 330."
+        },
+        {
+          "letter": "C",
+          "text": "TCA < 45 s : +6 000 UI/24 h + bolus 5 000 U ; TCA > 110 s : −6 000 et stop SAP 1 h.",
+          "why": "Tableau 22.5."
+        },
+        {
+          "letter": "D",
+          "text": "Demi-vie ~1 h 30 ; antidote = protamine IV, effet immédiat.",
+          "why": "PK."
+        },
+        {
+          "letter": "E",
+          "text": "Les HBPM se titrent par un INR cible 3,5, y compris en IR sévère.",
+          "why": "Pas d’INR pour les HBPM ; CI si ClCr < 30."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HNF 330 : bolus 70–80 UI/kg puis 18 UI/kg/h, TCA 2–3×, 1er contrôle H5, protamine."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Warfarine, fluindione et grossesse : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Warfarine : AVK de référence ; 5 mg le soir J0–J2, 1er INR le matin de J4.",
+          "why": "Schéma d’approche."
+        },
+        {
+          "letter": "B",
+          "text": "Initiation de fluindione déconseillée (IR immunoallergique, surtout < 6 mois) ; on ne switch pas un patient longtemps équilibré.",
+          "why": "ANSM."
+        },
+        {
+          "letter": "C",
+          "text": "AVK tératogènes, CI dans la 1re partie du 1er trimestre.",
+          "why": "Grossesse."
+        },
+        {
+          "letter": "D",
+          "text": "Miconazole (Daktarin®) : coprescription strictement CI.",
+          "why": "Interaction."
+        },
+        {
+          "letter": "E",
+          "text": "L’acénocoumarol en 1 prise/j est l’AVK recommandé devant la warfarine.",
+          "why": "2 prises, non recommandé comme référence."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Warfarine 5 mg × 3 soirs, INR à J4. Plus d’initiation de fluindione. CI 1er trimestre et miconazole."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Interactions des AOD et tests d’hémostase : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Interactions : macrolides, antiprotéases, azolés, certains anticancéreux, amiodarone, diltiazem, vérapamil ; AINS à éviter.",
+          "why": "Liste."
+        },
+        {
+          "letter": "B",
+          "text": "Les tests usuels sont perturbés : on ne s’en sert pas pour titrer l’effet.",
+          "why": "Message."
+        },
+        {
+          "letter": "C",
+          "text": "Dabigatran : TT très allongé ; anti-Xa très augmenté sous rivaroxaban/apixaban.",
+          "why": "Tableau 22.10."
+        },
+        {
+          "letter": "D",
+          "text": "Perturbent la recherche d’APL : les arrêter 2–3 j avant un bilan de thrombophilie avec APL.",
+          "why": "Lupique."
+        },
+        {
+          "letter": "E",
+          "text": "Un INR à 2,5 sous apixaban prouve que la dose est parfaitement adaptée.",
+          "why": "L’INR ne titre pas les AOD."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "AOD : interactions (macrolides, azolés, amio, ICa). Tests faussés, pas d’adaptation sur l’INR. Stop 2–3 j avant un bilan d’APL."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Coronarien en prévention secondaire, chirurgie ORL réglée. Gestion de l’aspirine : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Après un stent, retarder de 3–6 mois tout acte invasif à risque non urgent.",
+          "why": "Délai."
+        },
+        {
+          "letter": "B",
+          "text": "Risque hémorragique modéré (fibroscopie, stomatologie) : ne pas arrêter l’aspirine.",
+          "why": "Consensus."
+        },
+        {
+          "letter": "C",
+          "text": "Risque très important (ORL, urologie, neurochir) : arrêt court 5 j, reprise aussi tôt que possible.",
+          "why": "Durée."
+        },
+        {
+          "letter": "D",
+          "text": "Arrêter l’aspirine expose à un événement athérothrombotique (stent, IDM).",
+          "why": "Risque."
+        },
+        {
+          "letter": "E",
+          "text": "L’aspirine de prévention primaire reste systématique chez tout diabétique.",
+          "why": "Plus recommandée, même chez le diabétique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Stent : reporter 3–6 mois. Geste modéré : on garde l’aspirine. Geste majeur : 5 j d’arrêt."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Danaparoïde, bivalirudine, fondaparinux : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Danaparoïde (Orgaran®) : TIH (ou ATCD de TIH) nécessitant encore une ACO.",
+          "why": "Indication."
+        },
+        {
+          "letter": "B",
+          "text": "En TIH : danaparoïde au moins prophylactique jusqu’à correction des plaquettes.",
+          "why": "Conduite."
+        },
+        {
+          "letter": "C",
+          "text": "Bivalirudine : anticoagulant IV surtout lors des angioplasties.",
+          "why": "Place."
+        },
+        {
+          "letter": "D",
+          "text": "Fondaparinux : T½ 17–21 h, 1 inj/j, CI si ClCr < 30, pas d’antidote commercialisé dans le tableau du cours.",
+          "why": "Tableau 22.4."
+        },
+        {
+          "letter": "E",
+          "text": "En TIH, on double l’HNF tant que le TCA n’est pas à 4 × le témoin.",
+          "why": "On arrête toute héparine."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TIH : stop héparine, danaparoïde. Bivalirudine : coronaire. Fonda : 1/j, CI rénale."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Chute de plaquettes sous HNF à J6 : score des 4T. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4T : Thrombopénie, Timing, Thrombose, auTres causes.",
+          "why": "Structure."
+        },
+        {
+          "letter": "B",
+          "text": "Timing typique 5–10 j, ou dès 24 h si héparine dans les 30 j ; 0–3 faible, 4–5 intermédiaire, 6–8 élevé.",
+          "why": "Lecture."
+        },
+        {
+          "letter": "C",
+          "text": "Suspicion forte : arrêt héparine et alternative sans attendre l’anti-PF4.",
+          "why": "Urgence."
+        },
+        {
+          "letter": "D",
+          "text": "Elisa anti-PF4 : meilleure VPN que VPP.",
+          "why": "Bio."
+        },
+        {
+          "letter": "E",
+          "text": "Un score à 1 affirme une TIH certaine et impose un filtre cave sans NFS.",
+          "why": "0–3 = risque faible."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "4T : intensité, délai 5–10 j, thrombose, autre cause. Ne pas attendre l’Elisa si forte suspicion."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Calendrier de l’INR sous AVK : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2×/sem J0–J14, 1×/sem jusqu’à J30, /15 j jusqu’à J60, puis ≥ 1×/mois.",
+          "why": "Fig. 22.3."
+        },
+        {
+          "letter": "B",
+          "text": "Équilibré si ≥ 70 % des INR dans la cible.",
+          "why": "TTR."
+        },
+        {
+          "letter": "C",
+          "text": "Automesure remboursée en France seulement chez l’enfant et le porteur de valve mécanique.",
+          "why": "Remboursement."
+        },
+        {
+          "letter": "D",
+          "text": "Éducation : coprescriptions, seuils d’alerte, saignement, prévenir tout soignant.",
+          "why": "ETP."
+        },
+        {
+          "letter": "E",
+          "text": "Après J60, un INR annuel unique suffit, même sous miconazole.",
+          "why": "Minimum mensuel ; miconazole CI."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "INR rapproché à l’initiation, puis ≥ 1/mois. TTR ≥ 70 %. Automesure enfant/valve."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Polytraumatisé sous AVK, choc crânien. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "INR en urgence.",
+          "why": "1er geste."
+        },
+        {
+          "letter": "B",
+          "text": "TC : hospitalisation ≥ 24 h et TDM cérébral urgent.",
+          "why": "Spécifique."
+        },
+        {
+          "letter": "C",
+          "text": "Hémorragie grave : stop AVK, vit K + CCP/PPSB, sans attendre l’INR pour commencer.",
+          "why": "Contexte traumatique."
+        },
+        {
+          "letter": "D",
+          "text": "Après injection de CCP, un contrôle d’INR est inutile : la vitamine K suffit à elle seule en urgence.",
+          "why": "INR à 30 min ; si > 1,5, complément de CCP. Vit K et CCP sont associés."
+        },
+        {
+          "letter": "E",
+          "text": "Retour à domicile sans imagerie si l’examen neuro initial est normal.",
+          "why": "Hospit ≥ 24 h + TDM."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TC sous AVK : INR, TDM urgent, hospit ≥ 24 h. Hémorragie grave : vit K + PPSB, contrôle à 30 min."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Avantages/limites des AOD vs AVK (tableau 22.11), hors le choix valve/RM déjà traité. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Action rapide, pas de surveillance d’effet, moins d’HIC, instauration simple.",
+          "why": "Avantages."
+        },
+        {
+          "letter": "B",
+          "text": "Accumulation si IR, observance difficile à vérifier, un peu plus d’hémorragies digestives et génitales.",
+          "why": "Inconvénients."
+        },
+        {
+          "letter": "C",
+          "text": "Élimination rénale : dabigatran 80 %, rivaroxaban 33 %, apixaban 25 %.",
+          "why": "Pourcentages."
+        },
+        {
+          "letter": "D",
+          "text": "Demi-vie courte : le temps depuis la dernière prise est un levier majeur en cas de saignement.",
+          "why": "Gestion."
+        },
+        {
+          "letter": "E",
+          "text": "Le dabigatran est l’AOD de choix si ClCr 15 mL/min, car il n’a pas d’élimination rénale.",
+          "why": "C’est l’inverse : 80 % rénaux, CI si ClCr < 25–30."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "AOD : moins d’HIC, plus de saignements digestifs, accumulation rénale (dabigatran +++). Pas de dabigatran en IR sévère."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Syndrome de Widal et effets de l’aspirine : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inhibition COX-1 irréversible 7–10 j, baisse du thromboxane A2.",
+          "why": "Mécanisme."
+        },
+        {
+          "letter": "B",
+          "text": "Effets AINS/antipyrétiques à des doses > 1 g/j, très supérieures à la dose antiplaquettaire.",
+          "why": "Dissociation."
+        },
+        {
+          "letter": "C",
+          "text": "EI : saignements et intolérance gastrique ; allergies rares.",
+          "why": "Tolérance."
+        },
+        {
+          "letter": "D",
+          "text": "Widal : asthme + polypose nasale + allergie à l’aspirine.",
+          "why": "Triade."
+        },
+        {
+          "letter": "E",
+          "text": "Un test d’agrégation mensuel est obligatoire pour titrer 75 mg.",
+          "why": "Pas de test fiable de routine."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Aspirine : COX irréversible 7–10 j. Widal = asthme + polypose + allergie. Pas de monitoring d’agrégation."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 82 ans, INR cible 2,5, INR à 7 sans saignement. Tableau HAS : indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6 < INR < 10 : arrêt, vit K 1–2 mg PO, adaptation à la reprise, contrôle le lendemain.",
+          "why": "Ligne 6–10."
+        },
+        {
+          "letter": "B",
+          "text": "INR < 4 : pas de saut de prise, pas de vit K, simple adaptation.",
+          "why": "Ligne < 4."
+        },
+        {
+          "letter": "C",
+          "text": "4 < INR < 6 : saut d’une prise, pas de vit K.",
+          "why": "Ligne 4–6."
+        },
+        {
+          "letter": "D",
+          "text": "INR > 10 : arrêt + vit K 5 mg PO.",
+          "why": "Ligne > 10."
+        },
+        {
+          "letter": "E",
+          "text": "INR 7 asymptomatique = 30 UI/kg de PPSB et intubation, comme une hémorragie grave.",
+          "why": "Surdosage asymptomatique = vit K PO, souvent ambulatoire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Cible 2,5 sans saignement : <4 adapter ; 4–6 sauter une prise ; 6–10 vit K 1–2 mg ; >10 vit K 5 mg. PPSB = hémorragie grave."
+    }
+  ]
+}

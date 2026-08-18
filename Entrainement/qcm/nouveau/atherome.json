@@ -1,0 +1,990 @@
+{
+  "questions": [
+    {
+      "item": "221",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "À propos de la définition de l’athérome, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Il s’agit de remaniements de l’intima des artères de gros et moyen calibre."},
+        {"letter": "B", "text": "Il associe une accumulation focale de lipides, de glucides complexes, de produits sanguins, de tissu fibreux et de dépôts calcaires."},
+        {"letter": "C", "text": "Il n’atteint que les artérioles de petit calibre."},
+        {"letter": "D", "text": "Les lésions intimales s’accompagnent de modifications de la média."},
+        {"letter": "E", "text": "Une plaque non sténosante inférieure à 50 % et non compliquée suffit à qualifier un patient de polyvasculaire."}
+      ],
+      "correct": ["A", "B", "D"],
+      "pcz": [],
+      "scz": ["E"],
+      "explanation": "L’athérome est un remaniement intimal des artères de gros et moyen calibre (A vrai, C faux), avec accumulation focale de lipides, glucides, sang, tissu fibreux et calcifications, et retentissement sur la média (B, D vrais). Une plaque < 50 % non compliquée ne définit pas un malade polyathéromateux (E faux, piège)."
+    },
+    {
+      "item": "221",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’épidémiologie des maladies cardiovasculaires, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Elles représentent la première cause de mortalité dans le monde."},
+        {"letter": "B", "text": "En France, la mortalité cardiovasculaire a récemment régressé à la deuxième place derrière le cancer, mais reste la première cause chez les femmes."},
+        {"letter": "C", "text": "La France est classée parmi les pays à haut niveau de risque cardiovasculaire selon l’ESC."},
+        {"letter": "D", "text": "Le taux de mortalité cardiovasculaire est plus élevé dans les pays du nord et de l’est de l’Europe qu’en Europe du Sud."},
+        {"letter": "E", "text": "Les variations géographiques s’expliquent surtout par des différences génétiques entre populations."}
+      ],
+      "correct": ["A", "B", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Première cause mondiale, deuxième en France derrière le cancer, mais encore première chez les femmes (A, B vrais). La France est un pays à faible risque ESC (C faux). Gradient nord-est plus élevé que le sud (D vrai). Les variations tiennent surtout à l’environnement et à l’alimentation, pas à la génétique (E faux)."
+    },
+    {
+      "item": "221",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les localisations préférentielles de l’athérosclérose, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Les lésions se développent surtout à proximité de flux artériels turbulents (ostium, bifurcation, zones de contrainte mécanique)."},
+        {"letter": "B", "text": "Les plaques de la crosse aortique peuvent être à l’origine d’accidents vasculaires cérébraux."},
+        {"letter": "C", "text": "Les sténoses des artères rénales peuvent être responsables d’hypertension artérielle et d’insuffisance rénale."},
+        {"letter": "D", "text": "L’atteinte d’un seul territoire artériel est la règle, l’extension polyvasculaire étant exceptionnelle."},
+        {"letter": "E", "text": "Les sténoses des artères digestives peuvent se manifester par une ischémie mésentérique."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’athérome privilégie ostiums et bifurcations (A). Coronaires, carotides, crosse aortique (AVC), artères rénales (HTA, IR), artères digestives et membres inférieurs sont les sièges cliniques majeurs (B, C, E). L’extension à plusieurs territoires est habituelle (D faux)."
+    },
+    {
+      "item": "221",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Un homme de 62 ans a une AOMI clinique. L’échodoppler des troncs supra-aortiques trouve une sténose carotidienne à 50 %, asymptomatique. Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Ce patient répond à la définition de malade polyathéromateux."},
+        {"letter": "B", "text": "Le diagnostic de polyvasculaire exigerait une sténose carotidienne symptomatique."},
+        {"letter": "C", "text": "Une différence de pression artérielle supérieure à 15 mmHg entre les deux bras, reproduite, doit faire suspecter une sténose unilatérale de l’artère subclavière."},
+        {"letter": "D", "text": "L’ECG fait partie du bilan systématique d’extension."},
+        {"letter": "E", "text": "Toutes les explorations d’imagerie artérielle doivent être prescrites d’emblée, indépendamment de la clinique."}
+      ],
+      "correct": ["A", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Polyathéromateux = au moins deux territoires, même si l’un est asymptomatique mais significatif (≥ 50 %) (A vrai, B faux). Asymétrie tensionnelle > 15 mmHg et ECG systématique (C, D vrais). Les examens d’imagerie sont sélectionnés selon la clinique, le risque et l’utilité thérapeutique (E faux)."
+    },
+    {
+      "item": "221",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les points d’impact des thérapeutiques de l’athérome, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’arrêt du tabac et la lutte contre la sédentarité diminuent la dysfonction endothéliale."},
+        {"letter": "B", "text": "Les statines diminuent l’accumulation des LDL et contribuent à stabiliser les plaques."},
+        {"letter": "C", "text": "Les traitements antihypertenseurs diminuent les contraintes mécaniques s’exerçant sur les plaques."},
+        {"letter": "D", "text": "En cas de rupture de plaque, antiplaquettaires et héparines en urgence visent à limiter l’extension thrombotique."},
+        {"letter": "E", "text": "Seule la chirurgie d’exérèse de plaque a un effet anti-inflammatoire démontré."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les thérapeutiques agissent sur l’endothélium (FDR modifiables), les LDL et la stabilité de plaque (statines), les contraintes mécaniques (antihypertenseurs) et la thrombose aiguë (antiplaquettaires, héparines) (A–D vrais). Aspirine et statines diminuent aussi l’inflammation (E faux)."
+    },
+    {
+      "item": "221",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "À propos des facteurs de risque d’athérome, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’âge, le sexe masculin et les antécédents familiaux sont des facteurs non modifiables."},
+        {"letter": "B", "text": "Tabagisme, HTA, dyslipidémies et diabète sont les principaux facteurs modifiables."},
+        {"letter": "C", "text": "La CRP est un facteur de risque causal dont la baisse a un effet démontré sur l’évolution de la maladie."},
+        {"letter": "D", "text": "Une sténose carotidienne serrée asymptomatique doit généralement bénéficier d’une stratégie préventive équivalente à la prévention secondaire."},
+        {"letter": "E", "text": "Obésité, sédentarité et stress sont classés parmi les facteurs prédisposants."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Non modifiables et principaux modifiables sont bien distingués (A, B). Obésité, sédentarité et stress sont prédisposants (E vrai). La CRP est un marqueur biologique sans lien de causalité établi (C faux). Une lésion sévère asymptomatique se gère comme une prévention secondaire (D vrai)."
+    },
+    {
+      "item": "221",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Chez un patient polyvasculaire stable, indiquer le ou les médicament(s) ayant prouvé une diminution de la morbimortalité.",
+      "options": [
+        {"letter": "A", "text": "Aspirine entre 75 et 325 mg/j, sauf contre-indication."},
+        {"letter": "B", "text": "Clopidogrel en cas d’intolérance à l’aspirine, ou en cas d’atteinte polyvasculaire compliquée notamment d’AOMI."},
+        {"letter": "C", "text": "Statine, de façon systématique, avec les objectifs d’une prévention secondaire."},
+        {"letter": "D", "text": "IEC ou, à défaut, ARA2."},
+        {"letter": "E", "text": "Bêtabloquant systématique chez tout polyvasculaire, même sans infarctus et avec FEVG conservée."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": ["A"],
+      "scz": [],
+      "explanation": "Aspirine (ou clopidogrel), statines et IEC/ARA2 ont une efficacité démontrée (A–D). Les bêtabloquants n’ont d’efficacité prouvée qu’après infarctus, surtout si FEVG altérée ; ils ne sont pas indiqués de principe chez le polyvasculaire stable à FEVG normale (E faux)."
+    },
+    {
+      "item": "221",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’évolution des sténoses et le suivi du malade polyathéromateux, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Une sténose peut s’aggraver progressivement ou brutalement par rupture ou érosion de plaque avec thrombus."},
+        {"letter": "B", "text": "La pression artérielle doit être mesurée aux deux bras."},
+        {"letter": "C", "text": "Une mesure de l’index de pression systolique aux membres inférieurs est réalisée."},
+        {"letter": "D", "text": "Un dépistage d’anévrisme de l’aorte abdominale est indiqué, notamment chez les hommes après 65 ans."},
+        {"letter": "E", "text": "Le bilan annuel se limite au contrôle biologique des facteurs de risque, sans réexamen clinique des territoires artériels."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Aggravation progressive ou brutale thrombotique (A). Bilan clinique de tous les territoires, PA bilatérale, IPS, ECG, dépistage d’AAA chez l’homme après 65 ans (B–D). Le bilan annuel comporte un examen clinique de tous les territoires artériels (E faux)."
+    },
+    {
+      "item": "222",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la distinction entre facteur de risque et marqueur de risque cardiovasculaire, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Un facteur de risque précède la maladie et s’accompagne d’une relation dose-effet et d’une plausibilité physiopathologique."},
+        {"letter": "B", "text": "La suppression d’un facteur de risque diminue l’incidence de la maladie ou de ses complications."},
+        {"letter": "C", "text": "Un marqueur de risque a une responsabilité causale démontrée dans la survenue des complications."},
+        {"letter": "D", "text": "La diminution d’un marqueur de risque ne modifie pas à elle seule l’évolution de la maladie."},
+        {"letter": "E", "text": "Le facteur de risque doit être lié à la maladie de façon forte et indépendante."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le FDR est causal (antériorité, dose-effet, universalité, plausibilité, liaison forte indépendante) et son contrôle réduit l’incidence (A, B, E). Le marqueur varie avec la maladie sans causalité démontrée ; le baisser ne change pas l’évolution (C faux, D vrai)."
+    },
+    {
+      "item": "222",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "À propos des types de prévention cardiovasculaire, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "La prévention secondaire s’adresse aux patients après un accident vasculaire ou en présence de lésions vasculaires documentées."},
+        {"letter": "B", "text": "La prévention primaire vise à réduire l’incidence de la maladie en amont de tout accident vasculaire."},
+        {"letter": "C", "text": "La prévention primosecondaire concerne des patients indemnes de maladie cliniquement décelable mais porteurs de lésions athéromateuses infracliniques."},
+        {"letter": "D", "text": "En prévention individuelle, le bénéfice d’un programme est d’autant plus important que le risque de maladie est élevé."},
+        {"letter": "E", "text": "En prévention collective, seules des mesures à fort effet individuel ont un impact populationnel."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les trois niveaux de prévention sont bien définis (A–C). L’effet individuel croît avec le risque global (D). En prévention collective, des mesures d’effet individuel modéré peuvent avoir un grand impact populationnel (E faux)."
+    },
+    {
+      "item": "222",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "D’après l’étude Interheart et les facteurs non modifiables, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Neuf facteurs expliquent environ 90 % des infarctus du myocarde, dans les deux sexes et toutes les classes d’âge."},
+        {"letter": "B", "text": "Tabagisme, hypercholestérolémie, HTA, diabète, obésité abdominale et facteurs psychosociaux sont des facteurs de risque de cette étude."},
+        {"letter": "C", "text": "Consommation de fruits et légumes et activité physique sont des facteurs protecteurs."},
+        {"letter": "D", "text": "Un événement familial est dit précoce s’il survient avant 65 ans chez un homme et avant 55 ans chez une femme."},
+        {"letter": "E", "text": "Les accidents cardiovasculaires surviennent en moyenne 10 ans plus tôt chez l’homme que chez la femme."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Interheart : 9 facteurs ≈ 90 % des IDM, 6 FDR et des protecteurs (alimentation, activité physique) (A–C). L’hérédité précoce se juge < 55 ans chez l’homme et < 65 ans chez la femme (D faux, seuils inversés). Le décalage d’âge homme/femme est d’environ 10 ans (E vrai)."
+    },
+    {
+      "item": "222",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le tabagisme comme facteur de risque cardiovasculaire, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Il n’existe pas de seuil de consommation en dessous duquel le tabagisme est dénué de risque d’infarctus."},
+        {"letter": "B", "text": "La nicotine est le principal médiateur des complications cardiovasculaires du tabac."},
+        {"letter": "C", "text": "Les substituts nicotiniques sont recommandés chez les coronariens fumeurs et ne majorent pas la maladie coronarienne."},
+        {"letter": "D", "text": "Le tabagisme passif augmente le risque d’infarctus."},
+        {"letter": "E", "text": "Environ 90 % des patients atteints d’AOMI sont fumeurs."}
+      ],
+      "correct": ["A", "C", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Pas de seuil sans risque ; le passif est aussi délétère ; 90 % des AOMI sont fumeurs (A, D, E). La nicotine explique surtout la dépendance, pas les complications CV ; les substituts sont sûrs chez le coronarien (B faux, C vrai)."
+    },
+    {
+      "item": "222",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’évaluation du risque cardiovasculaire global par SCORE2, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "SCORE2 estime le risque à 10 ans d’événements cardiovasculaires fatals et non fatals chez les 40–69 ans apparemment en bonne santé."},
+        {"letter": "B", "text": "SCORE2-OP s’adresse aux personnes de plus de 70 ans apparemment en bonne santé."},
+        {"letter": "C", "text": "SCORE2 s’applique aussi en prévention secondaire dès qu’une maladie cardiovasculaire est documentée."},
+        {"letter": "D", "text": "La France appartient au groupe des pays à bas risque pour le calibrage de SCORE2."},
+        {"letter": "E", "text": "SCORE2-Diabetes intègre notamment l’âge au diagnostic du diabète, l’HbA1c et le DFG estimé."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "SCORE2 (40–69 ans) et SCORE2-OP (> 70 ans) concernent des sujets apparemment sains ; la France est à bas risque ; SCORE2-Diabetes ajoute des variables diabète-spécifiques (A, B, D, E). En maladie CV documentée, le risque est d’emblée très élevé : SCORE2 ne s’applique pas (C faux)."
+    },
+    {
+      "item": "222",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’activité physique en prévention cardiovasculaire, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Il est recommandé au moins 150 à 300 minutes par semaine d’activités aérobies d’intensité modérée, ou 75 à 150 minutes d’activités plus intenses."},
+        {"letter": "B", "text": "Chez le coronarien, une activité physique régulière réduit la mortalité totale et coronarienne de l’ordre de 20 à 25 %."},
+        {"letter": "C", "text": "Une épreuve d’effort est recommandée avant une activité d’intensité élevée (> 6 MET) chez le sujet inactif à risque cardiovasculaire élevé ou très élevé."},
+        {"letter": "D", "text": "L’ECG de repos est un préalable indispensable avant toute activité physique de loisir chez le sujet asymptomatique."},
+        {"letter": "E", "text": "Le questionnaire Q-AAP+ peut être utilisé pour dépister une contre-indication à l’activité physique."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les volumes recommandés, le bénéfice coronarien, l’EE si inactif à haut risque avant effort intense, et le Q-AAP+ sont Rang A (A–C, E). L’ECG de repos n’est pas indispensable avant un loisir chez l’asymptomatique (D faux)."
+    },
+    {
+      "item": "222",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Après un infarctus du myocarde, indiquer la ou les mesure(s) de prévention secondaire exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’acronyme BASIC rappelle bêtabloquant (post-IDM), antiagrégant, statine, IEC et contrôle des facteurs de risque."},
+        {"letter": "B", "text": "Chacune des quatre classes médicamenteuses du BASIC a démontré une baisse de la mortalité totale de l’ordre de 25 % après IDM."},
+        {"letter": "C", "text": "Le conseil minimum sur le tabac, même bref, peut doubler le taux de sevrage à un an."},
+        {"letter": "D", "text": "Une enquête familiale de dépistage des FDR est particulièrement indiquée si l’homme a moins de 55 ans ou la femme moins de 65 ans."},
+        {"letter": "E", "text": "Les substituts nicotiniques sont contre-indiqués après pontage ou angioplastie."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": ["A"],
+      "scz": [],
+      "explanation": "BASIC, baisse de mortalité des 4 classes, conseil minimum et enquête familiale chez le coronarien jeune sont des points du cours (A–D). Les substituts nicotiniques sont recommandés et sûrs chez le coronarien (E faux)."
+    },
+    {
+      "item": "222",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant diabète, surcharge pondérale et syndrome métabolique, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Le diabète est défini par une glycémie à jeun supérieure à 1,26 g/L (7 mmol/L) à deux reprises, ou une glycémie supérieure à 2 g/L à n’importe quel moment."},
+        {"letter": "B", "text": "On parle d’hyperglycémie à jeun non diabétique entre 1,00 et 1,26 g/L."},
+        {"letter": "C", "text": "Un IMC entre 25 et 29,9 kg/m² définit l’obésité."},
+        {"letter": "D", "text": "Le syndrome métabolique selon la FID 2005 associe une obésité centrale (périmètre abdominal > 94 cm chez l’homme, > 80 cm chez la femme) à au moins deux autres critères (TG, HDL, PA, glycémie)."},
+        {"letter": "E", "text": "Le diabète de type 2 représente environ 95 % des diabètes en France."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Seuils glycémiques, FID 2005 et prédominance du type 2 sont ceux du collège (A, B, D, E). L’IMC 25–29,9 correspond au surpoids ; l’obésité commence à 30 kg/m² (C faux)."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’exploration d’une anomalie lipidique (EAL) et la classification phénotypique, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’EAL comporte cholestérol total, HDL-cholestérol et triglycérides, le LDL-C étant calculé par la formule de Friedewald."},
+        {"letter": "B", "text": "La formule de Friedewald (en g/L) est : LDL-C = CT − HDL-C − TG/5."},
+        {"letter": "C", "text": "Cette formule reste valable quel que soit le taux de triglycérides."},
+        {"letter": "D", "text": "On distingue hypercholestérolémie pure, hypertriglycéridémie pure et hyperlipidémie mixte."},
+        {"letter": "E", "text": "Sans anomalie, il n’est pas nécessaire de recontrôler le bilan lipidique avant 5 ans."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EAL = CT, HDL-C, TG ; Friedewald LDL-C = CT − HDL-C − TG/5 ; trois phénotypes ; recontrôle à 5 ans si normal (A, B, D, E). Friedewald n’est valable que si TG < 3,5 g/L (C faux)."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "À propos des risques et des seuils du bilan lipidique, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Le risque athéromateux est associé positivement et de façon graduelle au LDL-cholestérol."},
+        {"letter": "B", "text": "Chez un sujet sans autre facteur de risque, le bilan est considéré normal si LDL-C < 1,6 g/L, HDL-C > 0,4 g/L et TG < 1,5 g/L simultanément."},
+        {"letter": "C", "text": "Une hypertriglycéridémie supérieure à 10 g/L expose à un risque de pancréatite aiguë."},
+        {"letter": "D", "text": "Le risque lié à l’hypertriglycéridémie est en grande partie indépendant des autres facteurs associés (surpoids, diabète, HDL bas)."},
+        {"letter": "E", "text": "Une hypo-HDLémie se définit par un HDL-C < 0,40 g/L chez l’homme et < 0,50 g/L chez la femme."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Gradient LDL, valeurs « normales » Afssaps, pancréatite si TG > 10 g/L et seuils d’hypo-HDL sont ceux du cours (A, B, C, E). Le risque de l’HTG est en grande partie dépendant des FDR associés (D faux)."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Parmi les causes d’hyperlipidémie secondaire, indiquer la ou les association(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Hypothyroïdie : hypercholestérolémie ou hyperlipidémie mixte."},
+        {"letter": "B", "text": "Cholestase : hypercholestérolémie."},
+        {"letter": "C", "text": "Syndrome néphrotique : hyperlipidémie mixte."},
+        {"letter": "D", "text": "Alcoolisme et œstrogènes : hypertriglycéridémie."},
+        {"letter": "E", "text": "Ciclosporine : hypertriglycéridémie isolée exclusive."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le tableau du collège lie hypothyroïdie à HCH/HLM, cholestase à HCH, syndrome néphrotique à HLM, alcool et œstrogènes à HTG (A–D). La ciclosporine donne une HCH ou une HLM, pas une HTG isolée exclusive (E faux)."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les hyperlipidémies primitives fréquentes, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Les hypercholestérolémies polygéniques sont très fréquentes, souvent sensibles à l’alimentation, avec un LDL-C le plus souvent entre 1,3 et 2,5 g/L."},
+        {"letter": "B", "text": "L’hyperlipidémie familiale combinée concerne 1 à 2 % de la population et peut s’exprimer par des phénotypes variables (mixte, HCH ou HTG)."},
+        {"letter": "C", "text": "Dans l’expression mixte habituelle de l’hyperlipidémie familiale combinée, le CT se situe typiquement entre 2,5 et 3,5 g/L et les TG entre 1,5 et 5 g/L."},
+        {"letter": "D", "text": "L’hypertriglycéridémie familiale expose à un risque de pancréatite aiguë pour des TG > 10 g/L."},
+        {"letter": "E", "text": "Le diagnostic génotypique est toujours indispensable avant de débuter un traitement."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Polygéniques, combinée familiale (1–2 %, phénotypes variables, fourchettes CT/TG) et risque pancréatique des HTG majeures sont Rang A (A–D). Le génotype n’est souvent pas nécessaire pour traiter (E faux)."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les catégories de risque et les objectifs de LDL-cholestérol (ESC), indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Une maladie cardiovasculaire athéroscléreuse documentée (coronaire, AIT/AVC, AOMI) place d’emblée le patient en risque très élevé."},
+        {"letter": "B", "text": "L’objectif de LDL-C en prévention secondaire à très haut risque est < 0,55 g/L (< 1,4 mmol/L)."},
+        {"letter": "C", "text": "En prévention primaire à risque élevé, l’objectif de LDL-C est < 0,70 g/L."},
+        {"letter": "D", "text": "En prévention primaire à bas risque, l’objectif de LDL-C est < 1,15 g/L."},
+        {"letter": "E", "text": "SCORE2 s’applique sans restriction au diabète, à l’insuffisance rénale chronique (DFG < 60 mL/min) et à l’hypercholestérolémie familiale."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": ["B"],
+      "scz": [],
+      "explanation": "MCV établie = très haut risque, objectifs < 0,55 / < 0,70 / < 1,15 g/L selon les catégories (A–D). SCORE2 n’est pas adapté au diabète, à l’IRC (DFG < 60) ni à l’HF : risque d’emblée élevé ou très élevé (E faux)."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les mesures diététiques des dyslipidémies, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Le traitement diététique est toujours indiqué en présence d’une anomalie lipidique."},
+        {"letter": "B", "text": "Il faut limiter les acides gras saturés à moins de 10–12 % des calories et supprimer les acides gras trans."},
+        {"letter": "C", "text": "Les œufs doivent être totalement exclus de l’alimentation."},
+        {"letter": "D", "text": "Pour une hypertriglycéridémie modérée, les leviers essentiels sont la réduction pondérale, de l’alcool et des sucres, et l’équilibre d’un diabète."},
+        {"letter": "E", "text": "Une hypertriglycéridémie majeure (> 10 g/L) avec hyperchylomicronémie nécessite un avis spécialisé et une réduction des lipides alimentaires < 30 g/j."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Diététique toujours, graisses saturées/trans, leviers de l’HTG modérée et régime très pauvre en lipides si HTG majeure (A, B, D, E). On ne supprime pas les œufs : limitation à environ 3/semaine (C faux)."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le traitement médicamenteux des dyslipidémies, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "En prévention primaire, le médicament n’est habituellement introduit qu’après au moins 3 mois de diététique bien suivie."},
+        {"letter": "B", "text": "En prévention secondaire, le traitement médicamenteux est associé d’emblée à la diététique."},
+        {"letter": "C", "text": "Statine en premier choix des hypercholestérolémies pures et hyperlipidémies mixtes ; ézétimibe si intolérance aux statines."},
+        {"letter": "D", "text": "Pour une HTG pure entre 1,5 et 5 g/L, un fibrate est indiqué d’emblée."},
+        {"letter": "E", "text": "Les statines sont contre-indiquées pendant la grossesse."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Délai de 3 mois en primaire, d’emblée en secondaire, statine puis ézétimibe, CI grossesse (A–C, E). Entre 1,5 et 5 g/L d’HTG, diététique seule ; fibrate si TG > 5 g/L malgré la diététique (D faux)."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la surveillance d’un traitement hypolipémiant, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’efficacité se juge sur un bilan lipidique 8 à 12 semaines après l’instauration ou chaque adaptation."},
+        {"letter": "B", "text": "Un dosage systématique des CPK est recommandé chez tout patient mis sous statine."},
+        {"letter": "C", "text": "L’arrêt des statines est recommandé si les CPK dépassent 5 fois la normale, à distance d’un effort sportif."},
+        {"letter": "D", "text": "Les ALAT sont contrôlés avant traitement, à 8–12 semaines, puis tous les ans si < 3 N."},
+        {"letter": "E", "text": "Si les ALAT dépassent 3 N, on arrête la statine ou on réduit la posologie, puis on recontrôle à 4–6 semaines."}
+      ],
+      "correct": ["A", "C", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Contrôle lipidique à 8–12 semaines, CPK seulement si symptômes ou situations à risque, seuil d’arrêt à 5 N, surveillance hépatique selon le schéma du collège (A, C–E). Pas de CPK systématique (B faux)."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le diagnostic d’hypertension artérielle, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "En consultation, l’HTA est définie par une PAS ≥ 140 mmHg et/ou une PAD ≥ 90 mmHg."},
+        {"letter": "B", "text": "En automesure, le seuil diagnostique est une moyenne ≥ 135/85 mmHg."},
+        {"letter": "C", "text": "En MAPA sur 24 heures, le seuil diagnostique est une moyenne ≥ 130/80 mmHg."},
+        {"letter": "D", "text": "Hors urgence hypertensive, le diagnostic doit être confirmé hors cabinet (AMT de préférence, sinon MAPA) avant de débuter un traitement."},
+        {"letter": "E", "text": "Une seule mesure élevée au cabinet suffit à porter le diagnostic et à instaurer d’emblée une trithérapie."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": ["D"],
+      "scz": [],
+      "explanation": "Seuils cabinet / AMT / MAPA 24 h et confirmation hors cabinet hors urgence sont le socle Rang A (A–D). Le diagnostic ne se pose pas sur une mesure unique, sauf HTA sévère/urgence (E faux)."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les conditions de mesure de la pression artérielle, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "En consultation, un appareil oscillométrique validé est recommandé en première intention ; la méthode auscultatoire reste préférée en fibrillation atriale."},
+        {"letter": "B", "text": "Le patient est assis au repos depuis plus de 5 minutes ; on retient la moyenne des deux dernières de trois mesures."},
+        {"letter": "C", "text": "L’automesure suit la règle des 3 : 3 mesures le matin, 3 le soir, 3 jours de suite (18 mesures)."},
+        {"letter": "D", "text": "L’hypotension orthostatique est définie par une baisse d’au moins 20 mmHg de PAS et/ou 10 mmHg de PAD à 1 et/ou 3 minutes."},
+        {"letter": "E", "text": "Les tensiomètres de poignet sont préférés à l’AMT car plus fiables que le brassard huméral."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Oscillométrie (sauf FA), protocole des 3 mesures, règle des 3 en AMT et définition de l’HO sont ceux du collège (A–D). Le brassard huméral est préféré ; le poignet expose à plus d’erreurs (E faux)."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les grades d’HTA et les discordances cabinet/ambulatoire, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’HTA de grade 1 correspond à 140–159 et/ou 90–99 mmHg en consultation."},
+        {"letter": "B", "text": "L’HTA de grade 3 correspond à une PAS ≥ 180 mmHg et/ou une PAD ≥ 110 mmHg."},
+        {"letter": "C", "text": "L’HTA blouse blanche associe des chiffres de consultation élevés et des mesures ambulatoires non confirmatives."},
+        {"letter": "D", "text": "L’HTA masquée expose au même risque d’événements que l’HTA habituelle et se traite de la même façon."},
+        {"letter": "E", "text": "L’HTA blouse blanche impose d’emblée une bithérapie médicamenteuse."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Grades 1 et 3, blouse blanche et HTA masquée (même risque, même prise en charge) sont Rang A (A–D). La blouse blanche ne justifie pas de médicament d’emblée, seulement mesures hygiénodiététiques et surveillance (E faux)."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Chez un hypertendu nouvellement confirmé, indiquer le ou les examen(s) complémentaire(s) de première intention.",
+      "options": [
+        {"letter": "A", "text": "Glycémie à jeun et HbA1c."},
+        {"letter": "B", "text": "Exploration d’une anomalie lipidique (CT, HDL-C, TG, calcul du LDL-C)."},
+        {"letter": "C", "text": "Natrémie, kaliémie, créatininémie avec DFG (CKD-EPI) et protéinurie sur échantillon."},
+        {"letter": "D", "text": "ECG de repos."},
+        {"letter": "E", "text": "Échocardiographie systématique même si l’ECG est normal et le patient asymptomatique."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le bilan minimal associe glycémie/HbA1c, EAL, ionogramme, créatinine/DFG, protéinurie et ECG (A–D). L’ETT n’est pas systématique si ECG normal et absence de symptômes cardiaques (E faux)."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la stratégie médicamenteuse de l’HTA de l’adulte, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Sauf cas particulier, une bithérapie d’emblée à faible dose en association fixe est recommandée."},
+        {"letter": "B", "text": "Les associations privilégiées sont IEC ou ARA2 + inhibiteur calcique, ou IEC ou ARA2 + thiazidique (ou apparenté)."},
+        {"letter": "C", "text": "L’association IEC + ARA2 est recommandée pour potentialiser le blocage du SRA."},
+        {"letter": "D", "text": "La cible habituelle est une PAS entre 120 et 129 mmHg et une PAD entre 70 et 79 mmHg, à adapter à la tolérance."},
+        {"letter": "E", "text": "Une monothérapie initiale est préférable si fragilité, hypotension orthostatique, âge > 85 ans, ou PA élevée relevant d’un médicament."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": ["C"],
+      "explanation": "Bithérapie d’emblée (IEC/ARA2 + IC ou thiazide), cible 120–129/70–79, monothérapie chez le fragile ou le très âgé (A, B, D, E). IEC et ARA2 ne doivent jamais être associés (C faux, piège grave)."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Indiquer la ou les situation(s) qui doivent faire dépister une HTA secondaire.",
+      "options": [
+        {"letter": "A", "text": "HTA sévère (PA > 180/110 mmHg), d’apparition brutale ou d’aggravation rapide."},
+        {"letter": "B", "text": "HTA résistante."},
+        {"letter": "C", "text": "HTA avant 40 ans."},
+        {"letter": "D", "text": "HTA associée à une hypokaliémie."},
+        {"letter": "E", "text": "Toute HTA de grade 1 du sujet âgé obèse, sans autre point d’appel."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le dépistage d’HTA secondaire est guidé par la sévérité, la résistance, l’âge < 40 ans, l’hypokaliémie ou un point d’appel clinicobiologique (A–D). L’HTA essentielle du sujet âgé obèse n’est pas à elle seule une indication (E faux)."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant une poussée tensionnelle, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "La crise hypertensive est une HTA de grade 3 sans souffrance viscérale ; ce n’est pas une urgence hypertensive."},
+        {"letter": "B", "text": "L’urgence hypertensive associe une HTA, le plus souvent sévère, à une atteinte aiguë d’organe cible."},
+        {"letter": "C", "text": "L’HTA maligne associe une PA élevée (souvent de grade 3) à un œdème papillaire au fond d’œil (stade 4)."},
+        {"letter": "D", "text": "En cas général d’urgence hypertensive, on vise une baisse de 20 à 25 % de la PA en 2 heures, vers 160/110 mmHg en 2 à 6 heures."},
+        {"letter": "E", "text": "Dans toutes les urgences hypertensives, on doit normaliser la PA à 120/70 mmHg en quelques minutes pour protéger le cerveau."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": ["E"],
+      "explanation": "Crise (grade 3 sans souffrance) ≠ urgence (atteinte viscérale). HTA maligne = FO stade 4. On vise −20 à 25 % en 2 h vers 160/110, en évitant l’hypotension. Une normalisation brutale à 120/70 est dangereuse (hypoperfusion) ; la PAS < 120 mmHg en urgence concerne la dissection, non le cas général (E faux)."
+    },
+    {
+      "item": "224",
+      "kind": "QRU",
+      "rang": "A",
+      "prompt": "Parmi les causes d’HTA secondaire suivantes, laquelle associe typiquement une triade paroxystique céphalées–sueurs–palpitations ?",
+      "options": [
+        {"letter": "A", "text": "Hyperaldostéronisme primaire (syndrome de Conn)."},
+        {"letter": "B", "text": "Phéochromocytome (triade de Ménard)."},
+        {"letter": "C", "text": "Sténose athéromateuse ostiale de l’artère rénale."},
+        {"letter": "D", "text": "Polykystose rénale."},
+        {"letter": "E", "text": "Coarctation aortique."}
+      ],
+      "correct": ["B"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La triade de Ménard (céphalées, sueurs, palpitations) oriente vers un phéochromocytome. Le Conn se cherche surtout devant une hypokaliémie, la sténose rénale devant un souffle ou une IR sous IEC, la polykystose devant des gros reins, la coarctation devant l’abolition des pouls fémoraux."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la définition, l’épidémiologie et le diagnostic hémodynamique de l’AOMI, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’AOMI correspond à une atteinte athéromateuse significative des artères situées entre l’aorte terminale et les artères digitales."},
+        {"letter": "B", "text": "Tabagisme et diabète sont les principaux facteurs de risque."},
+        {"letter": "C", "text": "Un IPS < 0,90 à au moins une cheville permet le diagnostic d’AOMI."},
+        {"letter": "D", "text": "Un IPS < 0,70 définit une AOMI sévère."},
+        {"letter": "E", "text": "Un IPS > 1,40 signe une AOMI particulièrement serrée et confirme le diagnostic."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": ["E"],
+      "explanation": "Définition aorto-digitale, FDR tabac/diabète, IPS < 0,90 (sévère si < 0,70) (A–D). Un IPS > 1,40 traduit une médiacalcose (diabète, dialyse) qui fausse la mesure, pas une sténose plus serrée (E faux, piège)."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la clinique de l’AOMI, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "La claudication intermittente typique est une crampe de mollet à la marche, cédant habituellement en moins de 5 minutes à l’arrêt."},
+        {"letter": "B", "text": "Une distance de marche inférieure à 100 m définit une claudication sévère."},
+        {"letter": "C", "text": "Le stade III de Leriche correspond à des douleurs de décubitus, améliorées par la position déclive."},
+        {"letter": "D", "text": "Le stade IV correspond aux troubles trophiques (ulcères, gangrène)."},
+        {"letter": "E", "text": "L’abolition congénitale du pouls pédieux concerne environ 50 % de la population et n’a aucune valeur."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Crampe de marche < 5 min, seuil de 100 m, stades III (décubitus) et IV (trophique) (A–D). Le pouls pédieux peut manquer de façon congénitale dans 5 % des cas, pas 50 % (E faux)."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’ischémie permanente et l’ischémie critique de membre, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’ischémie permanente englobe les stades III et IV, avec des douleurs durant plus de 15 jours et résistant aux antalgiques usuels."},
+        {"letter": "B", "text": "L’ischémie critique associe ce tableau à une pression de cheville < 50 mmHg ou une pression d’hallux < 30 mmHg."},
+        {"letter": "C", "text": "Une TcPO2 < 10 mmHg au dos du pied (après hyperémie) témoigne d’une hypoxie critique."},
+        {"letter": "D", "text": "La revascularisation est proposée autant que possible en cas d’ischémie permanente."},
+        {"letter": "E", "text": "Une claudication peu gênante à 500 m impose une revascularisation d’emblée, avant toute réadaptation."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Définition clinicohémodynamique de l’ischémie critique, TcPO2 < 10 mmHg et revascularisation de l’ischémie permanente (A–D). La claudication peu sévère se traite d’abord par FDR, antiagrégant, statine et marche supervisée (E faux)."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le traitement médical de l’AOMI, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Tout patient symptomatique doit recevoir un antiagrégant (aspirine ou clopidogrel)."},
+        {"letter": "B", "text": "Les statines sont prescrites de façon systématique chez le patient atteint d’AOMI."},
+        {"letter": "C", "text": "La marche, de préférence supervisée, au moins 30–45 minutes, 3 fois par semaine, est un traitement local de la claudication."},
+        {"letter": "D", "text": "Un antiagrégant est indiscutable et systématique en cas d’AOMI purement asymptomatique isolée."},
+        {"letter": "E", "text": "Un IEC (ou sartan) peut être considéré chez tout patient avec AOMI, en l’absence de contre-indication."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Antiagrégant si symptomatique, statines systématiques, réentraînement à la marche et IEC possibles (A–C, E). En AOMI asymptomatique isolée (IPS < 0,90), l’antiplaquettaire est débattu, sauf autre territoire athéromateux (D faux)."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant une ischémie aiguë de membre inférieur, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Le diagnostic est essentiellement clinique (douleur brutale, membre froid et livide, pouls abolis, déficit sensitivomoteur)."},
+        {"letter": "B", "text": "Aucune exploration ne doit retarder la revascularisation, surtout s’il existe un déficit neurologique."},
+        {"letter": "C", "text": "Une anticoagulation par HNF et des antalgiques sont débutés dès le diagnostic, après prélèvement d’un bilan de coagulation."},
+        {"letter": "D", "text": "L’examen comporte un ECG et une palpation abdominale à la recherche d’un anévrisme aortique."},
+        {"letter": "E", "text": "Un angioscanner exhaustif de l’aorte et des membres est obligatoire avant tout appel du chirurgien vasculaire."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": ["B"],
+      "scz": ["E"],
+      "explanation": "Urgence clinique : HNF, antalgiques, ECG, palpation aortique ; l’imagerie ne doit pas retarder le geste, surtout au grade II neurologique (A–D). Alerter d’emblée l’équipe chirurgicale ; un scanner « complet » n’est pas un préalable (E faux, inacceptable)."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’ischémie mésentérique, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’ischémie chronique se manifeste typiquement par un angor digestif postprandial, pouvant conduire à un amaigrissement par restriction alimentaire."},
+        {"letter": "B", "text": "L’ischémie aiguë réalise souvent une triade : douleur abdominale aiguë pauvre en signes physiques, vomissements et/ou diarrhée, et terrain embolique (fibrillation atriale)."},
+        {"letter": "C", "text": "L’angioscanner est l’examen de référence de l’ischémie mésentérique aiguë."},
+        {"letter": "D", "text": "Le dosage des D-dimères, s’il est normal, autorise à différer l’imagerie."},
+        {"letter": "E", "text": "L’élévation des lactates est un signe déjà tardif de nécrose digestive."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Angor postprandial chronique ; triade aiguë, angioscanner, lactates tardifs (A–C, E). Les D-dimères sont peu spécifiques et ne doivent pas retarder l’imagerie si le diagnostic est évoqué (D faux)."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’anévrisme de l’aorte abdominale, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Un anévrisme est une dilatation focale permanente avec perte du parallélisme des parois et augmentation de diamètre de plus de 50 % par rapport à l’amont."},
+        {"letter": "B", "text": "Le dépistage échographique cible notamment les hommes de plus de 65 ans, les fumeurs et les patients avec maladie athéromateuse ou antécédents familiaux d’anévrisme."},
+        {"letter": "C", "text": "Une douleur abdominale ou lombaire chez un porteur d’AAA doit faire craindre une fissuration et diriger en urgence vers un centre de chirurgie vasculaire."},
+        {"letter": "D", "text": "En choc hémorragique par rupture, aucune imagerie autre que le scanner diagnostique ne doit retarder l’intervention."},
+        {"letter": "E", "text": "L’artériographie est l’examen de dépistage de référence car elle mesure fidèlement le diamètre externe."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Définition (+50 %), dépistage écho, urgence de la forme douloureuse ou rompue (A–D). L’artériographie ne voit que la lumière et sous-estime le sac thrombosé : elle n’est pas un outil de dépistage (E faux)."
+    },
+    {
+      "item": "225",
+      "kind": "QRU",
+      "rang": "A",
+      "prompt": "Concernant l’anévrisme de l’artère poplitée, indiquer la proposition exacte.",
+      "options": [
+        {"letter": "A", "text": "Il est exceptionnellement associé à un AAA."},
+        {"letter": "B", "text": "Il est bilatéral dans près de la moitié des cas."},
+        {"letter": "C", "text": "Sa complication la plus fréquente est la rupture, bien plus que l’embolie."},
+        {"letter": "D", "text": "Un diamètre de 15 mm impose toujours une exclusion-pontage, même si le réseau d’aval est détruit."},
+        {"letter": "E", "text": "Il se palpe comme un pouls poplité diminué, jamais comme une masse battante."}
+      ],
+      "correct": ["B"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les AP sont associés à un AAA dans 30 % des cas et sont bilatéraux dans près de la moitié des cas. L’embolie (ou la thrombose) prédomine sur la rupture. On opère habituellement au-delà de 20 mm s’il reste un lit d’aval. La palpation retrouve souvent un pouls « trop bien perçu »."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les définitions des SCA et de l’infarctus du myocarde, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Le SCA ST+ associe une douleur persistante plus de 30 minutes et un sus-décalage de ST persistant après trinitrine, par occlusion thrombotique."},
+        {"letter": "B", "text": "En l’absence de sus-décalage persistant, une élévation de troponine définit un IDM ST- ; l’absence d’élévation définit un angor instable."},
+        {"letter": "C", "text": "L’IDM associe une troponine au-dessus du 99e percentile à au moins un critère d’ischémie (clinique, ECG, imagerie ou thrombus)."},
+        {"letter": "D", "text": "L’IDM de type 1 résulte d’une rupture, ulcération, fissuration ou érosion de plaque avec thrombus."},
+        {"letter": "E", "text": "Un ECG strictement normal élimine formellement un SCA ST-."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": ["C"],
+      "scz": [],
+      "explanation": "ST+ = occlusion occlusive persistante ; ST- = NSTEMI si troponine+, angor instable sinon ; définition universelle de l’IDM et type 1 athérothrombotique (A–D). L’ECG est normal chez plus de 30 % des SCA ST- (E faux)."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la clinique d’une douleur angineuse et les arguments pour un SCA, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "La douleur typique est rétrosternale en barre, constrictive, pouvant irradier vers les bras, le cou ou la mâchoire."},
+        {"letter": "B", "text": "Une présentation atypique (épigastrique, simple dyspnée ou asthénie) est plus fréquente chez la femme, le sujet âgé, le diabétique ou l’insuffisant rénal."},
+        {"letter": "C", "text": "Une douleur spontanée prolongée (> 20 minutes), un angor de novo d’effort modéré ou un angor crescendo orientent vers un SCA ST-."},
+        {"letter": "D", "text": "La disparition des symptômes après trinitrine sublinguale est spécifique du SCA ST+."},
+        {"letter": "E", "text": "Une asymétrie tensionnelle aux deux bras doit faire évoquer une dissection aortique."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sémiologie typique, terrains d’atypie, critères de SCA ST- et PA aux deux bras (A–C, E). La TNT est évocatrice surtout du SCA ST- et n’est pas spécifique ; dans le ST+, douleur et sus-ST persistent après TNT (D faux)."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’ECG d’un SCA ST+, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Un sus-décalage ≥ 1 mm dans au moins deux dérivations contigues (seuils plus élevés en V2–V3) signe l’occlusion en l’absence de BBG ou d’HVG."},
+        {"letter": "B", "text": "Un sus-décalage en D2–D3–aVF localise un infarctus inférieur ; il faut alors enregistrer V3R–V4R à la recherche d’une extension au ventricule droit."},
+        {"letter": "C", "text": "Un sous-décalage en V1–V3 impose d’enregistrer V7–V9 : un sus-ST ≥ 0,5 mm confirme un infarctus postérieur."},
+        {"letter": "D", "text": "Devant un angor persistant, un BBG (même non daté) est considéré comme un équivalent de sus-décalage de ST."},
+        {"letter": "E", "text": "L’onde Q de nécrose apparaît classiquement dès la première heure."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Seuils de sus-ST, localisations inférieure (V3R–V4R) et postérieure (V7–V9), BBG équivalent si douleur persistante (A–D). L’onde Q apparaît classiquement à partir de la 6e heure (E faux)."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le dosage de la troponine ultrasensible dans les SCA, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Dans le SCA ST+, on n’attend pas le résultat de la troponine pour débuter la reperfusion."},
+        {"letter": "B", "text": "Dans le SCA ST-, la cinétique à 1 ou 2 heures permet un rule-in, un rule-out ou une zone intermédiaire."},
+        {"letter": "C", "text": "Une troponine élevée est spécifique du SCA et élimine myocardite, embolie pulmonaire ou takotsubo."},
+        {"letter": "D", "text": "Les CK-MB, moins sensibles pour le diagnostic précoce, peuvent aider à diagnostiquer une récidive grâce à leur décroissance plus rapide."},
+        {"letter": "E", "text": "Le BNP n’a qu’une valeur pronostique d’insuffisance ventriculaire gauche."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": ["A"],
+      "scz": [],
+      "explanation": "Ne jamais retarder le ST+ ; algorithmes 0/1–2 h du ST- ; CK-MB et BNP (A, B, D, E). La Tn-us s’élève dans de nombreuses situations non coronariennes (C faux)."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant un SCA ST+, indiquer la ou les proposition(s) exacte(s) concernant la reperfusion.",
+      "options": [
+        {"letter": "A", "text": "L’angioplastie primaire est supérieure à la fibrinolyse si elle est réalisable dans les 120 minutes."},
+        {"letter": "B", "text": "Sinon, une fibrinolyse est réalisée en l’absence de contre-indication, avec transfert vers un centre de coronarographie."},
+        {"letter": "C", "text": "Un antécédent d’AVC hémorragique est une contre-indication absolue à la fibrinolyse."},
+        {"letter": "D", "text": "Au-delà de la 12e heure, le bénéfice de la revascularisation devient faible, voire nul à partir de la 24e heure."},
+        {"letter": "E", "text": "La fibrinolyse autorise l’association d’emblée au prasugrel ou au ticagrélor."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Fenêtre de 120 min, fibrinolyse puis transfert, CI (AVC hémorragique notamment), décroissance du bénéfice après 12–24 h (A–D). Après fibrinolyse, le seul P2Y12 autorisé est le clopidogrel (E faux)."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant un SCA ST-, indiquer la ou les proposition(s) exacte(s) concernant le délai de coronarographie.",
+      "options": [
+        {"letter": "A", "text": "Le choc cardiogénique, la douleur persistante ou récurrente, l’arythmie ventriculaire menaçante ou l’arrêt cardiaque imposent une coronarographie dans les 2 heures (très haut risque)."},
+        {"letter": "B", "text": "Un IDM ST- confirmé (modification ECG et/ou troponine élevée) relève en règle d’une stratégie invasive dans les 24 heures (haut risque)."},
+        {"letter": "C", "text": "Un sous-décalage de ST dynamique ou une négativation des ondes T font partie des critères de haut risque."},
+        {"letter": "D", "text": "Il n’est plus recommandé de débuter une bithérapie antiagrégante dès l’admission tant que la coronarographie n’a pas été réalisée."},
+        {"letter": "E", "text": "Tous les SCA ST- doivent attendre 72 heures de traitement médical avant toute coronarographie."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Très haut risque = 2 h (comme un ST+) ; haut risque = 24 h ; pas de DAPT précoce systématique avant la coro (A–D). Un délai systématique de 72 h n’est pas la stratégie recommandée (E faux)."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le traitement antithrombotique des SCA, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "L’aspirine est débutée par 250 mg IV, puis 75–100 mg/j per os, souvent avec un IPP."},
+        {"letter": "B", "text": "En angioplastie primaire de ST+, l’association aspirine + prasugrel ou ticagrélor est indiquée en première intention."},
+        {"letter": "C", "text": "Le prasugrel est contre-indiqué en cas d’antécédent d’AVC et non recommandé après 75 ans ou si le poids est < 60 kg."},
+        {"letter": "D", "text": "Après SCA traité par angioplastie, la bithérapie antiagrégante dure par défaut 12 mois."},
+        {"letter": "E", "text": "L’oxygénothérapie est systématique chez tout SCA, même si la SaO2 est à 98 %."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Dose d’aspirine, DAPT puissante du ST+ primaires, limites du prasugrel, durée 12 mois (A–D). L’oxygène n’est indiqué que si hypoxémie (SaO2 < 90 %) ; l’hyperoxie peut être délétère (E faux)."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les complications précoces d’un SCA ST+, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "La fibrillation ventriculaire n’est jamais spontanément réversible et impose un choc électrique externe immédiat."},
+        {"letter": "B", "text": "Un BAV nodal, souvent transitoire, est plus fréquent dans l’infarctus inférieur et répond à l’atropine."},
+        {"letter": "C", "text": "L’apparition d’un souffle systolique doit faire chercher une insuffisance mitrale sur rupture de pilier ou une communication interventriculaire."},
+        {"letter": "D", "text": "La triade hypotension, poumons clairs et turgescence jugulaire au cours d’un IDM inférieur évoque un infarctus du ventricule droit."},
+        {"letter": "E", "text": "Le choc cardiogénique de l’infarctus du VD se traite comme les autres chocs, par vasodilatateurs en première intention."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": ["E"],
+      "explanation": "FV, BAV inférieur atropinique, souffle mécanique, triade de l’IDM du VD (A–D). Les vasodilatateurs sont contre-indiqués dans l’infarctus du VD (E faux, piège)."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’angor stable (syndrome coronarien chronique), indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "La douleur d’effort, toujours pour le même type d’effort, cédant à l’arrêt ou à la trinitrine, définit un angor stable."},
+        {"letter": "B", "text": "Un angor de novo doit être considéré comme un SCA jusqu’à preuve du contraire."},
+        {"letter": "C", "text": "Sont à haut risque un angor CCS 3–4, une FEVG diminuée, une épreuve d’effort positive avant 6 minutes ou une ischémie > 10 % du VG."},
+        {"letter": "D", "text": "Aspirine 75–100 mg/j et une statine sont systématiques en l’absence de contre-indication."},
+        {"letter": "E", "text": "Les tests fonctionnels d’effort sont indiqués en première intention pour confirmer un SCA ST+ en cours."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Stabilité d’effort, méfiance vis-à-vis du de novo, critères de haut risque, aspirine et statine (A–D). Les tests fonctionnels d’effort sont contre-indiqués en cas de SCA non stabilisé (E faux)."
+    },
+    {
+      "item": "339",
+      "kind": "QRU",
+      "rang": "A",
+      "prompt": "Selon la classification CCS, un patient qui a un angor au moindre effort (marche à plat sur 100 à 200 m) se situe :",
+      "options": [
+        {"letter": "A", "text": "En classe 1."},
+        {"letter": "B", "text": "En classe 2."},
+        {"letter": "C", "text": "En classe 3."},
+        {"letter": "D", "text": "En classe 4."},
+        {"letter": "E", "text": "Hors classification, car il s’agit d’un équivalent d’angor instable par définition."}
+      ],
+      "correct": ["C"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La classe 3 CCS correspond à une limitation importante : angor au moindre effort, marche à plat sur 100–200 m ou quelques marches d’escalier lentes. La classe 4 est l’impossibilité de toute activité sans douleur. Ce n’est pas en soi la définition du SCA."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Devant une douleur thoracique aiguë, indiquer le ou les signe(s) de détresse vitale à rechercher en premier.",
+      "options": [
+        {"letter": "A", "text": "Polypnée > 30/min, bradypnée < 10/min, tirage, cyanose ou SpO2 < 90 %."},
+        {"letter": "B", "text": "Arrêt circulatoire (pouls carotidien ou fémoral non perçu chez un patient inconscient)."},
+        {"letter": "C", "text": "Choc avec hypotension, marbrures et oligurie."},
+        {"letter": "D", "text": "Pouls paradoxal."},
+        {"letter": "E", "text": "Un ECG normal autorise à différer cette recherche de détresse."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La première étape est respiratoire, hémodynamique (dont pouls paradoxal) et neurologique (A–D). Un ECG, même rassurant, ne dispense jamais de cette évaluation (E faux)."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’orientation diagnostique d’une douleur thoracique aiguë, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Les quatre urgences cardiovasculaires à évoquer systématiquement se mémorisent par PIED : péricardite, infarctus, embolie pulmonaire, dissection."},
+        {"letter": "B", "text": "L’ECG 12 dérivations, complété de V3R, V4R, V7, V8 et V9, fait partie des examens systématiques."},
+        {"letter": "C", "text": "Un scanner thoracique doit précéder l’ECG devant toute douleur thoracique, y compris un sus-décalage de ST évident."},
+        {"letter": "D", "text": "Le transfert d’un patient douloureux thoracique doit être médicalisé via le 15."},
+        {"letter": "E", "text": "Si le patient se présente seul aux urgences, l’ECG doit être réalisé dans les 10 minutes."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": ["D"],
+      "scz": ["C"],
+      "explanation": "PIED, ECG 18 dérivations, appel du 15 et ECG en 10 minutes au SAU sont la conduite Rang A (A, B, D, E). Radio et troponine sont aussi systématiques, mais jamais avant l’ECG, et encore moins un scanner qui retarderait un ST+ (C faux)."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la dissection aortique thoracique, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "La douleur typique est brutale, intense, en déchirement, migratrice vers le dos et les lombes."},
+        {"letter": "B", "text": "Asymétrie tensionnelle (> 20 mmHg), abolition d’un pouls, souffle d’insuffisance aortique ou déficit neurologique sont des signes d’examen évocateurs."},
+        {"letter": "C", "text": "Un score clinique de 2 ou 3 correspond à une forte probabilité."},
+        {"letter": "D", "text": "Il est rare d’observer une dissection aortique avec des D-dimères normaux."},
+        {"letter": "E", "text": "Toute dissection, y compris limitée à l’aorte descendante non compliquée, impose une chirurgie de l’aorte ascendante en urgence."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sémiologie, signes physiques, score 0–1 vs 2–3 et D-dimères presque toujours élevés (A–D). La chirurgie urgente concerne le type A (aorte ascendante) ; le type B non compliqué n’est pas une indication chirurgicale de l’ascendante (E faux)."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’embolie pulmonaire révélée par une douleur thoracique, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "La triade douleur, dyspnée et radiographie de thorax normale doit faire évoquer le diagnostic."},
+        {"letter": "B", "text": "Une hypotension (PAS < 90 mmHg ou baisse > 40 mmHg pendant plus de 15 minutes) définit un haut risque."},
+        {"letter": "C", "text": "Si la probabilité clinique est faible ou modérée, des D-dimères négatifs (méthode hautement sensible) permettent d’éliminer l’EP."},
+        {"letter": "D", "text": "Si la probabilité clinique est forte, les D-dimères sont inutiles : un angioscanner est demandé d’emblée."},
+        {"letter": "E", "text": "L’ECG d’EP est toujours normal, ce qui le distingue du SCA."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Triade radio normale, stratification par le choc/hypotension, stratégie D-dimères vs angioscanner selon la probabilité (A–D). L’ECG peut montrer tachycardie, S1Q3, BBD ou ondes T négatives droites (E faux)."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la péricardite aiguë et la tamponnade, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "La douleur péricarditique est augmentée à l’inspiration et en décubitus, calmée par l’antéflexion."},
+        {"letter": "B", "text": "L’ECG peut montrer un sus-ST concave diffus sans miroir, un sous-décalage de PQ ou un microvoltage."},
+        {"letter": "C", "text": "La tamponnade associe signes droits, choc et pouls paradoxal (baisse inspiratoire de la PAS d’au moins 10 mmHg)."},
+        {"letter": "D", "text": "L’échocardiographie confirme la tamponnade (collapsus des cavités droites, épanchement abondant)."},
+        {"letter": "E", "text": "La péricardite non compliquée est l’urgence la plus grave du PIED et impose une coronarographie immédiate chez tout patient."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sémiologie positionnelle, ECG, tamponnade clinique et écho (A–D). La péricardite simple est la plus bénigne des quatre urgences (diagnostic d’élimination) ; seule la tamponnade est une urgence vitale (E faux)."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l’ECG et la troponine devant une douleur thoracique, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Un ECG percritique normal n’élimine pas un SCA."},
+        {"letter": "B", "text": "Un BBG doit être considéré comme un équivalent de SCA ST+ si le contexte clinique est évocateur."},
+        {"letter": "C", "text": "Il faut penser à V7–V9 devant une ischémie de circonflexe parfois électriquement muette en 12 dérivations."},
+        {"letter": "D", "text": "La radiographie pulmonaire est souvent inutile dans un tableau typique de SCA en l’absence d’insuffisance cardiaque."},
+        {"letter": "E", "text": "Le dosage de troponine doit toujours précéder la réalisation de l’ECG."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": ["E"],
+      "explanation": "ECG percritique normal non exclusif, BBG équivalent si contexte évocateur, V7–V9 pour la circonflexe, radio peu utile dans un SCA typique sans IC (A–D). Faire la troponine avant l’ECG est une notion inacceptable de l’item (E faux)."
+    },
+    {
+      "item": "230",
+      "kind": "QRU",
+      "rang": "A",
+      "prompt": "Chez un patient hémodynamiquement stable avec une faible probabilité clinique de dissection aortique (score 0 ou 1), indiquer l’attitude diagnostique la plus appropriée parmi les propositions suivantes.",
+      "options": [
+        {"letter": "A", "text": "Coronarographie d’emblée, sans autre imagerie."},
+        {"letter": "B", "text": "Échocardiographie complétée par radiographie thoracique (médiastin) et dosage des D-dimères."},
+        {"letter": "C", "text": "Simple surveillance clinique, aucun examen d’imagerie ni biologique."},
+        {"letter": "D", "text": "Thrombolyse préhospitalière systématique."},
+        {"letter": "E", "text": "Fond d’œil à la recherche d’un œdème papillaire, seul examen utile."}
+      ],
+      "correct": ["B"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le collège précise qu’en faible probabilité (score 0 ou 1) chez un patient stable, l’échocardiographie est complétée par la radiographie (élargissement médiastinal) et les D-dimères (d’emblée très élevés en cas de dissection). Ce n’est pas le circuit du SCA ST+ ni une thrombolyse."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "À propos de la sémiologie comparative des douleurs thoraciques d’urgence, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Une douleur constrictive rétrosternale d’effort oriente vers une origine ischémique coronarienne."},
+        {"letter": "B", "text": "Une douleur acérée, en coup de poignard, majorée par la respiration, oriente plutôt vers une cause non ischémique (pleurale notamment)."},
+        {"letter": "C", "text": "Une douleur dorsale en déchirement oriente vers une dissection."},
+        {"letter": "D", "text": "Une douleur punctiforme montrée du doigt, sous-mammaire gauche, est typique d’un SCA ST+."},
+        {"letter": "E", "text": "L’infarctus inférieur peut mimer une douleur gastrique ou biliopancréatique."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le tableau sémiologique oppose constriction d’effort, douleur pleurale, déchirement dorsal et formes digestives de l’IDM inférieur (A–C, E). Une douleur punctiforme sous-mammaire est un argument contre l’ischémie (D faux)."
+    }
+  ]
+}

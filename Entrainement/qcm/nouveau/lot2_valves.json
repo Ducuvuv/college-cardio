@@ -1,0 +1,4025 @@
+{
+  "questions": [
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 79 ans, dyspnée d'effort. ETT : valve aortique très calcifiée, surface 0,8 cm², gradient moyen 28 mmHg, Vmax 3,4 m/s, volume d'éjection systolique indexé 30 mL/m², FEVG 38 %. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le RA peut être serré malgré un gradient moyen < 40 mmHg lorsque le débit est bas.",
+          "why": "Le collège insiste sur ce piège du bas débit."
+        },
+        {
+          "letter": "B",
+          "text": "Un volume d'éjection systolique indexé < 35 mL/m² définit un bas débit, FEVG préservée ou altérée.",
+          "why": "Seuil collège."
+        },
+        {
+          "letter": "C",
+          "text": "Une échocardiographie sous faible dose de dobutamine peut confirmer le caractère serré.",
+          "why": "Elle augmente le débit pour séparer sténose serrée et pseudosténose."
+        },
+        {
+          "letter": "D",
+          "text": "Si sous dobutamine la surface dépasse 1 cm², il s'agit d'une sténose serrée à opérer d'emblée.",
+          "why": "Surface > 1 cm² = pseudosténose, à traiter comme une insuffisance cardiaque."
+        },
+        {
+          "letter": "E",
+          "text": "La seule mesure du gradient suffit toujours à affirmer la sévérité.",
+          "why": "Le gradient isolé sous-estime la sévérité en bas débit."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "En bas débit (VES < 35 mL/m²), un RA peut rester serré avec un gradient < 40 mmHg. La dobutamine à faible dose distingue sténose serrée (surface restant < 1 cm²) et pseudosténose (surface > 1 cm²), à traiter alors comme une insuffisance cardiaque."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles situations font retenir une indication de remplacement valvulaire (chirurgie ou TAVI) chez un patient ayant un RA serré vraiment asymptomatique et une FEVG initialement normale ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Épreuve d'effort anormale (symptômes démasqués ou réponse tensionnelle inadéquate).",
+          "why": "Indication collège."
+        },
+        {
+          "letter": "B",
+          "text": "RA très serré avec Vmax > 5 m/s.",
+          "why": "Seuil de RA asymptomatique très serré."
+        },
+        {
+          "letter": "C",
+          "text": "Aggravation rapide de la sténose sous surveillance.",
+          "why": "Indication collège."
+        },
+        {
+          "letter": "D",
+          "text": "FEVG qui s'abaisse sous 55 %, le RA étant la seule cause identifiée.",
+          "why": "Seuil collège FEVG < 55 %."
+        },
+        {
+          "letter": "E",
+          "text": "Surface aortique à 1,4 cm² sans autre anomalie.",
+          "why": "Cette surface n'est pas un RA serré."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Surveillance si RA serré vraiment asymptomatique et FEVG normale, sauf épreuve d'effort anormale, Vmax > 5 m/s, aggravation rapide ou FEVG < 55 %. Une surface à 1,4 cm² n'est pas un RA serré."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Homme de 74 ans, RA discordant : surface 0,9 cm², gradient moyen 32 mmHg, FEVG 62 %. Quelles propositions concernant le score calcique valvulaire au scanner sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le scanner quantifie les calcifications valvulaires, corrélées à la sévérité dans le RA dégénératif.",
+          "why": "Utile en discordance surface/gradient à FEVG conservée."
+        },
+        {
+          "letter": "B",
+          "text": "Un score > 2 000 unités Agatston chez l'homme est en faveur d'un RA serré.",
+          "why": "Seuil masculin."
+        },
+        {
+          "letter": "C",
+          "text": "Un score > 1 200 unités Agatston chez la femme est en faveur d'un RA serré.",
+          "why": "Seuil féminin."
+        },
+        {
+          "letter": "D",
+          "text": "Un score Agatston bas élimine formellement tout RA.",
+          "why": "Il oriente en cas de discordance, il n'élimine pas le diagnostic."
+        },
+        {
+          "letter": "E",
+          "text": "Cette discordance (surface < 1 cm² et gradient < 40 mmHg à FEVG conservée) est précisément celle où le score est utile.",
+          "why": "Indication collège."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Discordance surface < 1 cm² / gradient < 40 mmHg à FEVG conservée : un score > 2 000 UA (homme) ou > 1 200 UA (femme) plaide pour un RA serré. Un score bas n'élimine pas à lui seul tout RA."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "À la palpation d'un rétrécissement aortique, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un frémissement au foyer aortique, patient penché en avant en fin d'expiration, traduit en général un RA hémodynamiquement significatif et un souffle d'intensité 4/6.",
+          "why": "Thrill collège."
+        },
+        {
+          "letter": "B",
+          "text": "Dans les formes évoluées, le choc de pointe peut s'élargir et se dévier en bas et à gauche, signant une dilatation du VG.",
+          "why": "Signe tardif."
+        },
+        {
+          "letter": "C",
+          "text": "Le frémissement se recherche avec le plat de la main au foyer aortique.",
+          "why": "Technique."
+        },
+        {
+          "letter": "D",
+          "text": "L'absence de frémissement exclut un RA serré.",
+          "why": "Le thrill n'est pas constant."
+        },
+        {
+          "letter": "E",
+          "text": "Un choc de pointe punctiforme non dévié est le signe le plus précoce du RA peu serré.",
+          "why": "Le choc n'est modifié que si le VG se dilate."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le thrill aortique (plat de la main, expiration, penché en avant) traduit un RA significatif (souffle 4/6). La dilatation VG, tardive, élargit et dévie le choc. L'absence de thrill n'exclut pas un RA serré."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le choix du substitut lors d'un remplacement aortique chirurgical pour RA, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une prothèse mécanique impose un anticoagulant à vie, a une longue durabilité, et est indiquée si le sujet est jeune.",
+          "why": "Profil mécanique."
+        },
+        {
+          "letter": "B",
+          "text": "Une bioprothèse évite l'anticoagulation au long cours et est indiquée en général après 65 ans.",
+          "why": "Seuil d'âge aortique."
+        },
+        {
+          "letter": "C",
+          "text": "Les bioprothèses exposent à un risque de dégénérescence dans les 10–15 ans.",
+          "why": "Durée collège."
+        },
+        {
+          "letter": "D",
+          "text": "Après 65 ans, une prothèse mécanique est toujours préférée car elle ne dégénère jamais.",
+          "why": "Après 65 ans on s'oriente plutôt vers une bioprothèse."
+        },
+        {
+          "letter": "E",
+          "text": "Le TAVI implante une prothèse biologique par voie percutanée.",
+          "why": "Nature du TAVI."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mécanique si sujet jeune (AVK à vie). Bioprothèse en général > 65 ans, sans AVK au long cours, au prix d'une dégénérescence en 10–15 ans. Le TAVI est une bioprothèse percutanée."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRU",
+      "rang": "A",
+      "prompt": "Parmi les propositions suivantes, laquelle correspond à un RA critique selon le collège ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Surface aortique ≤ 0,75 cm² ou < 0,4 cm²/m² de surface corporelle.",
+          "why": "Définition du RA critique."
+        },
+        {
+          "letter": "B",
+          "text": "Surface aortique < 1,5 cm².",
+          "why": "Seuil trop large."
+        },
+        {
+          "letter": "C",
+          "text": "Gradient moyen > 20 mmHg.",
+          "why": "Le RA serré correspond à un gradient moyen > 40 mmHg."
+        },
+        {
+          "letter": "D",
+          "text": "Vmax > 2,5 m/s.",
+          "why": "Ce seuil confirme le diagnostic de RA, pas le caractère critique."
+        },
+        {
+          "letter": "E",
+          "text": "Surface normale de 2 à 3,5 cm².",
+          "why": "C'est la surface d'une valve normale."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "RA serré : surface < 1 cm² (ou < 0,6 cm²/m²). RA critique : ≤ 0,75 cm² ou < 0,4 cm²/m². Vmax > 2,5 m/s affirme le RA, pas le caractère critique. Surface normale : 2–3,5 cm²."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Femme de 68 ans, RA serré, se dit asymptomatique mais a réduit ses sorties. Quelles propositions concernant l'épreuve d'effort sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Elle est préconisée dans le RA serré asymptomatique pour vérifier objectivement l'absence de symptômes.",
+          "why": "Indication rang B."
+        },
+        {
+          "letter": "B",
+          "text": "On surveille le niveau d'effort atteint et une augmentation inadéquate ou une baisse de la pression artérielle à l'effort.",
+          "why": "Critères tensionnels."
+        },
+        {
+          "letter": "C",
+          "text": "Elle est contre-indiquée en cas de syncope d'effort récente sur RA serré.",
+          "why": "Le patient est déjà symptomatique : l'indication est posée."
+        },
+        {
+          "letter": "D",
+          "text": "Elle replace l'ETT pour quantifier la surface valvulaire.",
+          "why": "L'ETT reste l'examen de quantification."
+        },
+        {
+          "letter": "E",
+          "text": "Certains patients sous-estiment leurs symptômes car ils se sont adaptés et ne font presque plus d'effort.",
+          "why": "Justification du test."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'épreuve d'effort objectivise le caractère asymptomatique et détecte une mauvaise réponse tensionnelle. Elle n'a pas sa place après une syncope d'effort et ne remplace pas l'ETT."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 81 ans, RA serré, FEVG 32 %. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le risque opératoire est plus élevé et le pronostic à long terme plus mauvais que si la FEVG était conservée.",
+          "why": "Cas difficile du collège."
+        },
+        {
+          "letter": "B",
+          "text": "Le pronostic à long terme le plus mauvais est celui des patients non opérés.",
+          "why": "Ne pas opérer est encore plus péjoratif."
+        },
+        {
+          "letter": "C",
+          "text": "Une échocardiographie de stress sous dobutamine peut évaluer la réserve de contractilité et exclure une pseudosténose.",
+          "why": "Outil collège."
+        },
+        {
+          "letter": "D",
+          "text": "Une FEVG < 35 % contre-indique formellement tout remplacement valvulaire.",
+          "why": "Ce n'est pas une contre-indication."
+        },
+        {
+          "letter": "E",
+          "text": "Gradient < 40 mmHg et surface < 1 cm² au repos devenant > 1 cm² sous dobutamine définissent une pseudosténose.",
+          "why": "Définition."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "RA serré à FEVG < 35 % : risque opératoire plus élevé, mais le plus mauvais pronostic est celui du non-opéré. La dobutamine évalue la réserve et distingue la pseudosténose (surface > 1 cm²)."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le diagnostic Doppler d'un RA (avant la quantification de sévérité), quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "En 2D, la valve est remaniée, calcifiée, avec une ouverture des sigmoïdes diminuée.",
+          "why": "Morphologie."
+        },
+        {
+          "letter": "B",
+          "text": "En Doppler continu, les vitesses transaortiques sont augmentées (> 2,5 m/s).",
+          "why": "Seuil diagnostique."
+        },
+        {
+          "letter": "C",
+          "text": "La Vmax normale à travers une valve non sténosée est de l'ordre de 1 m/s.",
+          "why": "Valeur normale."
+        },
+        {
+          "letter": "D",
+          "text": "La Vmax transaortique est indépendante du débit cardiaque.",
+          "why": "Elle dépend du débit."
+        },
+        {
+          "letter": "E",
+          "text": "Un gradient VG–aorte de 2 à 5 mmHg est physiologique en l'absence de RA.",
+          "why": "Gradient normal."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Diagnostic : valve remaniée à ouverture réduite et vitesses > 2,5 m/s (normalement ~1 m/s). Gradient physiologique 2–5 mmHg. La Vmax dépend du débit."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le retentissement du RA évalué à l'ETT, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "On évalue l'hypertrophie, une éventuelle dilatation du VG et la FEVG.",
+          "why": "Retentissement VG."
+        },
+        {
+          "letter": "B",
+          "text": "Le débit cardiaque au repos reste longtemps conservé.",
+          "why": "Il s'abaisse dans le RA serré évolué avec dysfonction VG."
+        },
+        {
+          "letter": "C",
+          "text": "La PAP reste longtemps normale ; elle s'élève dans le RA évolué avec altération de la fonction VG.",
+          "why": "Chronologie de l'HTP."
+        },
+        {
+          "letter": "D",
+          "text": "Une dilatation VG précoce est le remodelage attendu dès un RA peu serré.",
+          "why": "Le remodelage initial est une hypertrophie concentrique."
+        },
+        {
+          "letter": "E",
+          "text": "On recherche une atteinte mitrale associée et on mesure la taille de l'aorte, surtout en cas de bicuspidie.",
+          "why": "Bilan associé."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'ETT juge hypertrophie, dilatation éventuelle, FEVG, débit et PAP. Débit et PAP restent longtemps normaux. La dilatation VG n'est pas le remodelage initial. Il faut chercher une atteinte mitrale et mesurer l'aorte."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 84 ans, syncope d'effort il y a 24 h, souffle systolique connu. Vous êtes médecin traitant. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une syncope d'effort avec souffle systolique impose une prise en charge cardiologique rapide, pas un rendez-vous dans un mois.",
+          "why": "Urgence de la vignette collège."
+        },
+        {
+          "letter": "B",
+          "text": "Les deux examens de 1re intention sont l'ECG et l'ETT.",
+          "why": "Démarche."
+        },
+        {
+          "letter": "C",
+          "text": "Un test d'effort est nécessaire d'emblée pour confirmer l'indication.",
+          "why": "Inutile une fois le patient symptomatique."
+        },
+        {
+          "letter": "D",
+          "text": "L'anomalie ECG la plus probable est une HVG à surcharge systolique.",
+          "why": "Aspect typique, non constant."
+        },
+        {
+          "letter": "E",
+          "text": "Une HVG concentrique avec VG non dilaté à l'écho est concordante avec un RA.",
+          "why": "Remodelage attendu."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Syncope d'effort + souffle = urgence cardiologique. ECG et ETT en 1re intention. Pas de test d'effort chez le symptomatique. HVG électrique de surcharge systolique et hypertrophie concentrique écho sont attendues."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la planimétrie de la surface aortique et le cathétérisme, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La planimétrie peut s'apprécier en 2D, mieux en ETO.",
+          "why": "ETO supérieure pour cet usage."
+        },
+        {
+          "letter": "B",
+          "text": "Elle est réservée aux rares patients dont le diagnostic de sévérité reste difficile.",
+          "why": "Place limitée."
+        },
+        {
+          "letter": "C",
+          "text": "L'ETO a peu d'intérêt en routine dans le RA, sauf patient peu échogène.",
+          "why": "Point collège."
+        },
+        {
+          "letter": "D",
+          "text": "Elle remplace systématiquement le calcul Doppler chez tout patient de plus de 75 ans.",
+          "why": "Le Doppler reste la méthode usuelle."
+        },
+        {
+          "letter": "E",
+          "text": "Le cathétérisme n'est habituellement plus réalisé pour mesurer le gradient, sauf discordance clinique–écho.",
+          "why": "Place actuelle."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Planimétrie, idéalement en ETO, seulement si sévérité douteuse ou patient peu échogène. Le Doppler reste la méthode de référence. Le cathétérisme n'est plus fait en routine."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la surveillance d'un RA non encore opéré, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "En l'absence d'indication, la conduite comporte une surveillance médicale et une ETT.",
+          "why": "Conduite collège."
+        },
+        {
+          "letter": "B",
+          "text": "Le patient doit consulter en urgence si des symptômes d'effort apparaissent.",
+          "why": "Éducation."
+        },
+        {
+          "letter": "C",
+          "text": "Une fièvre doit faire penser à une endocardite infectieuse.",
+          "why": "Notion inacceptable de ne pas y penser."
+        },
+        {
+          "letter": "D",
+          "text": "Un patient symptomatique pour un RA serré n'a pas besoin d'être adressé au spécialiste si le souffle est ancien.",
+          "why": "Tout RA serré symptomatique doit être adressé."
+        },
+        {
+          "letter": "E",
+          "text": "Un suivi annuel spécialisé est indiqué même chez l'asymptomatique.",
+          "why": "Ne pas omettre le suivi annuel."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sans indication opératoire : surveillance clinique et ETT. Éducation : symptômes d'effort = urgence, fièvre = EI, suivi annuel. Un RA serré symptomatique doit être adressé même si le souffle est ancien."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Quelles informations le scanner cardiaque apporte-t-il lorsqu'on s'oriente vers un TAVI ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mesure de l'anneau aortique et du culot aortique pour choisir la taille de prothèse.",
+          "why": "Planification."
+        },
+        {
+          "letter": "B",
+          "text": "Distance des ostia coronaires par rapport à l'anneau.",
+          "why": "Risque d'occlusion coronaire."
+        },
+        {
+          "letter": "C",
+          "text": "Diamètres et tortuosités des axes vasculaires pour discuter la voie d'abord.",
+          "why": "Voie fémorale vs alternatives."
+        },
+        {
+          "letter": "D",
+          "text": "Il remplace toujours l'ETT pour affirmer le caractère serré du RA.",
+          "why": "L'ETT reste l'examen de quantification."
+        },
+        {
+          "letter": "E",
+          "text": "Le scanner cardiaque est toujours réalisé avant TAVI.",
+          "why": "Point collège."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le scanner pré-TAVI dimensionne anneau, culot, ostia et axes d'abord, et est toujours réalisé avant le geste. Il ne remplace pas l'ETT pour quantifier la sténose."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 71 ans, RA serré, angor d'effort. Quelles propositions concernant le réseau coronaire sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'angor peut s'observer dans le RA en l'absence de toute sténose coronaire.",
+          "why": "Angor fonctionnel par hypertrophie."
+        },
+        {
+          "letter": "B",
+          "text": "Cliniquement, on ne peut pas distinguer angor fonctionnel et angor coronarien.",
+          "why": "D'où l'imagerie coronaire."
+        },
+        {
+          "letter": "C",
+          "text": "Une coronarographie (ou un coroscanner) se discute chez l'homme de plus de 40 ans dans le bilan préopératoire.",
+          "why": "Seuil masculin."
+        },
+        {
+          "letter": "D",
+          "text": "Chez la femme, l'imagerie coronaire préopératoire n'est envisagée qu'avant 40 ans.",
+          "why": "Chez la femme : après la ménopause, ou si FDR/angor/IC."
+        },
+        {
+          "letter": "E",
+          "text": "La place du coroscanner en remplacement de la coronarographie reste controversée chez le sujet âgé très calcifié.",
+          "why": "Calcifications gênantes."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'angor du RA peut être purement fonctionnel, indiscernable d'une coronaropathie. Imagerie coronaire : homme > 40 ans, femme ménopausée, FDR, angor ou IC. Le coroscanner est parfois pris en défaut par les calcifications."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le strain et l'IRM dans le RA, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La mesure de la FEVG peut être complétée par les déformations (strain).",
+          "why": "Complément de la FEVG."
+        },
+        {
+          "letter": "B",
+          "text": "L'IRM peut rechercher une fibrose si un doute persiste sur l'indication opératoire ou le retentissement.",
+          "why": "Place ciblée."
+        },
+        {
+          "letter": "C",
+          "text": "Une hypertrophie avec fibrose intense peut empêcher une récupération ad integrum de la fonction VG après levée de l'obstacle.",
+          "why": "Fibrose irréversible."
+        },
+        {
+          "letter": "D",
+          "text": "L'IRM remplace l'ETT comme examen de 1re intention du RA.",
+          "why": "L'ETT reste l'examen clé."
+        },
+        {
+          "letter": "E",
+          "text": "Ces outils concernent surtout les cas difficiles, pas le bilan de tout souffle aortique.",
+          "why": "Indication ciblée."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Strain et IRM (fibrose) aident lorsque l'indication ou le retentissement restent douteux. Une fibrose marquée peut limiter la récupération postopératoire. Ils ne remplacent pas l'ETT."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 58 ans, migrant, RA et IA associés à une atteinte mitrale mixte. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un RA post-rhumatismal s'associe en général à une IA et à une atteinte mitrale (RM ± IM).",
+          "why": "Profil rhumatismal."
+        },
+        {
+          "letter": "B",
+          "text": "Cette étiologie est devenue rare en France, encore rencontrée notamment chez les migrants.",
+          "why": "Épidémiologie."
+        },
+        {
+          "letter": "C",
+          "text": "Après 70 ans en France, cette étiologie reste de loin la plus fréquente du RA.",
+          "why": "Après 65–70 ans, c'est le RA dégénératif qui domine."
+        },
+        {
+          "letter": "D",
+          "text": "Le RA dégénératif est caractérisé par des calcifications débutant à la base des valvules, qui deviennent rigides.",
+          "why": "Mönckeberg."
+        },
+        {
+          "letter": "E",
+          "text": "La physiopathologie du RA dégénératif est proche de celle de l'athérosclérose artérielle.",
+          "why": "Analogie collège."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le RA rhumatismal, rare, encore vu chez les migrants, s'associe à une IA et une valvulopathie mitrale. Après 65–70 ans, le RA dégénératif calcifié (base des sigmoïdes), proche de l'athérosclérose, domine."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles propositions concernant la valvuloplastie aortique au ballon (sans prothèse) sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Elle est quasiment abandonnée en raison d'un taux très élevé de resténose précoce.",
+          "why": "Limite de la technique."
+        },
+        {
+          "letter": "B",
+          "text": "Elle reste indiquée en pont vers une chirurgie non cardiaque urgente chez un patient ayant un RA serré symptomatique.",
+          "why": "Indication résiduelle."
+        },
+        {
+          "letter": "C",
+          "text": "C'est le traitement de 1re intention du RA serré du sujet de moins de 65 ans.",
+          "why": "Ce n'est pas le traitement de 1re intention."
+        },
+        {
+          "letter": "D",
+          "text": "Elle consiste en une dilatation rétrograde à partir d'une ponction fémorale.",
+          "why": "Voie technique."
+        },
+        {
+          "letter": "E",
+          "text": "Elle implante d'emblée une bioprothèse dans l'anneau.",
+          "why": "Sans mise en place de prothèse."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La dilatation au ballon sans prothèse, quasi abandonnée pour resténose précoce, n'a plus qu'une place de pont vers une chirurgie non cardiaque urgente. Ce n'est ni un TAVI ni le traitement de 1re intention du sujet jeune."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 76 ans, RA serré, Heart Team : TAVI fémoral retenu. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'indication de TAVI ne peut être portée sans discussion pluridisciplinaire (Heart Team).",
+          "why": "Exigence ESC/collège."
+        },
+        {
+          "letter": "B",
+          "text": "Âge, fragilité, comorbidités et souhaits du patient sont pris en compte pour choisir entre chirurgie et TAVI.",
+          "why": "Critères de choix."
+        },
+        {
+          "letter": "C",
+          "text": "Le TAVI a dépassé en nombre les remplacements chirurgicaux en France.",
+          "why": "Donnée collège."
+        },
+        {
+          "letter": "D",
+          "text": "Une voie apicale est la seule voie d'abord possible du TAVI.",
+          "why": "Voie fémorale ou apicale ; la fémorale est privilégiée."
+        },
+        {
+          "letter": "E",
+          "text": "Le TAVI est recommandé en 1re intention après 75 ans, quel que soit le risque chirurgical, si une voie fémorale est possible.",
+          "why": "Recommandation."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le TAVI se décide en Heart Team. En France il a dépassé la chirurgie. Après 75 ans, il est recommandé en 1re intention si abord fémoral possible."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'anatomie de la valve aortique utile au diagnostic de RA, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La valve normale a trois cusps : antérodroite, antérogauche et non coronaire.",
+          "why": "Anatomie."
+        },
+        {
+          "letter": "B",
+          "text": "Les cusps s'ouvrent de manière passive selon le gradient ventriculo-aortique.",
+          "why": "Ouverture passive."
+        },
+        {
+          "letter": "C",
+          "text": "Épaississement, rigidité et calcifications restreignent la mobilité et réalisent le RA.",
+          "why": "Mécanisme acquis."
+        },
+        {
+          "letter": "D",
+          "text": "La bicuspidie résulte en général d'une fusion ou d'un défaut de séparation embryologique de deux cusps.",
+          "why": "Embryologie."
+        },
+        {
+          "letter": "E",
+          "text": "Une valve aortique normale a une surface de 0,5 cm².",
+          "why": "Surface normale : 2 à 3,5 cm²."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Valve tricuspide à ouverture passive ; le RA acquis vient de la rigidité/calcification. La bicuspidie est un défaut de séparation embryologique. Surface normale 2–3,5 cm², pas 0,5 cm²."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels seuils définissent les grades de l'insuffisance mitrale primaire selon le collège (SOR et volume régurgité) ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grade I (minime) : SOR < 20 mm² et volume < 30 mL.",
+          "why": "Tableau 8.1."
+        },
+        {
+          "letter": "B",
+          "text": "Grade II (modérée) : SOR 20–29 mm² et volume 30–44 mL.",
+          "why": "Tableau 8.1."
+        },
+        {
+          "letter": "C",
+          "text": "Grade III (moyenne) : SOR 30–39 mm² et volume 45–59 mL.",
+          "why": "Tableau 8.1."
+        },
+        {
+          "letter": "D",
+          "text": "On parle d'IM significative en cas d'IM moyenne ou importante (grades III–IV).",
+          "why": "Définition."
+        },
+        {
+          "letter": "E",
+          "text": "Grade I : SOR 40 mm² et volume 70 mL.",
+          "why": "Ces valeurs correspondent à une IM importante."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Grades d'IM primaire : I < 20 mm²/< 30 mL ; II 20–29/30–44 ; III 30–39/45–59 ; au-delà, IM importante. L'IM significative recouvre les grades III et IV."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la quantification et le caractère « accordéon » de l'IM secondaire, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le seuil de sévérité de la SOR est à 30 mm² (différent de l'IM primaire).",
+          "why": "Seuil spécifique."
+        },
+        {
+          "letter": "B",
+          "text": "La fuite doit être évaluée plusieurs fois, uniquement après optimisation du traitement de l'insuffisance cardiaque.",
+          "why": "Condition collège."
+        },
+        {
+          "letter": "C",
+          "text": "Elle dépend de la volémie : plus importante en surcharge, moindre après déplétion.",
+          "why": "Phénomène accordéon."
+        },
+        {
+          "letter": "D",
+          "text": "Un seul cliché d'ETT en OAP suffit à indiquer d'emblée un clip, sans réévaluation.",
+          "why": "Il faut réévaluer après optimisation médicale."
+        },
+        {
+          "letter": "E",
+          "text": "Les feuillets sont en règle normaux ; l'anomalie est ventriculaire (piliers éloignés) ou annulaire.",
+          "why": "Définition de l'IM secondaire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IM secondaire : SOR sévère dès 30 mm², fuite volémo-dépendante à juger après traitement médical optimal. Les feuillets sont normaux. On ne pose pas un geste sur un unique cliché en OAP."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 63 ans, IM primaire (SOR 50 mm², volume 67 mL), prolapsus P2 par rupture de cordage, DTS VG 43 mm, FEVG 65 %, AG 65 mL/m². Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les valeurs de SOR et de volume correspondent à une IM importante.",
+          "why": "Vignette collège 50 mm² et 67 mL."
+        },
+        {
+          "letter": "B",
+          "text": "Un DTS VG > 40 mm témoigne d'un retentissement d'aval.",
+          "why": "Seuil de dilatation télésystolique."
+        },
+        {
+          "letter": "C",
+          "text": "Un volume d'AG de 65 mL/m² témoigne d'un retentissement d'amont (seuil autour de 60 mL/m²).",
+          "why": "AG dilaté."
+        },
+        {
+          "letter": "D",
+          "text": "Une FEVG à 65 % exclut tout retentissement et contre-indique la chirurgie.",
+          "why": "La FEVG est surestimée dans l'IM ; on parle de dysfonction dès < 60 %."
+        },
+        {
+          "letter": "E",
+          "text": "L'ETO aide à planifier une plastie en précisant le feston atteint.",
+          "why": "Rôle préopératoire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IM importante (50 mm², 67 mL) avec retentissement (DTS 43 mm, AG 65 mL/m²). La FEVG à 65 % n'est pas rassurante à elle seule. L'ETO guide la plastie du P2."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles différences entre dégénérescence myxoïde (Barlow) et dégénérescence fibroélastique faut-il retenir ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dans la maladie de Barlow, il existe un excès de tissu, valves souvent redondantes et épaissies.",
+          "why": "Myxoïde."
+        },
+        {
+          "letter": "B",
+          "text": "Les dégénérescences fibroélastiques sont plus fréquentes, chez des sujets plus âgés, plus souvent des hommes, surtout valve postérieure.",
+          "why": "Profil."
+        },
+        {
+          "letter": "C",
+          "text": "Dans la fibroélastique, la quantité de tissu est adaptée et le mécanisme essentiel est une rupture de cordages.",
+          "why": "Contraste avec Barlow."
+        },
+        {
+          "letter": "D",
+          "text": "La ballonnisation est un bombement systolique dont le bord libre reste dans le plan de l'anneau ; le prolapsus survient lorsque l'extrémité passe en arrière de ce plan.",
+          "why": "Définitions."
+        },
+        {
+          "letter": "E",
+          "text": "L'IM dystrophique n'est jamais une IM primaire.",
+          "why": "C'est l'étiologie la plus fréquente des IM primaires sévères."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Barlow : excès de tissu, valves redondantes. Fibroélastique (plus fréquente, homme âgé, P2) : tissu adapté, rupture de cordages. Ballonnisation vs prolapsus selon la position du bord libre. L'IM dystrophique est primaire."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le traitement de l'IM secondaire, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Il repose d'abord sur le traitement de l'insuffisance cardiaque (médicaments, resynchronisation si QRS larges).",
+          "why": "Stratégie."
+        },
+        {
+          "letter": "B",
+          "text": "Une IM fonctionnelle importante persistante malgré un traitement optimal est associée à une surmortalité et plus d'hospitalisations.",
+          "why": "Pronostic."
+        },
+        {
+          "letter": "C",
+          "text": "Un clip percutané peut être proposé sur critères écho précis, en discussion multidisciplinaire, si l'IC n'est pas trop avancée.",
+          "why": "Place du bord-à-bord."
+        },
+        {
+          "letter": "D",
+          "text": "La chirurgie de remplacement mitral est le traitement de 1re intention, avant tout traitement médical.",
+          "why": "Le médical passe d'abord."
+        },
+        {
+          "letter": "E",
+          "text": "Ces options se discutent en clinique des valves / Heart Team.",
+          "why": "Niveau 1 ESC 2021."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IM secondaire : optimiser d'abord l'IC (médicaments, CRT). Si la fuite reste importante, un clip peut se discuter en Heart Team. La chirurgie n'est pas le premier geste."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Lors d'une chirurgie mitrale, quelles propositions concernant la valve tricuspide sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Il faut vérifier la tricuspide (prolapsus, dilatation annulaire, fuite).",
+          "why": "Bilan des autres valves."
+        },
+        {
+          "letter": "B",
+          "text": "Une fuite même non sévère avec un anneau tricuspide > 40 mm en apical 4 cavités justifie de planifier une annuloplastie tricuspide associée.",
+          "why": "Seuil 40 mm."
+        },
+        {
+          "letter": "C",
+          "text": "L'anneau se mesure en ETT, coupe apicale 4 cavités.",
+          "why": "Modalité."
+        },
+        {
+          "letter": "D",
+          "text": "On ne touche jamais à la tricuspide si la fuite n'est pas massive (grade IV).",
+          "why": "Même une fuite non sévère avec anneau > 40 mm fait planifier le geste."
+        },
+        {
+          "letter": "E",
+          "text": "Une IT fonctionnelle peut accompagner une IM évoluée avec HTP et retentissement droit.",
+          "why": "Physiopathologie d'amont."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Toute chirurgie mitrale impose de vérifier la tricuspide. Un anneau > 40 mm en apical 4 cavités, même si la fuite n'est pas sévère, fait planifier une annuloplastie. L'IT fonctionnelle est fréquente si HTP d'amont."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Femme de 32 ans, prolapsus mitral, extrasystoles, ondes T négatives précordiales. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Des troubles du rythme ventriculaire peuvent accompagner un prolapsus même sans fuite sévère s'il existe une disjonction annulaire.",
+          "why": "Collège, notamment femme jeune."
+        },
+        {
+          "letter": "B",
+          "text": "Ce profil ECG (ESV, T négatives précordiales) est classiquement décrit dans ce contexte.",
+          "why": "Sémiologie."
+        },
+        {
+          "letter": "C",
+          "text": "Exceptionnellement, ce type de prolapsus peut être une cause de mort subite.",
+          "why": "Rareté à connaître."
+        },
+        {
+          "letter": "D",
+          "text": "Ce tableau impose un remplacement mitral en urgence dès la première ESV.",
+          "why": "Pas d'indication chirurgicale d'urgence sur la seule ESV."
+        },
+        {
+          "letter": "E",
+          "text": "La disjonction annulaire est une anomalie anatomique marquée associée à ce risque rythmique.",
+          "why": "Définition."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Un prolapsus avec disjonction annulaire, surtout chez la femme jeune (ESV, T négatives précordiales), peut se compliquer de TV. Exceptionnellement, il peut causer une mort subite, même sans IM sévère. Ce n'est pas une indication de remplacement en urgence."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels examens d'effort peuvent aider lorsqu'un patient avec IM se dit asymptomatique ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'épreuve d'effort (éventuellement avec VO2) peut démasquer des symptômes et apprécier la capacité à l'effort.",
+          "why": "Intérêt collège."
+        },
+        {
+          "letter": "B",
+          "text": "L'échocardiographie d'effort apprécie la fuite à l'effort, son augmentation éventuelle et les pressions pulmonaires.",
+          "why": "Rôle."
+        },
+        {
+          "letter": "C",
+          "text": "Ces examens dynamiques remplacent l'ETT de repos pour poser toutes les indications chirurgicales.",
+          "why": "L'ETT de repos reste la base."
+        },
+        {
+          "letter": "D",
+          "text": "Leur principal intérêt est de comprendre des symptômes méconnus chez des patients qui se disent asymptomatiques.",
+          "why": "Phrase collège."
+        },
+        {
+          "letter": "E",
+          "text": "La VO2 permet de mieux apprécier la capacité à l'effort.",
+          "why": "Collège."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Effort simple, VO2 et écho d'effort aident à démasquer des symptômes et le retentissement d'effort. Ils ne remplacent pas l'ETT de repos."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le bilan coronaire avant chirurgie d'IM, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "En faible probabilité pré-test, un coroscanner peut être proposé pour exclure une coronaropathie.",
+          "why": "Place du coroscanner."
+        },
+        {
+          "letter": "B",
+          "text": "La coronarographie se discute si suspicion d'ischémie, baisse de FEVG, homme > 40 ans, femme ménopausée, ou FDR cardiovasculaires.",
+          "why": "Indications."
+        },
+        {
+          "letter": "C",
+          "text": "La ventriculographie de contraste pour quantifier la fuite n'est plus utilisée.",
+          "why": "Abandonnée."
+        },
+        {
+          "letter": "D",
+          "text": "Le cathétérisme droit peut mesurer précisément les pressions (capillaire et pulmonaire) et le débit par thermodilution.",
+          "why": "Reste parfois utile."
+        },
+        {
+          "letter": "E",
+          "text": "Toute IM minime du sujet jeune impose une coronarographie systématique.",
+          "why": "Pas d'indication systématique si faible risque."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Coroscanner si faible risque ; coronarographie si ischémie, dysfonction VG, homme > 40 ans, femme ménopausée ou FDR. La ventriculographie n'a plus de place."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'ECG et la radiographie thoracique de l'IM, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ECG reste longtemps normal ; il peut montrer HAG, HVG, FA, voire HVD si HTP sévère.",
+          "why": "Collège."
+        },
+        {
+          "letter": "B",
+          "text": "La radio est normale dans les IM minimes ou modérées.",
+          "why": "Collège."
+        },
+        {
+          "letter": "C",
+          "text": "On peut voir une cardiomégalie, un AG dilaté (arc moyen gauche convexe, débord de l'arc inférieur droit), des signes d'HTP (Kerley, redistribution, OAP).",
+          "why": "Signes radio."
+        },
+        {
+          "letter": "D",
+          "text": "ECG et radio suffisent à quantifier la SOR.",
+          "why": "Seule l'écho Doppler quantifie la fuite."
+        },
+        {
+          "letter": "E",
+          "text": "ECG et radio n'ont pas de signes « spécifiques » d'IM.",
+          "why": "Point collège."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG et radio sont peu spécifiques, longtemps normaux, puis montrent dilatations et retentissement pulmonaire. Ils ne quantifient pas la SOR."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles causes d'IM, hors prolapsus dystrophique et IM secondaire ventriculaire, sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un SAM dans la CMH obstructive peut créer une fuite parfois sévère par défaut de coaptation.",
+          "why": "Feuillet antérieur aspiré dans la chambre de chasse."
+        },
+        {
+          "letter": "B",
+          "text": "Une fente du feuillet antérieur ou un canal atrioventriculaire sont des causes congénitales.",
+          "why": "Collège."
+        },
+        {
+          "letter": "C",
+          "text": "Les dérivés de l'ergot de seigle et certains anorexigènes (benfluorex, fenfluramine) donnent des IM restrictives proches du RAA.",
+          "why": "IM médicamenteuses."
+        },
+        {
+          "letter": "D",
+          "text": "Toute calcification de l'anneau mitral réalise une IM aiguë chirurgicale en urgence.",
+          "why": "Les calcifications annulaires sont dégénératives chroniques."
+        },
+        {
+          "letter": "E",
+          "text": "Un lupus, souvent associé à un SAPL, peut donner une IM.",
+          "why": "Cause auto-immune."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "SAM de CMH, fente/CAV, lésions médicamenteuses type RAA et lupus/SAPL sont des causes d'IM. Les calcifications annulaires sont dégénératives chroniques, non une IM aiguë d'emblée."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le choix d'une prothèse si une plastie mitrale est impossible, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Après 70 ans, on s'oriente le plus souvent vers une bioprothèse.",
+          "why": "Seuil mitral."
+        },
+        {
+          "letter": "B",
+          "text": "Avant 65 ans, on s'oriente plutôt vers une prothèse mécanique.",
+          "why": "Seuil."
+        },
+        {
+          "letter": "C",
+          "text": "Une FA associée, imposant déjà des AVK, plaide plutôt pour une mécanique chez le sujet encore jeune.",
+          "why": "Argument."
+        },
+        {
+          "letter": "D",
+          "text": "Une femme en âge de procréer avec désir de grossesse oriente vers une bioprothèse.",
+          "why": "Évite les AVK."
+        },
+        {
+          "letter": "E",
+          "text": "Le remplacement reste envisageable si la FEVG est < 30 %, contrairement à la plastie.",
+          "why": "C'est l'inverse : le remplacement est contre-indiqué si FE < 30 % (chute de 10–15 %) ; la plastie reste possible."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mécanique plutôt < 65 ans (ou si AVK déjà indiqués) ; bioprothèse plutôt > 70 ans ou désir de grossesse. Si FE < 30 %, le remplacement est contre-indiqué, pas la plastie."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 58 ans, IM primaire grade IV, FEVG 28 %, inopérable. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un remplacement valvulaire est contre-indiqué car la FE baisse en moyenne de 10–15 % en postopératoire.",
+          "why": "Risque de dysfonction VG sévère."
+        },
+        {
+          "letter": "B",
+          "text": "On reste alors au traitement médical ou, si le patient est encore relativement jeune, on discute une transplantation.",
+          "why": "Alternative."
+        },
+        {
+          "letter": "C",
+          "text": "Un clip bord-à-bord peut être envisagé si critères écho d'éligibilité, haut risque, procédure non futile.",
+          "why": "Place du percutané."
+        },
+        {
+          "letter": "D",
+          "text": "Une plastie reconstructrice peut toujours être envisagée même en cas de dysfonction VG.",
+          "why": "Phrase collège."
+        },
+        {
+          "letter": "E",
+          "text": "Une FE < 30 % interdit toute plastie comme tout remplacement.",
+          "why": "La plastie reste possible."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FE < 30 % : pas de remplacement (chute de 10–15 % de FE). Plastie encore possible ; sinon médical, greffe, ou clip si éligible et non futile."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'IM atriale, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C'est une IM secondaire par dilatation de l'anneau sans atteinte des feuillets (type I de Carpentier).",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "Elle survient sur des atriums très dilatés, par exemple en FA permanente.",
+          "why": "Mécanisme."
+        },
+        {
+          "letter": "C",
+          "text": "Le jeu valvulaire reste dans le plan de l'anneau ; la coaptation est insuffisante.",
+          "why": "Type I."
+        },
+        {
+          "letter": "D",
+          "text": "C'est l'étiologie la plus fréquente des IM primaires sévères en France.",
+          "why": "La plus fréquente est l'IM dystrophique."
+        },
+        {
+          "letter": "E",
+          "text": "Elle est plus rare que l'IM secondaire d'origine ventriculaire.",
+          "why": "Collège."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IM atriale est un type I par dilatation annulaire sur AG très dilaté (FA). Plus rare que l'IM ventriculaire. Ce n'est pas l'étiologie dominante des IM primaires sévères."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'IM d'endocardite, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Elle survient dans plus de la moitié des cas sur une lésion préexistante (prolapsus ou autre IM).",
+          "why": "Épidémiologie."
+        },
+        {
+          "letter": "B",
+          "text": "Les lésions sont végétantes et souvent mutilantes (destruction du feuillet).",
+          "why": "Morphologie."
+        },
+        {
+          "letter": "C",
+          "text": "Les mécanismes sont surtout ruptures de cordages (type II) ou perforations (type I), surtout valve antérieure.",
+          "why": "Collège."
+        },
+        {
+          "letter": "D",
+          "text": "L'ETO est fondamentale et obligatoire pour le diagnostic d'IM sur endocardite (végétations parfois invisibles en ETT).",
+          "why": "Phrase collège."
+        },
+        {
+          "letter": "E",
+          "text": "Une ETT normale élimine formellement une endocardite mitrale.",
+          "why": "Végétations fines : ETO obligatoire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IM d'EI naît souvent sur une valve déjà malade, par végétations et mutilations. L'ETO est obligatoire ; une ETT normale n'élimine pas le diagnostic."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelle est la conduite pour une IM minime ou modérée (grade I ou II) ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Réévaluation clinique et échocardiographique régulière.",
+          "why": "Surveillance."
+        },
+        {
+          "letter": "B",
+          "text": "Prévention de l'EI par hygiène cutanée et soins dentaires réguliers.",
+          "why": "Pas d'antibioprophylaxie systématique."
+        },
+        {
+          "letter": "C",
+          "text": "Antibioprophylaxie systématique avant tout soin dentaire.",
+          "why": "Plus recommandée pour l'IM native non opérée."
+        },
+        {
+          "letter": "D",
+          "text": "Indication chirurgicale d'emblée dès le grade II, même asymptomatique.",
+          "why": "Pas d'intervention en IM isolée de grade I–II."
+        },
+        {
+          "letter": "E",
+          "text": "Pas d'intervention en cas d'IM isolée de grade I–II.",
+          "why": "Stratégie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les IM de grades I–II relèvent d'une surveillance clinique et échocardiographique. L'hygiène dentaire et cutanée prévient l'EI ; l'antibioprophylaxie n'est plus systématique. Il n'y a pas d'indication chirurgicale isolée à ce stade."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 70 ans, infarctus inférieur ancien, IM secondaire. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'IM ischémique chronique après infarctus inférieur avec akinésie de la paroi inférieure est un classique d'IM secondaire.",
+          "why": "Type IIIb."
+        },
+        {
+          "letter": "B",
+          "text": "Le ventricule, en se dilatant, déplace les piliers et empêche la fermeture : la valve n'est pas malade, le ventricule l'est.",
+          "why": "Mécanisme."
+        },
+        {
+          "letter": "C",
+          "text": "Le souffle des IM secondaires est souvent discret, parfois inaudible, mal corrélé à la sévérité.",
+          "why": "Sémiologie."
+        },
+        {
+          "letter": "D",
+          "text": "Une plastie est toujours simple, sans risque de récidive.",
+          "why": "Plastie possible mais difficile, risque de récidive."
+        },
+        {
+          "letter": "E",
+          "text": "Le traitement médical de l'IC passe avant tout geste sur la valve.",
+          "why": "Ordre collège."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Après IDM inférieur, IM secondaire par déplacement des piliers. Souffle souvent pauvre. Le médical d'IC précède le geste ; une plastie n'est ni simple ni définitive."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant le cathétérisme dans l'IM chronique, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Au cathétérisme, une PAPO > 15 mmHg et une onde V de reflux traduisent l'HTP post-capillaire d'amont.",
+          "why": "Critères."
+        },
+        {
+          "letter": "B",
+          "text": "Dans l'IM primaire chronique, l'AG dilaté peut longtemps maintenir une PAP quasi normale malgré un volume régurgité important.",
+          "why": "Compliance atriale."
+        },
+        {
+          "letter": "C",
+          "text": "L'HTP dépend du volume régurgité et de la compliance de l'AG et des veines pulmonaires.",
+          "why": "Physiopathologie."
+        },
+        {
+          "letter": "D",
+          "text": "La ventriculographie de contraste reste l'examen de référence pour grader l'IM.",
+          "why": "Elle n'est plus utilisée."
+        },
+        {
+          "letter": "E",
+          "text": "Le cathétérisme gauche diagnostique n'est plus l'examen de quantification de la fuite.",
+          "why": "Supplanté par l'écho Doppler."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'HTP d'IM est post-capillaire (PAPO > 15 mmHg, onde V). Un AG compliant masque longtemps l'HTP. Le cathétérisme gauche/ventriculographie n'a plus de rôle de quantification."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la physiopathologie de l'insuffisance aortique chronique, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'IA réalise une surcharge mixte du VG : volumétrique (précharge) et barométrique (postcharge).",
+          "why": "Volume régurgité + augmentation du volume d'éjection aortique."
+        },
+        {
+          "letter": "B",
+          "text": "Le remodelage est une hypertrophie excentrique, plus marquée (dilatation et hypertrophie) que dans l'IM.",
+          "why": "Loi de Laplace."
+        },
+        {
+          "letter": "C",
+          "text": "Longtemps, la compliance du VG permet des pressions de remplissage normales malgré une dilatation importante.",
+          "why": "Tolérance chronique."
+        },
+        {
+          "letter": "D",
+          "text": "Lorsque le VG est très dilaté ou que la FE est abaissée, le remodelage peut être irréversible après chirurgie.",
+          "why": "Fibrose."
+        },
+        {
+          "letter": "E",
+          "text": "L'IA chronique dilate d'emblée l'AG sans toucher le VG, comme une IM aiguë.",
+          "why": "C'est le VG qui est en surcharge mixte."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IA chronique surcharge le VG en volume et en pression, d'où une hypertrophie excentrique plus marquée que dans l'IM. La compliance masque longtemps les pressions de remplissage ; au stade de grande dilatation ou de FE basse, le remodelage peut ne plus régresser."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels critères échocardiographiques de quantification d'IA sont exacts d'après le collège ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grade 1 : SOR < 10 mm² et volume < 30 mL ; grade 2 : 10–19 mm² et 30–44 mL ; grade 3 : 20–29 mm² et 45–59 mL.",
+          "why": "Tableau 8.3."
+        },
+        {
+          "letter": "B",
+          "text": "Seules les fuites de grades 3 et 4 entraînent une surcharge volumétrique significative.",
+          "why": "Commentaire vs classification à 3 grades."
+        },
+        {
+          "letter": "C",
+          "text": "Une fuite sévère s'accompagne en général d'un hyperdébit dans la chambre de chasse > 4 L/min/m².",
+          "why": "Critère indirect."
+        },
+        {
+          "letter": "D",
+          "text": "Un flux rétrograde télédiastolique isthmique > 20 cm/s chez l'adulte plaide pour une IA sévère.",
+          "why": "Critère Doppler."
+        },
+        {
+          "letter": "E",
+          "text": "Un grade 1 (SOR < 10 mm²) suffit à indiquer un remplacement valvulaire chez l'asymptomatique.",
+          "why": "Seules les fuites sévères (et le diamètre aortique) portent l'indication."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Grades 1–3 selon SOR/volume du tableau 8.3 ; la surcharge VG significative commence aux grades 3–4. Hyperdébit > 4 L/min/m² et flux isthmique > 20 cm/s sont des arguments de sévérité."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Homme de 52 ans, IA sévère, se dit asymptomatique. Quelles propositions concernant le test d'effort sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Il n'est pas systématique mais aide à la décision en appréciant la tolérance fonctionnelle.",
+          "why": "Place collège."
+        },
+        {
+          "letter": "B",
+          "text": "Un arrêt surtout pour dyspnée (et non épuisement musculaire) est un critère de mauvaise tolérance.",
+          "why": "Critère."
+        },
+        {
+          "letter": "C",
+          "text": "Une capacité d'effort (watts et/ou VO2max) < 80–85 % de la théorique oriente vers la chirurgie.",
+          "why": "Seuil."
+        },
+        {
+          "letter": "D",
+          "text": "Un défaut de réserve contractile du VG en écho d'effort et des TV d'effort sont des critères de mauvaise tolérance.",
+          "why": "Collège."
+        },
+        {
+          "letter": "E",
+          "text": "Le test d'effort remplace l'ETT pour mesurer le diamètre télésystolique du VG.",
+          "why": "Les diamètres VG se mesurent à l'ETT ou l'IRM."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'effort (standard, VO2, écho d'effort) démasque une mauvaise tolérance : dyspnée limitante, < 80–85 % de la théorique, défaut de réserve contractile, TV. Il ne mesure pas les diamètres VG de repos."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les techniques chirurgicales de l'IA, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'IA isolée se traite le plus souvent par RVA simple (prothèse mécanique ou biologique).",
+          "why": "Modalité usuelle."
+        },
+        {
+          "letter": "B",
+          "text": "En cas de dilatation aortique, on associe un remplacement de l'aorte ascendante par tube, avec réimplantation des coronaires (Bentall) ou parfois tube sus-coronaire.",
+          "why": "Geste associé."
+        },
+        {
+          "letter": "C",
+          "text": "La plastie aortique conservatrice (Tirone David, Yacoub) n'est pratiquée que par des chirurgiens entraînés, si feuillets peu altérés ou bicuspidie peu remaniée.",
+          "why": "Place limitée."
+        },
+        {
+          "letter": "D",
+          "text": "L'intervention de Ross utilise la valve pulmonaire du patient en position aortique, avec homogreffe ou bioprothèse pulmonaire.",
+          "why": "Autogreffe."
+        },
+        {
+          "letter": "E",
+          "text": "Le TAVI est le traitement de 1re intention de l'IA sévère du sujet de 55 ans à faible risque.",
+          "why": "Le TAVI n'est pas adapté à l'IA et reste exceptionnel."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "RVA isolé, Bentall/tube si aorte dilatée, plastie conservatrice sélectionnée, Ross chez le jeune. Le TAVI n'est pas le traitement de l'IA du sujet opérable."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRU",
+      "rang": "A",
+      "prompt": "Parmi les propositions suivantes concernant le TAVI dans l'IA, laquelle est exacte ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Il peut être parfois proposé en cas de très haut risque chirurgical ou de contre-indication opératoire, en l'absence d'EI, mais reste très marginal (risque de migration, prothèses conçues pour s'accrocher aux calcifications).",
+          "why": "Phrase collège."
+        },
+        {
+          "letter": "B",
+          "text": "C'est le traitement de 1re intention de toute IA grade 4 après 65 ans.",
+          "why": "Faux, contrairement au RA."
+        },
+        {
+          "letter": "C",
+          "text": "Il est recommandé en présence d'une EI aortique active pour éviter la sternotomie.",
+          "why": "L'EI contre-indique cette stratégie."
+        },
+        {
+          "letter": "D",
+          "text": "Les prothèses TAVI actuelles sont spécifiquement conçues pour l'IA non calcifiée.",
+          "why": "Le collège dit le contraire."
+        },
+        {
+          "letter": "E",
+          "text": "Il remplace le Bentall dans le Marfan avec aorte à 55 mm.",
+          "why": "La chirurgie de l'aorte reste le traitement."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le TAVI dans l'IA n'est qu'une option compassionnelle (très haut risque, pas d'EI), mal adaptée (peu de calcifications, migration). Ce n'est ni la 1re intention, ni un traitement d'EI ou de Marfan."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Devant un souffle diastolique, quels diagnostics différentiels l'échographie permet-elle surtout d'écarter ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Insuffisance pulmonaire, en général dans un contexte de cardiopathie congénitale connue.",
+          "why": "Principal DD."
+        },
+        {
+          "letter": "B",
+          "text": "Double souffle d'une rupture de sinus aortique.",
+          "why": "DD."
+        },
+        {
+          "letter": "C",
+          "text": "Souffle continu (canal artériel persistant, fistule coronaire).",
+          "why": "DD."
+        },
+        {
+          "letter": "D",
+          "text": "Frottement péricardique.",
+          "why": "DD."
+        },
+        {
+          "letter": "E",
+          "text": "Un souffle holosystolique apexo-axillaire isolé, typique d'IM, est le premier DD d'une IA.",
+          "why": "Temps différent (systole vs diastole)."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Souffle diastolique : IP, rupture de sinus, souffle continu, frottement. L'écho départage. L'IM est holosystolique, ce n'est pas le DD d'un souffle diastolique."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels aspects ECG et radiologiques de l'IA chronique faut-il connaître ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ECG peut être normal ; le rythme est en général sinusal.",
+          "why": "Collège."
+        },
+        {
+          "letter": "B",
+          "text": "Une FA ou des ESV sont de mauvais pronostic.",
+          "why": "Collège."
+        },
+        {
+          "letter": "C",
+          "text": "L'HVG typique est de type diastolique (R très amples, T positives en précordiales gauches).",
+          "why": "Surcharge diastolique."
+        },
+        {
+          "letter": "D",
+          "text": "Les IA volumineuses chroniques augmentent l'index cardiothoracique ; un débord de l'arc moyen droit traduit une aorte déroulée.",
+          "why": "Radio."
+        },
+        {
+          "letter": "E",
+          "text": "Une FA d'effort est le maître symptôme inaugural de toute IA minime.",
+          "why": "La FA n'est pas le symptôme princeps de l'IA minime."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG souvent sinusal, parfois normal ; HVG diastolique typique ; FA/ESV péjoratives. Radio : cardiomégalie et débord aortique dans les formes volumineuses."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 51 ans, dyspnée à deux étages, PA 152/58 mmHg, souffle systolique 2/6 au foyer aortique et diastolique 3/6 au bord gauche du sternum. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'association d'un souffle diastolique et d'un souffle systolique éjectionnel d'accompagnement est habituelle dans l'IA (hyperdébit antérograde).",
+          "why": "Sémiologie."
+        },
+        {
+          "letter": "B",
+          "text": "Une PA différentielle élargie avec diastolique basse traduit une IA sévère.",
+          "why": "152/58 mmHg."
+        },
+        {
+          "letter": "C",
+          "text": "Un choc de pointe étalé, dévié en bas et à gauche (« en dôme ») traduit la dilatation du VG.",
+          "why": "Palpation."
+        },
+        {
+          "letter": "D",
+          "text": "Cette PA impose d'emblée un TAVI en urgence, sans ETT.",
+          "why": "L'ETT est l'examen clé ; le TAVI n'est pas le ttt de l'IA."
+        },
+        {
+          "letter": "E",
+          "text": "On recherche une maladie de Marfan, une bicuspidie, une spondylarthrite, une aortite, pour l'étiologie.",
+          "why": "Orientation étiologique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Souffle diastolique + éjectionnel d'accompagnement, PA 152/58 et choc en dôme = IA chronique sévère probable. L'ETT et l'enquête étiologique viennent ensuite, pas un TAVI d'emblée."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'imagerie en coupes (scanner, IRM) dans l'IA, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leur objectif principal est de préciser les diamètres de l'aorte ascendante et d'en surveiller l'évolution.",
+          "why": "Place."
+        },
+        {
+          "letter": "B",
+          "text": "La surveillance usuelle est échocardiographique ; scanner ou IRM si dilatation déjà marquée ou valeurs proches du seuil chirurgical.",
+          "why": "Stratégie."
+        },
+        {
+          "letter": "C",
+          "text": "L'IRM, non irradiante, peut aussi mesurer volumes VG, FEVG et volume de régurgitation ; le gadolinium est contre-indiqué en IR sévère.",
+          "why": "Apports et limites."
+        },
+        {
+          "letter": "D",
+          "text": "Le scanner est irradiant ; ses indications répétées doivent être pesées.",
+          "why": "Inconvénient."
+        },
+        {
+          "letter": "E",
+          "text": "Le scanner thoracique remplace l'ETT comme examen de 1re intention de toute IA découverte à l'auscultation.",
+          "why": "L'ETT reste le 1er examen."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Coupes : surveillance des diamètres aortiques, en relais de l'écho. IRM : volumes, FEVG, régurgitation. L'ETT reste le 1er examen."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'IA sur prothèse, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une IA paraprothétique peut être septique (désinsertion) ou aseptique (tissus fragilisés, calcifications, réinterventions).",
+          "why": "Mécanismes."
+        },
+        {
+          "letter": "B",
+          "text": "Une IA paraprothétique minime précoce après RVA ou TAVI, hors sepsis, doit être signalée et surveillée.",
+          "why": "Souvent minime."
+        },
+        {
+          "letter": "C",
+          "text": "Une IA intraprosthétique peut venir d'un thrombus bloquant une ailette, d'une EI ou d'une dégénérescence de bioprothèse.",
+          "why": "Dysfonction."
+        },
+        {
+          "letter": "D",
+          "text": "Une IA minime est normale sur prothèse mécanique ou biologique.",
+          "why": "Fuite de fermeture physiologique."
+        },
+        {
+          "letter": "E",
+          "text": "Toute IA minime sur mécanique impose un changement chirurgical en urgence.",
+          "why": "Les fuites minimes de fermeture sont attendues."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IA para-prothétique (septique ou aseptique) vs intra-prothétique (thrombus, EI, dégénérescence). Une fuite minime de fermeture est normale et se surveille."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le bilan préopératoire et les résultats de la chirurgie d'IA, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le bilan comporte notamment imagerie coronaire, imagerie aortique si dilatation, Doppler des TSA et éradication des foyers dentaires.",
+          "why": "Liste."
+        },
+        {
+          "letter": "B",
+          "text": "Un avis gériatrique se discute chez le patient fragile > 75 ans.",
+          "why": "Collège."
+        },
+        {
+          "letter": "C",
+          "text": "La mortalité périopératoire n'excède pas 1 à 3 % pour un RVA isolé chez l'asymptomatique.",
+          "why": "Chiffres."
+        },
+        {
+          "letter": "D",
+          "text": "Elle atteint 3 à 10 % si patient symptomatique, chirurgie d'aorte ou pontages associés.",
+          "why": "Chiffres."
+        },
+        {
+          "letter": "E",
+          "text": "La mortalité périopératoire d'un RVA isolé asymptomatique dépasse habituellement 20 %.",
+          "why": "Les séries actuelles sont à 1–3 %."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bilan : coronaires, aorte, TSA, foyers dentaires, avis gériatrique si > 75 ans fragile. Mortalité 1–3 % si RVA isolé asymptomatique, 3–10 % si symptômes ou gestes associés."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 28 ans, Marfan, IA modérée, racine aortique dilatée. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les bêtabloquants sont le traitement validé pour protéger l'aorte ; les ARA2 sont une alternative en cas d'intolérance.",
+          "why": "Spécificité Marfan."
+        },
+        {
+          "letter": "B",
+          "text": "Un dépistage familial des apparentés du 1er degré est nécessaire.",
+          "why": "Collège."
+        },
+        {
+          "letter": "C",
+          "text": "Le sport de compétition est contre-indiqué en cas d'IA sévère ; le sport de loisir d'endurance à niveau modéré est encouragé dans l'IA.",
+          "why": "Règle collège."
+        },
+        {
+          "letter": "D",
+          "text": "Les IEC sont recommandés pour prévenir le remodelage VG de toute IA modérée à sévère.",
+          "why": "Aucun traitement médicamenteux spécifique n'a démontré ce bénéfice."
+        },
+        {
+          "letter": "E",
+          "text": "L'aspect « piriforme » ou « en bulbe d'oignon » de la racine expose à dissection ou rupture.",
+          "why": "Maladie annuloectasiante."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Marfan : BB (ou ARA2), dépistage familial, surveillance de la racine en bulbe d'oignon. Les IEC ne préviennent pas le remodelage de l'IA. Compétition interdite si IA sévère."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la bicuspidie dans l'IA, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La bicuspidie concerne 1 à 2 % de la population et est une cause fréquente d'IA par prolapsus de la cusp la plus grande.",
+          "why": "Points."
+        },
+        {
+          "letter": "B",
+          "text": "Une dilatation de l'aorte ascendante est associée dans environ 50 % des cas, le plus souvent au-delà de la jonction sinotubulaire.",
+          "why": "Topographie."
+        },
+        {
+          "letter": "C",
+          "text": "Le risque de dissection est un peu augmenté par rapport à la population générale, mais reste faible par rapport au Marfan.",
+          "why": "Pronostic."
+        },
+        {
+          "letter": "D",
+          "text": "Un dépistage familial peut aussi être proposé (environ 10 % de récurrence).",
+          "why": "Collège."
+        },
+        {
+          "letter": "E",
+          "text": "La bicuspidie n'expose jamais à un RA, uniquement à l'IA.",
+          "why": "Elle expose au RA à tout âge, à l'IA et à l'EI."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bicuspidie (1–2 %) : IA par prolapsus de la grande cusp, dilatation aortique ~50 % au-delà de la jonction sinotubulaire, petit surrisque de dissection, dépistage familial possible. Elle expose aussi au RA et à l'EI."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'anatomie de la racine aortique impliquée dans l'IA, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La racine comprend l'anneau, les sinus de Valsalva, la jonction sinotubulaire et l'aorte initiale.",
+          "why": "Figure."
+        },
+        {
+          "letter": "B",
+          "text": "Les commissures s'insèrent à la jonction entre deux sinus.",
+          "why": "Suspension des cusps."
+        },
+        {
+          "letter": "C",
+          "text": "Une dilatation isolée de l'anneau est fréquente, sans dilatation des sinus ni de l'aorte.",
+          "why": "La dilatation annulaire isolée est rare, en général associée à celle de la racine."
+        },
+        {
+          "letter": "D",
+          "text": "En maladie annuloectasiante, la dilatation prédomine sur l'anneau et les sinus.",
+          "why": "Type 1."
+        },
+        {
+          "letter": "E",
+          "text": "ETO, scanner ou IRM précisent l'aorte lorsque l'ETT est insuffisante, ou si l'on évoque EI ou dissection.",
+          "why": "Imagerie complémentaire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Racine = anneau + sinus + jonction sinotubulaire + aorte initiale. L'annuloectasie dilate anneau et sinus ; une dilatation d'anneau isolée est rare. ETO/scanner/IRM si ETT insuffisante, EI ou dissection."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la définition de l'endocardite infectieuse, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C'est une infection de l'endocarde, le plus souvent valvulaire, pouvant aussi toucher l'endocarde pariétal ou tout matériel intracardiaque.",
+          "why": "Prothèses, sondes, assistances, CVC."
+        },
+        {
+          "letter": "B",
+          "text": "Le germe est une bactérie, plus rarement un champignon.",
+          "why": "Collège."
+        },
+        {
+          "letter": "C",
+          "text": "Il existe des endocardites non infectieuses (marastiques des cancers, Libman-Sacks du lupus, SAPL).",
+          "why": "Diagnostics différentiels."
+        },
+        {
+          "letter": "D",
+          "text": "Une EI ne peut jamais survenir sur un endocarde préalablement sain.",
+          "why": "S. aureus peut infecter un endocarde sain ; 50 % des cas sans cardiopathie connue."
+        },
+        {
+          "letter": "E",
+          "text": "Dans 50 % des cas, la cardiopathie à risque n'était pas connue ou absente avant le diagnostic.",
+          "why": "Épidémiologie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'EI infecte valves, endocarde pariétal ou matériel. Germe bactérien, rarement fongique. Des formes non infectieuses existent. S. aureus peut greffer un endocarde sain ; la cardiopathie est inconnue dans 50 % des cas."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'épidémiologie actuelle de l'EI, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'incidence n'a pas diminué ; les patients sont plus âgés, avec plus de valvulopathies dégénératives et de procédures de soins.",
+          "why": "Vieillissement."
+        },
+        {
+          "letter": "B",
+          "text": "Les procédures à risque incluent CEC, TAVI, clips, sondes de pacemaker/DAI, hémodialyse, CVC, chambres implantables, ponctions articulaires.",
+          "why": "Liste."
+        },
+        {
+          "letter": "C",
+          "text": "La toxicomanie IV est une situation exposant à l'EI.",
+          "why": "Collège."
+        },
+        {
+          "letter": "D",
+          "text": "Les valvulopathies post-rhumatismales ont régressé dans ce profil évolutif.",
+          "why": "Régression du RAA."
+        },
+        {
+          "letter": "E",
+          "text": "L'EI a disparu après 80 ans du fait du TAVI.",
+          "why": "Le TAVI est une situation à haut risque ; les patients sont plus âgés."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'EI n'a pas reculé : sujets plus âgés, valves dégénératives, procédures (TAVI, sondes, dialyse) et toxicomanie IV. Le RAA a régressé. Le grand âge et le TAVI n'éliminent pas le risque."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Quelles situations classent un patient dans le groupe à risque intermédiaire d'EI ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Valvulopathies dégénératives, bicuspidie, cardiopathie post-rhumatismale.",
+          "why": "Groupe intermédiaire."
+        },
+        {
+          "letter": "B",
+          "text": "Cardiomyopathie hypertrophique.",
+          "why": "Groupe intermédiaire."
+        },
+        {
+          "letter": "C",
+          "text": "Stimulateur et défibrillateur implantables.",
+          "why": "Groupe intermédiaire, distinct du haut risque prothétique valvulaire."
+        },
+        {
+          "letter": "D",
+          "text": "Antécédent d'endocardite infectieuse.",
+          "why": "C'est un critère de haut risque."
+        },
+        {
+          "letter": "E",
+          "text": "Prothèse valvulaire chirurgicale ou TAVI.",
+          "why": "Haut risque."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Risque intermédiaire : valves dégénératives/congénitales (bicuspidie), RAA, CMH, pacemaker/DAI. Haut risque : ATCD d'EI, prothèses valvulaires (TAVI inclus), cardiopathies cyanogènes, assistances."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les lésions élémentaires de l'EI, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les végétations sont un amas de fibrine, plaquettes, cellules inflammatoires et micro-organismes, source d'embolies.",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "Les destructions (perforations, ruptures de cordages ou de sigmoïdes de bioprothèse) créent des régurgitations aiguës.",
+          "why": "Mutilations."
+        },
+        {
+          "letter": "C",
+          "text": "Un abcès septal d'EI aortique peut créer un BAV ; sa rupture un faux anévrisme ou une fistule.",
+          "why": "Conduction et complications locales."
+        },
+        {
+          "letter": "D",
+          "text": "Une désinsertion de prothèse réalise une fuite paraprothétique.",
+          "why": "Lésion prothétique."
+        },
+        {
+          "letter": "E",
+          "text": "Les végétations obstruent très souvent l'orifice valvulaire, c'est le mécanisme habituel du choc.",
+          "why": "L'obstruction orificielle par végétation est rare ; le choc vient plutôt de la fuite aiguë ou du sepsis."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Végétations (embolies), mutilations (fuite aiguë), abcès (BAV, fistule), désinsertion prothétique. L'obstruction orificielle par végétation est rare."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Quels critères cliniques permettent de retenir une EI certaine selon l'adaptation collège des recommandations ESC 2023 ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2 critères majeurs, ou 1 majeur et 3 mineurs, ou 5 mineurs.",
+          "why": "EI certaine clinique."
+        },
+        {
+          "letter": "B",
+          "text": "Une preuve histologique (germe sur valve/embole, ou végétation/abcès avec infection active) suffit aussi à l'EI certaine.",
+          "why": "Critère anatomopathologique."
+        },
+        {
+          "letter": "C",
+          "text": "Une EI possible correspond à 1 majeur et 1 ou 2 mineurs, ou 3 mineurs.",
+          "why": "Définition."
+        },
+        {
+          "letter": "D",
+          "text": "1 critère mineur isolé (fièvre) suffit à une EI certaine.",
+          "why": "La fièvre seule n'est qu'un mineur."
+        },
+        {
+          "letter": "E",
+          "text": "Coxiella burnetii : ≥ 1 hémoculture positive ou sérologie IgG phase I > 1/800 compte pour un critère majeur microbiologique.",
+          "why": "Seuil."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EI certaine : histologie, ou 2 majeurs / 1 majeur + 3 mineurs / 5 mineurs. Possible : 1 majeur + 1–2 mineurs, ou 3 mineurs. Coxiella (IgG I > 1/800) est un majeur."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Parmi les critères de Duke/ESC adaptés par le collège, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sont des majeurs microbiologiques : ≥ 2 hémocultures à germe typique (S. aureus, streptocoques oraux, S. gallolyticus, E. faecalis, HACEK).",
+          "why": "Liste."
+        },
+        {
+          "letter": "B",
+          "text": "L'imagerie positive (ETT/ETO, scanner cardiaque, TEP-FDG, scintigraphie aux leucocytes) est un critère majeur.",
+          "why": "Majeur imagerie 2023."
+        },
+        {
+          "letter": "C",
+          "text": "Sont mineurs : terrain à risque ou toxicomanie IV, fièvre > 38 °C, phénomènes vasculaires, phénomènes immunologiques, microbiologie n'entrant pas dans un majeur.",
+          "why": "5 mineurs."
+        },
+        {
+          "letter": "D",
+          "text": "Les nodosités d'Osler, taches de Roth, glomérulonéphrite et facteur rhumatoïde sont des phénomènes vasculaires.",
+          "why": "Ce sont des phénomènes immunologiques ; vasculaires = embolies, anévrismes mycotiques, hémorragies, Janeway."
+        },
+        {
+          "letter": "E",
+          "text": "Les placards de Janeway et les embolies (même asymptomatiques) sont des phénomènes vasculaires.",
+          "why": "Mineur vasculaire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Majeurs : hémocultures typiques (dont Coxiella) et imagerie. Mineurs : terrain, fièvre > 38 °C, vasculaire (Janeway, embolies), immunologique (Osler, Roth, GN, FR). Osler n'est pas « vasculaire »."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles causes d'EI à hémocultures négatives faut-il évoquer ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Antibiothérapie préalable aux hémocultures.",
+          "why": "Cause la plus banale."
+        },
+        {
+          "letter": "B",
+          "text": "Germes à croissance lente : streptocoques déficients, HACEK, Brucella, champignons.",
+          "why": "Encadré."
+        },
+        {
+          "letter": "C",
+          "text": "Intracellulaires : Coxiella burnetii, Bartonella, Tropheryma whipplei, Chlamydia, Mycoplasma, Legionella.",
+          "why": "Sérologies/PCR."
+        },
+        {
+          "letter": "D",
+          "text": "Endocardites non infectieuses (lupus, SAPL, marastique).",
+          "why": "DD."
+        },
+        {
+          "letter": "E",
+          "text": "S. aureus communautaire est toujours identifié en 24 h et n'entre jamais dans ce cadre.",
+          "why": "Si ATB préalable, même un S. aureus peut négativer les cultures."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les hémocultures sont négatives dans 10 % des EI. Il faut évoquer un antibiotique préalable, des germes fastidieux (HACEK, Brucella, levures) et des intracellulaires (Coxiella, Bartonella, Whipple). Les endocardites non infectieuses (lupus, SAPL, marastique) font aussi partie du cadre. Un S. aureus peut manquer si l'antibiothérapie a déjà été débutée."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 80 ans, TAVI il y a 3 ans, fièvre > 39 °C depuis 15 jours, souffle diastolique intense, crépitants, FC 35/min, PA 145/45 mmHg. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le premier diagnostic à évoquer est une EI sur TAVI avec IA aiguë et possible abcès septal (bradycardie/BAV).",
+          "why": "Vignette collège."
+        },
+        {
+          "letter": "B",
+          "text": "Hémocultures et échocardiographie (ETT puis ETO, matériel intracardiaque) sont les examens de 1re intention.",
+          "why": "Deux piliers."
+        },
+        {
+          "letter": "C",
+          "text": "Une FC à 35/min doit faire craindre un abcès septal interrompant les voies de conduction.",
+          "why": "EI aortique."
+        },
+        {
+          "letter": "D",
+          "text": "Une PA différentielle large avec souffle diastolique traduit une IA importante, ici probablement aiguë sur destruction valvulaire.",
+          "why": "145/45 mmHg."
+        },
+        {
+          "letter": "E",
+          "text": "On débute une antibiothérapie orale probabiliste avant toute hémoculture pour ne pas perdre de temps.",
+          "why": "Les hémocultures précèdent toujours l'ATB."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TAVI + fièvre + souffle diastolique + BAV = EI prothétique aortique jusqu'à preuve du contraire. Hémocultures puis ETT/ETO avant l'ATB. La PA 145/45 signe l'IA."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'antibiothérapie probabiliste de l'EI (tableau collège), quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "EI communautaire sur valve native ou prothèse > 1 an, sans allergie : ampicilline + ceftriaxone (ou oxacilline) + gentamicine.",
+          "why": "Tableau 9.2."
+        },
+        {
+          "letter": "B",
+          "text": "EI non communautaire ou prothèse < 1 an : vancomycine (ou daptomycine) + gentamicine + rifampicine.",
+          "why": "Couverture staphylocoque hospitalier."
+        },
+        {
+          "letter": "C",
+          "text": "On instaure cette probabiliste après les hémocultures, avant leur résultat, si forte suspicion, sepsis sévère ou chirurgie urgente.",
+          "why": "Timing."
+        },
+        {
+          "letter": "D",
+          "text": "Une allergie à la pénicilline fait remplacer d'emblée toute bêtalactamine par de la doxycycline orale 7 jours.",
+          "why": "L'alternative probabiliste est céfazoline ou vancomycine + gentamicine."
+        },
+        {
+          "letter": "E",
+          "text": "L'adaptation secondaire se fait sur l'antibiogramme avec l'infectiologue.",
+          "why": "Équipe EI."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Probabiliste native/prothèse tardive : ampicilline + C3G (ou oxa) + genta. Prothèse précoce/nosocomiale : vanco (ou dapto) + genta + rifampicine. Toujours après hémocultures."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Staphylocoque méticilline-sensible documenté. Quelles durées et associations du collège sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Valve native : cloxacilline (ou céfazoline) 4 à 6 semaines.",
+          "why": "Tableau 9.2."
+        },
+        {
+          "letter": "B",
+          "text": "Prothèse : cloxacilline (ou céfazoline) + rifampicine 6 semaines + gentamicine 2 semaines.",
+          "why": "Triple association."
+        },
+        {
+          "letter": "C",
+          "text": "Staphylocoque méticilline-résistant, valve native : vancomycine 4–6 semaines.",
+          "why": "SARM native."
+        },
+        {
+          "letter": "D",
+          "text": "SARM sur prothèse : vancomycine + rifampicine 6 semaines + gentamicine 2 semaines.",
+          "why": "SARM prothèse."
+        },
+        {
+          "letter": "E",
+          "text": "Sur prothèse, 7 jours de cloxacilline orale seule suffisent si la fièvre tombe à J2.",
+          "why": "Durée 6 semaines IV et associations."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "MSSA native : cloxa/céfazoline 4–6 semaines. MSSA prothèse : + rifampicine 6 semaines et genta 2 semaines. SARM : vancomycine (± rifampicine/genta si prothèse). Pas de schéma oral de 7 jours."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le traitement des streptocoques oraux / S. gallolyticus et des entérocoques, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Strepto oraux, valve native, sans allergie : pénicilline G (ou amoxicilline ou ceftriaxone) 4 semaines, + gentamicine 2 semaines si résistance à la pénicilline.",
+          "why": "Tableau."
+        },
+        {
+          "letter": "B",
+          "text": "Strepto oraux sur prothèse : 6 semaines de bêtalactamine (vancomycine 6 semaines + genta 2 semaines si allergie).",
+          "why": "Durée allongée."
+        },
+        {
+          "letter": "C",
+          "text": "Entérocoques (native ou prothèse) : amoxicilline + ceftriaxone 6 semaines (ou genta 2 semaines à la place de la ceftriaxone).",
+          "why": "Double bêtalactamine."
+        },
+        {
+          "letter": "D",
+          "text": "Une EI à S. gallolyticus impose de rechercher une porte d'entrée digestive (coloscopie : cancer, polypes, diverticules).",
+          "why": "Porte d'entrée."
+        },
+        {
+          "letter": "E",
+          "text": "Les entérocoques se traitent par amoxicilline 5 jours comme une cystite simple.",
+          "why": "Durée 6 semaines, association synergique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Strepto natives 4 semaines, prothèses 6 semaines. Entérocoques : amox + ceftriaxone 6 semaines. S. gallolyticus → coloscopie. Jamais un schéma de cystite de 5 jours."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles modalités de relais et de surveillance de l'antibiothérapie sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La durée totale reste la même même si une chirurgie est réalisée en phase active.",
+          "why": "Collège."
+        },
+        {
+          "letter": "B",
+          "text": "Un relais oral (ou IV ambulatoire) est possible dans l'EI gauche à strepto, entérocoque ou staph après ≥ 10 jours IV (ou ≥ 7 jours post-chirurgie), patient stable, sans abcès ni indication chirurgicale à l'ETO.",
+          "why": "Critères."
+        },
+        {
+          "letter": "C",
+          "text": "On surveille fièvre, syndrome inflammatoire, stérilisation des hémocultures, lésions écho et absence de complications.",
+          "why": "Efficacité."
+        },
+        {
+          "letter": "D",
+          "text": "Aminosides, vancomycine et aussi amoxicilline (cristallurie, NTA, immunoallergie) imposent de surveiller la fonction rénale.",
+          "why": "Tolérance."
+        },
+        {
+          "letter": "E",
+          "text": "Dès J3 apyrétique, on arrête les antibiotiques si l'ETT de contrôle est inchangée.",
+          "why": "Durée 4–6 semaines."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Durée identique si chirurgie. Relais oral possible après 10 j IV (7 j post-chir) si EI gauche stable sans abcès. Surveillance d'efficacité et rénale. Pas d'arrêt à J3."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels facteurs de mauvais pronostic et quelle mortalité faut-il retenir ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La mortalité hospitalière est de l'ordre de 15–30 %.",
+          "why": "Maladie grave."
+        },
+        {
+          "letter": "B",
+          "text": "Les principales causes de décès sont l'insuffisance cardiaque aiguë et les complications neurologiques.",
+          "why": "Collège."
+        },
+        {
+          "letter": "C",
+          "text": "Sont péjoratifs : IC aiguë, neuro, sepsis non maîtrisé, abcès, EI sur prothèse, végétations volumineuses, S. aureus et champignons, terrain fragile.",
+          "why": "Liste."
+        },
+        {
+          "letter": "D",
+          "text": "Une EI à streptocoque oral sur valve native du sujet jeune a le même pronostic qu'une EI fongique sur prothèse.",
+          "why": "Champignons, S. aureus et prothèses sont spécifiquement de mauvais pronostic."
+        },
+        {
+          "letter": "E",
+          "text": "Une équipe endocardite (cardiologue, chirurgien, infectiologue, microbiologiste) améliore le pronostic et doit être consultée.",
+          "why": "Multidisciplinarité."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mortalité 15–30 %, surtout par IC et neurologie. S. aureus, champignons, prothèses, abcès, végétations, terrain = mauvais pronostic. L'équipe EI est obligatoire."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels examens non cardiaques font partie du bilan d'EI ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "NFS (hyperleucocytose à PNN, anémie, thrombopénie), CRP, facteur rhumatoïde.",
+          "why": "Biologie."
+        },
+        {
+          "letter": "B",
+          "text": "Créatininémie, hématurie, protéinurie (GN ou infarctus rénal).",
+          "why": "Rein."
+        },
+        {
+          "letter": "C",
+          "text": "ECG (BAV, ischémie d'embolie coronaire) et radio thoracique (OAP ou pneumopathies droites).",
+          "why": "1re ligne."
+        },
+        {
+          "letter": "D",
+          "text": "Scanner cérébral et TAP (localisations septiques parfois asymptomatiques, anévrismes mycotiques) si la fonction rénale le permet.",
+          "why": "Extension."
+        },
+        {
+          "letter": "E",
+          "text": "La coloscopie n'a aucun intérêt, même en cas de S. gallolyticus.",
+          "why": "Porte d'entrée digestive obligatoire pour S. gallolyticus."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bilan : inflammation, rein, ECG, radio, scanner cérébral et TAP. La coloscopie est indispensable si S. gallolyticus (ou entérocoque)."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'analyse de la pièce opératoire et la TEP, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Valves, végétations, abcès et matériel retirés doivent être analysés en histologie, culture et éventuellement PCR.",
+          "why": "Documentation du germe."
+        },
+        {
+          "letter": "B",
+          "text": "Le scanner cardiaque injecté peut montrer abcès ou végétations non vus en écho, surtout sur prothèse.",
+          "why": "Imagerie."
+        },
+        {
+          "letter": "C",
+          "text": "TEP-FDG et scintigraphie aux leucocytes aident si suspicion d'EI sur prothèse, pacemaker ou DAI et diagnostic encore douteux.",
+          "why": "Place 2023."
+        },
+        {
+          "letter": "D",
+          "text": "Réalisés corps entier, ils peuvent objectiver des localisations septiques secondaires.",
+          "why": "Extension."
+        },
+        {
+          "letter": "E",
+          "text": "Une TEP négative à la 48e heure postopératoire d'un TAVI élimine formellement toute EI ultérieure.",
+          "why": "Une TEP précoce postopératoire peut être inflammatoire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La pièce opératoire va en anapath, culture et PCR. Scanner, TEP et leucocytes marqués aident sur prothèse/sondes et au bilan d'extension."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Antibioprophylaxie dentaire chez l'adulte à haut risque, quelles posologies collège sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Amoxicilline (ou ampicilline) 2 g per os ou IV, 30–60 minutes avant le geste.",
+          "why": "Schéma standard."
+        },
+        {
+          "letter": "B",
+          "text": "Céfazoline ou ceftriaxone 1 g IM ou IV, 30–60 minutes avant, est une alternative.",
+          "why": "Voie IV/IM."
+        },
+        {
+          "letter": "C",
+          "text": "Si allergie à la pénicilline : céfalexine 2 g PO, ou azithromycine 500 mg PO, ou doxycycline 100 mg PO, ou C1G/C3G injectables.",
+          "why": "Schéma allergie rang B."
+        },
+        {
+          "letter": "D",
+          "text": "Elle n'est indiquée que pour les soins avec manipulation gingivale, périapicale, ou effraction muqueuse, chez le haut risque uniquement.",
+          "why": "Cible."
+        },
+        {
+          "letter": "E",
+          "text": "Tout patient avec bicuspidie isolée doit recevoir 2 g d'amoxicilline avant un détartrage.",
+          "why": "La bicuspidie isolée est à risque intermédiaire : pas d'ATBprophylaxie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Haut risque + geste gingival/périapical : amox 2 g (ou C1G/C3G 1 g) 30–60 min avant ; allergie : céfalexine, azithro, doxy. Pas d'ATBprophylaxie pour une bicuspidie isolée."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles mesures d'éducation concernent tous les patients à risque d'EI ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hygiène buccodentaire ; dentiste 2 fois/an si haut risque, 1 fois/an sinon.",
+          "why": "Rythme."
+        },
+        {
+          "letter": "B",
+          "text": "Désinfecter les plaies, traiter les infections locales, asepsie des procédures, limiter les voies veineuses.",
+          "why": "Mesures non spécifiques."
+        },
+        {
+          "letter": "C",
+          "text": "Éviter tatouages et piercing ; pas d'automédication antibiotique ; consulter vite en cas de fièvre.",
+          "why": "Éducation."
+        },
+        {
+          "letter": "D",
+          "text": "Remettre une carte de prévention adaptée au groupe de risque.",
+          "why": "Figure FFC."
+        },
+        {
+          "letter": "E",
+          "text": "L'antibioprophylaxie dentaire s'applique à tous les risques intermédiaires comme au haut risque.",
+          "why": "Elle est réservée au haut risque."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tous les patients à risque : hygiène, dentiste (biannuel si haut risque), plaies, asepsie, pas de piercing/tatouage, pas d'ATB sauvage, carte. L'ATBprophylaxie reste limitée au haut risque."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'EI sur sonde de pacemaker/DAI ou cathéter, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le matériel doit être extrait (souvent par voie percutanée) et réimplanté à distance, en plus des antibiotiques.",
+          "why": "Point collège."
+        },
+        {
+          "letter": "B",
+          "text": "Les staphylocoques sont les germes les plus fréquents chez le porteur de stimulateur/DAI comme chez le toxicomane.",
+          "why": "Épidémiologie."
+        },
+        {
+          "letter": "C",
+          "text": "Les EI droites donnent des pneumopathies infectieuses récidivantes, souvent abcédées, par embolies pulmonaires septiques.",
+          "why": "Clinique."
+        },
+        {
+          "letter": "D",
+          "text": "On peut laisser en place une sonde infectée si la fièvre cède en 48 h sous vancomycine.",
+          "why": "L'extraction du matériel est requise."
+        },
+        {
+          "letter": "E",
+          "text": "Une équipe EI doit être impliquée ; le chirurgien cardiaque est prévenu dès le diagnostic.",
+          "why": "Organisation."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sondes/CVC infectés : extraction et réimplantation à distance. Staph fréquent. Clinique d'embolies pulmonaires septiques à droite. Ne jamais se contenter d'une apyréxie sous ATB avec le matériel en place."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels signes cutanéomuqueux, ophtalmiques et rénaux d'EI, même rares, faut-il reconnaître ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ils sont rares (5–15 %) : purpura, nodosités d'Osler pathognomoniques, hémorragies sous-unguéales ou sous-conjonctivales, Janeway.",
+          "why": "Fréquence."
+        },
+        {
+          "letter": "B",
+          "text": "Les taches de Roth sont des exsudats hémorragiques rétiniens.",
+          "why": "FO."
+        },
+        {
+          "letter": "C",
+          "text": "Hématurie et/ou protéinurie peuvent traduire une GN immunologique ou un infarctus rénal.",
+          "why": "Rein."
+        },
+        {
+          "letter": "D",
+          "text": "Une splénomégalie est présente dans 20–30 % des cas.",
+          "why": "Signe infectieux."
+        },
+        {
+          "letter": "E",
+          "text": "Les nodosités d'Osler sont présentes chez plus de 80 % des EI staphylococciques aiguës, ce qui les rend indispensables au diagnostic.",
+          "why": "Ils sont rares (5–15 %) ; leur absence n'élimine rien."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Signes cutanés rares (5–15 %) mais Osler est pathognomonique. Roth au FO, GN ou infarctus rénal, splénomégalie 20–30 %. L'absence d'Osler n'écarte pas l'EI."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 62 ans, 3 hémocultures à S. gallolyticus, ETT : végétation aortique 8 mm, pas de fuite importante. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le germe oriente vers une porte d'entrée digestive : coloscopie à la recherche d'un cancer, de polypes ou de diverticules.",
+          "why": "Tableau 9.1."
+        },
+        {
+          "letter": "B",
+          "text": "Une ETO est indiquée car l'ETT est positive.",
+          "why": "ETO systématique si ETT positive."
+        },
+        {
+          "letter": "C",
+          "text": "Une échographie normale n'élimine pas l'EI et doit être répétée à 7–10 jours (ETT + ETO) si la suspicion reste forte.",
+          "why": "Collège."
+        },
+        {
+          "letter": "D",
+          "text": "Le sang des hémocultures peut être prélevé sur une chambre implantable déjà en place pour gagner du temps.",
+          "why": "Le sang ne doit pas être prélevé sur un cathéter déjà en place."
+        },
+        {
+          "letter": "E",
+          "text": "Le laboratoire doit être prévenu de la suspicion d'EI (cultures prolongées si besoin).",
+          "why": "HACEK et fastidieux."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "S. gallolyticus → coloscopie. ETO si ETT positive ; répéter à 7–10 j si besoin. Hémocultures sur veine périphérique, jamais sur cathéter, en prévenant le labo."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Femme de 81 ans, TAVI il y a 8 mois, dyspnée récente. ETT : majoration brutale du gradient moyen de 12 à 24 mmHg, cusps non calcifiées. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Une thrombose de bioprothèse (y compris TAVI) se suspecte devant une élévation brutale des gradients > 10 mmHg pour atteindre un gradient moyen > 20 mmHg, sans calcification des cusps.",
+          "why": "Seuils collège."
+        },
+        {
+          "letter": "B",
+          "text": "L'ETO (image d'addition hypo/isoéchogène) et éventuellement le scanner injecté synchronisé (image hypodense) confirment.",
+          "why": "Imagerie."
+        },
+        {
+          "letter": "C",
+          "text": "Le traitement repose sur une anticoagulation efficace par AVK ou AOD.",
+          "why": "Collège."
+        },
+        {
+          "letter": "D",
+          "text": "Ce tableau impose d'emblée un Bentall en urgence, l'anticoagulation étant inefficace sur TAVI.",
+          "why": "Le ttt de 1re intention est l'anticoagulation."
+        },
+        {
+          "letter": "E",
+          "text": "Les thromboses de bio existent aussi, plus rarement, sur les prothèses chirurgicales.",
+          "why": "Collège."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Thrombose de TAVI/bio : saut de gradient > 10 mmHg jusqu'à un moyen > 20 mmHg, cusps non calcifiées, confirmation ETO/scanner, ttt par AVK ou AOD. Pas de Bentall d'emblée."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le pannus et le mismatch, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le pannus est un tissu conjonctif cicatriciel excessif, atrial sur prothèse mitrale, ventriculaire sur prothèse aortique, pouvant sténoser l'orifice.",
+          "why": "Définition."
+        },
+        {
+          "letter": "B",
+          "text": "Il n'existe pas de traitement préventif ; la sanction est chirurgicale en cas de symptômes.",
+          "why": "Prise en charge."
+        },
+        {
+          "letter": "C",
+          "text": "Le mismatch (disproportion patient–prothèse) correspond à une surface effective trop petite pour la surface corporelle et le débit requis.",
+          "why": "Définition."
+        },
+        {
+          "letter": "D",
+          "text": "Le pannus se dissout en 48 h sous HBPM préventive.",
+          "why": "Pas de ttt médical préventif ni lytique."
+        },
+        {
+          "letter": "E",
+          "text": "Scanner et ETO aident à distinguer pannus, thrombus et dégénérescence.",
+          "why": "Imagerie multimodale."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Pannus = cicatrice sténosante, sans prévention, chirurgie si symptômes. Mismatch = prothèse trop petite pour le patient. L'imagerie distingue pannus, thrombus et dégénérescence."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la médiastinite postopératoire, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Elle survient dans environ 1 % des cas.",
+          "why": "Incidence."
+        },
+        {
+          "letter": "B",
+          "text": "C'est une cause de mortalité précoce de la chirurgie cardiaque, de l'ordre de 20 % des patients atteints.",
+          "why": "Gravité."
+        },
+        {
+          "letter": "C",
+          "text": "Les germes les plus souvent en cause sont les staphylocoques dorés ou blancs.",
+          "why": "Contamination peropératoire."
+        },
+        {
+          "letter": "D",
+          "text": "Elle est liée à la sternotomie (germes du patient, des soignants ou de l'environnement).",
+          "why": "Physiopathologie."
+        },
+        {
+          "letter": "E",
+          "text": "Elle est exclusivement due à Candida, jamais aux staphylocoques.",
+          "why": "Ce sont les staphylocoques qui dominent."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La médiastinite complique environ 1 % des sternotomies. Elle reste une cause de mortalité précoce, de l'ordre de 20 % des patients atteints. Les staphylocoques dorés ou blancs dominent, à partir des germes du patient, des soignants ou de l'environnement."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Porteur de mécanique aortique, hémorragie digestive sévère. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le risque hémorragique des AVK est estimé à 1,2 % par an chez les porteurs de valves mécaniques.",
+          "why": "Chiffre."
+        },
+        {
+          "letter": "B",
+          "text": "En hémorragie sévère, on interrompt l'AVK mais on maintient une anticoagulation par héparine (TCA 1,5–2 si HNF), indispensable.",
+          "why": "Sauf menace vitale immédiate type HIC."
+        },
+        {
+          "letter": "C",
+          "text": "Une hémorragie digestive ou une hématurie doit faire rechercher une lésion organique sous-jacente.",
+          "why": "Ne pas se contenter du surdosage."
+        },
+        {
+          "letter": "D",
+          "text": "Les AOD sont le relais de choix de l'AVK en cas de saignement sur mécanique.",
+          "why": "Les AOD sont formellement contre-indiqués sur mécanique."
+        },
+        {
+          "letter": "E",
+          "text": "Si neutralisation de l'AVK indispensable, on administre du plasma frais de préférence à la vitamine K (0,5 à 2 mg).",
+          "why": "Hémorragie vitale."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Risque hémorragique 1,2 %/an. On ne laisse pas le patient sans anticoagulation (relais HNF, TCA 1,5–2), sauf HIC vitale. Plasma plutôt que vitamine K si antagonisation. Pas d'AOD."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Femme de 32 ans, mécanique mitrale, grossesse. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La mortalité maternelle est estimée à 1–4 % et le taux d'événements sérieux à 40 %.",
+          "why": "Chiffres."
+        },
+        {
+          "letter": "B",
+          "text": "Les AVK sont tératogènes surtout entre 6 et 12 SA, particulièrement si la dose de warfarine est élevée.",
+          "why": "Fenêtre."
+        },
+        {
+          "letter": "C",
+          "text": "L'attitude classique française : héparine du 1er trimestre (arrêt AVK de S5 à S12 incluse) et des 2 dernières semaines ; AVK entre-temps si warfarine > 5 mg/j.",
+          "why": "Protocole français."
+        },
+        {
+          "letter": "D",
+          "text": "Les ESC privilégient les AVK toute la grossesse jusqu'au 3e trimestre si warfarine < 5 mg/j, après discussion.",
+          "why": "Nuance européenne."
+        },
+        {
+          "letter": "E",
+          "text": "Les AOD sont le traitement de choix tout au long de la grossesse sur mécanique.",
+          "why": "AOD contre-indiqués sur mécanique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Grossesse + mécanique : mortalité 1–4 %, événements 40 %. Tératogénicité 6–12 SA. France : HNF au 1er trimestre et en fin de grossesse ; ESC : AVK possibles si warfarine < 5 mg. Pas d'AOD."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Porteur de mécanique, chirurgie extra-cardiaque programmée. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "On arrête les AVK pour un INR < 1,5 et on heparinise dès que l'INR passe sous 2 (aortique) ou 2,5 (mitrale), objectif TCA × 2.",
+          "why": "Relais."
+        },
+        {
+          "letter": "B",
+          "text": "L'héparine est stoppée pour un TCA normal au moment de l'opération, puis reprise dès que possible.",
+          "why": "Périopératoire."
+        },
+        {
+          "letter": "C",
+          "text": "Les HBPM à dose curative sont une alternative acceptable (recommandations européennes) mais seule l'HNF a l'AMM en France.",
+          "why": "Nuance réglementaire."
+        },
+        {
+          "letter": "D",
+          "text": "Une extraction dentaire peut souvent se faire en ambulatoire avec un INR entre 2 et 2,5 ; la cataracte peut se faire sous AVK.",
+          "why": "Gestes à faible risque."
+        },
+        {
+          "letter": "E",
+          "text": "On bascule définitivement sur un AOD 48 h avant l'incision.",
+          "why": "AOD contre-indiqués."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Relais HNF (INR < 1,5 pour opérer ; heparinisation sous 2 en aortique / 2,5 en mitral). Dent et cataracte souvent sous AVK. HBPM curative acceptable, AMM = HNF. Pas d'AOD."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'ETT de référence et le rythme de surveillance écho, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ETT du 2e–4e mois postopératoire, après correction de l'anémie et de la tachycardie, est l'examen de référence.",
+          "why": "Le patient est sa propre référence ensuite."
+        },
+        {
+          "letter": "B",
+          "text": "Mécaniques : ETT tous les 1 à 2 ans en l'absence de complication.",
+          "why": "Rythme."
+        },
+        {
+          "letter": "C",
+          "text": "Bioprothèses : après les contrôles à 3 mois et 1 an, ETT annuelle.",
+          "why": "Rythme."
+        },
+        {
+          "letter": "D",
+          "text": "L'ETO n'est réalisée qu'en cas de suspicion de dysfonction ; elle est systématique si thrombose, EI ou désinsertion, surtout mitrale.",
+          "why": "Place de l'ETO."
+        },
+        {
+          "letter": "E",
+          "text": "Une ETO annuelle est obligatoire chez tout porteur de mécanique aortique asymptomatique à bruits métalliques normaux.",
+          "why": "L'ETO n'est pas un examen de suivi systématique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Référence = ETT à 2–4 mois. Puis tous les 1–2 ans (mécanique) ou chaque année (bio). ETO ciblée (thrombose, EI, désinsertion), pas annuelle de principe."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant le valve-in-valve et les bioprothèses « TAVI-compatibles », quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le TAVI valve-in-valve dans une bio chirurgicale ou un TAVI dégénéré est entré dans la pratique chez les patients à risque haut ou intermédiaire.",
+          "why": "Évite un redux."
+        },
+        {
+          "letter": "B",
+          "text": "Il faut anticiper cette perspective dès le premier RVA par bioprothèse, en Heart Team, surtout si l'espérance de vie est > 10 ans.",
+          "why": "Choix de prothèses stentées bien visibles."
+        },
+        {
+          "letter": "C",
+          "text": "Avalus® et Inspiris Resilia® sont citées comme conçues pour un futur valve-in-valve.",
+          "why": "Collège."
+        },
+        {
+          "letter": "D",
+          "text": "Le valve-in-valve n'a d'intérêt que pour les mécaniques thrombosées.",
+          "why": "Il concerne les bio dégénérées, pas les mécaniques."
+        },
+        {
+          "letter": "E",
+          "text": "La dégénérescence de bio survient en général en 5 à 15 ans, plus précoce en mitral et chez le sujet jeune.",
+          "why": "Chronologie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Valve-in-valve : alternative au redux sur bio/TAVI dégénérés. À anticiper si vie > 10 ans. Dégénérescence 5–15 ans, plus précoce en mitral et chez le jeune."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'auto-INR (CoaguChek®) et les antiagrégants, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les systèmes d'automesure sont remboursés depuis 2017 uniquement pour les porteurs de mécaniques, envisageables chez environ 50 % des patients.",
+          "why": "Éducation."
+        },
+        {
+          "letter": "B",
+          "text": "En Europe, l'adjonction d'antiagrégants n'est pas recommandée hors situations spécifiques (stent récent, ou thromboembolie sous INR efficace).",
+          "why": "Collège."
+        },
+        {
+          "letter": "C",
+          "text": "Les AOD sont contre-indiqués chez les porteurs de mécaniques et en cas de sténose mitrale.",
+          "why": "Points."
+        },
+        {
+          "letter": "D",
+          "text": "Au-delà du 3e mois, tous les types d'anticoagulants sont autorisés pour les bioprothèses si une indication (FA, MTE) existe.",
+          "why": "AOD possibles."
+        },
+        {
+          "letter": "E",
+          "text": "Un AOD peut remplacer les AVK dès J1 d'une mécanique mitrale si l'INR est difficile à équilibrer.",
+          "why": "Contre-indication formelle, même transitoire."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Auto-INR remboursé pour les mécaniques (~50 % éligibles). Pas d'antiagrégant associé en routine. AOD interdits sur mécanique et RM, autorisés après 3 mois sur bio si indication non valvulaire."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant l'anticoagulation des bioprothèses et du TAVI (tableau collège), quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bioprothèse aortique en rythme sinusal : aspirine ou AVK 3 mois puis rien ; AOD autorisé > 3 mois si indication non valvulaire.",
+          "why": "Tableau 10.3."
+        },
+        {
+          "letter": "B",
+          "text": "Bioprothèse mitrale : AVK 3 mois puis rien ; AOD toléré d'emblée si FA, autorisé > 3 mois si indication non valvulaire.",
+          "why": "Tableau."
+        },
+        {
+          "letter": "C",
+          "text": "TAVI : aspirine seule au long cours si rythme sinusal ; anticoagulation (AVK ou AOD) si FA.",
+          "why": "ESC 2021."
+        },
+        {
+          "letter": "D",
+          "text": "TAVI en rythme sinusal : trithérapie AVK + AOD + prasugrel au long cours.",
+          "why": "Simple aspirine."
+        },
+        {
+          "letter": "E",
+          "text": "Plastie mitrale et bio tricuspide : AVK 3 mois puis rien si sinus.",
+          "why": "Tableau."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bio aortique : AAP ou AVK 3 mois. Bio mitrale : AVK 3 mois. TAVI : aspirine seule si sinus, ACO si FA. Plastie/bio tricuspide : AVK 3 mois. Jamais de trithérapie de principe."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Homme de 66 ans, mécanique mitrale, AIT. INR 1,6. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les embolies systémiques des mécaniques sont cérébrales dans 70 % des cas (AIT ou AVC constitué).",
+          "why": "Topographie."
+        },
+        {
+          "letter": "B",
+          "text": "Le risque est plus élevé en mitral (basses pressions) qu'en aortique, et plus élevé sur les anciennes cages à bille que sur les double ailettes.",
+          "why": "Facteurs de la prothèse."
+        },
+        {
+          "letter": "C",
+          "text": "FA et dysfonction VG augmentent le risque ; le principal facteur est un anticoagulant insuffisant.",
+          "why": "INR 1,6."
+        },
+        {
+          "letter": "D",
+          "text": "Une thrombose non obstructive, surtout mitrale, se voit en ETO sur la face atriale, sans bloquer l'élément mobile.",
+          "why": "Forme clinique."
+        },
+        {
+          "letter": "E",
+          "text": "Un AOD à dose « FA » est le correctif immédiat d'un INR à 1,6 sur mécanique mitrale.",
+          "why": "On rétablit un INR cible par AVK/héparine, jamais un AOD."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Emboles 70 % cérébraux. Risque mitral > aortique, anciennes prothèses > double ailettes, FA/FEVG basse, surtout sous-dosage. Thrombose non obstructive = ETO. Pas d'AOD."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la réadaptation, la carte et l'hémolyse de désinsertion, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vers le 8e jour, un séjour de réadaptation de 3 à 4 semaines est le plus souvent entrepris.",
+          "why": "Postopératoire immédiat."
+        },
+        {
+          "letter": "B",
+          "text": "Le patient sort avec une carte précisant type, diamètre et numéro de série, un carnet d'INR et une carte d'antibioprophylaxie dentaire.",
+          "why": "Documents."
+        },
+        {
+          "letter": "C",
+          "text": "Une désinsertion peut se révéler par une anémie hémolytique mécanique : LDH élevées, haptoglobine basse, schizocytes.",
+          "why": "Triade."
+        },
+        {
+          "letter": "D",
+          "text": "Le geste dentaire à risque, y compris le détartrage, se fait sous antibioprophylaxie (le collège cite souvent amoxicilline 3 g 1 h avant dans ce chapitre).",
+          "why": "Haut risque à vie."
+        },
+        {
+          "letter": "E",
+          "text": "Les bioprothèses ont des bruits métalliques plus intenses que les mécaniques à bille.",
+          "why": "C'est l'inverse : bio = bruits quasi natifs ; mécaniques = claquements métalliques."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Réadaptation dès J8 (3–4 semaines), carte de prothèse, carnet d'INR, ATBprophylaxie dentaire (y compris détartrage). Hémolyse mécanique = LDH, haptoglobine, schizocytes. Les bio ne « claquent » pas."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Nourrisson de 4 mois, trisomie 21, polypnée, sueurs aux biberons, hépatomégalie. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les shunts gauche–droite (CIV large, canal artériel, canal atrioventriculaire) sont les cardiopathies avec IC les plus fréquentes à cet âge.",
+          "why": "Collège nourrisson."
+        },
+        {
+          "letter": "B",
+          "text": "Le canal atrioventriculaire est particulièrement associé à la trisomie 21.",
+          "why": "Association."
+        },
+        {
+          "letter": "C",
+          "text": "Il existe un risque d'HTAP irréversible si le large shunt est opéré trop tard ; d'où une chirurgie en général dans la 1re année.",
+          "why": "Urgence relative."
+        },
+        {
+          "letter": "D",
+          "text": "L'hépatomégalie est le signe le plus pertinent d'insuffisance cardiaque chez le nourrisson ; les OMI sont exceptionnels.",
+          "why": "Sémiologie pédiatrique."
+        },
+        {
+          "letter": "E",
+          "text": "Un souffle innocent isolé explique à lui seul une hépatomégalie et un retard pondéral.",
+          "why": "Le souffle innocent n'a pas de retentissement."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Nourrisson T21 + IC : penser CAV/CIV large. Opérer dans la 1re année pour éviter l'HTAP irréversible. L'hépatomégalie vaut IC ; le souffle innocent ne donne ni hépatomégalie ni cassure pondérale."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la communication interventriculaire du nourrisson, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Petite CIV restrictive (sans HTAP) : souffle holosystolique râpeux, intense, parasternal gauche, irradiant en rayons de roue.",
+          "why": "Sémiologie."
+        },
+        {
+          "letter": "B",
+          "text": "Large CIV : souffle souvent faible, associé à un B1 fort à la pointe, tableau d'IC et hypervascularisation pulmonaire.",
+          "why": "Dissociation intensité/sévérité."
+        },
+        {
+          "letter": "C",
+          "text": "Ceci illustre l'absence de parallélisme entre intensité du souffle et gravité : une petite CIV peut être très bruyante.",
+          "why": "Point collège."
+        },
+        {
+          "letter": "D",
+          "text": "Toute petite CIV restrictive du nourrisson doit être opérée dans les 48 h comme une TGA.",
+          "why": "Les petites CIV restrictives sont souvent bien tolérées ; l'urgence est la TGA (sans souffle)."
+        },
+        {
+          "letter": "E",
+          "text": "La radio d'une large CIV montre cardiomégalie et hypervascularisation pulmonaire.",
+          "why": "Figure collège."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Petite CIV : souffle intense en rayons de roue. Large CIV : souffle pauvre, IC, hyperdébit radio. L'intensité n'égale pas la gravité. Pas de chirurgie en 48 h pour une petite CIV."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Enfant de 8 mois, cyanose d'apparition progressive, souffle systolique râpeux au foyer pulmonaire sans clic protosystolique. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La tétralogie de Fallot est la cardiopathie cyanogène la plus fréquente.",
+          "why": "Collège."
+        },
+        {
+          "letter": "B",
+          "text": "Dans sa forme régulière, la cyanose est souvent retardée (semaines ou mois).",
+          "why": "Clinique."
+        },
+        {
+          "letter": "C",
+          "text": "Le souffle est systolique râpeux au foyer pulmonaire, sans clic protosystolique.",
+          "why": "Différence avec la sténose pulmonaire valvulaire isolée."
+        },
+        {
+          "letter": "D",
+          "text": "La correction chirurgicale se fait entre 6 mois et 1 an.",
+          "why": "Calendrier."
+        },
+        {
+          "letter": "E",
+          "text": "La TGA est le diagnostic le plus probable : elle s'accompagne toujours d'un souffle râpeux intense.",
+          "why": "La TGA est une urgence néonatale sans souffle."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Fallot : cyanose retardée, souffle râpeux pulmonaire sans clic, chirurgie entre 6 mois et 1 an. La TGA, elle, est néonatale et sans souffle."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Enfant de 6 ans, souffle systolique au foyer pulmonaire, dédoublement fixe et constant de B2. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le tableau oriente vers une communication interatriale (hyperdébit pulmonaire + retard de fermeture pulmonaire).",
+          "why": "CIA."
+        },
+        {
+          "letter": "B",
+          "text": "Les CIA sont les cardiopathies bénignes les plus répandues, souvent bien tolérées dans la 2e enfance.",
+          "why": "Épidémiologie."
+        },
+        {
+          "letter": "C",
+          "text": "Un DB2 large et fixe est anormal (CIA ou bloc de branche droit), contrairement au DB2 variable physiologique.",
+          "why": "Auscultation."
+        },
+        {
+          "letter": "D",
+          "text": "Un souffle continu au bord gauche du sternum, crescendo systolique et decrescendo diastolique, serait plutôt un canal artériel persistant.",
+          "why": "PCA."
+        },
+        {
+          "letter": "E",
+          "text": "Ce DB2 fixe est physiologique chez 50 % des enfants, comme le B3.",
+          "why": "Le B3 est physiologique (50 %) ; le DB2 fixe ne l'est pas."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Souffle pulmonaire + B2 fixé = CIA, cardiopathie bénigne fréquente. PCA = souffle continu. Le B3 est souvent physiologique ; un B2 fixé ne l'est pas."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Garçon de 10 ans, HTA, pouls fémoraux diminués, souffle systolique doux sous-claviculaire gauche irradiant en interscapulaire. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Le tableau est celui d'une coarctation aortique d'installation progressive.",
+          "why": "2e enfance."
+        },
+        {
+          "letter": "B",
+          "text": "On recherche un gradient tensionnel membres supérieurs / inférieurs ; brassard adapté, mesure aux quatre membres.",
+          "why": "Technique."
+        },
+        {
+          "letter": "C",
+          "text": "Chez le nouveau-né, la coarctation peut se révéler à la fermeture du canal artériel, pouls fémoraux abolis, chirurgie urgente.",
+          "why": "Forme néonatale."
+        },
+        {
+          "letter": "D",
+          "text": "Une bicuspidie aortique associée doit être cherchée.",
+          "why": "Association classique."
+        },
+        {
+          "letter": "E",
+          "text": "Le souffle typique est diastolique, maximal à la pointe, en jet de vapeur.",
+          "why": "Le souffle de coarctation est systolique, sous-claviculaire, dorsal."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Coarctation : HTA, pouls fémoraux faibles, souffle systolique dorsal. Néonatale : choc à la fermeture du CA. Chercher une bicuspidie."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Nouveau-né cyanosé, saturations 70 % sous O2 100 %, pas de souffle. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La transposition des gros vaisseaux est la cause la plus classique de cyanose néonatale sans souffle, urgence cardiologique.",
+          "why": "Collège."
+        },
+        {
+          "letter": "B",
+          "text": "L'hypoxie d'origine cardiaque est réfractaire à l'oxygène à 100 %, contrairement à l'hypoxie bronchopulmonaire.",
+          "why": "Test hyperoxique."
+        },
+        {
+          "letter": "C",
+          "text": "La cyanose clinique apparaît en général lorsque la saturation est < 85 %.",
+          "why": "Seuil visuel."
+        },
+        {
+          "letter": "D",
+          "text": "Une sténose pulmonaire valvulaire serrée avec shunt D–G par le foramen ovale donnerait plutôt un souffle râpeux au foyer pulmonaire avec clic.",
+          "why": "DD cyanosé avec souffle."
+        },
+        {
+          "letter": "E",
+          "text": "L'absence de souffle rassure et autorise la sortie de maternité sans écho.",
+          "why": "Pas de souffle ≠ pas de cardiopathie ; la TGA est une urgence."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TGA : cyanose néonatale réfractaire à l'O2, souvent sans souffle, urgence. Cyanose visible < 85 %. Une sténose pulmonaire serrée, elle, a un souffle + clic."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "B",
+      "prompt": "Concernant l'ECG et la radiographie de thorax de l'enfant, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ECG varie avec l'âge : FC plus rapide, axe plus droit, PR plus court que chez l'adulte.",
+          "why": "Particularités."
+        },
+        {
+          "letter": "B",
+          "text": "Les ondes T sont positives en précordiales droites à la naissance, se négativent vers la fin de la 1re semaine, restent négatives de V1 à V4 pendant l'enfance.",
+          "why": "Évolution des T."
+        },
+        {
+          "letter": "C",
+          "text": "L'arythmie sinusale respiratoire est banale.",
+          "why": "Physiologique."
+        },
+        {
+          "letter": "D",
+          "text": "À la radio, se méfier des fausses cardiomégalies par superposition thymique ; une hypervascularisation évoque un shunt G–D, une hypovascularisation un obstacle pulmonaire.",
+          "why": "Clés radio."
+        },
+        {
+          "letter": "E",
+          "text": "Un ECG d'enfant s'interprète avec les normes de l'adulte, l'âge n'ayant pas d'influence.",
+          "why": "Toujours interpréter en fonction de l'âge."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG pédiatrique âge-dépendant (axe droit, T négatives V1–V4 après J7, arythmie respiratoire). Radio : thymus, hyper- vs hypovascularisation. Jamais les normes adultes."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quels signes d'insuffisance cardiaque du nourrisson faut-il reconnaître, souvent trompeurs ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Signes respiratoires : polypnée, tirage, toux, pouvant égarer vers une bronchiolite.",
+          "why": "Masque respiratoire."
+        },
+        {
+          "letter": "B",
+          "text": "Signes digestifs : difficultés alimentaires, vomissements postprandiaux, stagnation ou perte de poids.",
+          "why": "Masque digestif."
+        },
+        {
+          "letter": "C",
+          "text": "À l'examen : polypnée de repos, tachycardie, hépatomégalie (signe majeur).",
+          "why": "Triade."
+        },
+        {
+          "letter": "D",
+          "text": "Les OMI bilatéraux blancs prenant le godet sont le signe le plus précoce chez le nourrisson.",
+          "why": "OMI exceptionnels chez l'enfant."
+        },
+        {
+          "letter": "E",
+          "text": "Sueurs et dyspnée aux biberons, cassure pondérale, sont fréquents dans les larges shunts.",
+          "why": "Retentissement nutritionnel."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IC du nourrisson = respiratoire + alimentaire + hépatomégalie, tachycardie, polypnée. Les OMI sont exceptionnels. Les larges shunts cassent la courbe de poids."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant les examens complémentaires au-delà de l'ETT chez l'enfant, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ETT est l'examen clé, de qualité constamment bonne, mais par un opérateur formé aux congénitales, avec sondes pédiatriques.",
+          "why": "Conditions."
+        },
+        {
+          "letter": "B",
+          "text": "Le cathétérisme diagnostic a des indications limitées, souvent sous AG avant 10 ans, surtout préopératoire complexe ou à visée interventionnelle.",
+          "why": "Place actuelle."
+        },
+        {
+          "letter": "C",
+          "text": "L'IRM est performante pour les gros vaisseaux ; le scanner est irradiant.",
+          "why": "Imagerie en coupes."
+        },
+        {
+          "letter": "D",
+          "text": "Holter et épreuve d'effort (tapis chez le petit, bicyclette ensuite) ont des indications ciblées (rythme, 2e enfance).",
+          "why": "Autres examens."
+        },
+        {
+          "letter": "E",
+          "text": "Tout souffle innocent typique de l'écolier justifie un cathétérisme d'emblée pour « vérifier les pressions ».",
+          "why": "Aucun examen si souffle innocent typique."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ETT pédiatrique spécialisée = clé. Cathétérisme rare (complexe ou interventionnel). IRM/scanner/holter/effort ciblés. Pas d'exploration invasive d'un souffle innocent."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Nourrisson fébrile, souffle 2/6, pouls fémoraux présents, B2 variable, pas de thrill. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La fièvre (hyperdébit) favorise un souffle innocent, de même que l'anémie, l'effort, l'émotion, l'hyperthyroïdie.",
+          "why": "Circonstances."
+        },
+        {
+          "letter": "B",
+          "text": "Un thorax en entonnoir, un dos plat ou une scoliose peuvent également favoriser un souffle fonctionnel.",
+          "why": "Morphologie."
+        },
+        {
+          "letter": "C",
+          "text": "Avant 3 mois, une accélération du flux sur les branches pulmonaires (différence de calibre tronc/branches) peut expliquer un souffle fonctionnel.",
+          "why": "Mécanisme."
+        },
+        {
+          "letter": "D",
+          "text": "On entend ce flux car la distance cœur–stéthoscope est plus faible et les cavités plus petites ; il disparaît à l'âge adulte.",
+          "why": "Pourquoi on l'entend."
+        },
+        {
+          "letter": "E",
+          "text": "Un souffle apparu en période néonatale, même chez un enfant rose, peut attendre l'âge scolaire pour une première écho.",
+          "why": "Tout souffle néonatal impose une écho avant la sortie."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Hyperdébit (fièvre, anémie) et thorax particulier favorisent le souffle innocent. Mécanisme : proximité du stéthoscope, parfois branches pulmonaires avant 3 mois. Un souffle néonatal impose une écho avant la sortie."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Concernant la sténose pulmonaire valvulaire et le canal artériel, quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sténose pulmonaire valvulaire : souffle systolique râpeux au foyer pulmonaire avec clic protosystolique.",
+          "why": "Sémiologie."
+        },
+        {
+          "letter": "B",
+          "text": "Elle peut se diagnostiquer à tout âge et donner une dyspnée d'effort chez le grand enfant.",
+          "why": "Histoire naturelle."
+        },
+        {
+          "letter": "C",
+          "text": "Un souffle entendu dans le dos évoque un obstacle pulmonaire.",
+          "why": "Orientation."
+        },
+        {
+          "letter": "D",
+          "text": "Canal artériel persistant : souffle continu au bord gauche du sternum, crescendo systolique / decrescendo diastolique.",
+          "why": "PCA."
+        },
+        {
+          "letter": "E",
+          "text": "Un souffle diastolique précordial isolé de l'enfant est en règle un souffle veineux innocent.",
+          "why": "Les innocents sont systoliques, parfois continus (veineux du cou), jamais diastoliques."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "SP valvulaire : râpeux pulmonaire + clic. Irradiation dorsale = obstacle pulmonaire. PCA : continu sous-claviculaire gauche. Un diastolique n'est jamais innocent."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "prompt": "Quelles associations syndrome–cardiopathie le collège demande-t-il de connaître pour adresser au cardiopédiatre ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Trisomie 21 : notamment canal atrioventriculaire et shunts.",
+          "why": "T21."
+        },
+        {
+          "letter": "B",
+          "text": "Microdélétion 22q11 (DiGeorge), Turner (45,X), Williams-Beuren (délétion 7), Noonan, CHARGE, Marfan.",
+          "why": "Liste collège."
+        },
+        {
+          "letter": "C",
+          "text": "Dans un syndrome polymalformatif, l'ETT est systématique, qu'il y ait ou non souffle ou symptômes.",
+          "why": "Indication."
+        },
+        {
+          "letter": "D",
+          "text": "Un contexte de cardiopathie congénitale chez un apparenté du 1er degré fait également adresser l'enfant.",
+          "why": "Dépistage familial."
+        },
+        {
+          "letter": "E",
+          "text": "Le syndrome de Marfan n'a aucune implication cardiaque pédiatrique, contrairement à l'adulte.",
+          "why": "Marfan est dans la liste collège des syndromes à adresser."
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "T21, 22q11, Turner, Williams, Noonan, CHARGE, Marfan : ETT systématique si syndrome, et aussi si ATCD familial du 1er degré. Le Marfan est bien une affaire pédiatrique (aorte)."
+    }
+  ]
+}
