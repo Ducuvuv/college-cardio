@@ -282,6 +282,10 @@
     "standard": 709,
     "cas_clinique": 75
   },
+  "rangs": {
+    "A": 711,
+    "B": 73
+  },
   "cible": {
     "seenHigh": 12,
     "pctHigh": 80,

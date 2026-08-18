@@ -228,14 +228,23 @@ def main() -> None:
     n_new: dict[str, int] = {}
     n_col: dict[str, int] = {}
     formats: dict[str, int] = {}
+    rangs: dict[str, int] = {}
     for q in nouveau:
         n_new[q["item"]] = n_new.get(q["item"], 0) + 1
         fmt = q.get("format") or "standard"
         formats[fmt] = formats.get(fmt, 0) + 1
+        rang = (q.get("rang") or "A").upper()
+        if rang not in ("A", "B", "C"):
+            rang = "A"
+        rangs[rang] = rangs.get(rang, 0) + 1
     for q in college:
         n_col[q["item"]] = n_col.get(q["item"], 0) + 1
         fmt = q.get("format") or "standard"
         formats[fmt] = formats.get(fmt, 0) + 1
+        rang = (q.get("rang") or "A").upper()
+        if rang not in ("A", "B", "C"):
+            rang = "A"
+        rangs[rang] = rangs.get(rang, 0) + 1
     items = []
     for gid, ids in GROUPS:
         for iid in ids:
@@ -258,6 +267,7 @@ def main() -> None:
         "items": items,
         "origins": {"nouveau": len(nouveau), "college": len(college)},
         "formats": formats,
+        "rangs": rangs,
         "cible": {
             "seenHigh": 12,
             "pctHigh": 80,

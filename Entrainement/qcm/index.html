@@ -144,6 +144,7 @@ let view = "setup";
 let session = null;
 let originMode = "nouveau";
 let formatMode = "all";
+let rangMode = "all";
 
 const $ = (id) => document.getElementById(id);
 const viewEl = $("view");
@@ -185,12 +186,18 @@ function countFor(it) {
   return (it.nNouveau || 0) + (it.nCollege || 0);
 }
 
+function qRang(q) {
+  const r = String(q.rang || "A").toUpperCase();
+  return r === "B" || r === "C" ? r : "A";
+}
+
 function poolFor(ids) {
   return BANK.questions.filter((q) => {
     if (!ids.includes(q.item)) return false;
     if (originMode !== "both" && (q.origin || "college") !== originMode) return false;
-    if (formatMode === "all") return true;
-    return (q.format || "standard") === formatMode;
+    if (formatMode !== "all" && (q.format || "standard") !== formatMode) return false;
+    if (rangMode !== "all" && qRang(q) !== rangMode) return false;
+    return true;
   });
 }
 
@@ -234,8 +241,10 @@ function updatePoolHint() {
   const nN = (BANK.origins || {}).nouveau || 0;
   const nC = (BANK.origins || {}).college || 0;
   const nCase = (BANK.formats || {}).cas_clinique || 0;
+  const nA = (BANK.rangs || {}).A || 0;
+  const nB = (BANK.rangs || {}).B || 0;
   if (!ids.length) hint.textContent = "Coche au moins un item.";
-  else hint.textContent = `${n} question${n > 1 ? "s" : ""} dans le lot · banque : ${nN} neuves · ${nC} QI livre · ${nCase} cas cliniques.`;
+  else hint.textContent = `${n} question${n > 1 ? "s" : ""} dans le lot · banque : ${nN} neuves · ${nC} QI livre · ${nCase} cas cliniques · ${nA} rang A · ${nB} rang B.`;
   if (qcount) {
     qcount.max = Math.max(1, n || 1);
     if (Number(qcount.value) > n && n > 0) qcount.value = n;
@@ -285,6 +294,14 @@ function renderSetup() {
           </select>
         </div>
         <div class="field">
+          <label for="rang">Rang</label>
+          <select id="rang">
+            <option value="all"${rangMode === "all" ? " selected" : ""}>A et B</option>
+            <option value="A"${rangMode === "A" ? " selected" : ""}>Rang A seulement</option>
+            <option value="B"${rangMode === "B" ? " selected" : ""}>Rang B seulement</option>
+          </select>
+        </div>
+        <div class="field">
           <label for="qcount">Nombre de questions</label>
           <input type="number" id="qcount" min="1" max="800" value="20" />
         </div>
@@ -296,6 +313,7 @@ function renderSetup() {
     </div>`;
   $("origin").onchange = () => { originMode = $("origin").value; renderSetup(); };
   $("format").onchange = () => { formatMode = $("format").value; updatePoolHint(); };
+  $("rang").onchange = () => { rangMode = $("rang").value; updatePoolHint(); };
   $("btn-all").onclick = () => { document.querySelectorAll("#chapter-list input").forEach((i) => i.checked = true); updatePoolHint(); };
   $("btn-none").onclick = () => { document.querySelectorAll("#chapter-list input").forEach((i) => i.checked = false); updatePoolHint(); };
   $("btn-uness").onclick = () => {
@@ -373,7 +391,7 @@ function renderQuiz() {
   viewEl.innerHTML = `
     <header class="quiz-bar">
       <h1>Session en cours</h1>
-      <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · ${kind} · ${format} · ${origin}</div>
+      <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · rang ${qRang(q)} · ${kind} · ${format} · ${origin}</div>
     </header>
     <div class="card ${revealed ? "revealed" : ""}">
       <p class="stem">${esc(q.prompt)}</p>
