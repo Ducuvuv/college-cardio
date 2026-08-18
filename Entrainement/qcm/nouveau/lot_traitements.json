@@ -1,0 +1,958 @@
+{
+  "questions": [
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Homme de 61 ans, FEVG 32 %, NYHA II, rythme sinusal, kaliémie 4,2 mmol/L, DFG 68 mL/min. Quelles classes ou stratégies réduisent mortalité et hospitalisations dans cette IC à FE basse ?",
+      "options": [
+        {"letter": "A", "text": "Bloqueur du SRA (IEC, ou sacubitril/valsartan, ou ARA2 si intolérance aux IEC), bêtabloquant, antialdostérone et gliflozine.", "why": "Les 4 classes à haut niveau de preuve (I, A) dans l’IC à FEVG < 40 % ; les diurétiques s’y ajoutent pour la congestion."},
+        {"letter": "B", "text": "Le furosémide oral à forte dose est indispensable pour diminuer la mortalité, même en l’absence de rétention hydrosodée.", "why": "Les diurétiques de l’anse contrôlent les signes congestifs ; ils n’ont pas le statut de traitement de mortalité des 4 classes."},
+        {"letter": "C", "text": "Les gliflozines (dapagliflozine, empagliflozine) sont indiquées qu’il y ait ou non un diabète.", "why": "Efficacité démontrée chez l’insuffisant cardiaque diabétique ou non."},
+        {"letter": "D", "text": "Le diltiazem est un freinateur de première intention, au même titre que le bisoprolol.", "why": "Diltiazem et vérapamil sont contre-indiqués dans l’IC systolique (effet dépresseur)."},
+        {"letter": "E", "text": "Les ARA2 sont réservés aux patients intolérants aux IEC (toux notamment).", "why": "Efficacité comparable mais place de 2e recours par rapport aux IEC."}
+      ],
+      "correct": ["A", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Dans l’IC à FEVG < 40 %, quatre classes réduisent mortalité et hospitalisations : bloqueur du SRA, bêtabloquant, antialdostérone et gliflozine, cette dernière indépendamment du diabète. Les ARA2 remplacent les IEC en cas d’intolérance. Les diurétiques traitent la congestion ; les inhibiteurs calciques bradycardisants sont contre-indiqués."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Concernant les bêtabloquants et les traitements de 2e intention de l’IC à FEVG diminuée, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Seuls carvédilol, métoprolol, bisoprolol et nébivolol ont une efficacité démontrée dans cette indication.", "why": "Quatre molécules validées par les essais ; on ne les intervertit pas avec n’importe quel bêtabloquant."},
+        {"letter": "B", "text": "On les introduit d’emblée à dose maximale pendant une poussée d’OAP.", "why": "Introduction uniquement chez un patient stabilisé, à très faibles doses, palier hebdomadaire ; jamais à la phase aiguë non contrôlée."},
+        {"letter": "C", "text": "L’ivabradine s’adresse aux patients symptomatiques en rythme sinusal, FC encore élevée (> 70 ou 75/min) malgré un bêtabloquant, ou en cas de CI/intolérance aux bêtabloquants.", "why": "Blocage du canal If ; réduction des hospitalisations dans ce créneau."},
+        {"letter": "D", "text": "La digoxine améliore la survie et remplace le bêtabloquant en rythme sinusal.", "why": "Effet neutre sur la survie, marge étroite ; réservée aux formes résistantes, utile pour ralentir une FA."},
+        {"letter": "E", "text": "Chez un patient déjà sous bêtabloquant hospitalisé pour décompensation, l’arrêt n’est pas systématique, sauf choc cardiogénique ou échec du traitement.", "why": "Le collège déconseille l’arrêt de routine ; on diminue ou on arrête si mauvaise réponse ou choc."}
+      ],
+      "correct": ["A", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Quatre bêtabloquants seulement sont validés ; on les titre à très faible dose chez un patient stabilisé. L’ivabradine est un freinateur If de 2e intention en rythme sinusal. La digoxine ne réduit pas la mortalité. Un bêtabloquant déjà en cours n’est pas arrêté de principe lors d’une décompensation, hors choc ou échec."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Vous êtes appelé au domicile pour un OAP : dyspnée, crépitants, PAS 155 mmHg. Quelles mesures médicamenteuses et de posture sont exactes, au domicile puis à l’hôpital ?",
+      "options": [
+        {"letter": "A", "text": "Position assise ou demi-assise et furosémide IV (1 mg/kg, à répéter si besoin).", "why": "Prise en charge initiale collège : posture et diurétique de l’anse IV."},
+        {"letter": "B", "text": "Dérivés nitrés sublinguaux au domicile si PAS > 100 mmHg ; trinitrine IV à l’hôpital si PAS > 110 mmHg.", "why": "Seuils tensionnels du chapitre IC aiguë."},
+        {"letter": "C", "text": "Oxygénothérapie dès que SaO2 < 90 %, objectif SaO2 > 90 %, avec prudence si risque d’hypercapnie.", "why": "O2 réservé à l’hypoxémie ; hyperoxie potentiellement délétère ailleurs (SCA) mais ici l’objectif est > 90 %."},
+        {"letter": "D", "text": "Introduire immédiatement un bêtabloquant IV et un IEC à dose d’essai.", "why": "BB non introduits pendant la poussée ; IEC/ARA2/ARNI seulement après stabilisation."},
+        {"letter": "E", "text": "La morphine IV est systématique chez tout OAP pour diminuer la précharge.", "why": "Non systématique : anxiété non contrôlée ou douleur thoracique uniquement."}
+      ],
+      "correct": ["A", "B", "C"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’OAP se traite en urgence par position assise, furosémide IV et nitrés si la PAS le permet (seuils 100 mmHg au domicile, 110 mmHg à l’hôpital), plus oxygène si hypoxémie. On n’introduit ni bêtabloquant ni bloqueur du SRA pendant la poussée. La morphine n’est pas un traitement de routine."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Quels médicaments sont contre-indiqués ou à éviter dans l’IC à fraction d’éjection altérée ?",
+      "options": [
+        {"letter": "A", "text": "Vérapamil et diltiazem.", "why": "Effet inotrope négatif ; CI dans l’IC systolique."},
+        {"letter": "B", "text": "Antiarythmiques de classe I (flécaïnide).", "why": "CI formelle dans l’IC à FE altérée."},
+        {"letter": "C", "text": "AINS (risque de rétention hydrosodée).", "why": "À éviter ; notion inacceptable du collège."},
+        {"letter": "D", "text": "Amlodipine, même en cas d’HTA ou d’angor associé, car toute dihydropyridine aggrave la mortalité.", "why": "Félodipine et amlodipine ont un effet neutre et peuvent être utilisées s’il existe une indication associée."},
+        {"letter": "E", "text": "Amiodarone, car aucun antiarythmique n’est autorisé si la FEVG est basse.", "why": "L’amiodarone est le seul antiarythmique prescrit dans l’IC à FEVG diminuée (TV graves ou prévention des récidives de FA)."}
+      ],
+      "correct": ["A", "B", "C"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Dans l’IC à FE altérée, vérapamil/diltiazem, flécaïnide et AINS sont contre-indiqués ou à éviter. Les dihydropyridines (amlodipine, félodipine) sont neutres sur la mortalité. L’amiodarone reste le seul antiarythmique utilisable, souvent associée au bêtabloquant."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Concernant DAI, resynchronisation et choc cardiogénique dans l’IC, indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Resynchronisation (pacemaker triple chambre) si IC symptomatique NYHA II–IV, FEVG ≤ 35 % et QRS ≥ 130 ms.", "why": "Critères collège du traitement électrique."},
+        {"letter": "B", "text": "DAI en prévention primaire si FEVG < 35 %, NYHA II–III, au moins 6 semaines après IDM/revascularisation (cardiopathie ischémique) ou 3 mois de traitement médical (non ischémique), avec survie probable > 1 an.", "why": "Délais et exclusion du NYHA IV hors projet de greffe/assistance."},
+        {"letter": "C", "text": "Tout patient NYHA IV relève d’un DAI de prévention primaire, même sans projet de greffe.", "why": "Le DAI n’est pas indiqué si le risque de décès par IC à court terme est très élevé, sauf greffe ou assistance envisagée."},
+        {"letter": "D", "text": "Choc cardiogénique : dobutamine IV, ou inhibiteur des phosphodiestérases (milrinone, énoximone) si le patient est sous bêtabloquant.", "why": "Inotropes du collège ; PDE si BB en cours."},
+        {"letter": "E", "text": "Le furosémide IV à haute dose est le traitement de première intention du choc avec PAS < 90 mmHg et marbrures.", "why": "Le choc relève d’inotropes ± assistance, pas d’un diurétique de première intention."}
+      ],
+      "correct": ["A", "B", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La CRT cible NYHA II–IV, FEVG ≤ 35 % et QRS large. Le DAI de prévention primaire exige une FEVG < 35 % après un délai de traitement/revascularisation et une survie attendue > 1 an, ce qui écarte le NYHA IV isolé. Le choc cardiogénique se traite par inotropes (dobutamine, PDE si BB), pas par un diurétique de première ligne."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Insuffisance cardiaque à FEVG conservée (> 50 %) et mesures associées. Quelles propositions thérapeutiques sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Les gliflozines (dapagliflozine, empagliflozine) sont hautement recommandées (I, A) pour réduire mortalité cardiovasculaire et hospitalisations.", "why": "Seule classe à haut niveau de preuve dans l’IC à FE préservée selon le collège."},
+        {"letter": "B", "text": "Le tafamidis est un traitement spécifique de l’amylose cardiaque à transthyrétine.", "why": "Mention Rang A du chapitre IC."},
+        {"letter": "C", "text": "Vaccinations antigrippale, anti-Covid-19 et antipneumococcique sont recommandées chez l’insuffisant cardiaque.", "why": "Mesures hygiénodiététiques : surinfection = facteur de décompensation."},
+        {"letter": "D", "text": "Objectif de sel : ne pas dépasser 5 à 6 g/j ; sels de régime riches en potassium à éviter.", "why": "Régime hyposodé collège ; KCl de substitution potentiellement dangereux si antialdostérone/IEC."},
+        {"letter": "E", "text": "Repos strict au long cours, l’activité physique étant contre-indiquée dès le stade NYHA II.", "why": "Au contraire, activité régulière encouragée hors décompensation ; le repos strict aggrave le déconditionnement."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Dans l’IC à FE préservée, les gliflozines ont le plus haut niveau de recommandation ; le tafamidis cible l’amylose ATTR. Sel limité à 5–6 g/j, vaccinations et activité physique hors poussée font partie du traitement de fond. Le repos strict n’est plus recommandé."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "SCA ST+ orienté vers une angioplastie primaire. Quelles propositions sur les antiagrégants sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Aspirine : 250 mg IVD puis 75–100 mg/j per os, souvent avec un IPP.", "why": "Schéma collège du SCA."},
+        {"letter": "B", "text": "Bithérapie de 1re intention : aspirine + prasugrel ou ticagrélor.", "why": "P2Y12 puissants préférés en angioplastie primaire."},
+        {"letter": "C", "text": "Prasugrel contre-indiqué si antécédent d’AVC ; non recommandé après 75 ans et/ou si poids < 60 kg.", "why": "CI et précautions du chapitre SCA/330."},
+        {"letter": "D", "text": "Le clopidogrel reste le P2Y12 de 1re intention même en l’absence de risque hémorragique.", "why": "Moins efficace, délai plus long ; réservé aux CI du prasugrel/ticagrélor ou à la fibrinolyse."},
+        {"letter": "E", "text": "Après angioplastie d’un SCA, la bithérapie dure classiquement 12 mois (modulable selon les risques ischémique et hémorragique).", "why": "Durée collège ; 6 mois plutôt en angor stable."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "En angioplastie primaire, aspirine IV puis orale et un P2Y12 puissant (prasugrel ou ticagrélor) forment la bithérapie de 1re intention, pour une durée classiquement de 12 mois. Le prasugrel a des CI d’âge, de poids et d’AVC. Le clopidogrel n’est pas le choix par défaut hors CI ou fibrinolyse."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "SCA ST+ : angioplastie primaire impossible dans les 120 minutes. Quelle stratégie médicamenteuse de reperfusion et d’antiagrégation est exacte ?",
+      "options": [
+        {"letter": "A", "text": "Fibrinolyse immédiate puis transfert vers un centre capable d’angioplastie.", "why": "Algorithme collège (fig. 5.5) : délai 120 minutes."},
+        {"letter": "B", "text": "Aspirine dès la suspicion diagnostique.", "why": "Indiquée d’emblée en cas de fibrinolyse."},
+        {"letter": "C", "text": "Le clopidogrel est le seul inhibiteur P2Y12 autorisé avec le fibrinolytique.", "why": "Prasugrel et ticagrélor non associés à la fibrinolyse dans le collège."},
+        {"letter": "D", "text": "Dose de charge de clopidogrel 300 mg uniquement si âge < 75 ans.", "why": "Mention explicite du chapitre SCA."},
+        {"letter": "E", "text": "Le ticagrélor 180 mg est préféré au clopidogrel dès la seringue de fibrinolyse.", "why": "Non autorisé en association au fibrinolytique."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Si l’angioplastie n’est pas réalisable en 120 minutes, on fibrinolyse et on transfère. Aspirine d’emblée ; seul le clopidogrel est associé au fibrinolytique, avec une charge de 300 mg réservée aux patients de moins de 75 ans. Le ticagrélor n’a pas cette place."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Traitement au long cours après un SCA revascularisé, FEVG 38 %, diabétique. Quelles prescriptions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Statine à forte dose (ex. atorvastatine 80 mg ou rosuvastatine 20 mg) : viser LDL-C < 0,55 g/L et une baisse d’au moins 50 %.", "why": "Objectifs post-SCA du collège (item 339/223)."},
+        {"letter": "B", "text": "Si la cible n’est pas atteinte après 4 semaines à dose maximale tolérée : ajouter ézétimibe 10 mg.", "why": "Escalade collège avant PCSK9."},
+        {"letter": "C", "text": "Bêtabloquant formellement indiqué car FEVG ≤ 40 %.", "why": "Plus systématique chez l’asymptomatique à FE préservée ; formel si FE ≤ 40 %."},
+        {"letter": "D", "text": "IEC (ou ARA2) particulièrement indiqué (FEVG ≤ 40 % et diabète).", "why": "Pas systématique chez tous les SCA, mais indiqué dans ces terrains."},
+        {"letter": "E", "text": "Antialdostérone d’emblée, même si hyperkaliémie et créatininémie > 221 µmol/L, sans attendre IEC ni bêtabloquant.", "why": "Après BB et IEC, si FE ≤ 40 % avec IC ou diabète, en l’absence d’IR/hyperK."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Après un SCA : statine intensive (LDL < 0,55 g/L et −50 %), ézétimibe si échec à 4 semaines. Bêtabloquant et IEC sont particulièrement indiqués si FEVG ≤ 40 % (et diabète/IRC pour l’IEC). L’antialdostérone vient après BB et IEC, hors hyperkaliémie et insuffisance rénale."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Anticoagulation aiguë, oxygène et anti-ischémiques d’un SCA. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Angioplastie immédiate (ST+ ou ST− très haut risque) : HNF 70–100 UI/kg IVD ou énoxaparine 0,5 mg/kg IVD, généralement arrêtée après la procédure.", "why": "Schéma collège de la salle de cathétérisme."},
+        {"letter": "B", "text": "SCA ST− à haut risque : énoxaparine 1 mg/kg SC × 2/j ou fondaparinux 2,5 mg/j SC (bolus d’HNF au moment de la coro).", "why": "Doses parentérales du chapitre SCA."},
+        {"letter": "C", "text": "Oxygénothérapie systématique, même si SaO2 96 %, pour limiter la taille de nécrose.", "why": "O2 réservé à l’hypoxémie (SaO2 < 90 % ou PaO2 < 60 mmHg) ; l’hyperoxie peut être délétère."},
+        {"letter": "D", "text": "En SCA ST−, la bithérapie antiagrégante n’est plus recommandée dès l’admission tant que la coronarographie n’a pas été faite, sauf délai > 24 h.", "why": "Surcroît hémorragique de la stratégie « pretreatment » précoce."},
+        {"letter": "E", "text": "HNF IVSE en première intention chez tout SCA ST−, y compris si la fonction rénale est normale.", "why": "HNF surtout si CI des HBPM/fondaparinux (IR sévère) ; moins utilisée sinon."}
+      ],
+      "correct": ["A", "B", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’anticoagulation de salle (HNF ou énoxaparine IV) est brève ; en ST− à haut risque on utilise énoxaparine SC ou fondaparinux. On ne « prétraite » plus par bithérapie avant la coro, sauf délai > 24 h. L’oxygène n’est pas systématique. L’HNF IV n’est plus le choix par défaut si la fonction rénale le permet."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Coronarien stable et patient en FA stenté récemment. Quelles propositions thérapeutiques sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Aspirine 75–100 mg/j au long cours chez tout coronarien en l’absence de CI.", "why": "Antiagrégant de fond de l’angor stable."},
+        {"letter": "B", "text": "Après stent d’angor stable, bithérapie aspirine–clopidogrel classiquement 6 mois ; prasugrel et ticagrélor n’ont pas d’indication dans ce contexte.", "why": "Durée et molécules du chapitre angor stable."},
+        {"letter": "C", "text": "Dérivés nitrés contre-indiqués avec les inhibiteurs de PDE-5 (sildénafil).", "why": "CI formelle (hypotension)."},
+        {"letter": "D", "text": "Si FA + stent de SCA : par défaut bithérapie clopidogrel + anticoagulant à pleine dose 12 mois, puis anticoagulant seul ; trithérapie limitée (souvent 1 mois) si faible risque hémorragique et haut risque ischémique.", "why": "Stratégie collège pour éviter l’hémorragie sous triple association prolongée."},
+        {"letter": "E", "text": "Vérapamil associé d’emblée au bêtabloquant pour potentialiser le freinage en angor.", "why": "Association IC bradycardisant + BB : risque de trouble de conduction, à éviter."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’aspirine est le socle du coronarien stable ; après stent d’angor, le clopidogrel est associé 6 mois, sans prasugrel/ticagrélor. Les nitrés sont incompatibles avec le sildénafil. En FA stentée, on privilégie clopidogrel + AOD/AVK 12 mois. On n’associe pas vérapamil et bêtabloquant."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Anticoagulation chronique d’une FA. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Le score CHA2DS2-VA ne s’applique pas en cas de prothèse mécanique ou de RM rhumatismal modéré à sévère : AVK d’emblée.", "why": "Risque embolique maximal ; le score sous-estimerait l’indication."},
+        {"letter": "B", "text": "CHA2DS2-VA = 0 : pas d’antithrombotique ; > 1 : AOD (préférés aux AVK) de façon indiscutable.", "why": "Tableau 13.1 du collège."},
+        {"letter": "C", "text": "Le caractère paroxystique, persistant ou permanent modifie l’indication d’anticoagulation au long cours.", "why": "Le type d’épisodes ne doit pas intervenir dans la décision."},
+        {"letter": "D", "text": "FA + CMH ou amylose cardiaque : anticoagulation systématique (AOD ou AVK).", "why": "Indication hors score, collège."},
+        {"letter": "E", "text": "Fermeture percutanée d’auricule : FA sans mécanique/RM, CHA2DS2-VA > 2 et CI formelle permanente aux anticoagulants, validée en RCP.", "why": "Critères Rang B du chapitre FA."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Hors mécanique et RM, le CHA2DS2-VA guide l’AOD (nul = rien, > 1 = indication nette). CMH et amylose se traitent d’emblée. Le type de FA (paroxystique ou non) ne change pas l’anticoagulation. La fermeture d’auricule est réservée aux CI permanentes avec score élevé."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Cardioversion d’une FA persistante datant de 10 jours, hémodynamique stable. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Au moins 3 semaines d’anticoagulation efficace documentée avant la cardioversion, puis 4 semaines après (médicamenteuse ou électrique).", "why": "Encadrement collège, tout patient étant à risque les 4 semaines suivantes."},
+        {"letter": "B", "text": "On peut écourter le délai précardioversion si ETO sans thrombus OG, ou si la FA est datée de moins de 24 heures.", "why": "Deux exceptions collège (la 2e est rare)."},
+        {"letter": "C", "text": "Le CHA2DS2-VA = 0 autorise une cardioversion sans aucune anticoagulation.", "why": "Autour de la cardioversion l’anticoagulation est obligatoire, le score ne s’applique pas à cette phase."},
+        {"letter": "D", "text": "Choc électrique immédiat si urgence vitale (choc) ; sinon on ralentit en attendant par BB, vérapamil/diltiazem ou digoxine.", "why": "Cardioversion en urgence rare ; freinateurs nodaux en attendant."},
+        {"letter": "E", "text": "Après un premier épisode réduit, un antiarythmique chronique est systématique pour prévenir toute récidive.", "why": "Habituellement pas de traitement d’entretien antiarythmique après un premier épisode."}
+      ],
+      "correct": ["A", "B", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Toute cardioversion est encadrée par 3 semaines d’anticoagulation efficace (sauf ETO normale ou FA < 24 h) et 4 semaines après, indépendamment du CHA2DS2-VA. Le choc immédiat est réservé au collapsus. Un premier épisode ne justifie pas un antiarythmique au long cours."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Contrôle de fréquence versus contrôle du rythme dans la FA. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Objectif de fréquence : FC < 110/min pour un effort de marche normale, vérifié par Holter.", "why": "Cible collège du contrôle de fréquence."},
+        {"letter": "B", "text": "Vérapamil et diltiazem sont interdits chez l’insuffisant cardiaque.", "why": "Inotropes négatifs ; CI dans l’IC."},
+        {"letter": "C", "text": "Chez le coronarien et/ou l’insuffisant cardiaque, seule l’amiodarone est utilisable comme antiarythmique de maintien du sinus.", "why": "Flécaïnide et propafénone interdits sur ces terrains."},
+        {"letter": "D", "text": "FA paroxystique du cœur sain : flécaïnide souvent en 1re intention ; ablation des veines pulmonaires possible en 1re ligne selon les préférences.", "why": "Stratégie collège (cœur normal / ablation 1re ligne)."},
+        {"letter": "E", "text": "En FA permanente, une cardioversion itérative reste la stratégie de référence.", "why": "Par définition, pas de cardioversion ; on contrôle la fréquence."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le contrôle de fréquence vise < 110/min à la marche, sans vérapamil/diltiazem si IC. Le contrôle du rythme utilise l’amiodarone seule chez le coronarien/IC, le flécaïnide ou l’ablation si cœur sain. La FA permanente n’est plus réduite."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Choix de l’anticoagulant et cibles d’INR dans la FA. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Hors prothèse mécanique et RM, les AOD sont à privilégier par rapport aux AVK.", "why": "Recommandation collège."},
+        {"letter": "B", "text": "INR cible 2,5 (fenêtre 2–3) sous AVK, sauf valve mécanique mitrale ou à disque (cible plus élevée, 3–4,5 dans le chapitre FA).", "why": "Cibles d’INR du collège FA."},
+        {"letter": "C", "text": "L’idarucizumab est l’antidote spécifique du dabigatran.", "why": "Mention explicite items 232 et 330."},
+        {"letter": "D", "text": "La fluindione est l’AVK de 1re intention.", "why": "2e intention seulement (néphropathie immunoallergique) ; warfarine ou acénocoumarol en 1re ligne."},
+        {"letter": "E", "text": "Éducation AVK : INR au minimum 1 fois/mois une fois l’équilibre atteint ; suivi de la fonction rénale ≥ 1 fois/an sous AOD.", "why": "Surveillance collège."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les AOD sont préférés hors mécanique/RM. Sous AVK, l’INR vise 2–3 sauf certaines mécaniques mitrales/à disque. L’idarucizumab antagonise le dabigatran. La fluindione n’est plus un premier choix. INR mensuel à l’équilibre ; créatinine annuelle sous AOD."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "FA et situations particulières (IC, valve, AVC, maladie de l’oreillette). Quelles propositions thérapeutiques sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Chez l’insuffisant cardiaque, la cadence ventriculaire urgente se contrôle par digoxine IV si la kaliémie est normale.", "why": "Freinage nodal IV collège, hors hypokaliémie."},
+        {"letter": "B", "text": "FA sur prothèse mécanique ou RM : AVK au long cours dans tous les cas, AOD contre-indiqués.", "why": "FA « valvulaire » au sens collège."},
+        {"letter": "C", "text": "AVC ischémique aigu révélateur : héparine et AVK d’emblée pour éviter une récidive précoce.", "why": "Risque de transformation hémorragique ; anticoagulation différée, mais impérative à la sortie."},
+        {"letter": "D", "text": "Maladie de l’oreillette : les bradycardisants pour contrôler les salves de FA exposent à aggraver la dysfonction sinusale ; stimulateur souvent nécessaire.", "why": "Syndrome brady-tachy."},
+        {"letter": "E", "text": "La fermeture chirurgicale d’auricule pendant une chirurgie cardiaque permet d’arrêter définitivement les anticoagulants.", "why": "Indiquée désormais, mais elle n’autorise pas l’arrêt de l’anticoagulation."}
+      ],
+      "correct": ["A", "B", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "En IC, la digoxine IV ralentit si le potassium est normal. Mécanique et RM imposent un AVK à vie. Après un AVC, on ne démarre pas héparine/AVK en aigu. Le syndrome brady-tachy fait souvent poser un pacemaker. La fermeture d’auricule chirurgicale ne dispense pas des anticoagulants."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Traitement anticoagulant initial d’une EP non grave ou d’une TVP proximale, DFG 85 mL/min. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Rivaroxaban 15 mg × 2/j pendant 21 jours puis 20 mg/j, sans héparine préalable ni relais AVK.", "why": "Schéma AOD de référence du collège."},
+        {"letter": "B", "text": "Apixaban 10 mg × 2/j pendant 7 jours puis 5 mg × 2/j, sans héparine préalable.", "why": "Autre AOD anti-Xa d’emblée."},
+        {"letter": "C", "text": "HBPM et fondaparinux sont contre-indiqués si DFG < 30 mL/min ; l’HNF est alors le parentéral de choix.", "why": "Élimination rénale des HBPM/fondaparinux ; HNF aussi si instabilité ou fibrinolyse."},
+        {"letter": "D", "text": "Surveillance plaquettaire systématique sous fondaparinux, 2 fois/semaine pendant 21 jours.", "why": "Pas de surveillance plaquettaire systématique pour fondaparinux ni pour HBPM hors situations particulières (HNF préalable, postop, nouveau thrombus, lésion au point d’injection)."},
+        {"letter": "E", "text": "HNF : 500 UI/kg/j puis TCA 1,5–2,5 ou anti-Xa 0,3–0,7 U ; plaquettes 2 fois/semaine pendant 21 jours.", "why": "Posologie et surveillance TIH de l’HNF."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les AOD anti-Xa (rivaroxaban, apixaban) sont la référence, avec une phase de charge orale sans héparine. HBPM et fondaparinux sont CI si DFG < 30 mL/min ; l’HNF prend alors le relais, avec adaptation du TCA et surveillance plaquettaire. Cette surveillance n’est pas systématique sous fondaparinux."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Durée de l’anticoagulation curative d’une MTEV. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Durée minimale de 3 mois pour une TVP proximale et/ou une EP.", "why": "Socle collège."},
+        {"letter": "B", "text": "Facteur transitoire majeur (chirurgie sous AG > 30 min, fracture de MI, COP/grossesse/post-partum/THM) : 3 mois.", "why": "Risque de récidive faible, tableau SPLF du collège."},
+        {"letter": "C", "text": "Cancer actif : anticoagulation non limitée, tant que le cancer est traité/actif.", "why": "Risque persistant ; HBPM (ou AOD hors cancers digestifs/génito-urinaires)."},
+        {"letter": "D", "text": "Premier épisode de TVP distale symptomatique avec facteur déclenchant évident, sans facteur persistant : 6 semaines.", "why": "Durée raccourcie collège."},
+        {"letter": "E", "text": "EP de gravité intermédiaire : fibrinolyse systématique pour raccourcir la durée d’anticoagulation à 4 semaines.", "why": "Pas de fibrinolyse systématique hors choc/hypotension sévère ; la durée n’est pas de 4 semaines."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Au moins 3 mois après TVP proximale/EP ; 3 mois si facteur transitoire majeur ; prolongation si cancer actif. Une TVP distale provoquée isolée peut être traitée 6 semaines. La fibrinolyse n’est pas indiquée de principe dans l’EP intermédiaire."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Fibrinolyse, compression élastique, mobilisation et filtre cave. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Fibrinolyse recommandée si EP grave (choc ou hypotension sévère) ; embolectomie si CI à la thrombolyse.", "why": "Indication collège des fibrinolytiques."},
+        {"letter": "B", "text": "Pas de fibrinolyse de 1re intention dans une TVP, sauf phlegmatia caerulea / obstruction sévère pour sauvetage de membre.", "why": "Exception rare."},
+        {"letter": "C", "text": "Compression classe 3 (30–40 mmHg à la cheville) dès que possible, au moins 6 mois après TVP (plus si symptômes).", "why": "Prévention du SPT."},
+        {"letter": "D", "text": "CI de la compression : AOMI avec IPS < 0,6, microangiopathie diabétique si pression > 30 mmHg, phlegmatia, thrombose septique.", "why": "Liste collège."},
+        {"letter": "E", "text": "Alitement systématique 7 jours ; le filtre cave est le traitement de 1re intention de toute EP.", "why": "Mobilisation précoce (après 24 h d’AC efficace en cas d’EP) ; filtre si CI aux AC, récidive sous traitement bien conduit, ou post-embolectomie."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La fibrinolyse est réservée à l’EP choquée (ou à la TVP menaçant le membre). La compression classe 3 pendant au moins 6 mois réduit le SPT, hors IPS < 0,6. On mobilise tôt. Le filtre cave n’est pas un traitement de première intention."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "MTEV : relais AVK, femme, cancer, prévention. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Relais AVK possible dès J1 du parentéral ; arrêt de l’héparine après ≥ 5 jours et 2 INR > 2 à 24 h d’intervalle ; INR cible 2,5 (2–3).", "why": "Modalités de relais collège."},
+        {"letter": "B", "text": "Grossesse : HBPM ; AVK non recommandés aux 1er et 3e trimestres.", "why": "Chapitre formes particulières."},
+        {"letter": "C", "text": "Après une MTEV, contraception œstroprogestative et THM oral sont contre-indiqués.", "why": "Arrêt immédiat ; progestatif ou DIU en alternative."},
+        {"letter": "D", "text": "L’aspirine est le traitement préventif de référence de la MTEV médicale et chirurgicale.", "why": "L’aspirine n’est pas indiquée en prévention de la MTEV ; énoxaparine 0,4 mL/j ou fondaparinux 2,5 mg."},
+        {"letter": "E", "text": "Cancer : HBPM en relais du traitement initial ; certains AOD possibles en 1re intention hors cancers digestifs et génito-urinaires (risque hémorragique).", "why": "Hiérarchie collège."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le relais AVK chevauche l’héparine jusqu’à deux INR efficaces. Grossesse = HBPM. Œstroprogestatifs et THM sont CI après MTEV. En cas de cancer, HBPM (AOD possibles hors tumeurs digestives/GU). L’aspirine ne prévient pas la MTEV."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Antiagrégants plaquettaires : mécanismes, doses de charge et contre-indications. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "L’aspirine inhibe la COX-1 (thromboxane A2) de façon irréversible pendant toute la vie plaquettaire (7–10 jours).", "why": "Mode d’action collège."},
+        {"letter": "B", "text": "Dose de charge SCA 250–300 mg ; entretien coronarien/AVC 75–160 mg/j.", "why": "Tableau des posologies d’aspirine."},
+        {"letter": "C", "text": "Prescription systématique d’aspirine en prévention primaire, y compris chez le diabétique.", "why": "Plus recommandée, même chez le diabétique ; réservée au très haut risque vasculaire à faible risque hémorragique."},
+        {"letter": "D", "text": "Prasugrel : charge 60 mg puis 10 mg/j ; CI absolue si antécédent d’AVC.", "why": "Posologie et CI du chapitre 330."},
+        {"letter": "E", "text": "Clopidogrel : prodrogue via CYP2C19 ; charge 300–600 mg puis 75 mg/j. Ticagrélor : charge 180 mg puis 90 mg × 2/j.", "why": "P2Y12, posologies collège."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Aspirine : effet irréversible 7–10 jours, charge 250–300 mg au SCA, 75–160 mg en entretien. Elle n’est plus systématique en prévention primaire. Prasugrel est CI après un AVC. Clopidogrel est une prodrogue ; le ticagrélor se prend en deux prises."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Héparines, antidote et TIH. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Le sulfate de protamine est l’antidote de l’HNF.", "why": "Antidote collège ; pour HBPM/fondaparinux, antidotes « en cours de développement »."},
+        {"letter": "B", "text": "HBPM et fondaparinux : CI si clairance < 30 mL/min.", "why": "Élimination rénale."},
+        {"letter": "C", "text": "TIH immunoallergique typique J5–J8 (plus tôt si héparine dans les 3 mois) : risque surtout thrombotique, pas hémorragique.", "why": "Paradoxe de la TIH (anticorps anti-PF4)."},
+        {"letter": "D", "text": "Suspicion de TIH : arrêter toute héparine (y compris flushs) et relais par danaparoïde (Orgaran®) au moins jusqu’à normalisation des plaquettes.", "why": "Conduite collège ; carte de TIH et pharmacovigilance."},
+        {"letter": "E", "text": "On poursuit l’HNF à dose réduite tant que le TCA n’est pas allongé, car la TIH est une CI relative.", "why": "Arrêt immédiat de toute source d’héparine ; ne pas attendre la biologie si suspicion forte."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La protamine antagonise l’HNF. HBPM et fondaparinux sont CI en IR sévère. La TIH (souvent J5–J8) se manifeste par thromboses paradoxales : on arrête toute héparine et on passe au danaparoïde. On ne poursuit jamais l’héparine « à dose réduite »."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Surdosage asymptomatique en AVK (INR cible 2,5) et hémorragie grave. D’après le collège/HAS, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "INR entre 4 et 6 sans saignement : saut d’une prise, pas de vitamine K, puis adaptation de posologie.", "why": "Tableau HAS du chapitre 330."},
+        {"letter": "B", "text": "INR entre 6 et 10 sans saignement : arrêt des AVK et vitamine K 1–2 mg per os.", "why": "Même tableau, cible 2,5."},
+        {"letter": "C", "text": "INR > 10 sans saignement : arrêt des AVK et vitamine K 5 mg per os.", "why": "Dose collège (½ ampoule buvable adulte)."},
+        {"letter": "D", "text": "Hémorragie grave : concentrés de complexes prothrombiniques (PPSB/CCP) à action immédiate, toujours associés à la vitamine K (délai de quelques heures).", "why": "Double antagonisation : PPSB bref, vitamine K pour relais."},
+        {"letter": "E", "text": "La vitamine K IV agit en quelques minutes et rend le PPSB inutile.", "why": "La vitamine K agit en quelques heures ; le PPSB est indispensable en hémorragie grave."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sans saignement, on saute une prise dès INR 4–6, on donne 1–2 mg de vitamine K entre 6 et 10, et 5 mg au-delà de 10. En hémorragie grave, PPSB (effet immédiat) plus vitamine K (effet différé). La vitamine K seule ne suffit pas en urgence."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Anticoagulants oraux directs : pharmacologie, indications et limites. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Dabigatran : anti-IIa, élimination rénale ≈ 80 % ; rivaroxaban et apixaban : anti-Xa (rénale ≈ 33 % et 25 %).", "why": "Tableau 22.9."},
+        {"letter": "B", "text": "Efficacité dès environ 2 heures, sans relais héparine obligatoire pour une FA ou une MTEV (sauf dabigatran dans la MTEV : 5–7 jours d’héparine).", "why": "Délai d’action et schémas du tableau 22.12."},
+        {"letter": "C", "text": "INR et TCA de routine permettent d’ajuster la dose comme sous AVK.", "why": "Pas de surveillance d’efficacité en routine ; les tests usuels sont perturbés mais non interprétables pour titrer."},
+        {"letter": "D", "text": "Idarucizumab (Praxbind®) : antidote spécifique du dabigatran.", "why": "Seul antidote spécifique commercialisé mentionné par le collège."},
+        {"letter": "E", "text": "Valve mécanique et RM serré : contre-indication absolue aux AOD.", "why": "Mention explicite du chapitre 330."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les AOD agissent en environ 2 h (anti-IIa ou anti-Xa). L’idarucizumab antagonise le dabigatran. Ils sont formellement CI sur mécanique et RM serré. On ne les pilote pas avec l’INR/TCA de routine."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Thrombolytiques : indications, modalités et contre-indications collège. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Indications IV : IDM de moins de 6–12 h sans angioplastie possible, AVC ischémique dans les 4 h 30 (après exclusion d’hémorragie), EP grave.", "why": "Trois indications du chapitre 330."},
+        {"letter": "B", "text": "Ténectéplase : demi-vie longue, un seul bolus IV.", "why": "Simplification d’administration par rapport à l’altéplase."},
+        {"letter": "C", "text": "CI notables : grossesse, chirurgie récente, HTA non contrôlée > 200 mmHg, péricardite aiguë, endocardite, AVC étendu < 6 mois, AVK en cours, RCP prolongée.", "why": "Liste collège du risque hémorragique."},
+        {"letter": "D", "text": "Risque d’hémorragie intracérébrale de l’ordre de 0,7 à 2 %.", "why": "Chiffre collège."},
+        {"letter": "E", "text": "La streptokinase reste le fibrinolytique de 1re intention en France.", "why": "N’est plus commercialisée."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les fibrinolytiques concernent STEMI sans PCI, AVC < 4 h 30 et EP grave. La ténectéplase se donne en bolus unique. Les CI hémorragiques sont nombreuses (grossesse, HTA > 200, péricardite, EI, etc.). La streptokinase n’est plus disponible."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Cibles tensionnelles et stratégie d’initiation du traitement antihypertenseur (ESC 2024, collège). Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Chez tout hypertendu, viser PAS 120–129 mmHg et PAD 70–79 mmHg, si possible 120/70 mmHg, en adaptant si fragilité, orthostatisme ou âge > 85 ans.", "why": "Cible européenne 2024 reprise par le collège."},
+        {"letter": "B", "text": "Bithérapie d’emblée pour la majorité, en association fixe à faible dose (IEC ou ARA2 + IC dihydropyridine, ou IEC/ARA2 + thiazidique).", "why": "Initiation collège ; jamais IEC + ARA2."},
+        {"letter": "C", "text": "Monothérapie si PA élevée 120–139 avec indication pharmacologique, fragilité, hypotension orthostatique, ou âge > 85 ans.", "why": "Exceptions à la bithérapie."},
+        {"letter": "D", "text": "Les bêtabloquants sont la bithérapie initiale de tout hypertendu, plus efficaces que les autres classes contre l’AVC.", "why": "BB seulement si autre indication ; moins efficaces sur la prévention des AVC."},
+        {"letter": "E", "text": "Il ne faut jamais associer IEC et ARA2.", "why": "Association non recommandée (trait rouge de la figure collège)."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La cible actuelle est 120–129 / 70–79 mmHg, individualisée chez le fragile. On débute le plus souvent par une bithérapie fixe IEC/ARA2 + IC ou thiazidique, jamais IEC + ARA2. Les bêtabloquants ne sont pas le socle initial de l’HTA isolée."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Contre-indications des antihypertenseurs et éducation. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "IEC et ARA2 : CI en grossesse ; prudence si femme en âge de procréer sans contraception, hyperK, sténose rénale bilatérale, IR sévère.", "why": "Tableau 4.5."},
+        {"letter": "B", "text": "Thiazidiques : CI si hypercalcémie, hypokaliémie, goutte, grossesse.", "why": "Même tableau."},
+        {"letter": "C", "text": "Bêtabloquants : CI si asthme, BAV 2 ou 3.", "why": "CI absolues collège."},
+        {"letter": "D", "text": "En cas de diarrhée, vomissements, canicule : diminution transitoire des diurétiques, IEC et ARA2, surtout chez le sujet âgé, avec ionogramme et créatinine.", "why": "Éducation thérapeutique anti-hypovolémie."},
+        {"letter": "E", "text": "Les IC non dihydropyridines (vérapamil, diltiazem) sont le traitement de choix de l’IC à FE altérée hypertensive.", "why": "CI dans l’IC à fonction systolique altérée."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "IEC/ARA2 sont tératogènes ; thiazidiques sont CI en cas de goutte, dyskaliémie, hypercalcémie et grossesse ; les BB le sont en cas d’asthme et de BAV de haut degré. On suspend SRA/diurétiques si déshydratation. Vérapamil/diltiazem n’ont pas leur place dans l’IC systolique."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "HTA dite résistante. Quelles propositions thérapeutiques sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Définition : PA au-dessus de la cible malgré mesures hygiénodiététiques et au moins 3 classes à dose optimale, dont un thiazidique (ou apparenté), confirmée par AMT ± MAPA.", "why": "On ne parle de résistance qu’avec un diurétique dans la trithérapie."},
+        {"letter": "B", "text": "Vérifier observance, sel, alcool, AINS/corticoïdes/œstrogènes, cannabis/cocaïne, SAOS, blouse blanche.", "why": "Causes d’HTA « faussement résistante »."},
+        {"letter": "C", "text": "4e ligne : spironolactone (éplérénone si mal tolérée), puis bêtabloquant s’il n’était pas déjà indiqué.", "why": "Algorithme collège de l’HTA résistante."},
+        {"letter": "D", "text": "On peut porter le diagnostic de résistance sous bithérapie IEC + amlodipine sans diurétique, dès que la PAS reste à 150 mmHg.", "why": "Sans thiazidique, ce n’est pas une HTA résistante."},
+        {"letter": "E", "text": "Trithérapie optimale de référence : IEC ou ARA2 + inhibiteur calcique + thiazidique.", "why": "Socle à vérifier avant d’ajouter un antialdostérone."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’HTA résistante suppose une vraie trithérapie incluant un thiazidique, vérifiée en ambulatoire. Après avoir écarté les fausses résistances, on ajoute la spironolactone. Une bithérapie sans diurétique ne suffit pas à poser le diagnostic."
+    },
+    {
+      "item": "224",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Urgence hypertensive. Quelles modalités de baisse de la PA et quels médicaments de 1re intention sont exacts ?",
+      "options": [
+        {"letter": "A", "text": "Cas général : baisse de 20–25 % en 2 heures, vers 160/110 mmHg en 2–6 heures, sans hypotension brutale.", "why": "Autorégulation altérée : risque d’ischémie cérébrale, coronaire ou rénale si chute trop rapide."},
+        {"letter": "B", "text": "Dissection aortique : PAS < 120 mmHg le plus rapidement possible.", "why": "Exception collège."},
+        {"letter": "C", "text": "Urapidil IV et/ou nicardipine IV en 1re intention ; nicardipine CI dans l’insuffisance cardiaque.", "why": "Choix collège des vasodilatateurs IV."},
+        {"letter": "D", "text": "SCA ou OAP hypertensif : dérivés nitrés IV en 1re intention.", "why": "Double bénéfice anti-ischémique/antihypertenseur."},
+        {"letter": "E", "text": "Toute PAS > 180 mmHg sans atteinte d’organe justifie la même baisse IV agressive que la dissection.", "why": "Sans souffrance viscérale ce n’est pas une urgence hypertensive ; on n’impose pas une chute IV brutale."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "On abaisse la PA de 20–25 % en quelques heures, sauf dissection (PAS < 120 mmHg d’emblée). Urapidil/nicardipine IV, nitrés si SCA ou OAP. Une HTA sévère isolée n’est pas traitée comme une dissection."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Objectifs de LDL-C selon le collège (catégories de risque). Quelles cibles sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Risque très élevé (dont prévention secondaire d’une maladie cardiovasculaire documentée) : LDL-C < 0,55 g/L.", "why": "Points du chapitre 223."},
+        {"letter": "B", "text": "Risque élevé : LDL-C < 0,7 g/L.", "why": "Même tableau d’objectifs."},
+        {"letter": "C", "text": "Risque modéré : LDL-C < 1,0 g/L.", "why": "Idem."},
+        {"letter": "D", "text": "Risque faible : LDL-C < 1,15 g/L.", "why": "Idem."},
+        {"letter": "E", "text": "En prévention secondaire, on peut se contenter d’un régime de 3 mois avant toute statine, même si le LDL est très au-dessus de la cible.", "why": "En risque très élevé/prévention secondaire, le médicament est associé d’emblée à la diététique."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les cibles de LDL-C sont < 1,15 ; < 1,0 ; < 0,7 et < 0,55 g/L selon le risque faible, modéré, élevé et très élevé. La maladie cardiovasculaire documentée place d’emblée en très haut risque, avec statine immédiate, sans attendre 3 mois de régime seul."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Escalade hypolipémiante d’une hypercholestérolémie. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Statine en premier choix (bénéfice CV le mieux démontré) ; intensification jusqu’à la dose maximale tolérée ou substitution par une statine plus puissante.", "why": "Atorvastatine/rosuvastatine plus puissantes que simva/prava."},
+        {"letter": "B", "text": "Si la cible n’est pas atteinte : association statine + ézétimibe (environ −20 % de LDL supplémentaires).", "why": "2e palier collège, avant résines."},
+        {"letter": "C", "text": "Statines contre-indiquées pendant la grossesse.", "why": "CI collège."},
+        {"letter": "D", "text": "Les fibrates sont le 1er choix pour abaisser le LDL-C en prévention secondaire.", "why": "Fibrates : hypertriglycéridémie ; rarement en 2e choix si intolérance aux statines."},
+        {"letter": "E", "text": "Anti-PCSK9 (alirocumab, évolocumab) remboursés en prévention secondaire si LDL encore > 0,7 g/L sous traitement optimisé incluant une statine à dose maximale tolérée.", "why": "Critères français du collège."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "On commence par une statine, on titre, puis on ajoute l’ézétimibe. Les PCSK9 sont remboursés en secondaire si le LDL reste > 0,7 g/L. Les statines sont CI chez la femme enceinte. Les fibrates ne sont pas le traitement du LDL."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Hypertriglycéridémie et surveillance des hypolipémiants. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "TG entre 1,5 et 5 g/L : traitement diététique seul (poids, alcool, sucres, diabète).", "why": "Impact médicamenteux mineur dans cette fourchette."},
+        {"letter": "B", "text": "TG > 5 g/L malgré une diététique bien suivie : fibrate (± AGPI n-3 à forte dose, formulation non commercialisée en France en 2025).", "why": "Seuil collège d’instauration d’un fibrate."},
+        {"letter": "C", "text": "HTG majeure > 10 g/L : risque de pancréatite ; apport lipidique < 30 g/j, avis spécialisé.", "why": "Hyperchylomicronémie."},
+        {"letter": "D", "text": "CPK systématiques chez tout patient sous statine, même asymptomatique et sans facteur de risque.", "why": "Surveillance musculaire clinique ; CPK seulement si douleurs, IR, hypothyroïdie, myopathie familiale, alcool, âge > 70 ans."},
+        {"letter": "E", "text": "Arrêt de la statine si CPK > 5 N (à distance d’un effort) ; si ALAT > 3 N : arrêt ou baisse de dose, contrôle à 4–6 semaines.", "why": "Seuils collège de tolérance."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les TG modérés se traitent par le régime ; au-delà de 5 g/L on discute un fibrate ; au-delà de 10 g/L le risque est pancréatique. On ne dose pas les CPK en routine. On arrête la statine si CPK > 5 N ou si les transaminases dépassent 3 N."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Traitement médical de fond d’une AOMI symptomatique. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Antiagrégant (aspirine ou clopidogrel) pour réduire infarctus et AVC.", "why": "Indiqué dès l’AOMI symptomatique ; discuté si IPS < 0,90 asymptomatique isolé."},
+        {"letter": "B", "text": "Statine systématique : LDL-C < 0,55 g/L et réduction d’au moins 50 %.", "why": "Objectif identique à la prévention secondaire."},
+        {"letter": "C", "text": "Si une anticoagulation curative est déjà indiquée (FA, MTEV), on ne conserve que l’anticoagulant, sans antiplaquettaire associé pour l’AOMI.", "why": "Mention collège."},
+        {"letter": "D", "text": "Association aspirine + rivaroxaban 2,5 mg × 2/j remboursée au long cours en France dans l’AOMI stable.", "why": "Indication européenne non remboursée ; en France seulement dans les 10 jours suivant une revascularisation des MI."},
+        {"letter": "E", "text": "IEC : intérêt pronostique ; on peut les considérer chez tout patient avec AOMI en l’absence de CI, avec cible tensionnelle 120–129 / 70–79 mmHg.", "why": "Cibles et place des IEC du chapitre AOMI."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "AOMI symptomatique : antiagrégant, statine intensive (LDL < 0,55 g/L) et souvent un IEC, avec les cibles tensionnelles actuelles. Si un anticoagulant curatif est déjà justifié, on ne rajoute pas d’antiplaquettaire. Le rivaroxaban 2,5 mg n’est remboursé en France qu’après revascularisation récente."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Claudication intermittente : traitement local et revascularisation. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Marche supervisée : 30–45 min, au moins 3 fois/semaine, en s’arrêtant au seuil douloureux ; 12 semaines pour le réentraînement.", "why": "Pierre angulaire, supérieure à la marche non supervisée."},
+        {"letter": "B", "text": "Revascularisation d’emblée si périmètre < 100 m très invalidant et/ou lésions aorto-iliaques sévères, ou après échec du traitement médical bien mené.", "why": "Algorithme collège de la claudication."},
+        {"letter": "C", "text": "Après angioplastie ± stent : bithérapie antiplaquettaire 1 à 6 mois selon le geste et le site.", "why": "Durée collège."},
+        {"letter": "D", "text": "La pentoxifylline améliore le pronostic vital et remplace la réadaptation.", "why": "Effet modestement symptomatique, sans bénéfice pronostique ; plusieurs vasoactifs retirés/déremboursés."},
+        {"letter": "E", "text": "Les bêtabloquants sont toujours formellement contre-indiqués dès qu’il existe une AOMI.", "why": "Utilisables si indication formelle (IC, coronaropathie, arythmie), avec prudence en ischémie critique non revascularisable."}
+      ],
+      "correct": ["A", "B", "C"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La marche supervisée est le traitement de la claudication. On revascularise si handicap majeur (PM < 100 m) ou lésions aorto-iliaques, puis DAPT 1–6 mois après stent. Les vasoactifs n’améliorent pas le pronostic. Un bêtabloquant n’est pas une CI absolue d’AOMI."
+    },
+    {
+      "item": "225",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Cibles d’un patient claudicant et ischémie permanente. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Arrêt du tabac, régime méditerranéen, IMC 20–25 kg/m², HbA1c < 7 %.", "why": "Contrôle des FDR collège."},
+        {"letter": "B", "text": "Ischémie permanente : revasculariser autant que possible ; prostaglandines IV en milieu spécialisé si non revascularisable.", "why": "Stratégie de sauvetage de membre."},
+        {"letter": "C", "text": "Amputation : ultime recours, en zone bien oxygénée (TcPO2), en préservant si possible l’appui ou le genou.", "why": "Objectif fonctionnel collège."},
+        {"letter": "D", "text": "Les soins de plaies relèvent d’une équipe multidisciplinaire spécialisée.", "why": "Mention collège."},
+        {"letter": "E", "text": "Une fois le membre revascularisé et la claudication disparue, statine et antiagrégant peuvent être arrêtés.", "why": "Le pronostic vital reste cardiovasculaire ; le traitement de fond se poursuit."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tabac, LDL, PA, HbA1c et poids restent des cibles même après revascularisation. L’ischémie permanente impose de revasculariser ; prostaglandines ou amputation si échec. Le traitement antithrombotique et la statine ne s’arrêtent pas parce que la claudication a disparu."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Antibiothérapie de l’endocardite infectieuse (principes et schémas collège). Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Antibiothérapie bactéricide, synergique, à fortes doses, IV, 4 à 6 semaines.", "why": "Principes généraux."},
+        {"letter": "B", "text": "Probabiliste après les hémocultures si forte suspicion, sepsis sévère ou chirurgie urgente.", "why": "On ne retarde pas le traitement dans ces situations."},
+        {"letter": "C", "text": "La durée est raccourcie d’emblée si une chirurgie d’exérèse a été réalisée.", "why": "Durée identique même si intervention."},
+        {"letter": "D", "text": "Staphylocoque méticilline-sensible, valve native : cloxacilline ou céfazoline 4–6 semaines.", "why": "Tableau 9.2."},
+        {"letter": "E", "text": "Même germe sur prothèse : cloxacilline (ou céfazoline) + rifampicine 6 semaines + gentamicine 2 semaines.", "why": "Tri-thérapie des EI sur prothèse à SAMS."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’EI se traite par une association IV prolongée (4–6 semaines), probabiliste si sepsis ou chirurgie urgente. La chirurgie ne raccourcit pas la durée. Le SAMS natif se traite par cloxacilline/céfazoline ; sur prothèse on ajoute rifampicine et 2 semaines de gentamicine."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Indications chirurgicales en phase active d’EI (délais collège). Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "IC gauche réfractaire ou choc cardiogénique : chirurgie très urgente (< 24 h).", "why": "Indication hémodynamique TU."},
+        {"letter": "B", "text": "Infection locale non contrôlée (abcès, fistule, faux anévrisme, végétations croissant, désinsertion, BAV) : urgent (3–5 jours).", "why": "Indication infectieuse U."},
+        {"letter": "C", "text": "Végétations gauches > 10 mm persistantes après un ou plusieurs emboles malgré une antibiothérapie adaptée : urgent.", "why": "Indication embolique U."},
+        {"letter": "D", "text": "On attend toujours la fin des 6 semaines d’antibiotiques avant d’opérer, pour stériliser le champ opératoire.", "why": "Environ 50 % des patients sont opérés en phase active ; le chirurgien est prévenu dès le diagnostic."},
+        {"letter": "E", "text": "EI fongique ou à germe multirésistant : chirurgie non urgente, au cours de la même hospitalisation.", "why": "Délai NU du collège."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Chirurgie très urgente si choc/IC réfractaire, urgente (3–5 jours) si infection locale non contrôlée ou végétations emboligènes > 10 mm, non urgente (même séjour) si champignon ou germe multirésistant. On n’attend pas la fin de l’antibiothérapie par principe."
+    },
+    {
+      "item": "152",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Prévention de l’EI : qui reçoit une antibioprophylaxie dentaire et selon quel schéma adulte ?",
+      "options": [
+        {"letter": "A", "text": "Réservée aux patients à haut risque (prothèses valvulaires y compris TAVI, matériel de réparation valvulaire, antécédent d’EI, cardiopathie congénitale cyanogène) pour soins dentaires avec manipulation gingivale/périapicale ou effraction muqueuse.", "why": "Périmètre collège ; pas de prophylaxie systématique sur valve native isolée."},
+        {"letter": "B", "text": "Amoxicilline (ou ampicilline) 2 g per os ou IV, 30–60 minutes avant le geste.", "why": "Posologie adulte collège."},
+        {"letter": "C", "text": "Tous les patients avec IA ou IM native reçoivent la même prophylaxie à chaque détartrage.", "why": "Risque intermédiaire : hygiène dentaire, pas d’antibioprophylaxie systématique."},
+        {"letter": "D", "text": "Hygiène buccodentaire, désinfection des plaies, éviter tatouages/piercings et automédication antibiotique : mesures pour toutes les cardiopathies à risque.", "why": "Éducation non spécifique."},
+        {"letter": "E", "text": "Allergie à la pénicilline : azithromycine 500 mg per os (ou céfazoline/ceftriaxone 1 g) 30–60 minutes avant.", "why": "Alternatives collège."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Seuls les patients à haut risque reçoivent 2 g d’amoxicilline (ou une alternative) 30–60 min avant un geste dentaire à risque. L’IA/IM native n’impose pas cette prophylaxie. L’hygiène cutanée et dentaire concerne en revanche tous les patients à risque."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Choix du substitut et place du TAVI dans le RA serré. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Prothèse mécanique : anticoagulation par AVK à vie ; indiquée plutôt chez le sujet jeune.", "why": "Durabilité longue contre le prix des AVK."},
+        {"letter": "B", "text": "Bioprothèse chirurgicale : évite l’anticoagulation au long cours ; plutôt après 65 ans ; dégénérescence en 10–15 ans.", "why": "Balance collège."},
+        {"letter": "C", "text": "TAVI : 1re intention après 75 ans si voie fémorale possible, quel que soit le risque chirurgical ; aussi si inopérable ou haut risque, quel que soit l’âge — décision de Heart Team.", "why": "Indications collège actualisées."},
+        {"letter": "D", "text": "Valvuloplastie au ballon (sans prothèse) : traitement de 1re intention de tout RA serré symptomatique.", "why": "Quasi abandonnée (resténose précoce) ; pont vers une chirurgie extra-cardiaque urgente."},
+        {"letter": "E", "text": "Les AOD remplacent les AVK 3 mois après un remplacement mécanique aortique.", "why": "AOD formellement CI sur mécanique, même transitoirement (item 153/330)."}
+      ],
+      "correct": ["A", "B", "C"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mécanique + AVK à vie si patient jeune ; bioprothèse après 65 ans pour éviter les anticoagulants. Le TAVI fémoral est 1re ligne après 75 ans, toujours en Heart Team. La dilatation au ballon n’est plus un traitement de fond. Les AOD n’ont aucune place sur une mécanique."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Indications de remplacement (chirurgie ou TAVI) pour un RA serré. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Tout RA serré symptomatique doit être traité, pratiquement sans limite d’âge, si l’état général le permet et sans maladie concurrente à pronostic vital court.", "why": "Risque vital du RA serré symptomatique."},
+        {"letter": "B", "text": "RA serré vraiment asymptomatique à FEVG normale : surveillance, sauf épreuve d’effort anormale, Vmax > 5 m/s, aggravation rapide, ou FEVG < 55 %.", "why": "Exceptions collège à l’abstention."},
+        {"letter": "C", "text": "Un traitement médical intensif (IEC + BB) permet de différer durablement l’intervention d’un RA serré dyspnéique.", "why": "Aucun médicament ne corrige l’obstacle ; l’intervention ne se reporte pas."},
+        {"letter": "D", "text": "RA à bas débit/bas gradient et FE < 35 % : l’écho de stress dobutamine aide à écarter une pseudosténose (surface qui passe > 1 cm² sous dobutamine).", "why": "Aide à la décision opératoire."},
+        {"letter": "E", "text": "Le bilan préopératoire comporte une imagerie coronaire, un bilan de foyers ORL/dentaires, et un avis gériatrique chez le très âgé.", "why": "Risque opératoire et prévention d’EI."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le RA serré symptomatique se remplace. L’asymptomatique à FE normale se surveille, sauf test d’effort anormal, RA très serré (Vmax > 5 m/s), dégradation rapide ou FE < 55 %. Rien ne remplace l’obstacle médicalement. Dobutamine et bilan coronaire/foyers font partie de la préparation."
+    },
+    {
+      "item": "233RA",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Après décision de TAVI ou de chirurgie pour RA, quelles propositions de traitement associé sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "L’indication de TAVI ne peut être portée sans discussion médicochirurgicale (Heart Team).", "why": "Condition collège."},
+        {"letter": "B", "text": "La valvuloplastie au ballon reste indiquée en pont vers une chirurgie extra-cardiaque urgente chez un RA serré symptomatique.", "why": "Seule indication résiduelle."},
+        {"letter": "C", "text": "TAVI inopérable/haut risque : recommandé quel que soit l’âge.", "why": "Mention collège."},
+        {"letter": "D", "text": "Une mécanique aortique autorise un AOD si l’INR est labile.", "why": "CI absolue des AOD sur toute mécanique."},
+        {"letter": "E", "text": "Bioprothèse chirurgicale chez le sujet âgé : pas d’anticoagulation à vie du seul fait de la valve.", "why": "Avantage majeur vs mécanique."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le TAVI est une décision de Heart Team, y compris chez l’inopérable quel que soit l’âge. Le ballon n’est qu’un pont vers une chirurgie non cardiaque urgente. La bioprothèse évite l’anticoagulation à vie. Les AOD restent interdits sur une mécanique, même si l’INR est instable."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Traitement de l’insuffisance mitrale selon le mécanisme. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "IM secondaire : optimiser d’abord le traitement de l’IC (médicaments, resynchronisation) ; clip percutané si IM importante persistante, IC non trop avancée, après RCP.", "why": "Hiérarchie collège de l’IM fonctionnelle."},
+        {"letter": "B", "text": "IM aiguë mal tolérée : chirurgie urgente.", "why": "Indication hémodynamique."},
+        {"letter": "C", "text": "IM primaire significative symptomatique : chirurgie en privilégiant la plastie reconstructrice.", "why": "Plastie = traitement chirurgical idéal (moins de dysfonction VG, moins d’EI)."},
+        {"letter": "D", "text": "Remplacement valvulaire indiqué même si FEVG < 30 % dans l’IM primaire, car la FE s’améliore toujours après correction.", "why": "FE baisse d’environ 10–15 % en postopératoire ; remplacement CI si FE < 30 % → médical ou greffe."},
+        {"letter": "E", "text": "Clip bord à bord possible si IM dystrophique symptomatique inopérable ou à haut risque, avec critères échocardiographiques d’éligibilité, sans futilité.", "why": "Voie percutanée du collège."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’IM secondaire se traite d’abord comme une IC. L’IM aiguë mal tolérée et l’IM primaire sévère symptomatique relèvent de la chirurgie, plastie d’abord. Un remplacement est contre-indiqué si FEVG < 30 %. Le clip est une option si inopérable (primaire) ou IC secondaire sélectionnée."
+    },
+    {
+      "item": "233IM",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Traitement médical et prévention dans l’IM. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Poussée d’IC : diurétiques et vasodilatateurs, sans reporter une chirurgie indiquée.", "why": "Traitement d’attente, pas de substitut à la correction d’une IM primaire sévère."},
+        {"letter": "B", "text": "Anticoagulation si fibrillation atriale.", "why": "Indication classique associée à l’IM."},
+        {"letter": "C", "text": "Bêtabloquants si maladie de Marfan, pour réduire le risque de dissection aortique.", "why": "Mention collège dans le chapitre IM."},
+        {"letter": "D", "text": "IM minime/modérée : pas d’antibioprophylaxie systématique ; hygiène cutanée et soins dentaires réguliers.", "why": "Prévention « oslérienne » moderne."},
+        {"letter": "E", "text": "Toute IM primaire de grade III–IV asymptomatique se traite médicalement à vie ; la chirurgie n’est discutée qu’en cas de choc.", "why": "Même asymptomatique, la chirurgie (plastie si possible) est indiquée dès un retentissement VG (DTS > 40 mm, FEVG < 60 %, PAPS > 50 mmHg…)."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Diurétiques et vasodilatateurs soulagent une poussée mais ne remplacent pas une chirurgie indiquée. On anticoagule en cas de FA. Les BB protègent l’aorte de Marfan. Pas de prophylaxie antibiotique sur IM native minime/modérée. Une IM primaire sévère asymptomatique s’opère dès un retentissement VG, pas seulement en cas de choc."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Traitement médical de l’insuffisance aortique. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Aucun médicament n’a démontré un bénéfice spécifique ; les IEC ne sont pas recommandés pour prévenir le remodelage d’une IA modérée à sévère.", "why": "Phrase collège du traitement médical."},
+        {"letter": "B", "text": "IA sévère + IC congestive : diurétiques ± IEC/vasodilatateur en attendant la chirurgie.", "why": "Traitement d’attente uniquement."},
+        {"letter": "C", "text": "Bêtabloquants classiquement contre-indiqués (allongement de la diastole, aggravation de la fuite).", "why": "CI relative classique de l’IA."},
+        {"letter": "D", "text": "Marfan ou aorte dilatée : bêtabloquants validés pour protéger l’aorte ; ARA2 seulement si intolérance aux BB.", "why": "Exception où le BB est indiqué."},
+        {"letter": "E", "text": "La disparition des signes d’IC sous diurétiques autorise à différer indéfiniment le remplacement valvulaire.", "why": "La chirurgie ne doit pas être reportée pour autant."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Il n’existe pas de traitement médical de fond de l’IA ; IEC et BB n’empêchent pas le remodelage, et les BB aggravent même la fuite, sauf protection aortique du Marfan. Les diurétiques n’autorisent pas à reporter une chirurgie indiquée."
+    },
+    {
+      "item": "233IA",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Prophylaxie d’EI et indications opératoires de l’IA chronique sévère. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Pas d’antibioprophylaxie systématique sur IA native ; oui si ATCD d’EI, prothèse ou cardiopathie cyanogène.", "why": "Même logique que les autres valvulopathies natives."},
+        {"letter": "B", "text": "Hygiène dentaire et examen dentaire tous les 6 mois.", "why": "Mesure collège."},
+        {"letter": "C", "text": "Chirurgie si IA chronique sévère symptomatique (dyspnée, IC congestive).", "why": "Indication clinique princeps."},
+        {"letter": "D", "text": "Chirurgie si asymptomatique avec DTS > 50 mm ou > 25 mm/m², ou FEVG < 50 %.", "why": "Seuils échographiques collège."},
+        {"letter": "E", "text": "Sport de compétition autorisé en IA sévère dès que la FEVG est > 55 %.", "why": "Compétition CI ; endurance de loisir modérée encouragée."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sur valve native, l’hygiène dentaire remplace la prophylaxie antibiotique. On opère l’IA sévère dès qu’elle est symptomatique, ou asymptomatique avec dilatation VG (DTS > 50 mm / 25 mm/m²) ou FEVG < 50 %. La compétition reste contre-indiquée."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Anticoagulation et antiagrégation selon le type de prothèse valvulaire. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Mécanique : AVK à vie ; AOD formellement contre-indiqués, même transitoirement.", "why": "Risque thrombotique ; CI collège."},
+        {"letter": "B", "text": "TAVI en rythme sinusal : aspirine seule au long cours ; anticoagulation seulement si FA (AOD autorisé dans cette indication).", "why": "Tableau 10.3."},
+        {"letter": "C", "text": "Bioprothèse mitrale en rythme sinusal : AVK 3 mois puis rien.", "why": "Même tableau."},
+        {"letter": "D", "text": "Bioprothèse aortique en rythme sinusal : aspirine ou AVK 3 mois puis rien ; AOD autorisé au-delà de 3 mois si indication non valvulaire.", "why": "Tableau 10.3."},
+        {"letter": "E", "text": "Après TAVI en rythme sinusal, une anticoagulation curative est systématique 12 mois pour prévenir la thrombose de feuillets.", "why": "Pas d’anticoagulation efficace systématique pour le TAVI ; aspirine seule si sinus."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Toute mécanique impose un AVK à vie, jamais un AOD. Le TAVI en sinus se contente d’aspirine. Les bioprothèses mitrales (et souvent aortiques) n’ont d’AVK que 3 mois si le rythme est sinusal. On n’anticoagule pas un TAVI sinusal par principe."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "INR cibles des mécaniques et conduite en cas d’hémorragie. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Facteurs de risque patient : position mitrale ou tricuspide, ATCD thromboembolique, FA, sténose mitrale, FEVG < 35 %.", "why": "Légende du tableau 10.2."},
+        {"letter": "B", "text": "Prothèse à faible risque thrombotique (double ailette type Saint-Jude, Carbomedics…) sans FDR patient : INR cible 2,5.", "why": "Tableau 10.2."},
+        {"letter": "C", "text": "Prothèse à haut risque (Starr à bille, Björk-Shiley à disque…) avec FDR patient : INR cible 4,0.", "why": "Même tableau (3,5 sans FDR, 4,0 avec FDR)."},
+        {"letter": "D", "text": "Hémorragie sévère : interruption des AVK, mais maintien d’une héparine (TCA 1,5–2) autant que possible ; arrêt très temporaire si hémorragie intracrânienne vitale.", "why": "Équilibre hémorragie/thrombose de prothèse."},
+        {"letter": "E", "text": "Un AOD peut couvrir quelques jours d’INR labile chez un porteur de mécanique aortique récente.", "why": "CI même transitoire."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’INR cible des mécaniques va de 2,5 à 4,0 selon le thrombogénicité de la valve et les FDR du patient (mitrale, FA, FE basse…). En hémorragie grave on stoppe l’AVK mais on essaie de garder une héparine. Aucun AOD, même transitoire."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Péricardite aiguë bénigne : bithérapie anti-inflammatoire. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "AINS 1 à 2 semaines à pleine dose : aspirine 750–1000 mg/8 h ou ibuprofène 600 mg/8 h, puis sevrage progressif (4–8 semaines selon ESC 2015).", "why": "Schéma collège."},
+        {"letter": "B", "text": "Colchicine 0,5 mg × 2/j pendant 3 mois (réduit les récidives d’environ 50 %).", "why": "Durée et bénéfice collège."},
+        {"letter": "C", "text": "Demi-dose de colchicine (0,5 mg/j) si poids < 70 kg, âge > 70 ans, ou DFG < 35 mL/min ; CI si IR sévère.", "why": "Adaptations et CI."},
+        {"letter": "D", "text": "Corticoïdes d’emblée à 1 mg/kg pour écourter la durée d’AINS.", "why": "Pas en 1re intention (risque de récidive) ; seulement après échec AINS + colchicine, à 0,25–0,5 mg/kg/j, avec la bithérapie."},
+        {"letter": "E", "text": "Protecteur gastrique associé ; interactions de la colchicine via CYP3A4 (macrolides, ciclosporine, vérapamil, statines).", "why": "Surveillance transaminases, créatinine, CPK, NFS."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Le traitement de référence associe AINS à pleine dose et colchicine 3 mois, avec protecteur gastrique. On réduit la colchicine chez le sujet léger, âgé ou insuffisant rénal, et on la contre-indique en IR sévère. Les corticoïdes ne sont pas le traitement de première intention."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Repos, corticoïdes de 2e ligne et tamponnade. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Arrêt de l’exercice jusqu’à disparition des symptômes et normalisation de CRP, ECG et échocardiographie (en général le 1er mois).", "why": "Repos collège."},
+        {"letter": "B", "text": "Échec AINS + colchicine : corticoïdes 0,25–0,5 mg/kg/j en plus de la bithérapie.", "why": "Rang B du chapitre."},
+        {"letter": "C", "text": "Tamponnade : USIC, remplissage par macromolécules, discussion d’arrêt/neutralisation des anticoagulants, ponction écho-guidée ou drainage chirurgical.", "why": "Urgence médicochirurgicale."},
+        {"letter": "D", "text": "Arrêt brutal des AINS dès J2 si la douleur cède, pour limiter le risque gastrique.", "why": "Sevrage progressif ; arrêt trop précoce favorise les récidives."},
+        {"letter": "E", "text": "Suivi : J7 (médecin traitant), 1 mois (cardiologue + ETT) avant d’arrêter les anti-inflammatoires.", "why": "Calendrier collège."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "On repose le patient jusqu’à normalisation clinique et paraclinique. Les corticoïdes à faible dose ne viennent qu’en échec de la bithérapie. La tamponnade se draine après remplissage. Les AINS se sevrent progressivement, avec une écho de contrôle à 1 mois."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Médicaments de l’arrêt cardiocirculatoire en FV/TV réfractaire ou asystolie. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Adrénaline 1 mg toutes les 4 minutes, IV ou endotrachéale ; incontournable en asystolie réfractaire.", "why": "Posologie collège ; pronostic inversement lié à la quantité totale."},
+        {"letter": "B", "text": "En FV persistante : adrénaline après 2 minutes de RCP, juste avant le 2e ou le 3e choc.", "why": "Séquence collège."},
+        {"letter": "C", "text": "Amiodarone 300 mg IV (dans 20–30 mL de sérum salé) juste avant le 3e choc si TV/FV réfractaires.", "why": "Antiarythmique de 1re intention vs lidocaïne."},
+        {"letter": "D", "text": "Bolus supplémentaires d’amiodarone 150 mg si persistance après le 3e CEE ou récidive.", "why": "Dose collège."},
+        {"letter": "E", "text": "Lidocaïne 1,5 mg/kg (total ≤ 3 mg/kg) en 1re intention, l’amiodarone n’étant utilisée qu’en 2e ligne.", "why": "Lidocaïne seulement si l’amiodarone n’est pas disponible."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’adrénaline (1 mg/4 min) reste le vasopresseur de l’ACR. En FV réfractaire on l’injecte avant le 2e–3e choc, et l’amiodarone 300 mg avant le 3e choc (150 mg si besoin). La lidocaïne n’est qu’un substitut d’indisponibilité."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Autres médicaments de l’ACR et de la phase post-ROS. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Sulfate de magnésium 2 g IV si torsades de pointes ou suspicion d’hypomagnésémie.", "why": "Posologie collège."},
+        {"letter": "B", "text": "Atropine 1 mg/3–5 min (max 0,04 mg/kg) si bradycardie sinusale extrême ; isoprénaline si BAV 3 sans hémodynamique efficace.", "why": "Réservées aux ACR d’étiologie conductive/vagale, souvent intra-hospitaliers."},
+        {"letter": "C", "text": "Bicarbonate de sodium : pas en routine ; situations particulières (RCP prolongée, hyperK, intoxication aux stabilisateurs de membrane).", "why": "Alcalinisation discutée, non systématique."},
+        {"letter": "D", "text": "Après ROSC avec sidération : dobutamine = inotrope de choix ; coronarographie si SCA suspecté.", "why": "Préservation myocardique collège."},
+        {"letter": "E", "text": "Thrombolyse préhospitalière systématique dans tout ACR extrahospitalier.", "why": "Non recommandée en systématique ; cas par cas si IDM ou EP massive fortement suspectés."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Magnésium si torsades, atropine/isoprénaline si ACR vagal ou BAV, bicarbonate hors routine. Après ROSC, la dobutamine soutient la sidération et une coro s’impose si SCA probable. On ne fibrinolyse pas tous les ACR de rue."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Bradycardie mal tolérée : médicaments et stimulation temporaire. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Atropine en bolus IV : action transitoire, uniquement sur BAV nodal ou dysfonction sinusale.", "why": "Pas d’effet sur l’infranodal."},
+        {"letter": "B", "text": "Isoprénaline en perfusion continue : action prolongée, généralement efficace sur l’ensemble des troubles conductifs.", "why": "Chronotrope/dromotrope de l’attente d’un PM."},
+        {"letter": "C", "text": "Ce sont des traitements temporaires, en attendant la résolution ou l’appareillage définitif.", "why": "Pas de relais au long cours."},
+        {"letter": "D", "text": "L’atropine est le traitement de 1re intention du BAV infranodal à QRS larges mal toléré.", "why": "Inefficace ; isoprénaline ± sonde d’entraînement, comme dans le SCA antérieur."},
+        {"letter": "E", "text": "Torsades : accélérer la FC (isoprénaline ou stimulation), corriger hypoK/hypoMg, arrêter les médicaments allongeant le QT.", "why": "Prévention des récidives collège."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L’atropine ne marche que sur le nœud ; l’isoprénaline couvre presque tous les étages, en attendant un pacemaker. Le BAV infranodal ne répond pas à l’atropine. Les torsades se traitent en accélérant le cœur et en corrigeant les ions."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Indications de stimulation cardiaque définitive. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "BAV du 3e degré sans cause réversible : indication, même peu symptomatique.", "why": "Classe I collège/ESC."},
+        {"letter": "B", "text": "Mobitz 2, BAV de haut degré, blocs alternants : indication de pacemaker.", "why": "Siège infrahissien à haut risque d’asystolie."},
+        {"letter": "C", "text": "Dysfonction sinusale : PM si symptômes clairement liés à la bradycardie, ou si l’on doit poursuivre un bradycardisant indispensable.", "why": "Pas de PM si asymptomatique ou cause réversible isolée."},
+        {"letter": "D", "text": "FA permanente + BAV complet : stimulateur double chambre DDD pour conserver la synchronisation auriculo-ventriculaire.", "why": "En bradyarythmie sur FA permanente, on implante un stimulateur simple chambre VVI."},
+        {"letter": "E", "text": "BAV sur FEVG < 50 % : discuter stimulateur biventriculaire (resynchronisation) ou stimulation de l’aire de la branche gauche.", "why": "Éviter la désynchronisation d’une stimulation VD seule."}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV 3, Mobitz 2, haut degré et blocs alternants se pacent, hors cause réversible. La dysfonction sinusale ne se pace que si elle est symptomatique (ou si un bradycardisant est indispensable). En FA permanente on pose un VVI, pas un DDD. Si la FE est < 50 %, on vise une stimulation biventriculaire ou physiologique."
+    }
+  ]
+}

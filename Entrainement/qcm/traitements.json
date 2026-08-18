@@ -1,0 +1,383 @@
+{
+  "source": "Récap traitements d’après les cours MD du collège CNEC 3e éd. (dépôt). Pas d’annales UNESS.",
+  "groups": [
+    {
+      "id": "221",
+      "label": "221 Athérome / polyvasculaire",
+      "rows": [
+        {
+          "situation": "Prévention secondaire (maladie athéromateuse clinique)",
+          "traitement": "Antiagrégant (aspirine ou clopidogrel) + statine + contrôle des FDR",
+          "points": "Aspirine et statine : bénéfice de mortalité démontré. Arrêt du tabac et activité physique ciblent la dysfonction endothéliale.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "222",
+      "label": "222 FDR / prévention",
+      "rows": [
+        {
+          "situation": "Prévention secondaire (après SCA, AOMI, AVC athéromateux…)",
+          "traitement": "Aspirine (ou clopidogrel) + statine + contrôle strict des FDR (tabac, PA, LDL, diabète, activité physique)",
+          "points": "Le collège insiste sur l’association BASIC chez le polyvasculaire : BB, AAP, statine, IEC + FDR. Diététique méditerranéenne.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "223",
+      "label": "223 Dyslipidémies",
+      "rows": [
+        {
+          "situation": "Hypercholestérolémie / mixte",
+          "traitement": "Statine 1re intention ; + ézétimibe si cible non atteinte ; anti-PCSK9 si LDL restant > 0,7 g/L en prévention secondaire sous traitement maximal",
+          "points": "Prévention primaire : diététique ≥ 3 mois avant médicament (sauf risque très élevé). Statines CI grossesse. Objectif très haut risque : LDL < 0,55 g/L et baisse ≥ 50 %.",
+          "rang": "A"
+        },
+        {
+          "situation": "Hypertriglycéridémie",
+          "traitement": "Diététique si TG 1,5–5 g/L ; fibrate (± AGPI n-3) si TG > 5 g/L malgré diététique",
+          "points": "TG majeurs > 10 g/L : avis spécialisé, lipides < 30 g/j.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "224",
+      "label": "224 HTA",
+      "rows": [
+        {
+          "situation": "HTA confirmée",
+          "traitement": "Bithérapie d’emblée : IEC ou ARA2 + IC dihydropyridine, ou IEC/ARA2 + thiazidique (comprimé fixe)",
+          "points": "5 classes à bénéfice CV : IC, IEC, ARA2, BB, thiazidiques. Jamais IEC + ARA2. Cible ESC 2024 : PAS 120–129 et PAD 70–79 (adapter si > 85 ans, fragilité, HOA).",
+          "rang": "A"
+        },
+        {
+          "situation": "Monothérapie",
+          "traitement": "IEC, ARA2, thiazidique ou IC (pas un BB seul)",
+          "points": "Si PA 120–139 avec indication, fragilité, HOA, âge > 85 ans. BB seulement si autre indication (IC, SCA, angor…).",
+          "rang": "A"
+        },
+        {
+          "situation": "CI importantes",
+          "traitement": "IEC/ARA2 : grossesse, angio-œdème (IEC). BB : asthme, BAV 2–3. Thiazidiques : goutte, hypoK, hyperCa. IC non DHP : IC à FE basse, BAV 2–3.",
+          "points": "Arrêt transitoire IEC/ARA2/diurétiques si déshydratation (canicule, gastro).",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "225",
+      "label": "225 AOMI",
+      "rows": [
+        {
+          "situation": "AOMI symptomatique",
+          "traitement": "Aspirine ou clopidogrel + statine (LDL < 0,55 g/L, −50 %) + IEC + marche / réadaptation",
+          "points": "Antiagrégant discuté si AOMI isolée asymptomatique. BB possibles si indication formelle, prudence en ischémie critique non revascularisable. Revasculariser si ischémie permanente ou claudication invalidante après ttt médical.",
+          "rang": "A"
+        },
+        {
+          "situation": "Ischémie critique / AAA",
+          "traitement": "Revasculariser autant que possible en ischémie permanente ; prostaglandines IV si non revascularisable. AAA : intervention à froid si diamètre > 50–55 mm (chirurgie ou endoprothèse) ; rupture = urgence absolue",
+          "points": "Marche supervisée 30–45 min × 3/sem. Pentoxifylline : bénéfice périmètre seulement, pas de pronostic. Echo de surveillance d’autant plus fréquente que le diamètre s’approche du seuil.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "339",
+      "label": "339 SCA / angor",
+      "rows": [
+        {
+          "situation": "SCA ST+ angioplastie primaire",
+          "traitement": "Aspirine 250 mg IV puis 75–100 mg + prasugrel ou ticagrélor + HNF ou HBPM per procédure",
+          "points": "Prasugrel CI si ATC AVC ; éviter si > 75 ans ou < 60 kg. Ticagrélor : dyspnée / bradycardie réversibles. Clopidogrel si CI ou risque hémorragique. DAPT 12 mois après SCA.",
+          "rang": "A"
+        },
+        {
+          "situation": "SCA ST+ fibrinolyse",
+          "traitement": "Aspirine d’emblée + clopidogrel (seul P2Y12 autorisé avec fibrinolytique)",
+          "points": "Charge clopidogrel 300 mg si < 75 ans. Charge clopidogrel usuelle hors lyse : 600 mg.",
+          "rang": "A"
+        },
+        {
+          "situation": "SCA ST−",
+          "traitement": "Pas de DAPT systématique avant coro ; énoxaparine 1 mg/kg × 2 SC ou fondaparinux 2,5 mg/j (HNF si IR sévère)",
+          "points": "Coro < 2 h si très haut risque, < 24 h si haut risque. O2 seulement si SaO2 < 90 %. Nitrés IV possibles (ST−, HTA, congestion).",
+          "rang": "A"
+        },
+        {
+          "situation": "Angor stable",
+          "traitement": "Aspirine 75–100 mg + statine (LDL < 0,55 g/L) + TNT spray de crise. Fond : BB ; si CI : diltiazem/vérapamil ; DHP en 2e intention avec BB. Nitrés LP / nicorandil en 3e intention",
+          "points": "DAPT aspirine+clopidogrel 6 mois après stent (angor stable). Nitrés CI avec sildénafil. Revasculariser si symptômes malgré ttt ou haut risque (tronc, IVA prox, tritronculaire). Pontage si lésions diffuses / diabète.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "233RA",
+      "label": "233 RA",
+      "rows": [
+        {
+          "situation": "RA serré symptomatique",
+          "traitement": "Remplacement : mécanique si jeune (ACO à vie) ; bioprotèse si > 65 ans ; TAVI si inopérable / haut risque, et 1re intention si > 75 ans et voie fémorale possible",
+          "points": "Décision Heart Team. Valvuloplastie au ballon quasi abandonnée (pont vers chir non cardiaque urgente).",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "233IM",
+      "label": "233 IM",
+      "rows": [
+        {
+          "situation": "IM primaire importante",
+          "traitement": "Chirurgie (réparation mitrale de préférence) dès que symptomatique ou retentissement VG",
+          "points": "Médical = diurétiques ± vasodilatateurs en poussée ; ACO si FA. Pas d’antibioprophylaxie EI de routine (hygiène dentaire).",
+          "rang": "A"
+        },
+        {
+          "situation": "IM secondaire",
+          "traitement": "Optimiser l’IC (médicaments, CRT) ; geste mitral si échec",
+          "points": "IM aiguë : choc → discuter chir en urgence.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "233IA",
+      "label": "233 IA",
+      "rows": [
+        {
+          "situation": "IA chronique",
+          "traitement": "Pas de ttt médical spécifique pour le remodelage ; chir si sévère symptomatique ou dysfonction VG",
+          "points": "IEC non recommandés pour prévenir le remodelage. BB CI car allongent la diastole (sauf Marfan / aorte dilatée : BB validés).",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "152",
+      "label": "152 Endocardite",
+      "rows": [
+        {
+          "situation": "Antibiothérapie",
+          "traitement": "Bactéricide, IV, synergique, 4–6 semaines ; probabiliste après hémocultures si sepsis / chir urgente",
+          "points": "Staph MS native : cloxacilline 4–6 sem. Staph prothèse : + rifampicine 6 sem + genta 2 sem. Entérocoque : amox + ceftriaxone 6 sem.",
+          "rang": "A"
+        },
+        {
+          "situation": "Prévention",
+          "traitement": "Antibioprophylaxie seulement haut risque (prothèse, EI antérieure, cardiopathie cyanogène non corrigée) avant gestes dentaires à risque",
+          "points": "Hygiène buccodentaire pour tous.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "153",
+      "label": "153 Prothèses",
+      "rows": [
+        {
+          "situation": "Mécanique",
+          "traitement": "AVK à vie (pas d’AOD). INR 2–3 (cible 2,5) sauf mitrale mécanique / disque : 3–4,5",
+          "points": "Bioprotèse : pas d’ACO de principe au long cours. Fièvre inexpliquée = hémocultures. Thrombose obstructive : urgence (ETT/ETO, chir ou fibrinolyse selon tableau).",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "232",
+      "label": "232 FA",
+      "rows": [
+        {
+          "situation": "Anticoagulation chronique",
+          "traitement": "AOD préférés selon CHA2DS2-VA ; AVK seuls si prothèse mécanique ou RM modéré–sévère",
+          "points": "Score sans point « sexe » (CNEC 3e). Cardioversion : ACO 3 sem avant (sauf ETO normale ou FA < 24 h) et ≥ 4 sem après. 1er épisode : pas d’AA chronique de principe.",
+          "rang": "A"
+        },
+        {
+          "situation": "Rythme / fréquence",
+          "traitement": "Freinateurs : BB, vérapamil/diltiazem, digoxine (objectif FC < 110 à la marche). AA : amiodarone, flécaïnide, propafénone",
+          "points": "Coronaire ou IC : amiodarone seule. Choc électrique immédiat si choc. Digoxine IV si IC + kaliémie normale.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "236",
+      "label": "236 Conduction",
+      "rows": [
+        {
+          "situation": "Bradycardie mal tolérée",
+          "traitement": "Arrêt des bradycardisants ; isoprénaline / pacing transitoire si besoin ; stimulation définitive selon indication",
+          "points": "Causes extrinsèques : BB, IC bradycardisants, amiodarone, ivabradine, digitaliques.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "237",
+      "label": "237 Palpitations",
+      "rows": [
+        {
+          "situation": "Tachycardie jonctionnelle (Bouveret)",
+          "traitement": "Manœuvres vagales, adénosine IV flash ; ablation de la voie lente = ttt de référence si récidives",
+          "points": "Adénosine CI dans l’asthme et l’HTA non contrôlée. Pill-in-the-pocket possible si peu de crises.",
+          "rang": "A"
+        },
+        {
+          "situation": "WPW / FA sur voie accessoire",
+          "traitement": "Ablation de la voie si maligne (PR antérograde < 250 ms). FA : CEE si instable ; classe Ic ou amiodarone si stable",
+          "points": "CI formelle : adénosine, IC, BB, digitaliques (freinent le NAV, pas la voie accessoire).",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "342",
+      "label": "342 Syncope / PDCB",
+      "rows": [
+        {
+          "situation": "Syncope réflexe",
+          "traitement": "Éducation, éviter les déclencheurs, contramesures isométriques, hydratation / sel ; baisser les hypotenseurs",
+          "points": "Médicaments (fludrocortisone, α-agonistes) et pacemaker : rares, si bradycardie documentée prédominante.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "234",
+      "label": "234 Insuffisance cardiaque",
+      "rows": [
+        {
+          "situation": "HFrEF (FEVG < 40 %)",
+          "traitement": "5 classes : diurétique d’anse (congestif) + IEC ou ARNI (ou ARA2 si intolérance IEC) + BB (carvé/biso/méto/nébi) + antialdostérone + gliflozine",
+          "points": "Titration IEC : iono + créat à J7. CI : diltiazem/vérapamil, flécaïne, AINS. Ivabradine si sinusal, FC élevée malgré BB.",
+          "rang": "A"
+        },
+        {
+          "situation": "HFpEF",
+          "traitement": "Gliflozine + contrôler FA, HTA, surcharge, ischémie",
+          "points": "Moins codifié que HFrEF. Éviter le régime salé oublié.",
+          "rang": "A"
+        },
+        {
+          "situation": "OAP / choc",
+          "traitement": "Assis, furosémide 1 mg/kg IV, nitrés SL si PAS > 100 (domicile) / IV si PAS > 110 (hôpital). Choc : dobutamine, pas de nitrés",
+          "points": "O2 si SaO2 < 90 %. Morphine non systématique. DAI si FEVG < 35 % NYHA II–III, survie > 1 an. CRT si QRS large / BBG.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "226",
+      "label": "226 TVP / EP",
+      "rows": [
+        {
+          "situation": "TVP / EP non grave",
+          "traitement": "AOD anti-Xa, HBPM, fondaparinux ou HNF ; relais AVK possible",
+          "points": "Débuter si proba forte/intermédiaire sans risque hémorragique majeur, avant confirmation. HBPM/fondaparinux CI si DFG < 30 → HNF (TCA 1,5–2,5 ou anti-Xa).",
+          "rang": "A"
+        },
+        {
+          "situation": "EP haut risque (choc / hypotension)",
+          "traitement": "Fibrinolyse en réa / USIC + HNF",
+          "points": "Durée ACO : 3 mois si facteur transitoire majeur ; prolongée si idiopathique / persistant (selon collège). Compression + lever précoce.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "235",
+      "label": "235 Péricardite",
+      "rows": [
+        {
+          "situation": "Péricardite aiguë bénigne",
+          "traitement": "AINS 1–2 sem (aspirine 750–1000 mg/8 h ou ibuprofène 600 mg/8 h) + colchicine 0,5 mg × 2 /j pendant 3 mois + IPP",
+          "points": "Colchicine 0,5 mg/j si < 70 kg, > 70 ans, DFG < 35. CI si IR sévère. Corticoïdes pas en 1re intention. Repos sport jusqu’à CRP/ECG/écho normales.",
+          "rang": "A"
+        },
+        {
+          "situation": "Tamponnade",
+          "traitement": "USIC, remplissage, drainage ; arrêter ACO ; pas nitrés/diurétiques d’OAP",
+          "points": "Urgence médicochirurgicale.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "331",
+      "label": "331 Arrêt cardiaque",
+      "rows": [
+        {
+          "situation": "BLS adulte",
+          "traitement": "MCE immédiat (profondeur 4–5 cm, ~100/min) + DEA ; pas de bouche-à-bouche selon le collège (dégagement VAS)",
+          "points": "Rythme choquable : FV/TV. Adrénaline / amiodarone selon algorithme ALS. Intubation sans interrompre le MCE > 30 s.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "230",
+      "label": "230 Douleur thoracique",
+      "rows": [
+        {
+          "situation": "Suspicion d’EP (proba intermédiaire ou haute)",
+          "traitement": "Débuter l’antithrombotique avant même la confirmation diagnostique (si pas de risque hémorragique majeur)",
+          "points": "D-dimères inutiles si proba forte → angioscanner d’emblée. TNT de crise : argument diagnostique si douleur calmée en 1–5 min (score de proba coronarienne), pas un traitement de l’EP.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "203",
+      "label": "203 Dyspnée",
+      "rows": [
+        {
+          "situation": "Dyspnée aiguë / hypoxémie",
+          "traitement": "Oxygène si SpO2 < 90 %. Si tableau d’OAP : diurétique ± trinitrine IV (la réponse aide le diagnostic)",
+          "points": "Gazométrie pour hypoxémie/hypercapnie. Pseudoasthme cardiaque = équivalent d’OAP. Tamponnade : choc droit, pas de diurétiques d’OAP. SDRA : réanimation.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "238",
+      "label": "238 Souffle enfant",
+      "rows": [
+        {
+          "situation": "Cardiopathies congénitales à traiter",
+          "traitement": "Coarctation symptomatique du nouveau-né : chirurgie urgente (fermeture du canal). Large shunt G-D (CIV) : opérer dans la 1re année pour éviter l’HTAP irréversible",
+          "points": "Petite CIV restrictive : souvent surveillance (souffle intense ≠ gravité). Antibioprophylaxie EI : seulement haut risque (item 152), pas pour tout souffle.",
+          "rang": "A"
+        }
+      ]
+    },
+    {
+      "id": "330",
+      "label": "330 Antithrombotiques",
+      "rows": [
+        {
+          "situation": "Antiagrégants",
+          "traitement": "Aspirine, clopidogrel, prasugrel, ticagrélor. DAPT 12 mois après SCA ; 6 mois après stent d’angor stable",
+          "points": "Pas de surveillance d’activité. Aspirine non arrêtée pour geste à risque modéré en prévention secondaire ; si arrêt, 5 jours max. SCA + ACO : bithérapie clopidogrel + ACO 12 mois plutôt que trithérapie prolongée.",
+          "rang": "A"
+        },
+        {
+          "situation": "Héparines",
+          "traitement": "HNF (effet rapide, adaptable) ; HBPM / fondaparinux CI si IR sévère",
+          "points": "HNF : TCA × 2–3 ou anti-Xa 0,5–0,8. Antidote : protamine. TIH : plaquettes 2×/sem pendant 21 j sous HNF.",
+          "rang": "A"
+        },
+        {
+          "situation": "AVK / AOD",
+          "traitement": "AVK : INR, relais héparine jusqu’à INR efficace. AOD : effet en ~2 h, pas de surveillance, CI IR sévère, mécanique, RM",
+          "points": "Vitamine K = antidote AVK. Idarucizumab = dabigatran. Autres AOD : PPSB / Feiba. Relais héparine réservés au haut risque thrombotique.",
+          "rang": "A"
+        }
+      ]
+    }
+  ]
+}

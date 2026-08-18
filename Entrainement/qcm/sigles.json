@@ -1,0 +1,1046 @@
+{
+  "source": "Liste des abréviations du collège CNEC 3e éd. (pages liminaires).",
+  "items": [
+    {
+      "abbr": "AAA",
+      "def": "Anévrisme de l'aorte abdominale"
+    },
+    {
+      "abbr": "AAP",
+      "def": "Antiagrégant plaquettaire"
+    },
+    {
+      "abbr": "AC",
+      "def": "Arrêt cardiaque"
+    },
+    {
+      "abbr": "Ac",
+      "def": "Anticorps"
+    },
+    {
+      "abbr": "ACC",
+      "def": "Arrêt cardiocirculatoire"
+    },
+    {
+      "abbr": "ACD",
+      "def": "Airway circulation, defibrillation"
+    },
+    {
+      "abbr": "ACR",
+      "def": "Arrêt cardiorespiratoire"
+    },
+    {
+      "abbr": "ADP",
+      "def": "Adénosine diphosphate"
+    },
+    {
+      "abbr": "Afssaps",
+      "def": "Agence française de sécurité sanitaire des produits de santé"
+    },
+    {
+      "abbr": "AG",
+      "def": "Atrium gauche"
+    },
+    {
+      "abbr": "AGPI",
+      "def": "Acide gras poly-insaturé"
+    },
+    {
+      "abbr": "AINS",
+      "def": "Anti-inflammatoire non stéroïdien"
+    },
+    {
+      "abbr": "AIT",
+      "def": "Accident ischémique transitoire"
+    },
+    {
+      "abbr": "ALAT",
+      "def": "Alanine-aminotransférase"
+    },
+    {
+      "abbr": "AMM",
+      "def": "Autorisation de mise sur le marché"
+    },
+    {
+      "abbr": "AMT",
+      "def": "Automesure tensionnelle"
+    },
+    {
+      "abbr": "ANP",
+      "def": "Atrial natriuretic peptide"
+    },
+    {
+      "abbr": "ANSM",
+      "def": "Agence nationale de sécurité du médicament et des produits de santé"
+    },
+    {
+      "abbr": "Ao",
+      "def": "Aorte"
+    },
+    {
+      "abbr": "AOD",
+      "def": "Anticoagulant oral direct"
+    },
+    {
+      "abbr": "AOMI",
+      "def": "Artériopathie oblitérante des membres inférieurs"
+    },
+    {
+      "abbr": "AP",
+      "def": "Activité physique"
+    },
+    {
+      "abbr": "AP",
+      "def": "Anévrisme poplité"
+    },
+    {
+      "abbr": "apo",
+      "def": "Apolipoprotéine"
+    },
+    {
+      "abbr": "ARA2",
+      "def": "Antagoniste des récepteurs de l'angiotensine 2"
+    },
+    {
+      "abbr": "ARM",
+      "def": "Angiographie par résonance magnétique"
+    },
+    {
+      "abbr": "ARNI",
+      "def": "Angiotensin receptor-neprilysin inhibitor (sacubitril/valsartan)",
+      "extra": true
+    },
+    {
+      "abbr": "AT",
+      "def": "Antithrombine"
+    },
+    {
+      "abbr": "ATCD",
+      "def": "Antécédent"
+    },
+    {
+      "abbr": "ATP",
+      "def": "Adénosine triphosphate"
+    },
+    {
+      "abbr": "AV",
+      "def": "Atrioventriculaire"
+    },
+    {
+      "abbr": "AVC",
+      "def": "Accident vasculaire cérébral"
+    },
+    {
+      "abbr": "AVK",
+      "def": "Antivitamine K"
+    },
+    {
+      "abbr": "B1",
+      "def": "1er bruit"
+    },
+    {
+      "abbr": "B2",
+      "def": "2e bruit"
+    },
+    {
+      "abbr": "B3",
+      "def": "3e bruit"
+    },
+    {
+      "abbr": "BASIC",
+      "def": "Bêtabloquant, antiagrégants plaquettaires, statine, inhibiteur de l'enzyme de conversion et contrôle des facteurs de risques cardiovasculaire"
+    },
+    {
+      "abbr": "BAV",
+      "def": "Bloc atrioventriculaire"
+    },
+    {
+      "abbr": "BBD",
+      "def": "Bloc de branche droite"
+    },
+    {
+      "abbr": "BBG",
+      "def": "Bloc de branche gauche"
+    },
+    {
+      "abbr": "BK",
+      "def": "Bacille de Koch"
+    },
+    {
+      "abbr": "BNP",
+      "def": "Brain natriuretic peptide"
+    },
+    {
+      "abbr": "BPCO",
+      "def": "Bronchopneumopathie chronique obstructive"
+    },
+    {
+      "abbr": "BSA",
+      "def": "Bloc sinoatrial"
+    },
+    {
+      "abbr": "CCP",
+      "def": "Concentré de complexes prothrombiniques"
+    },
+    {
+      "abbr": "CCS",
+      "def": "Canadian Cardiovascular Society"
+    },
+    {
+      "abbr": "CEC",
+      "def": "Circulation extracorporelle"
+    },
+    {
+      "abbr": "CEE",
+      "def": "Choc électrique externe"
+    },
+    {
+      "abbr": "CHA2DS2-VA",
+      "def": "Score embolique de la FA (CNEC 3e : sans point « sexe », 0–8). Ne s’applique pas si prothèse mécanique ou RM modéré–sévère",
+      "extra": true
+    },
+    {
+      "abbr": "CHARGE",
+      "def": "Coloboma, heart defect, atresia choanae, retarded growth and development, génital hypoplasia, ear anomalies/deafness"
+    },
+    {
+      "abbr": "CIV",
+      "def": "Communication interventriculaire"
+    },
+    {
+      "abbr": "CIVD",
+      "def": "Coagulation intravasculaire disséminée"
+    },
+    {
+      "abbr": "CK",
+      "def": "Créatine-kinase"
+    },
+    {
+      "abbr": "CK-MB",
+      "def": "Créatine-kinase isoenzyme MB"
+    },
+    {
+      "abbr": "CKD-EPI",
+      "def": "Chronic Kidney Disease Epidemiology collaboration"
+    },
+    {
+      "abbr": "CMD",
+      "def": "Cardiomyopathie dilatée"
+    },
+    {
+      "abbr": "CMH",
+      "def": "Cardiomyopathie hypertrophique"
+    },
+    {
+      "abbr": "CPAP",
+      "def": "Continuous positive airway pressure"
+    },
+    {
+      "abbr": "CPK",
+      "def": "Créatine-phosphokinase"
+    },
+    {
+      "abbr": "CRP",
+      "def": "C-réactive protéine"
+    },
+    {
+      "abbr": "CRPus",
+      "def": "C-réactive protéine ultrasensible"
+    },
+    {
+      "abbr": "CRT",
+      "def": "Cardiac resynchronization therapy (stimulateur biventriculaire)",
+      "extra": true
+    },
+    {
+      "abbr": "CT",
+      "def": "Cholestérol total"
+    },
+    {
+      "abbr": "CYP",
+      "def": "Cytochrome P450"
+    },
+    {
+      "abbr": "DAI",
+      "def": "Défibrillateur automatique implantable"
+    },
+    {
+      "abbr": "DAPT",
+      "def": "Dual antiplatelet therapy (double antiagrégation plaquettaire)",
+      "extra": true
+    },
+    {
+      "abbr": "DB2",
+      "def": "Dédoublement du 2e bruit"
+    },
+    {
+      "abbr": "DC",
+      "def": "Débit cardiaque"
+    },
+    {
+      "abbr": "DEA",
+      "def": "Défibrillateur externe automatisé",
+      "extra": true
+    },
+    {
+      "abbr": "DFG",
+      "def": "Débit de filtration glomérulaire"
+    },
+    {
+      "abbr": "DFGe",
+      "def": "Débit de filtration glomérulaire estimé"
+    },
+    {
+      "abbr": "DSA",
+      "def": "Défibrillateur semi-automatique"
+    },
+    {
+      "abbr": "DTS",
+      "def": "Diamètre télésystolique"
+    },
+    {
+      "abbr": "EAL",
+      "def": "Exploration d'une anomalie lipidique"
+    },
+    {
+      "abbr": "ECBU",
+      "def": "Examen cytobactériologique des urines"
+    },
+    {
+      "abbr": "ECG",
+      "def": "Électrocardiogramme"
+    },
+    {
+      "abbr": "ECMO",
+      "def": "Extracorporeal membrane oxygénation"
+    },
+    {
+      "abbr": "EDV",
+      "def": "Échodoppler veineux"
+    },
+    {
+      "abbr": "EEP",
+      "def": "Étude électrophysiologique"
+    },
+    {
+      "abbr": "EFR",
+      "def": "Épreuve fonctionnelle respiratoire"
+    },
+    {
+      "abbr": "EP",
+      "def": "Embolie pulmonaire"
+    },
+    {
+      "abbr": "ERC",
+      "def": "European Resuscitation Council"
+    },
+    {
+      "abbr": "ESC",
+      "def": "European Society of Cardiology"
+    },
+    {
+      "abbr": "ESV",
+      "def": "Extrasystole ventriculaire"
+    },
+    {
+      "abbr": "ETO",
+      "def": "Échographie transœsophagienne"
+    },
+    {
+      "abbr": "ETT",
+      "def": "Échographie transthoracique"
+    },
+    {
+      "abbr": "EVA",
+      "def": "Échelle visuelle analogique"
+    },
+    {
+      "abbr": "FA",
+      "def": "Fibrillation atriale"
+    },
+    {
+      "abbr": "FAV",
+      "def": "Fistule artérioveineuse"
+    },
+    {
+      "abbr": "FC",
+      "def": "Fréquence cardiaque"
+    },
+    {
+      "abbr": "FDG",
+      "def": "Fluorodésoxyglucose"
+    },
+    {
+      "abbr": "FDR",
+      "def": "Facteur de risque"
+    },
+    {
+      "abbr": "FE",
+      "def": "Fraction d'éjection"
+    },
+    {
+      "abbr": "FEVG",
+      "def": "Fraction d'éjection ventriculaire gauche"
+    },
+    {
+      "abbr": "FFR",
+      "def": "Fractional flow reserve"
+    },
+    {
+      "abbr": "FI, FII, etc.",
+      "def": "Facteur I, facteur II, etc."
+    },
+    {
+      "abbr": "FID",
+      "def": "Fédération internationale du diabète"
+    },
+    {
+      "abbr": "FV",
+      "def": "Fibrillation ventriculaire"
+    },
+    {
+      "abbr": "GIHP",
+      "def": "Groupe d'intérêt en hémostase périopératoire"
+    },
+    {
+      "abbr": "HACEK",
+      "def": "Haemophilus spp., Aggregatibacter actinomycetemcomitans, Cardiobacterium hominis, Eikenella corrodens, Kingella kingae"
+    },
+    {
+      "abbr": "HAS",
+      "def": "Haute autorité de santé"
+    },
+    {
+      "abbr": "HAS-BLED",
+      "def": "Score de risque hémorragique sous anticoagulant (FA)",
+      "extra": true
+    },
+    {
+      "abbr": "HbA1c",
+      "def": "Hémoglobine glyquée"
+    },
+    {
+      "abbr": "HBAG",
+      "def": "Hémibloc antérieur gauche"
+    },
+    {
+      "abbr": "HBPG",
+      "def": "Hémibloc postérieur gauche"
+    },
+    {
+      "abbr": "HBPM",
+      "def": "Héparine de bas poids moléculaire"
+    },
+    {
+      "abbr": "hCG",
+      "def": "Human chorionic gonadotropin"
+    },
+    {
+      "abbr": "HCH",
+      "def": "Hypercholestérolémie"
+    },
+    {
+      "abbr": "HDL",
+      "def": "High density lipoprotein"
+    },
+    {
+      "abbr": "HF",
+      "def": "Hypercholestérolémie familiale"
+    },
+    {
+      "abbr": "HFpEF",
+      "def": "Heart failure with preserved ejection fraction (IC à FEVG conservée, > 50 %)",
+      "extra": true
+    },
+    {
+      "abbr": "HFrEF",
+      "def": "Heart failure with reduced ejection fraction (IC à FEVG diminuée, < 40 %)",
+      "extra": true
+    },
+    {
+      "abbr": "HLM",
+      "def": "Hyperlipidémie mixte"
+    },
+    {
+      "abbr": "HNF",
+      "def": "Héparine non fractionnée"
+    },
+    {
+      "abbr": "HSA",
+      "def": "Hémorragie sous-arachnoïdienne"
+    },
+    {
+      "abbr": "HTA",
+      "def": "Hypertension artérielle"
+    },
+    {
+      "abbr": "HTAP",
+      "def": "Hypertension artérielle pulmonaire"
+    },
+    {
+      "abbr": "HTG",
+      "def": "Hypertriglycéridémie"
+    },
+    {
+      "abbr": "HTP",
+      "def": "Hypertension pulmonaire"
+    },
+    {
+      "abbr": "HVG",
+      "def": "Hypertrophie ventriculaire gauche"
+    },
+    {
+      "abbr": "IA",
+      "def": "Insuffisance aortique"
+    },
+    {
+      "abbr": "IC",
+      "def": "Inhibiteur calcique"
+    },
+    {
+      "abbr": "IC",
+      "def": "Insuffisance cardiaque"
+    },
+    {
+      "abbr": "IC 95 %",
+      "def": "Intervalle de confiance à 95 %"
+    },
+    {
+      "abbr": "ICT",
+      "def": "Index cardiothoracique"
+    },
+    {
+      "abbr": "IDL",
+      "def": "Intermediate density lipoprotein"
+    },
+    {
+      "abbr": "IDM",
+      "def": "Infarctus du myocarde"
+    },
+    {
+      "abbr": "IDM ST+",
+      "def": "Infarctus du myocarde avec sus-décalage du segment ST"
+    },
+    {
+      "abbr": "IDMNST",
+      "def": "Infarctus du myocarde sans sus-décalage du segment ST"
+    },
+    {
+      "abbr": "IDR",
+      "def": "Intradermoréaction"
+    },
+    {
+      "abbr": "IEC",
+      "def": "Inhibiteur de l'enzyme de conversion"
+    },
+    {
+      "abbr": "Ig",
+      "def": "Immunoglobuline"
+    },
+    {
+      "abbr": "ILCOR",
+      "def": "International Liaison Committee on Resuscitation"
+    },
+    {
+      "abbr": "IM",
+      "def": "Insuffisance mitrale"
+    },
+    {
+      "abbr": "IMC",
+      "def": "Indice de masse corporelle"
+    },
+    {
+      "abbr": "INR",
+      "def": "International normalized ratio"
+    },
+    {
+      "abbr": "IP",
+      "def": "Insuffisance pulmonaire"
+    },
+    {
+      "abbr": "IPS",
+      "def": "Index de pression systolique"
+    },
+    {
+      "abbr": "IRC",
+      "def": "Insuffisance rénale chronique"
+    },
+    {
+      "abbr": "IRM",
+      "def": "Imagerie par résonance magnétique"
+    },
+    {
+      "abbr": "IT",
+      "def": "Insuffisance tricuspidienne"
+    },
+    {
+      "abbr": "IV",
+      "def": "Intraveineux"
+    },
+    {
+      "abbr": "IVD",
+      "def": "Intraveineux direct"
+    },
+    {
+      "abbr": "IVG",
+      "def": "Insuffisance ventriculaire gauche"
+    },
+    {
+      "abbr": "IVSE",
+      "def": "Intraveineux à la seringue électrique"
+    },
+    {
+      "abbr": "LDH",
+      "def": "Lactate-déshydrogénase"
+    },
+    {
+      "abbr": "LDL",
+      "def": "Low density lipoprotein"
+    },
+    {
+      "abbr": "LDL-R",
+      "def": "Low density lipoprotein receptor"
+    },
+    {
+      "abbr": "LSD",
+      "def": "Lysergic acid diethylamide"
+    },
+    {
+      "abbr": "MAPA",
+      "def": "Mesure ambulatoire de la pression artérielle"
+    },
+    {
+      "abbr": "MCE",
+      "def": "Massage cardiaque externe"
+    },
+    {
+      "abbr": "MCV",
+      "def": "Maladie cardiovasculaire"
+    },
+    {
+      "abbr": "MDMA",
+      "def": "Méthylènedioxyméthamphétamine"
+    },
+    {
+      "abbr": "MEI",
+      "def": "Monitorage électrocardiographique implantable"
+    },
+    {
+      "abbr": "MET'",
+      "def": "Metabolic equivalent task"
+    },
+    {
+      "abbr": "MIBG",
+      "def": "Méta-iodo-benzyl guanidine"
+    },
+    {
+      "abbr": "MINOCA",
+      "def": "Myocardial infarction with non-obstructive coronary arteries"
+    },
+    {
+      "abbr": "Ml",
+      "def": "Membre inférieur"
+    },
+    {
+      "abbr": "MMSE",
+      "def": "Mini-Mental State Examination"
+    },
+    {
+      "abbr": "MRC",
+      "def": "Medical Research Council"
+    },
+    {
+      "abbr": "MTEV",
+      "def": "Maladie thromboembolique veineuse"
+    },
+    {
+      "abbr": "NAV",
+      "def": "Nœud atrioventriculaire"
+    },
+    {
+      "abbr": "NEM",
+      "def": "Néoplasie endocrine multiple"
+    },
+    {
+      "abbr": "NFS",
+      "def": "Numération formule sanguine"
+    },
+    {
+      "abbr": "NO",
+      "def": "Monoxyde d'azote"
+    },
+    {
+      "abbr": "NS",
+      "def": "Nœud sinusal"
+    },
+    {
+      "abbr": "NSTEMI",
+      "def": "Non ST élévation myocardial infarction"
+    },
+    {
+      "abbr": "NT-proBNP",
+      "def": "N-terminal pro-brain natriuretic peptide"
+    },
+    {
+      "abbr": "NYHA",
+      "def": "New York Heart Association"
+    },
+    {
+      "abbr": "OAP",
+      "def": "Œdème aigu du poumon"
+    },
+    {
+      "abbr": "OG",
+      "def": "Oreillette gauche"
+    },
+    {
+      "abbr": "OMS",
+      "def": "Organisation mondiale de la santé"
+    },
+    {
+      "abbr": "ORL",
+      "def": "Oto-rhino-laryngologie"
+    },
+    {
+      "abbr": "PA",
+      "def": "Pression artérielle"
+    },
+    {
+      "abbr": "PAD",
+      "def": "Pression artérielle diastolique"
+    },
+    {
+      "abbr": "PAo",
+      "def": "Pression aortique"
+    },
+    {
+      "abbr": "PaO2",
+      "def": "Pression partielle en dioxygène du sang artériel"
+    },
+    {
+      "abbr": "PAP",
+      "def": "Pression artérielle pulmonaire"
+    },
+    {
+      "abbr": "PAPm",
+      "def": "Pression artérielle pulmonaire moyenne"
+    },
+    {
+      "abbr": "PAPO",
+      "def": "Pression artérielle pulmonaire d'occlusion"
+    },
+    {
+      "abbr": "PAS",
+      "def": "Pression artérielle systolique"
+    },
+    {
+      "abbr": "PC",
+      "def": "Protéine C"
+    },
+    {
+      "abbr": "PCAP",
+      "def": "Pression capillaire pulmonaire"
+    },
+    {
+      "abbr": "PCR",
+      "def": "Polymerase chain reaction"
+    },
+    {
+      "abbr": "PCZ",
+      "def": "Pas coché = zéro"
+    },
+    {
+      "abbr": "PDCB",
+      "def": "Perte de connaissance brève"
+    },
+    {
+      "abbr": "PESI",
+      "def": "Pulmonary Embolism Severity Index"
+    },
+    {
+      "abbr": "PF",
+      "def": "Platelet Factor"
+    },
+    {
+      "abbr": "PIED",
+      "def": "Péricardite, infarctus, embolie pulmonaire, dissection"
+    },
+    {
+      "abbr": "PISA",
+      "def": "Proximal isovelocity surface area"
+    },
+    {
+      "abbr": "PNN",
+      "def": "Polynucléaire neutrophile"
+    },
+    {
+      "abbr": "PNNS",
+      "def": "Programme national nutrition santé"
+    },
+    {
+      "abbr": "PPSB",
+      "def": "Facteurs II (prothrombine), VII (proconvertine), IX (facteur antihémophilique B) et X (facteur Stuart)"
+    },
+    {
+      "abbr": "QRM",
+      "def": "Question à réponse multiple"
+    },
+    {
+      "abbr": "QRU",
+      "def": "Question à réponse unique"
+    },
+    {
+      "abbr": "R PCA",
+      "def": "Résistance à la protéine C activée"
+    },
+    {
+      "abbr": "RA",
+      "def": "Rétrécissement aortique"
+    },
+    {
+      "abbr": "RAA",
+      "def": "Rhumatisme articulaire aigu"
+    },
+    {
+      "abbr": "RAC",
+      "def": "Rapport albuminurie/créatinurie"
+    },
+    {
+      "abbr": "RCP",
+      "def": "Réanimation cardiopulmonaire"
+    },
+    {
+      "abbr": "RCT",
+      "def": "Rapport cardiothoracique"
+    },
+    {
+      "abbr": "RM",
+      "def": "Rétrécissement mitral"
+    },
+    {
+      "abbr": "RVA",
+      "def": "Remplacement valvulaire aortique"
+    },
+    {
+      "abbr": "SAM",
+      "def": "Systolic anterior motion"
+    },
+    {
+      "abbr": "Samu",
+      "def": "Service d'aide médicale urgente"
+    },
+    {
+      "abbr": "SaO2",
+      "def": "Saturation artérielle en oxygène"
+    },
+    {
+      "abbr": "SAOS",
+      "def": "syndrome d'apnées obstructives du sommeil"
+    },
+    {
+      "abbr": "SAPL",
+      "def": "Syndrome des antiphospholipides"
+    },
+    {
+      "abbr": "SAU",
+      "def": "Service d'accueil des urgences"
+    },
+    {
+      "abbr": "SC",
+      "def": "Sous-cutané"
+    },
+    {
+      "abbr": "SCA",
+      "def": "Syndrome coronarien aigu"
+    },
+    {
+      "abbr": "SCA NST",
+      "def": "Syndrome coronarien aigu sans sus-décalage du segment ST"
+    },
+    {
+      "abbr": "SCA ST+",
+      "def": "Syndrome coronarien aigu avec sus-décalage du segment ST"
+    },
+    {
+      "abbr": "SCA ST-",
+      "def": "Syndrome coronarien aigu sans sus-décalage du segment ST"
+    },
+    {
+      "abbr": "SCORE",
+      "def": "Systematic Coronary Risk Estimation"
+    },
+    {
+      "abbr": "SCORE2-OP",
+      "def": "Systematic Coronary Risk Estimation 2 - Old Person"
+    },
+    {
+      "abbr": "SCZ",
+      "def": "Si coché = zéro"
+    },
+    {
+      "abbr": "SDRA",
+      "def": "Syndrome de détresse respiratoire aiguë"
+    },
+    {
+      "abbr": "SGLT2",
+      "def": "Sodium-glucose transporter 2"
+    },
+    {
+      "abbr": "SIV",
+      "def": "Septum interventriculaire"
+    },
+    {
+      "abbr": "Smur",
+      "def": "Service mobile d'urgence et de réanimation"
+    },
+    {
+      "abbr": "SOR",
+      "def": "Surface de l'orifice régurgitant"
+    },
+    {
+      "abbr": "sPESI",
+      "def": "simplified Pulmonary Embolism Severity Index"
+    },
+    {
+      "abbr": "SpO2",
+      "def": "Saturation oxyhémoglobinée mesurée par un oxymètre de pouls"
+    },
+    {
+      "abbr": "SPT",
+      "def": "Syndrome post-thrombotique"
+    },
+    {
+      "abbr": "STEMI",
+      "def": "ST élévation myocardial infarction"
+    },
+    {
+      "abbr": "STS",
+      "def": "Society of Thoracic Surgeons"
+    },
+    {
+      "abbr": "SVP",
+      "def": "Stimulation ventriculaire programmée"
+    },
+    {
+      "abbr": "TAF",
+      "def": "Tachycardie atriale focale"
+    },
+    {
+      "abbr": "TAVI",
+      "def": "Transcatheter aortic valve implantation"
+    },
+    {
+      "abbr": "TAVR",
+      "def": "Transcatheter aortic valve replacement"
+    },
+    {
+      "abbr": "TCA",
+      "def": "Temps de céphaline avec activateur"
+    },
+    {
+      "abbr": "TcPO2",
+      "def": "Mesure transcutanée de la pression sanguine en oxygène"
+    },
+    {
+      "abbr": "TEP",
+      "def": "Tomographie par émission de positons"
+    },
+    {
+      "abbr": "TG",
+      "def": "Triglycéride"
+    },
+    {
+      "abbr": "TIH",
+      "def": "Thrombopénie induite par l'héparine"
+    },
+    {
+      "abbr": "TJ",
+      "def": "Tachycardie jonctionnelle"
+    },
+    {
+      "abbr": "TM",
+      "def": "Temps mouvement"
+    },
+    {
+      "abbr": "Tn-us",
+      "def": "Troponine ultrasensible"
+    },
+    {
+      "abbr": "TNT",
+      "def": "Trinitrine"
+    },
+    {
+      "abbr": "TP",
+      "def": "Taux de prothrombine"
+    },
+    {
+      "abbr": "TRIN",
+      "def": "Tachycardie par réentrée intranodale"
+    },
+    {
+      "abbr": "TSHus",
+      "def": "Thyroid stimulating hormone ultrasensible"
+    },
+    {
+      "abbr": "TV",
+      "def": "Tachycardie ventriculaire"
+    },
+    {
+      "abbr": "TVNS",
+      "def": "Tachycardie ventriculaire non soutenue"
+    },
+    {
+      "abbr": "TVP",
+      "def": "Thrombose veineuse profonde"
+    },
+    {
+      "abbr": "TVS",
+      "def": "Thrombose veineuse superficielle"
+    },
+    {
+      "abbr": "UDT",
+      "def": "Unité douleur thoracique"
+    },
+    {
+      "abbr": "VD",
+      "def": "Ventricule droit"
+    },
+    {
+      "abbr": "VEGF",
+      "def": "Vascular endothélial growth factor"
+    },
+    {
+      "abbr": "VES",
+      "def": "Volume d'éjection systolique"
+    },
+    {
+      "abbr": "VG",
+      "def": "Ventricule gauche"
+    },
+    {
+      "abbr": "VIH",
+      "def": "Virus de l'immunodéficience humaine"
+    },
+    {
+      "abbr": "VLDL",
+      "def": "Very low density lipoprotein"
+    },
+    {
+      "abbr": "VS",
+      "def": "Vitesse de sédimentation"
+    },
+    {
+      "abbr": "VTD",
+      "def": "Volume télédiastolique"
+    },
+    {
+      "abbr": "VTS",
+      "def": "Volume télésystolique"
+    },
+    {
+      "abbr": "WPW",
+      "def": "Syndrome de Wolff–Parkinson–White (voie accessoire)",
+      "extra": true
+    }
+  ]
+}

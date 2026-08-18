@@ -1,0 +1,256 @@
+{
+  "questions": [
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Douleur thoracique, suspicion d’embolie pulmonaire. Quelle stratégie antithrombotique et d’imagerie est exacte d’après le collège (item 230) ?",
+      "options": [
+        {"letter": "A", "text": "Probabilité clinique intermédiaire ou haute : un traitement antithrombotique doit être débuté avant même la confirmation diagnostique.", "why": "Phrase Rang A du chapitre douleur thoracique aiguë."},
+        {"letter": "B", "text": "Probabilité faible ou modérée : D-dimères d’abord ; s’ils sont négatifs (méthode hautement sensible), l’EP est éliminée même si la proba prétest est modérée.", "why": "Algorithme collège Wells/Genève modifié."},
+        {"letter": "C", "text": "Probabilité forte : les D-dimères sont inutiles ; angioscanner thoracique d’emblée.", "why": "On ne perd pas de temps avec les D-dimères si la proba est haute."},
+        {"letter": "D", "text": "Chez le sujet > 50 ans, le seuil de D-dimères peut être adapté à l’âge (ESC 2019 : > 10 × âge).", "why": "Seuil collège pour les patients âgés."},
+        {"letter": "E", "text": "On attend toujours le scanner pour commencer l’anticoagulant, y compris si la proba est haute, afin d’éviter tout saignement inutile.", "why": "C’est l’inverse : proba intermédiaire/haute → antithrombotique avant confirmation (sauf risque hémorragique majeur)."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EP probable (intermédiaire ou haute) : anticoagulant d’emblée. D-dimères seulement si proba faible/modérée ; inutiles si proba forte. Seuil âge-adapté possible après 50 ans."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Place de la trinitrine dans l’évaluation d’une douleur thoracique (item 230). Indiquer la ou les proposition(s) exacte(s).",
+      "options": [
+        {"letter": "A", "text": "Une douleur constrictive d’effort cédant au repos ou après un spray de trinitrine en 1 à 3 minutes plaide pour un angor.", "why": "Caractère typique rappelé dans le chapitre 230."},
+        {"letter": "B", "text": "Dans le score de probabilité de maladie coronarienne, 1 point est attribué si la douleur est calmée par le repos ou la trinitrine en moins de 5 minutes.", "why": "Item du score collège (âge, sexe, caractéristique de la douleur)."},
+        {"letter": "C", "text": "La trinitrine de crise remplace l’angioscanner si l’on suspecte une EP.", "why": "La TNT n’a pas de place diagnostique ni thérapeutique dans l’EP."},
+        {"letter": "D", "text": "Une réponse à la TNT n’élimine pas à elle seule une dissection aortique ou une EP.", "why": "La TNT oriente vers l’ischémie mais n’est pas spécifique à 100 %."},
+        {"letter": "E", "text": "Tout patient douloureux thoracique reçoit d’emblée de la morphine IV, même sans diagnostic.", "why": "Le chapitre 230 ne pose pas la morphine en traitement systématique de toute douleur thoracique."}
+      ],
+      "correct": ["A", "B", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La TNT aide à typer un angor (et cote le score de proba) mais ne traite ni ne diagnostique une EP, et une réponse n’exclut pas les autres urgences. Pas de morphine systématique."
+    },
+    {
+      "item": "238",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Nouveau-né J8, pouls fémoraux abolis, souffle systolique sous-claviculaire gauche irradiant dans le dos. Quelle prise en charge est exacte ?",
+      "options": [
+        {"letter": "A", "text": "Tableau de coarctation aortique démasquée à la fermeture du canal artériel : la chirurgie est urgente.", "why": "Item 238 : symptômes au moment de la fermeture du canal ; chirurgie urgente."},
+        {"letter": "B", "text": "Une simple surveillance à 6 mois suffit, le souffle étant doux.", "why": "Le souffle doux n’enlève rien à l’urgence chirurgicale de la coarctation néonatale."},
+        {"letter": "C", "text": "Les larges shunts gauche-droite (CIV) du nourrisson doivent être opérés tôt, en général dans la 1re année, pour éviter une HTAP irréversible.", "why": "Impératif collège du chapitre souffle de l’enfant."},
+        {"letter": "D", "text": "Une petite CIV restrictive peut générer un souffle intense : il n’y a pas toujours de parallélisme entre intensité du souffle et gravité.", "why": "Piège classique du chapitre 238."},
+        {"letter": "E", "text": "Tout souffle de l’enfant justifie une antibioprophylaxie d’endocardite à vie.", "why": "La prophylaxie EI n’est indiquée que dans les cardiopathies à haut risque (item 152), pas pour tout souffle."}
+      ],
+      "correct": ["A", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Coarctation néonatale = chirurgie urgente. Large CIV = chirurgie dans la 1re année. Petite CIV = souffle fort possible, pas forcément grave. Pas d’antibioprophylaxie EI pour tout souffle."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Indications de stimulation cardiaque définitive (collège, ESC 2021 reprises). Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "BAV du 3e degré, en l’absence de cause curable ou réversible : indication de stimulateur.", "why": "Indication collège des BAV complets."},
+        {"letter": "B", "text": "BAV du 2e degré : indicateur si siège infrahissien évoqué, ou s’il est symptomatique quel que soit le siège ; blocs alternants également.", "why": "Règles Rang A du chapitre conduction."},
+        {"letter": "C", "text": "Dysfonction sinusale : stimulation seulement si symptômes clairement liés à la bradycardie, sans cause réversible (sauf besoin de poursuivre des bradycardisants).", "why": "Pas de pacemaker « au cas où » si asymptomatique."},
+        {"letter": "D", "text": "Pauses sinusales > 6 s même asymptomatiques, ou syncopes avec pauses > 3 s : indication retenue par le collège.", "why": "Seuils de pauses du chapitre 236."},
+        {"letter": "E", "text": "Tout BAV du 1er degré, même PR à 220 ms et asymptomatique, impose un pacemaker double chambre.", "why": "Le BAV 1er n’est une discussion (IIa) que si PR > 300 ms ou syndrome du pacemaker ; cause réversible = non-indication."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Stimulateur si BAV 3, BAV 2 infrahissien ou symptomatique, blocs alternants, dysfonction sinusale symptomatique liée, pauses longues. Pas de pacemaker pour un BAV 1er banal."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "BAV mal toléré en aigu, hors et pendant un IDM. Quels médicaments ou stimulations transitoires sont exacts ?",
+      "options": [
+        {"letter": "A", "text": "Hors IDM : atropine, isoprénaline, puis stimulation temporaire si échec ou mauvaise tolérance.", "why": "Urgence du tableau de prise en charge Rang A."},
+        {"letter": "B", "text": "Dans l’IDM aigu, l’isoprénaline est contre-indiquée ; on utilise l’atropine (BAV nodal inférieur) et/ou une stimulation temporaire.", "why": "Mention collège explicite pour l’IDM inférieur et antérieur."},
+        {"letter": "C", "text": "BAV d’un IDM inférieur : souvent nodal, régressif, répond à l’atropine ; stimulation définitive si non régressif à J5.", "why": "Histoire naturelle et délai collège."},
+        {"letter": "D", "text": "Torsade de pointes sur BAV : accélérer la FC (isoprénaline et/ou stimulation), corriger K/Mg, arrêter les médicaments allongeant le QT.", "why": "Traitement spécifique des torsades du chapitre 236."},
+        {"letter": "E", "text": "L’isoprénaline IV est le traitement de 1re intention du BAV de l’IDM antérieur étendu.", "why": "CI dans le contexte d’IDM aigu ; stimulation temporaire d’emblée le plus souvent."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Urgence : atropine ± isoprénaline hors IDM, puis pacing. Pendant l’IDM, pas d’isoprénaline. BAV inférieur souvent régressif (discuter stim définitive à J5). Torsades : accélérer et corriger les ions."
+    },
+    {
+      "item": "330",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Durée de la double antiagrégation (DAPT) selon le contexte. Quelles propositions collège sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Après un SCA, un inhibiteur P2Y12 est habituellement associé à l’aspirine pendant 12 mois.", "why": "Durée par défaut du chapitre SCA / 330."},
+        {"letter": "B", "text": "Après stent d’angor stable (endoprothèse active), le clopidogrel est associé à l’aspirine pendant 6 mois.", "why": "Durée spécifique de l’angor stable stenté."},
+        {"letter": "C", "text": "SCA + indication d’ACO : on privilégie par défaut une bithérapie clopidogrel + ACO à pleine dose pendant 12 mois, puis l’ACO seul.", "why": "Pour éviter une trithérapie prolongée hémorragique."},
+        {"letter": "D", "text": "Une trithérapie (DAPT + ACO) peut être limitée à environ 1 mois si faible risque hémorragique et haut risque ischémique.", "why": "Exception collège, durée courte."},
+        {"letter": "E", "text": "Après tout stent, la DAPT est de 24 mois minimum, y compris en angor stable.", "why": "Ni 24 mois systématiques, ni même durée SCA et angor stable."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "DAPT 12 mois après SCA, 6 mois après stent d’angor stable. Si ACO nécessaire : bithérapie clopidogrel + ACO 12 mois (trithérapie courte seulement si haut risque ischémique)."
+    },
+    {
+      "item": "221",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Malade polyathéromateux (plusieurs territoires). Quelles mesures thérapeutiques de morbimortalité sont exactes d’après le collège ?",
+      "options": [
+        {"letter": "A", "text": "Antiagrégant (aspirine ou clopidogrel) et statine : bénéfice de mortalité démontré.", "why": "Chapitre 221 / polyvasculaire."},
+        {"letter": "B", "text": "Arrêt du tabac et activité physique ciblent notamment la dysfonction endothéliale.", "why": "Mesures non médicamenteuses du même chapitre."},
+        {"letter": "C", "text": "Le contrôle des FDR (PA, LDL, diabète) s’ajoute aux médicaments, ce n’est pas « l’un ou l’autre ».", "why": "Prise en charge globale du polyvasculaire."},
+        {"letter": "D", "text": "Après un IDM, l’acronyme BASIC mémorise BB, AAP, statine, IEC et contrôle des FDR.", "why": "Mnémonique du chapitre prévention (222), utile chez le coronarien."},
+        {"letter": "E", "text": "Le bêtabloquant est obligatoire chez tout polyvasculaire, même sans IDM et avec FEVG normale.", "why": "Bénéfice démontré surtout après IDM / FEVG basse, pas dans toute AOMI isolée."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Aspirine (ou clopidogrel) + statine + FDR chez tout polyvasculaire. BASIC après un IDM. Le BB n’est pas systématique en l’absence d’IDM ou d’autre indication formelle."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Oxygénothérapie et nitrés à la phase aiguë d’un SCA. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "L’oxygène est réservé à l’hypoxémie (SaO2 < 90 % ou PaO2 < 60 mmHg) ; l’hyperoxie peut être délétère.", "why": "Rang A du chapitre SCA."},
+        {"letter": "B", "text": "Les nitrés IV (ex. dinitrate d’isosorbide) peuvent servir d’antalgique en SCA ST−, d’anti-hypertenseur ou de traitement d’une IC congestive.", "why": "Indications collège des nitrés à la phase aiguë."},
+        {"letter": "C", "text": "On oxygène systématiquement tout SCA à 15 L/min au masque, même si la SaO2 est à 98 %.", "why": "L’hyperoxie n’est pas recommandée."},
+        {"letter": "D", "text": "Les nitrés sont contre-indiqués avec les inhibiteurs de PDE-5 (sildénafil).", "why": "CI commune, phase aiguë comme chronique."},
+        {"letter": "E", "text": "Les bêtabloquants diminuent la consommation d’O2 myocardique (bradycardie, hypotenseur, inotrope négatif) et sont largement prescrits à la phase aiguë.", "why": "Anti-ischémiques de la phase aiguë ; poursuite au long cours surtout si angor résiduel ou FEVG basse."}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Pas d’O2 si le patient n’est pas hypoxémique. Nitrés IV utiles en ST− / HTA / congestion, jamais avec un sildénafil. BB à la phase aiguë pour baisser la consommation d’O2."
+    },
+    {
+      "item": "223",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Escalade du traitement hypolipémiant en prévention secondaire. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Statine en 1re intention ; objectif très haut risque : LDL < 0,55 g/L et baisse ≥ 50 %.", "why": "Cible collège de prévention secondaire."},
+        {"letter": "B", "text": "Ézétimibe si la cible n’est pas atteinte sous statine.", "why": "2e ligne du chapitre dyslipidémies."},
+        {"letter": "C", "text": "Anti-PCSK9 si le LDL reste > 0,7 g/L en prévention secondaire sous traitement maximal.", "why": "Seuil collège d’ajout des anti-PCSK9."},
+        {"letter": "D", "text": "Les statines sont contre-indiquées pendant la grossesse.", "why": "CI classique Rang A."},
+        {"letter": "E", "text": "En prévention primaire, on commence le médicament le jour du premier bilan, sans diététique.", "why": "Diététique ≥ 3 mois avant médicament, sauf risque très élevé."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Statine → ézétimibe → anti-PCSK9 si LDL encore > 0,7 g/L. Cible < 0,55 g/L en très haut risque. Statines CI grossesse. Prévention primaire : diététique d’abord."
+    },
+    {
+      "item": "153",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Anticoagulation des prothèses valvulaires. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Prothèse mécanique : AVK à vie ; les AOD sont contre-indiqués.", "why": "Règle collège absolue."},
+        {"letter": "B", "text": "INR cible 2–3 (cible 2,5) en général ; 3–4,5 si mitrale mécanique ou à disque.", "why": "Fourchettes du chapitre 153."},
+        {"letter": "C", "text": "Bioprotèse : pas d’anticoagulation de principe au long cours (sauf autre indication : FA, etc.).", "why": "Différence mécanique / biologique."},
+        {"letter": "D", "text": "Thrombose obstructive de mécanique : urgence (ETT/ETO) ; chirurgie ou fibrinolyse selon le tableau.", "why": "Complication redoutée sous AVK mal équilibré."},
+        {"letter": "E", "text": "On peut relayer une mécanique aortique par du rivaroxaban si l’INR « oscille trop ».", "why": "Aucun AOD n’est autorisé sur prothèse mécanique."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mécanique = AVK à vie, jamais d’AOD, INR selon le siège. Bioprotèse : pas d’ACO de principe. Thrombose obstructive = urgence imagerie ± chir/lyse."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Péricardite aiguë bénigne : schéma médicamenteux collège. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "AINS 1–2 semaines : aspirine 750–1000 mg/8 h ou ibuprofène 600 mg/8 h, plus IPP.", "why": "Posologies Rang A."},
+        {"letter": "B", "text": "Colchicine 0,5 mg × 2/j pendant 3 mois (0,5 mg/j si < 70 kg, > 70 ans ou DFG < 35).", "why": "Durée et adaptation collège ; CI si IR sévère."},
+        {"letter": "C", "text": "Les corticoïdes ne sont pas le traitement de 1re intention.", "why": "Réservés aux échecs / indications particulières."},
+        {"letter": "D", "text": "Repos sportif jusqu’à normalisation clinique, CRP, ECG et écho.", "why": "Critères de reprise collège."},
+        {"letter": "E", "text": "La colchicine se prend 48 h puis on passe d’emblée à la prednisone 1 mg/kg.", "why": "Schéma inverse du collège : colchicine 3 mois, corticoïdes pas en 1re ligne."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Bithérapie AINS (posologies élevées, courte) + colchicine 3 mois, IPP, pas de corticoïdes d’emblée, sport arrêté jusqu’à bilans normaux."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Score CHA2DS2-VA (CNEC 3e) et choix de l’anticoagulant. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Le score va de 0 à 8 : il n’y a plus de point « sexe » (contrairement au CHA2DS2-VASc).", "why": "Modification reprise par le collège 3e éd."},
+        {"letter": "B", "text": "Il ne s’applique pas en cas de prothèse mécanique ou de RM rhumatismal modéré à sévère : AVK d’emblée.", "why": "Risque embolique maximal, AOD non indiqués."},
+        {"letter": "C", "text": "Hors ces situations, les AOD sont à privilégier par rapport aux AVK selon le score.", "why": "Recommandation collège d’entretien de la FA."},
+        {"letter": "D", "text": "Avant cardioversion : ACO 3 semaines (sauf ETO sans thrombus ou FA < 24 h) puis ≥ 4 semaines après.", "why": "Règle de la cardioversion programmée."},
+        {"letter": "E", "text": "Un score à 0 chez la femme impose tout de même un AOD car le sexe compte encore 1 point.", "why": "Justement : plus de point sexe ; score 0 = risque très faible, pas d’ACO de principe."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "CHA2DS2-VA sans point sexe (0–8). AVK seuls si mécanique/RM. Sinon AOD selon le score. Cardioversion : 3 sem avant et 4 sem après, sauf exceptions."
+    },
+    {
+      "item": "234",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "Traitement « électrique » de l’IC à FEVG basse. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "CRT (pacemaker biventriculaire) : IC symptomatique NYHA II–IV, FEVG ≤ 35 %, QRS ≥ 130 ms.", "why": "Critères collège de resynchronisation."},
+        {"letter": "B", "text": "Meilleure chance de réponse si BBG, QRS ≥ 150 ms, cardiopathie non ischémique.", "why": "Facteurs de succès Rang B, utiles à l’EDN."},
+        {"letter": "C", "text": "DAI de prévention primaire : survie probable > 1 an ; les NYHA IV « purs » n’en relèvent pas, sauf pont vers greffe/assistance.", "why": "Mortalité d’IC trop proche ; le DAI prévient la FV, pas l’évolution terminale."},
+        {"letter": "D", "text": "On peut combiner les deux fonctions (CRT-D) s’il y a à la fois indication de resynchronisation et de défibrillation.", "why": "Dispositif unique Rang A."},
+        {"letter": "E", "text": "Un QRS fin (80 ms) en rythme sinusal est la meilleure indication de CRT, avant même d’optimiser les médicaments.", "why": "La CRT vise la désynchronisation (QRS large / BBG), après traitement médical."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "CRT si FEVG ≤ 35 % et QRS large (≥ 130 ms), surtout BBG ≥ 150 ms. DAI si survie > 1 an (pas le NYHA IV isolé). CRT-D si les deux indications coexistent. QRS fin : pas de CRT de 1re intention."
+    },
+    {
+      "item": "331",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "traitement",
+      "prompt": "BLS de l’adulte selon le collège. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "MCE immédiat, profondeur 4–5 cm, fréquence voisine de 100/min, associé au DEA dès qu’il est disponible.", "why": "Geste de survie Rang A."},
+        {"letter": "B", "text": "Le collège ne retient pas le bouche-à-bouche : dégagement des VAS et MCE + DEA.", "why": "Position du CNEC 3e pour le grand public / BLS enseigné."},
+        {"letter": "C", "text": "Rythmes choquables : FV et TV sans pouls.", "why": "Indication du choc."},
+        {"letter": "D", "text": "L’intubation, si elle est faite, ne doit pas interrompre le MCE plus de 30 secondes.", "why": "Contrainte collège de l’ALS."},
+        {"letter": "E", "text": "On palpe le pouls 1 minute avant de commencer le MCE, pour être sûr du diagnostic.", "why": "On ne retarde pas le MCE ; le diagnostic d’ACR est clinique (inconscient, pas de respiration normale)."}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "MCE d’emblée (4–5 cm, ~100/min) + DEA, pas de bouche-à-bouche selon le collège. Choc si FV/TV. Intubation sans pause > 30 s. On ne perd pas une minute à palper le pouls."
+    }
+  ]
+}
