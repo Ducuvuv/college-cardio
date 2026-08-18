@@ -30,6 +30,7 @@
       line-height: 1.45;
     }
     main { max-width: 42rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+    main.wide { max-width: 54rem; }
     h1 { font-size: 1.25rem; margin: 0 0 0.35rem; }
     .sub { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem; }
     .meta { color: var(--muted); font-size: 0.9rem; }
@@ -125,12 +126,67 @@
     .bar.bad > i { background: var(--bad); }
     img.qimg { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; margin: 0 0 1rem; background: #fff; }
     .err { color: var(--bad); }
+    .table-wrap { overflow-x: auto; }
+    .tx-table { font-size: 0.82rem; }
+    .tx-table td { vertical-align: top; }
+    .tx-table th { white-space: nowrap; }
+    .tx-sit { font-weight: 650; min-width: 7.5rem; }
+    .search {
+      width: 100%; font: inherit; padding: 0.5rem 0.7rem;
+      border-radius: 8px; border: 1px solid var(--line); background: #fff;
+    }
+    .sigle-abbr { font-weight: 800; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .badge {
+      font-size: 0.68rem; font-weight: 700; margin-left: 0.35rem;
+      padding: 0.05rem 0.35rem; border-radius: 999px;
+      background: #ebe6dc; color: var(--muted); vertical-align: middle;
+    }
+    .badge.a { background: var(--ok-bg); color: var(--ok); }
+    .badge.b { background: #fef3c7; color: var(--warn); }
+    .subchips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0 0 1rem; padding: 0; list-style: none; }
+    .subchips button {
+      font: inherit; font-size: 0.78rem; font-weight: 650; cursor: pointer;
+      border: 1px solid var(--line); background: #fff; color: var(--ink);
+      border-radius: 8px; padding: 0.35rem 0.6rem;
+    }
+    .subchips button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .kw {
+      display: inline-block; font-size: 0.75rem; font-weight: 650;
+      padding: 0.15rem 0.45rem; border-radius: 999px; margin: 0.15rem 0.2rem 0.15rem 0;
+      background: #e3efe8; color: var(--accent);
+    }
+    .cmp-table { font-size: 0.78rem; }
+    .cmp-table th, .cmp-table td { vertical-align: top; min-width: 7.2rem; }
+    .cmp-table th:first-child, .cmp-table td:first-child {
+      position: sticky; left: 0; background: var(--card); font-weight: 700;
+      min-width: 6.2rem; z-index: 1;
+    }
+    .cmp-table tr.disc td { background: #eef6f1; font-weight: 650; color: var(--accent); }
+    .fiche-sec { margin: 0 0 0.85rem; }
+    .fiche-sec h3 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); margin: 0 0 0.35rem; }
+    .fiche-sec ul { margin: 0; padding-left: 1.1rem; }
+    .fiche-sec li { margin-bottom: 0.28rem; font-size: 0.92rem; }
+    .trap {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem;
+      padding: 0.7rem 0; border-bottom: 1px solid var(--line);
+    }
+    @media (max-width: 560px) { .trap { grid-template-columns: 1fr; } }
+    .trap .bad-box, .trap .ok-box { border-radius: 10px; padding: 0.55rem 0.65rem; font-size: 0.9rem; }
+    .trap .bad-box { background: var(--bad-bg); }
+    .trap .ok-box { background: var(--ok-bg); }
+    .trap .lab { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 0.25rem; }
+    .trap .bad-box .lab { color: var(--bad); }
+    .trap .ok-box .lab { color: var(--ok); }
+    .seuil-val { font-size: 1.05rem; font-weight: 800; color: var(--accent); margin: 0 0 0.15rem; }
   </style>
 </head>
 <body>
   <main>
     <ul class="nav-chips">
       <li><button type="button" id="tab-setup" class="active">Session</button></li>
+      <li><button type="button" id="tab-tx">Traitements</button></li>
+      <li><button type="button" id="tab-fiches">Fiches</button></li>
+      <li><button type="button" id="tab-sigles">Sigles</button></li>
       <li><button type="button" id="tab-suivi">Suivi</button></li>
     </ul>
     <div id="view"></div>
@@ -140,11 +196,15 @@
 const STORE = "college-cardio-qcm-v1";
 const UNESS = ["234", "233RA", "233IM", "232", "339", "231", "152", "342", "226", "230"];
 let BANK = null;
+let TX = { groups: [] };
+let SIGLES = { items: [] };
+let FICHES = { comparatifs: [], reflexes: [], pieges: [], seuils: [] };
 let view = "setup";
 let session = null;
 let originMode = "nouveau";
 let formatMode = "all";
 let rangMode = "all";
+let themeMode = "all";
 
 const $ = (id) => document.getElementById(id);
 const viewEl = $("view");
@@ -197,6 +257,7 @@ function poolFor(ids) {
     if (originMode !== "both" && (q.origin || "college") !== originMode) return false;
     if (formatMode !== "all" && (q.format || "standard") !== formatMode) return false;
     if (rangMode !== "all" && qRang(q) !== rangMode) return false;
+    if (themeMode === "traitement" && q.theme !== "traitement") return false;
     return true;
   });
 }
@@ -208,6 +269,12 @@ function selectedIds() {
 async function boot() {
   try {
     BANK = await (await fetch("bank.json")).json();
+    try { TX = await (await fetch("traitements.json")).json(); }
+    catch { TX = { groups: [] }; }
+    try { SIGLES = await (await fetch("sigles.json")).json(); }
+    catch { SIGLES = { items: [] }; }
+    try { FICHES = await (await fetch("fiches.json")).json(); }
+    catch { FICHES = { comparatifs: [], reflexes: [], pieges: [], seuils: [] }; }
   } catch (e) {
     viewEl.innerHTML = `<div class="card err">Impossible de charger <code>bank.json</code>. Lance <code>lancer.bat</code>.</div>`;
     return;
@@ -218,16 +285,26 @@ async function boot() {
     else view = "setup";
     render();
   };
+  $("tab-tx").onclick = () => { view = "traitements"; render(); };
+  $("tab-fiches").onclick = () => { view = "fiches"; render(); };
+  $("tab-sigles").onclick = () => { view = "sigles"; render(); };
   $("tab-suivi").onclick = () => { view = "suivi"; render(); };
   render();
 }
 
 function render() {
-  $("tab-setup").classList.toggle("active", view !== "suivi");
+  document.querySelector("main").classList.toggle("wide", view === "fiches");
+  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches"].includes(view));
+  $("tab-tx").classList.toggle("active", view === "traitements");
+  $("tab-fiches").classList.toggle("active", view === "fiches");
+  $("tab-sigles").classList.toggle("active", view === "sigles");
   $("tab-suivi").classList.toggle("active", view === "suivi");
   if (view === "setup") renderSetup();
   else if (view === "quiz") renderQuiz();
   else if (view === "results") renderResults();
+  else if (view === "traitements") renderTraitements();
+  else if (view === "fiches") renderFiches();
+  else if (view === "sigles") renderSigles();
   else renderSuivi();
 }
 
@@ -243,8 +320,9 @@ function updatePoolHint() {
   const nCase = (BANK.formats || {}).cas_clinique || 0;
   const nA = (BANK.rangs || {}).A || 0;
   const nB = (BANK.rangs || {}).B || 0;
+  const nTx = (BANK.themes || {}).traitement || 0;
   if (!ids.length) hint.textContent = "Coche au moins un item.";
-  else hint.textContent = `${n} question${n > 1 ? "s" : ""} dans le lot · banque : ${nN} neuves · ${nC} QI livre · ${nCase} cas cliniques · ${nA} rang A · ${nB} rang B.`;
+  else hint.textContent = `${n} question${n > 1 ? "s" : ""} dans le lot · banque : ${nN} neuves · ${nC} QI livre · ${nCase} cas cliniques · ${nA} rang A · ${nB} rang B · ${nTx} traitements.`;
   if (qcount) {
     qcount.max = Math.max(1, n || 1);
     if (Number(qcount.value) > n && n > 0) qcount.value = n;
@@ -302,6 +380,13 @@ function renderSetup() {
           </select>
         </div>
         <div class="field">
+          <label for="theme">Thème</label>
+          <select id="theme">
+            <option value="all"${themeMode === "all" ? " selected" : ""}>Tous</option>
+            <option value="traitement"${themeMode === "traitement" ? " selected" : ""}>Traitements / médicaments</option>
+          </select>
+        </div>
+        <div class="field">
           <label for="qcount">Nombre de questions</label>
           <input type="number" id="qcount" min="1" max="800" value="20" />
         </div>
@@ -314,6 +399,7 @@ function renderSetup() {
   $("origin").onchange = () => { originMode = $("origin").value; renderSetup(); };
   $("format").onchange = () => { formatMode = $("format").value; updatePoolHint(); };
   $("rang").onchange = () => { rangMode = $("rang").value; updatePoolHint(); };
+  $("theme").onchange = () => { themeMode = $("theme").value; updatePoolHint(); };
   $("btn-all").onclick = () => { document.querySelectorAll("#chapter-list input").forEach((i) => i.checked = true); updatePoolHint(); };
   $("btn-none").onclick = () => { document.querySelectorAll("#chapter-list input").forEach((i) => i.checked = false); updatePoolHint(); };
   $("btn-uness").onclick = () => {
@@ -354,6 +440,7 @@ function renderQuiz() {
   const kind = q.kind === "QRU" ? "QRU" : "QRM";
   const origin = q.origin === "nouveau" ? "neuve" : "QI livre";
   const format = q.format === "cas_clinique" ? "cas clinique" : "standard";
+  const theme = q.theme === "traitement" ? " · ttt" : "";
   if (revealed && !q._sc) q._sc = scoreQ(q, q.picked);
 
   let choices = "";
@@ -391,7 +478,7 @@ function renderQuiz() {
   viewEl.innerHTML = `
     <header class="quiz-bar">
       <h1>Session en cours</h1>
-      <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · rang ${qRang(q)} · ${kind} · ${format} · ${origin}</div>
+      <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · rang ${qRang(q)} · ${kind} · ${format}${theme} · ${origin}</div>
     </header>
     <div class="card ${revealed ? "revealed" : ""}">
       <p class="stem">${esc(q.prompt)}</p>
@@ -531,6 +618,64 @@ function renderResults() {
   };
 }
 
+function renderTraitements() {
+  const nTx = BANK.questions.filter((q) => q.theme === "traitement").length;
+  const filterId = window._txFilter || "all";
+  const groups = (TX.groups || []).filter((g) => filterId === "all" || g.id === filterId);
+  const opts = [`<option value="all"${filterId === "all" ? " selected" : ""}>Tous les items</option>`]
+    .concat((TX.groups || []).map((g) => `<option value="${g.id}"${filterId === g.id ? " selected" : ""}>${esc(g.label)}</option>`))
+    .join("");
+  let tables = "";
+  for (const g of groups) {
+    const rows = (g.rows || []).map((r) => `<tr>
+      <td class="tx-sit">${esc(r.situation)}</td>
+      <td>${esc(r.traitement)}</td>
+      <td>${esc(r.points)}</td>
+    </tr>`).join("");
+    tables += `<div class="card">
+      <h2>${esc(g.label)}</h2>
+      <div class="table-wrap">
+        <table class="tx-table">
+          <thead><tr><th>Situation</th><th>Traitement</th><th>Points clés</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>`;
+  }
+  viewEl.innerHTML = `
+    <h1>Traitements</h1>
+    <p class="sub">Tableau recap du collège, puis QCM uniquement sur les médicaments et stratégies.</p>
+    <div class="card">
+      <h2>QCM traitements</h2>
+      <p class="hint" style="margin-top:0">${nTx} questions taguées traitements / médicaments.</p>
+      <div class="actions">
+        <button type="button" id="tx-start">Lancer 20 Q traitements</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Recap</h2>
+      <div class="field">
+        <label for="tx-filter">Item</label>
+        <select id="tx-filter">${opts}</select>
+      </div>
+      <p class="hint">${TX.source || ""}</p>
+    </div>
+    ${tables}`;
+  $("tx-filter").onchange = () => {
+    window._txFilter = $("tx-filter").value;
+    renderTraitements();
+  };
+  $("tx-start").onclick = () => {
+    themeMode = "traitement";
+    originMode = "nouveau";
+    formatMode = "all";
+    rangMode = "all";
+    const ids = BANK.items.map((it) => it.id);
+    const n = Math.min(20, poolFor(ids).length);
+    beginSession(ids, n);
+  };
+}
+
 function renderSuivi() {
   const stats = loadStats();
   const cible = BANK.cible || { seenHigh: 12, pctHigh: 80, seenOther: 8, pctOther: 70 };
@@ -574,6 +719,225 @@ function renderSuivi() {
   };
   const drill = $("drill");
   if (drill) drill.onclick = () => beginSession(weak.map((w) => w.id), 20);
+}
+
+function ficheTab() { return window._ficheTab || "comparatifs"; }
+function ficheItem() { return window._ficheItem || "all"; }
+function ficheQ() { return (window._ficheQ || "").trim().toLowerCase(); }
+
+function ficheMatches(blob, q) {
+  if (!q) return true;
+  return blob.toLowerCase().includes(q);
+}
+
+function renderFiches() {
+  const tab = ficheTab();
+  const item = ficheItem();
+  const q = ficheQ();
+  const allItems = [...new Set([
+    ...(FICHES.comparatifs || []).flatMap((c) => c.items || []),
+    ...(FICHES.reflexes || []).map((r) => r.item),
+    ...(FICHES.pieges || []).map((p) => p.item),
+    ...(FICHES.seuils || []).map((s) => s.item),
+  ].filter(Boolean))];
+  const itemOpts = [`<option value="all"${item === "all" ? " selected" : ""}>Tous les items</option>`]
+    .concat(allItems.map((id) => `<option value="${esc(id)}"${item === id ? " selected" : ""}>${esc(itemLabel(id))}</option>`))
+    .join("");
+  const tabs = [
+    ["comparatifs", "Comparatifs"],
+    ["reflexes", "Réflexes"],
+    ["pieges", "Pièges"],
+    ["seuils", "Seuils"],
+  ].map(([id, lab]) => `<li><button type="button" data-ft="${id}" class="${tab === id ? "active" : ""}">${lab}</button></li>`).join("");
+
+  let body = "";
+  if (tab === "comparatifs") body = renderComparatifs(item, q);
+  else if (tab === "reflexes") body = renderReflexes(item, q);
+  else if (tab === "pieges") body = renderPieges(item, q);
+  else body = renderSeuils(item, q);
+
+  const nC = (FICHES.comparatifs || []).length;
+  const nR = (FICHES.reflexes || []).length;
+  const nP = (FICHES.pieges || []).length;
+  const nS = (FICHES.seuils || []).length;
+  viewEl.innerHTML = `
+    <h1>Fiches EDN</h1>
+    <p class="sub">${nC} comparatifs · ${nR} réflexes · ${nP} pièges · ${nS} seuils — d’après le CNEC 3e, pas d’annales UNESS.</p>
+    <ul class="subchips">${tabs}</ul>
+    <div class="card">
+      <div class="row">
+        <div class="field" style="flex:1; min-width:12rem">
+          <label for="fiche-q">Recherche</label>
+          <input class="search" id="fiche-q" type="search" placeholder="BASIC, CHA2DS2-VA, TNT, QRS…" value="${esc(window._ficheQ || "")}" />
+        </div>
+        <div class="field">
+          <label for="fiche-item">Item</label>
+          <select id="fiche-item">${itemOpts}</select>
+        </div>
+      </div>
+      <p class="hint">${FICHES.source || ""}</p>
+    </div>
+    ${body}`;
+  $("fiche-q").oninput = () => { window._ficheQ = $("fiche-q").value; renderFiches(); };
+  $("fiche-item").onchange = () => { window._ficheItem = $("fiche-item").value; renderFiches(); };
+  const fq = $("fiche-q");
+  if (fq) {
+    fq.focus();
+    try { fq.setSelectionRange(fq.value.length, fq.value.length); } catch {}
+  }
+  viewEl.querySelectorAll("[data-ft]").forEach((btn) => {
+    btn.onclick = () => { window._ficheTab = btn.getAttribute("data-ft"); renderFiches(); };
+  });
+  viewEl.querySelectorAll(".fiche-qcm-btn").forEach((btn) => {
+    btn.onclick = () => {
+      const ids = (btn.getAttribute("data-items") || "").split(",").filter(Boolean);
+      if (!ids.length) return;
+      originMode = "nouveau";
+      formatMode = "all";
+      rangMode = "all";
+      themeMode = "all";
+      const n = Math.min(15, poolFor(ids).length);
+      if (!n) { alert("Pas de QCM pour cet item dans le filtre actuel."); return; }
+      beginSession(ids, n);
+    };
+  });
+}
+
+function renderComparatifs(item, q) {
+  const list = (FICHES.comparatifs || []).filter((c) => {
+    if (item !== "all" && !(c.items || []).includes(item)) return false;
+    return ficheMatches([c.title, ...(c.entities || []), ...(c.discriminants || []), JSON.stringify(c.criteria || [])].join(" "), q);
+  });
+  if (!list.length) return `<div class="card"><p class="hint">Aucun comparatif.</p></div>`;
+  return list.map((c) => {
+    const ents = c.entities || [];
+    const head = `<tr><th>Critère</th>${ents.map((e) => `<th>${esc(e)}</th>`).join("")}</tr>`;
+    const rows = (c.criteria || []).map((row) => {
+      const cls = row.key === "Discriminant" ? " class=\"disc\"" : "";
+      return `<tr${cls}><td>${esc(row.key)}</td>${(row.values || []).map((v) => `<td>${esc(v)}</td>`).join("")}</tr>`;
+    }).join("");
+    const discs = (c.discriminants || []).map((d) => `<span class="kw">${esc(d)}</span>`).join("");
+    const ids = (c.items || []).join(",");
+    return `<div class="card">
+      <h2>${esc(c.title)}</h2>
+      <div class="table-wrap">
+        <table class="tx-table cmp-table">
+          <thead>${head}</thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      ${discs ? `<p style="margin:0.7rem 0 0">${discs}</p>` : ""}
+      <div class="actions"><button type="button" class="secondary fiche-qcm-btn" data-items="${esc(ids)}">QCM sur cet item</button></div>
+    </div>`;
+  }).join("");
+}
+
+function renderReflexes(item, q) {
+  const list = (FICHES.reflexes || []).filter((r) => {
+    if (item !== "all" && r.item !== item) return false;
+    return ficheMatches([r.label, ...(r.keywords || []), ...(r.redFlags || []), ...(r.bilan || []), ...(r.rangA || []), ...(r.rangB || [])].join(" "), q);
+  });
+  if (!list.length) return `<div class="card"><p class="hint">Aucune fiche réflexe.</p></div>`;
+  return list.map((r) => {
+    const kws = (r.keywords || []).map((k) => `<span class="kw">${esc(k)}</span>`).join("");
+    const sec = (title, arr) => arr && arr.length ? `<div class="fiche-sec"><h3>${title}</h3><ul>${arr.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
+    const arbre = r.arbre || {};
+    return `<div class="card">
+      <h2>${esc(r.label)} <span class="badge a">A</span> <span class="badge b">B</span></h2>
+      ${kws ? `<p style="margin:0 0 0.75rem">${kws}</p>` : ""}
+      ${sec("Signes de gravité", r.redFlags)}
+      ${sec("Bilan de 1re intention", r.bilan)}
+      ${sec("1re ligne", arbre.premiere)}
+      ${sec("Échec / allergie / 2e ligne", arbre.echec)}
+      ${sec("Terrains spécifiques", arbre.terrains)}
+      ${sec("EI et CI pièges", r.ciei)}
+      ${sec("Rang A — à savoir les yeux fermés", r.rangA)}
+      ${sec("Rang B — plus spécialisé", r.rangB)}
+      <div class="actions"><button type="button" class="secondary fiche-qcm-btn" data-items="${esc(r.item)}">15 QCM de cet item</button></div>
+    </div>`;
+  }).join("");
+}
+
+function renderPieges(item, q) {
+  const list = (FICHES.pieges || []).filter((p) => {
+    if (item !== "all" && p.item !== item) return false;
+    return ficheMatches([p.piege, p.reflexe, p.item].join(" "), q);
+  });
+  if (!list.length) return `<div class="card"><p class="hint">Aucun piège.</p></div>`;
+  const groups = {};
+  for (const p of list) (groups[p.item] ||= []).push(p);
+  return Object.entries(groups).map(([id, traps]) => `
+    <div class="card">
+      <h2>${esc(itemLabel(id))}</h2>
+      ${traps.map((p) => `<div class="trap">
+        <div class="bad-box"><div class="lab">Piège${p.rang ? ` · rang ${esc(p.rang)}` : ""}</div>${esc(p.piege)}</div>
+        <div class="ok-box"><div class="lab">Réflexe</div>${esc(p.reflexe)}</div>
+      </div>`).join("")}
+    </div>`).join("");
+}
+
+function renderSeuils(item, q) {
+  const list = (FICHES.seuils || []).filter((s) => {
+    if (item !== "all" && s.item !== item && !(s.items || []).includes(item)) return false;
+    return ficheMatches([s.group, s.label, s.value, s.note].join(" "), q);
+  });
+  if (!list.length) return `<div class="card"><p class="hint">Aucun seuil.</p></div>`;
+  const groups = {};
+  for (const s of list) (groups[s.group || "Autres"] ||= []).push(s);
+  return Object.entries(groups).map(([g, rows]) => `
+    <div class="card">
+      <h2>${esc(g)}</h2>
+      <div class="table-wrap">
+        <table class="tx-table">
+          <thead><tr><th>Notion</th><th>Seuil</th><th>À retenir</th></tr></thead>
+          <tbody>${rows.map((s) => `<tr>
+            <td class="tx-sit">${esc(s.label)}${s.rang ? ` <span class="badge ${s.rang === "B" ? "b" : "a"}">${esc(s.rang)}</span>` : ""}</td>
+            <td><div class="seuil-val">${esc(s.value)}</div></td>
+            <td>${esc(s.note || "")}</td>
+          </tr>`).join("")}</tbody>
+        </table>
+      </div>
+    </div>`).join("");
+}
+
+function renderSigles() {
+  const q = (window._sigleQ || "").trim().toLowerCase();
+  const items = SIGLES.items || [];
+  const nExtra = items.filter((x) => x.extra).length;
+  const shown = items.filter((x) => {
+    if (!q) return true;
+    return (x.abbr || "").toLowerCase().includes(q) || (x.def || "").toLowerCase().includes(q);
+  });
+  const rows = shown.map((x) => `<tr>
+    <td class="sigle-abbr">${esc(x.abbr)}${x.extra ? '<span class="badge">cours</span>' : ""}</td>
+    <td>${esc(x.def)}</td>
+  </tr>`).join("");
+  viewEl.innerHTML = `
+    <h1>Sigles</h1>
+    <p class="sub">${items.length} abréviations · liste liminaire du collège CNEC 3e éd.${nExtra ? ` · ${nExtra} ajouts fréquents des cours` : ""}.</p>
+    <div class="card">
+      <h2>Rechercher</h2>
+      <input class="search" id="sigle-q" type="search" placeholder="BASIC, FEVG, CHA2DS2-VA…" value="${esc(window._sigleQ || "")}" />
+      <p class="hint">${shown.length} résultat${shown.length > 1 ? "s" : ""}. ${SIGLES.source || ""}</p>
+    </div>
+    <div class="card">
+      <div class="table-wrap">
+        <table class="tx-table">
+          <thead><tr><th>Sigle</th><th>Signification</th></tr></thead>
+          <tbody>${rows || `<tr><td colspan="2">Aucun sigle ne correspond.</td></tr>`}</tbody>
+        </table>
+      </div>
+    </div>`;
+  const inp = $("sigle-q");
+  if (inp) {
+    inp.focus();
+    const pos = inp.value.length;
+    try { inp.setSelectionRange(pos, pos); } catch {}
+    inp.oninput = () => {
+      window._sigleQ = inp.value;
+      renderSigles();
+    };
+  }
 }
 
 function esc(s) {

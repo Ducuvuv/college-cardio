@@ -146,6 +146,7 @@ def parse_file(path: Path) -> list[dict]:
                 "images": images,
                 "origin": "college",
                 "rang": "A",
+                "theme": "",
             }
         )
     return out
@@ -200,6 +201,7 @@ def load_nouveau() -> list[dict]:
                     "explanation": q["explanation"].strip(),
                     "images": q.get("images") or [],
                     "format": q.get("format") or "standard",
+                    "theme": q.get("theme") or "",
                     "origin": "nouveau",
                     "rang": q.get("rang") or "A",
                 }
@@ -216,6 +218,27 @@ def load_nouveau() -> list[dict]:
     return out
 
 
+TREAT_RE = re.compile(
+    r"(?i)\b("
+    r"traitement|m[ée]dicament|statine|IEC|ARA2|b[êe]ta-?bloquant|"
+    r"aspirine|clopidogrel|prasugrel|ticagr[ée]lor|anticoag|antiagr[ée]g|"
+    r"AOD|AVK|h[ée]parine|HBPM|furos[ée]mide|gliflozine|amiodarone|"
+    r"fl[ée]ca[iï]nide|TAVI|fibrinol|INR|CHA2DS2|nitr[ée]s|dobutamine|"
+    r"fondaparinux|apixaban|rivaroxaban|dabigatran|[ée]noxaparine|"
+    r"spironolactone|sacubitril|[ée]z[ée]timibe|PCSK9|colchicine|"
+    r"bith[ée]rapie|DAPT|idarucizumab|protamine|warfarine"
+    r")\b"
+)
+
+
+def tag_treatment(q: dict) -> None:
+    if q.get("theme") == "traitement":
+        return
+    blob = q.get("prompt", "") + " " + " ".join(o.get("text", "") for o in q.get("options") or [])
+    if TREAT_RE.search(blob):
+        q["theme"] = "traitement"
+
+
 def main() -> None:
     college = []
     for name, _item in FILE_ITEM.items():
@@ -225,10 +248,13 @@ def main() -> None:
         college.extend(parse_file(path))
     nouveau = load_nouveau()
     questions = nouveau + college
+    for q in questions:
+        tag_treatment(q)
     n_new: dict[str, int] = {}
     n_col: dict[str, int] = {}
     formats: dict[str, int] = {}
     rangs: dict[str, int] = {}
+    themes: dict[str, int] = {}
     for q in nouveau:
         n_new[q["item"]] = n_new.get(q["item"], 0) + 1
         fmt = q.get("format") or "standard"
@@ -237,6 +263,8 @@ def main() -> None:
         if rang not in ("A", "B", "C"):
             rang = "A"
         rangs[rang] = rangs.get(rang, 0) + 1
+        th = q.get("theme") or "autre"
+        themes[th] = themes.get(th, 0) + 1
     for q in college:
         n_col[q["item"]] = n_col.get(q["item"], 0) + 1
         fmt = q.get("format") or "standard"
@@ -245,6 +273,8 @@ def main() -> None:
         if rang not in ("A", "B", "C"):
             rang = "A"
         rangs[rang] = rangs.get(rang, 0) + 1
+        th = q.get("theme") or "autre"
+        themes[th] = themes.get(th, 0) + 1
     items = []
     for gid, ids in GROUPS:
         for iid in ids:
@@ -268,6 +298,7 @@ def main() -> None:
         "origins": {"nouveau": len(nouveau), "college": len(college)},
         "formats": formats,
         "rangs": rangs,
+        "themes": themes,
         "cible": {
             "seenHigh": 12,
             "pctHigh": 80,
@@ -278,7 +309,7 @@ def main() -> None:
         "questions": questions,
     }
     OUT.write_text(json.dumps(bank, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"nouveau={len(nouveau)} college={len(college)} total={len(questions)} -> {OUT}")
+    print(f"nouveau={len(nouveau)} college={len(college)} total={len(questions)} treat={themes.get('traitement', 0)} -> {OUT}")
     for it in items:
         print(f"  {it['id']:7} N={it['nNouveau']:2} C={it['nCollege']:2}  {it['label']}")
 
