@@ -184,6 +184,7 @@
   <main>
     <ul class="nav-chips">
       <li><button type="button" id="tab-setup" class="active">Session</button></li>
+      <li><button type="button" id="tab-cours">Cours</button></li>
       <li><button type="button" id="tab-tx">Traitements</button></li>
       <li><button type="button" id="tab-fiches">Fiches</button></li>
       <li><button type="button" id="tab-sigles">Sigles</button></li>
@@ -199,6 +200,7 @@ let BANK = null;
 let TX = { groups: [] };
 let SIGLES = { items: [] };
 let FICHES = { comparatifs: [], reflexes: [], pieges: [], seuils: [] };
+let COURS = [];
 let view = "setup";
 let session = null;
 let originMode = "nouveau";
@@ -275,6 +277,8 @@ async function boot() {
     catch { SIGLES = { items: [] }; }
     try { FICHES = await (await fetch("fiches.json")).json(); }
     catch { FICHES = { comparatifs: [], reflexes: [], pieges: [], seuils: [] }; }
+    try { COURS = await (await fetch("cours.json")).json(); }
+    catch { COURS = []; }
   } catch (e) {
     viewEl.innerHTML = `<div class="card err">Impossible de charger <code>bank.json</code>. Lance <code>lancer.bat</code>.</div>`;
     return;
@@ -285,6 +289,7 @@ async function boot() {
     else view = "setup";
     render();
   };
+  $("tab-cours").onclick = () => { view = "cours"; render(); };
   $("tab-tx").onclick = () => { view = "traitements"; render(); };
   $("tab-fiches").onclick = () => { view = "fiches"; render(); };
   $("tab-sigles").onclick = () => { view = "sigles"; render(); };
@@ -293,8 +298,9 @@ async function boot() {
 }
 
 function render() {
-  document.querySelector("main").classList.toggle("wide", view === "fiches");
-  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches"].includes(view));
+  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours");
+  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches", "cours"].includes(view));
+  $("tab-cours").classList.toggle("active", view === "cours");
   $("tab-tx").classList.toggle("active", view === "traitements");
   $("tab-fiches").classList.toggle("active", view === "fiches");
   $("tab-sigles").classList.toggle("active", view === "sigles");
@@ -303,6 +309,7 @@ function render() {
   else if (view === "quiz") renderQuiz();
   else if (view === "results") renderResults();
   else if (view === "traitements") renderTraitements();
+  else if (view === "cours") renderCours();
   else if (view === "fiches") renderFiches();
   else if (view === "sigles") renderSigles();
   else renderSuivi();
@@ -728,6 +735,43 @@ function ficheQ() { return (window._ficheQ || "").trim().toLowerCase(); }
 function ficheMatches(blob, q) {
   if (!q) return true;
   return blob.toLowerCase().includes(q);
+}
+
+function renderCours() {
+  let coursFilter = localStorage.getItem("cours-item") || "all";
+  let rangFilter = localStorage.getItem("cours-rang") || "all";
+  const items = COURS.slice().sort((a, b) => a.item.localeCompare(b.item, undefined, { numeric: true }));
+  let html = `<h2>Cours — Points essentiels par item</h2>`;
+  html += `<div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">`;
+  html += `<select id="cours-item-filter" style="font:inherit;padding:0.3rem 0.5rem;border-radius:8px;border:1px solid var(--line);">`;
+  html += `<option value="all"${coursFilter === "all" ? " selected" : ""}>Tous les items</option>`;
+  items.forEach(c => { html += `<option value="${c.item}"${coursFilter === c.item ? " selected" : ""}>${c.label}</option>`; });
+  html += `</select>`;
+  html += `<select id="cours-rang-filter" style="font:inherit;padding:0.3rem 0.5rem;border-radius:8px;border:1px solid var(--line);">`;
+  html += `<option value="all"${rangFilter === "all" ? " selected" : ""}>Rang A + B</option>`;
+  html += `<option value="A"${rangFilter === "A" ? " selected" : ""}>Rang A seul</option>`;
+  html += `<option value="B"${rangFilter === "B" ? " selected" : ""}>Rang B seul</option>`;
+  html += `</select></div>`;
+  const filtered = coursFilter === "all" ? items : items.filter(c => c.item === coursFilter);
+  filtered.forEach(c => {
+    html += `<div class="card" style="margin-bottom:1rem;">`;
+    html += `<h3 style="margin:0 0 0.6rem;">${c.label}</h3>`;
+    if (rangFilter !== "B" && c.rangA && c.rangA.length) {
+      html += `<div class="fiche-sec"><h3><span class="badge a">Rang A</span> Essentiels</h3><ul>`;
+      c.rangA.forEach(p => { html += `<li>${p}</li>`; });
+      html += `</ul></div>`;
+    }
+    if (rangFilter !== "A" && c.rangB && c.rangB.length) {
+      html += `<div class="fiche-sec"><h3><span class="badge b">Rang B</span> Approfondissement</h3><ul>`;
+      c.rangB.forEach(p => { html += `<li>${p}</li>`; });
+      html += `</ul></div>`;
+    }
+    html += `</div>`;
+  });
+  if (!filtered.length) html += `<p class="hint">Aucun item trouvé.</p>`;
+  viewEl.innerHTML = html;
+  $("cours-item-filter").onchange = (e) => { localStorage.setItem("cours-item", e.target.value); renderCours(); };
+  $("cours-rang-filter").onchange = (e) => { localStorage.setItem("cours-rang", e.target.value); renderCours(); };
 }
 
 function renderFiches() {
