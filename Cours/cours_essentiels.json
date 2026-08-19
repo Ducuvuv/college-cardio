@@ -1,0 +1,524 @@
+[
+  {
+    "item": "221",
+    "label": "221 Athérome",
+    "rangA": [
+      "L'athérosclérose est une maladie inflammatoire chronique de l'intima des artères de gros et moyen calibre, caractérisée par des plaques d'athérome (lipides, fibrose, nécrose).",
+      "Les facteurs de risque cardiovasculaire modifiables sont : tabac, HTA, diabète, dyslipidémie, obésité, sédentarité.",
+      "Les facteurs non modifiables sont : âge (> 50 ans homme, > 60 ans femme), sexe masculin, antécédents familiaux de maladie CV précoce (< 55 ans père, < 65 ans mère).",
+      "La plaque d'athérome évolue en 3 stades : stries lipidiques → plaque fibrolipidique → plaque compliquée (rupture, thrombose, hémorragie intraplaque).",
+      "Les complications de l'athérome sont : SCA, AVC ischémique, AOMI, anévrisme de l'aorte abdominale, ischémie mésentérique, sténose artérielle rénale.",
+      "La rupture de plaque est le mécanisme principal des SCA et AVC ischémiques ; elle est favorisée par l'inflammation et une chape fibreuse mince.",
+      "Le risque cardiovasculaire global doit être évalué par le score SCORE2 (ou SCORE2-OP ≥ 70 ans) en Europe.",
+      "La prise en charge repose sur : contrôle des FDRCV, antiagrégant plaquettaire (aspirine), statine, IEC/ARA2 selon indication.",
+      "Le tabagisme est le 1er facteur de risque évitable ; le sevrage divise le risque CV par 2 en 1 an.",
+      "L'athérome est une maladie systémique : la présence d'une localisation doit faire rechercher les autres (coronaire, carotide, MI, aorte)."
+    ],
+    "rangB": [
+      "La dysfonction endothéliale est l'étape initiale de l'athérogenèse, favorisée par le stress oxydatif et les LDL oxydés.",
+      "Les cellules spumeuses résultent de la phagocytose des LDL oxydés par les macrophages dans l'intima.",
+      "Le remodelage artériel compensateur (loi de Glagov) permet de préserver la lumière artérielle malgré la croissance de la plaque jusqu'à un certain seuil.",
+      "Le score calcique coronaire (scanner) est un outil de dépistage de l'athérome coronaire infraclinique."
+    ]
+  },
+  {
+    "item": "222",
+    "label": "222 Facteurs de risque CV et prévention",
+    "rangA": [
+      "Les 6 FDRCV modifiables majeurs sont : tabac, HTA, diabète, dyslipidémie (LDL élevé), obésité abdominale, sédentarité.",
+      "Le risque cardiovasculaire global est évalué par le score SCORE2 (Europe) ; il estime le risque d'événement CV fatal ou non fatal à 10 ans.",
+      "Le patient à très haut risque CV inclut : maladie CV documentée, diabète avec atteinte d'organe cible, IRC sévère (DFG < 30), SCORE2 ≥ 7,5 % (< 50 ans) ou ≥ 10 % (50-69 ans).",
+      "La cible de LDL-c dépend du niveau de risque : < 1,16 g/L (faible), < 1 g/L (modéré), < 0,7 g/L (haut risque), < 0,55 g/L (très haut risque).",
+      "En prévention secondaire, l'objectif LDL-c est < 0,55 g/L et une réduction ≥ 50 % par rapport à la valeur de base.",
+      "Le sevrage tabagique est la mesure de prévention la plus efficace et la plus coût-efficace.",
+      "L'activité physique recommandée est ≥ 150 min/semaine d'intensité modérée ou 75 min d'intensité soutenue.",
+      "L'aspirine n'est plus recommandée en prévention primaire systématique, même chez le diabétique.",
+      "La prise en charge est plurifactorielle : RHD + traitement médicamenteux des FDRCV + suivi régulier."
+    ],
+    "rangB": [
+      "Le syndrome métabolique associe ≥ 3 critères parmi : tour de taille élevé, triglycérides ≥ 1,5 g/L, HDL bas, PA ≥ 130/85 mmHg, glycémie à jeun ≥ 1,1 g/L.",
+      "Les facteurs de risque émergents (Lp(a), CRP ultrasensible, score calcique) peuvent aider à reclassifier les patients à risque intermédiaire.",
+      "L'hérédité cardiovasculaire est considérée comme un FDRCV si événement CV chez un parent du 1er degré avant 55 ans (homme) ou 65 ans (femme)."
+    ]
+  },
+  {
+    "item": "223",
+    "label": "223 Dyslipidémies",
+    "rangA": [
+      "L'hypercholestérolémie (LDL élevé) est le principal facteur lipidique de risque athéromateux.",
+      "Le bilan lipidique comporte : cholestérol total, HDL-c, triglycérides, LDL-c calculé (formule de Friedewald si TG < 3,4 g/L).",
+      "Les cibles de LDL-c selon le risque : < 1,16 g/L (faible), < 1 g/L (modéré), < 0,7 g/L (haut), < 0,55 g/L (très haut risque).",
+      "Les statines sont le traitement de 1re intention ; elles réduisent le LDL-c de 30 à 50 % selon la molécule et la dose.",
+      "L'ézétimibe est ajouté en 2e intention si cible non atteinte sous statine à dose maximale tolérée.",
+      "Les inhibiteurs de PCSK9 (évolocumab, alirocumab) sont réservés aux patients à très haut risque n'atteignant pas la cible sous statine + ézétimibe.",
+      "L'hypercholestérolémie familiale hétérozygote doit être évoquée si LDL-c > 1,9 g/L, xanthomes tendineux, arc cornéen < 45 ans, hérédité cardiovasculaire précoce.",
+      "Les hypertriglycéridémies sévères (> 5 g/L) exposent au risque de pancréatite aiguë ; traitement par fibrates.",
+      "Le régime diététique est toujours la 1re étape : réduction des graisses saturées, augmentation des fibres et des oméga-3."
+    ],
+    "rangB": [
+      "Les dyslipidémies secondaires à éliminer avant traitement : hypothyroïdie, syndrome néphrotique, cholestase, corticothérapie, alcoolisme.",
+      "L'hypercholestérolémie familiale homozygote est rare mais très sévère (LDL > 5 g/L), avec événements CV dès l'enfance.",
+      "L'inclisiran (ARN interférent anti-PCSK9) est une nouvelle option thérapeutique injectable tous les 6 mois."
+    ]
+  },
+  {
+    "item": "224",
+    "label": "224 HTA de l'adulte",
+    "rangA": [
+      "L'HTA est définie par une PAS ≥ 140 mmHg et/ou PAD ≥ 90 mmHg en consultation, confirmée par mesure ambulatoire (MAPA ≥ 130/80 ou automesure ≥ 135/85).",
+      "L'HTA est le FDRCV le plus fréquent ; elle touche environ 30 % de la population adulte.",
+      "Le bilan initial comprend : ionogramme, créatinine, glycémie, bilan lipidique, BU, ECG, fond d'œil si HTA sévère.",
+      "Les atteintes d'organe cible à rechercher : HVG, microalbuminurie, rétinopathie hypertensive, IRC, athérome.",
+      "L'objectif tensionnel général est PAS < 130 mmHg (et > 120 mmHg), sauf sujet > 80 ans : PAS < 150 mmHg.",
+      "Les 5 classes de 1re intention sont : IEC, ARA2, inhibiteur calcique, diurétique thiazidique, bêtabloquant ; traitement initial par monothérapie ou bithérapie selon le niveau tensionnel.",
+      "L'association IEC + ARA2 est contre-indiquée (double blocage du SRA).",
+      "L'HTA résistante est définie par une PA non contrôlée malgré une trithérapie à doses optimales incluant un diurétique.",
+      "Les causes d'HTA secondaire à rechercher en cas de résistance ou de présentation atypique : hyperaldostéronisme primaire, phéochromocytome, sténose artérielle rénale, Cushing, coarctation, apnées du sommeil.",
+      "L'urgence hypertensive associe une PA très élevée (souvent > 180/120) à une souffrance viscérale aiguë (encéphalopathie, OAP, dissection aortique, éclampsie)."
+    ],
+    "rangB": [
+      "L'hyperaldostéronisme primaire (adénome de Conn ou hyperplasie bilatérale) est la 1re cause d'HTA secondaire ; suspecté devant une hypokaliémie avec HTA résistante.",
+      "Le phéochromocytome se manifeste par la triade de Ménard : céphalées, sueurs, palpitations avec poussées hypertensives paroxystiques.",
+      "La coarctation de l'aorte est évoquée chez le sujet jeune avec HTA aux membres supérieurs et asymétrie tensionnelle.",
+      "Le rapport aldostérone/rénine est le test de dépistage de l'hyperaldostéronisme primaire."
+    ]
+  },
+  {
+    "item": "225",
+    "label": "225 AOMI et anévrismes",
+    "rangA": [
+      "L'AOMI est définie par un index de pression systolique (IPS) ≤ 0,90 ; elle est le marqueur d'un athérome diffus.",
+      "La classification de Leriche et Fontaine : stade I asymptomatique, II claudication intermittente (IIa > 200 m, IIb < 200 m), III douleurs de décubitus, IV troubles trophiques/gangrène.",
+      "L'ischémie critique associe douleurs de décubitus > 15 jours et/ou TcPO2 < 30 mmHg et/ou pression cheville < 50 mmHg.",
+      "L'échodoppler artériel des MI est l'examen de 1re intention pour confirmer et localiser les lésions.",
+      "Le traitement de l'AOMI repose sur : sevrage tabagique, exercice de marche supervisé, statine, antiagrégant, contrôle des FDRCV.",
+      "L'ischémie aiguë de membre est une urgence absolue : douleur brutale, membre blanc/froid, abolition des pouls ; revascularisation en urgence (< 6 h).",
+      "L'anévrisme de l'aorte abdominale (AAA) est défini par un diamètre aortique > 30 mm ; dépistage par écho chez l'homme > 65 ans fumeur.",
+      "L'indication opératoire de l'AAA est posée si diamètre ≥ 50-55 mm ou croissance > 10 mm/an.",
+      "La rupture d'AAA est une urgence vitale : douleur abdominale/lombaire brutale, choc hémorragique, masse battante."
+    ],
+    "rangB": [
+      "Le test de marche sur tapis roulant (protocole de Strandness) objective la claudication et mesure le périmètre de marche.",
+      "L'angioscanner ou l'angio-IRM sont réalisés en préopératoire pour planifier la revascularisation.",
+      "L'IPS > 1,40 (artères incompressibles) est fréquent chez le diabétique et nécessite un IPS de gros orteil ou une TcPO2."
+    ]
+  },
+  {
+    "item": "339",
+    "label": "339 SCA / angor stable",
+    "rangA": [
+      "Le SCA ST+ (STEMI) est défini par un sus-décalage ST persistant ≥ 2 mm en V1-V3 ou ≥ 1 mm dans 2 dérivations contiguës, traduisant une occlusion coronaire complète.",
+      "La reperfusion est une urgence absolue : angioplastie primaire (PCI) si délai < 120 min sinon fibrinolyse IV (< 12 h après début des symptômes).",
+      "Le SCA ST- (NSTEMI) associe douleur thoracique typique + élévation de troponine ; la coronarographie est réalisée dans les 24-72 h selon le risque.",
+      "L'angor stable est une douleur thoracique rétrosternale constrictive, déclenchée par l'effort, cédant au repos ou à la trinitrine en < 5 min.",
+      "Le diagnostic de SCA repose sur la triade : clinique + ECG + troponine ultrasensible (sériée à H0 et H1-H3).",
+      "Le traitement du SCA associe : double antiagrégation (aspirine + inhibiteur P2Y12), anticoagulation (HNF/HBPM), bêtabloquant, statine forte dose, IEC.",
+      "La classification de Killip évalue la sévérité hémodynamique de l'IDM : I = pas d'IC, II = crépitants, III = OAP, IV = choc cardiogénique.",
+      "En post-IDM, le traitement au long cours comprend : BASIC = Bêtabloquant, Antiagrégant, Statine, IEC, Contrôle des FDRCV.",
+      "Les complications de l'IDM sont : troubles du rythme (FV, TV), IC, rupture (paroi libre, septum, pilier), péricardite, thrombus VG, anévrisme VG.",
+      "La douleur thoracique de l'IDM est prolongée (> 20 min), ne cède pas à la trinitrine, avec signes neurovégétatifs (sueurs, nausées).",
+      "Un BBG complet de novo dans un contexte de douleur thoracique doit faire suspecter un SCA ST+ et justifie une coronarographie urgente.",
+      "L'onde de Pardee est un sus-décalage convexe vers le haut englobant l'onde T, signe ECG typique du STEMI."
+    ],
+    "rangB": [
+      "Le coroscanner est l'examen de 1re intention pour éliminer une coronaropathie chez les patients à probabilité pré-test faible à intermédiaire.",
+      "L'angor vasospastique (Prinzmetal) survient au repos (souvent nocturne) avec sus-décalage ST transitoire et coronaires normales ou peu lésées.",
+      "Le score GRACE permet de stratifier le risque des SCA ST- et guide le délai de coronarographie (< 2 h, < 24 h ou < 72 h).",
+      "Les complications mécaniques de l'IDM (rupture septale, IM aiguë par rupture de pilier) sont des urgences chirurgicales.",
+      "La dissection coronaire spontanée est une cause de SCA chez la femme jeune sans FDRCV classiques."
+    ]
+  },
+  {
+    "item": "230",
+    "label": "230 Douleur thoracique aiguë",
+    "rangA": [
+      "Les 4 urgences cardiovasculaires à éliminer devant une douleur thoracique aiguë : SCA, EP, dissection aortique, tamponnade.",
+      "L'ECG doit être réalisé dans les 10 minutes suivant le premier contact médical.",
+      "La douleur de l'IDM est rétrosternale, constrictive, prolongée > 20 min, irradiant aux bras/mâchoire, ne cédant pas à la trinitrine.",
+      "La douleur de la dissection aortique est brutale, maximale d'emblée, transfixiante (thorax → dos), migratrice ; asymétrie tensionnelle/pouls.",
+      "La douleur de la péricardite est augmentée par l'inspiration et le décubitus, soulagée par l'antéflexion ; frottement péricardique.",
+      "La douleur de l'EP est latérale, brutale, type point de côté, avec dyspnée et tachycardie ; contexte thrombogène.",
+      "Le bilan initial comprend : ECG, troponine, radiographie de thorax, D-dimères (si suspicion d'EP), angioscanner thoracique selon orientation.",
+      "Le pneumothorax donne une douleur latérale brutale avec dyspnée ; diagnostic par radio de thorax (hyperclarté, absence de parenchyme).",
+      "Une douleur thoracique aiguë avec état de choc impose un diagnostic et un traitement en urgence."
+    ],
+    "rangB": [
+      "Le score HEART (History, ECG, Age, Risk factors, Troponin) aide à stratifier le risque de SCA aux urgences.",
+      "L'angioscanner thoracique triple rule-out permet d'éliminer simultanément SCA, EP et dissection aortique.",
+      "Les causes non cardiovasculaires fréquentes : douleur pariétale (syndrome de Tietze), RGO, spasme œsophagien, pneumopathie, pleurésie."
+    ]
+  },
+  {
+    "item": "233RA",
+    "label": "233 Rétrécissement aortique",
+    "rangA": [
+      "Le RA serré est défini par : surface valvulaire < 1 cm² (ou < 0,6 cm²/m²), gradient moyen > 40 mmHg, vitesse max > 4 m/s.",
+      "La triade symptomatique du RA serré : angor d'effort, syncope d'effort, dyspnée d'effort ; leur apparition marque un tournant pronostique.",
+      "L'étiologie la plus fréquente chez le sujet > 65 ans est le RA dégénératif (maladie de Mönckeberg).",
+      "Le souffle du RA est systolique éjectionnel, rude, au foyer aortique, irradiant aux carotides ; il diminue quand la sténose devient très serrée (bas débit).",
+      "L'ETT est l'examen clé : mesure de la surface valvulaire, du gradient, de la FEVG, de l'HVG et de l'HTAP.",
+      "Le remplacement valvulaire aortique (chirurgical ou TAVI) est indiqué dès que le RA serré est symptomatique.",
+      "Le TAVI est privilégié chez les patients > 75 ans ou à haut risque chirurgical ; la chirurgie reste la référence chez le sujet jeune.",
+      "Les médicaments vasodilatateurs (IEC, dérivés nitrés) sont à utiliser avec précaution en cas de RA serré (risque d'hypotension sévère).",
+      "Tout RA serré symptomatique non opéré a un pronostic sombre : survie moyenne 2-3 ans après apparition des symptômes."
+    ],
+    "rangB": [
+      "Le RA paradoxal (bas débit, bas gradient, FE préservée) est un piège diagnostique chez le sujet âgé hypertendu.",
+      "L'ETT de stress à la dobutamine permet de distinguer un RA vrai d'un pseudo-RA sévère en cas de bas débit.",
+      "La bicuspidie aortique est la cause la plus fréquente de RA chez le sujet < 65 ans ; elle est associée à une dilatation de l'aorte ascendante."
+    ]
+  },
+  {
+    "item": "233IM",
+    "label": "233 Insuffisance mitrale",
+    "rangA": [
+      "L'IM primaire (organique) est liée à une atteinte de la valve elle-même : prolapsus/dégénérescence myxoïde, rhumatisme, endocardite, rupture de cordage.",
+      "L'IM secondaire (fonctionnelle) est liée à la dilatation VG et/ou de l'anneau mitral (cardiopathie ischémique ou dilatée).",
+      "Le souffle de l'IM est holosystolique, en jet de vapeur, maximal à la pointe, irradiant vers l'aisselle.",
+      "L'ETT évalue la sévérité de l'IM : surface de l'orifice régurgitant (SOR ≥ 40 mm² = sévère en primaire), volume régurgité, retentissement (OG, VG, FEVG, HTAP).",
+      "L'IM aiguë sévère (rupture de cordage, endocardite) se manifeste par un OAP brutal ; c'est une urgence chirurgicale.",
+      "La chirurgie (plastie mitrale si possible) est indiquée dans l'IM primaire sévère symptomatique ou si FEVG ≤ 60 % ou DTSVG ≥ 40 mm.",
+      "La plastie mitrale est préférée au remplacement valvulaire quand elle est techniquement réalisable.",
+      "Le MitraClip est une alternative percutanée pour les patients à haut risque chirurgical avec IM sévère symptomatique.",
+      "L'IM chronique compensée peut rester longtemps asymptomatique ; la surveillance régulière par ETT est essentielle."
+    ],
+    "rangB": [
+      "La classification de Carpentier décrit les mécanismes de l'IM : type I (dilatation anneau), type II (excès de mouvement/prolapsus), type III (restriction).",
+      "En cas d'IM secondaire, le traitement de l'IC sous-jacente est prioritaire ; la chirurgie n'est envisagée qu'en cas d'indication de pontage associé.",
+      "L'IM ischémique aiguë par rupture de pilier (IDM inférieur) est une complication mécanique gravissime nécessitant une chirurgie en urgence."
+    ]
+  },
+  {
+    "item": "233IA",
+    "label": "233 Insuffisance aortique",
+    "rangA": [
+      "L'IA chronique est longtemps asymptomatique grâce à la dilatation VG compensatrice ; les symptômes (dyspnée, angor) apparaissent tardivement.",
+      "Le souffle de l'IA est protodiastolique, decrescendo, au foyer aortique, irradiant le long du bord sternal gauche.",
+      "Les étiologies principales sont : dégénérescence, bicuspidie, maladie annulo-ectasiante (Marfan), rhumatisme articulaire, endocardite.",
+      "L'IA aiguë (endocardite, dissection aortique) est une urgence : OAP brutal sans dilatation VG ; chirurgie en urgence.",
+      "L'ETT mesure la sévérité : vena contracta ≥ 6 mm, SOR ≥ 30 mm², volume régurgité ≥ 60 mL = IA sévère.",
+      "L'indication chirurgicale dans l'IA chronique sévère : symptomatique, ou FEVG ≤ 50 %, ou DTDVG > 70 mm ou DTSVG > 50 mm.",
+      "Les signes cliniques d'IA sévère : hyperpulsatilité artérielle, élargissement de la différentielle (PAS élevée, PAD basse), pouls bondissant.",
+      "La dissection aortique est une cause d'IA aiguë par désinsertion de la valve ; c'est une urgence chirurgicale."
+    ],
+    "rangB": [
+      "La maladie annulo-ectasiante (syndrome de Marfan) associe IA + dilatation de l'aorte ascendante ; chirurgie si aorte ≥ 50 mm (ou 45 mm si Marfan).",
+      "Le rhumatisme articulaire aigu reste une cause fréquente d'IA dans les pays en développement.",
+      "L'IRM cardiaque peut compléter l'ETT pour la quantification de l'IA et l'évaluation de la dilatation aortique."
+    ]
+  },
+  {
+    "item": "152",
+    "label": "152 Endocardite infectieuse",
+    "rangA": [
+      "L'endocardite infectieuse (EI) est une infection microbienne de l'endocarde valvulaire natif ou prothétique ; mortalité hospitalière ~ 20 %.",
+      "Les critères de Duke modifiés permettent le diagnostic : 2 critères majeurs (hémocultures positives + atteinte endocardique à l'ETT/ETO), ou 1 majeur + 3 mineurs.",
+      "Les hémocultures (≥ 3 paires, aéro-anaérobies) avant toute antibiothérapie sont la pierre angulaire du diagnostic microbiologique.",
+      "Les germes les plus fréquents : staphylocoques (S. aureus sur valve native = 1er germe), streptocoques oraux, entérocoques.",
+      "L'ETO est plus sensible que l'ETT (végétations, abcès, désinsertion de prothèse) et doit être réalisée systématiquement.",
+      "Les complications de l'EI : IC par destruction valvulaire, embolies septiques (AVC, rate, rein), abcès péri-annulaire, anévrisme mycotique.",
+      "La porte d'entrée doit être recherchée et traitée : dentaire, cutanée, digestive, urogénitale, cathéter.",
+      "L'antibiothérapie est bactéricide, prolongée (4-6 semaines), IV initialement, adaptée à l'antibiogramme.",
+      "La chirurgie en urgence est indiquée en cas d'IC réfractaire, d'infection non contrôlée ou de prévention embolique (végétation > 10 mm + embolie).",
+      "La prophylaxie de l'EI (amoxicilline 2 g PO 1h avant) est réservée aux patients à haut risque (prothèse valvulaire, antécédent d'EI, cardiopathie congénitale cyanogène) avant soins dentaires invasifs."
+    ],
+    "rangB": [
+      "L'EI à hémocultures négatives représente 5-10 % des cas ; évoquer Coxiella burnetii (fièvre Q), Bartonella, Brucella, champignons (sérologies spécifiques).",
+      "L'EI sur prothèse précoce (< 1 an) est souvent à staphylocoque coagulase négative ; tardive (> 1 an) ressemble à l'EI sur valve native.",
+      "Le PET-scanner (18-FDG) aide au diagnostic d'EI sur prothèse quand l'imagerie conventionnelle n'est pas concluante.",
+      "Les faux anévrismes mycotiques cérébraux nécessitent un bilan neurovasculaire systématique en cas d'EI."
+    ]
+  },
+  {
+    "item": "153",
+    "label": "153 Surveillance porteurs de valves/prothèses",
+    "rangA": [
+      "Les prothèses mécaniques nécessitent une anticoagulation par AVK à vie ; les AOD sont contre-indiqués.",
+      "L'INR cible dépend du type et de la position de la prothèse : généralement 2,5 (aortique, bascule) à 3-3,5 (mitrale, à bille).",
+      "Les bioprothèses ne nécessitent pas d'anticoagulation au long cours (AVK 3 mois post-op, puis aspirine seule ou rien).",
+      "La surveillance clinique et échocardiographique (ETT) est annuelle pour toutes les prothèses.",
+      "Les complications des prothèses mécaniques : thrombose de prothèse, accidents thromboemboliques, hémorragies sous AVK, endocardite sur prothèse, hémolyse.",
+      "Les complications des bioprothèses : dégénérescence structurelle (10-15 ans), endocardite, thrombose (rare).",
+      "Toute fièvre chez un porteur de prothèse doit faire évoquer une endocardite : hémocultures + ETT/ETO en urgence.",
+      "La prophylaxie de l'endocardite est obligatoire chez tout porteur de prothèse valvulaire avant soins dentaires invasifs.",
+      "Un dysfonctionnement de prothèse est suspecté devant l'apparition d'un souffle nouveau, de symptômes (dyspnée, embolies) ou d'une modification échographique."
+    ],
+    "rangB": [
+      "Le TAVI (valve percutanée) est une bioprothèse dont la durabilité à très long terme est encore en cours d'évaluation.",
+      "La thrombose obstructive de prothèse mécanique est une urgence : traitement par fibrinolyse ou chirurgie selon la gravité.",
+      "Le relais héparine-AVK en cas de chirurgie extracardiaque est codifié : arrêt AVK 3-5 jours avant, relais HBPM ou HNF curative."
+    ]
+  },
+  {
+    "item": "238",
+    "label": "238 Souffle cardiaque de l'enfant",
+    "rangA": [
+      "Un souffle cardiaque est très fréquent chez l'enfant (50-80 %) ; la majorité sont des souffles innocents (fonctionnels).",
+      "Les caractéristiques du souffle innocent : systolique, bref, éjectionnel, de faible intensité (≤ 2/6), variable avec la position, sans signe associé.",
+      "Un souffle diastolique, un frémissement, un souffle > 3/6, ou des signes associés (cyanose, IC, retard staturo-pondéral) orientent vers une cardiopathie organique.",
+      "L'ETT est l'examen de référence pour le diagnostic étiologique d'un souffle organique chez l'enfant.",
+      "Les cardiopathies congénitales les plus fréquentes avec souffle : CIV, CIA, canal artériel persistant, sténose pulmonaire, tétralogie de Fallot.",
+      "La CIV est la cardiopathie congénitale la plus fréquente ; souffle holosystolique au bord gauche du sternum.",
+      "La CIA donne un dédoublement fixe du B2 et un souffle éjectionnel pulmonaire ; souvent asymptomatique.",
+      "Le canal artériel persistant donne un souffle continu systolodiastolique sous-claviculaire gauche."
+    ],
+    "rangB": [
+      "Le souffle de Still est le souffle innocent le plus fréquent (musical, vibratoire, mésocardiaque, 2-6 ans).",
+      "La coarctation de l'aorte doit être évoquée devant une HTA des membres supérieurs avec des pouls fémoraux faibles/absents.",
+      "La tétralogie de Fallot associe : CIV, sténose pulmonaire, dextroposition de l'aorte, HVD ; cyanose précoce."
+    ]
+  },
+  {
+    "item": "342",
+    "label": "342 Malaises et pertes de connaissance brèves",
+    "rangA": [
+      "La syncope est une perte de connaissance brève (< 1 min), à début brutal, avec perte du tonus postural et récupération spontanée complète.",
+      "Les 3 grands mécanismes : syncope réflexe (vasovagale), syncope par hypotension orthostatique, syncope cardiaque.",
+      "La syncope vasovagale est la plus fréquente ; prodromes (nausées, sueurs, vision floue), circonstances déclenchantes (station debout, douleur, émotion).",
+      "La syncope cardiaque est la plus grave ; évoquer : BAV complet, TV, dysfonction sinusale, RA serré, CMH obstructive, EP.",
+      "L'ECG initial est indispensable et peut révéler : BAV, BBG/BBD, QT long, Brugada, WPW, TV, arythmie.",
+      "L'hypotension orthostatique est définie par une chute de PAS ≥ 20 mmHg ou PAD ≥ 10 mmHg dans les 3 minutes suivant le passage en position debout.",
+      "Les drapeaux rouges orientant vers une cause cardiaque : syncope d'effort, sans prodromes, en décubitus, antécédent de cardiopathie, ATCD familiaux de mort subite.",
+      "Le tilt-test explore les syncopes vasovagales ou dysautonomiques en reproduisant l'épisode.",
+      "Le holter ECG (24 h à 21 jours) ou le moniteur implantable (3-5 ans) sont utilisés pour documenter une arythmie en cas de syncopes récidivantes inexpliquées."
+    ],
+    "rangB": [
+      "Le massage sinocarotidien (sous monitoring, contre-indiqué si souffle carotidien) peut révéler une hypersensibilité sinocarotidienne chez le sujet > 40 ans.",
+      "L'EEP (exploration électrophysiologique) est indiquée en cas de bloc bifasciculaire + syncope pour mesurer le HV.",
+      "Les diagnostics différentiels non syncopaux : épilepsie, AIT vertébrobasilaire, hypoglycémie, conversion."
+    ]
+  },
+  {
+    "item": "231",
+    "label": "231 ECG (combiné)",
+    "rangA": [
+      "L'ECG normal : rythme sinusal (onde P positive en D2 précédant chaque QRS), FC 50-100 bpm, PR 120-200 ms, QRS < 120 ms, axe entre -30° et +90°.",
+      "Les territoires ECG : antéroseptal V1-V4, apical V3-V4, latéral D1-aVL-V5-V6, inférieur D2-D3-aVF ; miroir postérieur en V7-V9.",
+      "Un sus-décalage ST ≥ 2 mm en V1-V3 ou ≥ 1 mm en 2 dérivations contiguës avec miroir = SCA ST+.",
+      "L'HVG : indice de Sokolow (SV1 + RV5/V6 > 35 mm) ou Cornell (RaVL + SV3 > 28 mm homme, > 20 mm femme).",
+      "Le BBG : QRS ≥ 120 ms, aspect RR' en V5-V6, absence de q en V5-V6, troubles de la repolarisation secondaires.",
+      "Le BBD : QRS ≥ 120 ms, aspect rSR' en V1-V2, onde S empâtée en D1-V5-V6.",
+      "La préexcitation (WPW) : PR court < 120 ms, onde delta, QRS élargi ; risque de FA conduite rapide par la voie accessoire (super-Wolff).",
+      "L'hyperkaliémie : onde T ample pointue symétrique → allongement PR → élargissement QRS → TV/asystolie.",
+      "L'hypokaliémie : onde T plate/négative, onde U, sous-décalage ST, allongement QT, risque de torsade de pointes.",
+      "La péricardite : sus-décalage ST concave diffus, concordant, sans miroir, sous-décalage PQ, évoluant en 4 stades.",
+      "L'EP peut montrer : tachycardie sinusale, S1Q3, BBD, T négatives V1-V4, déviation axiale droite.",
+      "Le monitorage ECG est indiqué dans toute urgence CV, SCA, syncope arythmique, peropératoire."
+    ],
+    "rangB": [
+      "Le holter ECG (24-96 h) est indiqué pour documenter des symptômes paroxystiques (palpitations, syncopes) quand l'ECG standard est normal.",
+      "Le holter implantable permet un suivi ECG jusqu'à 3-5 ans pour les syncopes inexpliquées ou la FA silencieuse.",
+      "Les montres connectées ECG (dérivation unique) permettent d'établir une corrélation électroclinique lors de palpitations peu fréquentes.",
+      "Le BAV 1er degré : PR > 200 ms ; BAV 2e degré Mobitz 1 (Wenckebach) : allongement progressif du PR ; Mobitz 2 : onde P bloquée inopinée sans allongement préalable.",
+      "La torsade de pointes est une TV polymorphe sur QT long, pouvant dégénérer en FV ; traitement par sulfate de magnésium et accélération de la FC."
+    ]
+  },
+  {
+    "item": "232",
+    "label": "232 Fibrillation atriale",
+    "rangA": [
+      "La FA est le trouble du rythme le plus fréquent : activité atriale anarchique (400-600/min), QRS irréguliers, absence d'onde P individualisable.",
+      "Prévalence croissante avec l'âge : 10 % après 80 ans ; responsable de 20-25 % des AVC.",
+      "Classification : paroxystique (< 7 j), persistante (> 7 j), permanente (acceptée, pas de cardioversion).",
+      "Le bilan initial : ECG, ETT, ionogramme, créatinine, TSHus, NFS.",
+      "Le score CHA₂DS₂-VA évalue le risque thromboembolique : C (IC) 1, H (HTA) 1, A₂ (âge > 75) 2, D (diabète) 1, S₂ (AVC) 2, V (vasculaire) 1, A (65-74 ans) 1.",
+      "Score CHA₂DS₂-VA = 0 : pas d'anticoagulant ; ≥ 1 : AOD recommandés (ou AVK si prothèse mécanique / RM).",
+      "La cardioversion nécessite ≥ 3 semaines d'anticoagulation efficace avant + 4 semaines après (ou ETO préalable sans thrombus si < 24 h).",
+      "Le contrôle de fréquence (bêtabloquant, IC bradycardisant, digoxine) vise une FC < 110 bpm au repos.",
+      "Le contrôle du rythme (amiodarone, flécaïnide ou ablation) est une alternative ; l'ablation par isolation des veines pulmonaires est recommandée en 1re ligne dans la FA paroxystique.",
+      "La correction des comorbidités (HTA, obésité, SAOS, alcool, sédentarité) est fondamentale."
+    ],
+    "rangB": [
+      "La fermeture de l'auricule gauche (percutanée) est indiquée si contre-indication formelle aux anticoagulants et CHA₂DS₂-VA ≥ 2.",
+      "La maladie de l'oreillette (syndrome brady-tachy) associe FA paroxystique et dysfonction sinusale.",
+      "Chez le coronarien ou l'insuffisant cardiaque, seule l'amiodarone est utilisable comme antiarythmique ; le flécaïnide est contre-indiqué.",
+      "La FA à grosses mailles ne doit pas être confondue avec un flutter atrial.",
+      "L'ablation par cathéter a montré une supériorité sur les antiarythmiques pour le maintien du rythme sinusal au long cours."
+    ]
+  },
+  {
+    "item": "236",
+    "label": "236 Troubles de la conduction intracardiaque",
+    "rangA": [
+      "La dysfonction sinusale : bradycardie < 50 bpm, pauses > 3 s, incompétence chronotrope ; souvent liée au vieillissement.",
+      "Le BAV 1er degré : PR > 200 ms fixe ; bénin, le plus souvent nodal.",
+      "Le BAV 2e degré Mobitz 1 (Wenckebach) : allongement progressif du PR avant une onde P bloquée ; siège nodal, bénin.",
+      "Le BAV 2e degré Mobitz 2 : onde P bloquée sans allongement préalable du PR ; siège infranodal, risque d'évolution vers BAV complet.",
+      "Le BAV 3e degré (complet) : dissociation auriculo-ventriculaire totale ; urgence si infranodal (QRS larges, échappement lent < 40 bpm).",
+      "BAV nodal = QRS fins, échappement 40-60 bpm, amélioré par atropine ; BAV infranodal = QRS larges, échappement < 40 bpm, instable.",
+      "La cause la plus fréquente de BAV chez le sujet âgé est la dégénérescence fibreuse (maladie de Lenègre).",
+      "Les causes réversibles à éliminer en urgence : médicaments bradycardisants, hyperkaliémie, SCA (IDM inférieur), myocardite.",
+      "Le BBG associé à des syncopes doit faire suspecter un BAV paroxystique ; indication d'EEP (mesure du HV).",
+      "Le traitement d'urgence des bradycardies mal tolérées : atropine IV (1 mg), isoprénaline IV, stimulation cardiaque temporaire.",
+      "Le stimulateur cardiaque définitif (pacemaker) est indiqué dans : BAV 3e degré, BAV 2e degré Mobitz 2, dysfonction sinusale symptomatique."
+    ],
+    "rangB": [
+      "L'EEP mesure l'intervalle HV : HV > 70 ms = atteinte infrahissienne pathologique justifiant un pacemaker.",
+      "Le BAV congénital (1/20 000 naissances) est souvent immunologique (anticorps anti-Ro/SSA maternels dans le lupus).",
+      "Le BAV dans l'IDM inférieur est nodal, souvent régressif ; dans l'IDM antérieur, il est infranodal et de mauvais pronostic."
+    ]
+  },
+  {
+    "item": "237",
+    "label": "237 Palpitations",
+    "rangA": [
+      "Les palpitations sont la perception anormale de battements cardiaques ; symptôme très fréquent et non spécifique.",
+      "L'ECG est la pierre angulaire du diagnostic ; une tachycardie régulière à QRS large = TV jusqu'à preuve du contraire.",
+      "Les signes de gravité : FC > 150 bpm, hypotension, angor, IC, syncope, trouble de conscience.",
+      "Les antécédents à rechercher : cardiopathie connue, ATCD familiaux de mort subite < 35 ans, traitement allongeant le QT.",
+      "L'objectif est d'obtenir une corrélation électroclinique (ECG pendant les symptômes) ; holter ECG si palpitations fréquentes.",
+      "Les extrasystoles sont les palpitations les plus fréquentes ; bénignes sur cœur sain.",
+      "La tachycardie jonctionnelle (réentrée intranodale) : début et fin brusques, crise polyurique terminale, QRS fins, interrompue par manœuvres vagales/adénosine.",
+      "Le WPW en rythme sinusal : PR court < 120 ms, onde delta ; risque de FA rapide avec conduction antérograde par la voie accessoire.",
+      "Les manœuvres vagales ou l'adénosine (Striadyne®) permettent : d'interrompre une tachycardie jonctionnelle ou de démasquer l'activité atriale (FA, flutter).",
+      "L'ETT est systématique pour rechercher une cardiopathie sous-jacente."
+    ],
+    "rangB": [
+      "L'adénosine est contre-indiquée en cas d'asthme et de FA préexcitée (super-Wolff).",
+      "Le holter implantable (3-5 ans) est proposé si palpitations très rares avec suspicion d'arythmie grave.",
+      "Le syndrome de Brugada (sus-décalage ST en V1-V3 + BBD) est une cause génétique de mort subite à évoquer chez le sujet jeune."
+    ]
+  },
+  {
+    "item": "203",
+    "label": "203 Dyspnée aiguë et chronique",
+    "rangA": [
+      "La dyspnée est une gêne respiratoire subjective ; classification NYHA (I à IV) pour quantifier la sévérité.",
+      "Les principales étiologies de dyspnée aiguë cardiaque : OAP, tamponnade, troubles du rythme, choc cardiogénique.",
+      "L'EP est une cause fréquente de dyspnée aiguë ; rechercher un contexte thrombogène, tachycardie, douleur thoracique.",
+      "L'OAP associe : orthopnée, crépitants bilatéraux, expectoration mousseuse saumonée, BNP/NT-proBNP élevé.",
+      "Devant une dyspnée aiguë, BNP < 100 pg/mL (ou NT-proBNP < 300 pg/mL) rend le diagnostic d'IC très improbable.",
+      "Les seuils de NT-proBNP en dyspnée aiguë pour IC probable : > 450 pg/mL si < 55 ans, > 900 si 55-75 ans, > 1 800 si > 75 ans.",
+      "D-dimères < 500 µg/L excluent l'EP si probabilité clinique faible ou intermédiaire.",
+      "Le bilan de 1re intention : ECG, radiographie de thorax, gazométrie artérielle, BNP/NT-proBNP, D-dimères, NFS.",
+      "Les signes de gravité : tirage, cyanose, FC > 120 bpm, SpO₂ < 90 %, signes de choc, trouble de conscience.",
+      "La dyspnée chronique cardiaque évoque l'IC ; la dyspnée chronique pulmonaire évoque la BPCO, l'asthme, les PID."
+    ],
+    "rangB": [
+      "Le pseudoasthme cardiaque (sibilants sur IC) est un équivalent d'OAP chez le sujet âgé.",
+      "La dyspnée de Cheyne-Stokes (polypnée croissante puis décroissante + apnées) se voit dans l'IC grave (bas débit cérébral).",
+      "L'HTAP (idiopathique ou post-embolique) est une cause rare mais grave de dyspnée chronique."
+    ]
+  },
+  {
+    "item": "234",
+    "label": "234 Insuffisance cardiaque",
+    "rangA": [
+      "L'IC est un syndrome associant symptômes (dyspnée, œdèmes, fatigue) + anomalie structurelle/fonctionnelle cardiaque.",
+      "IC à FE diminuée (HFrEF) : FEVG < 40 % ; IC à FE légèrement diminuée : 41-49 % ; IC à FE préservée (HFpEF) : FEVG ≥ 50 %.",
+      "L'OAP cardiogénique survient quand la pression capillaire pulmonaire dépasse ≈ 25 mmHg (transsudat).",
+      "Le diagnostic repose sur : clinique + BNP/NT-proBNP + ETT (FEVG, taille cavités, pressions de remplissage, valves).",
+      "Seuils diagnostiques en non-aigu : BNP > 35 pg/mL ou NT-proBNP > 125 pg/mL → réaliser ETT.",
+      "Classification NYHA : I (pas de gêne), II (efforts importants), III (efforts minimes), IV (repos).",
+      "Principales étiologies : cardiopathie ischémique (1re cause), HTA, valvulopathies, cardiomyopathies (dilatée, hypertrophique, restrictive).",
+      "Traitement de l'HFrEF : 4 piliers cardioprotecteurs = IEC (ou sacubitril/valsartan) + bêtabloquant + antialdostérone + gliflozine + diurétiques de l'anse.",
+      "L'OAP est une urgence : position assise, O₂, furosémide IV (1 mg/kg), dérivés nitrés si PAS > 110 mmHg.",
+      "Le choc cardiogénique : PAS < 90 mmHg, signes d'hypoperfusion (marbrures, oligurie, confusion) ; traitement par inotropes (dobutamine).",
+      "Facteurs déclenchants de décompensation : rupture de traitement/régime, FA rapide, infection, SCA, anémie, AINS.",
+      "Le DAI est indiqué en prévention primaire si FEVG ≤ 35 % malgré ≥ 3 mois de traitement optimal (NYHA II-III).",
+      "La resynchronisation (pacemaker biventriculaire) est indiquée si FEVG ≤ 35 % + QRS ≥ 130 ms (surtout BBG).",
+      "L'éducation thérapeutique est essentielle : régime hyposodé (< 6 g/j), pesée quotidienne, signes d'alerte, vaccinations."
+    ],
+    "rangB": [
+      "L'IRM cardiaque permet de distinguer étiologie ischémique (rehaussement tardif sous-endocardique) des cardiomyopathies.",
+      "L'amylose cardiaque à transthyrétine est diagnostiquée par scintigraphie au technétium ; traitement spécifique par tafamidis.",
+      "Le coroscanner est l'examen de 1re intention pour éliminer une coronaropathie si probabilité faible-intermédiaire.",
+      "L'IC à FE préservée bénéficie désormais des gliflozines (recommandation I, A selon ESC 2021).",
+      "La transplantation cardiaque est réservée à l'IC terminale réfractaire ; contre-indiquée si résistances pulmonaires > 5 UW."
+    ]
+  },
+  {
+    "item": "226",
+    "label": "226 TVP et embolie pulmonaire",
+    "rangA": [
+      "La TVP proximale (poplitée, fémorale, iliaque) a un risque élevé d'EP ; la TVP distale (jambière) a un risque plus faible.",
+      "L'EP est la 3e cause de décès cardiovasculaire ; 50 % des TVP proximales ont une EP asymptomatique sur l'angioscanner.",
+      "Les facteurs de risque transitoires majeurs : chirurgie avec AG > 30 min, fracture MI, immobilisation > 3 j, contraception œstroprogestative.",
+      "Le score de Wells (TVP ou EP) et le score de Genève (EP) permettent d'évaluer la probabilité clinique pré-test.",
+      "D-dimères < 500 µg/L (ou seuil ajusté à l'âge > 50 ans : âge × 10) excluent la MTEV si probabilité faible ou intermédiaire.",
+      "L'échodoppler veineux est l'examen de 1re intention pour la TVP (sensibilité > 95 % en proximal) ; critère principal : incompressibilité veineuse.",
+      "L'angioscanner pulmonaire est l'examen de référence pour l'EP ; sensibilité > 95 % avec scanner multibarrettes.",
+      "L'EP grave (à haut risque) : choc ou PAS < 90 mmHg ; traitement par fibrinolyse en urgence.",
+      "Le traitement de la MTEV non grave repose sur les AOD (rivaroxaban ou apixaban) d'emblée, sans héparine préalable obligatoire.",
+      "Durée d'anticoagulation : 3 mois si facteur transitoire majeur ; 6 mois ou plus si non provoquée ; prolongée si cancer actif.",
+      "Compression élastique classe 3 (30-40 mmHg) dès le diagnostic de TVP, pour ≥ 6 mois.",
+      "Contraceptions œstroprogestatives sont contre-indiquées après MTEV."
+    ],
+    "rangB": [
+      "La triade de Virchow : stase veineuse + lésion pariétale + anomalies de l'hémostase.",
+      "Le bilan de thrombophilie n'est pas systématique ; indiqué si < 50 ans + 1er épisode non provoqué + ATCD familial au 1er degré.",
+      "L'HTAP chronique post-embolique survient chez 0,5-5 % des patients ; dépistée par ETT avant arrêt de l'anticoagulation.",
+      "Le score sPESI évalue la gravité de l'EP : > 0 = risque intermédiaire (mortalité ~10 %).",
+      "La recherche de cancer occulte est recommandée surtout si MTEV non provoquée chez > 40 ans."
+    ]
+  },
+  {
+    "item": "235",
+    "label": "235 Péricardite aiguë",
+    "rangA": [
+      "Diagnostic de péricardite si ≥ 2 critères parmi : douleur thoracique typique, frottement péricardique, modifications ECG, épanchement péricardique.",
+      "La douleur est rétrosternale, majorée par l'inspiration et le décubitus, soulagée par l'antéflexion ; résistante à la trinitrine.",
+      "L'ECG montre un sus-décalage ST concave vers le haut, diffus, sans miroir, avec sous-décalage PQ ; évolution en 4 stades.",
+      "L'ETT est systématique : évalue l'épanchement (minime < 10 mm, modéré 10-20 mm, abondant > 20 mm) et recherche une tamponnade.",
+      "La péricardite aiguë virale/idiopathique est l'étiologie la plus fréquente (> 80 %) ; traitement ambulatoire le plus souvent.",
+      "Traitement : repos physique ≥ 1 mois + AINS (aspirine ou ibuprofène) + colchicine (prévention des récidives, 3 mois).",
+      "Critères d'hospitalisation (ESC 2015) : fièvre > 38 °C, début subaigu, épanchement > 20 mm/tamponnade, résistance aux AINS > 7 jours.",
+      "La tamponnade est une urgence : signes droits (turgescence jugulaire), choc, pouls paradoxal (chute PAS > 10 mmHg en inspiration), bruits assourdis.",
+      "La tamponnade nécessite un drainage péricardique en urgence (ponction ou chirurgie).",
+      "Le taux de récidive est de 20-30 % ; la colchicine réduit ce risque de moitié."
+    ],
+    "rangB": [
+      "La péricardite tuberculeuse est suspectée si tableau subaigu + AEG + terrain (VIH, immunodéprimé) ; risque de constriction.",
+      "La péricardite néoplasique (cancer bronchique, sein, lymphome) donne souvent un épanchement hémorragique.",
+      "Le syndrome de Dressler est une péricardite tardive (2-16 semaines) post-IDM, devenue rare depuis la reperfusion précoce.",
+      "La péricardite constrictive chronique entraîne une adiastolie avec signes droits prédominants ; diagnostic par scanner/IRM."
+    ]
+  },
+  {
+    "item": "331",
+    "label": "331 Arrêt cardiocirculatoire",
+    "rangA": [
+      "L'AC est diagnostiqué par : patient inconscient + absence de respiration normale (gasps) + absence de pouls carotidien.",
+      "No-flow = temps sans aucune réanimation ; low-flow = temps de RCP sans retour hémodynamique. Au-delà de 5 min de no-flow, survie ≈ 7-8 %.",
+      "La chaîne de survie comporte 6 maillons : alerte (15), RCP précoce, défibrillation, RCP spécialisée, réanimation hospitalière, rétablissement.",
+      "Le massage cardiaque externe est prioritaire : compressions 100/min, profondeur 5 cm, minimiser les interruptions.",
+      "La FV est le rythme initial le plus fréquent ; son seul traitement efficace est le CEE (défibrillation).",
+      "Le 1er CEE doit être délivré idéalement dans les 3 minutes ; chaque minute sans RCP réduit la survie de 10 %.",
+      "En cas d'asystolie : MCE + adrénaline 1 mg IV toutes les 4 min ; pas de CEE.",
+      "Les mesures ACD : A = libérer les voies aériennes, C = circulation (MCE), D = défibrillation si rythme chocable.",
+      "La 1re étiologie d'AC est la cardiopathie ischémique (SCA récent ou séquelle d'IDM).",
+      "Les étiologies non cardiovasculaires (5-25 %) : toxiques, traumatiques, noyade, insuffisance respiratoire aiguë.",
+      "La coronarographie est indiquée après AC récupéré si suspicion de SCA (douleur thoracique, sus-décalage ST, BBG)."
+    ],
+    "rangB": [
+      "L'amiodarone 300 mg IV est recommandée avant le 3e CEE en cas de FV/TV réfractaire.",
+      "Le contrôle thermique (éviter l'hyperthermie) et glycémique est essentiel pour la neuroprotection post-AC.",
+      "Les causes réversibles d'AC à rechercher : 4H (hypoxie, hypovolémie, hypo/hyperkaliémie, hypothermie) + 4T (tamponnade, thrombose coronaire/pulmonaire, pneumothorax, toxiques).",
+      "L'ECMO peut être discutée dans les AC réfractaires chez des patients sélectionnés."
+    ]
+  },
+  {
+    "item": "330",
+    "label": "330 Antithrombotiques / accidents des anticoagulants",
+    "rangA": [
+      "L'aspirine (75-160 mg/j) inhibe irréversiblement la Cox-1 plaquettaire ; indiquée en prévention secondaire de la maladie athérothrombotique.",
+      "Les inhibiteurs du P2Y12 (clopidogrel, prasugrel, ticagrélor) sont associés à l'aspirine dans les SCA pour 1 à 12 mois.",
+      "Le prasugrel est contre-indiqué si antécédent d'AVC ; le ticagrélor peut causer une dyspnée.",
+      "L'HNF : effet immédiat IV, surveillance par TCA (1,5-2,5 × témoin), demi-vie 1h30 ; antidote = sulfate de protamine.",
+      "Les HBPM sont préférées à l'HNF (sauf IRC sévère ClCr < 30 mL/min) ; pas de surveillance anti-Xa systématique.",
+      "La TIH (thrombopénie induite par l'héparine) est immunoallergique ; surveillance plaquettaire 2×/semaine × 21 jours sous HNF.",
+      "Les AVK inhibent les facteurs II, VII, IX, X ; surveillance par INR (cible 2-3 en général, 3-4,5 si valve mécanique mitrale).",
+      "Le relais héparine → AVK : chevauchement ≥ 5 jours + 2 INR > 2 à 24 h d'intervalle avant arrêt de l'héparine.",
+      "Les AOD (dabigatran, rivaroxaban, apixaban) : action rapide per os, pas de surveillance INR, contre-indiqués si ClCr < 30 mL/min et si valve mécanique/RM.",
+      "Les AOD sont devenus le traitement de référence de la MTEV et de la FA non valvulaire (à privilégier par rapport aux AVK).",
+      "Antidote du dabigatran = idarucizumab (Praxbind®) ; antidote des anti-Xa en cours (andexanet alfa).",
+      "En cas de surdosage en AVK : INR 4-6 : saut de prise + vitamine K ; INR > 6 ou hémorragie grave : PPSB + vitamine K IV."
+    ],
+    "rangB": [
+      "Les fibrinolytiques (altéplase, ténectéplase) sont indiqués dans : STEMI sans PCI possible, AVC ischémique < 4h30, EP grave.",
+      "Le risque d'hémorragie intracérébrale sous fibrinolytiques est de 0,7 à 2 %.",
+      "Les relais AVK en périopératoire : arrêt 3-5 jours avant ; relais héparine curative si haut risque (valve mécanique, FA + ATCD embolique, MTEV < 3 mois).",
+      "La fluindione (Préviscan®) n'est plus recommandée en 1re intention (risque d'atteinte rénale immunoallergique)."
+    ]
+  }
+]
