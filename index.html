@@ -185,6 +185,20 @@
     }
     .flash-card .front { font-size: 1.35rem; font-weight: 800; }
     .flash-card .back { font-size: 1.05rem; margin-top: 0.75rem; color: var(--accent); font-weight: 650; }
+    .mnemo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.65rem; }
+    .mnemo-card {
+      border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 0.85rem;
+      background: var(--card); border-left: 4px solid var(--accent);
+    }
+    .mnemo-card[data-type="funfact"] { border-left-color: #7c5cbf; }
+    .mnemo-card[data-type="astuce"] { border-left-color: #c98a2e; }
+    .mnemo-title { font-size: 1.15rem; font-weight: 800; margin: 0 0 0.35rem; letter-spacing: 0.02em; }
+    .mnemo-decode { font-size: 0.92rem; line-height: 1.45; margin: 0 0 0.35rem; }
+    .mnemo-detail { font-size: 0.82rem; opacity: 0.88; margin: 0; }
+    .mnemo-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.45rem; }
+    .mnemo-tag { font-size: 0.72rem; padding: 0.12rem 0.4rem; border-radius: 999px; background: var(--line); opacity: 0.9; }
+    .mnemo-filters { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem; }
+    .mnemo-filters button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
     .score-box {
       margin-top: 0.85rem; padding: 0.7rem 0.8rem; border-radius: 10px;
       background: #ebe6dc; display: none;
@@ -295,6 +309,7 @@
     <ul class="nav-chips">
       <li><button type="button" id="tab-setup" class="active">Session</button></li>
       <li><button type="button" id="tab-cours">Cours</button></li>
+      <li><button type="button" id="tab-ecg">ECG</button></li>
       <li><button type="button" id="tab-notions">Notions</button></li>
       <li><button type="button" id="tab-arbres">CAT</button></li>
       <li><button type="button" id="tab-ecos">ECOS</button></li>
@@ -302,6 +317,7 @@
       <li><button type="button" id="tab-tx">Traitements</button></li>
       <li><button type="button" id="tab-fiches">Fiches</button></li>
       <li><button type="button" id="tab-sigles">Sigles</button></li>
+      <li><button type="button" id="tab-mnemos">Mnémos</button></li>
       <li><button type="button" id="tab-suivi">Suivi</button></li>
     </ul>
     <div id="view"></div>
@@ -319,6 +335,8 @@ let NOTIONS = [];
 let ARBRES = [];
 let TROUS = { totalGaps: 0, byItem: {} };
 let ECOS = [];
+let ECG_RAPPELS = null;
+let MNEMOS = { items: [] };
 let ecosRun = null;
 let oralState = null;
 let view = "setup";
@@ -341,7 +359,7 @@ const COURS_ACTIVE_N = 12;
 const PIPE_QCM_N = 5;
 const EXAM_N = 40;
 const EXAM_MS = 60 * 60 * 1000;
-const ECG_N = 20;
+const ECG_N = 30;
 const ORAL_N = 12;
 
 const $ = (id) => document.getElementById(id);
@@ -831,7 +849,7 @@ function beginEcgImageSession() {
   pipeline = null;
   const pool = shuffle(ecgImagePool());
   if (!pool.length) { alert("Pas de QCM ECG avec image."); return; }
-  const n = Math.min(pool.length, 14);
+  const n = Math.min(pool.length, 24);
   session = {
     phase: "quiz",
     focus: false,
@@ -892,6 +910,12 @@ async function boot() {
       const e = await (await fetch("ecos.json")).json();
       ECOS = e.cases || [];
     } catch { ECOS = []; }
+    try {
+      ECG_RAPPELS = await (await fetch("ecg_rappels.json")).json();
+    } catch { ECG_RAPPELS = null; }
+    try {
+      MNEMOS = await (await fetch("mnemos.json")).json();
+    } catch { MNEMOS = { items: [] }; }
   } catch (e) {
     viewEl.innerHTML = `<div class="card err">Impossible de charger <code>bank.json</code>. Lance <code>lancer.bat</code>.</div>`;
     return;
@@ -903,6 +927,7 @@ async function boot() {
     render();
   };
   $("tab-cours").onclick = () => { view = "cours"; render(); };
+  $("tab-ecg").onclick = () => { view = "ecg"; render(); };
   $("tab-notions").onclick = () => { view = "notions"; render(); };
   $("tab-arbres").onclick = () => { arbreState = null; view = "arbres"; render(); };
   $("tab-ecos").onclick = () => { ecosRun = null; view = "ecos"; render(); };
@@ -910,14 +935,16 @@ async function boot() {
   $("tab-tx").onclick = () => { view = "traitements"; render(); };
   $("tab-fiches").onclick = () => { view = "fiches"; render(); };
   $("tab-sigles").onclick = () => { view = "sigles"; render(); };
+  $("tab-mnemos").onclick = () => { view = "mnemos"; render(); };
   $("tab-suivi").onclick = () => { view = "suivi"; render(); };
   render();
 }
 
 function render() {
-  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "notions" || view === "arbres" || view === "ecos" || view === "ecos-play" || view === "oral");
-  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches", "cours", "notions", "cours-active", "flash", "arbres", "ecos", "ecos-play", "oral"].includes(view));
+  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "ecg" || view === "mnemos" || view === "notions" || view === "arbres" || view === "ecos" || view === "ecos-play" || view === "oral");
+  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "mnemos", "fiches", "cours", "ecg", "notions", "cours-active", "flash", "arbres", "ecos", "ecos-play", "oral"].includes(view));
   $("tab-cours").classList.toggle("active", view === "cours" || view === "cours-active");
+  $("tab-ecg").classList.toggle("active", view === "ecg");
   $("tab-notions").classList.toggle("active", view === "notions");
   $("tab-arbres").classList.toggle("active", view === "arbres");
   $("tab-ecos").classList.toggle("active", view === "ecos" || view === "ecos-play");
@@ -925,6 +952,7 @@ function render() {
   $("tab-tx").classList.toggle("active", view === "traitements");
   $("tab-fiches").classList.toggle("active", view === "fiches");
   $("tab-sigles").classList.toggle("active", view === "sigles");
+  $("tab-mnemos").classList.toggle("active", view === "mnemos");
   $("tab-suivi").classList.toggle("active", view === "suivi");
   if (view === "setup") renderSetup();
   else if (view === "quiz") renderQuiz();
@@ -933,6 +961,7 @@ function render() {
   else if (view === "cours-active") renderCoursActive();
   else if (view === "traitements") renderTraitements();
   else if (view === "cours") renderCours();
+  else if (view === "ecg") renderEcgHub();
   else if (view === "notions") renderNotions();
   else if (view === "arbres") renderArbres();
   else if (view === "ecos") renderEcos();
@@ -940,6 +969,7 @@ function render() {
   else if (view === "oral") renderOral();
   else if (view === "fiches") renderFiches();
   else if (view === "sigles") renderSigles();
+  else if (view === "mnemos") renderMnemos();
   else renderSuivi();
 }
 
@@ -981,6 +1011,15 @@ function buildFlashDeck() {
       front: s.abbr,
       back: s.def,
       item: null,
+    });
+  }
+  for (const m of (MNEMOS.items || [])) {
+    const typeLbl = m.type === "funfact" ? "Fun fact" : m.type === "astuce" ? "Astuce" : "Mnémo";
+    cards.push({
+      kind: "mnemo",
+      front: `${typeLbl} — ${m.title || "?"}`,
+      back: `${m.decode || ""}${m.detail ? " · " + m.detail : ""}`,
+      item: m.item,
     });
   }
   return shuffle(cards);
@@ -1036,7 +1075,7 @@ function renderFlash() {
       ${xpBarHtml(loadStats(), `<div class="xp-gain">+${s.gamify.gained} XP · ${s.known} OK / ${s.unknown} à revoir</div>`)}
       <div class="card">
         <div class="big-score">${s.known} / ${s.seen || 0}</div>
-        <p class="hint">Hit rapide seuils + sigles. Reviens demain pour la série.</p>
+        <p class="hint">Hit rapide seuils + sigles + mnémos. Reviens demain pour la série.</p>
         <div class="actions">
           <button type="button" id="flash-again">Encore 60 s</button>
           <button type="button" class="secondary" id="flash-home">Accueil</button>
@@ -1264,12 +1303,43 @@ function buildOralDeck(n = ORAL_N) {
     });
   }
   for (const p of (FICHES.pieges || []).slice(0, 20)) {
+    if (!p.item) continue;
     deck.push({
       id: `oral-piege-${p.item}-${deck.length}`,
       item: p.item,
       prompt: `Piège vs réflexe — ${itemLabel(p.item)}. Quel est le réflexe ?`,
       answer: `${p.reflexe || ""} (piège : ${p.piege || ""})`,
       w: itemWeakness(p.item) + 0.12,
+    });
+  }
+  if (ECG_RAPPELS) {
+    (ECG_RAPPELS.methode || []).forEach((text, i) => {
+      deck.push({
+        id: `oral-ecg-m-${i}`,
+        item: "231",
+        prompt: `ECG — étape ${i + 1}/${ECG_RAPPELS.methode.length} de la méthode :`,
+        answer: text,
+        w: itemWeakness("231") + 0.18,
+      });
+    });
+    (ECG_RAPPELS.urgences || []).slice(0, 6).forEach((text, i) => {
+      deck.push({
+        id: `oral-ecg-u-${i}`,
+        item: "231",
+        prompt: `Urgence ECG — quelle conduite / diagnostic ?`,
+        answer: text,
+        w: itemWeakness("231") + 0.2,
+      });
+    });
+  }
+  for (const m of (MNEMOS.items || [])) {
+    const typeLbl = m.type === "funfact" ? "Fun fact" : m.type === "astuce" ? "Astuce" : "Mnémo";
+    deck.push({
+      id: `oral-mn-${m.id || deck.length}`,
+      item: m.item || null,
+      prompt: `${typeLbl} — que signifie / que retenir pour « ${m.title} » ?`,
+      answer: `${m.decode || ""}. ${m.detail || ""}`.trim(),
+      w: (m.item ? itemWeakness(m.item) : 0.1) + (m.type === "mnemo" ? 0.15 : 0.1),
     });
   }
   if (!deck.length) return [];
@@ -1654,10 +1724,11 @@ function renderSetup() {
     <div class="hub-grid">
       <button type="button" class="hub-btn primary" id="btn-focus"><strong>Focus 8 min</strong><span>8 QCM sur tes faiblesses · timer</span></button>
       <button type="button" class="hub-btn" id="btn-srs" ${pendingN ? "" : "disabled"}><strong>${dueN ? `SRS · ${dueN} dues` : pendingN ? `SRS · ${pendingN} en file` : "SRS vide"}</strong><span>${dueN ? "erreurs à revoir maintenant" : nextLbl || "remplis en ratant des QCM"}</span></button>
-      <button type="button" class="hub-btn" id="btn-flash"><strong>Flash 60 s</strong><span>seuils + sigles · hit rapide</span></button>
+      <button type="button" class="hub-btn" id="btn-flash"><strong>Flash 60 s</strong><span>seuils · sigles · mnémos</span></button>
+      <button type="button" class="hub-btn" id="btn-to-mnemos"><strong>Mnémos</strong><span>${(MNEMOS.items || []).length} astuces · fun facts</span></button>
       <button type="button" class="hub-btn" id="btn-to-fiches"><strong>Fiches</strong><span>comparatifs · réflexes · pièges</span></button>
       <button type="button" class="hub-btn" id="btn-to-arbres"><strong>Arbres CAT</strong><span>Oui/Non comme au lit</span></button>
-      <button type="button" class="hub-btn" id="btn-ecg"><strong>Drill ECG</strong><span>${ecgImgN || ecgN} Q · ${ecgImgN ? "avec tracés" : "texte"}</span></button>
+      <button type="button" class="hub-btn" id="btn-ecg"><strong>ECG</strong><span>Rappels · drill ${ecgImgN || ecgN} Q</span></button>
       <button type="button" class="hub-btn" id="btn-ecos-hub"><strong>ECOS</strong><span>${ecosN} cas · vignette + stations</span></button>
       <button type="button" class="hub-btn" id="btn-oral-hub"><strong>Mode oral</strong><span>${ORAL_N} cartes · réponds à voix haute</span></button>
     </div>
@@ -1729,7 +1800,8 @@ function renderSetup() {
   $("btn-focus").onclick = () => beginFocusSession();
   $("btn-srs").onclick = () => beginSrsSession();
   $("btn-flash").onclick = () => beginFlashSession();
-  $("btn-ecg").onclick = () => beginEcgImageSession();
+  $("btn-to-mnemos").onclick = () => { view = "mnemos"; render(); };
+  $("btn-ecg").onclick = () => { view = "ecg"; render(); };
   $("btn-ecos-hub").onclick = () => { ecosRun = null; view = "ecos"; render(); };
   $("btn-oral-hub").onclick = () => beginOralSession();
   $("btn-to-fiches").onclick = () => { view = "fiches"; render(); };
@@ -2682,6 +2754,58 @@ function renderNotions() {
   });
 }
 
+function renderEcgHub() {
+  const r = ECG_RAPPELS || {};
+  const ecgN = ecgPool().length;
+  const ecgImgN = ecgImagePool().length;
+  const cours231 = (COURS || []).find((c) => c.item === "231");
+  const nA = cours231?.rangA?.length || 0;
+  let html = `<h2>ECG — Cours & rappels</h2>
+    <p class="sub">Item 231 · ${nA} points cours · ${ecgImgN || ecgN} QCM drill · tracés SVG pédagogiques</p>
+    <div class="hub-grid" style="margin-bottom:1rem">
+      <button type="button" class="hub-btn primary" id="ecg-drill-img"><strong>Drill avec tracés</strong><span>${Math.min(24, ecgImgN || ecgN)} Q · images SVG</span></button>
+      <button type="button" class="hub-btn" id="ecg-drill-txt"><strong>Drill texte</strong><span>${Math.min(ECG_N, ecgN)} Q · sans image</span></button>
+      <button type="button" class="hub-btn" id="ecg-cours-actif"><strong>Cours actif 231</strong><span>12 points · révèle avant correction</span></button>
+      <button type="button" class="hub-btn" id="ecg-to-cours"><strong>Cours complet</strong><span>231 ECG · Rang A + B</span></button>
+    </div>`;
+  if ((r.methode || []).length) {
+    html += `<div class="card"><h3 style="margin:0 0 0.5rem">Méthode de lecture (7 étapes)</h3><ol style="margin:0;padding-left:1.2rem">`;
+    r.methode.forEach((p) => { html += `<li style="margin-bottom:0.35rem">${esc(p)}</li>`; });
+    html += `</ol></div>`;
+  }
+  if ((r.valeurs || []).length) {
+    html += `<div class="card"><h3 style="margin:0 0 0.5rem">Valeurs normales & seuils</h3><div class="seuil-grid">`;
+    r.valeurs.forEach((v) => {
+      html += `<div class="seuil-card"><div class="seuil-val">${esc(v.label)}</div><div>${esc(v.value)}</div></div>`;
+    });
+    html += `</div></div>`;
+  }
+  if ((r.urgences || []).length) {
+    html += `<div class="card" style="border-left:4px solid var(--bad)"><h3 style="margin:0 0 0.5rem;color:var(--bad)">Urgences ECG</h3><ul style="margin:0">`;
+    r.urgences.forEach((p) => { html += `<li style="margin-bottom:0.3rem">${esc(p)}</li>`; });
+    html += `</ul></div>`;
+  }
+  (r.sections || []).forEach((sec) => {
+    html += `<div class="card fiche-sec"><h3 style="margin:0 0 0.45rem"><span class="badge a">${esc(sec.rang || "A")}</span> ${esc(sec.title)}</h3><ul style="margin:0">`;
+    (sec.points || []).forEach((p) => { html += `<li style="margin-bottom:0.28rem">${esc(p)}</li>`; });
+    html += `</ul></div>`;
+  });
+  const pieges = r.pieges || (FICHES.pieges || []).filter((p) => String(p.item) === "231");
+  if (pieges.length) {
+    html += `<div class="card"><h3 style="margin:0 0 0.55rem">Pièges & réflexes ECG</h3>`;
+    pieges.forEach((p) => {
+      html += `<div class="trap" style="border:none;padding:0.35rem 0"><div class="bad-box"><strong>Piège</strong> — ${esc(p.piege)}</div><div class="ok-box"><strong>Réflexe</strong> — ${esc(p.reflexe)}</div></div>`;
+    });
+    html += `</div>`;
+  }
+  html += `<p class="hint">Cours collège détaillé : onglet Cours → filtre 231 · Fiches → Réflexes/Pièges item 231</p>`;
+  viewEl.innerHTML = html;
+  $("ecg-drill-img").onclick = () => beginEcgImageSession();
+  $("ecg-drill-txt").onclick = () => beginEcgSession();
+  $("ecg-cours-actif").onclick = () => beginCoursActive("231", "A");
+  $("ecg-to-cours").onclick = () => { localStorage.setItem("cours-item", "231"); view = "cours"; render(); };
+}
+
 function renderCours() {
   let coursFilter = localStorage.getItem("cours-item") || "all";
   let rangFilter = localStorage.getItem("cours-rang") || "all";
@@ -2967,6 +3091,73 @@ function renderSeuils(item, q) {
         </table>
       </div>
     </div>`).join("");
+}
+
+function renderMnemos() {
+  const q = (window._mnemoQ || "").trim().toLowerCase();
+  const typeFilter = window._mnemoType || "all";
+  const items = MNEMOS.items || [];
+  const typeLabel = { mnemo: "Mnémo", astuce: "Astuce", funfact: "Fun fact" };
+  const shown = items.filter((m) => {
+    if (typeFilter !== "all" && m.type !== typeFilter) return false;
+    if (!q) return true;
+    const blob = [m.title, m.decode, m.detail, m.item, ...(m.tags || [])].join(" ").toLowerCase();
+    return blob.includes(q);
+  });
+  const nMn = items.filter((m) => m.type === "mnemo").length;
+  const nAs = items.filter((m) => m.type === "astuce").length;
+  const nFf = items.filter((m) => m.type === "funfact").length;
+  let html = `<h1>Mnémos & fun facts</h1>
+    <p class="sub">${items.length} cartes · ${nMn} mnémoniques · ${nAs} astuces · ${nFf} fun facts · collège + pièges EDN</p>
+    <div class="card focus-hero" style="background:linear-gradient(145deg,#4a3d6e,#6a5090);margin-bottom:1rem">
+      <h2 style="margin:0 0 0.35rem">Flash 60 s</h2>
+      <p style="margin:0 0 0.65rem;opacity:0.92">Mélange seuils, sigles et mnémos — tap pour révéler.</p>
+      <button type="button" id="mnemo-flash">Lancer Flash 60 s</button>
+    </div>
+    <div class="card">
+      <input class="search" id="mnemo-q" type="search" placeholder="PIED, BASIC, FA, TV, DAPT…" value="${esc(window._mnemoQ || "")}" />
+      <div class="mnemo-filters">
+        <button type="button" class="secondary pill mnemo-type${typeFilter === "all" ? " active" : ""}" data-mtype="all">Tous (${items.length})</button>
+        <button type="button" class="secondary pill mnemo-type${typeFilter === "mnemo" ? " active" : ""}" data-mtype="mnemo">Mnémos (${nMn})</button>
+        <button type="button" class="secondary pill mnemo-type${typeFilter === "astuce" ? " active" : ""}" data-mtype="astuce">Astuces (${nAs})</button>
+        <button type="button" class="secondary pill mnemo-type${typeFilter === "funfact" ? " active" : ""}" data-mtype="funfact">Fun facts (${nFf})</button>
+      </div>
+      <p class="hint">${shown.length} résultat${shown.length > 1 ? "s" : ""}</p>
+    </div>`;
+  if (!shown.length) {
+    html += `<p class="hint">Aucune carte ne correspond.</p>`;
+  } else {
+    html += `<div class="mnemo-grid">`;
+    shown.forEach((m) => {
+      const tl = typeLabel[m.type] || m.type || "Carte";
+      html += `<div class="mnemo-card" data-type="${esc(m.type || "mnemo")}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.35rem;flex-wrap:wrap">
+          <div class="mnemo-title">${esc(m.title)}</div>
+          <span class="badge ${m.rang === "B" ? "b" : "a"}">${esc(tl)}${m.rang ? " · " + esc(m.rang) : ""}</span>
+        </div>
+        <p class="mnemo-decode">${esc(m.decode)}</p>
+        <p class="mnemo-detail">${esc(m.detail)}</p>
+        <div class="mnemo-tags">
+          ${m.item ? `<span class="mnemo-tag">${esc(itemLabel(m.item))}</span>` : ""}
+          ${(m.tags || []).map((t) => `<span class="mnemo-tag">${esc(t)}</span>`).join("")}
+        </div>
+      </div>`;
+    });
+    html += `</div>`;
+  }
+  viewEl.innerHTML = html;
+  $("mnemo-flash").onclick = () => beginFlashSession();
+  const inp = $("mnemo-q");
+  if (inp) {
+    inp.focus();
+    inp.oninput = () => { window._mnemoQ = inp.value; renderMnemos(); };
+  }
+  viewEl.querySelectorAll(".mnemo-type").forEach((btn) => {
+    btn.onclick = () => {
+      window._mnemoType = btn.getAttribute("data-mtype");
+      renderMnemos();
+    };
+  });
 }
 
 function renderSigles() {

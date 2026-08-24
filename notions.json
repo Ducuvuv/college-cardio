@@ -46,7 +46,7 @@
     "label": "ECG sémiologie",
     "keywords": ["BBG", "BBD", "HVG", "WPW", "hyperkaliémie", "onde Q", "sous-décalage"],
     "items": ["231", "232", "236", "339", "230"],
-    "blurb": "Tracés typiques : SCA, blocs, hypertrophies, WPW, dyskaliémies, péricardite."
+    "blurb": "Méthode 7 étapes, tracés typiques (SCA, blocs, FA, TV, WPW, dyskaliémies). Onglet ECG = rappels + drill."
   },
   {
     "id": "seuils",

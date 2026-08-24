@@ -990,6 +990,54 @@
       ]
     },
     {
+      "item": "231",
+      "label": "231 ECG",
+      "keywords": [
+        "7 étapes",
+        "PR 120–200",
+        "TV QRS larges",
+        "ST+ 2 mm",
+        "FA irrégulier"
+      ],
+      "redFlags": [
+        "Sus-ST persistant, TV régulière QRS larges, BAV 3 symptomatique, Mobitz 2",
+        "QT long + TdP, hyperK sévère, WPW + FA, Wellens V2–V3",
+        "ECG normal ≠ rassurance devant douleur thoracique ou syncope"
+      ],
+      "bilan": [
+        "Lecture : rythme → FC → axe → P → PR → QRS → ST-T → QT",
+        "ECG 12 dér. ± V3R V4R V7–V9 si douleur thoracique / inférieur hypotension",
+        "Iono (K+), TSH si BAV/brady. ETT si cardiopathie ou doute SCA sur BBG"
+      ],
+      "arbre": {
+        "premiere": [
+          "Bradycardie : dysfonction sinusale ? BAV (1 / Mobitz 1 / Mobitz 2 / 3) ? QRS fins vs larges",
+          "Tachycardie QRS fins : irrégulier = FA ; régulier = flutter/TSV → vagales + adénosine si stable",
+          "Tachycardie QRS larges régulière = TV jusqu'à preuve du contraire",
+          "ST+ territorial + miroir → reperfusion. ST diffus concave sans miroir + sous-PQ → péricardite"
+        ],
+        "echec": [
+          "QRS large : BBD (V1+) vs BBG (V1−) vs TV (dissociation VA, captures)",
+          "BBG + douleur = SCA jusqu'à preuve (Sgarbossa), pas « banal »",
+          "T− V1–V3 : EP/HVD avant ischémie antérieure"
+        ],
+        "terrains": [
+          "WPW : pas d'adénosine si FA. Pacemaker : spikes devant P ou QRS",
+          "IDM inférieur + hypotension : V4R, CI nitrés si IDM VD"
+        ]
+      },
+      "ciei": [
+        "Dissociation VA de TV ≠ dissociation du BAV complet",
+        "Onde U non incluse dans le QT. T isolée négative V1 peut être normale"
+      ],
+      "rangA": [
+        "Méthode, normales, SCA, blocs, FA/flutter, TV, dyskaliémies, WPW, HVG, EP"
+      ],
+      "rangB": [
+        "Holter, montres, EEP/HV, blocs incomplets, médicaments QT long"
+      ]
+    },
+    {
       "item": "339",
       "label": "339 SCA / angor",
       "keywords": [
@@ -1868,7 +1916,8 @@
       "arbre": {
         "premiere": [
           "Lire : rythme, FC, axe, P, PR, QRS, ST-T, QT",
-          "FA = seule tachycardie complètement irrégulière à QRS fins"
+          "FA = seule tachycardie complètement irrégulière à QRS fins",
+          "7 étapes collège : rythme → conduction → repolarisation → brady/tachy"
         ],
         "echec": [
           "QRS larges réguliers = TV jusqu’à preuve du contraire"
@@ -2117,6 +2166,24 @@
       "rang": "A",
       "piege": "BBG « bénin » ; ou ischémie devant des T− V1–V3 d’une HV droite / EP.",
       "reflexe": "BBG jamais bénin. T− droites : penser VD / EP. Dissociation VA de TV ≠ BAV complet."
+    },
+    {
+      "item": "231",
+      "rang": "A",
+      "piege": "Confondre péricardite (ST diffus) et STEMI antérieur ; ou appeler STEMI un ST régressif sous TNT.",
+      "reflexe": "Péricardite : ST concave diffus, sous-PQ, pas de Q territorialisée. ST régressif = SCA ST−."
+    },
+    {
+      "item": "231",
+      "rang": "A",
+      "piege": "Adénosine ou vérapamil devant FA sur WPW (QRS larges irréguliers).",
+      "reflexe": "Super-Wolff = urgence. Procainamide/amiodarone. Jamais de freinateur du NAV."
+    },
+    {
+      "item": "231",
+      "rang": "A",
+      "piege": "Traiter un QRS large régulier comme un simple BBG sans éliminer une TV.",
+      "reflexe": "TV jusqu'à preuve du contraire : dissociation VA, captures/fusions, concordance V1–V6."
     },
     {
       "item": "221",
@@ -2397,6 +2464,38 @@
       "label": "ECG normal",
       "value": "FC 60–100 ; PR 120–200 ; QRS 70–110 ; QTc < 450",
       "note": "En pratique QTc 470–480 souvent retenu. FA = irrégulier QRS fins."
+    },
+    {
+      "group": "ECG / SCA",
+      "item": "231",
+      "rang": "A",
+      "label": "Critères ST+",
+      "value": "≥ 2 mm V1–V3 ou ≥ 1 mm sur 2 dér. contiguës",
+      "note": "Miroir réciproque. BBG + douleur = équivalent STEMI (Sgarbossa)."
+    },
+    {
+      "group": "ECG / rythme",
+      "item": "231",
+      "rang": "A",
+      "label": "TV vs BBG",
+      "value": "QRS larges réguliers = TV jusqu'à preuve",
+      "note": "Dissociation VA, captures, concordance V1–V6. Adénosine si doute TSV (CI WPW+FA)."
+    },
+    {
+      "group": "ECG / conduction",
+      "item": "231",
+      "rang": "A",
+      "label": "Blocs de branche",
+      "value": "QRS ≥ 120 ms ; V1+ = BBD, V1− = BBG",
+      "note": "HBAG : axe < −30°. Mobitz 2 → PM si symptomatique."
+    },
+    {
+      "group": "ECG / HVG",
+      "item": "231",
+      "rang": "A",
+      "label": "Sokolow",
+      "value": "SV1 + RV5/V6 > 35 mm",
+      "note": "Cornell : RaVL + SV3 > 28 mm (H), > 20 mm (F)."
     },
     {
       "group": "Péricarde / tamponnade",

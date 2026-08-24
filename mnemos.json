@@ -1,0 +1,355 @@
+{
+  "label": "Mnémos & fun facts",
+  "items": [
+    {
+      "id": "pied",
+      "type": "mnemo",
+      "title": "PIED",
+      "decode": "Péricardite · Infarctus · EP · Dissection",
+      "detail": "Les 4 urgences cardiovasculaires devant une douleur thoracique, après avoir écarté la détresse vitale.",
+      "item": "230",
+      "tags": ["urgence", "douleur"],
+      "rang": "A"
+    },
+    {
+      "id": "basic",
+      "type": "mnemo",
+      "title": "BASIC",
+      "decode": "Bêtabloquant · Antiagrégant · Statine · IEC · Contrôle des FDR",
+      "detail": "Prévention secondaire post-IDM. Chacune des 4 classes médicamenteuses ≈ −25 % de mortalité totale.",
+      "item": "222",
+      "tags": ["prévention", "SCA"],
+      "rang": "A"
+    },
+    {
+      "id": "acd",
+      "type": "mnemo",
+      "title": "ACD",
+      "decode": "Airway · Circulation (MCE) · Defibrillation",
+      "detail": "Adulte en ACR : pas de bouche-à-bouche. MCE 4–5 cm, ~100/min, relais / 2 min.",
+      "item": "331",
+      "tags": ["urgence", "ACR"],
+      "rang": "A"
+    },
+    {
+      "id": "4piliers",
+      "type": "mnemo",
+      "title": "4 piliers HFrEF",
+      "decode": "IEC/ARNI · Bêtabloquant · Antagoniste aldo · Inhibiteur SGLT2",
+      "detail": "Diurétique de l'anse si congestion — symptomatique, pas un « 5e pilier » pronostic.",
+      "item": "234",
+      "tags": ["IC", "traitement"],
+      "rang": "A"
+    },
+    {
+      "id": "cha2ds2va",
+      "type": "mnemo",
+      "title": "CHA₂DS₂-VA",
+      "decode": "C IC · H HTA · A₂ >75 ans · D Diabète · S₂ AVC/AIT · V Vasculaire · A 65–74 ans",
+      "detail": "3e éd. : plus de point « sexe ». 0 = pas d'ACO ; >1 = ACO indiscutables. Non applicable si prothèse mécanique / RM.",
+      "item": "232",
+      "tags": ["FA", "ACO"],
+      "rang": "A"
+    },
+    {
+      "id": "hasbled",
+      "type": "mnemo",
+      "title": "HAS-BLED",
+      "decode": "HTA · Abnormal renal/liver · Stroke · Bleeding · Labile INR · Elderly · Drugs/alcohol",
+      "detail": "Évalue le risque hémorragique sous AVK — ne contre-indique pas l'anticoagulation, mais vigilance ++.",
+      "item": "232",
+      "tags": ["FA", "ACO"],
+      "rang": "A"
+    },
+    {
+      "id": "wells",
+      "type": "mnemo",
+      "title": "Wells EP (rappel)",
+      "decode": "Signes cliniques EP · ATCD MTEV · FC >100 · chir récente · hémoptysie · cancer · DVT clinique",
+      "detail": "Proba faible / intermédiaire / forte → D-dimères ou imagerie. Proba forte : anticoaguler avant le scanner.",
+      "item": "226",
+      "tags": ["EP", "score"],
+      "rang": "A"
+    },
+    {
+      "id": "duke",
+      "type": "mnemo",
+      "title": "Duke (endocardite)",
+      "decode": "2 majeurs · ou 1 majeur + 3 mineurs · ou 5 mineurs",
+      "detail": "Majeur : hémocultures typiques, preuve lésionnelle (ETT/ETO, PET…). Mineurs : fièvre, FDR, embolie, immunologique, microbio.",
+      "item": "152",
+      "tags": ["infectieux", "score"],
+      "rang": "A"
+    },
+    {
+      "id": "bb-v1",
+      "type": "mnemo",
+      "title": "Blocs de branche",
+      "decode": "V1 positif (rSR') = BBD · V1 négatif (rS/QS) = BBG",
+      "detail": "QRS ≥ 120 ms. HBAG = axe < −30°. BBG jamais « bénin » devant douleur thoracique.",
+      "item": "231",
+      "tags": ["ECG", "conduction"],
+      "rang": "A"
+    },
+    {
+      "id": "mobitz",
+      "type": "mnemo",
+      "title": "Mobitz 1 vs 2",
+      "decode": "Mobitz 1 = PR qui allonge puis P bloquée (Wenckebach) · Mobitz 2 = P bloquée inopinée",
+      "detail": "Mobitz 1 nodal, souvent bénin. Mobitz 2 infranodal → pacemaker si symptomatique.",
+      "item": "236",
+      "tags": ["ECG", "BAV"],
+      "rang": "A"
+    },
+    {
+      "id": "tachy-qrs",
+      "type": "mnemo",
+      "title": "Tachycardie — 2 règles d'or",
+      "decode": "Irrégulier + QRS fins = FA · Régulier + QRS larges = TV jusqu'à preuve du contraire",
+      "detail": "Flutter = ondes F monomorphes (~150/min). TSV QRS fins → vagales puis adénosine (CI asthme, WPW+FA).",
+      "item": "231",
+      "tags": ["ECG", "rythme"],
+      "rang": "A"
+    },
+    {
+      "id": "sgarbossa",
+      "type": "mnemo",
+      "title": "Sgarbossa (BBG + douleur)",
+      "decode": "ST ≥1 mm concordant · ST ≥5 mm discordant V1–V3 · ST ≥3 mm discordant",
+      "detail": "BBG + douleur persistante = équivalent STEMI → ne pas attendre la troponine.",
+      "item": "339",
+      "tags": ["ECG", "SCA"],
+      "rang": "A"
+    },
+    {
+      "id": "nyha",
+      "type": "mnemo",
+      "title": "NYHA",
+      "decode": "I effort normal · II effort diminué · III effort minimal · IV repos",
+      "detail": "Classification fonctionnelle de l'IC — distincte de la FEVG (HFrEF vs HFpEF).",
+      "item": "234",
+      "tags": ["IC", "score"],
+      "rang": "A"
+    },
+    {
+      "id": "sokolow",
+      "type": "mnemo",
+      "title": "Sokolow (HVG)",
+      "decode": "SV1 + RV5/V6 > 35 mm",
+      "detail": "Cornell : RaVL + SV3 > 28 mm (H), > 20 mm (F). HVG peut mimiquer un SCA sur les T− latérales.",
+      "item": "231",
+      "tags": ["ECG", "HVG"],
+      "rang": "A"
+    },
+    {
+      "id": "pericardite-st",
+      "type": "mnemo",
+      "title": "Péricardite vs STEMI",
+      "decode": "Péricardite = ST diffus concave SANS miroir + sous-PQ · STEMI = territorial + miroir + Q possible",
+      "detail": "Ne pas confondre ST diffus et antérieur. Troponine peut être modérément ↑ (myopéricardite).",
+      "item": "235",
+      "tags": ["ECG", "péricarde"],
+      "rang": "A"
+    },
+    {
+      "id": "idm-vd",
+      "type": "mnemo",
+      "title": "Triade IDM VD",
+      "decode": "ST+ inférieur · Hypotension · Poumons clairs",
+      "detail": "→ V4R, remplissage prudent, pas de nitrés. Souvent lésion coronaire droite.",
+      "item": "339",
+      "tags": ["SCA", "urgence"],
+      "rang": "A"
+    },
+    {
+      "id": "dapt-durees",
+      "type": "astuce",
+      "title": "Durées DAPT",
+      "decode": "SCA stenté = 12 mois · Angor stable stenté = 6 mois (clopidogrel)",
+      "detail": "Piège EDN : 6 mois post-SCA ou 12 mois post-angor stable = faux.",
+      "item": "339",
+      "tags": ["SCA", "chiffres"],
+      "rang": "A"
+    },
+    {
+      "id": "pci-delai",
+      "type": "astuce",
+      "title": "Délais PCI",
+      "decode": "ST+ : ≤ 120 min · ST− très haut risque : coro < 2 h · ST− haut risque : < 24 h",
+      "detail": "Au-delà de 120 min sans PCI : fibrinolyse + transfert (sauf CI).",
+      "item": "339",
+      "tags": ["SCA", "chiffres"],
+      "rang": "A"
+    },
+    {
+      "id": "ldl-cible",
+      "type": "astuce",
+      "title": "LDL très haut risque",
+      "decode": "< 0,55 g/L ET −50 % vs basal",
+      "detail": "Statine d'emblée en secondaire. Anti-PCSK9 si LDL > 0,7 g/L sous statine ± ézétimibe.",
+      "item": "223",
+      "tags": ["lipides", "chiffres"],
+      "rang": "A"
+    },
+    {
+      "id": "hta-cible",
+      "type": "astuce",
+      "title": "Cible tensionnelle ESC 2024",
+      "decode": "PAS 120–129 / PAD 70–79 mmHg",
+      "detail": "Adapter si > 85 ans, fragilité, hypotension orthostatique. Atteindre en ~3 mois.",
+      "item": "224",
+      "tags": ["HTA", "chiffres"],
+      "rang": "A"
+    },
+    {
+      "id": "ecg-avant-tn",
+      "type": "astuce",
+      "title": "ECG avant troponine",
+      "decode": "Toujours. < 10 min au SAU devant douleur thoracique.",
+      "detail": "ECG percritique normal n'élimine pas un SCA ST−. Renouveler à 1–2 h si doute.",
+      "item": "230",
+      "tags": ["ECG", "urgence"],
+      "rang": "A"
+    },
+    {
+      "id": "fa-prevalence",
+      "type": "funfact",
+      "title": "FA = reine des arythmies",
+      "decode": "~10 % après 80 ans · 20–25 % des AVC",
+      "detail": "Seule tachycardie complètement irrégulière à QRS fins sur ECG.",
+      "item": "232",
+      "tags": ["FA", "épidémiologie"],
+      "rang": "A"
+    },
+    {
+      "id": "adenosine-ci",
+      "type": "funfact",
+      "title": "Adénosine : 2 CI mémorables",
+      "decode": "Asthme (bronchospasme) · FA sur WPW (super-Wolff)",
+      "detail": "Effet ~10 secondes. Sert au diagnostic ET au traitement des TSV QRS fins.",
+      "item": "237",
+      "tags": ["rythme", "piège"],
+      "rang": "A"
+    },
+    {
+      "id": "hyperk-phases",
+      "type": "funfact",
+      "title": "HyperK sur ECG (film)",
+      "decode": "T pointues → PR long → QRS larges → BAV / asystolie",
+      "detail": "Traitement urgent avant la catastrophe rhythmique.",
+      "item": "231",
+      "tags": ["ECG", "urgence"],
+      "rang": "A"
+    },
+    {
+      "id": "hypok-u",
+      "type": "funfact",
+      "title": "HypoK & onde U",
+      "decode": "T plate · onde U · QT long · risque Torsade de pointes",
+      "detail": "L'onde U ne entre pas dans le calcul du QT.",
+      "item": "231",
+      "tags": ["ECG", "iono"],
+      "rang": "A"
+    },
+    {
+      "id": "pacemaker-escape",
+      "type": "funfact",
+      "title": "Pacemakers de réserve",
+      "decode": "Jonctionnel 40–60 bpm · Ventriculaire 15–30 bpm",
+      "detail": "Si le nœud sinusal lâche, un groupe nodal « plus bas » prend le relais (échappement).",
+      "item": "231",
+      "tags": ["ECG", "conduction"],
+      "rang": "B"
+    },
+    {
+      "id": "flutter-150",
+      "type": "funfact",
+      "title": "Flutter typique",
+      "decode": "Ondes F ~ 150/min · activité atriale monomorphe",
+      "detail": "Souvent conduction 2:1 → FC ~150. Ne pas confondre avec FA à grosses mailles.",
+      "item": "232",
+      "tags": ["rythme", "ECG"],
+      "rang": "A"
+    },
+    {
+      "id": "oap-nitro",
+      "type": "funfact",
+      "title": "Nitrés OAP",
+      "decode": "SL si PAS > 100 (domicile) · IV si PAS > 110 (hôpital)",
+      "detail": "CI si choc ou PAS trop basse. Pas de BB d'emblée en poussée d'OAP non contrôlé.",
+      "item": "234",
+      "tags": ["IC", "urgence"],
+      "rang": "A"
+    },
+    {
+      "id": "tamponnade-triade",
+      "type": "funfact",
+      "title": "Tamponnade",
+      "decode": "Hypotension · JVP ↑ · bruits du cœur assourdis",
+      "detail": "Beck + pouls paradoxal (ΔPAS insp. ≥ 10 mmHg). Pas de diurétiques — remplissage + drainage.",
+      "item": "235",
+      "tags": ["urgence", "péricarde"],
+      "rang": "A"
+    },
+    {
+      "id": "souffle-innocent",
+      "type": "funfact",
+      "title": "Souffle enfant",
+      "decode": "Innocent = systolique, doux, variable, sans thrill · Diastolique = organique jusqu'à preuve",
+      "detail": "Prophylaxie endocardite : haut risque seulement (pas tout souffle).",
+      "item": "238",
+      "tags": ["pédiatrie", "piège"],
+      "rang": "A"
+    },
+    {
+      "id": "syncope-effort",
+      "type": "astuce",
+      "title": "Syncope d'effort = drapeau rouge",
+      "decode": "Penser HOCM, sténose aortique, arythmie ventriculaire, EP",
+      "detail": "ETT quasi systématique. Holter / moniteur implantable si récidives inexpliquées.",
+      "item": "342",
+      "tags": ["syncope", "urgence"],
+      "rang": "A"
+    },
+    {
+      "id": "4p-extracardiaques",
+      "type": "mnemo",
+      "title": "4 P extracardiaques (dyspnée/douleur)",
+      "decode": "Pneumothorax · Pneumopathie · Panic · Po (intoxication)",
+      "detail": "À ne pas confondre avec PIED (urgences CV). Pneumothorax ≠ 5e lettre de PIED.",
+      "item": "230",
+      "tags": ["douleur", "dyspnée"],
+      "rang": "B"
+    },
+    {
+      "id": "mce-amio",
+      "type": "astuce",
+      "title": "ACR chocable",
+      "decode": "Amiodarone 300 mg IV avant le 3e choc · Adrénaline 1 mg / 4 min",
+      "detail": "MCE 4–5 cm, relais toutes les 2 min. DEA dès que possible.",
+      "item": "331",
+      "tags": ["ACR", "chiffres"],
+      "rang": "A"
+    },
+    {
+      "id": "cv-cha2-no-sex",
+      "type": "funfact",
+      "title": "Piège CHA₂DS₂-VASc",
+      "decode": "3e éd. CNEC = CHA₂DS₂-VA sans le point « femme »",
+      "detail": "Ne pas perdre de points en examen sur l'ancienne version VASc.",
+      "item": "232",
+      "tags": ["FA", "piège", "EDN"],
+      "rang": "A"
+    },
+    {
+      "id": "tv-dissociation",
+      "type": "funfact",
+      "title": "TV vs BAV complet",
+      "decode": "Dissociation ventriculoatrienne (TV) ≠ dissociation AV du BAV 3",
+      "detail": "Captures / fusions = preuve de TV. Plus de QRS que d'ondes P → origine ventriculaire.",
+      "item": "231",
+      "tags": ["ECG", "piège"],
+      "rang": "A"
+    }
+  ]
+}
