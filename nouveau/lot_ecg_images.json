@@ -1,0 +1,284 @@
+{
+  "questions": [
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Quel diagnostic correspond à cet ECG ?",
+      "images": [{"alt": "ECG — rythme sinusal normal", "src": "images/ecg/normal.svg"}],
+      "options": [
+        {"letter": "A", "text": "Rythme sinusal normal"},
+        {"letter": "B", "text": "Fibrillation atriale"},
+        {"letter": "C", "text": "BAV du 3e degré"},
+        {"letter": "D", "text": "Tachycardie ventriculaire"},
+        {"letter": "E", "text": "IDM ST+ antérieur"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ondes P visibles, QRS fins réguliers, ST isoélectrique = rythme sinusal normal."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Interprétation de cet ECG :",
+      "images": [{"alt": "ECG — fibrillation atriale", "src": "images/ecg/fa.svg"}],
+      "options": [
+        {"letter": "A", "text": "Fibrillation atriale"},
+        {"letter": "B", "text": "Flutter atrial 2:1"},
+        {"letter": "C", "text": "Extrasystoles auriculaires"},
+        {"letter": "D", "text": "Tachycardie sinusale"},
+        {"letter": "E", "text": "Rythme junctionnel"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Absence d'ondes P, activité atriale anarchique, RR irréguliers = FA."
+    },
+    {
+      "item": "339",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Devant une douleur thoracique aiguë, cet ECG oriente vers :",
+      "images": [{"alt": "ECG — sus-décalage ST antérieur", "src": "images/ecg/stemi-anterior.svg"}],
+      "options": [
+        {"letter": "A", "text": "SCA ST+ antérieur — urgence de revascularisation"},
+        {"letter": "B", "text": "Péricardite aiguë"},
+        {"letter": "C", "text": "Embolie pulmonaire"},
+        {"letter": "D", "text": "Angor stable"},
+        {"letter": "E", "text": "ECG normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sus-décalage ST territorial antérieur = SCA ST+ → angioplastie ou fibrinolyse en urgence."
+    },
+    {
+      "item": "339",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Douleur thoracique + ECG suivant. Territoire en jeu ?",
+      "images": [{"alt": "ECG — sus-décalage ST inférieur", "src": "images/ecg/stemi-inferior.svg"}],
+      "options": [
+        {"letter": "A", "text": "Inférieur (CD) — envisager coronaire droite"},
+        {"letter": "B", "text": "Antérieur (IVA)"},
+        {"letter": "C", "text": "Latéral (Cx) pur"},
+        {"letter": "D", "text": "Pas d'ischémie"},
+        {"letter": "E", "text": "Péricardite seule"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST+ en DII–DIII–aVF = territoire inférieur. Surveiller BAV ou BS liés à la CD."
+    },
+    {
+      "item": "235",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Fièvre, douleur thoracique positionnelle, ECG ci-dessous. Diagnostic ?",
+      "images": [{"alt": "ECG — péricardite", "src": "images/ecg/pericarditis.svg"}],
+      "options": [
+        {"letter": "A", "text": "Péricardite aiguë"},
+        {"letter": "B", "text": "IDM ST+ antérieur"},
+        {"letter": "C", "text": "Embolie pulmonaire"},
+        {"letter": "D", "text": "Hyperkaliémie"},
+        {"letter": "E", "text": "BBG neuf"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST diffus concave sans miroir + sous-décalage PQ = péricardite. Troponine peut être modérément élevée."
+    },
+    {
+      "item": "236",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Syncope + ECG. Conduite à tenir en urgence ?",
+      "images": [{"alt": "ECG — BAV 3", "src": "images/ecg/bav3.svg"}],
+      "options": [
+        {"letter": "A", "text": "Surveillance + indication de pacemaker ; atropine/stimulation si bradycardie mal tolérée"},
+        {"letter": "B", "text": "Adénosine IV"},
+        {"letter": "C", "text": "Amiodarone en bolus"},
+        {"letter": "D", "text": "High dose bêtabloquant"},
+        {"letter": "E", "text": "Aucune prise en charge spécifique"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV 3 symptomatique = stimulation transcutanée + pacemaker. QRS fins = échappement jonctionnel."
+    },
+    {
+      "item": "236",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Cet ECG montre :",
+      "images": [{"alt": "ECG — Mobitz 2", "src": "images/ecg/mobitz2.svg"}],
+      "options": [
+        {"letter": "A", "text": "BAV du 2e degré Mobitz 2 — risque de BAV complet"},
+        {"letter": "B", "text": "BAV du 1er degré"},
+        {"letter": "C", "text": "Mobitz 1 (Wenckebach)"},
+        {"letter": "D", "text": "FA"},
+        {"letter": "E", "text": "Rythme sinusal normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mobitz 2 = bloc soudain d'une onde P sans allongement progressif du PR. Indication pacemaker si symptomatique ou QRS larges."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "QRS larges avec aspect typique en V1. Diagnostic ?",
+      "images": [{"alt": "ECG — BBD", "src": "images/ecg/rbbb.svg"}],
+      "options": [
+        {"letter": "A", "text": "Bloc de branche droit complet"},
+        {"letter": "B", "text": "Bloc de branche gauche complet"},
+        {"letter": "C", "text": "TV monomorphe"},
+        {"letter": "D", "text": "WPW"},
+        {"letter": "E", "text": "ECG normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBD : QRS ≥ 120 ms, rSR' en V1, S large latéral. Peut masquer un SCA antérieur — comparer aux ECG antérieurs."
+    },
+    {
+      "item": "224",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "HTA chronique — ECG :",
+      "images": [{"alt": "ECG — BBG", "src": "images/ecg/lbbb.svg"}],
+      "options": [
+        {"letter": "A", "text": "Bloc de branche gauche complet"},
+        {"letter": "B", "text": "Bloc de branche droit"},
+        {"letter": "C", "text": "FA"},
+        {"letter": "D", "text": "Rythme sinusal normal"},
+        {"letter": "E", "text": "Flutter"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBG : QRS large + HBAG. BBG neuf = penser SCA et comparer aux tracés antérieurs."
+    },
+    {
+      "item": "232",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Palpitations — ECG :",
+      "images": [{"alt": "ECG — flutter", "src": "images/ecg/flutter.svg"}],
+      "options": [
+        {"letter": "A", "text": "Flutter atrial"},
+        {"letter": "B", "text": "Fibrillation atriale"},
+        {"letter": "C", "text": "Tachycardie sinusale"},
+        {"letter": "D", "text": "TV"},
+        {"letter": "E", "text": "BAV 3"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ondes F en dents de scie, conduction AV variable. Ablation de l'isthme si symptomatique ou mal toléré."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Palpitations + malaises. ECG :",
+      "images": [{"alt": "ECG — TV", "src": "images/ecg/vt.svg"}],
+      "options": [
+        {"letter": "A", "text": "Tachycardie ventriculaire"},
+        {"letter": "B", "text": "TSV à QRS fins"},
+        {"letter": "C", "text": "FA rapide"},
+        {"letter": "D", "text": "Flutter 2:1"},
+        {"letter": "E", "text": "Rythme sinusal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tachycardie régulière QRS larges = TV jusqu'à preuve du contraire. Instabilité → choc électrique synchronisé."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Insuffisance rénale + ECG :",
+      "images": [{"alt": "ECG — hyperkaliémie", "src": "images/ecg/hyperkalemia.svg"}],
+      "options": [
+        {"letter": "A", "text": "Hyperkaliémie sévère"},
+        {"letter": "B", "text": "Hypokaliémie"},
+        {"letter": "C", "text": "Péricardite"},
+        {"letter": "D", "text": "Angor stable"},
+        {"letter": "E", "text": "ECG normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ondes T pointues + élargissement QRS = hyperkaliémie. Urgence : calcium, insuline-glucose, résine, dialyse si besoin."
+    },
+    {
+      "item": "226",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Dyspnée aiguë post-voyage — ECG :",
+      "images": [{"alt": "ECG — signes EP", "src": "images/ecg/ep.svg"}],
+      "options": [
+        {"letter": "A", "text": "Signes indirects d'embolie pulmonaire (S1Q3, T négatives)"},
+        {"letter": "B", "text": "IDM ST+ antérieur"},
+        {"letter": "C", "text": "Péricardite"},
+        {"letter": "D", "text": "BAV complet"},
+        {"letter": "E", "text": "ECG strictement normal obligatoire en EP"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EP : ECG souvent normal ou tachycardie sinusale ; S1Q3 et T négatives antérieures possibles mais inconstants."
+    },
+    {
+      "item": "237",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Palpitations chez sujet jeune — ECG :",
+      "images": [{"alt": "ECG — WPW", "src": "images/ecg/wpw.svg"}],
+      "options": [
+        {"letter": "A", "text": "Syndrome de Wolff-Parkinson-White"},
+        {"letter": "B", "text": "BBD isolé"},
+        {"letter": "C", "text": "BAV 1"},
+        {"letter": "D", "text": "FA"},
+        {"letter": "E", "text": "Normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "PR court + onde delta. En FA sur voie accessoire : éviter adénosine/vérapamil → procainamide ou cardioversion."
+    }
+  ]
+}
