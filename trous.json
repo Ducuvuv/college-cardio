@@ -1,0 +1,315 @@
+{
+  "source": "cours.json vs bank.json",
+  "thresholdA": 0.38,
+  "thresholdB": 0.32,
+  "totalGaps": 27,
+  "totalQuestions": 27,
+  "byItem": {
+    "153": {
+      "label": "153 Surveillance porteurs de valves/prothèses",
+      "n": 1,
+      "gaps": [
+        {
+          "item": "153",
+          "label": "153 Surveillance porteurs de valves/prothèses",
+          "rang": "A",
+          "index": 8,
+          "coverage": 0.36,
+          "text": "Un dysfonctionnement de prothèse est suspecté devant l'apparition d'un souffle nouveau, de symptômes (dyspnée, embolies) ou d'une modification échographique."
+        }
+      ]
+    },
+    "221": {
+      "label": "221 Athérome",
+      "n": 3,
+      "gaps": [
+        {
+          "item": "221",
+          "label": "221 Athérome",
+          "rang": "A",
+          "index": 9,
+          "coverage": 0.25,
+          "text": "L'athérome est une maladie systémique : la présence d'une localisation doit faire rechercher les autres (coronaire, carotide, MI, aorte)."
+        },
+        {
+          "item": "221",
+          "label": "221 Athérome",
+          "rang": "B",
+          "index": 0,
+          "coverage": 0.3,
+          "text": "La dysfonction endothéliale est l'étape initiale de l'athérogenèse, favorisée par le stress oxydatif et les LDL oxydés."
+        },
+        {
+          "item": "221",
+          "label": "221 Athérome",
+          "rang": "A",
+          "index": 0,
+          "coverage": 0.33,
+          "text": "L'athérosclérose est une maladie inflammatoire chronique de l'intima des artères de gros et moyen calibre, caractérisée par des plaques d'athérome (lipides, fibrose, nécrose)."
+        }
+      ]
+    },
+    "222": {
+      "label": "222 Facteurs de risque CV et prévention",
+      "n": 4,
+      "gaps": [
+        {
+          "item": "222",
+          "label": "222 Facteurs de risque CV et prévention",
+          "rang": "A",
+          "index": 8,
+          "coverage": 0.22,
+          "text": "La prise en charge est plurifactorielle : RHD + traitement médicamenteux des FDRCV + suivi régulier."
+        },
+        {
+          "item": "222",
+          "label": "222 Facteurs de risque CV et prévention",
+          "rang": "A",
+          "index": 7,
+          "coverage": 0.25,
+          "text": "L'aspirine n'est plus recommandée en prévention primaire systématique, même chez le diabétique."
+        },
+        {
+          "item": "222",
+          "label": "222 Facteurs de risque CV et prévention",
+          "rang": "B",
+          "index": 1,
+          "coverage": 0.25,
+          "text": "Les facteurs de risque émergents (Lp(a), CRP ultrasensible, score calcique) peuvent aider à reclassifier les patients à risque intermédiaire."
+        },
+        {
+          "item": "222",
+          "label": "222 Facteurs de risque CV et prévention",
+          "rang": "A",
+          "index": 4,
+          "coverage": 0.36,
+          "text": "En prévention secondaire, l'objectif LDL-c est < 0,55 g/L et une réduction ≥ 50 % par rapport à la valeur de base."
+        }
+      ]
+    },
+    "224": {
+      "label": "224 HTA de l'adulte",
+      "n": 2,
+      "gaps": [
+        {
+          "item": "224",
+          "label": "224 HTA de l'adulte",
+          "rang": "A",
+          "index": 3,
+          "coverage": 0.2,
+          "text": "Les atteintes d'organe cible à rechercher : HVG, microalbuminurie, rétinopathie hypertensive, IRC, athérome."
+        },
+        {
+          "item": "224",
+          "label": "224 HTA de l'adulte",
+          "rang": "A",
+          "index": 1,
+          "coverage": 0.33,
+          "text": "L'HTA est le FDRCV le plus fréquent ; elle touche environ 30 % de la population adulte."
+        }
+      ]
+    },
+    "225": {
+      "label": "225 AOMI et anévrismes",
+      "n": 1,
+      "gaps": [
+        {
+          "item": "225",
+          "label": "225 AOMI et anévrismes",
+          "rang": "B",
+          "index": 1,
+          "coverage": 0.17,
+          "text": "L'angioscanner ou l'angio-IRM sont réalisés en préopératoire pour planifier la revascularisation."
+        }
+      ]
+    },
+    "226": {
+      "label": "226 TVP et embolie pulmonaire",
+      "n": 2,
+      "gaps": [
+        {
+          "item": "226",
+          "label": "226 TVP et embolie pulmonaire",
+          "rang": "B",
+          "index": 0,
+          "coverage": 0.12,
+          "text": "La triade de Virchow : stase veineuse + lésion pariétale + anomalies de l'hémostase."
+        },
+        {
+          "item": "226",
+          "label": "226 TVP et embolie pulmonaire",
+          "rang": "A",
+          "index": 11,
+          "coverage": 0.25,
+          "text": "Contraceptions œstroprogestatives sont contre-indiquées après MTEV."
+        }
+      ]
+    },
+    "230": {
+      "label": "230 Douleur thoracique aiguë",
+      "n": 1,
+      "gaps": [
+        {
+          "item": "230",
+          "label": "230 Douleur thoracique aiguë",
+          "rang": "A",
+          "index": 1,
+          "coverage": 0.38,
+          "text": "L'ECG doit être réalisé dans les 10 minutes suivant le premier contact médical."
+        }
+      ]
+    },
+    "231": {
+      "label": "231 ECG (combiné)",
+      "n": 1,
+      "gaps": [
+        {
+          "item": "231",
+          "label": "231 ECG (combiné)",
+          "rang": "B",
+          "index": 2,
+          "coverage": 0.31,
+          "text": "Les montres connectées ECG (dérivation unique) permettent d'établir une corrélation électroclinique lors de palpitations peu fréquentes."
+        }
+      ]
+    },
+    "232": {
+      "label": "232 Fibrillation atriale",
+      "n": 1,
+      "gaps": [
+        {
+          "item": "232",
+          "label": "232 Fibrillation atriale",
+          "rang": "B",
+          "index": 4,
+          "coverage": 0.3,
+          "text": "L'ablation par cathéter a montré une supériorité sur les antiarythmiques pour le maintien du rythme sinusal au long cours."
+        }
+      ]
+    },
+    "233RA": {
+      "label": "233 Rétrécissement aortique",
+      "n": 1,
+      "gaps": [
+        {
+          "item": "233RA",
+          "label": "233 Rétrécissement aortique",
+          "rang": "A",
+          "index": 7,
+          "coverage": 0.25,
+          "text": "Les médicaments vasodilatateurs (IEC, dérivés nitrés) sont à utiliser avec précaution en cas de RA serré (risque d'hypotension sévère)."
+        }
+      ]
+    },
+    "234": {
+      "label": "234 Insuffisance cardiaque",
+      "n": 1,
+      "gaps": [
+        {
+          "item": "234",
+          "label": "234 Insuffisance cardiaque",
+          "rang": "B",
+          "index": 0,
+          "coverage": 0.2,
+          "text": "L'IRM cardiaque permet de distinguer étiologie ischémique (rehaussement tardif sous-endocardique) des cardiomyopathies."
+        }
+      ]
+    },
+    "236": {
+      "label": "236 Troubles de la conduction intracardiaque",
+      "n": 2,
+      "gaps": [
+        {
+          "item": "236",
+          "label": "236 Troubles de la conduction intracardiaque",
+          "rang": "B",
+          "index": 0,
+          "coverage": 0.22,
+          "text": "L'EEP mesure l'intervalle HV : HV > 70 ms = atteinte infrahissienne pathologique justifiant un pacemaker."
+        },
+        {
+          "item": "236",
+          "label": "236 Troubles de la conduction intracardiaque",
+          "rang": "A",
+          "index": 7,
+          "coverage": 0.36,
+          "text": "Les causes réversibles à éliminer en urgence : médicaments bradycardisants, hyperkaliémie, SCA (IDM inférieur), myocardite."
+        }
+      ]
+    },
+    "331": {
+      "label": "331 Arrêt cardiocirculatoire",
+      "n": 1,
+      "gaps": [
+        {
+          "item": "331",
+          "label": "331 Arrêt cardiocirculatoire",
+          "rang": "B",
+          "index": 3,
+          "coverage": 0.2,
+          "text": "L'ECMO peut être discutée dans les AC réfractaires chez des patients sélectionnés."
+        }
+      ]
+    },
+    "339": {
+      "label": "339 SCA / angor stable",
+      "n": 4,
+      "gaps": [
+        {
+          "item": "339",
+          "label": "339 SCA / angor stable",
+          "rang": "B",
+          "index": 1,
+          "coverage": 0.25,
+          "text": "L'angor vasospastique (Prinzmetal) survient au repos (souvent nocturne) avec sus-décalage ST transitoire et coronaires normales ou peu lésées."
+        },
+        {
+          "item": "339",
+          "label": "339 SCA / angor stable",
+          "rang": "A",
+          "index": 8,
+          "coverage": 0.33,
+          "text": "Les complications de l'IDM sont : troubles du rythme (FV, TV), IC, rupture (paroi libre, septum, pilier), péricardite, thrombus VG, anévrisme VG."
+        },
+        {
+          "item": "339",
+          "label": "339 SCA / angor stable",
+          "rang": "A",
+          "index": 9,
+          "coverage": 0.33,
+          "text": "La douleur thoracique de l'IDM est prolongée (> 20 min), ne cède pas à la trinitrine, avec signes neurovégétatifs (sueurs, nausées)."
+        },
+        {
+          "item": "339",
+          "label": "339 SCA / angor stable",
+          "rang": "A",
+          "index": 10,
+          "coverage": 0.33,
+          "text": "Un BBG complet de novo dans un contexte de douleur thoracique doit faire suspecter un SCA ST+ et justifie une coronarographie urgente."
+        }
+      ]
+    },
+    "342": {
+      "label": "342 Malaises et pertes de connaissance brèves",
+      "n": 2,
+      "gaps": [
+        {
+          "item": "342",
+          "label": "342 Malaises et pertes de connaissance brèves",
+          "rang": "A",
+          "index": 2,
+          "coverage": 0.36,
+          "text": "La syncope vasovagale est la plus fréquente ; prodromes (nausées, sueurs, vision floue), circonstances déclenchantes (station debout, douleur, émotion)."
+        },
+        {
+          "item": "342",
+          "label": "342 Malaises et pertes de connaissance brèves",
+          "rang": "A",
+          "index": 6,
+          "coverage": 0.38,
+          "text": "Les drapeaux rouges orientant vers une cause cardiaque : syncope d'effort, sans prodromes, en décubitus, antécédent de cardiopathie, ATCD familiaux de mort subite."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "douleur-tho",
+    "label": "230 Douleur thoracique",
+    "item": "230",
+    "root": "Douleur thoracique",
+    "steps": [
+      { "id": "d1", "q": "Détresse vitale ? (FR > 30 / SpO2 < 90 / choc / conscience)", "yes": "d-urg", "no": "d2" },
+      { "id": "d-urg", "q": "Réa + 15. ECG immédiat. Triage PIED en parallèle.", "end": true, "cat": true },
+      { "id": "d2", "q": "ECG 12 dér. (+ V3R V4R V7–V9) AVANT troponine", "yes": "d3", "no": "d3", "auto": true },
+      { "id": "d3", "q": "ST+ persistant / équivalent STEMI ?", "yes": "d-stemi", "no": "d4" },
+      { "id": "d-stemi", "q": "USIC / salle de coro. Aspirine + P2Y12. PCI ≤ 120 min sinon lyse.", "end": true, "cat": true },
+      { "id": "d4", "q": "Suspect PIED ? (Péricardite / Infarctus / EP / Dissection)", "yes": "d-pied", "no": "d5" },
+      { "id": "d-pied", "q": "Ne pas rassurer sur Tn initiale négative. Echo/TDM selon piste. Appeler le 15 si doute.", "end": true, "cat": true },
+      { "id": "d5", "q": "Angor chronique probable (score < 5 %) ?", "yes": "d-angor", "no": "d-suite" },
+      { "id": "d-angor", "q": "Pas d’examen d’emblée si proba très basse. Sinon bilan programmé.", "end": true },
+      { "id": "d-suite", "q": "Tn-us + radio + surveillance. Renouveler ECG si récidive.", "end": true }
+    ]
+  },
+  {
+    "id": "sca",
+    "label": "339 SCA / reperfusion",
+    "item": "339",
+    "root": "SCA suspecté",
+    "steps": [
+      { "id": "s1", "q": "STEMI (ST+ / équivalent) ?", "yes": "s-stemi", "no": "s2" },
+      { "id": "s-stemi", "q": "PCI primaire si ≤ 120 min. Sinon fibrinolyse < 12 h puis transfert. Aspirine 250 IV + prasugrel/ticagrélor.", "end": true, "cat": true },
+      { "id": "s2", "q": "NSTE-ACS à très haut risque (choc, angor réfractaire, TV, insuffisance mitrale aiguë) ?", "yes": "s-urgent", "no": "s3" },
+      { "id": "s-urgent", "q": "Coro immédiate (< 2 h). Double antiagrégation + anticoagulation.", "end": true, "cat": true },
+      { "id": "s3", "q": "Haut risque (GRACE, Tn+, instabilité) ?", "yes": "s-haut", "no": "s-bas" },
+      { "id": "s-haut", "q": "Coro < 24 h. Aspirine + ticagrélor/prasugrel + anticoag.", "end": true, "cat": true },
+      { "id": "s-bas", "q": "Surveillance, tests non invasifs / coro selon évolution. Ne pas oublier les FDR et la prévention secondaire.", "end": true }
+    ]
+  },
+  {
+    "id": "fa",
+    "label": "232 FA — anticoagulation",
+    "item": "232",
+    "root": "FA documentée",
+    "steps": [
+      { "id": "f1", "q": "Prothèse mécanique ou RM modéré–sévère ?", "yes": "f-avk", "no": "f2" },
+      { "id": "f-avk", "q": "AVK d’emblée. CHA₂DS₂-VA ne s’applique PAS.", "end": true, "cat": true },
+      { "id": "f2", "q": "Cardioversion prévue ?", "yes": "f-cv", "no": "f3" },
+      { "id": "f-cv", "q": "ACO ≥ 3 sem avant + 4 sem après (ou ETO sans thrombus, ou FA < 24 h datée). Puis score pour la suite.", "end": true, "cat": true },
+      { "id": "f3", "q": "CHA₂DS₂-VA = 0 ?", "yes": "f-zero", "no": "f4" },
+      { "id": "f-zero", "q": "Pas d’ACO au long cours (hors contexte CV).", "end": true },
+      { "id": "f4", "q": "Score = 1 ?", "yes": "f-un", "no": "f-plus" },
+      { "id": "f-un", "q": "ACO discutés (bénéfice/risque). AOD préférés.", "end": true, "cat": true },
+      { "id": "f-plus", "q": "Score > 1 → ACO indiscutables. AOD > AVK.", "end": true, "cat": true }
+    ]
+  },
+  {
+    "id": "oap",
+    "label": "234 OAP / IC aiguë",
+    "item": "234",
+    "root": "OAP / dyspnée aiguë cardiaque",
+    "steps": [
+      { "id": "o1", "q": "Choc cardiogénique (PAS < 90 + hypoperfusion) ?", "yes": "o-choc", "no": "o2" },
+      { "id": "o-choc", "q": "USIC. O2/VNI selon gaz. Dobutamine. Traiter le facteur déclenchant. Pas de nitrés si hypoTA.", "end": true, "cat": true },
+      { "id": "o2", "q": "Position assise + O2 si SaO2 < 90 % + furosémide 1 mg/kg IV", "yes": "o3", "no": "o3", "auto": true },
+      { "id": "o3", "q": "PAS > 110 mmHg ?", "yes": "o-nitre", "no": "o4" },
+      { "id": "o-nitre", "q": "Nitrés IV (adapter à la PA). Surveiller.", "end": true, "cat": true },
+      { "id": "o4", "q": "Chercher facteur déclenchant (FA, infection, SCA, AINS, écart de régime).", "end": true, "cat": true }
+    ]
+  },
+  {
+    "id": "ep",
+    "label": "226 EP — risque",
+    "item": "226",
+    "root": "EP confirmée ou très probable",
+    "steps": [
+      { "id": "e1", "q": "Choc / hypotension (PAS < 90 ou −40 > 15 min) ?", "yes": "e-haut", "no": "e2" },
+      { "id": "e-haut", "q": "Haut risque : USIC + fibrinolyse + HNF (embolectomie si CI lyse).", "end": true, "cat": true },
+      { "id": "e2", "q": "sPESI ≥ 1 et/ou souffrance VD ?", "yes": "e-inter", "no": "e-bas" },
+      { "id": "e-inter", "q": "Risque intermédiaire : HBPM/AOD, surveillance rapprochée, USIC si aggravation.", "end": true, "cat": true },
+      { "id": "e-bas", "q": "Bas risque : AOD/HBPM, sortie possible si critères OK.", "end": true }
+    ]
+  },
+  {
+    "id": "syncope",
+    "label": "342 Syncope — risque",
+    "item": "342",
+    "root": "Syncope / malaise",
+    "steps": [
+      { "id": "y1", "q": "Critères de gravité ECG / cardiopathie / effort / famille mort subite ?", "yes": "y-grave", "no": "y2" },
+      { "id": "y-grave", "q": "Hospitalisation / bilan cardio urgent. Holter, ETT, avis rythmologue.", "end": true, "cat": true },
+      { "id": "y2", "q": "Orthostatique (PAS −20 / PAD −10 / PAS < 90 en 1–3 min) ?", "yes": "y-ortho", "no": "y3" },
+      { "id": "y-ortho", "q": "Réhydratation, revue des traitements, éducation aux levers.", "end": true },
+      { "id": "y3", "q": "Réflexe / vagale typique ?", "yes": "y-vagale", "no": "y-inexpl" },
+      { "id": "y-vagale", "q": "Rassurance + manœuvres. Pas d’exploration lourde d’emblée.", "end": true },
+      { "id": "y-inexpl", "q": "Bilan ciblé (ECG, ETT, holter). Ne pas étiqueter « vagale » sans critères.", "end": true, "cat": true }
+    ]
+  },
+  {
+    "id": "hfref",
+    "label": "234 HFrEF — traitement",
+    "item": "234",
+    "root": "IC FEVG < 40 %",
+    "steps": [
+      { "id": "h1", "q": "Congestion (œdèmes, râles, prise de poids) ?", "yes": "h-diu", "no": "h2" },
+      { "id": "h-diu", "q": "Diurétique d’anse pour les symptômes (pas un 5e pilier de mortalité).", "yes": "h2", "no": "h2", "auto": true },
+      { "id": "h2", "q": "4 piliers : IEC/ARNI + BB (4 molécules) + ARM + gliflozine", "yes": "h3", "no": "h3", "auto": true },
+      { "id": "h3", "q": "FEVG ≤ 35 % malgré ≥ 3 mois de ttt optimal, NYHA II–III ?", "yes": "h-dai", "no": "h4" },
+      { "id": "h-dai", "q": "DAI prévention primaire (survie > 1 an).", "end": true, "cat": true },
+      { "id": "h4", "q": "FEVG ≤ 35 % + QRS ≥ 130 ms (surtout BBG) ?", "yes": "h-crt", "no": "h-ok" },
+      { "id": "h-crt", "q": "Resynchronisation (CRT).", "end": true, "cat": true },
+      { "id": "h-ok", "q": "Éducation, régime, vaccins, traiter les comorbidités.", "end": true }
+    ]
+  }
+]

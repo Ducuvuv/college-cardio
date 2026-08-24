@@ -61,18 +61,18 @@
       "id": "221",
       "label": "221 Athérome",
       "group": "I — Athérome",
-      "nNouveau": 21,
+      "nNouveau": 24,
       "nCollege": 5,
-      "n": 21,
+      "n": 24,
       "highYield": false
     },
     {
       "id": "222",
       "label": "222 FDR / prévention",
       "group": "I — Athérome",
-      "nNouveau": 23,
+      "nNouveau": 27,
       "nCollege": 5,
-      "n": 23,
+      "n": 27,
       "highYield": false
     },
     {
@@ -88,45 +88,45 @@
       "id": "224",
       "label": "224 HTA",
       "group": "I — Athérome",
-      "nNouveau": 35,
+      "nNouveau": 37,
       "nCollege": 5,
-      "n": 35,
+      "n": 37,
       "highYield": false
     },
     {
       "id": "225",
       "label": "225 AOMI / anévrismes",
       "group": "I — Athérome",
-      "nNouveau": 31,
+      "nNouveau": 32,
       "nCollege": 5,
-      "n": 31,
+      "n": 32,
       "highYield": false
     },
     {
       "id": "339",
       "label": "339 SCA / angor",
       "group": "I — Athérome",
-      "nNouveau": 49,
+      "nNouveau": 53,
       "nCollege": 6,
-      "n": 49,
+      "n": 53,
       "highYield": true
     },
     {
       "id": "230",
       "label": "230 Douleur thoracique",
       "group": "I — Athérome",
-      "nNouveau": 32,
+      "nNouveau": 33,
       "nCollege": 6,
-      "n": 32,
+      "n": 33,
       "highYield": true
     },
     {
       "id": "233RA",
       "label": "233 RA",
       "group": "II — Valves",
-      "nNouveau": 37,
+      "nNouveau": 38,
       "nCollege": 3,
-      "n": 37,
+      "n": 38,
       "highYield": true
     },
     {
@@ -160,9 +160,9 @@
       "id": "153",
       "label": "153 Prothèses",
       "group": "II — Valves",
-      "nNouveau": 25,
+      "nNouveau": 26,
       "nCollege": 6,
-      "n": 25,
+      "n": 26,
       "highYield": false
     },
     {
@@ -178,36 +178,36 @@
       "id": "342",
       "label": "342 Malaises / syncope",
       "group": "III — Rythme",
-      "nNouveau": 32,
+      "nNouveau": 34,
       "nCollege": 5,
-      "n": 32,
+      "n": 34,
       "highYield": true
     },
     {
       "id": "231",
       "label": "231 ECG",
       "group": "III — Rythme",
-      "nNouveau": 39,
+      "nNouveau": 40,
       "nCollege": 5,
-      "n": 39,
+      "n": 40,
       "highYield": true
     },
     {
       "id": "232",
       "label": "232 FA",
       "group": "III — Rythme",
-      "nNouveau": 43,
+      "nNouveau": 44,
       "nCollege": 5,
-      "n": 43,
+      "n": 44,
       "highYield": true
     },
     {
       "id": "236",
       "label": "236 Conduction",
       "group": "III — Rythme",
-      "nNouveau": 29,
+      "nNouveau": 31,
       "nCollege": 6,
-      "n": 29,
+      "n": 31,
       "highYield": false
     },
     {
@@ -232,18 +232,18 @@
       "id": "234",
       "label": "234 Insuffisance cardiaque",
       "group": "IV — IC",
-      "nNouveau": 48,
+      "nNouveau": 49,
       "nCollege": 5,
-      "n": 48,
+      "n": 49,
       "highYield": true
     },
     {
       "id": "226",
       "label": "226 TVP / EP",
       "group": "V — MTEV",
-      "nNouveau": 42,
+      "nNouveau": 44,
       "nCollege": 5,
-      "n": 42,
+      "n": 44,
       "highYield": true
     },
     {
@@ -259,9 +259,9 @@
       "id": "331",
       "label": "331 Arrêt cardiaque",
       "group": "VI — Divers",
-      "nNouveau": 29,
+      "nNouveau": 30,
       "nCollege": 6,
-      "n": 29,
+      "n": 30,
       "highYield": false
     },
     {
@@ -275,20 +275,21 @@
     }
   ],
   "origins": {
-    "nouveau": 766,
+    "nouveau": 793,
     "college": 121
   },
   "formats": {
-    "standard": 812,
+    "standard": 839,
     "cas_clinique": 75
   },
   "rangs": {
-    "A": 814,
-    "B": 73
+    "A": 831,
+    "B": 83
   },
   "themes": {
     "autre": 515,
-    "traitement": 372
+    "traitement": 385,
+    "trou": 14
   },
   "cible": {
     "seenHigh": 12,
@@ -32060,6 +32061,1221 @@
       "theme": "traitement",
       "origin": "nouveau",
       "rang": "A"
+    },
+    {
+      "id": "221-N-lot_trous-001",
+      "item": "221",
+      "kind": "QRU",
+      "n": 1,
+      "prompt": "[Trou collège · 221 Athérome] Quelle proposition est exacte ? « L'athérosclérose est une maladie inflammatoire chronique de l'intima des artères de gros et… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'athérosclérose est une maladie inflammatoire chronique de l'intima des artères de gros et moyen calibre, caractérisée par des plaques d'athérome (lipides, fibrose, nécrose).",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Le tabagisme est le 1er facteur de risque évitable ; le sevrage divise le risque CV par 2 en 1 an.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "La prise en charge repose sur : contrôle des FDRCV, antiagrégant plaquettaire (aspirine), statine, IEC/ARA2 selon indication.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "La plaque d'athérome évolue en 3 stades : stries lipidiques → plaque fibrolipidique → plaque compliquée (rupture, thrombose, hémorragie intraplaque).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "La dysfonction endothéliale est l'étape initiale de l'athérogenèse, favorisée par le stress oxydatif et les LDL oxydés.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'athérosclérose est une maladie inflammatoire chronique de l'intima des artères de gros et moyen calibre, caractérisée par des plaques d'athérome (lipides, fibrose, nécrose).",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "221-N-lot_trous-002",
+      "item": "221",
+      "kind": "QRU",
+      "n": 2,
+      "prompt": "[Trou collège · 221 Athérome] Quelle proposition est exacte ? « L'athérome est une maladie systémique : la présence d'une localisation doit faire rechercher… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'athérome est une maladie systémique : la présence d'une localisation doit faire rechercher les autres (coronaire, carotide, MI, aorte).",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Les facteurs non modifiables sont : âge (> 50 ans homme, > 60 ans femme), sexe masculin, antécédents familiaux de maladie CV précoce (< 55 ans père, < 65 ans…",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "La rupture de plaque est le mécanisme principal des SCA et AVC ischémiques ; elle est favorisée par l'inflammation et une chape fibreuse mince.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "La prise en charge repose sur : contrôle des FDRCV, antiagrégant plaquettaire (aspirine), statine, IEC/ARA2 selon indication.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le tabagisme est le 1er facteur de risque évitable ; le sevrage divise le risque CV par 2 en 1 an.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'athérome est une maladie systémique : la présence d'une localisation doit faire rechercher les autres (coronaire, carotide, MI, aorte).",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "221-N-lot_trous-003",
+      "item": "221",
+      "kind": "QRU",
+      "n": 3,
+      "prompt": "[Trou collège · 221 Athérome] Quelle proposition est exacte ? « La dysfonction endothéliale est l'étape initiale de l'athérogenèse, favorisée par le stress… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La dysfonction endothéliale est l'étape initiale de l'athérogenèse, favorisée par le stress oxydatif et les LDL oxydés.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Le remodelage artériel compensateur (loi de Glagov) permet de préserver la lumière artérielle malgré la croissance de la plaque jusqu'à un certain seuil.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "La plaque d'athérome évolue en 3 stades : stries lipidiques → plaque fibrolipidique → plaque compliquée (rupture, thrombose, hémorragie intraplaque).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Les cellules spumeuses résultent de la phagocytose des LDL oxydés par les macrophages dans l'intima.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le tabagisme est le 1er facteur de risque évitable ; le sevrage divise le risque CV par 2 en 1 an.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La dysfonction endothéliale est l'étape initiale de l'athérogenèse, favorisée par le stress oxydatif et les LDL oxydés.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "B"
+    },
+    {
+      "id": "222-N-lot_trous-004",
+      "item": "222",
+      "kind": "QRU",
+      "n": 4,
+      "prompt": "[Trou collège · 222 Facteurs de risque CV et prévention] Quelle proposition est exacte ? « En prévention secondaire, l'objectif LDL-c est < 0,55 g/L et une réduction ≥ 50 % par rapport… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "En prévention secondaire, l'objectif LDL-c est < 0,55 g/L et une réduction ≥ 50 % par rapport à la valeur de base.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Les facteurs de risque émergents (Lp(a), CRP ultrasensible, score calcique) peuvent aider à reclassifier les patients à risque intermédiaire.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "L'hérédité cardiovasculaire est considérée comme un FDRCV si événement CV chez un parent du 1er degré avant 55 ans (homme) ou 65 ans (femme).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "La prise en charge est plurifactorielle : RHD + traitement médicamenteux des FDRCV + suivi régulier.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "La cible de LDL-c dépend du niveau de risque : < 1,16 g/L (faible), < 1 g/L (modéré), < 0,7 g/L (haut risque), < 0,55 g/L (très haut risque).",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "En prévention secondaire, l'objectif LDL-c est < 0,55 g/L et une réduction ≥ 50 % par rapport à la valeur de base.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "222-N-lot_trous-005",
+      "item": "222",
+      "kind": "QRU",
+      "n": 5,
+      "prompt": "[Trou collège · 222 Facteurs de risque CV et prévention] Quelle proposition est exacte ? « L'aspirine n'est plus recommandée en prévention primaire systématique, même chez le diabétique. »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'aspirine n'est plus recommandée en prévention primaire systématique, même chez le diabétique.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Les facteurs de risque émergents (Lp(a), CRP ultrasensible, score calcique) peuvent aider à reclassifier les patients à risque intermédiaire.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Les 6 FDRCV modifiables majeurs sont : tabac, HTA, diabète, dyslipidémie (LDL élevé), obésité abdominale, sédentarité.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "La cible de LDL-c dépend du niveau de risque : < 1,16 g/L (faible), < 1 g/L (modéré), < 0,7 g/L (haut risque), < 0,55 g/L (très haut risque).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le patient à très haut risque CV inclut : maladie CV documentée, diabète avec atteinte d'organe cible, IRC sévère (DFG < 30), SCORE2 ≥ 7,5 % (< 50 ans) ou ≥…",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'aspirine n'est plus recommandée en prévention primaire systématique, même chez le diabétique.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "222-N-lot_trous-006",
+      "item": "222",
+      "kind": "QRU",
+      "n": 6,
+      "prompt": "[Trou collège · 222 Facteurs de risque CV et prévention] Quelle proposition est exacte ? « La prise en charge est plurifactorielle : RHD + traitement médicamenteux des FDRCV + suivi… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La prise en charge est plurifactorielle : RHD + traitement médicamenteux des FDRCV + suivi régulier.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'aspirine n'est plus recommandée en prévention primaire systématique, même chez le diabétique.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Le patient à très haut risque CV inclut : maladie CV documentée, diabète avec atteinte d'organe cible, IRC sévère (DFG < 30), SCORE2 ≥ 7,5 % (< 50 ans) ou ≥…",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le sevrage tabagique est la mesure de prévention la plus efficace et la plus coût-efficace.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le syndrome métabolique associe ≥ 3 critères parmi : tour de taille élevé, triglycérides ≥ 1,5 g/L, HDL bas, PA ≥ 130/85 mmHg, glycémie à jeun ≥ 1,1 g/L.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La prise en charge est plurifactorielle : RHD + traitement médicamenteux des FDRCV + suivi régulier.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "222-N-lot_trous-007",
+      "item": "222",
+      "kind": "QRU",
+      "n": 7,
+      "prompt": "[Trou collège · 222 Facteurs de risque CV et prévention] Quelle proposition est exacte ? « Les facteurs de risque émergents (Lp(a), CRP ultrasensible, score calcique) peuvent aider à… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les facteurs de risque émergents (Lp(a), CRP ultrasensible, score calcique) peuvent aider à reclassifier les patients à risque intermédiaire.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'aspirine n'est plus recommandée en prévention primaire systématique, même chez le diabétique.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "La cible de LDL-c dépend du niveau de risque : < 1,16 g/L (faible), < 1 g/L (modéré), < 0,7 g/L (haut risque), < 0,55 g/L (très haut risque).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "En prévention secondaire, l'objectif LDL-c est < 0,55 g/L et une réduction ≥ 50 % par rapport à la valeur de base.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Les 6 FDRCV modifiables majeurs sont : tabac, HTA, diabète, dyslipidémie (LDL élevé), obésité abdominale, sédentarité.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les facteurs de risque émergents (Lp(a), CRP ultrasensible, score calcique) peuvent aider à reclassifier les patients à risque intermédiaire.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "B"
+    },
+    {
+      "id": "224-N-lot_trous-008",
+      "item": "224",
+      "kind": "QRU",
+      "n": 8,
+      "prompt": "[Trou collège · 224 HTA de l'adulte] Quelle proposition est exacte ? « L'HTA est le FDRCV le plus fréquent ; elle touche environ 30 % de la population adulte. »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'HTA est le FDRCV le plus fréquent ; elle touche environ 30 % de la population adulte.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'HTA est définie par une PAS ≥ 140 mmHg et/ou PAD ≥ 90 mmHg en consultation, confirmée par mesure ambulatoire (MAPA ≥ 130/80 ou automesure ≥ 135/85).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Le phéochromocytome se manifeste par la triade de Ménard : céphalées, sueurs, palpitations avec poussées hypertensives paroxystiques.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le rapport aldostérone/rénine est le test de dépistage de l'hyperaldostéronisme primaire.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le bilan initial comprend : ionogramme, créatinine, glycémie, bilan lipidique, BU, ECG, fond d'œil si HTA sévère.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'HTA est le FDRCV le plus fréquent ; elle touche environ 30 % de la population adulte.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "224-N-lot_trous-009",
+      "item": "224",
+      "kind": "QRU",
+      "n": 9,
+      "prompt": "[Trou collège · 224 HTA de l'adulte] Quelle proposition est exacte ? « Les atteintes d'organe cible à rechercher : HVG, microalbuminurie, rétinopathie hypertensive,… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les atteintes d'organe cible à rechercher : HVG, microalbuminurie, rétinopathie hypertensive, IRC, athérome.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Le phéochromocytome se manifeste par la triade de Ménard : céphalées, sueurs, palpitations avec poussées hypertensives paroxystiques.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Les 5 classes de 1re intention sont : IEC, ARA2, inhibiteur calcique, diurétique thiazidique, bêtabloquant ; traitement initial par monothérapie ou bithérapie…",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "L'urgence hypertensive associe une PA très élevée (souvent > 180/120) à une souffrance viscérale aiguë (encéphalopathie, OAP, dissection aortique, éclampsie).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Les causes d'HTA secondaire à rechercher en cas de résistance ou de présentation atypique : hyperaldostéronisme primaire, phéochromocytome, sténose artérielle…",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les atteintes d'organe cible à rechercher : HVG, microalbuminurie, rétinopathie hypertensive, IRC, athérome.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "225-N-lot_trous-010",
+      "item": "225",
+      "kind": "QRU",
+      "n": 10,
+      "prompt": "[Trou collège · 225 AOMI et anévrismes] Quelle proposition est exacte ? « L'angioscanner ou l'angio-IRM sont réalisés en préopératoire pour planifier la… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'angioscanner ou l'angio-IRM sont réalisés en préopératoire pour planifier la revascularisation.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'AOMI est définie par un index de pression systolique (IPS) ≤ 0,90 ; elle est le marqueur d'un athérome diffus.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "L'ischémie aiguë de membre est une urgence absolue : douleur brutale, membre blanc/froid, abolition des pouls ; revascularisation en urgence (< 6 h).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "L'échodoppler artériel des MI est l'examen de 1re intention pour confirmer et localiser les lésions.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "La rupture d'AAA est une urgence vitale : douleur abdominale/lombaire brutale, choc hémorragique, masse battante.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'angioscanner ou l'angio-IRM sont réalisés en préopératoire pour planifier la revascularisation.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "B"
+    },
+    {
+      "id": "339-N-lot_trous-011",
+      "item": "339",
+      "kind": "QRU",
+      "n": 11,
+      "prompt": "[Trou collège · 339 SCA / angor stable] Quelle proposition est exacte ? « Les complications de l'IDM sont : troubles du rythme (FV, TV), IC, rupture (paroi libre,… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les complications de l'IDM sont : troubles du rythme (FV, TV), IC, rupture (paroi libre, septum, pilier), péricardite, thrombus VG, anévrisme VG.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Le diagnostic de SCA repose sur la triade : clinique + ECG + troponine ultrasensible (sériée à H0 et H1-H3).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Le coroscanner est l'examen de 1re intention pour éliminer une coronaropathie chez les patients à probabilité pré-test faible à intermédiaire.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "La dissection coronaire spontanée est une cause de SCA chez la femme jeune sans FDRCV classiques.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le score GRACE permet de stratifier le risque des SCA ST- et guide le délai de coronarographie (< 2 h, < 24 h ou < 72 h).",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les complications de l'IDM sont : troubles du rythme (FV, TV), IC, rupture (paroi libre, septum, pilier), péricardite, thrombus VG, anévrisme VG.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "339-N-lot_trous-012",
+      "item": "339",
+      "kind": "QRU",
+      "n": 12,
+      "prompt": "[Trou collège · 339 SCA / angor stable] Quelle proposition est exacte ? « La douleur thoracique de l'IDM est prolongée (> 20 min), ne cède pas à la trinitrine, avec… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La douleur thoracique de l'IDM est prolongée (> 20 min), ne cède pas à la trinitrine, avec signes neurovégétatifs (sueurs, nausées).",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'angor stable est une douleur thoracique rétrosternale constrictive, déclenchée par l'effort, cédant au repos ou à la trinitrine en < 5 min.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "La dissection coronaire spontanée est une cause de SCA chez la femme jeune sans FDRCV classiques.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le score GRACE permet de stratifier le risque des SCA ST- et guide le délai de coronarographie (< 2 h, < 24 h ou < 72 h).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Les complications mécaniques de l'IDM (rupture septale, IM aiguë par rupture de pilier) sont des urgences chirurgicales.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La douleur thoracique de l'IDM est prolongée (> 20 min), ne cède pas à la trinitrine, avec signes neurovégétatifs (sueurs, nausées).",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "339-N-lot_trous-013",
+      "item": "339",
+      "kind": "QRU",
+      "n": 13,
+      "prompt": "[Trou collège · 339 SCA / angor stable] Quelle proposition est exacte ? « Un BBG complet de novo dans un contexte de douleur thoracique doit faire suspecter un SCA ST+… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un BBG complet de novo dans un contexte de douleur thoracique doit faire suspecter un SCA ST+ et justifie une coronarographie urgente.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'onde de Pardee est un sus-décalage convexe vers le haut englobant l'onde T, signe ECG typique du STEMI.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "L'angor stable est une douleur thoracique rétrosternale constrictive, déclenchée par l'effort, cédant au repos ou à la trinitrine en < 5 min.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "L'angor vasospastique (Prinzmetal) survient au repos (souvent nocturne) avec sus-décalage ST transitoire et coronaires normales ou peu lésées.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "La dissection coronaire spontanée est une cause de SCA chez la femme jeune sans FDRCV classiques.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Un BBG complet de novo dans un contexte de douleur thoracique doit faire suspecter un SCA ST+ et justifie une coronarographie urgente.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "339-N-lot_trous-014",
+      "item": "339",
+      "kind": "QRU",
+      "n": 14,
+      "prompt": "[Trou collège · 339 SCA / angor stable] Quelle proposition est exacte ? « L'angor vasospastique (Prinzmetal) survient au repos (souvent nocturne) avec sus-décalage ST… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'angor vasospastique (Prinzmetal) survient au repos (souvent nocturne) avec sus-décalage ST transitoire et coronaires normales ou peu lésées.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'angor stable est une douleur thoracique rétrosternale constrictive, déclenchée par l'effort, cédant au repos ou à la trinitrine en < 5 min.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Le diagnostic de SCA repose sur la triade : clinique + ECG + troponine ultrasensible (sériée à H0 et H1-H3).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "La classification de Killip évalue la sévérité hémodynamique de l'IDM : I = pas d'IC, II = crépitants, III = OAP, IV = choc cardiogénique.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "La reperfusion est une urgence absolue : angioplastie primaire (PCI) si délai < 120 min sinon fibrinolyse IV (< 12 h après début des symptômes).",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'angor vasospastique (Prinzmetal) survient au repos (souvent nocturne) avec sus-décalage ST transitoire et coronaires normales ou peu lésées.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "B"
+    },
+    {
+      "id": "230-N-lot_trous-015",
+      "item": "230",
+      "kind": "QRU",
+      "n": 15,
+      "prompt": "[Trou collège · 230 Douleur thoracique aiguë] Quelle proposition est exacte ? « L'ECG doit être réalisé dans les 10 minutes suivant le premier contact médical. »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ECG doit être réalisé dans les 10 minutes suivant le premier contact médical.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "La douleur de la dissection aortique est brutale, maximale d'emblée, transfixiante (thorax → dos), migratrice ; asymétrie tensionnelle/pouls.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "La douleur de la péricardite est augmentée par l'inspiration et le décubitus, soulagée par l'antéflexion ; frottement péricardique.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le bilan initial comprend : ECG, troponine, radiographie de thorax, D-dimères (si suspicion d'EP), angioscanner thoracique selon orientation.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le score HEART (History, ECG, Age, Risk factors, Troponin) aide à stratifier le risque de SCA aux urgences.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'ECG doit être réalisé dans les 10 minutes suivant le premier contact médical.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "233RA-N-lot_trous-016",
+      "item": "233RA",
+      "kind": "QRU",
+      "n": 16,
+      "prompt": "[Trou collège · 233 Rétrécissement aortique] Quelle proposition est exacte ? « Les médicaments vasodilatateurs (IEC, dérivés nitrés) sont à utiliser avec précaution en cas… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les médicaments vasodilatateurs (IEC, dérivés nitrés) sont à utiliser avec précaution en cas de RA serré (risque d'hypotension sévère).",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Le RA serré est défini par : surface valvulaire < 1 cm² (ou < 0,6 cm²/m²), gradient moyen > 40 mmHg, vitesse max > 4 m/s.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Le souffle du RA est systolique éjectionnel, rude, au foyer aortique, irradiant aux carotides ; il diminue quand la sténose devient très serrée (bas débit).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le remplacement valvulaire aortique (chirurgical ou TAVI) est indiqué dès que le RA serré est symptomatique.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "L'ETT de stress à la dobutamine permet de distinguer un RA vrai d'un pseudo-RA sévère en cas de bas débit.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les médicaments vasodilatateurs (IEC, dérivés nitrés) sont à utiliser avec précaution en cas de RA serré (risque d'hypotension sévère).",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "153-N-lot_trous-017",
+      "item": "153",
+      "kind": "QRU",
+      "n": 17,
+      "prompt": "[Trou collège · 153 Surveillance porteurs de valves/prothèses] Quelle proposition est exacte ? « Un dysfonctionnement de prothèse est suspecté devant l'apparition d'un souffle nouveau, de… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Un dysfonctionnement de prothèse est suspecté devant l'apparition d'un souffle nouveau, de symptômes (dyspnée, embolies) ou d'une modification échographique.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Les complications des bioprothèses : dégénérescence structurelle (10-15 ans), endocardite, thrombose (rare).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "La surveillance clinique et échocardiographique (ETT) est annuelle pour toutes les prothèses.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Les complications des prothèses mécaniques : thrombose de prothèse, accidents thromboemboliques, hémorragies sous AVK, endocardite sur prothèse, hémolyse.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Les bioprothèses ne nécessitent pas d'anticoagulation au long cours (AVK 3 mois post-op, puis aspirine seule ou rien).",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Un dysfonctionnement de prothèse est suspecté devant l'apparition d'un souffle nouveau, de symptômes (dyspnée, embolies) ou d'une modification échographique.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "342-N-lot_trous-018",
+      "item": "342",
+      "kind": "QRU",
+      "n": 18,
+      "prompt": "[Trou collège · 342 Malaises et pertes de connaissance brèves] Quelle proposition est exacte ? « La syncope vasovagale est la plus fréquente ; prodromes (nausées, sueurs, vision floue),… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La syncope vasovagale est la plus fréquente ; prodromes (nausées, sueurs, vision floue), circonstances déclenchantes (station debout, douleur, émotion).",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Les diagnostics différentiels non syncopaux : épilepsie, AIT vertébrobasilaire, hypoglycémie, conversion.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "La syncope cardiaque est la plus grave ; évoquer : BAV complet, TV, dysfonction sinusale, RA serré, CMH obstructive, EP.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "L'hypotension orthostatique est définie par une chute de PAS ≥ 20 mmHg ou PAD ≥ 10 mmHg dans les 3 minutes suivant le passage en position debout.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le holter ECG (24 h à 21 jours) ou le moniteur implantable (3-5 ans) sont utilisés pour documenter une arythmie en cas de syncopes récidivantes inexpliquées.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La syncope vasovagale est la plus fréquente ; prodromes (nausées, sueurs, vision floue), circonstances déclenchantes (station debout, douleur, émotion).",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "342-N-lot_trous-019",
+      "item": "342",
+      "kind": "QRU",
+      "n": 19,
+      "prompt": "[Trou collège · 342 Malaises et pertes de connaissance brèves] Quelle proposition est exacte ? « Les drapeaux rouges orientant vers une cause cardiaque : syncope d'effort, sans prodromes, en… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les drapeaux rouges orientant vers une cause cardiaque : syncope d'effort, sans prodromes, en décubitus, antécédent de cardiopathie, ATCD familiaux de mort subite.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'ECG initial est indispensable et peut révéler : BAV, BBG/BBD, QT long, Brugada, WPW, TV, arythmie.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "La syncope est une perte de connaissance brève (< 1 min), à début brutal, avec perte du tonus postural et récupération spontanée complète.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le tilt-test explore les syncopes vasovagales ou dysautonomiques en reproduisant l'épisode.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "L'EEP (exploration électrophysiologique) est indiquée en cas de bloc bifasciculaire + syncope pour mesurer le HV.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les drapeaux rouges orientant vers une cause cardiaque : syncope d'effort, sans prodromes, en décubitus, antécédent de cardiopathie, ATCD familiaux de mort subite.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_trous-020",
+      "item": "231",
+      "kind": "QRU",
+      "n": 20,
+      "prompt": "[Trou collège · 231 ECG (combiné)] Quelle proposition est exacte ? « Les montres connectées ECG (dérivation unique) permettent d'établir une corrélation… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les montres connectées ECG (dérivation unique) permettent d'établir une corrélation électroclinique lors de palpitations peu fréquentes.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'hypokaliémie : onde T plate/négative, onde U, sous-décalage ST, allongement QT, risque de torsade de pointes.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "L'ECG normal : rythme sinusal (onde P positive en D2 précédant chaque QRS), FC 50-100 bpm, PR 120-200 ms, QRS < 120 ms, axe entre -30° et +90°.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le holter implantable permet un suivi ECG jusqu'à 3-5 ans pour les syncopes inexpliquées ou la FA silencieuse.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le BBG : QRS ≥ 120 ms, aspect RR' en V5-V6, absence de q en V5-V6, troubles de la repolarisation secondaires.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les montres connectées ECG (dérivation unique) permettent d'établir une corrélation électroclinique lors de palpitations peu fréquentes.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "B"
+    },
+    {
+      "id": "232-N-lot_trous-021",
+      "item": "232",
+      "kind": "QRU",
+      "n": 21,
+      "prompt": "[Trou collège · 232 Fibrillation atriale] Quelle proposition est exacte ? « L'ablation par cathéter a montré une supériorité sur les antiarythmiques pour le maintien du… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ablation par cathéter a montré une supériorité sur les antiarythmiques pour le maintien du rythme sinusal au long cours.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Classification : paroxystique (< 7 j), persistante (> 7 j), permanente (acceptée, pas de cardioversion).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Le bilan initial : ECG, ETT, ionogramme, créatinine, TSHus, NFS.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le contrôle de fréquence (bêtabloquant, IC bradycardisant, digoxine) vise une FC < 110 bpm à la marche normale (effort modeste), contrôlée au holter.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le score CHA₂DS₂-VA évalue le risque thromboembolique : C (IC) 1, H (HTA) 1, A₂ (âge > 75) 2, D (diabète) 1, S₂ (AVC) 2, V (vasculaire) 1, A (65-74 ans) 1.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'ablation par cathéter a montré une supériorité sur les antiarythmiques pour le maintien du rythme sinusal au long cours.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "B"
+    },
+    {
+      "id": "236-N-lot_trous-022",
+      "item": "236",
+      "kind": "QRU",
+      "n": 22,
+      "prompt": "[Trou collège · 236 Troubles de la conduction intracardiaque] Quelle proposition est exacte ? « Les causes réversibles à éliminer en urgence : médicaments bradycardisants, hyperkaliémie,… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Les causes réversibles à éliminer en urgence : médicaments bradycardisants, hyperkaliémie, SCA (IDM inférieur), myocardite.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Le BAV 1er degré : PR > 200 ms fixe ; bénin, le plus souvent nodal.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "L'EEP mesure l'intervalle HV : HV > 70 ms = atteinte infrahissienne pathologique justifiant un pacemaker.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le stimulateur cardiaque définitif (pacemaker) est indiqué dans : BAV 3e degré, BAV 2e degré Mobitz 2, dysfonction sinusale symptomatique.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "BAV nodal = QRS fins, échappement 40-60 bpm, amélioré par atropine ; BAV infranodal = QRS larges, échappement < 40 bpm, instable.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Les causes réversibles à éliminer en urgence : médicaments bradycardisants, hyperkaliémie, SCA (IDM inférieur), myocardite.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "236-N-lot_trous-023",
+      "item": "236",
+      "kind": "QRU",
+      "n": 23,
+      "prompt": "[Trou collège · 236 Troubles de la conduction intracardiaque] Quelle proposition est exacte ? « L'EEP mesure l'intervalle HV : HV > 70 ms = atteinte infrahissienne pathologique justifiant… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'EEP mesure l'intervalle HV : HV > 70 ms = atteinte infrahissienne pathologique justifiant un pacemaker.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Le stimulateur cardiaque définitif (pacemaker) est indiqué dans : BAV 3e degré, BAV 2e degré Mobitz 2, dysfonction sinusale symptomatique.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Le BAV 3e degré (complet) : dissociation auriculo-ventriculaire totale ; urgence si infranodal (QRS larges, échappement lent < 40 bpm).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "BAV nodal = QRS fins, échappement 40-60 bpm, amélioré par atropine ; BAV infranodal = QRS larges, échappement < 40 bpm, instable.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le traitement d'urgence des bradycardies mal tolérées : atropine IV (1 mg), isoprénaline IV, stimulation cardiaque temporaire.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'EEP mesure l'intervalle HV : HV > 70 ms = atteinte infrahissienne pathologique justifiant un pacemaker.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "B"
+    },
+    {
+      "id": "234-N-lot_trous-024",
+      "item": "234",
+      "kind": "QRU",
+      "n": 24,
+      "prompt": "[Trou collège · 234 Insuffisance cardiaque] Quelle proposition est exacte ? « L'IRM cardiaque permet de distinguer étiologie ischémique (rehaussement tardif… »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'IRM cardiaque permet de distinguer étiologie ischémique (rehaussement tardif sous-endocardique) des cardiomyopathies.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Le choc cardiogénique : PAS < 90 mmHg, signes d'hypoperfusion (marbrures, oligurie, confusion) ; traitement par inotropes (dobutamine).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Classification NYHA : I (pas de gêne), II (efforts importants), III (efforts minimes), IV (repos).",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "L'éducation thérapeutique est essentielle : régime hyposodé (< 6 g/j), pesée quotidienne, signes d'alerte, vaccinations.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Le coroscanner est l'examen de 1re intention pour éliminer une coronaropathie si probabilité faible-intermédiaire.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'IRM cardiaque permet de distinguer étiologie ischémique (rehaussement tardif sous-endocardique) des cardiomyopathies.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "B"
+    },
+    {
+      "id": "226-N-lot_trous-025",
+      "item": "226",
+      "kind": "QRU",
+      "n": 25,
+      "prompt": "[Trou collège · 226 TVP et embolie pulmonaire] Quelle proposition est exacte ? « Contraceptions œstroprogestatives sont contre-indiquées après MTEV. »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Contraceptions œstroprogestatives sont contre-indiquées après MTEV.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "L'échodoppler veineux est l'examen de 1re intention pour la TVP (sensibilité > 95 % en proximal) ; critère principal : incompressibilité veineuse.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Le score de Wells (TVP ou EP) et le score de Genève (EP) permettent d'évaluer la probabilité clinique pré-test.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "L'HTAP chronique post-embolique survient chez 0,5-5 % des patients ; dépistée par ETT avant arrêt de l'anticoagulation.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "D-dimères < 500 µg/L (ou seuil ajusté à l'âge > 50 ans : âge × 10) excluent la MTEV si probabilité faible ou intermédiaire.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Contraceptions œstroprogestatives sont contre-indiquées après MTEV.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "226-N-lot_trous-026",
+      "item": "226",
+      "kind": "QRU",
+      "n": 26,
+      "prompt": "[Trou collège · 226 TVP et embolie pulmonaire] Quelle proposition est exacte ? « La triade de Virchow : stase veineuse + lésion pariétale + anomalies de l'hémostase. »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "La triade de Virchow : stase veineuse + lésion pariétale + anomalies de l'hémostase.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "La recherche de cancer occulte est recommandée surtout si MTEV non provoquée chez > 40 ans.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "Compression élastique classe 3 (30-40 mmHg) dès le diagnostic de TVP, pour ≥ 6 mois.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "Le traitement de la MTEV non grave repose sur les AOD (rivaroxaban ou apixaban) d'emblée, sans héparine préalable obligatoire.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Les facteurs de risque transitoires majeurs : chirurgie avec AG > 30 min, fracture MI, immobilisation > 3 j, contraception œstroprogestative.",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "La triade de Virchow : stase veineuse + lésion pariétale + anomalies de l'hémostase.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "B"
+    },
+    {
+      "id": "331-N-lot_trous-027",
+      "item": "331",
+      "kind": "QRU",
+      "n": 27,
+      "prompt": "[Trou collège · 331 Arrêt cardiocirculatoire] Quelle proposition est exacte ? « L'ECMO peut être discutée dans les AC réfractaires chez des patients sélectionnés. »",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ECMO peut être discutée dans les AC réfractaires chez des patients sélectionnés.",
+          "why": "Point essentiel du cours CNEC."
+        },
+        {
+          "letter": "B",
+          "text": "Les étiologies non cardiovasculaires (5-25 %) : toxiques, traumatiques, noyade, insuffisance respiratoire aiguë.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "C",
+          "text": "L'AC est diagnostiqué par : patient inconscient + absence de respiration normale (gasps) + absence de pouls carotidien.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "D",
+          "text": "No-flow = temps sans aucune réanimation ; low-flow = temps de RCP sans retour hémodynamique. Au-delà de 5 min de no-flow, survie ≈ 7-8 %.",
+          "why": "Autre point du cours ou distracteur."
+        },
+        {
+          "letter": "E",
+          "text": "Les causes réversibles d'AC à rechercher : 4H (hypoxie, hypovolémie, hypo/hyperkaliémie, hypothermie) + 4T (tamponnade, thrombose coronaire/pulmonaire,…",
+          "why": "Autre point du cours ou distracteur."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "L'ECMO peut être discutée dans les AC réfractaires chez des patients sélectionnés.",
+      "images": [],
+      "format": "standard",
+      "theme": "trou",
+      "origin": "nouveau",
+      "rang": "B"
     },
     {
       "id": "342-N-rythme-001",
