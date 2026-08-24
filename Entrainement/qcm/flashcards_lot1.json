@@ -1,0 +1,1540 @@
+{
+  "label": "Flashcards lot 1 — Items 221 à 224",
+  "note": "Cartes pédagogiques alignées CNEC 3e éd. Couvrent l'essentiel Rang A (+ B utiles).",
+  "items": [
+    "221",
+    "222",
+    "223",
+    "224"
+  ],
+  "cards": [
+    {
+      "id": "221-001",
+      "item": "221",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Définition de l'athérome : quelle couche artérielle et quel contenu ?",
+      "back": "Remaniements de l'intima des artères de gros et moyen calibre, avec accumulation focale de lipides, glucides complexes, sang/produits sanguins, tissu fibreux et dépôts calcaires, associés à des modifications de la média."
+    },
+    {
+      "id": "221-002",
+      "item": "221",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Quelles artères sont concernées par l'athérome ?",
+      "back": "Les artères de gros et moyen calibre, notamment l'aorte et ses branches."
+    },
+    {
+      "id": "221-003",
+      "item": "221",
+      "rang": "A",
+      "theme": "épidémiologie",
+      "front": "Quelle place occupent les maladies cardiovasculaires dans la mortalité mondiale ?",
+      "back": "Elles restent la 1re cause de mortalité dans le monde."
+    },
+    {
+      "id": "221-004",
+      "item": "221",
+      "rang": "A",
+      "theme": "épidémiologie",
+      "front": "En France, quelle est la tendance de la mortalité cardiovasculaire ?",
+      "back": "Elle a fortement diminué depuis 30 ans et est passée derrière le cancer, mais reste la 1re cause de mortalité chez les femmes."
+    },
+    {
+      "id": "221-005",
+      "item": "221",
+      "rang": "B",
+      "theme": "épidémiologie",
+      "front": "Comment évoluent incidence et prévalence des maladies cardiovasculaires ?",
+      "back": "Mortalité en baisse, mais prévalence en hausse avec le vieillissement ; incidence mondiale attendue en hausse avec diabète, obésité, sédentarité et transition nutritionnelle."
+    },
+    {
+      "id": "221-006",
+      "item": "221",
+      "rang": "A",
+      "theme": "épidémiologie",
+      "front": "Quel gradient géographique de mortalité cardiovasculaire retenir en Europe ?",
+      "back": "Risque plus élevé au nord et à l'est de l'Europe, plus faible au sud ; la France est classée parmi les pays européens à faible risque CV."
+    },
+    {
+      "id": "221-007",
+      "item": "221",
+      "rang": "B",
+      "theme": "épidémiologie",
+      "front": "Chez quel sexe l'incidence cardiovasculaire est-elle plus élevée avant l'âge avancé ?",
+      "back": "Chez l'homme : incidence 3 à 5 fois plus fréquente que chez la femme, avec diminution de l'écart avec l'âge."
+    },
+    {
+      "id": "221-008",
+      "item": "221",
+      "rang": "A",
+      "theme": "physiopath",
+      "front": "Cite les étapes principales de formation d'une plaque d'athérome.",
+      "back": "Fixation sous-intimale des LDL, oxydation, adhérence/diapédèse des monocytes, macrophages, cellules spumeuses, migration des cellules musculaires lisses, matrice/chape fibreuse, dysfonction endothéliale et adhésion plaquettaire."
+    },
+    {
+      "id": "221-009",
+      "item": "221",
+      "rang": "B",
+      "theme": "physiopath",
+      "front": "Que sont les cellules spumeuses ?",
+      "back": "Des macrophages chargés de LDL oxydées dans l'intima, élément clé du centre lipidique/strie lipidique."
+    },
+    {
+      "id": "221-010",
+      "item": "221",
+      "rang": "B",
+      "theme": "physiopath",
+      "front": "Quel rôle jouent les LDL oxydées dans l'athérogenèse ?",
+      "back": "Elles favorisent la dysfonction endothéliale, l'inflammation, le recrutement macrophagique et la formation de cellules spumeuses."
+    },
+    {
+      "id": "221-011",
+      "item": "221",
+      "rang": "B",
+      "theme": "physiopath",
+      "front": "Quelle lésion apparaît précocement dans l'histoire naturelle de l'athérome ?",
+      "back": "Les stries lipidiques, retrouvées dès le jeune âge, avant la constitution d'une plaque avec centre lipidique et chape fibreuse."
+    },
+    {
+      "id": "221-012",
+      "item": "221",
+      "rang": "A",
+      "theme": "physiopath",
+      "front": "De quoi est composée une plaque d'athérome stable ?",
+      "back": "Centre lipidique avec cellules spumeuses, cellules musculaires et inflammatoires, recouvert d'une chape fibreuse."
+    },
+    {
+      "id": "221-013",
+      "item": "221",
+      "rang": "A",
+      "theme": "physiopath",
+      "front": "Caractéristiques d'une plaque vulnérable à la rupture ?",
+      "back": "Plaque jeune, très lipidique, très inflammatoire, avec chape fibreuse fine."
+    },
+    {
+      "id": "221-014",
+      "item": "221",
+      "rang": "A",
+      "theme": "physiopath",
+      "front": "Quel mécanisme déclenche les complications aiguës de l'athérome ?",
+      "back": "Rupture ou érosion de plaque avec formation immédiate d'un thrombus, pouvant réduire ou occlure la lumière et emboliser."
+    },
+    {
+      "id": "221-015",
+      "item": "221",
+      "rang": "A",
+      "theme": "physiopath",
+      "front": "Une plaque peu sténosante peut-elle donner un infarctus ?",
+      "back": "Oui. Les ruptures concernent souvent des plaques jeunes, riches en lipides, parfois peu sténosantes."
+    },
+    {
+      "id": "221-016",
+      "item": "221",
+      "rang": "B",
+      "theme": "physiopath",
+      "front": "Quel est l'effet d'une hémorragie intraplaque ?",
+      "back": "Elle augmente brutalement le volume de la plaque et peut aggraver la sténose ou favoriser la rupture de la chape."
+    },
+    {
+      "id": "221-017",
+      "item": "221",
+      "rang": "B",
+      "theme": "physiopath",
+      "front": "Différence entre remodelage compensateur et remodelage constrictif ?",
+      "back": "Compensateur : élargissement du diamêtre pour préserver la lumière. Constrictif : réduction du diamêtre et majoration de la sténose."
+    },
+    {
+      "id": "221-018",
+      "item": "221",
+      "rang": "A",
+      "theme": "physiopath",
+      "front": "Comment une sténose artérielle peut-elle s'aggraver brutalement ?",
+      "back": "Par rupture ou érosion de plaque avec thrombose, responsable d'une réduction brutale de lumière voire d'une occlusion."
+    },
+    {
+      "id": "221-019",
+      "item": "221",
+      "rang": "B",
+      "theme": "physiopath",
+      "front": "Pourquoi l'athérome peut-il favoriser un anévrisme ?",
+      "back": "Il altére la structure pariétale et détruit la matrice extracellulaire, favorisant une dilatation anévrismale ; tous les anévrismes ne sont pas athéromateux."
+    },
+    {
+      "id": "221-020",
+      "item": "221",
+      "rang": "A",
+      "theme": "localisations",
+      "front": "Où l'athérome se développe-t-il préférentiellement ?",
+      "back": "Aux zones de flux turbulent : ostiums, bifurcations et zones de contrainte mécanique."
+    },
+    {
+      "id": "221-021",
+      "item": "221",
+      "rang": "A",
+      "theme": "localisations",
+      "front": "Cite les quatre grands territoires athéromateux indispensables.",
+      "back": "Coronaires, carotides, artères des membres inférieurs et aorte abdominale."
+    },
+    {
+      "id": "221-022",
+      "item": "221",
+      "rang": "A",
+      "theme": "localisations",
+      "front": "Quelles localisations athéromateuses peuvent donner une HTA ou une insuffisance rénale ?",
+      "back": "Les sténoses des artères rénales."
+    },
+    {
+      "id": "221-023",
+      "item": "221",
+      "rang": "A",
+      "theme": "localisations",
+      "front": "Quelle localisation athéromateuse évoquer devant douleurs postprandiales/claudication digestive ?",
+      "back": "Les sténoses des artères digestives, responsables d'ischémie mésentérique chronique."
+    },
+    {
+      "id": "221-024",
+      "item": "221",
+      "rang": "A",
+      "theme": "localisations",
+      "front": "Quelles complications cliniques majeures correspondent aux plaques carotidiennes ?",
+      "back": "AIT et AVC ischémiques, notamment par sténose ou embolie d'origine carotidienne."
+    },
+    {
+      "id": "221-025",
+      "item": "221",
+      "rang": "A",
+      "theme": "localisations",
+      "front": "Quelle complication coronaire typique vient d'une rupture de plaque occlusive ?",
+      "back": "Un syndrome coronarien aigu, en particulier STEMI si thrombose coronaire occlusive."
+    },
+    {
+      "id": "221-026",
+      "item": "221",
+      "rang": "A",
+      "theme": "localisations",
+      "front": "Quels symptômes évoquent une AOMI athéromateuse ?",
+      "back": "Claudication intermittente, difficulté à la marche, douleurs de membre, pouls diminués/absents, souffle artériel, troubles trophiques selon gravité."
+    },
+    {
+      "id": "221-027",
+      "item": "221",
+      "rang": "A",
+      "theme": "polyvasculaire",
+      "front": "Définition du malade polyathéromateux/polyvasculaire.",
+      "back": "Atteinte athéromateuse d'au moins deux territoires artériels différents, symptomatique ou asymptomatique mais significative."
+    },
+    {
+      "id": "221-028",
+      "item": "221",
+      "rang": "A",
+      "theme": "piâge",
+      "front": "Une plaque carotidienne non sténosante à 30 % compte-t-elle pour définir un patient polyvasculaire ?",
+      "back": "Non. Une simple plaque non sténosante < 50 % et non compliquée ne qualifie pas le patient comme polyvasculaire."
+    },
+    {
+      "id": "221-029",
+      "item": "221",
+      "rang": "A",
+      "theme": "polyvasculaire",
+      "front": "Quel seuil de sténose asymptomatique peut compter comme atteinte significative dans le polyvasculaire ?",
+      "back": "Une sténose significative, par exemple carotidienne à 50 %, peut compter si un autre territoire est déjà atteint."
+    },
+    {
+      "id": "221-030",
+      "item": "221",
+      "rang": "B",
+      "theme": "polyvasculaire",
+      "front": "Chez un coronarien, quelles atteintes associées sont retrouvées dans environ 20 % des cas chacune ?",
+      "back": "AOMI, sténose carotidienne et sténose des artères rénales : environ 20 % chacune à l'examen systématique."
+    },
+    {
+      "id": "221-031",
+      "item": "221",
+      "rang": "B",
+      "theme": "polyvasculaire",
+      "front": "Chez un patient avec AOMI, sténose carotidienne ou AAA, quelle fréquence d'atteinte coronaire ?",
+      "back": "Environ 40 à 50 % ; les patients AOMI sont parmi les plus souvent polyvasculaires."
+    },
+    {
+      "id": "221-032",
+      "item": "221",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Quel bilan clinique réaliser quand on découvre une localisation athéromateuse ?",
+      "back": "Interrogatoire et examen clinique de tous les territoires artériels, avec recherche de symptômes coronaires, neurologiques, de claudication, dysfonction érectile, souffles et pouls."
+    },
+    {
+      "id": "221-033",
+      "item": "221",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Quelle mesure tensionnelle bilatérale est utile chez le polyvasculaire et pourquoi ?",
+      "back": "Mesurer la PA aux deux bras ; une différence > 15 mmHg sur plusieurs mesures fait suspecter une sténose subclavière unilatérale."
+    },
+    {
+      "id": "221-034",
+      "item": "221",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Quel examen cardiaque est systématique dans le bilan d'extension du polyathéromateux ?",
+      "back": "Un ECG systématique."
+    },
+    {
+      "id": "221-035",
+      "item": "221",
+      "rang": "B",
+      "theme": "seuils",
+      "front": "Quel examen dépiste et confirme l'AOMI dans la stratégie d'imagerie du polyathéromateux ?",
+      "back": "échodoppler artériel des membres inférieurs avec mesure de l'IPS."
+    },
+    {
+      "id": "221-036",
+      "item": "221",
+      "rang": "B",
+      "theme": "seuils",
+      "front": "Que signifie un IPS < 0,90 ?",
+      "back": "Il est en faveur d'une AOMI ; il dépiste une atteinte artérielle des membres inférieurs."
+    },
+    {
+      "id": "221-037",
+      "item": "221",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Quel dépistage aortique envisager chez un homme de plus de 65 ans polyathéromateux/fumeur ?",
+      "back": "Dépistage d'anévrisme de l'aorte abdominale par échographie."
+    },
+    {
+      "id": "221-038",
+      "item": "221",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Quels traitements diminuent la morbimortalité chez le malade polyvasculaire ?",
+      "back": "Antiagrégant plaquettaire (aspirine ou clopidogrel), statine aux objectifs de prévention secondaire et IEC ou ARA2."
+    },
+    {
+      "id": "221-039",
+      "item": "221",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Quelle dose d'aspirine est citée dans la prise en charge du polyvasculaire ?",
+      "back": "Aspirine 75 à 325 mg/j, sauf contre-indication ; clopidogrel en cas d'intolérance ou certaines atteintes polyvasculaires compliquées."
+    },
+    {
+      "id": "221-040",
+      "item": "221",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Les bêtabloquants sont-ils systématiques chez le malade polyvasculaire ?",
+      "back": "Non. Leur bénéfice est surtout prouvé après IDM, notamment si FEVG altérée ; pas démontré dans la maladie coronarienne stable ou le polyvasculaire isolé."
+    },
+    {
+      "id": "221-041",
+      "item": "221",
+      "rang": "A",
+      "theme": "piâge",
+      "front": "Notion inacceptable dans l'athérome en prévention secondaire ?",
+      "back": "Oublier l'aspirine/antiagrégant et les statines en prévention secondaire."
+    },
+    {
+      "id": "221-042",
+      "item": "221",
+      "rang": "B",
+      "theme": "seuils",
+      "front": "Seuils d'intervention d'un AAA asymptomatique dans le chapitre athérome ?",
+      "back": "Chirurgie si diamêtre 55 mm, 50 mm chez la femme, ou croissance ≥ 5 mm/an."
+    },
+    {
+      "id": "221-043",
+      "item": "221",
+      "rang": "B",
+      "theme": "seuils",
+      "front": "Quand discuter une endartériectomie carotidienne asymptomatique ?",
+      "back": "Sténose carotidienne asymptomatique > 60 %, le plus souvent > 80 %, seulement si espérance de vie > 5 ans."
+    },
+    {
+      "id": "221-044",
+      "item": "221",
+      "rang": "B",
+      "theme": "seuils",
+      "front": "Après SCA, quel seuil de sténose coronaire est considéré significatif pour revascularisation ?",
+      "back": "> 70 % ; en angor stable/ischémie silencieuse, revascularisation non systématique sauf symptômes, VG altéré, ischémie étendue ou FFR < 0,8."
+    },
+    {
+      "id": "221-045",
+      "item": "221",
+      "rang": "B",
+      "theme": "éducation",
+      "front": "Quels points d'éducation thérapeutique pour un patient athéromateux ?",
+      "back": "Activité physique régulière, mesures hygiénodiététiques, observance, tolérance des traitements, suivi des objectifs de prévention secondaire et reconnaissance des signes d'alerte."
+    },
+    {
+      "id": "222-001",
+      "item": "222",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Définition d'un facteur de risque cardiovasculaire.",
+      "back": "élément clinique ou biologique associé causalement à une augmentation du risque de maladie : il précède la maladie, avec relation dose-effet, caractère universel, plausibilité et lien indépendant."
+    },
+    {
+      "id": "222-002",
+      "item": "222",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Différence entre facteur de risque et marqueur de risque.",
+      "back": "Un facteur de risque a un rôle causal et sa correction baisse l'incidence ; un marqueur accompagne la maladie sans causalité démontrée, et sa correction ne modifie pas forcément le pronostic."
+    },
+    {
+      "id": "222-003",
+      "item": "222",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Définition de la prévention cardiovasculaire.",
+      "back": "Supprimer ou réduire au maximum l'ensemble des facteurs de risque pour diminuer le risque d'événements cardiovasculaires, au niveau individuel ou collectif."
+    },
+    {
+      "id": "222-004",
+      "item": "222",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Prévention primaire : définition.",
+      "back": "Réduire l'incidence de la maladie en dépistant et contrôlant les facteurs de risque avant tout accident ou maladie cardiovasculaire clinique."
+    },
+    {
+      "id": "222-005",
+      "item": "222",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Prévention secondaire : définition.",
+      "back": "Prévention après un accident vasculaire ou en présence de lésions vasculaires documentées, pour réduire récidives et progression."
+    },
+    {
+      "id": "222-006",
+      "item": "222",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Prévention primosecondaire : définition.",
+      "back": "Patients sans pathologie cardiaque ou vasculaire cliniquement décelable mais avec lésions athéromateuses infracliniques."
+    },
+    {
+      "id": "222-007",
+      "item": "222",
+      "rang": "A",
+      "theme": "FDR",
+      "front": "Cite les facteurs de risque cardiovasculaire non modifiables.",
+      "back": "âge, sexe masculin et hérédité cardiovasculaire précoce."
+    },
+    {
+      "id": "222-008",
+      "item": "222",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "À partir de quel âge parle-t-on d'hérédité cardiovasculaire précoce chez les apparentés ?",
+      "back": "événement CV avant 55 ans chez le père ou un frère, avant 65 ans chez la mère ou une sœur."
+    },
+    {
+      "id": "222-009",
+      "item": "222",
+      "rang": "A",
+      "theme": "FDR",
+      "front": "Cite les grands facteurs de risque modifiables d'Interheart.",
+      "back": "Tabagisme, hypercholestérolémie, HTA, diabète, obésité abdominale et facteurs psychosociaux."
+    },
+    {
+      "id": "222-010",
+      "item": "222",
+      "rang": "A",
+      "theme": "FDR",
+      "front": "Quels facteurs protecteurs ressortent d'Interheart ?",
+      "back": "Consommation de fruits/légumes, activité physique ; une consommation légère d'alcool est décrite mais n'est pas un conseil de prévention."
+    },
+    {
+      "id": "222-011",
+      "item": "222",
+      "rang": "B",
+      "theme": "épidémiologie",
+      "front": "Quelle proportion des IDM est expliquée par les 9 facteurs Interheart ?",
+      "back": "Environ 90 % des IDM, dans toutes les régions, classes d'âge et chez les deux sexes."
+    },
+    {
+      "id": "222-012",
+      "item": "222",
+      "rang": "A",
+      "theme": "tabac",
+      "front": "Quel rang occupe le tabac parmi les causes de mortalité évitable ?",
+      "back": "Première cause de mortalité évitable."
+    },
+    {
+      "id": "222-013",
+      "item": "222",
+      "rang": "A",
+      "theme": "tabac",
+      "front": "Combien de décès annuels en France sont attribués au tabac ?",
+      "back": "Environ 73 000 décès/an, plus de 10 % des décès ; environ un quart sont cardiovasculaires."
+    },
+    {
+      "id": "222-014",
+      "item": "222",
+      "rang": "A",
+      "theme": "tabac",
+      "front": "Quels mécanismes cardiovasculaires du tabac retenir ?",
+      "back": "Baisse du HDL, hausse agrégation plaquettaire/fibrinogène/viscosité, dysfonction endothéliale et spasme, CO diminuant le transport d'oxygène."
+    },
+    {
+      "id": "222-015",
+      "item": "222",
+      "rang": "A",
+      "theme": "tabac",
+      "front": "La nicotine explique-t-elle les complications cardiovasculaires du tabac ?",
+      "back": "Non. Elle explique surtout la dépendance ; les substituts nicotiniques aux doses thérapeutiques sont bien tolérés, y compris chez le coronarien."
+    },
+    {
+      "id": "222-016",
+      "item": "222",
+      "rang": "A",
+      "theme": "tabac",
+      "front": "Tabac et IDM : y a-t-il un seuil de consommation sans risque ?",
+      "back": "Non. Le risque augmente avec la consommation, mais il n'existe pas de seuil au-dessous duquel le tabac est dénué de risque."
+    },
+    {
+      "id": "222-017",
+      "item": "222",
+      "rang": "A",
+      "theme": "tabac",
+      "front": "Quel lien fort entre tabac et AOMI ?",
+      "back": "Environ 90 % des patients ayant une AOMI sont fumeurs ; le tabac favorise aussi AAA et AVC."
+    },
+    {
+      "id": "222-018",
+      "item": "222",
+      "rang": "A",
+      "theme": "tabac",
+      "front": "Impact du tabagisme passif sur le risque d'IDM ?",
+      "back": "Risque augmenté : +24 % pour 1 à 7 h/semaine d'exposition, +62 % pour > 22 h/semaine."
+    },
+    {
+      "id": "222-019",
+      "item": "222",
+      "rang": "A",
+      "theme": "dyslipidémie",
+      "front": "Quel paramêtre lipidique est déterminant pour le risque individuel ?",
+      "back": "Un LDL-cholestérol élevé ; le HDL bas est aussi associé au risque coronarien."
+    },
+    {
+      "id": "222-020",
+      "item": "222",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Formule de Friedewald en g/L et condition de validité.",
+      "back": "LDL-C = CT − HDL-C − TG/5, valable si TG < 3,5 g/L."
+    },
+    {
+      "id": "222-021",
+      "item": "222",
+      "rang": "A",
+      "theme": "HTA",
+      "front": "Seuils diagnostiques de l'HTA en prévention : cabinet, AMT, MAPA 24 h.",
+      "back": "Cabinet ≥ 140/90 mmHg ; automesure à 135/85 ; MAPA 24 h à 130/80."
+    },
+    {
+      "id": "222-022",
+      "item": "222",
+      "rang": "A",
+      "theme": "HTA",
+      "front": "Quelle est la prévalence de l'HTA chez l'adulte en France selon le chapitre FDR ?",
+      "back": "Environ 20 à 30 % de la population adulte ; rare avant 35 ans, > 60 % après 65 ans."
+    },
+    {
+      "id": "222-023",
+      "item": "222",
+      "rang": "A",
+      "theme": "diabète",
+      "front": "Seuils diagnostiques du diabète à retenir dans le risque CV.",
+      "back": "Glycémie à jeun > 1,26 g/L à deux reprises ou glycémie > 2 g/L à n'importe quel moment."
+    },
+    {
+      "id": "222-024",
+      "item": "222",
+      "rang": "A",
+      "theme": "diabète",
+      "front": "Comment le diabète modifie-t-il le risque cardiovasculaire ?",
+      "back": "Il majore le risque CV d'un facteur 2 à 3 et expose aux complications micro- et macrovasculaires."
+    },
+    {
+      "id": "222-025",
+      "item": "222",
+      "rang": "A",
+      "theme": "surpoids",
+      "front": "Seuils IMC : normal, surpoids, obésité.",
+      "back": "Normal 18,5-25 kg/m² ; surpoids 25-29,9 ; obésité à 30."
+    },
+    {
+      "id": "222-026",
+      "item": "222",
+      "rang": "A",
+      "theme": "syndrome métabolique",
+      "front": "Critère de périmêtre abdominal de l'obésité centrale dans le syndrome métabolique IDF.",
+      "back": "> 94 cm chez l'homme, > 80 cm chez la femme."
+    },
+    {
+      "id": "222-027",
+      "item": "222",
+      "rang": "A",
+      "theme": "syndrome métabolique",
+      "front": "Cite les critères associés du syndrome métabolique IDF.",
+      "back": "Obésité centrale + au moins deux parmi TG > 1,50 g/L, HDL bas, PA à 130/85, glycémie > 1 g/L ou diabète de type 2."
+    },
+    {
+      "id": "222-028",
+      "item": "222",
+      "rang": "A",
+      "theme": "SCORE2",
+      "front": "Que mesure SCORE2 ?",
+      "back": "Le risque à 10 ans d'événements cardiovasculaires fatals et non fatals, notamment IDM et AVC, chez les 40-69 ans apparemment en bonne santé."
+    },
+    {
+      "id": "222-029",
+      "item": "222",
+      "rang": "A",
+      "theme": "SCORE2",
+      "front": "Quand utiliser SCORE2-OP ?",
+      "back": "Chez les sujets de plus de 70 ans apparemment en bonne santé ; il tient compte du risque concurrent non cardiovasculaire."
+    },
+    {
+      "id": "222-030",
+      "item": "222",
+      "rang": "A",
+      "theme": "SCORE2",
+      "front": "Quels paramêtres entrent dans SCORE2 ?",
+      "back": "Région/pays, sexe, âge, tabagisme actif, PAS, cholestérol total et HDL."
+    },
+    {
+      "id": "222-031",
+      "item": "222",
+      "rang": "A",
+      "theme": "SCORE2",
+      "front": "Dans quelles situations SCORE2/SCORE2-OP ne s'appliquent-ils pas ?",
+      "back": "MCV documentée, diabète, hypercholestérolémie familiale ou génétique rare, insuffisance rénale, grossesse."
+    },
+    {
+      "id": "222-032",
+      "item": "222",
+      "rang": "A",
+      "theme": "SCORE2",
+      "front": "Pays à faible risque SCORE2 : la France en fait-elle partie ?",
+      "back": "Oui. La France est dans le groupe européen à bas risque."
+    },
+    {
+      "id": "222-033",
+      "item": "222",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "SCORE2 : seuils faible/modéré, élevé, très élevé avant 50 ans.",
+      "back": "< 2,5 % faible à modéré ; 2,5 à < 7,5 % élevé ; à 7,5 % très élevé."
+    },
+    {
+      "id": "222-034",
+      "item": "222",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "SCORE2 : seuils faible/modéré, élevé, très élevé entre 50 et 69 ans.",
+      "back": "< 5 % faible à modéré ; 5 à < 10 % élevé ; à 10 % très élevé."
+    },
+    {
+      "id": "222-035",
+      "item": "222",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "SCORE2-OP : seuils faible/modéré, élevé, très élevé après 70 ans.",
+      "back": "< 7,5 % faible à modéré ; 7,5 à < 15 % élevé ; à 15 % très élevé."
+    },
+    {
+      "id": "222-036",
+      "item": "222",
+      "rang": "B",
+      "theme": "diabète",
+      "front": "Quels paramêtres supplémentaires intègre SCORE2-Diabetes ?",
+      "back": "âge au diagnostic du diabète, HbA1c et DFGe, en plus des paramêtres SCORE2."
+    },
+    {
+      "id": "222-037",
+      "item": "222",
+      "rang": "A",
+      "theme": "prévention secondaire",
+      "front": "Que signifie BASIC après accident coronarien ?",
+      "back": "Bêtabloquant, Antiagrégant, Statine, IEC, Contrôle optimal des facteurs de risque."
+    },
+    {
+      "id": "222-038",
+      "item": "222",
+      "rang": "A",
+      "theme": "prévention secondaire",
+      "front": "Quel effet mortalité des quatre classes médicamenteuses du BASIC post-IDM ?",
+      "back": "Chaque classe médicamenteuse (BB, antiagrégant, statine, IEC) diminue la mortalité totale d'environ 25 % dans les suites d'un IDM."
+    },
+    {
+      "id": "222-039",
+      "item": "222",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Objectif LDL en prévention secondaire ou très haut risque.",
+      "back": "LDL-C < 0,55 g/L ; en dyslipidémie très haut risque, viser aussi une réduction d'au moins 50 % quand applicable."
+    },
+    {
+      "id": "222-040",
+      "item": "222",
+      "rang": "A",
+      "theme": "piâge",
+      "front": "Aspirine en prévention primaire : quel piâge EDN ?",
+      "back": "Ne pas prescrire systématiquement l'aspirine en prévention primaire, même chez le diabétique ; elle relève surtout de la prévention secondaire/indications spécifiques."
+    },
+    {
+      "id": "222-041",
+      "item": "222",
+      "rang": "A",
+      "theme": "tabac",
+      "front": "Bénéfice du sevrage tabagique après IDM.",
+      "back": "Arrêt du tabac : diminution d'environ 36 % du risque de récidive d'IDM ; substitution nicotinique recommandée et sûre chez le coronarien fumeur."
+    },
+    {
+      "id": "222-042",
+      "item": "222",
+      "rang": "A",
+      "theme": "prévention primaire",
+      "front": "Quel bilan minimal de prévention primaire recueillir dans tout dossier ?",
+      "back": "Tabac, PA, poids, taille, périmêtre abdominal, ATCD familiaux, alimentation, activité physique, glycémie et bilan lipidique complet à jeun."
+    },
+    {
+      "id": "222-043",
+      "item": "222",
+      "rang": "A",
+      "theme": "activité physique",
+      "front": "Quantité d'activité physique recommandée en prévention CV.",
+      "back": "Au moins 150 à 300 min/semaine d'activité aérobie modérée ou 75 à 150 min/semaine d'activité intense, souvent résumé à 30 min 5 jours/semaine."
+    },
+    {
+      "id": "222-044",
+      "item": "222",
+      "rang": "A",
+      "theme": "nutrition",
+      "front": "Quatre messages PNNS à visée cardiovasculaire.",
+      "back": "5 fruits/légumes par jour, poisson 2 fois/semaine, limiter graisses saturées/produits sucrés/sel, promouvoir l'activité physique."
+    },
+    {
+      "id": "222-045",
+      "item": "222",
+      "rang": "B",
+      "theme": "activité physique",
+      "front": "Quand recommander une épreuve d'effort avant activité physique intense > 6 MET ?",
+      "back": "Recommandée chez les sujets à risque CV élevé ou très élevé ; peut être réalisée si risque modéré et inactif ; non recommandée/préconisée si faible risque asymptomatique."
+    },
+    {
+      "id": "222-046",
+      "item": "222",
+      "rang": "A",
+      "theme": "piâge",
+      "front": "Notion inacceptable après un IDM selon item 222.",
+      "back": "Oublier le BASIC ou ne pas connaêtre la cible LDL < 0,55 g/L en prévention secondaire/très haut risque."
+    },
+    {
+      "id": "223-001",
+      "item": "223",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Quels sont les trois grands types pragmatiques de dyslipidémie ?",
+      "back": "Hypercholestérolémie pure, hypertriglycéridémie pure et hyperlipidémie mixte."
+    },
+    {
+      "id": "223-002",
+      "item": "223",
+      "rang": "A",
+      "theme": "risque",
+      "front": "Quel risque médical principal est associé aux dyslipidémies ?",
+      "back": "Le risque de maladie cardiovasculaire athéromateuse, quelle que soit la localisation."
+    },
+    {
+      "id": "223-003",
+      "item": "223",
+      "rang": "A",
+      "theme": "risque",
+      "front": "Relation LDL-C et risque athéromateux ?",
+      "back": "Association positive, graduelle : plus le LDL-C est élevé, plus le risque athéromateux augmente."
+    },
+    {
+      "id": "223-004",
+      "item": "223",
+      "rang": "A",
+      "theme": "risque",
+      "front": "Relation HDL-C et risque coronarien ?",
+      "back": "Association négative graduelle : HDL bas augmente le risque ; HDL élevé est protecteur jusqu'à certaines limites."
+    },
+    {
+      "id": "223-005",
+      "item": "223",
+      "rang": "A",
+      "theme": "risque",
+      "front": "Hypertriglycéridémie et risque cardiovasculaire : quel piâge ?",
+      "back": "Son risque athérogène est en grande partie dépendant des autres facteurs associés : surpoids, diabète, HDL bas."
+    },
+    {
+      "id": "223-006",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Quel seuil de TG expose surtout au risque de pancréatite aiguë ?",
+      "back": "> 10 g/L."
+    },
+    {
+      "id": "223-007",
+      "item": "223",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Que comprend l'EAL ?",
+      "back": "Cholestérol total, HDL-C et triglycérides ; LDL-C calculé par Friedewald si TG compatibles."
+    },
+    {
+      "id": "223-008",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Formule de Friedewald en g/L et condition.",
+      "back": "LDL-C = CT − HDL-C − TG/5 ; valable uniquement si TG < 3,5 g/L."
+    },
+    {
+      "id": "223-009",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Bilan lipidique normal chez sujet sans autre FDR : trois seuils.",
+      "back": "LDL-C < 1,6 g/L, HDL-C > 0,4 g/L et TG < 1,5 g/L simultanément."
+    },
+    {
+      "id": "223-010",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Seuil phénotypique d'hypercholestérolémie pure.",
+      "back": "LDL-C > 1,60 g/L."
+    },
+    {
+      "id": "223-011",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Seuil phénotypique d'hypertriglycéridémie pure.",
+      "back": "TG > 1,5 g/L."
+    },
+    {
+      "id": "223-012",
+      "item": "223",
+      "rang": "A",
+      "theme": "définition",
+      "front": "Définition de l'hyperlipidémie mixte.",
+      "back": "Association d'une hypercholestérolémie et d'une hypertriglycéridémie."
+    },
+    {
+      "id": "223-013",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Seuils d'hypo-HDLémie selon le sexe.",
+      "back": "HDL-C < 0,40 g/L chez l'homme ; < 0,50 g/L chez la femme."
+    },
+    {
+      "id": "223-014",
+      "item": "223",
+      "rang": "A",
+      "theme": "dépistage",
+      "front": "Quand contrôler un bilan lipidique normal chez l'adulte ?",
+      "back": "Chez tous les adultes, un bilan lipidique est conseillé ; s'il est normal, pas de recontrôle avant 5 ans en l'absence d'événement/changement."
+    },
+    {
+      "id": "223-015",
+      "item": "223",
+      "rang": "A",
+      "theme": "secondaire",
+      "front": "Cite les principales causes secondaires d'hyperlipidémie.",
+      "back": "Hypothyroïdie, cholestase, syndrome néphrotique, IRC, alcoolisme, diabète, médicaments."
+    },
+    {
+      "id": "223-016",
+      "item": "223",
+      "rang": "A",
+      "theme": "secondaire",
+      "front": "Quels médicaments peuvent donner une hyperlipidémie secondaire ?",
+      "back": "œstrogènes, corticoïdes, rétinoùdes, antirétroviraux, ciclosporine, antipsychotiques."
+    },
+    {
+      "id": "223-017",
+      "item": "223",
+      "rang": "B",
+      "theme": "secondaire",
+      "front": "Quel bilan biologique rechercher devant dyslipidémie secondaire ?",
+      "back": "TSH, bilan hépatique/cholestase, créatinine/DFG, protéinurie si syndrome néphrotique, glycémie/HbA1c ; interrogatoire alcool et médicaments."
+    },
+    {
+      "id": "223-018",
+      "item": "223",
+      "rang": "B",
+      "theme": "héréditaire",
+      "front": "Cause génétique la plus fréquente d'hypercholestérolémie familiale monogénique ?",
+      "back": "Mutation du gène du LDL-récepteur ; plus rarement apoB ou PCSK9."
+    },
+    {
+      "id": "223-019",
+      "item": "223",
+      "rang": "B",
+      "theme": "héréditaire",
+      "front": "Fréquence approximative de l'hypercholestérolémie familiale hétérozygote LDLR.",
+      "back": "Fréquente : environ 1/300 dans la population dans le chapitre dyslipidémies."
+    },
+    {
+      "id": "223-020",
+      "item": "223",
+      "rang": "B",
+      "theme": "seuils",
+      "front": "LDL-C typique dans l'hypercholestérolémie familiale hétérozygote.",
+      "back": "LDL-C entre 2 et 4 g/L avant traitement."
+    },
+    {
+      "id": "223-021",
+      "item": "223",
+      "rang": "B",
+      "theme": "seuils",
+      "front": "LDL-C typique dans l'hypercholestérolémie familiale homozygote.",
+      "back": "LDL-C > 5 g/L, avec dépôts xanthomateux dès l'enfance et complications très précoces."
+    },
+    {
+      "id": "223-022",
+      "item": "223",
+      "rang": "B",
+      "theme": "héréditaire",
+      "front": "Signes cliniques évocateurs d'hypercholestérolémie familiale.",
+      "back": "Xanthomes tendineux, arc cornéen prématuré, xanthélasma, ATCD familiaux de maladie CV prématurée et LDL très élevé."
+    },
+    {
+      "id": "223-023",
+      "item": "223",
+      "rang": "B",
+      "theme": "héréditaire",
+      "front": "Quel score peut aider au diagnostic d'hypercholestérolémie familiale ?",
+      "back": "Le score clinicobiologique Dutch-HF, combinant ATCD, signes cliniques et niveau de LDL-C."
+    },
+    {
+      "id": "223-024",
+      "item": "223",
+      "rang": "A",
+      "theme": "héréditaire",
+      "front": "LDL-C habituel des hypercholestérolémies polygéniques.",
+      "back": "Le plus souvent entre 1,3 et 2,5 g/L ; elles sont fréquentes et sensibles à l'alimentation."
+    },
+    {
+      "id": "223-025",
+      "item": "223",
+      "rang": "A",
+      "theme": "héréditaire",
+      "front": "Caractéristiques de l'hyperlipidémie familiale combinée.",
+      "back": "Fréquente (1-2 %), phénotypes variables familiaux/individuels : HLM, HCH ou HTG ; souvent CT 2,5-3,5 g/L, LDL 1,6-2,5, TG 1,5-5."
+    },
+    {
+      "id": "223-026",
+      "item": "223",
+      "rang": "B",
+      "theme": "héréditaire",
+      "front": "Dysbêtalipoprotéinémie : prédisposition génétique et facteur déclenchant.",
+      "back": "Homozygotie apoE2/E2 + facteur comme surpoids, diabète, hypothyroïdie ou médicament."
+    },
+    {
+      "id": "223-027",
+      "item": "223",
+      "rang": "A",
+      "theme": "héréditaire",
+      "front": "Hypertriglycéridémie familiale : quels facteurs font varier les TG ?",
+      "back": "Surpoids, alcool et sucres ; une chylomicronémie peut apparaêtre en poussée majeure."
+    },
+    {
+      "id": "223-028",
+      "item": "223",
+      "rang": "B",
+      "theme": "seuils",
+      "front": "Hyperchylomicronémie primitive : ordre de grandeur des TG.",
+      "back": "HTG majeure > 10 g/L, pouvant aller jusqu'à 100 g/L, avec risque majeur de pancréatite."
+    },
+    {
+      "id": "223-029",
+      "item": "223",
+      "rang": "A",
+      "theme": "SCORE2",
+      "front": "Dans l'item dyslipidémie, que mesure SCORE2 ?",
+      "back": "Risque à 10 ans d'événement CV majeur : IDM, AVC ou décès CV, chez les 40-69 ans en prévention primaire."
+    },
+    {
+      "id": "223-030",
+      "item": "223",
+      "rang": "A",
+      "theme": "SCORE2",
+      "front": "Quels patients sont d'emblée haut/très haut risque, sans SCORE2 standard ?",
+      "back": "Maladie CV documentée, diabète selon profil, IRC selon DFG/RAC, hypercholestérolémie familiale."
+    },
+    {
+      "id": "223-031",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Objectif LDL-C en risque faible.",
+      "back": "< 1,15 g/L (ou < 1,16 g/L selon résumé applicatif)."
+    },
+    {
+      "id": "223-032",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Objectif LDL-C en risque modéré.",
+      "back": "< 1,0 g/L."
+    },
+    {
+      "id": "223-033",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Objectif LDL-C en risque élevé.",
+      "back": "< 0,70 g/L."
+    },
+    {
+      "id": "223-034",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Objectif LDL-C en risque très élevé ou prévention secondaire.",
+      "back": "< 0,55 g/L ; en prévention secondaire/très haut risque, viser aussi une baisse à 50 % quand la valeur de base est connue."
+    },
+    {
+      "id": "223-035",
+      "item": "223",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Quel traitement est toujours indiqué devant une anomalie lipidique ?",
+      "back": "Traitement diététique et correction du mode de vie, poursuivis au long cours."
+    },
+    {
+      "id": "223-036",
+      "item": "223",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "En prévention primaire, quand introduire habituellement un hypolipémiant ?",
+      "back": "Après au moins 3 mois de diététique bien suivie si le LDL-C reste au-dessus de l'objectif, sauf risque très élevé où il est indiqué d'emblée."
+    },
+    {
+      "id": "223-037",
+      "item": "223",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Traitement de 1er choix des hypercholestérolémies pures et hyperlipidémies mixtes.",
+      "back": "Une statine, à intensifier jusqu'à dose maximale tolérée pour atteindre l'objectif."
+    },
+    {
+      "id": "223-038",
+      "item": "223",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Quel effet moyen des statines sur le LDL-C ?",
+      "back": "Baisse d'environ 25 à 50 % selon molécule et dose."
+    },
+    {
+      "id": "223-039",
+      "item": "223",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Que faire si l'objectif LDL n'est pas atteint sous statine maximale tolérée ?",
+      "back": "Associer l'ézétimibe, qui apporte environ 20 % de réduction supplémentaire du LDL-C ; éventuellement colestyramine en dernier lieu."
+    },
+    {
+      "id": "223-040",
+      "item": "223",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Traitement des TG entre 1,5 et 5 g/L.",
+      "back": "Traitement diététique seul : réduction pondérale, alcool, sucres simples, équilibre du diabète."
+    },
+    {
+      "id": "223-041",
+      "item": "223",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Traitement si TG > 5 g/L malgré diététique bien suivie.",
+      "back": "Fibrate, en parallèle de la diététique ; objectif majeur : prévenir les poussées très sévères et la pancréatite."
+    },
+    {
+      "id": "223-042",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Que faire si TG > 10 g/L avec hyperchylomicronémie ?",
+      "back": "Avis spécialisé et réduction de l'apport lipidique < 30 g/j, en raison du risque majeur de pancréatite aiguë."
+    },
+    {
+      "id": "223-043",
+      "item": "223",
+      "rang": "B",
+      "theme": "PCSK9",
+      "front": "Anti-PCSK9 disponibles et effet LDL-C.",
+      "back": "Alirocumab et évolocumab, injections SC, diminuent le LDL-C d'environ 50 % en plus de la baisse obtenue sous statine."
+    },
+    {
+      "id": "223-044",
+      "item": "223",
+      "rang": "B",
+      "theme": "seuils",
+      "front": "Seuil français de remboursement des anti-PCSK9 en prévention secondaire.",
+      "back": "Maladie CV avérée + LDL-C > 0,7 g/L malgré traitement optimisé comprenant au moins une statine à dose maximale tolérée poursuivie."
+    },
+    {
+      "id": "223-045",
+      "item": "223",
+      "rang": "A",
+      "theme": "surveillance",
+      "front": "Quand contrôler l'efficacité d'un traitement hypolipémiant ?",
+      "back": "Bilan lipidique 8 à 12 semaines après initiation ou adaptation, puis répétition 8 à 12 semaines après chaque adaptation jusqu'à la cible."
+    },
+    {
+      "id": "223-046",
+      "item": "223",
+      "rang": "A",
+      "theme": "surveillance",
+      "front": "Faut-il doser systématiquement les CPK sous statine ?",
+      "back": "Non. Surveillance musculaire surtout clinique ; CPK si myalgies ou situations à risque."
+    },
+    {
+      "id": "223-047",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Quand arrêter une statine pour CPK ?",
+      "back": "CPK > 5 N, à distance d'une activité sportive."
+    },
+    {
+      "id": "223-048",
+      "item": "223",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Surveillance hépatique des statines et seuil d'arrêt/réduction.",
+      "back": "ALAT avant traitement, à 8-12 semaines puis annuel si < 3 N ; si ALAT > 3 N, arrêt ou réduction et contrôle à 4-6 semaines."
+    },
+    {
+      "id": "223-049",
+      "item": "223",
+      "rang": "A",
+      "theme": "piâge",
+      "front": "Statines et grossesse : que retenir ?",
+      "back": "Les statines sont contre-indiquées pendant la grossesse."
+    },
+    {
+      "id": "223-050",
+      "item": "223",
+      "rang": "A",
+      "theme": "nutrition",
+      "front": "Mesures diététiques générales en dyslipidémie.",
+      "back": "Limiter graisses saturées (< 10-12 % calories) et trans, favoriser mono/poly-insaturés et oméga-3, fibres, régime méditerranéen, fruits/légumes, noix, limiter alcool et poids."
+    },
+    {
+      "id": "224-001",
+      "item": "224",
+      "rang": "A",
+      "theme": "mesure",
+      "front": "Conditions de mesure correcte de la PA au cabinet.",
+      "back": "Patient assis, calme, repos > 5 min, > 30 min après effort/café/cigarette, vessie vide, dos calé, bras soutenu à hauteur du cœur, brassard adapté."
+    },
+    {
+      "id": "224-002",
+      "item": "224",
+      "rang": "A",
+      "theme": "mesure",
+      "front": "Combien de mesures au cabinet et quelle valeur retenir ?",
+      "back": "Au moins 3 mesures espacées de 1-2 min ; retenir la moyenne des 2 dernières, avec mesures supplémentaires si écart PAS > 10 mmHg entre les deux premières."
+    },
+    {
+      "id": "224-003",
+      "item": "224",
+      "rang": "A",
+      "theme": "mesure",
+      "front": "Pourquoi mesurer la PA aux deux bras à la première consultation ?",
+      "back": "Pour rechercher une asymétrie tensionnelle évoquant une sténose subclavière ; le bras avec valeurs les plus élevées devient référence."
+    },
+    {
+      "id": "224-004",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Définition de l'hypotension orthostatique.",
+      "back": "Baisse de PAS à 20 mmHg et/ou PAD à 10 mmHg à 1 et/ou 3 minutes après passage debout."
+    },
+    {
+      "id": "224-005",
+      "item": "224",
+      "rang": "A",
+      "theme": "mesure",
+      "front": "Règle des 3 en automesure tensionnelle.",
+      "back": "3 jours consécutifs, 3 mesures le matin et 3 le soir, après 5 min de repos, soit 18 mesures ; moyenne des deux dernières de chaque série."
+    },
+    {
+      "id": "224-006",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Seuil diagnostique HTA au cabinet selon ESC 2024/CNEC.",
+      "back": "Moyenne de consultation > 140 mmHg systolique et/ou > 90 mmHg diastolique ; les résumés utilisent souvent ≥ 140/90."
+    },
+    {
+      "id": "224-007",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Seuil diagnostique HTA en automesure.",
+      "back": "Moyenne AMT > 135 mmHg systolique et/ou > 85 mmHg diastolique ; souvent retenu à 135/85."
+    },
+    {
+      "id": "224-008",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Seuil diagnostique HTA en MAPA 24 h.",
+      "back": "Moyenne MAPA 24 h > 130/80 mmHg ; souvent retenu à 130/80."
+    },
+    {
+      "id": "224-009",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Seuils HTA en MAPA diurne et nocturne.",
+      "back": "Diurne > 135/85 mmHg ; nocturne > 120/70 mmHg."
+    },
+    {
+      "id": "224-010",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Définition de la PA élevée en consultation selon ESC 2024.",
+      "back": "PAS 120-139 mmHg et/ou PAD 70-89 mmHg, sans atteindre les critères d'HTA."
+    },
+    {
+      "id": "224-011",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Grades d'HTA au cabinet.",
+      "back": "Grade 1 : 140-159/90-99 ; grade 2 : 160-179/100-109 ; grade 3 : à ou > 180 et/ou à 110 selon tableaux."
+    },
+    {
+      "id": "224-012",
+      "item": "224",
+      "rang": "A",
+      "theme": "diagnostic",
+      "front": "Faut-il confirmer une HTA avant traitement ?",
+      "back": "Oui, hors urgence hypertensive : confirmation hors cabinet par AMT de préférence ou MAPA avant de débuter le traitement."
+    },
+    {
+      "id": "224-013",
+      "item": "224",
+      "rang": "A",
+      "theme": "piâge",
+      "front": "Définition de l'HTA blouse blanche.",
+      "back": "PA de consultation élevée (> 140/90) mais mesures ambulatoires normales ; surveillance et MHD, pas de traitement médicamenteux systématique."
+    },
+    {
+      "id": "224-014",
+      "item": "224",
+      "rang": "A",
+      "theme": "piâge",
+      "front": "Définition et risque de l'HTA masquée.",
+      "back": "PA cabinet normale mais AMT/MAPA hypertensive ; risque d'événements similaire à l'HTA habituelle, prise en charge comme une HTA."
+    },
+    {
+      "id": "224-015",
+      "item": "224",
+      "rang": "B",
+      "theme": "épidémiologie",
+      "front": "Chez l'hypertendu, quels risques sont multipliés ?",
+      "back": "AVC x7, insuffisance coronarienne x3, AOMI x2, insuffisance cardiaque x4 ; mortalité CV doublée."
+    },
+    {
+      "id": "224-016",
+      "item": "224",
+      "rang": "B",
+      "theme": "physiopath",
+      "front": "Dans quelle proportion l'HTA est-elle essentielle versus secondaire ?",
+      "back": "Environ 90 % essentielle, 10 % secondaire."
+    },
+    {
+      "id": "224-017",
+      "item": "224",
+      "rang": "A",
+      "theme": "dépistage",
+      "front": "Fréquence de dépistage de la PA chez l'adulte selon ESC 2024.",
+      "back": "Au moins tous les 3 ans avant 40 ans, et au moins une fois par an À partir de 40 ans."
+    },
+    {
+      "id": "224-018",
+      "item": "224",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Objectifs de l'évaluation initiale d'un hypertendu.",
+      "back": "Préciser le niveau de PA, évaluer le risque CV global, rechercher atteinte d'organes cibles, facteurs aggravants et arguments d'HTA secondaire."
+    },
+    {
+      "id": "224-019",
+      "item": "224",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Quels facteurs aggravants rechercher à l'interrogatoire ?",
+      "back": "Sel, alimentation déséquilibrée, alcool, sédentarité, surpoids/prise de poids, SAOS (ronflements/pauses), médicaments/toxiques."
+    },
+    {
+      "id": "224-020",
+      "item": "224",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Bilan biologique minimal de l'HTA.",
+      "back": "Glycémie/HbA1c, EAL, natrémie, kaliémie, hémoglobine/hématocrite, créatinine avec DFGe, protéinurie ou rapport protéinurie/créatininurie."
+    },
+    {
+      "id": "224-021",
+      "item": "224",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Quel examen cardiovasculaire est systématique dans le bilan initial d'HTA ?",
+      "back": "ECG de repos."
+    },
+    {
+      "id": "224-022",
+      "item": "224",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Que recherche l'ECG initial chez l'hypertendu ?",
+      "back": "HVG électrique, séquelle d'IDM, troubles de repolarisation/ischémie, troubles du rythme notamment FA ; il sert aussi de référence."
+    },
+    {
+      "id": "224-023",
+      "item": "224",
+      "rang": "A",
+      "theme": "bilan",
+      "front": "Quand demander un fond d'œil dans l'HTA ?",
+      "back": "HTA grade 3, grade 2-3 si suspicion d'HTA maligne ; œdème papillaire = stade 4."
+    },
+    {
+      "id": "224-024",
+      "item": "224",
+      "rang": "A",
+      "theme": "organes cibles",
+      "front": "Principales atteintes d'organes cibles de l'HTA.",
+      "back": "Cardiaques (IC, coronaropathie, FA, HVG), neurovasculaires/rétiniennes (AIT/AVC, démence, rétinopathie), rénales (néphroangiosclérose, protéinurie, IRC), artérielles."
+    },
+    {
+      "id": "224-025",
+      "item": "224",
+      "rang": "A",
+      "theme": "organes cibles",
+      "front": "Quel seuil de protéinurie sur échantillon est pathologique dans le suivi HTA ?",
+      "back": "Rapport protéinurie/créatininurie > 300 mg/g pour protéinurie ; albuminurie > 30 mg/g déjà pathologique, systématique surtout chez le diabétique."
+    },
+    {
+      "id": "224-026",
+      "item": "224",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Objectif principal du traitement antihypertenseur.",
+      "back": "Réduire la mortalité et les complications cardiovasculaires et rénales à long terme."
+    },
+    {
+      "id": "224-027",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Cible tensionnelle ESC 2024 chez l'hypertendu si tolérée.",
+      "back": "PAS 120-129 mmHg et PAD 70-79 mmHg, en ciblant si possible autour de 120/70."
+    },
+    {
+      "id": "224-028",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Quand adapter d'emblée la cible ESC 2024 ?",
+      "back": "Hypotension orthostatique, fragilité, âge > 85 ans, espérance de vie limitée ou mauvaise tolérance clinique/paraclinique."
+    },
+    {
+      "id": "224-029",
+      "item": "224",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Les quatre piliers de la prise en charge HTA.",
+      "back": "Mesures hygiénodiététiques, traitement des facteurs de risque associés, traitement médicamenteux, éducation thérapeutique."
+    },
+    {
+      "id": "224-030",
+      "item": "224",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Mesures hygiénodiététiques essentielles de l'HTA.",
+      "back": "Activité physique, lutte sédentarité, perte de poids si surpoids, alcool < 10 unités/sem, sel 5-6 g/j, potassium via alimentation si possible, arrêt tabac, régime méditerranéen."
+    },
+    {
+      "id": "224-031",
+      "item": "224",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Cible de sel quotidienne dans l'HTA.",
+      "back": "5-6 g de sel/j, soit natriurèse des 24 h autour de 100 mmol/j."
+    },
+    {
+      "id": "224-032",
+      "item": "224",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Cite les 5 classes antihypertensives efficaces en 1re intention.",
+      "back": "IEC, ARA2, inhibiteurs calciques, diurétiques thiazidiques/apparentés, bêtabloquants."
+    },
+    {
+      "id": "224-033",
+      "item": "224",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Quelle stratégie initiale est recommandée pour la majorité des hypertendus ?",
+      "back": "Bithérapie d'emblée à faible dose, idéalement en association fixe monoprise."
+    },
+    {
+      "id": "224-034",
+      "item": "224",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Associations privilégiées en bithérapie initiale HTA.",
+      "back": "IEC ou ARA2 + inhibiteur calcique dihydropyridine ; ou IEC/ARA2 + diurétique thiazidique/apparenté."
+    },
+    {
+      "id": "224-035",
+      "item": "224",
+      "rang": "A",
+      "theme": "piâge",
+      "front": "Association antihypertensive formellement à éviter.",
+      "back": "Jamais IEC + ARA2 : double blocage du SRA non recommandé/contre-indiqué."
+    },
+    {
+      "id": "224-036",
+      "item": "224",
+      "rang": "A",
+      "theme": "traitement",
+      "front": "Quand débuter par une monothérapie ?",
+      "back": "PA élevée avec indication de traitement, fragilité modérée/sévère, hypotension orthostatique, âge > 85 ans."
+    },
+    {
+      "id": "224-037",
+      "item": "224",
+      "rang": "A",
+      "theme": "piâge",
+      "front": "Bêtabloquant en HTA essentielle : quel piâge ?",
+      "back": "Pas de bêtabloquant en monothérapie de routine ; utile surtout si indication spécifique (post-IDM, angor, IC, trouble du rythme...)."
+    },
+    {
+      "id": "224-038",
+      "item": "224",
+      "rang": "A",
+      "theme": "contre-indications",
+      "front": "Contre-indications absolues des bêtabloquants en HTA.",
+      "back": "Asthme, BAV 2e ou 3e degré ; relatives : bradycardie, syndrome de Raynaud."
+    },
+    {
+      "id": "224-039",
+      "item": "224",
+      "rang": "A",
+      "theme": "contre-indications",
+      "front": "Contre-indications des inhibiteurs calciques non dihydropyridines.",
+      "back": "BAV 2e/3e degré et insuffisance cardiaque à fonction systolique altérée ; effets bradycardisants."
+    },
+    {
+      "id": "224-040",
+      "item": "224",
+      "rang": "B",
+      "theme": "traitement",
+      "front": "Traitement de 4e intention typique de l'HTA résistante après avis spécialisé.",
+      "back": "Antagoniste des récepteurs minéralocorticoïdes : spironolactone en 1re intention, éplérénone si mal tolérée."
+    },
+    {
+      "id": "224-041",
+      "item": "224",
+      "rang": "A",
+      "theme": "HTA secondaire",
+      "front": "Quand dépister une HTA secondaire ?",
+      "back": "HTA sévère > 180/110, HTA résistante, âge < 40 ans, HTA + hypokaliémie, ou point d'appel clinique/biologique."
+    },
+    {
+      "id": "224-042",
+      "item": "224",
+      "rang": "A",
+      "theme": "HTA secondaire",
+      "front": "Principales causes d'HTA secondaire.",
+      "back": "Néphropathie parenchymateuse, HTA rénovasculaire, phéochromocytome, hyperaldostéronisme primaire, Cushing/acromégalie/hyperthyroïdie, coarctation, SAOS, médicaments/toxiques."
+    },
+    {
+      "id": "224-043",
+      "item": "224",
+      "rang": "B",
+      "theme": "HTA secondaire",
+      "front": "Phéochromocytome : triade clinique typique.",
+      "back": "Triade de Ménard : céphalées, sueurs, palpitations, souvent par crises avec poussées hypertensives."
+    },
+    {
+      "id": "224-044",
+      "item": "224",
+      "rang": "A",
+      "theme": "HTA secondaire",
+      "front": "Hyperaldostéronisme primaire : test de dépistage.",
+      "back": "Aldostérone élevée, rénine basse et rapport aldostérone/rénine très élevé, en conditions standardisées."
+    },
+    {
+      "id": "224-045",
+      "item": "224",
+      "rang": "B",
+      "theme": "HTA secondaire",
+      "front": "Coarctation aortique : signes d'examen.",
+      "back": "Sujet jeune, HTA aux membres supérieurs, PA basse aux membres inférieurs, pouls fémoraux absents, souffle mésosystolique parasternal gauche/dorsal."
+    },
+    {
+      "id": "224-046",
+      "item": "224",
+      "rang": "A",
+      "theme": "urgence",
+      "front": "Principales urgences hypertensives à connaêtre.",
+      "back": "SCA, OAP hypertensif, dissection aortique, encéphalopathie/PRES, AVC ou hémorragie méningée/cérébrale, HTA maligne, phéochromocytome, prééclampsie/éclampsie, toxiques."
+    },
+    {
+      "id": "224-047",
+      "item": "224",
+      "rang": "A",
+      "theme": "urgence",
+      "front": "Prise en charge générale d'une urgence hypertensive.",
+      "back": "Hospitalisation USI/réanimation, surveillance PA toutes les 15 min, bilan selon organe, baisse contrôlée de PA, traitement IV adapté."
+    },
+    {
+      "id": "224-048",
+      "item": "224",
+      "rang": "A",
+      "theme": "seuils",
+      "front": "Objectif de baisse tensionnelle dans l'urgence hypertensive hors situations spécifiques.",
+      "back": "Baisse de 20-25 % en 2 h pour atteindre environ 160/110 mmHg en 2-6 h ; éviter chute brutale."
+    },
+    {
+      "id": "224-049",
+      "item": "224",
+      "rang": "A",
+      "theme": "urgence",
+      "front": "Médicaments IV de 1re intention dans l'urgence hypertensive générale.",
+      "back": "Urapidil IV et/ou inhibiteur calcique IV comme nicardipine ; nicardipine contre-indiquée en insuffisance cardiaque."
+    },
+    {
+      "id": "224-050",
+      "item": "224",
+      "rang": "A",
+      "theme": "urgence",
+      "front": "Quel antihypertenseur IV privilégier dans phéochromocytome ?",
+      "back": "Labétalol IV (alpha et bêtabloquant), dans ce contexte spécifique."
+    }
+  ]
+}
