@@ -155,6 +155,18 @@
       background: linear-gradient(145deg, #1f5c45, #2f7a5c); color: #fff; border: none;
     }
     .hub-btn.primary span { color: rgba(255,255,255,0.85); }
+    .pipe-steps {
+      display: flex; gap: 0.35rem; flex-wrap: wrap; margin: 0.55rem 0 0;
+    }
+    .pipe-steps span {
+      font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.55rem;
+      border-radius: 999px; background: rgba(255,255,255,0.18); color: #fff;
+    }
+    .pipe-steps span.on { background: #fff; color: var(--accent); }
+    .pipe-steps span.done { background: #86efac; color: #14532d; }
+    .pipe-steps.dark span { background: #e8e2d6; color: var(--muted); }
+    .pipe-steps.dark span.on { background: var(--accent); color: #fff; }
+    .pipe-steps.dark span.done { background: #dcfce7; color: var(--ok); }
     .heat-grid {
       display: grid; grid-template-columns: repeat(auto-fill, minmax(5.8rem, 1fr));
       gap: 0.4rem; margin-top: 0.55rem;
@@ -262,6 +274,7 @@
       <li><button type="button" id="tab-setup" class="active">Session</button></li>
       <li><button type="button" id="tab-cours">Cours</button></li>
       <li><button type="button" id="tab-notions">Notions</button></li>
+      <li><button type="button" id="tab-arbres">CAT</button></li>
       <li><button type="button" id="tab-tx">Traitements</button></li>
       <li><button type="button" id="tab-fiches">Fiches</button></li>
       <li><button type="button" id="tab-sigles">Sigles</button></li>
@@ -279,7 +292,10 @@ let SIGLES = { items: [] };
 let FICHES = { comparatifs: [], reflexes: [], pieges: [], seuils: [] };
 let COURS = [];
 let NOTIONS = [];
+let ARBRES = [];
+let TROUS = { totalGaps: 0, byItem: {} };
 let view = "setup";
+let arbreState = null; // { id, stepId }
 let session = null;
 let originMode = "nouveau";
 let formatMode = "all";
@@ -288,10 +304,14 @@ let themeMode = "all";
 let focusTicker = null;
 let flashTicker = null;
 let flashState = null;
+let coursActiveState = null;
+let pipeline = null; // { itemId, step: 'cours'|'qcm'|'srs'|'done', wrongQs: [], rang }
 
 const FOCUS_N = 8;
 const FOCUS_MS = 8 * 60 * 1000;
 const FLASH_MS = 60 * 1000;
+const COURS_ACTIVE_N = 12;
+const PIPE_QCM_N = 5;
 
 const $ = (id) => document.getElementById(id);
 const viewEl = $("view");
@@ -307,9 +327,11 @@ function loadStats() {
       bestStreak: s.bestStreak || 0,
       lastDay: s.lastDay || null,
       srs: s.srs || {},
+      coursCards: s.coursCards || {},
+      pipelines: s.pipelines || {},
     };
   } catch {
-    return { byItem: {}, sessions: [], xp: 0, streak: 0, bestStreak: 0, lastDay: null, srs: {} };
+    return { byItem: {}, sessions: [], xp: 0, streak: 0, bestStreak: 0, lastDay: null, srs: {}, coursCards: {}, pipelines: {} };
   }
 }
 function saveStats(s) { localStorage.setItem(STORE, JSON.stringify(s)); }
@@ -539,6 +561,7 @@ function poolFor(ids) {
     if (formatMode !== "all" && (q.format || "standard") !== formatMode) return false;
     if (rangMode !== "all" && qRang(q) !== rangMode) return false;
     if (themeMode === "traitement" && q.theme !== "traitement") return false;
+    if (themeMode === "trou" && q.theme !== "trou") return false;
     return true;
   });
 }
@@ -612,6 +635,7 @@ function startFocusTicker() {
 
 function beginFocusSession() {
   clearFocusTicker();
+  pipeline = null;
   const prev = { originMode, formatMode, rangMode, themeMode };
   originMode = "both";
   formatMode = "all";
@@ -651,6 +675,48 @@ function beginFocusSession() {
   startFocusTicker();
 }
 
+function trousCount(itemId = null) {
+  if (itemId) return (TROUS.byItem?.[itemId]?.n) || 0;
+  return TROUS.totalGaps || Object.values(TROUS.byItem || {}).reduce((s, x) => s + (x.n || 0), 0);
+}
+
+function beginTrousSession(itemId = null) {
+  clearFocusTicker();
+  pipeline = null;
+  const prev = { originMode, formatMode, rangMode, themeMode };
+  originMode = "both";
+  formatMode = "all";
+  rangMode = "all";
+  themeMode = "trou";
+  let ids = itemId ? [itemId] : Object.keys(TROUS.byItem || {});
+  if (!ids.length) ids = BANK.items.map((it) => it.id);
+  const pool = shuffle(poolFor(ids));
+  if (!pool.length) {
+    originMode = prev.originMode;
+    formatMode = prev.formatMode;
+    rangMode = prev.rangMode;
+    themeMode = prev.themeMode;
+    alert("Aucun QCM trou pour ces items.");
+    return;
+  }
+  session = {
+    phase: "quiz",
+    focus: false,
+    srs: false,
+    pipeline: false,
+    trous: true,
+    items: [...new Set(pool.map((q) => q.item))],
+    qs: pool.map((q) => ({ ...q, picked: [], revealed: false })),
+    i: 0,
+  };
+  originMode = prev.originMode;
+  formatMode = prev.formatMode;
+  rangMode = prev.rangMode;
+  themeMode = prev.themeMode;
+  view = "quiz";
+  render();
+}
+
 async function boot() {
   try {
     BANK = await (await fetch("bank.json")).json();
@@ -666,6 +732,13 @@ async function boot() {
       const n = await (await fetch("notions.json")).json();
       NOTIONS = Array.isArray(n) ? n : (n.notions || []);
     } catch { NOTIONS = []; }
+    try {
+      const a = await (await fetch("arbres.json")).json();
+      ARBRES = Array.isArray(a) ? a : (a.arbres || []);
+    } catch { ARBRES = []; }
+    try {
+      TROUS = await (await fetch("trous.json")).json();
+    } catch { TROUS = { totalGaps: 0, byItem: {} }; }
   } catch (e) {
     viewEl.innerHTML = `<div class="card err">Impossible de charger <code>bank.json</code>. Lance <code>lancer.bat</code>.</div>`;
     return;
@@ -678,6 +751,7 @@ async function boot() {
   };
   $("tab-cours").onclick = () => { view = "cours"; render(); };
   $("tab-notions").onclick = () => { view = "notions"; render(); };
+  $("tab-arbres").onclick = () => { arbreState = null; view = "arbres"; render(); };
   $("tab-tx").onclick = () => { view = "traitements"; render(); };
   $("tab-fiches").onclick = () => { view = "fiches"; render(); };
   $("tab-sigles").onclick = () => { view = "sigles"; render(); };
@@ -686,10 +760,11 @@ async function boot() {
 }
 
 function render() {
-  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "notions");
-  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches", "cours", "notions"].includes(view));
-  $("tab-cours").classList.toggle("active", view === "cours");
+  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "notions" || view === "arbres");
+  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches", "cours", "notions", "cours-active", "flash", "arbres"].includes(view));
+  $("tab-cours").classList.toggle("active", view === "cours" || view === "cours-active");
   $("tab-notions").classList.toggle("active", view === "notions");
+  $("tab-arbres").classList.toggle("active", view === "arbres");
   $("tab-tx").classList.toggle("active", view === "traitements");
   $("tab-fiches").classList.toggle("active", view === "fiches");
   $("tab-sigles").classList.toggle("active", view === "sigles");
@@ -698,9 +773,11 @@ function render() {
   else if (view === "quiz") renderQuiz();
   else if (view === "results") renderResults();
   else if (view === "flash") renderFlash();
+  else if (view === "cours-active") renderCoursActive();
   else if (view === "traitements") renderTraitements();
   else if (view === "cours") renderCours();
   else if (view === "notions") renderNotions();
+  else if (view === "arbres") renderArbres();
   else if (view === "fiches") renderFiches();
   else if (view === "sigles") renderSigles();
   else renderSuivi();
@@ -845,6 +922,339 @@ function renderFlash() {
   $("flash-stop").onclick = () => finishFlash();
 }
 
+function coursCardId(item, rang, idx) {
+  return `${item}-${rang}-${idx}`;
+}
+
+function coursBlock(text) {
+  const t = String(text || "").toLowerCase();
+  if (/seuil|mmhg|g\/l|≤|≥|< |%|bpm|min|score|cha2|has-bled|wells|spesi|nyha|fevg|ldl/.test(t)) return "Seuils / chiffres";
+  if (/traitement|aco|aod|avk|aspirine|statine|iec|bb|bêta|diurétique|dapt|fibrinol|amiodarone|gliflozine|arn/i.test(t)) return "Traitement";
+  if (/diagnostic|ecg|echo|ett|eto|tdm|biopsie|bnP|troponine|holter|irm/.test(t)) return "Diagnostic";
+  if (/urgence|choc|détresse|oap|réanimation|tamponnade|syncope|15|usic/.test(t)) return "Urgence";
+  if (/défini|est une|est le|classif|mécanisme|étiologie|facteur/.test(t)) return "Définition / mécanisme";
+  return "Point clé";
+}
+
+function coursCardWeight(stats, card, itemId) {
+  const rec = (stats.coursCards || {})[card.id] || {};
+  let w = itemWeakness(itemId) + 0.35;
+  if (rec.due && rec.due <= Date.now()) w += 2.5;
+  else if (!rec.ok && !rec.ko) w += 1.2;
+  else if ((rec.ko || 0) > (rec.ok || 0)) w += 1.8;
+  if (card.rang === "A") w += 0.4;
+  return w;
+}
+
+function buildCoursDeck({ itemId = "all", rang = "A", n = COURS_ACTIVE_N } = {}) {
+  const stats = loadStats();
+  const cards = [];
+  for (const c of COURS) {
+    if (itemId !== "all" && c.item !== itemId) continue;
+    if (rang === "A" || rang === "all") {
+      (c.rangA || []).forEach((text, i) => {
+        cards.push({
+          id: coursCardId(c.item, "A", i),
+          item: c.item,
+          label: c.label,
+          rang: "A",
+          block: coursBlock(text),
+          text,
+        });
+      });
+    }
+    if (rang === "B" || rang === "all") {
+      (c.rangB || []).forEach((text, i) => {
+        cards.push({
+          id: coursCardId(c.item, "B", i),
+          item: c.item,
+          label: c.label,
+          rang: "B",
+          block: coursBlock(text),
+          text,
+        });
+      });
+    }
+  }
+  if (!cards.length) return [];
+  const weights = cards.map((card) => coursCardWeight(stats, card, card.item));
+  return weightedSample(cards, weights, Math.min(n, cards.length));
+}
+
+function markCoursCard(stats, cardId, known) {
+  if (!stats.coursCards) stats.coursCards = {};
+  const cur = stats.coursCards[cardId] || { ok: 0, ko: 0, step: 0 };
+  if (known) {
+    cur.ok = (cur.ok || 0) + 1;
+    cur.step = Math.min(3, (cur.step || 0) + 1);
+    if (cur.step >= 3) stats.coursCards[cardId] = { mastered: true, ok: cur.ok };
+    else {
+      cur.due = Date.now() + [1, 3, 7][cur.step - 1] * 86400000;
+      stats.coursCards[cardId] = cur;
+    }
+  } else {
+    cur.ko = (cur.ko || 0) + 1;
+    cur.step = 0;
+    cur.due = Date.now() + 86400000;
+    stats.coursCards[cardId] = cur;
+  }
+}
+
+function coursProgressForItem(stats, c) {
+  const total = (c.rangA || []).length + (c.rangB || []).length;
+  if (!total) return { total: 0, mastered: 0, due: 0 };
+  let mastered = 0;
+  let due = 0;
+  const now = Date.now();
+  const check = (item, rang, len) => {
+    for (let i = 0; i < len; i++) {
+      const r = (stats.coursCards || {})[coursCardId(item, rang, i)];
+      if (r && r.mastered) mastered++;
+      else if (r && r.due && r.due <= now) due++;
+    }
+  };
+  check(c.item, "A", (c.rangA || []).length);
+  check(c.item, "B", (c.rangB || []).length);
+  return { total, mastered, due };
+}
+
+function pickPipelineItem() {
+  const stats = loadStats();
+  const scored = BANK.items.map((it) => {
+    const pipe = (stats.pipelines || {})[it.id] || {};
+    const days = pipe.completedAt ? (Date.now() - pipe.completedAt) / 86400000 : 99;
+    let w = itemWeakness(it.id);
+    if (UNESS.includes(it.id)) w *= 1.15;
+    if (!pipe.completedAt) w += 0.35;
+    else if (days > 7) w += 0.25;
+    else w -= 0.2;
+    return { id: it.id, w };
+  }).sort((a, b) => b.w - a.w);
+  return scored[0]?.id || BANK.items[0]?.id;
+}
+
+function pipeStepsHtml(step, dark = false) {
+  const order = ["cours", "qcm", "srs", "done"];
+  const labels = { cours: "1. Cours", qcm: "2. QCM", srs: "3. Erreurs", done: "OK" };
+  const idx = order.indexOf(step);
+  return `<div class="pipe-steps${dark ? " dark" : ""}">${order.map((s, i) => {
+    let cls = "";
+    if (s === "done" && step === "done") cls = "done";
+    else if (i < idx || (step === "done" && s !== "done")) cls = "done";
+    else if (s === step) cls = "on";
+    return `<span class="${cls}">${labels[s]}</span>`;
+  }).join("")}</div>`;
+}
+
+function beginPipeline(itemId = null) {
+  clearFocusTicker();
+  const id = itemId || pickPipelineItem();
+  if (!id) { alert("Aucun item."); return; }
+  const hasCours = COURS.some((c) => c.item === id);
+  pipeline = { itemId: id, step: hasCours ? "cours" : "qcm", wrongQs: [], rang: "A" };
+  flashState = null;
+  coursActiveState = null;
+  if (hasCours) beginCoursActive(id, "A", true);
+  else pipelineContinueQcm();
+}
+
+function pipelineContinueQcm() {
+  if (!pipeline) return;
+  pipeline.step = "qcm";
+  coursActiveState = null;
+  const prev = { originMode, formatMode, rangMode, themeMode };
+  originMode = "both";
+  formatMode = "all";
+  rangMode = "all";
+  themeMode = "all";
+  const ids = [pipeline.itemId];
+  let pool = shuffle(poolFor(ids));
+  if (!pool.length) {
+    originMode = prev.originMode;
+    formatMode = prev.formatMode;
+    rangMode = prev.rangMode;
+    themeMode = prev.themeMode;
+    alert(`Pas de QCM pour ${itemLabel(pipeline.itemId)}.`);
+    pipeline = null;
+    view = "setup";
+    render();
+    return;
+  }
+  const n = Math.min(PIPE_QCM_N, pool.length);
+  session = {
+    phase: "quiz",
+    focus: false,
+    srs: false,
+    pipeline: true,
+    items: ids,
+    qs: pool.slice(0, n).map((q) => ({ ...q, picked: [], revealed: false })),
+    i: 0,
+  };
+  originMode = prev.originMode;
+  formatMode = prev.formatMode;
+  rangMode = prev.rangMode;
+  themeMode = prev.themeMode;
+  view = "quiz";
+  render();
+}
+
+function pipelineContinueSrs(wrongQs) {
+  if (!pipeline) return;
+  pipeline.step = "srs";
+  pipeline.wrongQs = wrongQs.map((q) => q.id);
+  const pool = shuffle(wrongQs).map((q) => ({ ...q, picked: [], _sc: null, revealed: false }));
+  session = {
+    phase: "quiz",
+    focus: false,
+    srs: true,
+    pipeline: true,
+    items: [pipeline.itemId],
+    qs: pool,
+    i: 0,
+  };
+  view = "quiz";
+  render();
+}
+
+function completePipelineItem(stats) {
+  if (!pipeline) return;
+  const id = pipeline.itemId;
+  if (!stats.pipelines) stats.pipelines = {};
+  const cur = stats.pipelines[id] || { count: 0 };
+  cur.count = (cur.count || 0) + 1;
+  cur.completedAt = Date.now();
+  stats.pipelines[id] = cur;
+  pipeline.step = "done";
+}
+
+function beginCoursActive(itemId = "all", rang = "A", fromPipeline = false) {
+  clearFocusTicker();
+  const deck = buildCoursDeck({ itemId, rang, n: COURS_ACTIVE_N });
+  if (!deck.length) {
+    if (fromPipeline && pipeline) { pipelineContinueQcm(); return; }
+    alert("Aucun point de cours pour ce filtre.");
+    return;
+  }
+  if (!fromPipeline) pipeline = null;
+  else if (pipeline) pipeline.step = "cours";
+  coursActiveState = {
+    deck,
+    i: 0,
+    revealed: false,
+    known: 0,
+    unknown: 0,
+    itemId,
+    rang,
+    pipeline: !!fromPipeline,
+  };
+  session = null;
+  flashState = null;
+  view = "cours-active";
+  render();
+}
+
+function finishCoursActive() {
+  if (!coursActiveState) { view = "cours"; render(); return; }
+  const stats = loadStats();
+  const seen = coursActiveState.known + coursActiveState.unknown;
+  const gamify = applyGamification(stats, { n: Math.max(1, seen), exactN: coursActiveState.known, focus: false });
+  saveStats(stats);
+  const summary = {
+    itemId: coursActiveState.itemId,
+    rang: coursActiveState.rang,
+    known: coursActiveState.known,
+    unknown: coursActiveState.unknown,
+    seen,
+    gamify,
+    pipeline: !!coursActiveState.pipeline,
+  };
+  coursActiveState = { done: true, summary };
+  view = "cours-active";
+  render();
+}
+
+function renderCoursActive() {
+  if (coursActiveState && coursActiveState.done) {
+    const s = coursActiveState.summary;
+    const inPipe = s.pipeline && pipeline;
+    viewEl.innerHTML = `
+      <h1>${inPipe ? "Pipeline — cours OK" : "Cours actif — terminé"}</h1>
+      ${inPipe ? pipeStepsHtml("qcm", true) : ""}
+      ${xpBarHtml(loadStats(), `<div class="xp-gain">+${s.gamify.gained} XP · ${s.known} OK / ${s.unknown} à revoir</div>`)}
+      <div class="card">
+        <div class="big-score">${s.known} / ${s.seen || 0}</div>
+        <p class="hint">${inPipe
+          ? `Étape suivante : ${PIPE_QCM_N} QCM sur ${esc(itemLabel(s.itemId))}.`
+          : "Les points « à revoir » reviennent demain dans le mode actif."}</p>
+        <div class="actions">
+          ${inPipe
+            ? `<button type="button" id="ca-pipe-next">Suite → ${PIPE_QCM_N} QCM</button>
+               <button type="button" class="secondary" id="ca-pipe-abort">Quitter le pipeline</button>`
+            : `<button type="button" id="ca-again">Encore 12 points</button>
+               <button type="button" class="secondary" id="ca-qcm" ${s.itemId && s.itemId !== "all" ? "" : "disabled"}>5 QCM sur l’item</button>
+               <button type="button" class="secondary" id="ca-cours">Retour Cours</button>`}
+        </div>
+      </div>`;
+    if (inPipe) {
+      $("ca-pipe-next").onclick = () => pipelineContinueQcm();
+      $("ca-pipe-abort").onclick = () => { pipeline = null; coursActiveState = null; view = "setup"; render(); };
+    } else {
+      $("ca-again").onclick = () => beginCoursActive(s.itemId, s.rang);
+      $("ca-cours").onclick = () => { coursActiveState = null; view = "cours"; render(); };
+      const qcm = $("ca-qcm");
+      if (qcm && s.itemId && s.itemId !== "all") {
+        qcm.onclick = () => {
+          coursActiveState = null;
+          originMode = "both";
+          formatMode = "all";
+          rangMode = "all";
+          themeMode = "all";
+          beginSession([s.itemId], Math.min(5, poolFor([s.itemId]).length || 5));
+        };
+      }
+    }
+    return;
+  }
+  if (!coursActiveState || !coursActiveState.deck.length) { view = "cours"; render(); return; }
+  const c = coursActiveState.deck[coursActiveState.i];
+  const left = coursActiveState.deck.length - coursActiveState.i;
+  const inPipe = !!coursActiveState.pipeline;
+  viewEl.innerHTML = `
+    <header class="quiz-bar">
+      <h1>${inPipe ? "Pipeline · Cours" : "Cours actif"}</h1>
+      <div class="meta">${coursActiveState.i + 1} / ${coursActiveState.deck.length} · ${esc(c.label)} · <span class="badge ${c.rang === "A" ? "a" : "b"}">Rang ${c.rang}</span> · ${esc(c.block)}</div>
+    </header>
+    ${inPipe ? pipeStepsHtml("cours", true) : ""}
+    <div class="card flash-card" id="ca-tap">
+      <p class="hint" style="margin:0 0 0.5rem">${esc(c.block)} — ${esc(c.label)}</p>
+      <div class="front">${coursActiveState.revealed ? esc(c.text) : "???"}</div>
+      ${coursActiveState.revealed ? "" : `<p class="hint">Rappelle-toi le point, puis tape pour révéler</p>`}
+    </div>
+    <div class="actions">
+      <button type="button" id="ca-ok" ${coursActiveState.revealed ? "" : "disabled"}>Je savais</button>
+      <button type="button" class="secondary" id="ca-ko" ${coursActiveState.revealed ? "" : "disabled"}>À revoir</button>
+      <button type="button" class="secondary" id="ca-stop">${inPipe ? "Passer aux QCM" : `Stop (${left} restant${left > 1 ? "s" : ""})`}</button>
+    </div>`;
+  $("ca-tap").onclick = () => { coursActiveState.revealed = true; renderCoursActive(); };
+  const nextCard = (known) => {
+    const stats = loadStats();
+    markCoursCard(stats, c.id, known);
+    saveStats(stats);
+    if (known) coursActiveState.known++;
+    else coursActiveState.unknown++;
+    coursActiveState.i++;
+    coursActiveState.revealed = false;
+    if (coursActiveState.i >= coursActiveState.deck.length) finishCoursActive();
+    else renderCoursActive();
+  };
+  $("ca-ok").onclick = () => nextCard(true);
+  $("ca-ko").onclick = () => nextCard(false);
+  $("ca-stop").onclick = () => {
+    if (inPipe && pipeline) { finishCoursActive(); }
+    else finishCoursActive();
+  };
+}
+
 function heatClass(it) {
   const w = itemWeakness(it.id);
   const seen = (loadStats().byItem[it.id] || {}).seen || 0;
@@ -859,27 +1269,20 @@ function decideNextAction() {
   const due = srsDueIds(stats).length;
   const hour = new Date().getHours();
   if (due > 0) return { kind: "srs", label: "SRS erreurs dues" };
+  const pipeId = pickPipelineItem();
+  const pipeLabel = itemLabel(pipeId);
   if (!stats.lastDay || stats.lastDay !== dayKey()) {
-    if (hour < 12) return { kind: "focus", label: "Focus 8 min (série du jour)" };
-    return { kind: "flash", label: "Flash 60 s (hit rapide)" };
+    return { kind: "pipeline", id: pipeId, label: `Pipeline · ${pipeLabel}` };
   }
   if (hour >= 22 || hour < 8) return { kind: "flash", label: "Flash 60 s (léger)" };
-  // pick weakest notion
-  if (NOTIONS.length) {
-    const scored = NOTIONS.map((n) => {
-      const ws = (n.items || []).map((id) => itemWeakness(id));
-      const avg = ws.reduce((a, b) => a + b, 0) / Math.max(1, ws.length);
-      return { n, avg };
-    }).sort((a, b) => b.avg - a.avg);
-    return { kind: "micro", id: scored[0].n.id, label: `Micro : ${scored[0].n.label}` };
-  }
-  return { kind: "focus", label: "Focus 8 min" };
+  return { kind: "pipeline", id: pipeId, label: `Pipeline · ${pipeLabel}` };
 }
 
 function runDecidedAction(act) {
   if (act.kind === "srs") beginSrsSession();
   else if (act.kind === "flash") beginFlashSession();
   else if (act.kind === "micro") beginMicroSession(act.id, 5);
+  else if (act.kind === "pipeline") beginPipeline(act.id || null);
   else beginFocusSession();
 }
 
@@ -910,6 +1313,15 @@ function renderSetup() {
     return `<button type="button" class="heat-cell ${cls}" data-heat="${it.id}" title="${esc(it.label)}">${esc(short.length > 18 ? it.id : short)}</button>`;
   }).join("");
 
+  const pipePick = pickPipelineItem();
+  const pipeDoneN = Object.keys(stats.pipelines || {}).length;
+  const trousN = trousCount();
+  const trousPreview = Object.entries(TROUS.byItem || {})
+    .sort((a, b) => (b[1].n || 0) - (a[1].n || 0))
+    .slice(0, 4)
+    .map(([id, x]) => `${(x.label || id).replace(/^(\d+\w*)\s*/, "$1 ")} (${x.n})`)
+    .join(" · ");
+
   viewEl.innerHTML = `
     <h1>Cardio — mode dopamine utile</h1>
     <p class="sub">Un bouton. Pas de menu à nerd-out. Le reste est en dessous si tu veux.</p>
@@ -921,11 +1333,29 @@ function renderSetup() {
         <button type="button" id="btn-auto">Go — zéro choix</button>
       </div>
     </div>
+    <div class="card focus-hero" style="background:linear-gradient(145deg,#1e3a5f,#2d5a7b);">
+      <h2>Pipeline item</h2>
+      <p>Cours actif → ${PIPE_QCM_N} QCM → erreurs → item OK. Priorité : <strong>${esc(itemLabel(pipePick))}</strong></p>
+      ${pipeStepsHtml("cours")}
+      <p style="opacity:0.8;font-size:0.82rem;margin:0.55rem 0 0">${pipeDoneN} item${pipeDoneN > 1 ? "s" : ""} déjà verrouillé${pipeDoneN > 1 ? "s" : ""}</p>
+      <div class="actions">
+        <button type="button" id="btn-pipeline">Lancer le pipeline</button>
+      </div>
+    </div>
+    <div class="card focus-hero" style="background:linear-gradient(145deg,#4a2c17,#6b4423);">
+      <h2>Combler les trous</h2>
+      <p>Points du cours peu couverts par la banque QCM · ${trousN ? `<strong>${trousN} trou${trousN > 1 ? "s" : ""}</strong>` : "analyse à jour"}</p>
+      ${trousPreview ? `<p style="opacity:0.85;font-size:0.82rem;margin:0.55rem 0 0">${esc(trousPreview)}</p>` : ""}
+      <div class="actions">
+        <button type="button" id="btn-trous" ${trousN ? "" : "disabled"}>Combler ${trousN || "0"} trou${trousN > 1 ? "s" : ""}</button>
+      </div>
+    </div>
     <div class="hub-grid">
       <button type="button" class="hub-btn primary" id="btn-focus"><strong>Focus 8 min</strong><span>8 QCM sur tes faiblesses · timer</span></button>
       <button type="button" class="hub-btn" id="btn-srs" ${pendingN ? "" : "disabled"}><strong>${dueN ? `SRS · ${dueN} dues` : pendingN ? `SRS · ${pendingN} en file` : "SRS vide"}</strong><span>${dueN ? "erreurs à revoir maintenant" : nextLbl || "remplis en ratant des QCM"}</span></button>
       <button type="button" class="hub-btn" id="btn-flash"><strong>Flash 60 s</strong><span>seuils + sigles · hit rapide</span></button>
       <button type="button" class="hub-btn" id="btn-to-fiches"><strong>Fiches</strong><span>comparatifs · réflexes · pièges</span></button>
+      <button type="button" class="hub-btn" id="btn-to-arbres"><strong>Arbres CAT</strong><span>Oui/Non comme au lit</span></button>
     </div>
     <div class="card">
       <h2>Heatmap items</h2>
@@ -974,6 +1404,7 @@ function renderSetup() {
           <select id="theme">
             <option value="all"${themeMode === "all" ? " selected" : ""}>Tous</option>
             <option value="traitement"${themeMode === "traitement" ? " selected" : ""}>Traitements / médicaments</option>
+            <option value="trou"${themeMode === "trou" ? " selected" : ""}>Trous collège</option>
           </select>
         </div>
         <div class="field">
@@ -987,10 +1418,13 @@ function renderSetup() {
       </div>
     </div>`;
   $("btn-auto").onclick = () => runDecidedAction(decided);
+  $("btn-pipeline").onclick = () => beginPipeline(pipePick);
+  $("btn-trous").onclick = () => beginTrousSession();
   $("btn-focus").onclick = () => beginFocusSession();
   $("btn-srs").onclick = () => beginSrsSession();
   $("btn-flash").onclick = () => beginFlashSession();
   $("btn-to-fiches").onclick = () => { view = "fiches"; render(); };
+  $("btn-to-arbres").onclick = () => { arbreState = null; view = "arbres"; render(); };
   viewEl.querySelectorAll("[data-heat]").forEach((btn) => {
     btn.onclick = () => {
       const id = btn.getAttribute("data-heat");
@@ -1023,6 +1457,7 @@ function renderSetup() {
 
 function beginSession(ids, nWanted) {
   clearFocusTicker();
+  pipeline = null;
   if (!ids.length) { alert("Choisis au moins un item."); return; }
   let pool = shuffle(poolFor(ids));
   const n = Math.min(nWanted, pool.length);
@@ -1030,6 +1465,8 @@ function beginSession(ids, nWanted) {
   session = {
     phase: "quiz",
     focus: false,
+    srs: false,
+    pipeline: false,
     items: ids,
     qs: pool.slice(0, n).map((q) => ({ ...q, picked: [], revealed: false })),
     i: 0,
@@ -1047,7 +1484,7 @@ function renderQuiz() {
   const kind = q.kind === "QRU" ? "QRU" : "QRM";
   const origin = q.origin === "nouveau" ? "neuve" : "QI livre";
   const format = q.format === "cas_clinique" ? "cas clinique" : "standard";
-  const theme = q.theme === "traitement" ? " · ttt" : "";
+  const theme = q.theme === "traitement" ? " · ttt" : q.theme === "trou" ? " · trou" : "";
   if (revealed && !q._sc) q._sc = scoreQ(q, q.picked);
 
   let choices = "";
@@ -1101,7 +1538,7 @@ function renderQuiz() {
 
   viewEl.innerHTML = `
     <header class="quiz-bar">
-      <h1>${session.focus ? "Focus 8 min" : session.srs ? "SRS — erreurs" : session.micro ? "Micro-notion" : "Session en cours"}</h1>
+      <h1>${session.pipeline ? (session.srs ? "Pipeline · Erreurs" : "Pipeline · QCM") : session.trous ? "Trous collège" : session.focus ? "Focus 8 min" : session.srs ? "SRS — erreurs" : session.micro ? "Micro-notion" : "Session en cours"}</h1>
       <div style="display:flex;gap:0.65rem;align-items:center;flex-wrap:wrap">
         ${timerHtml}
         <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · rang ${qRang(q)} · ${kind} · ${format}${theme} · ${origin}</div>
@@ -1164,7 +1601,13 @@ function renderQuiz() {
   $("btn-abort").onclick = () => {
     const done = session.qs.some((x) => x.revealed);
     if (done) finishSession();
-    else { clearFocusTicker(); session = null; view = "setup"; render(); }
+    else {
+      clearFocusTicker();
+      if (session.pipeline) pipeline = null;
+      session = null;
+      view = "setup";
+      render();
+    }
   };
 }
 
@@ -1196,20 +1639,44 @@ function finishSession() {
     else scheduleWrong(stats, q);
   }
   const gamify = applyGamification(stats, { n: answered.length, exactN, focus: !!session.focus });
+  const wasPipeline = !!session.pipeline;
+  const pipeStep = pipeline ? pipeline.step : null;
+  let pipelineDone = false;
+  if (wasPipeline && pipeline) {
+    if (pipeStep === "srs") {
+      completePipelineItem(stats);
+      pipelineDone = true;
+    } else if (pipeStep === "qcm") {
+      const anyWrong = answered.some((q) => !(q._sc && q._sc.exact));
+      if (!anyWrong) {
+        completePipelineItem(stats);
+        pipelineDone = true;
+      }
+    }
+  }
   saveStats(stats);
   session.phase = "done";
   session.answered = answered;
-  session.summary = { exactN, pts, max, perItem, n: answered.length, gamify };
+  session.summary = {
+    exactN, pts, max, perItem, n: answered.length, gamify,
+    pipeline: wasPipeline,
+    pipelineStep: pipeStep,
+    pipelineItem: pipeline ? pipeline.itemId : null,
+    pipelineDone,
+  };
   view = "results";
   render();
 }
 
 function renderResults() {
-  const { exactN, pts, max, perItem, n, gamify } = session.summary;
+  const { exactN, pts, max, perItem, n, gamify, pipeline: wasPipe, pipelineStep, pipelineItem, pipelineDone } = session.summary;
   const pct = n ? Math.round(100 * exactN / n) : 0;
   const wrong = (session.answered || session.qs).filter((q) => q.revealed && q._sc && !q._sc.exact);
   let feedback;
-  if (pct >= 85) feedback = "Très bon niveau sur ce lot. Tu maîtrises bien les notions tirées — garde un rythme de révision courte pour figer.";
+  if (pipelineDone) feedback = `Item ${itemLabel(pipelineItem)} verrouillé. Tu peux enchaîner un autre pipeline ou un Focus.`;
+  else if (wasPipe && pipelineStep === "qcm" && wrong.length) feedback = "Pipeline : prochaine étape = refaire les erreurs (SRS). Puis l’item sera marqué OK.";
+  else if (wasPipe && pipelineStep === "qcm" && !wrong.length) feedback = "Sans erreur : item verrouillé directement. Beau travail.";
+  else if (pct >= 85) feedback = "Très bon niveau sur ce lot. Tu maîtrises bien les notions tirées — garde un rythme de révision courte pour figer.";
   else if (pct >= 65) feedback = "Base solide, avec encore des trous. Relis les explications des items ratés avant de relancer une session ciblée.";
   else if (pct >= 40) feedback = "Session fragile : plusieurs notions ne sont pas encore stabilisées. Mieux vaut revoir le cours sur les thèmes faibles, puis refaire 10–15 QCM.";
   else feedback = "Beaucoup d’erreurs : priorise le cours sur le (les) item(s), puis recommence avec moins de questions.";
@@ -1250,10 +1717,17 @@ function renderResults() {
   const statsNow = loadStats();
   const dueLeft = srsDueIds(statsNow).length;
 
+  const pipeDoneNow = !!pipelineDone;
+  const showPipeSrs = wasPipe && pipelineStep === "qcm" && wrong.length && !pipeDoneNow;
+  const pipeBar = wasPipe
+    ? pipeStepsHtml(pipeDoneNow ? "done" : showPipeSrs ? "srs" : (pipelineStep === "srs" ? "done" : "qcm"), true)
+    : "";
+
   viewEl.innerHTML = `
-    <h1>${session.focus ? "Focus terminé" : session.srs ? "SRS terminé" : "Résultat"}</h1>
-    <p class="sub">${session.focus ? "Session Focus · " : session.srs ? "Révision espacée · " : ""}${session.items.length} item${session.items.length > 1 ? "s" : ""} · ${n} question${n > 1 ? "s" : ""}${wrong.length ? ` · ${wrong.length} remis dans le carnet (1→3→7 j)` : ""}</p>
-    ${xpBarHtml(statsNow, gainHtml)}
+    <h1>${pipeDoneNow ? "Pipeline — item OK" : wasPipe ? (session.srs ? "Pipeline — erreurs" : "Pipeline — QCM") : session.trous ? "Trous combles" : session.focus ? "Focus terminé" : session.srs ? "SRS terminé" : "Résultat"}</h1>
+    ${pipeBar}
+    <p class="sub">${wasPipe ? `Pipeline · ${esc(itemLabel(pipelineItem || session.items[0]))} · ` : session.trous ? "Trous collège · " : session.focus ? "Session Focus · " : session.srs ? "Révision espacée · " : ""}${session.items.length} item${session.items.length > 1 ? "s" : ""} · ${n} question${n > 1 ? "s" : ""}${wrong.length ? ` · ${wrong.length} remis dans le carnet (1→3→7 j)` : ""}</p>
+    ${xpBarHtml(loadStats(), gainHtml)}
     <div class="card">
       <div class="meta">Score</div>
       <div class="big-score">${exactN} / ${n}</div>
@@ -1270,25 +1744,39 @@ function renderResults() {
       ${trapsHtml}
       <p class="recap">${exactN} bonne${exactN > 1 ? "s" : ""} · ${wrong.length} à revoir · ${n} question${n > 1 ? "s" : ""}.</p>
       <div class="actions">
-        ${session.focus
-          ? `<button type="button" id="again-focus">Encore un Focus</button>`
-          : session.srs
-            ? `<button type="button" id="again-srs" ${srsPendingCount(statsNow) ? "" : "disabled"}>Continuer SRS${dueLeft ? ` (${dueLeft})` : ""}</button>`
-            : `<button type="button" id="again">Rejouer (mêmes réglages)</button>`}
+        ${showPipeSrs
+          ? `<button type="button" id="pipe-srs">Suite → refaire ${wrong.length} erreur${wrong.length > 1 ? "s" : ""}</button>`
+          : pipeDoneNow
+            ? `<button type="button" id="pipe-again">Autre pipeline</button>`
+            : session.focus
+              ? `<button type="button" id="again-focus">Encore un Focus</button>`
+              : session.trous
+                ? `<button type="button" id="again-trous">Encore les trous</button>`
+                : session.srs
+                ? `<button type="button" id="again-srs" ${srsPendingCount(statsNow) ? "" : "disabled"}>Continuer SRS${dueLeft ? ` (${dueLeft})` : ""}</button>`
+                : `<button type="button" id="again">Rejouer (mêmes réglages)</button>`}
         <button type="button" class="secondary" id="home">Accueil</button>
-        <button type="button" class="secondary" id="missed">Refaire les erreurs</button>
+        ${!wasPipe ? `<button type="button" class="secondary" id="missed">Refaire les erreurs</button>` : ""}
         <button type="button" class="secondary" id="to-suivi">Voir le suivi</button>
       </div>
     </div>`;
-  $("home").onclick = () => { session = null; view = "setup"; render(); };
-  if (session.focus) $("again-focus").onclick = () => beginFocusSession();
+  $("home").onclick = () => { pipeline = null; session = null; view = "setup"; render(); };
+  if (showPipeSrs) {
+    $("pipe-srs").onclick = () => pipelineContinueSrs(wrong);
+  } else if (pipeDoneNow) {
+    pipeline = null;
+    $("pipe-again").onclick = () => beginPipeline();
+  } else if (session.focus) $("again-focus").onclick = () => beginFocusSession();
+  else if (session.trous) $("again-trous").onclick = () => beginTrousSession();
   else if (session.srs) $("again-srs").onclick = () => beginSrsSession();
   else $("again").onclick = () => beginSession(session.items, n);
   $("to-suivi").onclick = () => { view = "suivi"; render(); };
-  $("missed").onclick = () => {
+  const missed = $("missed");
+  if (missed) missed.onclick = () => {
     if (!wrong.length) { alert("Aucune erreur dans cette session."); return; }
     clearFocusTicker();
-    session = { phase: "quiz", focus: false, srs: false, items: session.items, qs: shuffle(wrong.map((q) => ({ ...q, picked: [], _sc: null, revealed: false }))), i: 0 };
+    pipeline = null;
+    session = { phase: "quiz", focus: false, srs: false, pipeline: false, items: session.items, qs: shuffle(wrong.map((q) => ({ ...q, picked: [], _sc: null, revealed: false }))), i: 0 };
     view = "quiz";
     render();
   };
@@ -1457,6 +1945,137 @@ function beginMicroSession(notionId, nWanted = 5) {
   render();
 }
 
+function buildSynthese(itemId) {
+  const cours = (COURS || []).find((c) => String(c.item) === String(itemId));
+  const reflex = (FICHES.reflexes || []).find((r) => String(r.item) === String(itemId));
+  const seuils = (FICHES.seuils || []).filter((s) => String(s.item) === String(itemId)).slice(0, 5);
+  const pieges = (FICHES.pieges || []).filter((p) => String(p.item) === String(itemId)).slice(0, 3);
+  const def = (cours?.rangA || []).slice(0, 2);
+  const rangB = (cours?.rangB || []).slice(0, 1);
+  return { cours, reflex, seuils, pieges, def, rangB };
+}
+
+function syntheseHtml(itemId) {
+  const s = buildSynthese(itemId);
+  if (!s.cours && !s.reflex) return "";
+  let html = `<div class="fiche-sec" style="background:#eef6f1;border-radius:10px;padding:0.75rem;margin-bottom:0.85rem">
+    <h3 style="margin:0 0 0.45rem;color:var(--accent)">Synthèse 1 écran</h3>`;
+  if (s.def.length) {
+    html += `<p class="meta" style="margin:0 0 0.25rem">Définition</p><ul>`;
+    s.def.forEach((p) => { html += `<li>${esc(p)}</li>`; });
+    html += `</ul>`;
+  }
+  if (s.seuils.length) {
+    html += `<p class="meta" style="margin:0.55rem 0 0.25rem">Seuils</p>`;
+    s.seuils.forEach((x) => {
+      html += `<div class="seuil-val" style="font-size:0.95rem">${esc(x.label)} : ${esc(x.value)}</div>`;
+    });
+  }
+  if (s.reflex) {
+    const premiere = (s.reflex.arbre && s.reflex.arbre.premiere) || [];
+    if (premiere.length) {
+      html += `<p class="meta" style="margin:0.55rem 0 0.25rem">CAT</p><ul>`;
+      premiere.slice(0, 3).forEach((p) => { html += `<li>${esc(p)}</li>`; });
+      html += `</ul>`;
+    }
+    if (s.reflex.redFlags && s.reflex.redFlags.length) {
+      html += `<p class="meta" style="margin:0.55rem 0 0.25rem">Red flags</p><ul>`;
+      s.reflex.redFlags.slice(0, 3).forEach((p) => { html += `<li>${esc(p)}</li>`; });
+      html += `</ul>`;
+    }
+  }
+  if (s.pieges.length) {
+    html += `<p class="meta" style="margin:0.55rem 0 0.25rem">Pièges</p>`;
+    s.pieges.forEach((p) => {
+      html += `<div class="ok-box" style="margin-bottom:0.35rem;border-radius:8px;padding:0.4rem 0.55rem;background:var(--ok-bg);font-size:0.88rem"><strong>Réflexe</strong> — ${esc(p.reflexe)}</div>`;
+    });
+  }
+  if (s.rangB.length) {
+    html += `<p class="meta" style="margin:0.55rem 0 0.25rem">Rang B (1 phrase)</p><ul><li>${esc(s.rangB[0])}</li></ul>`;
+  }
+  html += `</div>`;
+  return html;
+}
+
+function renderArbres() {
+  if (arbreState && arbreState.id) {
+    const tree = ARBRES.find((a) => a.id === arbreState.id);
+    if (!tree) { arbreState = null; renderArbres(); return; }
+    const step = (tree.steps || []).find((s) => s.id === arbreState.stepId) || tree.steps[0];
+    const isEnd = !!step.end;
+    viewEl.innerHTML = `
+      <header class="quiz-bar">
+        <h1>CAT — ${esc(tree.label)}</h1>
+        <div class="meta">${esc(tree.root)}</div>
+      </header>
+      <div class="card flash-card" style="cursor:default;min-height:8rem">
+        <div class="front" style="font-size:1.15rem">${esc(step.q)}</div>
+        ${step.cat ? `<p class="hint" style="margin-top:0.75rem;color:var(--accent);font-weight:700">Réflexe CAT</p>` : ""}
+      </div>
+      <div class="actions">
+        ${isEnd
+          ? `<button type="button" id="arbre-restart">Recommencer</button>
+             <button type="button" class="secondary" id="arbre-qcm">5 QCM · ${esc(itemLabel(tree.item))}</button>
+             <button type="button" class="secondary" id="arbre-back">Liste CAT</button>`
+          : step.auto
+            ? `<button type="button" id="arbre-next">Continuer</button>
+               <button type="button" class="secondary" id="arbre-back">Liste CAT</button>`
+            : `<button type="button" id="arbre-yes">Oui</button>
+               <button type="button" class="secondary" id="arbre-no">Non</button>
+               <button type="button" class="secondary" id="arbre-back">Liste CAT</button>`}
+      </div>`;
+    $("arbre-back").onclick = () => { arbreState = null; renderArbres(); };
+    if (isEnd) {
+      $("arbre-restart").onclick = () => {
+        arbreState = { id: tree.id, stepId: tree.steps[0].id };
+        renderArbres();
+      };
+      $("arbre-qcm").onclick = () => {
+        arbreState = null;
+        originMode = "both";
+        formatMode = "all";
+        rangMode = "all";
+        themeMode = "all";
+        beginSession([tree.item], Math.min(5, poolFor([tree.item]).length || 5));
+      };
+    } else if (step.auto) {
+      $("arbre-next").onclick = () => {
+        arbreState.stepId = step.yes || step.no;
+        renderArbres();
+      };
+    } else {
+      $("arbre-yes").onclick = () => { arbreState.stepId = step.yes; renderArbres(); };
+      $("arbre-no").onclick = () => { arbreState.stepId = step.no; renderArbres(); };
+    }
+    return;
+  }
+  let html = `<h1>Arbres CAT</h1>
+    <p class="sub">Clique Oui/Non — comme au lit du malade. Puis 5 QCM pour figer.</p>`;
+  for (const a of ARBRES) {
+    html += `<div class="card">
+      <h2 style="text-transform:none;letter-spacing:0;font-size:1.05rem;color:var(--ink)">${esc(a.label)}</h2>
+      <p class="hint" style="margin-top:0">${esc(a.root)} · ${(a.steps || []).length} nœuds</p>
+      <div class="actions">
+        <button type="button" data-arbre="${esc(a.id)}">Parcourir</button>
+        <button type="button" class="secondary" data-pipe-item="${esc(a.item)}">Pipeline item</button>
+      </div>
+    </div>`;
+  }
+  if (!ARBRES.length) html += `<p class="hint">Fichier <code>arbres.json</code> manquant.</p>`;
+  viewEl.innerHTML = html;
+  viewEl.querySelectorAll("[data-arbre]").forEach((btn) => {
+    btn.onclick = () => {
+      const id = btn.getAttribute("data-arbre");
+      const tree = ARBRES.find((a) => a.id === id);
+      arbreState = { id, stepId: tree.steps[0].id };
+      renderArbres();
+    };
+  });
+  viewEl.querySelectorAll("[data-pipe-item]").forEach((btn) => {
+    btn.onclick = () => beginPipeline(btn.getAttribute("data-pipe-item"));
+  });
+}
+
 function renderNotions() {
   let html = `<h1>Notions transversales</h1>
     <p class="sub">Les mêmes idées reviennent sur plusieurs items. Verrouille une notion → tu gagnes partout.</p>`;
@@ -1487,38 +2106,118 @@ function renderNotions() {
 function renderCours() {
   let coursFilter = localStorage.getItem("cours-item") || "all";
   let rangFilter = localStorage.getItem("cours-rang") || "all";
+  let activeRang = localStorage.getItem("cours-active-rang") || "A";
+  const stats = loadStats();
   const items = COURS.slice().sort((a, b) => a.item.localeCompare(b.item, undefined, { numeric: true }));
-  let html = `<h2>Cours — Points essentiels par item</h2>`;
-  html += `<div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">`;
-  html += `<select id="cours-item-filter" style="font:inherit;padding:0.3rem 0.5rem;border-radius:8px;border:1px solid var(--line);">`;
-  html += `<option value="all"${coursFilter === "all" ? " selected" : ""}>Tous les items</option>`;
+  const dueTotal = items.reduce((n, c) => n + coursProgressForItem(stats, c).due, 0);
+  let html = `<h2>Cours — Points essentiels</h2>
+    <p class="sub">Mode passif en bas · <strong>Cours actif</strong> = tu te rappelles avant de révéler (12 points).</p>
+    <div class="card focus-hero" style="background:linear-gradient(145deg,#2a4a6e,#3d6a8a);">
+      <h2>Cours actif — 12 points</h2>
+      <p>Révèle · Je savais / À revoir · priorité items faibles + points dus${dueTotal ? ` (${dueTotal} dus)` : ""}.</p>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.75rem;">
+        <select id="ca-item" style="font:inherit;padding:0.3rem 0.5rem;border-radius:8px;border:1px solid rgba(255,255,255,0.35);background:rgba(255,255,255,0.95);">
+          <option value="all"${coursFilter === "all" ? " selected" : ""}>Items faibles (auto)</option>`;
+  items.forEach(c => { html += `<option value="${c.item}"${coursFilter === c.item ? " selected" : ""}>${esc(c.label)}</option>`; });
+  html += `</select>
+        <select id="ca-rang" style="font:inherit;padding:0.3rem 0.5rem;border-radius:8px;border:1px solid rgba(255,255,255,0.35);background:rgba(255,255,255,0.95);">
+          <option value="A"${activeRang === "A" ? " selected" : ""}>Rang A</option>
+          <option value="all"${activeRang === "all" ? " selected" : ""}>A + B</option>
+          <option value="B"${activeRang === "B" ? " selected" : ""}>Rang B</option>
+        </select>
+      </div>
+      <div class="actions">
+        <button type="button" id="btn-cours-active">Lancer Cours actif</button>
+      </div>
+    </div>
+    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+      <select id="cours-item-filter" style="font:inherit;padding:0.3rem 0.5rem;border-radius:8px;border:1px solid var(--line);">
+        <option value="all"${coursFilter === "all" ? " selected" : ""}>Tous les items</option>`;
   items.forEach(c => { html += `<option value="${c.item}"${coursFilter === c.item ? " selected" : ""}>${c.label}</option>`; });
-  html += `</select>`;
-  html += `<select id="cours-rang-filter" style="font:inherit;padding:0.3rem 0.5rem;border-radius:8px;border:1px solid var(--line);">`;
-  html += `<option value="all"${rangFilter === "all" ? " selected" : ""}>Rang A + B</option>`;
-  html += `<option value="A"${rangFilter === "A" ? " selected" : ""}>Rang A seul</option>`;
-  html += `<option value="B"${rangFilter === "B" ? " selected" : ""}>Rang B seul</option>`;
-  html += `</select></div>`;
+  html += `</select>
+      <select id="cours-rang-filter" style="font:inherit;padding:0.3rem 0.5rem;border-radius:8px;border:1px solid var(--line);">
+        <option value="all"${rangFilter === "all" ? " selected" : ""}>Rang A + B</option>
+        <option value="A"${rangFilter === "A" ? " selected" : ""}>Rang A seul</option>
+        <option value="B"${rangFilter === "B" ? " selected" : ""}>Rang B seul</option>
+      </select>
+    </div>`;
   const filtered = coursFilter === "all" ? items : items.filter(c => c.item === coursFilter);
   filtered.forEach(c => {
+    const prog = coursProgressForItem(stats, c);
+    const pct = prog.total ? Math.round(100 * prog.mastered / prog.total) : 0;
     html += `<div class="card" style="margin-bottom:1rem;">`;
-    html += `<h3 style="margin:0 0 0.6rem;">${c.label}</h3>`;
+    html += `<h3 style="margin:0 0 0.35rem;">${esc(c.label)}</h3>`;
+    html += `<p class="meta" style="margin:0 0 0.6rem">${prog.mastered}/${prog.total} maîtrisés · ${prog.due ? `${prog.due} à revoir · ` : ""}${pct} %</p>`;
+    html += `<div class="xp-track" style="margin-bottom:0.75rem"><i style="width:${pct}%"></i></div>`;
+    const gapsN = trousCount(c.item);
+    html += `<div class="actions" style="margin:0 0 0.85rem">
+      <button type="button" class="secondary pill" data-ca-item="${esc(c.item)}">Actif 12 · ${esc(c.label)}</button>
+      <button type="button" class="secondary pill" data-qcm-item="${esc(c.item)}">5 QCM</button>
+      <button type="button" class="secondary pill" data-pipe-item="${esc(c.item)}">Pipeline</button>
+      ${gapsN ? `<button type="button" class="secondary pill" data-trous-item="${esc(c.item)}">Combler ${gapsN} trou${gapsN > 1 ? "s" : ""}</button>` : ""}
+    </div>`;
+    if (coursFilter !== "all" || filtered.length === 1) html += syntheseHtml(c.item);
+    else html += `<details style="margin-bottom:0.75rem"><summary class="meta" style="cursor:pointer">Synthèse 1 écran</summary>${syntheseHtml(c.item)}</details>`;
     if (rangFilter !== "B" && c.rangA && c.rangA.length) {
       html += `<div class="fiche-sec"><h3><span class="badge a">Rang A</span> Essentiels</h3><ul>`;
-      c.rangA.forEach(p => { html += `<li>${p}</li>`; });
+      c.rangA.forEach((p, i) => {
+        const id = coursCardId(c.item, "A", i);
+        const r = (stats.coursCards || {})[id];
+        const tag = r && r.mastered ? " ✓" : r && r.due && r.due <= Date.now() ? " ↻" : "";
+        html += `<li>${esc(p)}${tag ? `<span class="meta">${tag}</span>` : ""}</li>`;
+      });
       html += `</ul></div>`;
     }
     if (rangFilter !== "A" && c.rangB && c.rangB.length) {
       html += `<div class="fiche-sec"><h3><span class="badge b">Rang B</span> Approfondissement</h3><ul>`;
-      c.rangB.forEach(p => { html += `<li>${p}</li>`; });
+      c.rangB.forEach((p, i) => {
+        const id = coursCardId(c.item, "B", i);
+        const r = (stats.coursCards || {})[id];
+        const tag = r && r.mastered ? " ✓" : r && r.due && r.due <= Date.now() ? " ↻" : "";
+        html += `<li>${esc(p)}${tag ? `<span class="meta">${tag}</span>` : ""}</li>`;
+      });
       html += `</ul></div>`;
     }
     html += `</div>`;
   });
   if (!filtered.length) html += `<p class="hint">Aucun item trouvé.</p>`;
   viewEl.innerHTML = html;
+  $("btn-cours-active").onclick = () => {
+    const item = $("ca-item").value;
+    const rang = $("ca-rang").value;
+    localStorage.setItem("cours-active-rang", rang);
+    let pick = item;
+    if (pick === "all") {
+      const ranked = items.map((c) => ({ c, w: itemWeakness(c.item) + coursProgressForItem(stats, c).due * 0.15 }))
+        .sort((a, b) => b.w - a.w);
+      pick = ranked[0]?.c.item || items[0]?.item;
+      if (!pick) { alert("Pas de cours chargé."); return; }
+    } else {
+      localStorage.setItem("cours-item", pick);
+    }
+    beginCoursActive(pick, rang);
+  };
   $("cours-item-filter").onchange = (e) => { localStorage.setItem("cours-item", e.target.value); renderCours(); };
   $("cours-rang-filter").onchange = (e) => { localStorage.setItem("cours-rang", e.target.value); renderCours(); };
+  viewEl.querySelectorAll("[data-ca-item]").forEach((btn) => {
+    btn.onclick = () => beginCoursActive(btn.getAttribute("data-ca-item"), activeRang);
+  });
+  viewEl.querySelectorAll("[data-qcm-item]").forEach((btn) => {
+    btn.onclick = () => {
+      const id = btn.getAttribute("data-qcm-item");
+      originMode = "both";
+      formatMode = "all";
+      rangMode = "all";
+      themeMode = "all";
+      beginSession([id], Math.min(5, poolFor([id]).length || 5));
+    };
+  });
+  viewEl.querySelectorAll("[data-pipe-item]").forEach((btn) => {
+    btn.onclick = () => beginPipeline(btn.getAttribute("data-pipe-item"));
+  });
+  viewEl.querySelectorAll("[data-trous-item]").forEach((btn) => {
+    btn.onclick = () => beginTrousSession(btn.getAttribute("data-trous-item"));
+  });
 }
 
 function renderFiches() {
