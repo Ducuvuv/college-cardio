@@ -1,0 +1,284 @@
+{
+  "questions": [
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Lis ce tracé 12 dérivations. Quel est le diagnostic le plus probable ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-normal.svg"}],
+      "options": [
+        {"letter": "A", "text": "Rythme sinusal normal"},
+        {"letter": "B", "text": "Fibrillation atriale"},
+        {"letter": "C", "text": "BAV du 3e degré"},
+        {"letter": "D", "text": "Tachycardie ventriculaire"},
+        {"letter": "E", "text": "SCA ST+ antérieur"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ondes P visibles, QRS fins, ST isoélectrique, pas de territoire ischémique = rythme sinusal normal."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Lis ce tracé 12 dérivations. Quel rythme ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-fa.svg"}],
+      "options": [
+        {"letter": "A", "text": "Fibrillation atriale"},
+        {"letter": "B", "text": "Flutter atrial"},
+        {"letter": "C", "text": "Rythme sinusal"},
+        {"letter": "D", "text": "Tachycardie jonctionnelle"},
+        {"letter": "E", "text": "BAV 3"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Pas d'ondes P, ligne de base fibrillatoire, RR irréguliers = FA (seule tachycardie complètement irrégulière à QRS fins)."
+    },
+    {
+      "item": "339",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Douleur thoracique. Lis le tracé 12D. Diagnostic et CAT ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-stemi-ant.svg"}],
+      "options": [
+        {"letter": "A", "text": "ST+ antérieur (V1–V4) → reperfusion urgente"},
+        {"letter": "B", "text": "Péricardite → AINS + colchicine"},
+        {"letter": "C", "text": "FA → anticoagulation seule"},
+        {"letter": "D", "text": "ECG normal → rassurer"},
+        {"letter": "E", "text": "Hyperkaliémie → kayexalate seul"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sus-ST territorial antérieur ± miroir inférieur = STEMI → PCI / fibrinolyse, pas d'attente de troponine."
+    },
+    {
+      "item": "339",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Lis ce 12D. Quel territoire ischémique ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-stemi-inf.svg"}],
+      "options": [
+        {"letter": "A", "text": "Inférieur (DII DIII aVF) — penser coronaire droite"},
+        {"letter": "B", "text": "Antérieur pur (V1–V4)"},
+        {"letter": "C", "text": "Pas d'ischémie"},
+        {"letter": "D", "text": "Péricardite seule"},
+        {"letter": "E", "text": "BBG isolé"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST+ en DII–DIII–aVF = territoire inférieur. Si hypotension : V4R, CI nitrés si IDM VD."
+    },
+    {
+      "item": "235",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Douleur thoracique inflammatoire. Lis le 12D. Orientation ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-pericardite.svg"}],
+      "options": [
+        {"letter": "A", "text": "Péricardite (ST diffus concave, pas de miroir territorial)"},
+        {"letter": "B", "text": "STEMI antérieur"},
+        {"letter": "C", "text": "STEMI inférieur"},
+        {"letter": "D", "text": "TV"},
+        {"letter": "E", "text": "FA"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST concave diffus, sans miroir réciproque territorial, ± sous-PQ = péricardite (≠ STEMI)."
+    },
+    {
+      "item": "236",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Syncope. Lis le 12D. Quel trouble de conduction ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-bav3.svg"}],
+      "options": [
+        {"letter": "A", "text": "BAV du 3e degré (dissociation AV)"},
+        {"letter": "B", "text": "BAV 1 isolé"},
+        {"letter": "C", "text": "Mobitz 1 (Wenckebach)"},
+        {"letter": "D", "text": "FA à QRS fins"},
+        {"letter": "E", "text": "Rythme sinusal normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ondes P et QRS indépendants = BAV 3. Urgence si mal toléré → PM."
+    },
+    {
+      "item": "236",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Lis le 12D. Quel type de BAV ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-mobitz2.svg"}],
+      "options": [
+        {"letter": "A", "text": "BAV 2 Mobitz 2 (P bloquée inopinée)"},
+        {"letter": "B", "text": "Mobitz 1 (PR qui allonge)"},
+        {"letter": "C", "text": "BAV 3"},
+        {"letter": "D", "text": "BBG seul"},
+        {"letter": "E", "text": "Sinusal normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "P bloquée sans allongement préalable du PR = Mobitz 2 (infranodal) → PM si symptomatique."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Lis le 12D (regarde V1 vs V6). Quel bloc de branche ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-lbbb.svg"}],
+      "options": [
+        {"letter": "A", "text": "BBG (V1 négatif, QRS large)"},
+        {"letter": "B", "text": "BBD (rSR' V1)"},
+        {"letter": "C", "text": "HBAG seul"},
+        {"letter": "D", "text": "QRS fins normaux"},
+        {"letter": "E", "text": "WPW"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "QRS ≥ 120 ms, V1 négatif (rS/QS), notch latéral = BBG. Devant douleur = SCA jusqu'à preuve."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Lis le 12D. Aspect en V1 ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-rbbb.svg"}],
+      "options": [
+        {"letter": "A", "text": "BBD (QRS large, aspect rSR' en V1)"},
+        {"letter": "B", "text": "BBG"},
+        {"letter": "C", "text": "TV"},
+        {"letter": "D", "text": "Hyperkaliémie"},
+        {"letter": "E", "text": "Normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "V1 positif avec rSR' + QRS large = BBD."
+    },
+    {
+      "item": "232",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Lis le 12D. Activité atriale ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-flutter.svg"}],
+      "options": [
+        {"letter": "A", "text": "Flutter atrial (ondes F monomorphes)"},
+        {"letter": "B", "text": "FA à petites mailles"},
+        {"letter": "C", "text": "Rythme sinusal"},
+        {"letter": "D", "text": "BAV 3"},
+        {"letter": "E", "text": "TV"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Activité atriale monomorphe en dents de scie = flutter (≠ FA irrégulière anarchique)."
+    },
+    {
+      "item": "237",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Palpitations + malaise. Lis le 12D. Que faire du rythme ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-vt.svg"}],
+      "options": [
+        {"letter": "A", "text": "TV jusqu'à preuve du contraire (QRS larges réguliers)"},
+        {"letter": "B", "text": "TSV à QRS fins"},
+        {"letter": "C", "text": "FA"},
+        {"letter": "D", "text": "Sinusal rapide"},
+        {"letter": "E", "text": "Flutter seul"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tachycardie régulière à QRS larges = TV jusqu'à preuve du contraire."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Lis le 12D. Anomalie de repolarisation / QRS ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-hyperk.svg"}],
+      "options": [
+        {"letter": "A", "text": "Hyperkaliémie (T pointues, QRS élargi)"},
+        {"letter": "B", "text": "Hypokaliémie (onde U)"},
+        {"letter": "C", "text": "STEMI antérieur"},
+        {"letter": "D", "text": "Péricardite"},
+        {"letter": "E", "text": "Normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "T amples pointues symétriques + QRS large = hyperK → traitement urgent."
+    },
+    {
+      "item": "226",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Dyspnée aiguë. Lis le 12D. Orientation possible ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-ep.svg"}],
+      "options": [
+        {"letter": "A", "text": "Signes droits / EP possible (T− antérieures, S1Q3)"},
+        {"letter": "B", "text": "STEMI antérieur typique"},
+        {"letter": "C", "text": "Péricardite seule"},
+        {"letter": "D", "text": "BBG complet isolé"},
+        {"letter": "E", "text": "Toujours normal en EP"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EP : tachycardie sinusale, S1Q3, T− V1–V4, BBD — ECG non spécifique mais oriente."
+    },
+    {
+      "item": "237",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Lis le 12D. Préexcitation ?",
+      "images": [{"alt": "ECG 12 dérivations", "src": "images/ecg/12lead-wpw.svg"}],
+      "options": [
+        {"letter": "A", "text": "WPW (PR court + onde delta)"},
+        {"letter": "B", "text": "BAV 1"},
+        {"letter": "C", "text": "BBG"},
+        {"letter": "D", "text": "HyperK"},
+        {"letter": "E", "text": "Flutter"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "PR < 120 ms + empâtement initial du QRS (delta) = préexcitation / WPW."
+    }
+  ]
+}
