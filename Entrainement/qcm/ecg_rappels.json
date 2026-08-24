@@ -1,0 +1,114 @@
+{
+  "item": "231",
+  "label": "231 ECG — Rappels",
+  "methode": [
+    "Rythme : trop lent (< 60) ou trop rapide (> 100) ? Sinusal (P+ D2 avant chaque QRS) ou non ?",
+    "Conduction : PR (120–200 ms), QRS (< 120 ms fin), QT/QTc, axe QRS (−30° à +90°).",
+    "Repolarisation : ST-T concordants au QRS ; 2 T− dans le même territoire = pathologique.",
+    "Bradycardie → dysfonction sinusale et/ou BAV (degré + type Mobitz 1 vs 2).",
+    "QRS large → BBD/BBG (V1+ = droit, V1− = gauche) ≠ TV (urgence jusqu'à preuve du contraire).",
+    "Tachycardie → régularité + largeur QRS. FA = seule tachycardie complètement irrégulière à QRS fins.",
+    "Tachycardie régulière QRS larges = TV jusqu'à preuve du contraire. Flutter = activité F monomorphe."
+  ],
+  "valeurs": [
+    {"label": "FC", "value": "60–100 bpm (sinusal 50–100 en pratique)"},
+    {"label": "PR", "value": "120–200 ms (> 200 = BAV 1)"},
+    {"label": "QRS", "value": "70–110 ms (< 120 ms = fin ; ≥ 120 = large)"},
+    {"label": "QTc", "value": "< 450 ms à 60 bpm (470–480 souvent retenu)"},
+    {"label": "Onde Q", "value": "< 1/3 amplitude QRS et < 40 ms (sinon nécrose)"},
+    {"label": "ST+", "value": "≥ 2 mm V1–V3 ou ≥ 1 mm sur 2 dérivations contiguës + miroir"},
+    {"label": "Sokolow", "value": "SV1 + RV5/V6 > 35 mm → HVG"}
+  ],
+  "urgences": [
+    "Sus-ST persistant (STEMI) → reperfusion sans attendre la troponine",
+    "Tachycardie régulière QRS larges → TV/FV jusqu'à preuve du contraire",
+    "BAV 3e degré symptomatique, Mobitz 2, pauses > 3 s, bloc alternant → pacemaker",
+    "QT long + TdP → magnésium IV, accélérer FC, arrêter médicaments allongeant QT",
+    "Hyperkaliémie sévère (T pointues → QRS larges) → traitement urgent",
+    "WPW + FA (QRS larges irréguliers « accordéon ») → pas d'adénosine ni vérapamil",
+    "Wellens (T bi/phasic V2–V3) → coro en urgence (SCA ST− imminente)",
+    "S1Q3 + T− antérieures + FA → EP grave"
+  ],
+  "sections": [
+    {
+      "id": "normal",
+      "title": "ECG normal & dérivations",
+      "rang": "A",
+      "points": [
+        "Rythme sinusal : P positive D2, PR 120–200 ms, QRS < 120 ms, FC 50–100.",
+        "Territoires : antéroseptal V1–V4, apical V3–V4, latéral D1-aVL-V5–V6, inférieur D2-D3-aVF ; postérieur V7–V9.",
+        "ECG normal n'élimine ni SCA ST−, ni EP, ni dissection — renouveler si doute.",
+        "V3R V4R si IDM inférieur + hypotension (IDM VD). ECG 18 dér. devant douleur thoracique.",
+        "Onde T négative isolée en V1 peut être normale ; 2 T− même territoire = pathologique."
+      ]
+    },
+    {
+      "id": "sca",
+      "title": "SCA & repolarisation",
+      "rang": "A",
+      "points": [
+        "ST+ : ≥ 2 mm V1–V3 ou ≥ 1 mm sur 2 dérivations adjacentes + miroir réciproque.",
+        "Sous-ST antérieur (V1–V3) peut être miroir d'un ST+ postérieur → V7–V9.",
+        "BBG + douleur persistante = équivalent STEMI (critères Sgarbossa) — pas « bénin ».",
+        "Péricardite : ST diffus concave sans miroir, sous-PQ, pas de Q de nécrose territorialisée.",
+        "Wellens A/B en V2–V3 : coro urgente. ST régressif sous TNT = SCA ST−, pas STEMI."
+      ]
+    },
+    {
+      "id": "conduction",
+      "title": "Blocs & BAV",
+      "rang": "A",
+      "points": [
+        "BBD : QRS ≥ 120 ms, rSR' V1, S traînante V6. BBG : QRS ≥ 120 ms, rS/QS V1, notch V6.",
+        "Discordance ST-T secondaire au BBG — ne pas appeler STEMI sur seule repolarisation V1–V2.",
+        "HBAG : axe < −30°, négativité D2-D3-aVF. HBPG : axe droit, S D1.",
+        "Mobitz 1 (Wenckebach) : PR allonge puis P bloquée — nodal, souvent bénin.",
+        "Mobitz 2 : P bloquée inopinée PR constant — infranodal → pacemaker si symptomatique.",
+        "BAV 3 : dissociation AV complète. Nodal = QRS fins 40–60 ; infranodal = QRS larges < 40."
+      ]
+    },
+    {
+      "id": "tachy",
+      "title": "Tachycardies",
+      "rang": "A",
+      "points": [
+        "FA : seule tachycardie complètement irrégulière à QRS fins. Flutter : ondes F régulières (~150/min).",
+        "TSV régulière QRS fins → manœuvres vagales puis adénosine (CI asthme, hypotension, WPW+FA).",
+        "TV : dissociation VA, captures/fusions, concordance QRS V1–V6. Cardiopathie sous-jacente ++.",
+        "Adénosine : diagnostic thérapeutique TSV ; ne jamais si FA sur WPW (super-Wolff).",
+        "Torsade de pointes : TV polymorphe sur QT long → MgSO4 IV, isoprotérénol/ pacing si récidive."
+      ]
+    },
+    {
+      "id": "hv",
+      "title": "Hypertrophies & EP",
+      "rang": "A",
+      "points": [
+        "Sokolow > 35 mm → HVG (+ T− latérales possibles, repolarisation secondaire).",
+        "HVD / EP : axe droit, S1Q3, T− V1–V4, BBD, microvoltage si épanchement.",
+        "T− V1–V3 seules : penser HVD/EP avant ischémie antérieure.",
+        "Hypertrophie atriale gauche : P bifide D2 ; droite : P > 2,5 mm D2."
+      ]
+    },
+    {
+      "id": "autres",
+      "title": "Dyskaliémies, WPW, pacemaker",
+      "rang": "A",
+      "points": [
+        "HyperK : T pointues symétriques → PR long → QRS larges → BAV/TV/asystolie.",
+        "HypoK : T plate, U, QT long, risque TdP.",
+        "WPW : PR < 120 ms, onde δ, QRS élargi. FA + Kent = QRS larges irréguliers rapides.",
+        "Pacemaker : spike avant P (atrial) ou QRS (ventriculaire). Échappement 40–60 (jonctionnel), 15–30 (ventriculaire).",
+        "Alternance électrique = gros épanchement péricardique."
+      ]
+    }
+  ],
+  "pieges": [
+    {"piege": "Se rassurer sur un ECG normal devant douleur thoracique ou syncope.", "reflexe": "ECG immédiat puis renouveler à 1–2 h si doute. ECG N n'élimine pas SCA ST− ni EP."},
+    {"piege": "Appeler STEMI un sus-ST qui disparaît sous nitroglycérine ou spontanément.", "reflexe": "ST régressif = SCA ST− / spasme. STEMI = sus-ST persistant."},
+    {"piege": "Confondre TV et BBG devant QRS larges réguliers.", "reflexe": "TV jusqu'à preuve du contraire. Chercher dissociation VA, captures, concordance V1–V6."},
+    {"piege": "Adénosine ou vérapamil si FA sur WPW.", "reflexe": "Super-Wolff = urgence. Procainamide/amiodarone ; ablation. Pas de freinateur NAV."},
+    {"piege": "Péricardite vs STEMI : ST diffus sans miroir confondu avec antérieur.", "reflexe": "Péricardite : ST concave diffus, sous-PQ, clinique inflammatoire. STEMI : territorial + miroir + Q."},
+    {"piege": "Doser la troponine avant l'ECG.", "reflexe": "ECG 12–18 dérivations en premier, < 10 min devant douleur thoracique."}
+  ]
+}

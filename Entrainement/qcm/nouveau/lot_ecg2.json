@@ -1,0 +1,475 @@
+{
+  "questions": [
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ECG avec rythme sinusal normal (tracé ci-dessous). Quelles propositions sont exactes ?",
+      "images": [{"alt": "ECG normal", "src": "images/ecg/normal.svg"}],
+      "options": [
+        {"letter": "A", "text": "Un ECG normal n'exclut pas un SCA ST-"},
+        {"letter": "B", "text": "PR normal entre 120 et 200 ms"},
+        {"letter": "C", "text": "QRS < 120 ms"},
+        {"letter": "D", "text": "Un ECG normal élimine toute pathologie cardiaque"},
+        {"letter": "E", "text": "L'ECG doit être réalisé devant toute douleur thoracique aiguë"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG normal possible dans SCA ST-, EP, dissection… Toujours ECG devant douleur thoracique."
+    },
+    {
+      "item": "232",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "FA sur ECG (ci-dessous). Quelles propositions sont exactes ?",
+      "images": [{"alt": "ECG FA", "src": "images/ecg/fa.svg"}],
+      "options": [
+        {"letter": "A", "text": "Absence d'ondes P, RR irréguliers"},
+        {"letter": "B", "text": "Objectif FC < 110/min à la marche"},
+        {"letter": "C", "text": "Le flutter se distingue par des ondes F en dents de scie"},
+        {"letter": "D", "text": "La FA se diagnostique uniquement si durée > 30 s au Holter"},
+        {"letter": "E", "text": "CHA₂DS₂-VA guide l'anticoagulation au long cours"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA documentée sur ECG 12 dérivations sans durée minimale. Flutter = ondes F régulières."
+    },
+    {
+      "item": "339",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ST+ antérieur (ECG ci-dessous). Piège fréquent à éviter ?",
+      "images": [{"alt": "ST+ antérieur", "src": "images/ecg/stemi-anterior.svg"}],
+      "options": [
+        {"letter": "A", "text": "Attendre la troponine avant la reperfusion"},
+        {"letter": "B", "text": "Aspirine en charge"},
+        {"letter": "C", "text": "Activation filière SCA"},
+        {"letter": "D", "text": "Antalgie si douleur persistante"},
+        {"letter": "E", "text": "ECG de contrôle après traitement"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST+ = reperfusion immédiate, pas d'attente de troponine."
+    },
+    {
+      "item": "339",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "IDM inférieur (ECG ci-dessous). Quelles propositions sont exactes ?",
+      "images": [{"alt": "ST+ inférieur", "src": "images/ecg/stemi-inferior.svg"}],
+      "options": [
+        {"letter": "A", "text": "Territoire coronaire droite ou circumflexe dominante"},
+        {"letter": "B", "text": "Surveiller BAV ou bradycardie sinusale"},
+        {"letter": "C", "text": "Rechercher IDM ventriculaire droit si hypotension (V4R)"},
+        {"letter": "D", "text": "Contre-indication absolue aux nitrés si IDM VD"},
+        {"letter": "E", "text": "Un BBG exclut tout diagnostic de SCA"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Inférieur : CD souvent. IDM VD = hypotension, nitrés CI. BBG n'exclut pas SCA (critères Sgarbossa)."
+    },
+    {
+      "item": "235",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ECG péricardite (ci-dessous). Quelles propositions sont exactes ?",
+      "images": [{"alt": "Péricardite", "src": "images/ecg/pericarditis.svg"}],
+      "options": [
+        {"letter": "A", "text": "ST diffus concave sans miroir"},
+        {"letter": "B", "text": "Sous-décalage PQ évocateur"},
+        {"letter": "C", "text": "Troponine peut être modérément élevée"},
+        {"letter": "D", "text": "Identique à ST+ antérieur avec miroir réciproque"},
+        {"letter": "E", "text": "Alternance électrique si épanchement abondant"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Péricardite vs IDM : diffus sans miroir, PQ bas. Myopéricardite = troponine possible."
+    },
+    {
+      "item": "236",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Mobitz 2 sur ECG (ci-dessous). Conduite si symptomatique ?",
+      "images": [{"alt": "Mobitz 2", "src": "images/ecg/mobitz2.svg"}],
+      "options": [
+        {"letter": "A", "text": "Indication de pacemaker"},
+        {"letter": "B", "text": "Adénosine"},
+        {"letter": "C", "text": "Surveillance seule sans limite"},
+        {"letter": "D", "text": "Amiodarone en entretien"},
+        {"letter": "E", "text": "Vérapamil"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mobitz 2 = risque BAV 3 → pacemaker si symptomatique ou QRS larges."
+    },
+    {
+      "item": "236",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "BAV 3 sur ECG (ci-dessous). Quelles propositions sont exactes ?",
+      "images": [{"alt": "BAV 3", "src": "images/ecg/bav3.svg"}],
+      "options": [
+        {"letter": "A", "text": "Dissociation auriculo-ventriculaire"},
+        {"letter": "B", "text": "QRS fins suggèrent échappement jonctionnel"},
+        {"letter": "C", "text": "Peut expliquer syncope ou malaise"},
+        {"letter": "D", "text": "Traitement définitif : pacemaker si symptomatique"},
+        {"letter": "E", "text": "Bénin sans traitement chez sujet asymptomatique éveillé"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV 3 symptomatique = pacemaker. Rechercher cause réversible (médicament, ischémie)."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "BBD sur ECG (ci-dessous). Piège en urgence ?",
+      "images": [{"alt": "BBD", "src": "images/ecg/rbbb.svg"}],
+      "options": [
+        {"letter": "A", "text": "Un BBD neuf peut masquer un SCA antérieur — comparer aux ECG antérieurs"},
+        {"letter": "B", "text": "Le BBD est toujours bénin"},
+        {"letter": "C", "text": "Le BBD exclut toute TV"},
+        {"letter": "D", "text": "Pas besoin d'ECG antérieur"},
+        {"letter": "E", "text": "BBD = indication pacemaker systématique"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBD neuf ou BBG neuf = penser SCA jusqu'à preuve du contraire."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "BBG sur ECG (ci-dessous). Quelles propositions sont exactes ?",
+      "images": [{"alt": "BBG", "src": "images/ecg/lbbb.svg"}],
+      "options": [
+        {"letter": "A", "text": "QRS ≥ 120 ms avec HBAG"},
+        {"letter": "B", "text": "Critères de Sokolow altérés pour HVG"},
+        {"letter": "C", "text": "BBG neuf = comparer aux tracés antérieurs (SCA ?)"},
+        {"letter": "D", "text": "Peut être indication à CRT si FEVG basse et QRS large"},
+        {"letter": "E", "text": "Exclut toute fibrillation atriale"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBG : diagnostic ECG + étiologie (HTA, ischémie, CMH). CRT si critères."
+    },
+    {
+      "item": "232",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Flutter (ECG ci-dessous). Traitement rhythmique privilégié si symptomatique et stable ?",
+      "images": [{"alt": "Flutter", "src": "images/ecg/flutter.svg"}],
+      "options": [
+        {"letter": "A", "text": "Cardioversion ou ablation de l'isthme cavo-tricuspidien"},
+        {"letter": "B", "text": "Adénosine 6 mg en bolus"},
+        {"letter": "C", "text": "Digoxine seule en urgence"},
+        {"letter": "D", "text": "Aspirine seule"},
+        {"letter": "E", "text": "Aucun traitement possible"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Flutter : cardioversion efficace ; ablation curative. Contrôle FC + anticoagulation."
+    },
+    {
+      "item": "331",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "TV monomorphe (ECG ci-dessous), PA 80/50, conscience altérée. Conduite ?",
+      "images": [{"alt": "TV", "src": "images/ecg/vt.svg"}],
+      "options": [
+        {"letter": "A", "text": "Choc électrique synchronisé immédiat"},
+        {"letter": "B", "text": "Adénosine IV"},
+        {"letter": "C", "text": "Vérapamil IV"},
+        {"letter": "D", "text": "Observation 24 h"},
+        {"letter": "E", "text": "Atropine 1 mg"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TV instable = choc électrique. Si stable : amiodarone ou cardioversion."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Hyperkaliémie sur ECG (ci-dessous). Quelles propositions sont exactes ?",
+      "images": [{"alt": "Hyperkaliémie", "src": "images/ecg/hyperkalemia.svg"}],
+      "options": [
+        {"letter": "A", "text": "Ondes T pointues symétriques"},
+        {"letter": "B", "text": "Élargissement progressif du QRS"},
+        {"letter": "C", "text": "Peut évoluer vers fibrillation ventriculaire"},
+        {"letter": "D", "text": "Traitement : gluconate de calcium IV si troubles ECG"},
+        {"letter": "E", "text": "Traitement : bêtabloquant IV en première intention"}
+      ],
+      "correct": ["A", "B", "C", "D"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HyperK : T en tente → QRS large → FV. Calcium = stabilisation membrane. Insuline-glucose, résine, dialyse."
+    },
+    {
+      "item": "237",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "WPW sur ECG (ci-dessous). Quelles propositions sont exactes ?",
+      "images": [{"alt": "WPW", "src": "images/ecg/wpw.svg"}],
+      "options": [
+        {"letter": "A", "text": "PR court + onde delta"},
+        {"letter": "B", "text": "En FA avec préexcitation : éviter adénosine et vérapamil"},
+        {"letter": "C", "text": "Procainamide ou cardioversion si FA rapide sur voie accessoire"},
+        {"letter": "D", "text": "WPW est un BBD"},
+        {"letter": "E", "text": "Ablation possible si symptomatique"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "WPW + FA = urgence (FV possible). Pas de ralentisseurs AV purs."
+    },
+    {
+      "item": "226",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Signes ECG d'EP (tracé ci-dessous). Quelles propositions sont exactes ?",
+      "images": [{"alt": "EP", "src": "images/ecg/ep.svg"}],
+      "options": [
+        {"letter": "A", "text": "ECG souvent normal en EP"},
+        {"letter": "B", "text": "Tachycardie sinusale fréquente"},
+        {"letter": "C", "text": "S1Q3 et ondes T négatives antérieures possibles"},
+        {"letter": "D", "text": "BBD complet est le signe le plus spécifique"},
+        {"letter": "E", "text": "Le diagnostic repose sur l'imagerie si probabilité non faible"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG EP = inconstant. Ne retarde pas angio-TDM si suspicion forte."
+    },
+    {
+      "item": "236",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ECG : allongement progressif du PR puis bloc d'une onde P (Wenckebach). Diagnostic ?",
+      "options": [
+        {"letter": "A", "text": "BAV du 2e degré Mobitz 1 (Wenckebach)"},
+        {"letter": "B", "text": "BAV du 2e degré Mobitz 2"},
+        {"letter": "C", "text": "BAV du 3e degré"},
+        {"letter": "D", "text": "FA"},
+        {"letter": "E", "text": "BAV du 1er degré"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mobitz 1 = PR allonge puis QRS bloqué. Souvent fonctionnel (digoxine, vagotonie)."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ECG : onde U prominente, QT allongé, hypokaliémie 2,8 mmol/L. Risque principal ?",
+      "options": [
+        {"letter": "A", "text": "Torsades de pointes"},
+        {"letter": "B", "text": "BBD acquis"},
+        {"letter": "C", "text": "FA permanente"},
+        {"letter": "D", "text": "Hypertrophie VG"},
+        {"letter": "E", "text": "Rythme sinusal accéléré seul"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HypoK : U, QT long, T aplatie → torsades. Corriger K+ et Mg2+."
+    },
+    {
+      "item": "339",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ECG : sous-décalage ST profond symétrique en antérieur (V2–V4), sans sus-décalage, douleur récente résolue. Signe d'alerte ?",
+      "options": [
+        {"letter": "A", "text": "Ondes T pseudonomalisation type Wellens (SCA à haut risque)"},
+        {"letter": "B", "text": "Péricardite certaine"},
+        {"letter": "C", "text": "ECG normal"},
+        {"letter": "D", "text": "Hyperkaliémie"},
+        {"letter": "E", "text": "Flutter atrial"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Wellens = sténose coronaire proximale sévère. Coronarographie urgente."
+    },
+    {
+      "item": "342",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ECG devant syncope. Quelles anomalies imposent une prise en charge urgente ?",
+      "options": [
+        {"letter": "A", "text": "BAV du 3e degré"},
+        {"letter": "B", "text": "Mobitz 2"},
+        {"letter": "C", "text": "TV ou torsades"},
+        {"letter": "D", "text": "Bradycardie sinusale 55/min isolée chez sportif"},
+        {"letter": "E", "text": "QT long congénital ou acquis"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Syncope + BAV haut grade, TV, QT long, Brugada, HCM, QT long = haut risque."
+    },
+    {
+      "item": "230",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Devant douleur thoracique aiguë, concernant l'ECG, quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "ECG 12 dérivations dans les 10 min au SAU"},
+        {"letter": "B", "text": "Dérivations V3R V4R V7 V8 V9 si suspicion inférieure/postérieure"},
+        {"letter": "C", "text": "Un ECG initial normal exclut le SCA"},
+        {"letter": "D", "text": "Refaire l'ECG si douleur persiste ou récidive"},
+        {"letter": "E", "text": "Le scanner thoracique ne doit jamais retarder un ST+ évident"}
+      ],
+      "correct": ["A", "B", "D", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG séquentiel. Normal n'exclut pas. ST+ = pas de scanner avant reperfusion."
+    },
+    {
+      "item": "231",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ECG : axe à −60°, onde S dominante en D1 et aVL, onde R dominante en D2-D3-aVF. Interprétation de l'axe ?",
+      "options": [
+        {"letter": "A", "text": "Hémibloc antérieur gauche (HBAG)"},
+        {"letter": "B", "text": "Hémibloc postérieur droit"},
+        {"letter": "C", "text": "BBD complet"},
+        {"letter": "D", "text": "Inversion des brassements des membres"},
+        {"letter": "E", "text": "Axe normal"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "HBAG : axe < −30°, QRS négatif en D2-D3-aVF, positif en D1-aVL."
+    },
+    {
+      "item": "232",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ECG : activité électrique sans onde P visible, QRS réguliers 75/min, spikes avant chaque QRS. Diagnostic ?",
+      "options": [
+        {"letter": "A", "text": "Rythme stimulé par pacemaker"},
+        {"letter": "B", "text": "FA lente"},
+        {"letter": "C", "text": "Jonctionnel accéléré"},
+        {"letter": "D", "text": "TV lente"},
+        {"letter": "E", "text": "Asystolie"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Spikes de stimulation + QRS capturé = pacemaker. Vérifier seuils et batterie si symptômes."
+    },
+    {
+      "item": "235",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "ECG avec alternance électrique (ci-dessous schéma tamponnade). Conduite associée ?",
+      "images": [{"alt": "Alternance électrique", "src": "images/ecg/pericarditis.svg"}],
+      "options": [
+        {"letter": "A", "text": "Écho en urgence ; drainage si tamponnade"},
+        {"letter": "B", "text": "Coronarographie en première intention"},
+        {"letter": "C", "text": "High dose anticoagulation curative"},
+        {"letter": "D", "text": "Aucun examen complémentaire"},
+        {"letter": "E", "text": "Test d'effort"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Alternance + microvoltage = épanchement abondant. Écho pour tamponnade."
+    },
+    {
+      "item": "339",
+      "kind": "QRU",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "cas_clinique",
+      "prompt": "Homme 68 ans, diabétique, dyspnée sans douleur thoracique. ECG : ST+ silencieux en antérieur. Signification ?",
+      "options": [
+        {"letter": "A", "text": "IDM silencieux possible — même conduite que SCA ST+"},
+        {"letter": "B", "text": "Pas de coronaire à explorer"},
+        {"letter": "C", "text": "Péricardite seule"},
+        {"letter": "D", "text": "ECG à ignorer sans douleur"},
+        {"letter": "E", "text": "Angor stable"}
+      ],
+      "correct": ["A"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Diabétique : IDM silencieux fréquent. ST+ = urgence coronaire même sans douleur."
+    },
+    {
+      "item": "231",
+      "kind": "QRM",
+      "rang": "A",
+      "theme": "ecg",
+      "format": "standard",
+      "prompt": "Médicaments/allongement du QT. Quelles propositions sont exactes ?",
+      "options": [
+        {"letter": "A", "text": "Antibiotiques macrolides, fluoroquinolones, antipsychotiques peuvent allonger le QT"},
+        {"letter": "B", "text": "Hypokaliémie et hypomagnésémie favorisent les torsades"},
+        {"letter": "C", "text": "Méthadone et certains antiémétiques (ondansétron) sont impliqués"},
+        {"letter": "D", "text": "Un QT long est toujours visible à l'œil nu sans calcul du QTc"},
+        {"letter": "E", "text": "Arrêter le médicament suspect et corriger les troubles ioniques"}
+      ],
+      "correct": ["A", "B", "C", "E"],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Torsades = QT long + trigger. Calculer QTc (Bazett). Correcteurs : K+, Mg2+."
+    }
+  ]
+}
