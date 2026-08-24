@@ -1,0 +1,72 @@
+[
+  {
+    "id": "sca",
+    "label": "SCA / angor / ECG urgence",
+    "keywords": ["SCA", "STEMI", "NSTEMI", "troponine", "PCI", "DAPT", "ST+", "angor"],
+    "items": ["230", "339", "231", "330", "331"],
+    "blurb": "Douleur thoracique → ECG avant Tn → triage PIED. Délais PCI / fibrinolyse. DAPT post-stent."
+  },
+  {
+    "id": "anticoag",
+    "label": "Anticoagulation / FA / MTEV",
+    "keywords": ["CHA2DS2", "HAS-BLED", "ACO", "AVK", "AOD", "fibrillation", "EP", "TVP", "cardioversion"],
+    "items": ["232", "226", "330", "152", "153"],
+    "blurb": "CHA₂DS₂-VA (sans sexe) : 0 = pas d’ACO, =1 discussion, >1 ACO. AVK si mécanique/RM. ACO autour d’une CV. EP/TVP."
+  },
+  {
+    "id": "ic",
+    "label": "IC / FEVG / 4 piliers",
+    "keywords": ["FEVG", "HFrEF", "HFpEF", "ARNI", "SGLT2", "bêtabloquant", "MRA", "IEC"],
+    "items": ["234", "203", "232"],
+    "blurb": "Classification FEVG. HFrEF = 4 piliers (IEC/ARNI + BB + ARM + gliflozine) ; diurétique d’anse si congestion (pas un 5e pilier)."
+  },
+  {
+    "id": "choc",
+    "label": "Choc / syncope / détresse",
+    "keywords": ["choc", "syncope", "hypotension", "détresse", "réanimation", "tamponnade"],
+    "items": ["342", "230", "234", "226", "235", "331"],
+    "blurb": "Reconnaître la détresse, syncope à risque, tamponnade, choc cardiogénique vs obstructif, ACR."
+  },
+  {
+    "id": "antiagreg",
+    "label": "Antiagrégants / DAPT / stents",
+    "keywords": ["aspirine", "clopidogrel", "ticagrelor", "DAPT", "stent", "prévention"],
+    "items": ["339", "330", "222", "225"],
+    "blurb": "Aspirine, dualité post-SCA/stent, durée DAPT, prévention secondaire."
+  },
+  {
+    "id": "valves",
+    "label": "Valves / prothèses / endocardite",
+    "keywords": ["RAo", "IM", "IA", "prothèse", "TAVI", "endocardite", "Duke"],
+    "items": ["233RA", "233IM", "233IA", "152", "153"],
+    "blurb": "Indications de remplacement, TAVI vs chirurgie, prophylaxie/endocardite, ACO prothèses."
+  },
+  {
+    "id": "ecg",
+    "label": "ECG sémiologie",
+    "keywords": ["BBG", "BBD", "HVG", "WPW", "hyperkaliémie", "onde Q", "sous-décalage"],
+    "items": ["231", "232", "236", "339", "230"],
+    "blurb": "Tracés typiques : SCA, blocs, hypertrophies, WPW, dyskaliémies, péricardite."
+  },
+  {
+    "id": "seuils",
+    "label": "Seuils chiffrés transverses",
+    "keywords": ["LDL", "PAS", "FEVG", "AAA", "PCI", "CHA2DS2", "Wells", "FR"],
+    "items": ["221", "222", "223", "224", "225", "234", "226", "339", "232"],
+    "blurb": "Mémoriser les chiffres qui tombent partout : LDL, PAS 120–129, délais PCI, FEVG, CHA₂DS₂-VA, diamètres AAA."
+  },
+  {
+    "id": "hta-prev",
+    "label": "HTA / prévention / FDR",
+    "keywords": ["HTA", "LDL", "tabac", "diabète", "prévention", "statine"],
+    "items": ["221", "222", "223", "224", "225"],
+    "blurb": "FDR, objectifs tensionnels et lipidiques, prévention primaire/secondaire, AOMI/AAA."
+  },
+  {
+    "id": "rythme",
+    "label": "Rythmologie / conduction",
+    "keywords": ["bradycardie", "BAV", "tachycardie", "flutter", "TV", "FV", "stimulateur"],
+    "items": ["236", "237", "232", "231", "342"],
+    "blurb": "Brady/tachy, indications de sonde/stimulateur, TV/FV, syncope arythmique."
+  }
+]

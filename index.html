@@ -97,6 +97,82 @@
       background: var(--card); color: var(--ink); border-color: var(--line);
     }
     button:disabled { opacity: 0.45; cursor: not-allowed; }
+    .focus-hero {
+      background: linear-gradient(145deg, #1f5c45 0%, #2f7a5c 55%, #3a6b52 100%);
+      color: #fff; border: none;
+    }
+    .focus-hero h2 {
+      color: rgba(255,255,255,0.9); text-transform: none; letter-spacing: 0;
+      font-size: 1.2rem; font-weight: 800; margin: 0 0 0.35rem;
+    }
+    .focus-hero p { margin: 0 0 0.9rem; opacity: 0.92; font-size: 0.95rem; }
+    .focus-hero .actions button {
+      background: #fff; color: var(--accent); border-color: #fff;
+      font-size: 1.05rem; padding: 0.7rem 1.35rem;
+    }
+    .focus-hero .actions button.secondary {
+      background: transparent; color: #fff; border-color: rgba(255,255,255,0.55);
+    }
+    .focus-timer {
+      font-variant-numeric: tabular-nums; font-weight: 800; font-size: 1.1rem;
+      padding: 0.3rem 0.65rem; border-radius: 999px;
+      background: #e3efe8; color: var(--accent);
+    }
+    .focus-timer.warn { background: var(--bad-bg); color: var(--bad); animation: pulse 1s ease infinite; }
+    @keyframes pulse { 50% { opacity: 0.7; } }
+    .xp-bar {
+      display: grid; grid-template-columns: auto 1fr auto; gap: 0.55rem 0.75rem;
+      align-items: center; margin: 0 0 1rem; padding: 0.7rem 0.85rem;
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    }
+    .xp-bar .streak {
+      font-weight: 800; font-size: 0.95rem; color: var(--warn);
+      white-space: nowrap;
+    }
+    .xp-bar .lvl { font-weight: 750; font-size: 0.88rem; }
+    .xp-bar .lvl span { color: var(--muted); font-weight: 600; }
+    .xp-track {
+      grid-column: 1 / -1; height: 8px; background: #e8e2d6; border-radius: 999px; overflow: hidden;
+    }
+    .xp-track i { display: block; height: 100%; background: var(--accent); border-radius: inherit; width: 0; transition: width 0.4s ease; }
+    .xp-gain {
+      margin: 0.75rem 0 0; padding: 0.65rem 0.75rem; border-radius: 10px;
+      background: #e3efe8; color: var(--accent); font-weight: 700; font-size: 0.95rem;
+    }
+    .xp-gain.levelup { background: #fef3c7; color: var(--warn); }
+    .hub-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin: 0 0 1rem;
+    }
+    @media (max-width: 520px) { .hub-grid { grid-template-columns: 1fr; } }
+    .hub-btn {
+      display: block; width: 100%; text-align: left;
+      border: 1px solid var(--line); background: var(--card); color: var(--ink);
+      border-radius: 12px; padding: 0.85rem 0.95rem; cursor: pointer; font: inherit;
+    }
+    .hub-btn strong { display: block; font-size: 1rem; margin-bottom: 0.2rem; }
+    .hub-btn span { color: var(--muted); font-size: 0.82rem; }
+    .hub-btn.primary {
+      background: linear-gradient(145deg, #1f5c45, #2f7a5c); color: #fff; border: none;
+    }
+    .hub-btn.primary span { color: rgba(255,255,255,0.85); }
+    .heat-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(5.8rem, 1fr));
+      gap: 0.4rem; margin-top: 0.55rem;
+    }
+    .heat-cell {
+      border: none; border-radius: 10px; padding: 0.55rem 0.4rem; cursor: pointer;
+      font: inherit; font-size: 0.78rem; font-weight: 700; color: #fff; text-align: center;
+    }
+    .heat-cell.hot { background: #b91c1c; }
+    .heat-cell.warm { background: #b45309; }
+    .heat-cell.ok { background: #166534; }
+    .heat-cell.fresh { background: #64748b; }
+    .flash-card {
+      min-height: 11rem; display: flex; flex-direction: column; justify-content: center;
+      text-align: center; padding: 1.25rem; cursor: pointer; user-select: none;
+    }
+    .flash-card .front { font-size: 1.35rem; font-weight: 800; }
+    .flash-card .back { font-size: 1.05rem; margin-top: 0.75rem; color: var(--accent); font-weight: 650; }
     .score-box {
       margin-top: 0.85rem; padding: 0.7rem 0.8rem; border-radius: 10px;
       background: #ebe6dc; display: none;
@@ -185,6 +261,7 @@
     <ul class="nav-chips">
       <li><button type="button" id="tab-setup" class="active">Session</button></li>
       <li><button type="button" id="tab-cours">Cours</button></li>
+      <li><button type="button" id="tab-notions">Notions</button></li>
       <li><button type="button" id="tab-tx">Traitements</button></li>
       <li><button type="button" id="tab-fiches">Fiches</button></li>
       <li><button type="button" id="tab-sigles">Sigles</button></li>
@@ -201,21 +278,223 @@ let TX = { groups: [] };
 let SIGLES = { items: [] };
 let FICHES = { comparatifs: [], reflexes: [], pieges: [], seuils: [] };
 let COURS = [];
+let NOTIONS = [];
 let view = "setup";
 let session = null;
 let originMode = "nouveau";
 let formatMode = "all";
 let rangMode = "all";
 let themeMode = "all";
+let focusTicker = null;
+let flashTicker = null;
+let flashState = null;
+
+const FOCUS_N = 8;
+const FOCUS_MS = 8 * 60 * 1000;
+const FLASH_MS = 60 * 1000;
 
 const $ = (id) => document.getElementById(id);
 const viewEl = $("view");
 
 function loadStats() {
-  try { return JSON.parse(localStorage.getItem(STORE)) || { byItem: {}, sessions: [] }; }
-  catch { return { byItem: {}, sessions: [] }; }
+  try {
+    const s = JSON.parse(localStorage.getItem(STORE)) || {};
+    return {
+      byItem: s.byItem || {},
+      sessions: s.sessions || [],
+      xp: s.xp || 0,
+      streak: s.streak || 0,
+      bestStreak: s.bestStreak || 0,
+      lastDay: s.lastDay || null,
+      srs: s.srs || {},
+    };
+  } catch {
+    return { byItem: {}, sessions: [], xp: 0, streak: 0, bestStreak: 0, lastDay: null, srs: {} };
+  }
 }
 function saveStats(s) { localStorage.setItem(STORE, JSON.stringify(s)); }
+
+const LEVELS = [
+  { level: 1, name: "Externat", need: 0 },
+  { level: 2, name: "Interne junior", need: 80 },
+  { level: 3, name: "Interne cardio", need: 200 },
+  { level: 4, name: "Résident", need: 400 },
+  { level: 5, name: "Chef de clinique", need: 700 },
+  { level: 6, name: "CNEC ready", need: 1100 },
+  { level: 7, name: "EDN beast", need: 1600 },
+];
+
+function dayKey(ts = Date.now()) {
+  const d = new Date(ts);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function dayShift(key, delta) {
+  const [y, m, d] = key.split("-").map(Number);
+  const dt = new Date(y, m - 1, d);
+  dt.setDate(dt.getDate() + delta);
+  return dayKey(dt.getTime());
+}
+
+function levelInfo(xp) {
+  let cur = LEVELS[0];
+  let next = LEVELS[1] || null;
+  for (let i = 0; i < LEVELS.length; i++) {
+    if (xp >= LEVELS[i].need) {
+      cur = LEVELS[i];
+      next = LEVELS[i + 1] || null;
+    }
+  }
+  const floor = cur.need;
+  const ceil = next ? next.need : floor + 500;
+  const pct = next ? Math.min(100, Math.round(100 * (xp - floor) / (ceil - floor))) : 100;
+  return { ...cur, xp, next, pct, toNext: next ? Math.max(0, next.need - xp) : 0 };
+}
+
+function computeSessionXp({ n, exactN, focus }) {
+  let xp = n * 8 + exactN * 12;
+  if (focus) xp += 20;
+  if (n >= 5 && exactN === n) xp += 25;
+  else if (n >= 5 && exactN / n >= 0.75) xp += 10;
+  return xp;
+}
+
+function applyGamification(stats, { n, exactN, focus }) {
+  const today = dayKey();
+  const yesterday = dayShift(today, -1);
+  const before = levelInfo(stats.xp || 0);
+  let streak = stats.streak || 0;
+  let firstToday = false;
+  if (stats.lastDay === today) {
+    // déjà compté aujourd'hui
+  } else if (stats.lastDay === yesterday) {
+    streak += 1;
+    firstToday = true;
+  } else {
+    streak = 1;
+    firstToday = true;
+  }
+  let gained = computeSessionXp({ n, exactN, focus });
+  if (firstToday) gained += 15;
+  if (streak >= 3 && firstToday) gained += Math.min(30, streak * 3);
+  stats.xp = (stats.xp || 0) + gained;
+  stats.streak = streak;
+  stats.bestStreak = Math.max(stats.bestStreak || 0, streak);
+  stats.lastDay = today;
+  const after = levelInfo(stats.xp);
+  return {
+    gained,
+    firstToday,
+    streak,
+    bestStreak: stats.bestStreak,
+    levelUp: after.level > before.level,
+    before,
+    after,
+  };
+}
+
+function xpBarHtml(stats, extra = "") {
+  const info = levelInfo(stats.xp || 0);
+  const streak = stats.streak || 0;
+  const todayDone = stats.lastDay === dayKey();
+  return `<div class="xp-bar" aria-label="progression">
+    <div class="streak">${streak ? `🔥 ${streak} j` : "🔥 0 j"}${todayDone ? " · ok" : " · à faire"}</div>
+    <div class="lvl">Niv. ${info.level} — ${esc(info.name)} <span>· ${info.xp} XP</span></div>
+    <div class="meta" style="justify-self:end">${info.next ? `${info.toNext} XP` : "max"}</div>
+    <div class="xp-track"><i style="width:${info.pct}%"></i></div>
+    ${extra}
+  </div>`;
+}
+
+const SRS_STEPS = [1, 3, 7]; // jours
+
+function ensureSrs(stats) {
+  if (!stats.srs) stats.srs = {};
+  return stats.srs;
+}
+
+function scheduleWrong(stats, q) {
+  const srs = ensureSrs(stats);
+  const cur = srs[q.id] || { fails: 0 };
+  cur.fails = (cur.fails || 0) + 1;
+  cur.interval = 1;
+  cur.due = Date.now() + 1 * 86400000;
+  cur.item = q.item;
+  cur.lastWrong = Date.now();
+  srs[q.id] = cur;
+}
+
+function scheduleRight(stats, q) {
+  const srs = ensureSrs(stats);
+  if (!srs[q.id]) return;
+  const cur = srs[q.id];
+  const idx = SRS_STEPS.indexOf(cur.interval || 1);
+  if (idx < 0 || idx >= SRS_STEPS.length - 1) {
+    delete srs[q.id];
+    return;
+  }
+  cur.interval = SRS_STEPS[idx + 1];
+  cur.due = Date.now() + cur.interval * 86400000;
+  srs[q.id] = cur;
+}
+
+function srsDueIds(stats) {
+  const now = Date.now();
+  return Object.entries(stats.srs || {})
+    .filter(([, v]) => (v.due || 0) <= now)
+    .sort((a, b) => (a[1].due || 0) - (b[1].due || 0))
+    .map(([id]) => id);
+}
+
+function srsDueQuestions(stats) {
+  const ids = new Set(srsDueIds(stats));
+  return BANK.questions.filter((q) => ids.has(q.id));
+}
+
+function srsPendingCount(stats) {
+  return Object.keys(stats.srs || {}).length;
+}
+
+function srsNextDueLabel(stats) {
+  const future = Object.values(stats.srs || {})
+    .map((v) => v.due || 0)
+    .filter((t) => t > Date.now())
+    .sort((a, b) => a - b);
+  if (!future.length) return null;
+  const h = Math.max(1, Math.round((future[0] - Date.now()) / 3600000));
+  if (h < 24) return `prochaine dans ~${h} h`;
+  return `prochaine dans ~${Math.round(h / 24)} j`;
+}
+
+function beginSrsSession() {
+  clearFocusTicker();
+  const stats = loadStats();
+  let pool = srsDueQuestions(stats);
+  if (!pool.length) {
+    const allIds = Object.keys(stats.srs || {});
+    pool = BANK.questions.filter((q) => allIds.includes(q.id));
+  }
+  if (!pool.length) {
+    alert("Aucune erreur en file. Rate des QCM pour remplir le carnet SRS.");
+    return;
+  }
+  pool = shuffle(pool).slice(0, Math.min(12, pool.length));
+  session = {
+    phase: "quiz",
+    focus: false,
+    srs: true,
+    items: [...new Set(pool.map((q) => q.item))],
+    qs: pool.map((q) => ({ ...q, picked: [], revealed: false })),
+    i: 0,
+  };
+  view = "quiz";
+  render();
+}
+
+function trapsForItems(itemIds) {
+  const set = new Set(itemIds.map(String));
+  return (FICHES.pieges || []).filter((p) => set.has(String(p.item || ""))).slice(0, 4);
+}
 
 function shuffle(arr) {
   const a = arr.slice();
@@ -268,6 +547,110 @@ function selectedIds() {
   return [...document.querySelectorAll("#chapter-list input:checked")].map((i) => i.value);
 }
 
+function clearFocusTicker() {
+  if (focusTicker) { clearInterval(focusTicker); focusTicker = null; }
+  if (flashTicker) { clearInterval(flashTicker); flashTicker = null; }
+}
+
+function itemWeakness(id) {
+  const s = loadStats().byItem[id];
+  if (!s || !s.seen) return UNESS.includes(id) ? 0.78 : 0.62;
+  const exactRate = s.exact / Math.max(1, s.seen);
+  const ptsRate = s.max ? s.pts / s.max : exactRate;
+  return Math.max(0.08, 1 - (0.55 * exactRate + 0.45 * ptsRate));
+}
+
+function weightedSample(pool, weights, n) {
+  const items = pool.map((q, i) => ({ q, w: weights[i] }));
+  const out = [];
+  const used = new Set();
+  while (out.length < n && items.length) {
+    const total = items.reduce((s, x) => s + x.w, 0);
+    let r = Math.random() * total;
+    let idx = 0;
+    for (; idx < items.length; idx++) {
+      r -= items[idx].w;
+      if (r <= 0) break;
+    }
+    idx = Math.min(idx, items.length - 1);
+    const pick = items.splice(idx, 1)[0];
+    if (used.has(pick.q.id)) continue;
+    used.add(pick.q.id);
+    out.push(pick.q);
+  }
+  return out;
+}
+
+function focusRemainingMs() {
+  if (!session || !session.focus || !session.endsAt) return 0;
+  return Math.max(0, session.endsAt - Date.now());
+}
+
+function formatFocusClock(ms) {
+  const s = Math.ceil(ms / 1000);
+  const m = Math.floor(s / 60);
+  const r = s % 60;
+  return `${m}:${String(r).padStart(2, "0")}`;
+}
+
+function startFocusTicker() {
+  clearFocusTicker();
+  focusTicker = setInterval(() => {
+    if (!session || !session.focus || session.phase !== "quiz") { clearFocusTicker(); return; }
+    const el = $("focus-clock");
+    const left = focusRemainingMs();
+    if (el) {
+      el.textContent = formatFocusClock(left);
+      el.classList.toggle("warn", left <= 60_000);
+    }
+    if (left <= 0) {
+      clearFocusTicker();
+      finishSession();
+    }
+  }, 250);
+}
+
+function beginFocusSession() {
+  clearFocusTicker();
+  const prev = { originMode, formatMode, rangMode, themeMode };
+  originMode = "both";
+  formatMode = "all";
+  rangMode = "all";
+  themeMode = "all";
+  const ids = BANK.items.map((it) => it.id);
+  const pool = poolFor(ids);
+  if (!pool.length) {
+    originMode = prev.originMode;
+    formatMode = prev.formatMode;
+    rangMode = prev.rangMode;
+    themeMode = prev.themeMode;
+    alert("Aucune question disponible.");
+    return;
+  }
+  const weights = pool.map((q) => {
+    let w = itemWeakness(q.item);
+    if (q.origin === "nouveau") w *= 1.15;
+    if (UNESS.includes(q.item)) w *= 1.1;
+    return w;
+  });
+  const picked = weightedSample(pool, weights, Math.min(FOCUS_N, pool.length));
+  session = {
+    phase: "quiz",
+    focus: true,
+    items: [...new Set(picked.map((q) => q.item))],
+    qs: picked.map((q) => ({ ...q, picked: [], revealed: false })),
+    i: 0,
+    endsAt: Date.now() + FOCUS_MS,
+  };
+  originMode = prev.originMode;
+  formatMode = prev.formatMode;
+  rangMode = prev.rangMode;
+  themeMode = prev.themeMode;
+  view = "quiz";
+  render();
+  startFocusTicker();
+}
+
 async function boot() {
   try {
     BANK = await (await fetch("bank.json")).json();
@@ -279,6 +662,10 @@ async function boot() {
     catch { FICHES = { comparatifs: [], reflexes: [], pieges: [], seuils: [] }; }
     try { COURS = await (await fetch("cours.json")).json(); }
     catch { COURS = []; }
+    try {
+      const n = await (await fetch("notions.json")).json();
+      NOTIONS = Array.isArray(n) ? n : (n.notions || []);
+    } catch { NOTIONS = []; }
   } catch (e) {
     viewEl.innerHTML = `<div class="card err">Impossible de charger <code>bank.json</code>. Lance <code>lancer.bat</code>.</div>`;
     return;
@@ -290,6 +677,7 @@ async function boot() {
     render();
   };
   $("tab-cours").onclick = () => { view = "cours"; render(); };
+  $("tab-notions").onclick = () => { view = "notions"; render(); };
   $("tab-tx").onclick = () => { view = "traitements"; render(); };
   $("tab-fiches").onclick = () => { view = "fiches"; render(); };
   $("tab-sigles").onclick = () => { view = "sigles"; render(); };
@@ -298,9 +686,10 @@ async function boot() {
 }
 
 function render() {
-  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours");
-  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches", "cours"].includes(view));
+  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "notions");
+  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches", "cours", "notions"].includes(view));
   $("tab-cours").classList.toggle("active", view === "cours");
+  $("tab-notions").classList.toggle("active", view === "notions");
   $("tab-tx").classList.toggle("active", view === "traitements");
   $("tab-fiches").classList.toggle("active", view === "fiches");
   $("tab-sigles").classList.toggle("active", view === "sigles");
@@ -308,8 +697,10 @@ function render() {
   if (view === "setup") renderSetup();
   else if (view === "quiz") renderQuiz();
   else if (view === "results") renderResults();
+  else if (view === "flash") renderFlash();
   else if (view === "traitements") renderTraitements();
   else if (view === "cours") renderCours();
+  else if (view === "notions") renderNotions();
   else if (view === "fiches") renderFiches();
   else if (view === "sigles") renderSigles();
   else renderSuivi();
@@ -337,6 +728,161 @@ function updatePoolHint() {
   if (start) start.disabled = !ids.length || n === 0;
 }
 
+function buildFlashDeck() {
+  const cards = [];
+  for (const s of (FICHES.seuils || [])) {
+    cards.push({
+      kind: "seuil",
+      front: s.label || s.group,
+      back: `${s.value}${s.note ? " — " + s.note : ""}`,
+      item: s.item,
+    });
+  }
+  for (const s of (SIGLES.items || []).slice(0, 80)) {
+    cards.push({
+      kind: "sigle",
+      front: s.abbr,
+      back: s.def,
+      item: null,
+    });
+  }
+  return shuffle(cards);
+}
+
+function beginFlashSession() {
+  clearFocusTicker();
+  const deck = buildFlashDeck();
+  if (!deck.length) { alert("Pas de flashcards (seuils/sigles)."); return; }
+  flashState = {
+    deck: deck.slice(0, 40),
+    i: 0,
+    revealed: false,
+    known: 0,
+    unknown: 0,
+    endsAt: Date.now() + FLASH_MS,
+  };
+  session = null;
+  view = "flash";
+  render();
+  flashTicker = setInterval(() => {
+    if (!flashState || view !== "flash") { clearFocusTicker(); return; }
+    const el = $("flash-clock");
+    const left = Math.max(0, flashState.endsAt - Date.now());
+    if (el) {
+      el.textContent = formatFocusClock(left);
+      el.classList.toggle("warn", left <= 15_000);
+    }
+    if (left <= 0) finishFlash();
+  }, 250);
+}
+
+function finishFlash() {
+  clearFocusTicker();
+  if (!flashState) { view = "setup"; render(); return; }
+  const stats = loadStats();
+  const seen = flashState.known + flashState.unknown;
+  const exactN = flashState.known;
+  const gamify = applyGamification(stats, { n: Math.max(1, seen), exactN, focus: false });
+  // softer XP for flash: already applied full - reduce by saving adjusted? Keep simple.
+  saveStats(stats);
+  const summary = { known: flashState.known, unknown: flashState.unknown, seen, gamify };
+  flashState = { done: true, summary };
+  view = "flash";
+  render();
+}
+
+function renderFlash() {
+  if (flashState && flashState.done) {
+    const s = flashState.summary;
+    viewEl.innerHTML = `
+      <h1>Flash 60 s — terminé</h1>
+      ${xpBarHtml(loadStats(), `<div class="xp-gain">+${s.gamify.gained} XP · ${s.known} OK / ${s.unknown} à revoir</div>`)}
+      <div class="card">
+        <div class="big-score">${s.known} / ${s.seen || 0}</div>
+        <p class="hint">Hit rapide seuils + sigles. Reviens demain pour la série.</p>
+        <div class="actions">
+          <button type="button" id="flash-again">Encore 60 s</button>
+          <button type="button" class="secondary" id="flash-home">Accueil</button>
+        </div>
+      </div>`;
+    $("flash-again").onclick = () => beginFlashSession();
+    $("flash-home").onclick = () => { flashState = null; view = "setup"; render(); };
+    return;
+  }
+  if (!flashState) { view = "setup"; render(); return; }
+  const c = flashState.deck[flashState.i % flashState.deck.length];
+  const left = Math.max(0, flashState.endsAt - Date.now());
+  viewEl.innerHTML = `
+    <header class="quiz-bar">
+      <h1>Flash 60 s</h1>
+      <div style="display:flex;gap:0.65rem;align-items:center;flex-wrap:wrap">
+        <span class="focus-timer${left <= 15_000 ? " warn" : ""}" id="flash-clock">${formatFocusClock(left)}</span>
+        <div class="meta">${flashState.known} OK · ${flashState.unknown} à revoir · ${c.kind}</div>
+      </div>
+    </header>
+    <div class="card flash-card" id="flash-tap">
+      <div class="front">${esc(c.front)}</div>
+      ${flashState.revealed ? `<div class="back">${esc(c.back)}</div>` : `<p class="hint">Tape pour révéler</p>`}
+    </div>
+    <div class="actions">
+      <button type="button" id="flash-ok" ${flashState.revealed ? "" : "disabled"}>Je savais</button>
+      <button type="button" class="secondary" id="flash-ko" ${flashState.revealed ? "" : "disabled"}>À revoir</button>
+      <button type="button" class="secondary" id="flash-stop">Stop</button>
+    </div>`;
+  $("flash-tap").onclick = () => { flashState.revealed = true; renderFlash(); };
+  $("flash-ok").onclick = () => {
+    flashState.known++;
+    flashState.i++;
+    flashState.revealed = false;
+    renderFlash();
+  };
+  $("flash-ko").onclick = () => {
+    flashState.unknown++;
+    flashState.i++;
+    flashState.revealed = false;
+    renderFlash();
+  };
+  $("flash-stop").onclick = () => finishFlash();
+}
+
+function heatClass(it) {
+  const w = itemWeakness(it.id);
+  const seen = (loadStats().byItem[it.id] || {}).seen || 0;
+  if (!seen) return "fresh";
+  if (w >= 0.55) return "hot";
+  if (w >= 0.35) return "warm";
+  return "ok";
+}
+
+function decideNextAction() {
+  const stats = loadStats();
+  const due = srsDueIds(stats).length;
+  const hour = new Date().getHours();
+  if (due > 0) return { kind: "srs", label: "SRS erreurs dues" };
+  if (!stats.lastDay || stats.lastDay !== dayKey()) {
+    if (hour < 12) return { kind: "focus", label: "Focus 8 min (série du jour)" };
+    return { kind: "flash", label: "Flash 60 s (hit rapide)" };
+  }
+  if (hour >= 22 || hour < 8) return { kind: "flash", label: "Flash 60 s (léger)" };
+  // pick weakest notion
+  if (NOTIONS.length) {
+    const scored = NOTIONS.map((n) => {
+      const ws = (n.items || []).map((id) => itemWeakness(id));
+      const avg = ws.reduce((a, b) => a + b, 0) / Math.max(1, ws.length);
+      return { n, avg };
+    }).sort((a, b) => b.avg - a.avg);
+    return { kind: "micro", id: scored[0].n.id, label: `Micro : ${scored[0].n.label}` };
+  }
+  return { kind: "focus", label: "Focus 8 min" };
+}
+
+function runDecidedAction(act) {
+  if (act.kind === "srs") beginSrsSession();
+  else if (act.kind === "flash") beginFlashSession();
+  else if (act.kind === "micro") beginMicroSession(act.id, 5);
+  else beginFocusSession();
+}
+
 function renderSetup() {
   const groups = {};
   for (const it of BANK.items) (groups[it.group] ||= []).push(it);
@@ -347,11 +893,48 @@ function renderSetup() {
       list += `<label><input type="checkbox" value="${it.id}" checked /> <span>${it.label} <span class="meta">(${countFor(it)}${it.highYield ? " · prio" : ""})</span></span></label>`;
     }
   }
+  const stats = loadStats();
+  const weakPreview = BANK.items
+    .map((it) => ({ id: it.id, label: it.label, w: itemWeakness(it.id), seen: (stats.byItem[it.id] || {}).seen || 0 }))
+    .sort((a, b) => b.w - a.w)
+    .slice(0, 3)
+    .map((x) => x.seen ? x.label : `${x.label} (nouveau)`)
+    .join(" · ");
+  const dueN = srsDueIds(stats).length;
+  const pendingN = srsPendingCount(stats);
+  const nextLbl = srsNextDueLabel(stats);
+  const decided = decideNextAction();
+  const heat = BANK.items.map((it) => {
+    const cls = heatClass(it);
+    const short = (it.label || it.id).replace(/^(\d+\w*)\s*/, "$1 ");
+    return `<button type="button" class="heat-cell ${cls}" data-heat="${it.id}" title="${esc(it.label)}">${esc(short.length > 18 ? it.id : short)}</button>`;
+  }).join("");
+
   viewEl.innerHTML = `
-    <h1>Test QCM — Cardiologie</h1>
-    <p class="sub">Coche les items, lance, valide : le corrigé s’affiche tout de suite. « Prio » = items qui tombent le plus aux partiels.</p>
+    <h1>Cardio — mode dopamine utile</h1>
+    <p class="sub">Un bouton. Pas de menu à nerd-out. Le reste est en dessous si tu veux.</p>
+    ${xpBarHtml(stats)}
+    <div class="card focus-hero">
+      <h2>L’app décide</h2>
+      <p>Maintenant : <strong>${esc(decided.label)}</strong></p>
+      <div class="actions">
+        <button type="button" id="btn-auto">Go — zéro choix</button>
+      </div>
+    </div>
+    <div class="hub-grid">
+      <button type="button" class="hub-btn primary" id="btn-focus"><strong>Focus 8 min</strong><span>8 QCM sur tes faiblesses · timer</span></button>
+      <button type="button" class="hub-btn" id="btn-srs" ${pendingN ? "" : "disabled"}><strong>${dueN ? `SRS · ${dueN} dues` : pendingN ? `SRS · ${pendingN} en file` : "SRS vide"}</strong><span>${dueN ? "erreurs à revoir maintenant" : nextLbl || "remplis en ratant des QCM"}</span></button>
+      <button type="button" class="hub-btn" id="btn-flash"><strong>Flash 60 s</strong><span>seuils + sigles · hit rapide</span></button>
+      <button type="button" class="hub-btn" id="btn-to-fiches"><strong>Fiches</strong><span>comparatifs · réflexes · pièges</span></button>
+    </div>
     <div class="card">
-      <h2>Items</h2>
+      <h2>Heatmap items</h2>
+      <p class="hint" style="margin-top:0">Rouge = faible · orange = moyen · vert = ok · gris = jamais vu. Un tap = 10 QCM.</p>
+      <div class="heat-grid">${heat}</div>
+      <p class="meta" style="margin-top:0.65rem">Priorité Focus : ${esc(weakPreview || "—")}</p>
+    </div>
+    <div class="card">
+      <h2>Items (session classique)</h2>
       <div class="toolbar">
         <button type="button" class="secondary pill" id="btn-all">Tout</button>
         <button type="button" class="secondary pill" id="btn-none">Aucun</button>
@@ -360,7 +943,7 @@ function renderSetup() {
       <div class="chapters" id="chapter-list">${list}</div>
     </div>
     <div class="card">
-      <h2>Session</h2>
+      <h2>Session classique</h2>
       <div class="row">
         <div class="field">
           <label for="origin">Banque</label>
@@ -403,6 +986,21 @@ function renderSetup() {
         <button type="button" id="btn-start">Commencer</button>
       </div>
     </div>`;
+  $("btn-auto").onclick = () => runDecidedAction(decided);
+  $("btn-focus").onclick = () => beginFocusSession();
+  $("btn-srs").onclick = () => beginSrsSession();
+  $("btn-flash").onclick = () => beginFlashSession();
+  $("btn-to-fiches").onclick = () => { view = "fiches"; render(); };
+  viewEl.querySelectorAll("[data-heat]").forEach((btn) => {
+    btn.onclick = () => {
+      const id = btn.getAttribute("data-heat");
+      originMode = "both";
+      formatMode = "all";
+      rangMode = "all";
+      themeMode = "all";
+      beginSession([id], Math.min(10, poolFor([id]).length || 10));
+    };
+  });
   $("origin").onchange = () => { originMode = $("origin").value; renderSetup(); };
   $("format").onchange = () => { formatMode = $("format").value; updatePoolHint(); };
   $("rang").onchange = () => { rangMode = $("rang").value; updatePoolHint(); };
@@ -424,12 +1022,14 @@ function renderSetup() {
 }
 
 function beginSession(ids, nWanted) {
+  clearFocusTicker();
   if (!ids.length) { alert("Choisis au moins un item."); return; }
   let pool = shuffle(poolFor(ids));
   const n = Math.min(nWanted, pool.length);
   if (!n) { alert("Pas de questions pour ces items."); return; }
   session = {
     phase: "quiz",
+    focus: false,
     items: ids,
     qs: pool.slice(0, n).map((q) => ({ ...q, picked: [], revealed: false })),
     i: 0,
@@ -476,16 +1076,36 @@ function renderQuiz() {
   if (revealed) {
     const sc = q._sc;
     const pickedTxt = q.picked.length ? q.picked.join(", ") : "(rien)";
+    const reflex = (() => {
+      const traps = trapsForItems([q.item]);
+      if (traps.length) return traps[0].reflexe;
+      const cours = (COURS || []).find((c) => String(c.item) === String(q.item));
+      if (cours && cours.rangA && cours.rangA[0]) return cours.rangA[0];
+      const exp = String(q.explanation || "").replace(/\*\*/g, "").trim();
+      if (!exp) return null;
+      const first = exp.split(/(?<=[.!?])\s+/)[0];
+      return first.length > 180 ? first.slice(0, 177) + "…" : first;
+    })();
     scoreBox = sc.exact
       ? `<strong>OK</strong> — réponse <strong>${q.correct.join(", ")}</strong>.`
       : `<strong>À revoir</strong> — tu as coché <strong>${pickedTxt}</strong> · corrigé <strong>${q.correct.join(", ")}</strong>${sc.pczMiss ? " · PCZ manqué (0)" : ""}${sc.sczHit ? " · SCZ coché (0)" : ""}.`;
+    if (reflex) scoreBox = `<div class="xp-gain" style="margin-bottom:0.55rem">Réflexe — ${esc(reflex)}</div>` + scoreBox;
     scoreBox += `<div style="margin-top:0.55rem">${esc(q.explanation).replace(/\*\*/g, "")}</div>`;
+    scoreBox += `<p class="hint" style="margin-top:0.55rem"><a href="#" id="link-cours">Cours ${esc(String(q.item))}</a> · <a href="#" id="link-fiche">Fiche réflexe</a></p>`;
   }
+
+  const left = session.focus ? focusRemainingMs() : null;
+  const timerHtml = session.focus
+    ? `<span class="focus-timer${left !== null && left <= 60_000 ? " warn" : ""}" id="focus-clock">${formatFocusClock(left || 0)}</span>`
+    : "";
 
   viewEl.innerHTML = `
     <header class="quiz-bar">
-      <h1>Session en cours</h1>
-      <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · rang ${qRang(q)} · ${kind} · ${format}${theme} · ${origin}</div>
+      <h1>${session.focus ? "Focus 8 min" : session.srs ? "SRS — erreurs" : session.micro ? "Micro-notion" : "Session en cours"}</h1>
+      <div style="display:flex;gap:0.65rem;align-items:center;flex-wrap:wrap">
+        ${timerHtml}
+        <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · rang ${qRang(q)} · ${kind} · ${format}${theme} · ${origin}</div>
+      </div>
     </header>
     <div class="card ${revealed ? "revealed" : ""}">
       <p class="stem">${esc(q.prompt)}</p>
@@ -495,9 +1115,11 @@ function renderQuiz() {
       <div class="actions">
         <button type="button" id="btn-validate" ${revealed ? "disabled" : ""}>Valider / Corrigé</button>
         <button type="button" class="secondary" id="btn-next" ${revealed ? "" : "disabled"}>${session.i === n - 1 ? "Résultat" : "Suivant"}</button>
-        <button type="button" class="secondary" id="btn-abort">Abandonner</button>
+        <button type="button" class="secondary" id="btn-abort">${session.focus ? "Stop Focus" : "Abandonner"}</button>
       </div>
     </div>`;
+
+  if (session.focus) startFocusTicker();
 
   if (!revealed) {
     viewEl.querySelectorAll("#choices input").forEach((inp) => {
@@ -522,15 +1144,32 @@ function renderQuiz() {
       if (session.i === n - 1) finishSession();
       else { session.i++; render(); }
     };
+    const lc = $("link-cours");
+    if (lc) lc.onclick = (e) => {
+      e.preventDefault();
+      localStorage.setItem("cours-item", q.item);
+      localStorage.setItem("cours-rang", "all");
+      view = "cours";
+      render();
+    };
+    const lf = $("link-fiche");
+    if (lf) lf.onclick = (e) => {
+      e.preventDefault();
+      window._ficheTab = "reflexes";
+      window._ficheItem = q.item;
+      view = "fiches";
+      render();
+    };
   }
   $("btn-abort").onclick = () => {
     const done = session.qs.some((x) => x.revealed);
     if (done) finishSession();
-    else { session = null; view = "setup"; render(); }
+    else { clearFocusTicker(); session = null; view = "setup"; render(); }
   };
 }
 
 function finishSession() {
+  clearFocusTicker();
   const answered = session.qs.filter((q) => q.revealed);
   if (!answered.length) { session = null; view = "setup"; render(); return; }
   const stats = loadStats();
@@ -544,7 +1183,7 @@ function finishSession() {
     const b = perItem[q.item] ||= { n: 0, exact: 0, pts: 0, max: 0 };
     b.n++; b.exact += sc.exact ? 1 : 0; b.pts += sc.pts; b.max += sc.max;
   }
-  const rec = { ts: Date.now(), n: answered.length, exact: exactN, pts, max, items: session.items };
+  const rec = { ts: Date.now(), n: answered.length, exact: exactN, pts, max, items: session.items, focus: !!session.focus };
   stats.sessions.unshift(rec);
   stats.sessions = stats.sessions.slice(0, 40);
   for (const [id, b] of Object.entries(perItem)) {
@@ -552,16 +1191,21 @@ function finishSession() {
     cur.seen += b.n; cur.exact += b.exact; cur.pts += b.pts; cur.max += b.max;
     cur.last = rec.ts;
   }
+  for (const q of answered) {
+    if (q._sc && q._sc.exact) scheduleRight(stats, q);
+    else scheduleWrong(stats, q);
+  }
+  const gamify = applyGamification(stats, { n: answered.length, exactN, focus: !!session.focus });
   saveStats(stats);
   session.phase = "done";
   session.answered = answered;
-  session.summary = { exactN, pts, max, perItem, n: answered.length };
+  session.summary = { exactN, pts, max, perItem, n: answered.length, gamify };
   view = "results";
   render();
 }
 
 function renderResults() {
-  const { exactN, pts, max, perItem, n } = session.summary;
+  const { exactN, pts, max, perItem, n, gamify } = session.summary;
   const pct = n ? Math.round(100 * exactN / n) : 0;
   const wrong = (session.answered || session.qs).filter((q) => q.revealed && q._sc && !q._sc.exact);
   let feedback;
@@ -590,9 +1234,26 @@ function renderResults() {
     .map(([id, b]) => `<span class="chip">${itemLabel(id)} ×${b.n - b.exact}</span>`)
     .join("");
 
+  const g = gamify || null;
+  const gainHtml = g
+    ? `<div class="xp-gain${g.levelUp ? " levelup" : ""}">+${g.gained} XP${g.firstToday ? " · bonus jour" : ""} · série ${g.streak} j${g.levelUp ? ` · LEVEL UP → ${esc(g.after.name)}` : ""}</div>`
+    : "";
+
+  const wrongItems = [...new Set(wrong.map((q) => q.item))];
+  const traps = trapsForItems(wrongItems);
+  const trapsHtml = traps.length
+    ? `<div class="feedback-block"><h3>Pièges liés</h3>${traps.map((t) =>
+      `<div class="trap" style="border:none;padding:0.4rem 0"><div class="bad-box"><strong>Piège</strong> — ${esc(t.piege)}</div><div class="ok-box"><strong>Réflexe</strong> — ${esc(t.reflexe)}</div></div>`
+    ).join("")}</div>`
+    : "";
+
+  const statsNow = loadStats();
+  const dueLeft = srsDueIds(statsNow).length;
+
   viewEl.innerHTML = `
-    <h1>Résultat</h1>
-    <p class="sub">${session.items.length} item${session.items.length > 1 ? "s" : ""} · ${n} question${n > 1 ? "s" : ""}</p>
+    <h1>${session.focus ? "Focus terminé" : session.srs ? "SRS terminé" : "Résultat"}</h1>
+    <p class="sub">${session.focus ? "Session Focus · " : session.srs ? "Révision espacée · " : ""}${session.items.length} item${session.items.length > 1 ? "s" : ""} · ${n} question${n > 1 ? "s" : ""}${wrong.length ? ` · ${wrong.length} remis dans le carnet (1→3→7 j)` : ""}</p>
+    ${xpBarHtml(statsNow, gainHtml)}
     <div class="card">
       <div class="meta">Score</div>
       <div class="big-score">${exactN} / ${n}</div>
@@ -606,20 +1267,28 @@ function renderResults() {
         <ul>${advice.map((a) => `<li>${a}</li>`).join("")}</ul>
         <div class="weak-tags">${chips}</div>
       </div>
+      ${trapsHtml}
       <p class="recap">${exactN} bonne${exactN > 1 ? "s" : ""} · ${wrong.length} à revoir · ${n} question${n > 1 ? "s" : ""}.</p>
       <div class="actions">
-        <button type="button" id="again">Rejouer (mêmes réglages)</button>
-        <button type="button" class="secondary" id="home">Changer d’items</button>
+        ${session.focus
+          ? `<button type="button" id="again-focus">Encore un Focus</button>`
+          : session.srs
+            ? `<button type="button" id="again-srs" ${srsPendingCount(statsNow) ? "" : "disabled"}>Continuer SRS${dueLeft ? ` (${dueLeft})` : ""}</button>`
+            : `<button type="button" id="again">Rejouer (mêmes réglages)</button>`}
+        <button type="button" class="secondary" id="home">Accueil</button>
         <button type="button" class="secondary" id="missed">Refaire les erreurs</button>
         <button type="button" class="secondary" id="to-suivi">Voir le suivi</button>
       </div>
     </div>`;
   $("home").onclick = () => { session = null; view = "setup"; render(); };
-  $("again").onclick = () => beginSession(session.items, n);
+  if (session.focus) $("again-focus").onclick = () => beginFocusSession();
+  else if (session.srs) $("again-srs").onclick = () => beginSrsSession();
+  else $("again").onclick = () => beginSession(session.items, n);
   $("to-suivi").onclick = () => { view = "suivi"; render(); };
   $("missed").onclick = () => {
     if (!wrong.length) { alert("Aucune erreur dans cette session."); return; }
-    session = { phase: "quiz", items: session.items, qs: shuffle(wrong.map((q) => ({ ...q, picked: [], _sc: null, revealed: false }))), i: 0 };
+    clearFocusTicker();
+    session = { phase: "quiz", focus: false, srs: false, items: session.items, qs: shuffle(wrong.map((q) => ({ ...q, picked: [], _sc: null, revealed: false }))), i: 0 };
     view = "quiz";
     render();
   };
@@ -711,6 +1380,14 @@ function renderSuivi() {
   viewEl.innerHTML = `
     <h1>Suivi</h1>
     <p class="sub">${highOk}/${high.length} items prio au seuil · ${otherOk}/${other.length} autres · ${veryGood ? "très bon niveau" : "pas encore au seuil"}.</p>
+    ${xpBarHtml(stats, `<div class="meta" style="grid-column:1/-1">Meilleure série : ${stats.bestStreak || 0} jour${(stats.bestStreak || 0) > 1 ? "s" : ""} · SRS : ${srsDueIds(stats).length} due${srsDueIds(stats).length > 1 ? "s" : ""} / ${srsPendingCount(stats)} en file</div>`)}
+    <div class="card">
+      <h2>Carnet SRS</h2>
+      <p class="hint" style="margin-top:0">Les QCM ratés reviennent à J+1, puis J+3, puis J+7. Une bonne réponse avance l’intervalle ; une erreur remet à J+1.</p>
+      <div class="actions" style="margin-top:0.5rem">
+        <button type="button" id="srs-go" ${srsPendingCount(stats) ? "" : "disabled"}>Réviser le carnet</button>
+      </div>
+    </div>
     <div class="card">
       <h2>Par item</h2>
       <p class="hint" style="margin-top:0">Prio : ${cible.seenHigh} vues et ${cible.pctHigh} %. Autres : ${cible.seenOther} vues et ${cible.pctOther} %. ${stats.sessions.length} session(s) ici.</p>
@@ -722,10 +1399,12 @@ function renderSuivi() {
       </div>
     </div>`;
   $("reset").onclick = () => {
-    if (confirm("Effacer tout le suivi local ?")) { localStorage.removeItem(STORE); render(); }
+    if (confirm("Effacer tout le suivi local (XP, série et SRS inclus) ?")) { localStorage.removeItem(STORE); render(); }
   };
   const drill = $("drill");
   if (drill) drill.onclick = () => beginSession(weak.map((w) => w.id), 20);
+  const srsGo = $("srs-go");
+  if (srsGo) srsGo.onclick = () => beginSrsSession();
 }
 
 function ficheTab() { return window._ficheTab || "comparatifs"; }
@@ -735,6 +1414,74 @@ function ficheQ() { return (window._ficheQ || "").trim().toLowerCase(); }
 function ficheMatches(blob, q) {
   if (!q) return true;
   return blob.toLowerCase().includes(q);
+}
+
+function qTextBlob(q) {
+  const opts = (q.options || []).map((o) => o.text || "").join(" ");
+  return `${q.prompt || ""} ${q.explanation || ""} ${opts}`.toLowerCase();
+}
+
+function poolForNotion(notion) {
+  const items = new Set((notion.items || []).map(String));
+  const kws = (notion.keywords || []).map((k) => k.toLowerCase());
+  return BANK.questions.filter((q) => {
+    if (!items.has(String(q.item))) return false;
+    if (!kws.length) return true;
+    const blob = qTextBlob(q);
+    return kws.some((k) => blob.includes(k.toLowerCase()));
+  });
+}
+
+function beginMicroSession(notionId, nWanted = 5) {
+  clearFocusTicker();
+  const notion = NOTIONS.find((n) => n.id === notionId);
+  if (!notion) { alert("Notion introuvable."); return; }
+  let pool = poolForNotion(notion);
+  if (pool.length < nWanted) {
+    const items = new Set((notion.items || []).map(String));
+    const extra = BANK.questions.filter((q) => items.has(String(q.item)) && !pool.includes(q));
+    pool = pool.concat(shuffle(extra));
+  }
+  pool = shuffle(pool).slice(0, Math.min(nWanted, pool.length));
+  if (!pool.length) { alert("Pas assez de QCM pour cette notion."); return; }
+  session = {
+    phase: "quiz",
+    focus: false,
+    srs: false,
+    micro: notion.id,
+    items: [...new Set(pool.map((q) => q.item))],
+    qs: pool.map((q) => ({ ...q, picked: [], revealed: false })),
+    i: 0,
+  };
+  view = "quiz";
+  render();
+}
+
+function renderNotions() {
+  let html = `<h1>Notions transversales</h1>
+    <p class="sub">Les mêmes idées reviennent sur plusieurs items. Verrouille une notion → tu gagnes partout.</p>`;
+  for (const n of NOTIONS) {
+    const poolN = poolForNotion(n).length;
+    const chips = (n.items || []).map((id) => `<span class="chip">${esc(itemLabel(id))}</span>`).join("");
+    html += `<div class="card">
+      <h2 style="text-transform:none;letter-spacing:0;font-size:1.05rem;color:var(--ink)">${esc(n.label)}</h2>
+      <p class="hint" style="margin-top:0">${esc(n.blurb)}</p>
+      <div class="weak-tags" style="margin:0.5rem 0">${chips}</div>
+      <p class="meta">${poolN} QCM matchés · micro-session = 5 Q</p>
+      <div class="actions">
+        <button type="button" data-micro="${esc(n.id)}" ${poolN ? "" : "disabled"}>Micro 5 Q</button>
+        <button type="button" class="secondary" data-micro15="${esc(n.id)}" ${poolN ? "" : "disabled"}>Session 15 Q</button>
+      </div>
+    </div>`;
+  }
+  if (!NOTIONS.length) html += `<p class="hint">Fichier <code>notions.json</code> manquant.</p>`;
+  viewEl.innerHTML = html;
+  viewEl.querySelectorAll("[data-micro]").forEach((btn) => {
+    btn.onclick = () => beginMicroSession(btn.getAttribute("data-micro"), 5);
+  });
+  viewEl.querySelectorAll("[data-micro15]").forEach((btn) => {
+    btn.onclick = () => beginMicroSession(btn.getAttribute("data-micro15"), 15);
+  });
 }
 
 function renderCours() {

@@ -253,7 +253,7 @@
         {
           "key": "Traitement 1re intention",
           "values": [
-            "4 piliers I A : IEC/ARNI + BB (carvé/biso/méto/nébi) + ARM + gliflozine + diurétique si congestif",
+            "4 piliers I A : IEC/ARNI + BB (carvé/biso/méto/nébi) + ARM + gliflozine ; + diurétique d’anse si congestif (symptômes, pas un 5e pilier)",
             "Gliflozine I A + contrôler FA, HTA, surcharge, ischémie",
             "Assis ; furosémide 1 mg/kg IV ; nitrés SL si PAS > 100 (domicile) / IV si PAS > 110 (hôpital). O2 si SaO2 < 90 %"
           ]
@@ -1100,7 +1100,7 @@
       ],
       "arbre": {
         "premiere": [
-          "HFrEF : IEC/ARNI + BB (4 molécules) + ARM + gliflozine ± diurétique d’anse",
+          "HFrEF : IEC/ARNI + BB (4 molécules) + ARM + gliflozine ; diurétique d’anse si congestif (pas un 5e pilier)",
           "OAP : assis, furosémide 1 mg/kg IV, nitrés SL si PAS > 100 / IV si PAS > 110, O2 si SaO2 < 90 %"
         ],
         "echec": [
