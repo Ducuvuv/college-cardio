@@ -1,0 +1,653 @@
+{
+  "note": "Réponses pédagogiques alignées sur le cours CNEC 3e éd. (les vignettes du collège n'ont pas de corrigé officiel dans le livre).",
+  "vignettes": [
+    {
+      "item": "221",
+      "label": "221 Athérome",
+      "stem": "Un homme de 57 ans vous consulte car il présente une sensation progressive d'étau au niveau du mollet gauche lorsqu'il marche, augmentant avec la distance parcourue, qui devient très douloureux l'obligeant à s'arrêter au bout de 250 m. Ce patient n'a pas d'antécédent médical particulier. Son père est décédé d'un infarctus du myocarde à l'âge de 63 ans. Il est fumeur d'un paquet de cigarettes par jour depuis l'âge de 20 ans. Il ne boit pas d'alcool. À l'examen, il pèse 65 kg pour 1,78 m, la pression artérielle est à 150/80 mmHg au bras droit et 140/80 mmHg au bras gauche. L'auscultation cardiopulmonaire est normale, mais vous trouvez un souffle systolique fémoral gauche et carotidien droit. Le pouls fémoral gauche est amorti et en aval, les pouls poplité, tibial postérieur et pédieux ne sont pas retrouvés. À droite, les pouls sont présents. La palpation abdominale est sans particularité. Vous suspectez une artériopathie oblitérante des membres inférieurs (AOMI) chez un patient possiblement polyvasculaire.",
+      "questions": [
+        {
+          "q": "Quels signes cliniques rechercheriez-vous à l'interrogatoire pour détecter une maladie polyvasculaire ?",
+          "answer": "Rechercher des signes d'athérome dans les autres territoires : angor d'effort ou douleur thoracique prolongée, dyspnée d'effort, AIT/AVC, amaurose fugace, vertiges ou troubles neurologiques focaux, douleurs abdominales post-prandiales, dysfonction érectile. Rechercher aussi une claudication controlatérale et des douleurs de décubitus/troubles trophiques."
+        },
+        {
+          "q": "Quel examen demandez-vous en premier lieu pour confirmer le diagnostic d'AOMI ?",
+          "answer": "Mesure de l'index de pression systolique cheville/bras (IPS), complétée en pratique par un échodoppler artériel des membres inférieurs. Un IPS < 0,90 confirme l'AOMI ; > 1,40 évoque des artères incompressibles et impose index d'orteil/TcPO2."
+        },
+        {
+          "q": "Quels examens demandez-vous pour rechercher une maladie polyvasculaire chez ce patient ?",
+          "answer": "Examen clinique vasculaire complet : pouls et souffles carotidiens, fémoraux, abdominaux, PA aux deux bras. ECG de repos systématique, échodoppler des troncs supra-aortiques si souffle/symptômes, dépistage AAA par échographie chez l'homme fumeur > 65 ans ; recherche coronarienne selon symptômes ou avant geste lourd."
+        },
+        {
+          "q": "Quel bilan biologique est nécessaire pour appréhender l'ensemble des facteurs de risque cardiovasculaire du patient ?",
+          "answer": "Glycémie à jeun et HbA1c, bilan lipidique complet, créatinine/DFG, ionogramme, BU ou albuminurie, NFS si besoin. Mesurer aussi PA confirmée hors cabinet et quantifier le tabagisme."
+        },
+        {
+          "q": "Quelles mesures hygiénodiététiques proposez-vous ?",
+          "answer": "Sevrage tabagique prioritaire avec aide pharmacologique si besoin. Activité physique : marche régulière/supervisée 30-45 min au moins 3 fois/semaine, régime méditerranéen, perte pondérale si surpoids, réduction sel/alcool, contrôle PA/diabète/lipides."
+        },
+        {
+          "q": "Si l'AOMI est confirmée, quel traitement pharmacologique instaurez-vous ?",
+          "answer": "Traitement de prévention secondaire : antiagrégant plaquettaire si AOMI symptomatique (aspirine 75-160 mg/j ou clopidogrel), statine forte intensité avec cible LDL < 0,55 g/L et baisse ≥ 50 %, IEC/ARA2 si HTA/diabète/haut risque. Contrôle strict des FDRCV ; revascularisation si claudication invalidante malgré traitement ou ischémie chronique menaçante."
+        }
+      ]
+    },
+    {
+      "item": "222",
+      "label": "222 FDR / prévention",
+      "stem": "Vous recevez en consultation un patient de 61 ans consulte pour prise en charge de facteurs de risque cardiovasculaire. Il n'a pas d'antécédents familiaux cardiovasculaires précoces. Il indique un tabagisme actif à 40 paquets-années. Il est actif : marche 2 à 3 fois/semaine et balades à vélo quotidiennes. Il n'a aucun symptôme fonctionnel cardiovasculaire et l'examen clinique est normal. Sa pression artérielle mesurée au cabinet médical est 153/91 mmHg, il pèse 83 kg pour 174 cm. Le bilan biologique réalisé il y a 1 mois retrouvait triglycérides : 1,25 g/L, cholestérol total : 2,20 g/L, high density lipoproteins (HDL) : 0,35 g/L, LDL : 1,60 g/L, glycémie à jeun 1,29 g/L.",
+      "questions": [
+        {
+          "q": "Le patient est-il obèse ?",
+          "answer": "IMC = 83 / 1,74 ans ≥ 27,4 kg/me : surpoids, pas obésité (obésité si IMC ≥ 30). Rechercher aussi l'obésité abdominale par le tour de taille."
+        },
+        {
+          "q": "Le patient est-il hypertendu ? Est-il nécessaire de réaliser d'autres explorations pour le confirmer ?",
+          "answer": "La PA de cabinet ≥ 153/91 mmHg évoque une HTA grade 1, mais le diagnostic doit être confirmé hors cabinet. Faire automesure tensionnelle (régle des 3) ou MAPA : HTA si automesure ≥ 135/85 ou MAPA 24 h ≥ 130/80 mmHg."
+        },
+        {
+          "q": "Le patient est-il diabétique ? Est-il nécessaire de réaliser d'autres examens pour le confirmer ? Si un diabète était confirmé, quels examens complémentaires biologiques vous semble-t-il important de réaliser pour évaluer le risque cardiovasculaire ?",
+          "answer": "Une glycémie à jeun ≥ 1,29 g/L évoque un diabète mais doit être confirmée par une 2e glycémie à jeun ≥ 1,26 g/L ou HbA1c ≥ 6,5 %. Si confirmé : HbA1c, créatinine/DFG, albuminurie, bilan lipidique et recherche d'atteinte d'organe pour classer le risque CV."
+        },
+        {
+          "q": "Comment évaluer l'activité physique réalisée par le patient ?",
+          "answer": "Quantifier en minutes/semaine et intensité : objectif ≥ 150 min/semaine d'activité modérée ou 75 min soutenue, avec renforcement musculaire. Ici l'activité est encourageante mais doit être précisément chiffrée et comparée aux recommandations."
+        },
+        {
+          "q": "Comment évaluer le risque cardiovasculaire global de ce patient ?",
+          "answer": "Utiliser SCORE2 car il est en prévention primaire, non diabétique confirmé pour l'instant, sans maladie CV documentée. Il cumule âge 61 ans, sexe masculin, tabac actif, PA, LDL/HDL ; s'il devient diabétique, le risque est au moins haut et l'évaluation change."
+        },
+        {
+          "q": "Le taux de LDL cholestérol est-il aux objectifs attendus ?",
+          "answer": "Non. LDL = 1,60 g/L, au-dessus de toutes les cibles usuelles : < 1 g/L risque modéré, < 0,70 haut risque, < 0,55 très haut risque. La cible dépendra du SCORE2 et de la confirmation du diabète."
+        },
+        {
+          "q": "Quelle prise en charge thérapeutique envisagez-vous ?",
+          "answer": "Mesures hygiénodiététiques immédiates : arrêt du tabac, régime méditerranéen, activité physique, perte pondérale, réduction sel. Traiter l'HTA si confirmée (souvent bithérapie IEC/ARA2 + inhibiteur calcique ou thiazidique) et introduire une statine selon risque/LDL ; pas d'aspirine systématique en prévention primaire."
+        },
+        {
+          "q": "Quels conseils lui donnez-vous concernant son alimentation ?",
+          "answer": "Alimentation de type méditerranéen : légumes/fruits, légumineuses, céréales complètes, poisson, huile d'olive/noix. Réduire graisses saturées/trans, charcuteries, produits ultra-transformés, sucres rapides et sel (< 6 g/j), limiter alcool."
+        }
+      ]
+    },
+    {
+      "item": "223",
+      "label": "223 Dyslipidémies",
+      "stem": "Mme X, 56 ans, est hospitalisée pour un syndrome coronarien aigu. Son bilan lipidique est le suivant : Cholestérol total 3,37 g/L, HDL-cholestérol 0,52 g/L, LDL-cholestérol 2,63 g/L, triglycérides 1,10 g/L. Dans sa famille, son père a eu un infarctus fatal à 49 ans. Un oncle (côté paternel) a eu des stents coronariens entre 55 et 60 ans. Elle ne fume pas. Son poids est de 62 kg pour 1,66 m. Elle n'a pas d'hypertension artérielle ni de diabète.",
+      "questions": [
+        {
+          "q": "Quel diagnostic évoquez-vous à partir des paramètres lipidiques ?",
+          "answer": "Hypercholesterolemie LDL majeure, très évocatrice d'une hypercholestérolémie familiale héterozygote dans ce contexte. Les triglycérides sont normaux, ce n'est pas une hypertriglycéridemie."
+        },
+        {
+          "q": "Quels arguments tirés de l'histoire présentée sont en faveur de ce diagnostic ?",
+          "answer": "LDL très élevé à 2,63 g/L, SCA à 56 ans et hérédité coronaire précoce : père infarctus fatal à 49 ans, oncle stenté avant 60 ans. L'absence de tabac, HTA, diabète renforce l'hypothèse génétique."
+        },
+        {
+          "q": "Quel objectif lipidique retenez-vous dans ce contexte ?",
+          "answer": "Après SCA : très haut risque cardiovasculaire, cible LDL < 0,55 g/L ET diminution ≥ 50 % par rapport au niveau initial. Ici il faut une baisse très importante."
+        },
+        {
+          "q": "Quel traitement hypolipémiant instaurez-vous en 1re intention ?",
+          "answer": "Statine forte intensité d'emblee, par exemple atorvastatine 40-80 mg ou rosuvastatine 20 mg, associee aux mesures dietetiques. Informer sur observance et effets indésirables musculaires/hépatiques."
+        },
+        {
+          "q": "Après quel délai prévoyez-vous un bilan biologique de contrôle ? Que doit-il comporter ?",
+          "answer": "Contrôle lipidique à 4-6 semaines environ, puis adaptation. Bilan : EAL complet, transaminases si symptômes ou contrôle initial, CPK seulement si myalgies ou terrain à risque ; vérifier observance et tolérance."
+        },
+        {
+          "q": "En fonction des résultats du bilan lipidique de contrôle, quelles possibilités de renforcement du traitement hypolipémiant envisageriez-vous si l'objectif souhaité n'est pas atteint dans ce contexte post-syndrome coronarien aigu ?",
+          "answer": "Si cible non atteinte : ajouter ézétimibe à la statine maximale tolérée. Si LDL reste > cible, surtout > 0,70 g/L en prévention secondaire sous traitement maximal, discuter inhibiteur PCSK9 ; dépistage familial en parallèle."
+        }
+      ]
+    },
+    {
+      "item": "224",
+      "label": "224 HTA",
+      "stem": "Vous voyez pour une première consultation (renouvellement d'ordonnance) une patiente âgée de 47 ans. Elle a des antécédents de diabète de type 2 traité par metformine, elle pèse 75 kg pour 160 cm, fume 15 cigarettes/j depuis 25 ans. Elle décrit une dyspnée d'effort de stade 2 de la NYHA, stable. Sa pression artérielle est à 148/94 mmHg à la consultation. Elle n'a pas réalisé de bilan bio- logique depuis 1 an.",
+      "questions": [
+        {
+          "q": "Comment confirmez-vous le diagnostic d'HTA ?",
+          "answer": "Confirmer par mesures répétées hors cabinet : automesure tensionnelle ou MAPA. HTA si PA cabinet ≥ 140/90 mmHg confirmée, automesure ≥ 135/85 ou MAPA 24 h ≥ 130/80."
+        },
+        {
+          "q": "Si le diagnostic est confirmé, quel bilan initial clinique et paraclinique réalisez-vous ?",
+          "answer": "Bilan clinique : FDRCV, traitements, observance, recherche HTA secondaire, poids/IMC, tour de taille, PA aux deux bras, orthostatisme, souffles, signes d'IC/atteinte d'organe. Bilan paraclinique : ionogramme, créatinine/DFG, glycémie/HbA1c, EAL, BU/albuminurie, ECG ; ETT ici utile devant dyspnée, FO si HTA sévère/diabète selon contexte."
+        },
+        {
+          "q": "Si ce bilan ne révèle pas d'anomalie supplémentaire, quel(s) traitement(s) prescrivez-vous ?",
+          "answer": "Régles hygiénodiététiques + traitement antihypertenseur, souvent bithérapie d'emblee : IEC ou ARA2 + inhibiteur calcique ou thiazidique, en évitant IEC + ARA2. Chez diabétique, IEC/ARA2 intéressant si albuminurie ; intensifier aussi sevrage tabac, poids, lipides."
+        },
+        {
+          "q": "Quels éléments de suivi et surveillance mettez-vous en place ?",
+          "answer": "Suivi rapproché à 1 mois puis titration jusqu'à cible, avec automesure. Surveiller PA, tolérance, hypotension orthostatique, ionogramme/créatinine après IEC/ARA2/diurétique, albuminurie, ECG/atteintes d'organes et observance."
+        },
+        {
+          "q": "Une fois le diagnostic d'HTA établi, quels sont les principes de la prise en charge de sa pression",
+          "answer": "Objectif tensionnel ESC/CNEC : viser PAS 120-129 et PAD 70-79 mmHg si bien toléré, à adapter si fragilité, hypotension orthostatique, âge très avancé ou effets indésirables. Prise en charge globale du risque CV, pas seulement la PA."
+        },
+        {
+          "q": "Quel(s) diagnostic(s) évoquez-vous et sur quels éléments cliniques ?",
+          "answer": "Dyspnée d'effort chez une patiente HTA/diabétique/tabagique : évoquer insuffisance cardiaque, coronaropathie/angor équivalent, valvulopathie ou pathologie respiratoire liée au tabac. L'HTA peut avoir déjà entraîné HVG/IC à FE préservée."
+        },
+        {
+          "q": "Quels examens complémentaires réalisez-vous ?",
+          "answer": "ECG, ETT, BNP/NT-proBNP si suspicion d'IC, radiographie thoracique selon clinique, bilan biologique complet (NFS, créatinine, iono, TSH si besoin) et évaluation coronarienne si douleur/équivalent angineux ou anomalies. Spirometrie si orientation respiratoire."
+        },
+        {
+          "q": "Quelle prise en charge instaurez-vous ?",
+          "answer": "Traiter les FDRCV : HTA confirmée, diabète, tabac, surpoids, dyslipidémie. Si IC ou coronaropathie confirmée, prise en charge spécifique ; sinon bithérapie antihypertensive + RHD, statine selon risque, pas d'aspirine en prévention primaire systématique."
+        }
+      ]
+    },
+    {
+      "item": "225",
+      "label": "225 AOMI / anévrismes",
+      "stem": "Un homme de 68 ans, hypertendu consulte en raison de la découverte fortuite sur une échographie abdominale (réalisée lors d'un épisode de colique néphrétique) d'une augmentation de calibre de l'aorte abdominale sous-rénale.",
+      "questions": [
+        {
+          "q": "Que suspectez-vous ? Quelle est la cause principale ?",
+          "answer": "Suspecter un anévrisme de l'aorte abdominale sous-rénale, défini par un diamètre > 30 mm ou dilatation ≥ 1,5 fois le segment normal. La cause principale est l'athérosclérose, favorisée par âge, sexe masculin, tabac, HTA."
+        },
+        {
+          "q": "Que recherchez-vous ?",
+          "answer": "Rechercher symptômes ou complication : douleurs abdominales/lombaires, masse battante, signes de rupture/choc. Rechercher autres localisations : anévrismes iliaques/fémoraux/poplités, AOMI, coronaropathie, souffle carotidien, antécédents familiaux."
+        },
+        {
+          "q": "Quels examens complémentaires réalisez-vous ?",
+          "answer": "échographie abdominale pour mesurer le diamètre si découverte initiale incomplète, puis angioscanner aorto-iliaque si diamètre proche du seuil opératoire ou avant traitement. Bilan CV global et échodoppler artériel des membres inférieurs selon examen."
+        },
+        {
+          "q": "Quelle est votre attitude thérapeutique ?",
+          "answer": "Si petit AAA asymptomatique : contrôle des FDRCV (arrêt tabac, PA, statine), surveillance échographique selon taille. Indication de réparation si diamètre environ ≥ 50-55 mm, croissance rapide (> 5-10 mm/an selon référentiel), symptômes ou rupture ; chirurgie/endoprothèse selon anatomie et risque."
+        },
+        {
+          "q": "Par quel(s) examen(s) complétez-vous le bilan ? Quelle est votre attitude thérapeutique ?",
+          "answer": "Completer par recherche d'AOMI/anévrismes périphériques : palpation des pouls, IPS, échodoppler artériel, écho des poplitées si doute, et bilan coronarien selon terrain. Traitement : prévention secondaire si athérome associe, surveillance ou réparation de l'AAA selon seuil, urgence absolue si douleur brutale/choc."
+        }
+      ]
+    },
+    {
+      "item": "230",
+      "label": "230 Douleur thoracique",
+      "stem": "Une femme âgée de 78 ans vous consulte pour l'apparition depuis 2 heures d'une douleur thoracique survenue au repos de type brûlures, rétrosternales, irradiant dans le bras gauche et le dos. Dans ses antécédents, on note un diabète et une HTA ancienne bien équilibrée avec un inhibiteur de l'enzyme de conversion, un diurétique thiazidique à la dose maximale et un inhibiteur calcique de la classe des dihydropyridines. Elle n'a pas d'autres facteurs de risque. L'examen clinique réalisé alors que la patiente se plaint toujours d'une douleur thoracique est le suivant : poids = 84 kg, taille = 172 cm, température = 37 °C, FC = 95/min, fréquence respiratoire 32/minute. La pression artérielle est de 90/70 mmHg au bras gauche, 95/70 mmHg au bras droit. Les bruits du cœur sont réguliers, le B1 et le B2 sont bien perçus. L'auscultation cardiaque retrouve un souffle systolique au foyer aortique. L'auscultation pulmonaire retrouve des crépitants des bases.",
+      "questions": [
+        {
+          "q": "Comment recherchez-vous une détresse vitale chez cette patiente ?",
+          "answer": "évaluer ABCDE : conscience, FR, SpO2, signes de lutte/cyanose, PA aux deux bras, FC, marbrures, douleur persistante, signes d'OAP ou de choc. Chercher tamponnade (jugulaires, pouls paradoxal), dissection (asymetrie PA/pouls), EP grave et SCA compliqué."
+        },
+        {
+          "q": "Quelles urgences cardiologiques évoquez-vous en 1re intention face aux douleurs thoraciques que",
+          "answer": "évoquer systématiquement les urgences PIED : péricardite/tamponnade, infarctus-SCA, embolie pulmonaire, dissection aortique. Ajouter pneumothorax compressif/rupture œsophagienne selon contexte."
+        },
+        {
+          "q": "Quel examen complémentaire réalisez-vous immédiatement et quelles anomalies recherchez-vous ?",
+          "answer": "ECG 12 dérivations immédiat, idéalement < 10 min, compléte par V3R-V4R et V7-V9 si besoin. Rechercher sus-ST territorial, miroir, BBG/BBD nouveau, sous-ST/T négatives, troubles du rythme, signes d'EP ou péricardite."
+        },
+        {
+          "q": "Quelle est la place du dosage de la troponine ultrasensible ?",
+          "answer": "La troponine ultrasensible aide surtout au diagnostic de SCA ST- et se dose en série H0-H1/H2/H3 selon protocole. Elle ne doit jamais retarder l'ECG ni la reperfusion d'un SCA ST+ ; une troponine initiale normale n'élimine pas un SCA précoce."
+        },
+        {
+          "q": "Quand demandez-vous une radiographie thoracique ?",
+          "answer": "Radiographie thoracique après stabilisation si elle ne retarde pas une urgence vitale. Elle aide pour pneumothorax, OAP, pneumopathie, élargissement médiastinal, mais ne doit pas retarder ECG, coro ou angioscanner indiqué."
+        },
+        {
+          "q": "Quels autres examens paracliniques demandez-vous en 1re intention ?",
+          "answer": "Biologie : troponine, NFS, ionogramme, créatinine, coagulation, glycémie, groupe/Rh si urgence, D-dimères seulement si probabilité EP/dissection faible ou intermédiaire. Imagerie orientée : ETT au lit, angioscanner aortique/pulmonaire selon hypothèse."
+        },
+        {
+          "q": "Quelles sont les principales causes thoraciques et extrathoraciques de douleur aiguë en dehors des",
+          "answer": "Thoraciques : pneumothorax, pneumopathie/pleurésie, péricardite, pathologie œsophagienne, douleur pariétale. Extrathoraciques : douleur biliaire, pancréatite, ulcère, zona débutant, anxiete ; les diagnostics bénins ne se retiennent qu'après exclusion des urgences."
+        }
+      ]
+    },
+    {
+      "item": "339",
+      "label": "339 SCA / angor",
+      "stem": "Vous êtes de garde au service d'accueil des urgences. Vous prenez en charge un patient ayant une douleur thoracique aiguë depuis environ 2 heures.",
+      "questions": [
+        {
+          "q": "Que recherchez-vous en priorité ?",
+          "answer": "Rechercher d'abord une détresse vitale et les diagnostics/complications immédiates : choc, OAP, trouble du rythme, arrêt cardiaque imminent. Caractériser douleur et terrain, constantes, Killip, signes d'IDM VD, dissection ou EP avant antithrombotiques."
+        },
+        {
+          "q": "Quel(s) examen(s) complémentaire(s) réalisez-vous en premier lieu ?",
+          "answer": "ECG 12 dérivations en moins de 10 min, avec V3R-V4R et V7-V9 si besoin, puis troponine ultrasensible sans retarder la reperfusion si ST+. Bilan initial : NFS-plaquettes, ionogramme, créatinine, glycémie, coagulation, groupe, radio/ETT selon contexte."
+        },
+        {
+          "q": "En cas de SCA ST+, attitude thérapeutique aux urgences ?",
+          "answer": "Appel cardiologie/SAMU, monitorage, voie veineuse, antalgiques, aspirine 250 mg IV/PO + inhibiteur P2Y12 adapté + anticoagulation. Reperfusion urgente : PCI primaire si délai premier contact-balloon ≤ 120 min ; sinon fibrinolyse si < 12 h et pas de contre-indication, puis transfert en centre de coro. O2 seulement si SaO2 < 90 %."
+        },
+        {
+          "q": "En cas de souffle systolique, hypothèses ?",
+          "answer": "Complication mécanique d'IDM : rupture de pilier avec insuffisance mitrale aiguë ou communication interventriculaire post-infarctus ; aussi souffle de RA préexistant ou IM fonctionnelle. Faire ETT urgente."
+        },
+        {
+          "q": "Prescriptions à la sortie si évolution favorable ?",
+          "answer": "Traitement de sortie post-SCA : BASIC = bêtabloquant si pas CI, antiagrégants (DAPT 12 mois le plus souvent), statine forte dose, IEC/ARA2 surtout si HTA/diabète/FEVG basse, contrôle des FDRCV. Ajouter réadaptation cardiaque, trinitrine de crise, sevrage tabac, suivi cardio et éducation."
+        },
+        {
+          "q": "Objectifs thérapeutiques ?",
+          "answer": "Objectifs : absence d'ischémie/récidive, LDL < 0,55 g/L et baisse ≥ 50 %, PA contrôlée idéalement 120-129/70-79 si toléré, arrêt tabac, HbA1c individualisée si diabète, activité physique/réadaptation et observance. Prévenir remodelage, IC, troubles du rythme et thrombose de stent."
+        }
+      ]
+    },
+    {
+      "item": "152",
+      "label": "152 Endocardite",
+      "stem": "Monsieur H, âgé de 80 ans, présente des épisodes fébriles avec une fièvre à plus de 39 °C associée à des frissons depuis plus de 2 semaines. Il est porteur d'une valve aortique biologique qui lui a été posée 3 ans auparavant par voie percutanée (TAVI) pour un rétrécissement aortique. À l'examen, vous trouvez un patient dyspnéique au moindre effort et l'auscultation met en évidence un souffle diastolique intense maximal au foyer aortique et des râles crépitants des deux hémichamps pulmonaires. La fréquence cardiaque est à 35 bpm et la pression artérielle est de 145/45 mmHg.",
+      "questions": [
+        {
+          "q": "Quel est le premier diagnostic à évoquer ?",
+          "answer": "Endocardite infectieuse sur prothèse aortique/TAVI jusqu'à preuve du contraire. Fièvre prolongée, souffle diastolique nouveau, insuffisance cardiaque et bradycardie sévère sont très évocateurs."
+        },
+        {
+          "q": "Quels examens paracliniques demandez-vous en 1re intention ?",
+          "answer": "Avant antibiotique si possible : 3 paires d'hémocultures aéro-anaérobies, NFS, CRP, créatinine, bilan hépatique, BU/ECBU selon porte d'entrée. Imagerie cardiaque urgente : ETT puis ETO systématique sur prothèse."
+        },
+        {
+          "q": "Quelle antibiothérapie instaurez-vous avant d'obtenir les résultats des investigations ?",
+          "answer": "Si patient grave, antibiothérapie probabiliste IV bactéricide après hémocultures, couvrant staphylocoques, streptocoques et entérocoques, adaptee au contexte local et avis infectiologue/cardiologue. Si stable, on peut attendre les hémocultures pour cibler ; durée souvent 6 semaines sur prothèse."
+        },
+        {
+          "q": "Quelles complications suspectez-vous ?",
+          "answer": "Complications : insuffisance aortique aiguë avec OAP, abcès péri-annulaire responsable du BAV/bradycardie, désinsertion de prothèse, embolies septiques. Le pouls à 35 bpm fait craindre une atteinte péri-annulaire."
+        },
+        {
+          "q": "Quels examens d'imagerie peuvent être utiles ?",
+          "answer": "ETO en priorite, scanner cardiaque/aortique si suspicion d'abcès ou prothèse mal vue, TEP-scanner au 18FDG utile sur matériel prothètique. Scanner cérébral/abdominal selon signes ou bilan embolique."
+        },
+        {
+          "q": "Existe-t-il une indication chirurgicale théorique ?",
+          "answer": "Oui, indication théorique forte : insuffisance cardiaque par régurgitation sévère, trouble conductif évoquant abcès, infection sur prothèse et possible infection non contrôlée. Discussion urgente en Endocarditis Team."
+        },
+        {
+          "q": "Après guérison, quels conseils et mesures préventives seraient indiqués chez ce patient pour éviter",
+          "answer": "Prévention : hygiène buccodentaire stricte, suivi dentaire, antibioprophylaxie avant soins dentaires invasifs car prothèse/TAVI = haut risque, consultation rapide si fièvre. éviter automédication antibiotique avant hémocultures."
+        }
+      ]
+    },
+    {
+      "item": "153",
+      "label": "153 Prothèses",
+      "stem": "Un patient âgé de 72 ans consulte au cabinet médical en raison d'un essoufflement depuis 5 jours se manifestant dans les gestes simples de la vie quotidienne. Il relate également une perte de la force musculaire du membre supérieur droit, transitoire, il y a 48 heures. Il s'agit d'un patient que vous connaissez bien, son observance est parfois fantaisiste. Il a été opéré il y a 2 ans d'un remplacement valvulaire aortique par une prothèse mécanique associé à deux pontages aortocoronariens. À l'examen clinique : température 37°4 C, pression artérielle = 110/80 mmHg, fréquence cardiaque = 94 bpm. À l'auscultation : bruits de prothèse valvulaire diminués, souffle mésosystolique, maximum au foyer aortique 3/6 et souffle diastolique 2/6 mieux entendu au bord gauche du sternum, quelques râles crépitants bilatéraux aux deux bases pulmonaires, déficit moteur mineur du membre supérieur droit.",
+      "questions": [
+        {
+          "q": "Quel(s) diagnostic(s) évoquez-vous et que recherchez-vous à l'examen clinique pour étayer votre",
+          "answer": "évoquer thrombose obstructive de prothèse mécanique avec embolie cérébrale/AIT ou AVC, favorisée par mauvaise observance AVK. Rechercher bruits de prothèse diminués, signes d'IC, embolies périphériques, fièvre/porte d'entrée en faveur d'endocardite."
+        },
+        {
+          "q": "Que proposez-vous au patient pour sa prise en charge immédiate ?",
+          "answer": "Hospitalisation urgente en cardiologie/USIC avec monitorage, car dyspnée + déficit neurologique + suspicion de dysfonction de prothèse mécanique. évaluer neurologiquement sans délai et sécuriser anticoagulation selon INR/imagerie."
+        },
+        {
+          "q": "Quels examens complémentaires prioritaires biologiques et paracliniques prescrivez-vous et qu'en",
+          "answer": "Biologie : INR en urgence, NFS-plaquettes, créatinine, hémolyse (LDH, haptoglobine) si fuite, CRP et hémocultures si fièvre. Paraclinique : ECG, ETT puis ETO urgente, scanner/IRM cérébral selon déficit ; attendre une thrombose, pannus, fuite paraprothétique ou EI."
+        },
+        {
+          "q": "Quelles sont les grandes orientations thérapeutiques possibles en fonction des diagnostics évoqués ?",
+          "answer": "Si thrombose obstructive : HNF IV et discussion chirurgie ou fibrinolyse selon gravité/risque, en centre expert. Si AVC/AIT : prise en charge neurovasculaire coordonnée ; si endocardite : hémocultures puis antibiothérapie IV prolongée ± chirurgie."
+        },
+        {
+          "q": "Quelles sont les grandes lignes de conseils à communiquer aux patients traités par antivitamines K",
+          "answer": "AVK à vie pour valve mécanique, AOD formellement contre-indiqués. Expliquer INR cible, contrôles réguliers, observance, carnet/alerte, interactions médicaments/aliments, conduite en cas d'oubli/saignement, prévention EI et consultation rapide si fièvre ou geste invasif."
+        }
+      ]
+    },
+    {
+      "item": "233IA",
+      "label": "233 IA",
+      "stem": "Un homme de 51 ans vient vous consulter car depuis quelques mois, il se sent essoufflé à la montée de deux étages. Il n'a pas d'antécédent particulier en dehors de deux entorses. Il n'a pas de facteur de risque cardiovasculaire. À l'auscultation, vous retrouvez un souffle systolique 2/6 au foyer aortique et un souffle diastolique 3/6 au bord gauche du sternum. Sa pression artérielle est à 152/58 mmHg.",
+      "questions": []
+    },
+    {
+      "item": "233IM",
+      "label": "233 IM",
+      "stem": "M. B, 63 ans, est adressé en consultation de cardiologie par son médecin traitant qui a entendu un souffle systolique. Il n'a pas d'antécédent particulier, ne prend aucun traitement et indique se sentir plus essoufflé depuis quelques semaines pour ses sorties à vélo avec des palpitations fréquentes. L’auscultation retrouve un souffle apexien en jet de vapeur, holosystolique avec renforcement télésystolique 3/6 irradiant dans l'aisselle. L'auscultation pulmonaire est normale. L'échocardiographie retrouve une insuffisance mitrale (IM) par prolapsus de valve postérieure (feston P2) par rupture de cordage. Le ventricule gauche est dilaté (diamètre télésystolique à 43 mm), la fraction d'éjection ventriculaire gauche est normale à 65 %, l'atrium gauche est dilaté à 65 mL/m². L'insuffisance mitrale est sévère (surface d'orifice régurgitant mesurée à 50 mm², volume régurgité à 67 mL).",
+      "questions": []
+    },
+    {
+      "item": "233RA",
+      "label": "233 RA",
+      "stem": "Vous êtes sollicité pour une consultation urgente pour une patiente âgée de 82 ans en raison d'une syncope survenue à l'effort et qui relate une dyspnée croissante depuis plusieurs semaines à l'effort. Elle est suivie pour une hypertension artérielle et pour un souffle cardiaque systolique depuis quelques années. En qualité de médecin traitant :",
+      "questions": [
+        {
+          "q": "vous voyez cette patiente immédiatement ou vous prévoyez de la voir dans le mois à venir ?",
+          "answer": "Vous la voyez immédiatement : syncope d'effort + dyspnée chez une patiente avec souffle aortique évoquent un RA serré symptomatique, situation à haut risque. Il faut organiser une évaluation cardiologique rapide."
+        },
+        {
+          "q": "quels sont les arguments auscultatoires pour un rétrécissement aortique serré ?",
+          "answer": "Souffle systolique éjectionnel rude au foyer aortique irradiant aux carotides, B2 diminué/aboli, pic tardif, frémissement, pouls carotidien faible et retardé. Le souffle peut diminuer si RA très serré ≥ bas débit."
+        },
+        {
+          "q": "la syncope associée à un souffle systolique vous incite à prendre le téléphone pour que la patiente",
+          "answer": "Oui, la syncope d'effort avec souffle systolique impose un avis cardiologique urgent/hospitalier. Le RA serré symptomatique a un mauvais pronostic sans remplacement valvulaire."
+        },
+        {
+          "q": "quels sont les deux examens complémentaires à réaliser en 1re intention ?",
+          "answer": "ECG et échocardiographie transthoracique en 1re intention. L'ETT confirme séverite, FEVG, HVG, gradients et surface ; ECG recherche HVG/troubles conductifs."
+        },
+        {
+          "q": "pensez-vous qu'un test d'effort soit nécessaire pour préciser le diagnostic et la prise en charge ?",
+          "answer": "Non si elle est symptomatique : le test d'effort est contre-indiqué/inutile devant RA serré symptomatique suspecte. Il peut seulement aider dans certains RA serrés asymptomatiques très sélectionnés."
+        },
+        {
+          "q": "quelle est l'anomalie la plus probable à l'ECG ?",
+          "answer": "HVG électrique, parfois troubles de repolarisation latéraux. Des troubles conductifs peuvent aussi être présents chez le sujet âgé/calcifications."
+        },
+        {
+          "q": "quels paramètres échocardiographiques permettent de retenir un rétrécissement aortique serré ?",
+          "answer": "RA serré si surface < 1 cm² (ou < 0,6 cm²/m²), vitesse max > 4 m/s, gradient moyen > 40 mmHg. évaluer aussi FEVG, volume d'ejection, PAPS et calcifications."
+        },
+        {
+          "q": "à l'échocardiographie, l'hypertrophie ventriculaire gauche est associée à un petit ventricule gauche,",
+          "answer": "Ce profil évoque une hypertrophie concentrique avec petit VG, fréquente dans le RA serré du sujet âgé hypertendu. Si bas débit/bas gradient malgré FE préservée, discuter RA paradoxal et compléter par score calcique ou expertise."
+        }
+      ]
+    },
+    {
+      "item": "238",
+      "label": "238 Souffle enfant",
+      "stem": "Vous êtes médecin généraliste et vous recevez en consultation un enfant âgé de 3 ans, qui vient pour un écoulement nasal fébrile. À l'auscultation précordiale, vous entendez un souffle systolique et notez une irradiation dans le dos.",
+      "questions": [
+        {
+          "q": "Vous rassurez les parents, l'enfant a de la fièvre et c'est normal d'entendre un souffle ?",
+          "answer": "Non, la fièvre peut majorer un souffle innocent, mais l'irradiation dans le dos est un signe d'orientation organique. Il faut examiner complétement l'enfant avant de rassurer."
+        },
+        {
+          "q": "Un souffle holosystolique est évocateur d'un souffle fonctionnel ?",
+          "answer": "Non. Un souffle holosystolique évoque plutôt une CIV ou une insuffisance valvulaire ; un souffle innocent est systolique bref, proto/mésosystolique, faible, variable, sans irradiation inquiétante."
+        },
+        {
+          "q": "Vous précisez aux parents qu'il pourrait bien s'agir d'une coarctation aortique ?",
+          "answer": "Oui, une irradiation dorsale impose de rechercher une coarctation : pouls fémoraux diminués/absents, gradient tensionnel membres supérieurs/inférieurs, HTA des membres supérieurs. Ce n'est pas le seul diagnostic mais il doit être évoque."
+        },
+        {
+          "q": "Vous adressez rapidement l'enfant à un cardiopédiatre pour réaliser une échocardiographie ?",
+          "answer": "Oui, avis cardiopédiatrique et ETT rapidement car souffle irradiant dans le dos = caractére organique possible. En attendant : recherche cyanose, signes d'IC, pouls fémoraux, saturation, PA aux 4 membres si possible."
+        }
+      ]
+    },
+    {
+      "item": "232",
+      "label": "232 FA",
+      "stem": "Un patient de 60 ans hypertendu vous consulte car il ressent des palpitations persistantes accompagnées d'une dyspnée d'effort inhabituelle depuis 48 heures. Les chiffres tensionnels sont satisfaisants et la fréquence cardiaque est à 115 bpm.",
+      "questions": [
+        {
+          "q": "Quel examen complémentaire diagnostique faites-vous en 1re intention ?",
+          "answer": "ECG 12 dérivations en première intention, idéalement pendant les symptômes. La FA se diagnostique par absence d'ondes P individualisées et irrégularite compléte des QRS."
+        },
+        {
+          "q": "Quels signes cliniques recherchez-vous dans ce contexte ?",
+          "answer": "Rechercher mauvaise tolérance : hypotension, douleur thoracique, OAP/IC, syncope, trouble neurologique. Chercher aussi facteurs favorisants : infection, hyperthyroïdie, alcool, apnee du sommeil, valvulopathie, signes emboliques."
+        },
+        {
+          "q": "Vous suspectez une fibrillation atriale, quels examens biologiques prescrivez-vous ?",
+          "answer": "Ionogramme avec kaliémie/magnésémie, créatinine/DFG avant anticoagulant, NFS, TSHus, glycémie/HbA1c selon contexte, bilan hépatique si AOD. Troponine/BNP si douleur, dyspnée importante ou suspicion de SCA/IC."
+        },
+        {
+          "q": "Le diagnostic de fibrillation atriale est confirmé, quels traitements médicamenteux prescrivez-vous ?",
+          "answer": "Deux axes : contrôle de fréquence par bêtabloquant ou inhibiteur calcique bradycardisant si pas d'IC systolique, digoxine selon terrain ; anticoagulation selon CHA2DS2-VA. Ici HTA = 1 point : ACO à discuter, AOD préféré si retenu ; pas d'AVK sauf valve mécanique/RM modéré-sévère."
+        },
+        {
+          "q": "Vous revoyez le patient 48 heures plus tard car il garde des symptômes. Quelle est votre prise en",
+          "answer": "Si symptômes persistants malgré contrôle de fréquence, discuter contrôle du rythme/cardioversion. Si FA > 24 h ou durée incertaine : anticoagulation efficace 3 semaines avant et 4 semaines après, ou ETO sans thrombus pour cardioversion précoce ; CEE immédiat si instabilité."
+        }
+      ]
+    },
+    {
+      "item": "236",
+      "label": "236 Conduction",
+      "stem": "Un homme de 81 ans se présente au service des urgences pour un malaise sans perte de connaissance, accompagné d'une asthénie et d'une dyspnée sans douleur thoracique évoluant depuis 2 jours. À l'exa- men clinique, les constantes vitales révèlent une bradycardie à 32 bpm.",
+      "questions": [
+        {
+          "q": "Quel examen proposez-vous immédiatement ? Quelles sont les hypothèses diagnostiques les plus",
+          "answer": "ECG 12 dérivations immédiat avec monitorage. Hypothèses : BAV complet ou haut degré, BAV 2 Mobitz 2, dysfonction sinusale sévère, bradycardie médicamenteuse ou métabolique."
+        },
+        {
+          "q": "Que recherchez-vous à l'interrogatoire et à l'examen clinique ?",
+          "answer": "Interroger sur traitements bradycardisants (bêtabloquant, vérapamil/diltiazem, digoxine, amiodarone), malaise/syncope, douleur thoracique, infection, antécédents. Examiner tolérance : PA, confusion, choc, OAP, signes d'IC, pouls, souffle."
+        },
+        {
+          "q": "Quels examens paracliniques envisagez-vous ?",
+          "answer": "ECG long/monitorage, ionogramme-kaliémie, créatinine, TSH, troponine si SCA possible, NFS/CRP selon contexte, dosage digoxine si concerné. ETT pour cardiopathie et Holter/EEP secondairement selon diagnostic."
+        },
+        {
+          "q": "S'agit-il d'une situation d'urgence ? Faut-il hospitaliser le patient ? Quel peut-être le risque",
+          "answer": "Oui : bradycardie à 32 bpm symptomatique = urgence et hospitalisation monitorée. Risque de syncope traumatique, asystolie, BAV complet prolongé, choc ou mort subite."
+        },
+        {
+          "q": "Quelles étiologies réversibles faut-il éliminer ?",
+          "answer": "Médicaments bradycardisants, hyperkaliémie, hypothyroïdie, ischémie/IDM inférieur, myocardite, troubles métaboliques/hypothermie. Corriger avant pacemaker définitif si cause clairement réversible."
+        },
+        {
+          "q": "En cas de mauvaise tolérance hémodynamique, quels traitements temporaires peut-on proposer ?",
+          "answer": "Si mauvaise tolérance : atropine IV surtout si nodal/sinusal, isoprénaline si pas d'IDM aigu, puis stimulation temporaire transcutanee ou endocavitaire. Mesures de réanimation et correction de la cause."
+        },
+        {
+          "q": "En l'absence de cause réversible, quel traitement faut-il envisager ?",
+          "answer": "Pacemaker définitif si BAV 3, BAV 2 Mobitz 2/haut degré ou dysfonction sinusale symptomatique sans cause réversible. Le choix du mode dépend du rythme atrial (VVI si FA permanente)."
+        }
+      ]
+    },
+    {
+      "item": "237",
+      "label": "237 Palpitations",
+      "stem": "Mme T, 45 ans, vous consulte à la demande de son médecin traitant car elle a présenté plusieurs épisodes de palpitations depuis environ 3 mois, qui ont duré 30 à 45 minutes. Elle n'a pas d'antécédents cardiaques connus et ne prend aucun traitement. Son examen clinique est sans particularité, et son ECG vous semble normal.",
+      "questions": [
+        {
+          "q": "Quels sont les éléments importants à recueillir au cours de l'interrogatoire ?",
+          "answer": "Début/fin brutal ou progressif, durée, fréquence, régularite, déclencheurs, effort/repos, café/alcool/drogues, symptômes associes (syncope, douleur, dyspnée), polyurie post-crise. Antecedents cardiaques, familiaux de mort subite, traitements allongeant QT."
+        },
+        {
+          "q": "Comment appréciez-vous la gravité de ses symptômes ?",
+          "answer": "Signes de gravité : syncope/lipothymie, douleur thoracique, dyspnée/OAP, hypotension, FC très rapide > 150, cardiopathie connue, antecedent familial de mort subite, QRS larges si ECG de crise. Ici examen et ECG normaux sont rassurants mais ne documentent pas les crises."
+        },
+        {
+          "q": "Quel bilan biologique prescrivez-vous ?",
+          "answer": "NFS, ionogramme avec kaliémie, créatinine, TSHus ; β-hCG si femme en âge de procréer avant certains traitements/examens. Ajouter bilan selon contexte (toxiques, ferritine, etc.)."
+        },
+        {
+          "q": "Quel bilan cardiaque minimal proposez-vous ?",
+          "answer": "ECG de repos déje fait, puis ETT pour rechercher une cardiopathie structurelle. Selon suspicion : épreuve d'effort si palpitations d'effort ou Holter/monitoring."
+        },
+        {
+          "q": "Vous paraît-il important de documenter une éventuelle récidive et, si oui, comment envisagez-vous",
+          "answer": "Oui, objectif = corrélation électroclinique. Holter 24-48 h si crises fréquentes, enregistreur externe/montre ECG si crises espacées, moniteur implantable si épisodes rares mais graves ; consignes pour consulter pendant une crise."
+        }
+      ]
+    },
+    {
+      "item": "342",
+      "label": "342 Malaises / syncope",
+      "stem": "Une femme de 88 ans contacte le Samu après une perte de connaissance brutale survenue lors de la marche. Elle ne rapporte aucun autre symptôme. Ses antécédents médicaux incluent un diabète de type 2 et une arthrose traitée par antalgiques. À l'arrivée des pompiers, elle est retrouvée au sol avec un traumatisme facial. Les constantes relevées montrent une fréquence cardiaque à 85 battements par minute et une pression artérielle à 154/95 mmHg.",
+      "questions": [
+        {
+          "q": "Quelles sont les causes les plus fréquentes à l'origine d'une syncope chez le sujet âgé ?",
+          "answer": "Chez le sujet âgé : hypotension orthostatique/médicamenteuse, syncope réflexe dont hypersensibilité sinocarotidienne, et causes cardiaques (BAV, dysfonction sinusale, tachyarythmie, RA serré). Les causes sont souvent plurifactorielles."
+        },
+        {
+          "q": "Quels sont les principaux éléments à recueillir à l'interrogatoire ?",
+          "answer": "Circonstances exactes, prodromes, position, effort, palpitations/douleur/dyspnée, durée, récupération, traumatismes, morsure de langue, témoins. Traitements, hydratation, antécédents cardiaques/neurologiques, épisodes antérieurs, ATCD familiaux de mort subite."
+        },
+        {
+          "q": "Que ne faut-il pas manquer à l'examen clinique ?",
+          "answer": "Signes de gravité et cause cardiaque : souffle de RA, signes d'IC, déficit neurologique persistant, traumatisme facial, PA couchée/debout, pouls, ECG. Ne pas oublier glycémie capillaire et examen complet post-chute."
+        },
+        {
+          "q": "Une cause neurologique vous paraît-elle plausible ?",
+          "answer": "Peu probable si perte de connaissance brève, brutale, avec récupération compléte et sans déficit persistant. Une cause neurologique se discute si déficit focal durable, crise épileptique typique, confusion prolongée ; un AIT carotidien isole ne donne habituellement pas de syncope."
+        },
+        {
+          "q": "Qu'attendez-vous de l'enregistrement ECG ?",
+          "answer": "ECG indispensable : BAV, pauses, dysfonction sinusale, TV, FA rapide, QT long, Brugada, WPW, BB alternant, signes d'ischémie. Un ECG normal n'élimine pas une cause rythmique paroxystique."
+        },
+        {
+          "q": "À l'issue de ces premières étapes, aucune orientation diagnostique n'est envisagée : pensez-vous",
+          "answer": "Non, chez cette patiente âgée avec syncope brutale à la marche et traumatisme, il existe des critères de gravité justifiant au moins une évaluation hospitalière/monitorée. Une simple réassurance serait inadaptée."
+        },
+        {
+          "q": "Quelles explorations complémentaires suggérez-vous ?",
+          "answer": "Selon orientation : ETT quasi systématique si suspicion cardiaque/souffle, Holter ou télémetrie, enregistreur implantable si récidives inexpliquées, test d'orthostatisme, massage sinocarotidien si > 40 ans sans contre-indication. Biologie ciblée et imagerie cérébrale seulement si signe neurologique/traumatisme."
+        }
+      ]
+    },
+    {
+      "item": "203",
+      "label": "203 Dyspnée",
+      "stem": "Mme X, 69 ans, consulte pour un essoufflement apparu depuis quelques semaines. Elle a comme antécédent une hypertension artérielle traitée depuis 10 ans, une dyslipidémie traitée par régime seul et un tabagisme évalué à 15 PA. À l'examen, son poids est de 85 kg, sa taille de 163 cm, sa pression artérielle est mesurée à 165/94 mmHg et sa fréquence cardiaque à 90 bpm.",
+      "questions": [
+        {
+          "q": "À l'interrogatoire, comment caractérisez-vous la dyspnée et comment évaluez-vous son importance",
+          "answer": "Préciser aiguë/chronique, mode d'installation, facteurs déclenchants, orthopnée, dyspnée paroxystique nocturne, douleur thoracique, sifflements, toux, fièvre. Quantifier par NYHA I-IV, périmêtre de marche, retentissement quotidien et signes de gravité."
+        },
+        {
+          "q": "Que recherchez-vous à l'examen clinique pour évoquer une insuffisance cardiaque ?",
+          "answer": "Signes d'IC : crépitants, turgescence jugulaire, reflux hépatojugulaire, edemes des membres inférieurs, prise de poids, hépatomegalie, galop B3, souffle valvulaire, tachycardie/arythmie. Rechercher aussi SpO2, signes de lutte, cyanose, HTA ou hypotension."
+        },
+        {
+          "q": "Quels examens complémentaires sont nécessaires pour préciser la prise en charge ?",
+          "answer": "ECG, radiographie thoracique, BNP/NT-proBNP, NFS, ionogramme-créatinine, TSH selon contexte, bilan lipidique/diabète, gaz du sang si sévère. ETT indispensable si suspicion d'IC ; D-dimères/angioscanner si EP possible, explorations respiratoires selon orientation."
+        }
+      ]
+    },
+    {
+      "item": "234",
+      "label": "234 Insuffisance cardiaque",
+      "stem": "M. R, 72 ans, consulte aux urgences pour une dyspnée aiguë. Il présente une HTA traitée par amlodipine, un diabète de type 2 traité par metformine, une obésité (IMC 32 kg/m²), un tabagisme sevré depuis 1 an, et une notion de BPCO. Il n’a pas de cardiopathie connue. À l'examen, il est polypnéique au repos, sa pression artérielle est à 172/82 mmHg, le rythme est rapide et irrégulier, les bruits du cœur sont assourdis.",
+      "questions": [
+        {
+          "q": "Quelle prise en charge immédiate envisagez-vous ?",
+          "answer": "Prise en charge d'urgence : position assise, monitorage, voie veineuse, ECG, SpO2, O2 si SaO2 < 90 %, évaluer choc. Si OAP hypertensif probable : furosémide IV et dérives nitrés si PAS > 110 mmHg, sans introduire de bêtabloquant en poussée."
+        },
+        {
+          "q": "Quels éléments sont en faveur d’un œdème aigu pulmonaire (OAP) ?",
+          "answer": "Polypnée au repos, bruits du cœur assourdis, rythme rapide irrégulier, HTA, possibles crépitants/orthopnée à rechercher, antécédents HTA/diabète/obésité. Un OAP associe dyspnée aiguë, orthopnée, crépitants bilatéraux, parfois expectoration mousseuse."
+        },
+        {
+          "q": "Comment le confirmer ?",
+          "answer": "Clinique + BNP/NT-proBNP + radiographie thoracique et surtout ETT. En aigu, BNP < 100 ou NT-proBNP < 300 rend l'IC peu probable ; l'ETT précise FEVG, valves, pressions et fonction VD."
+        },
+        {
+          "q": "Quels facteurs déclenchants rechercher ?",
+          "answer": "FA rapide, poussée hypertensive, SCA, infection, rupture de traitement/ecart salé, embolie pulmonaire, anémie, insuffisance rénale, AINS/corticoïdes, trouble thyroïdien. Ici le rythme irrégulier oriente vers FA."
+        },
+        {
+          "q": "Quels diagnostics différentiels éliminer ?",
+          "answer": "EP, pneumopathie, exacerbation BPCO/asthme, pneumothorax, tamponnade, SCA sans OAP, anémie ou acidose métabolique. L'ECG, radio, gaz du sang, D-dimères/angioscanner selon probabilité aident au tri."
+        },
+        {
+          "q": "Si l'OAP est confirmé, quels traitements mettre en œuvre et dans quel délai ?",
+          "answer": "Traitement immédiat dès suspicion clinique, sans attendre tous les examens : assis, O2 si SpO2 < 90 %, furosémide IV environ 1 mg/kg si congestion, nitrés IV si PAS > 110 mmHg, ventilation non invasive si détresse. Traiter le facteur déclenchant, anticoaguler si FA/EP selon indication."
+        },
+        {
+          "q": "Une fois l’épisode aigu contrôlé, quelle prise en charge thérapeutique envisagez-vous pour le moyen et le long terme ?",
+          "answer": "Après stabilisation : caractériser FEVG. Si HFrEF : 4 piliers IEC/ARNI ou ARA2 + bêtabloquant une fois euvolémique + ARM + gliflozine, diurétique d'anse si congestion ; si HFpEF : gliflozine et contrôle HTA/FA/poids. éducation : sel < 6 g/j, pesée, observance, vaccination, réadaptation."
+        }
+      ]
+    },
+    {
+      "item": "226",
+      "label": "226 TVP / EP",
+      "stem": "Mme E., 68 ans, consulte aux urgences pour une dyspnée apparue depuis 1 semaine de manière assez brutale. Elle revient d'un voyage à la Réunion. Elle n'a pas d'antécédent particulier et ne prend aucun médicament. L'examen clinique retrouve une pression artérielle à 110/90 mmHg, une fréquence cardiaque à 100/min, l'auscultation cardiopulmonaire est normale. Il n'y a pas de signes de thrombose veineuse profonde. L'ECG montre une tachycardie sinusale et des ondes T inversées en V2V3.",
+      "questions": [
+        {
+          "q": "Quelle est la probabilité d'embolie pulmonaire devant ce tableau clinique ?",
+          "answer": "Probabilite clinique au moins intermédiaire : dyspnée brutale, voyage long récent, tachycardie, anomalies ECG droites, sans autre diagnostic évident. Utiliser Wells ou Genéve avant les examens."
+        },
+        {
+          "q": "Comment confirmez-vous le diagnostic ?",
+          "answer": "Si probabilité faible/intermédiaire : D-dimères puis angioscanner si positifs (seuil âge x 10 après 50 ans). Si probabilité forte ou signes de gravité : angioscanner pulmonaire d'emblee et anticoagulation sans attendre sauf contre-indication."
+        },
+        {
+          "q": "Quel bilan biologique demandez-vous ?",
+          "answer": "NFS-plaquettes, créatinine/DFG, bilan d'hémostase, bilan hépatique selon AOD, troponine et BNP/NT-proBNP pour gravité, gaz du sang si hypoxémie. D-dimères seulement si probabilité non forte."
+        },
+        {
+          "q": "Quelle est la place de l'échodoppler veineux et de l'échocardiographie chez cette patiente ?",
+          "answer": "échodoppler veineux utile si signes de TVP, contre-indication au scanner ou scanner non disponible ; une TVP proximale confirme la MTEV. ETT surtout si instabilité/hypotension ou stratification de gravité, pas systématique en EP stable bas risque."
+        },
+        {
+          "q": "Quels diagnostics différentiels évoquer ?",
+          "answer": "SCA, OAP/IC, pneumopathie, exacerbation BPCO/asthme, pneumothorax, péricardite, dissection aortique, anémie. L'association dyspnée + radio normale + tachycardie doit faire garder l'EP en tête."
+        },
+        {
+          "q": "Quelle prise en charge thérapeutique envisagez-vous et dans quel délai ?",
+          "answer": "Anticoagulation curative dès suspicion intermédiaire/forte si risque hémorragique acceptable. EP non grave : AOD (apixaban/rivaroxaban) ou HBPM puis relais ; EP haut risque avec choc/PAS < 90 : USIC, HNF et fibrinolyse en urgence."
+        },
+        {
+          "q": "Quel bilan étiologique envisagez-vous ?",
+          "answer": "Rechercher facteur déclenchant : voyage/immobilisation, chirurgie, cancer, œstrogènes, ATCD MTEV, thrombophilie familiale. À 68 ans, vérifier dépistages de cancer recommandés et examen clinique ; pas de thrombophilie systématique sauf contexte particulier."
+        },
+        {
+          "q": "Quelle durée d'anticoagulation et quel suivi proposez-vous à cette patiente ?",
+          "answer": "Durée minimale 3 mois ; si épisode provoqué par facteur transitoire majeur, souvent 3 mois. Suivi clinique, tolérance/observance AOD, fonction rénale, signes de récidive ou HTP post-embolique ; éviter œstrogènes et favoriser mobilisation."
+        }
+      ]
+    },
+    {
+      "item": "235",
+      "label": "235 Péricardite",
+      "stem": "Vous accueillez au service des urgences un homme de 26 ans, sportif, qui présente une douleur thoracique intense (EVA 8/10), rétrosternale, fluctuante car majorée par les inspirations et la position en décubitus. La douleur a débuté la veille au soir. Contexte de virose ORL récente. Fébricule 38 °C, frottement systolodiastolique. ECG initial normal puis sus-décalage ST diffus n'englobant pas l'onde T. Aspirine 1 g soulage. CRP 15 mg/L, troponine normale, ETT : épanchement péricardique minime.",
+      "questions": [
+        {
+          "q": "Quels critères permettent de retenir le diagnostic de péricardite aiguë chez ce patient ?",
+          "answer": "Diagnostic si au moins 2 critères sur 4 : douleur typique, frottement péricardique, anomalies ECG, épanchement péricardique. Ici douleur pleurétique/posturale, contexte viral, sus-ST diffus et épanchement minime suffisent ; la CRP élevée soutient l'inflammation."
+        },
+        {
+          "q": "Quels éléments ECG différencient une péricardite d'un SCA ST+ ?",
+          "answer": "Péricardite : sus-décalage ST diffus, plutôt concave, sans territoire coronaire ni miroir significatif, souvent avec sous-décalage PQ, n'englobant pas l'onde T. STEMI : sus-ST territorial, convexe/Pardee, miroir, éventuelles ondes Q et douleur typiquement constrictive."
+        },
+        {
+          "q": "Quel est le rôle de la troponine et de l'échocardiographie ?",
+          "answer": "La troponine recherche une myopéricardite ; si élevée, surveillance plus prudente et restriction sportive prolongée. L'ETT est systématique pour quantifier l'épanchement, chercher une tamponnade et servir de réference ; elle peut être normale dans une péricardite sèche."
+        },
+        {
+          "q": "Quel traitement proposez-vous en première intention ?",
+          "answer": "Repos + AINS/aspirine à dose anti-inflammatoire 1-2 semaines avec décroissance selon douleur/CRP, IPP si besoin, et colchicine 0,5 mg x 2/j pendant 3 mois (0,5 mg/j si < 70 kg ou insuffisance rénale/âge). Pas de corticoïdes en première intention dans une forme virale bénigne."
+        },
+        {
+          "q": "Quelles consignes donnez-vous concernant le sport ?",
+          "answer": "Arrêt du sport au moins 1 mois et jusqu'à disparition des symptômes avec normalisation CRP, ECG et échographie. Si myopéricardite/troponine élevée, arrêt beaucoup plus prolongé, classiquement 3-6 mois avec avis spécialisé."
+        },
+        {
+          "q": "Le traitement ambulatoire est-il possible ? Quelles précautions ?",
+          "answer": "Oui si forme bénigne : pas de fièvre > 38 °C persistante, pas de début subaigu, pas d'épanchement abondant (> 20 mm), pas de tamponnade, pas d'immunodépression/anticoagulation/traumatisme et bonne réponse aux AINS. Prévoir contrôle clinique et CRP, ± ECG/ETT, et consignes de retour si dyspnée, malaise, douleur croissante."
+        }
+      ]
+    },
+    {
+      "item": "331",
+      "label": "331 Arrêt cardiaque",
+      "stem": "Vous êtes de garde en cardiologie. Il est 0 h 30 et l'infirmière des soins intensifs vous appelle pour un jeune malade de 54 ans qui a bénéficié d'une angioplastie pour un infarctus hier et qui ne répond plus aux questions depuis 2 minutes. Au scope, le patient présente une fibrillation ventriculaire. Elle a commencé à réaliser un massage cardiaque externe.",
+      "questions": [
+        {
+          "q": "Quel est votre diagnostic ?",
+          "answer": "Arrêt cardiorespiratoire par fibrillation ventriculaire, rythme chocable, chez un patient post-infarctus. Diagnostic clinique : inconscience, absence de respiration normale et absence de pouls central."
+        },
+        {
+          "q": "Quelle est la durée du no-flow ?",
+          "answer": "No-flow = durée sans massage cardiaque. Ici l'infirmiere a débute le massage rapidement après 2 minutes de non-réponse : no-flow probablement très court, au maximum 2 minutes si aucune RCP avant."
+        },
+        {
+          "q": "Quelle est votre prise en charge thérapeutique immédiate ?",
+          "answer": "Appel renfort/équipe de réanimation, poursuite MCE de qualité 100/min, défibrillation immédiate (CEE/DSA) car FV, oxygène/voie veineuse, cycles RCP 2 min. Adrénaline 1 mg toutes les 4 min et amiodarone 300 mg avant le 3e choc si FV persistante."
+        },
+        {
+          "q": "Quelle est la cause la plus probable de l'arrêt cardiaque ?",
+          "answer": "Cause la plus probable : complication rythmique précoce de l'infarctus récent ou ré-occlusion/thrombose de stent avec ischémie aiguë. Rechercher aussi troubles ioniques, hypoxie, tamponnade, EP."
+        },
+        {
+          "q": "Le patient récupère une activité électrique efficace après 3 minutes, quel est son pronostic",
+          "answer": "Pronostic plutôt favorable car rythme initial chocable, no-flow court, low-flow très bref (3 min) et contexte monitoré. Il dépendra surtout de l'état neurologique, de la cause réversible et de la fonction cardiaque."
+        },
+        {
+          "q": "Quelle est votre prise en charge immédiate en terme diagnostique et thérapeutique après récupé-",
+          "answer": "Post-ROSC : ABC, monitorage USIC, ECG 12 dérivations, gaz/ionogramme/lactate/troponine, ETT, contrôle température et glycémie, traitement du choc si besoin. Coronarographie urgente si suspicion de SCA/réocclusion, optimisation anti-ischémique et prévention des récidives rythmiques."
+        }
+      ]
+    }
+  ]
+}
