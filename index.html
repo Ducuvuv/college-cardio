@@ -369,6 +369,8 @@ let ECOS = [];
 let ECG_RAPPELS = null;
 let MNEMOS = { items: [] };
 let VIGNETTES = { vignettes: [], note: "" };
+let FLASHCARDS = { cards: [], items: [] };
+let fcardState = null; // { deck, i, revealed, known, unknown, itemId }
 let vignetteState = null; // { id: itemId } or null = list
 let ecosRun = null;
 let oralState = null;
@@ -410,11 +412,12 @@ function loadStats() {
       lastDay: s.lastDay || null,
       srs: s.srs || {},
       coursCards: s.coursCards || {},
+      fcards: s.fcards || {},
       pipelines: s.pipelines || {},
       exams: s.exams || [],
     };
   } catch {
-    return { byItem: {}, sessions: [], xp: 0, streak: 0, bestStreak: 0, lastDay: null, srs: {}, coursCards: {}, pipelines: {}, exams: [] };
+    return { byItem: {}, sessions: [], xp: 0, streak: 0, bestStreak: 0, lastDay: null, srs: {}, coursCards: {}, fcards: {}, pipelines: {}, exams: [] };
   }
 }
 function saveStats(s) { localStorage.setItem(STORE, JSON.stringify(s)); }
@@ -985,6 +988,9 @@ async function boot() {
     try {
       VIGNETTES = await (await fetch("vignettes.json")).json();
     } catch { VIGNETTES = { vignettes: [], note: "" }; }
+    try {
+      FLASHCARDS = await (await fetch("flashcards_lot1.json")).json();
+    } catch { FLASHCARDS = { cards: [], items: [] }; }
   } catch (e) {
     viewEl.innerHTML = `<div class="card err">Impossible de charger <code>bank.json</code>. Lance <code>lancer.bat</code>.</div>`;
     return;
@@ -1011,8 +1017,8 @@ async function boot() {
 }
 
 function render() {
-  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "ecg" || view === "mnemos" || view === "vignettes" || view === "notions" || view === "arbres" || view === "ecos" || view === "ecos-play" || view === "oral");
-  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "mnemos", "vignettes", "fiches", "cours", "ecg", "notions", "cours-active", "flash", "arbres", "ecos", "ecos-play", "oral"].includes(view));
+  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "ecg" || view === "mnemos" || view === "vignettes" || view === "fcards" || view === "notions" || view === "arbres" || view === "ecos" || view === "ecos-play" || view === "oral");
+  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "mnemos", "vignettes", "fiches", "cours", "ecg", "notions", "cours-active", "flash", "fcards", "arbres", "ecos", "ecos-play", "oral"].includes(view));
   $("tab-cours").classList.toggle("active", view === "cours" || view === "cours-active");
   $("tab-ecg").classList.toggle("active", view === "ecg");
   $("tab-notions").classList.toggle("active", view === "notions");
@@ -1029,6 +1035,7 @@ function render() {
   else if (view === "quiz") renderQuiz();
   else if (view === "results") renderResults();
   else if (view === "flash") renderFlash();
+  else if (view === "fcards") renderFcards();
   else if (view === "cours-active") renderCoursActive();
   else if (view === "traitements") renderTraitements();
   else if (view === "cours") renderCours();
@@ -1191,6 +1198,203 @@ function renderFlash() {
     renderFlash();
   };
   $("flash-stop").onclick = () => finishFlash();
+}
+
+const FCARDS_N = 25;
+
+function fcardProgress(stats) {
+  const recs = stats.fcards || {};
+  const cards = FLASHCARDS.cards || [];
+  let mastered = 0, due = 0;
+  const now = Date.now();
+  cards.forEach((c) => {
+    const r = recs[c.id];
+    if (r && r.mastered) mastered++;
+    else if (r && r.due && r.due <= now) due++;
+  });
+  return { total: cards.length, mastered, due };
+}
+
+function markFcard(stats, cardId, known) {
+  if (!stats.fcards) stats.fcards = {};
+  const cur = stats.fcards[cardId] || { ok: 0, ko: 0, step: 0 };
+  if (known) {
+    cur.ok = (cur.ok || 0) + 1;
+    cur.step = Math.min(3, (cur.step || 0) + 1);
+    if (cur.step >= 3) stats.fcards[cardId] = { mastered: true, ok: cur.ok };
+    else {
+      cur.due = Date.now() + [1, 3, 7][cur.step - 1] * 86400000;
+      stats.fcards[cardId] = cur;
+    }
+  } else {
+    cur.ko = (cur.ko || 0) + 1;
+    cur.step = 0;
+    cur.due = Date.now() + 86400000;
+    stats.fcards[cardId] = cur;
+  }
+}
+
+function beginFcardsSession(itemId = "all", rang = "A", n = FCARDS_N) {
+  const stats = loadStats();
+  let pool = (FLASHCARDS.cards || []).filter((c) => {
+    if (itemId !== "all" && String(c.item) !== String(itemId)) return false;
+    if (rang === "A" && c.rang === "B") return false;
+    if (rang === "B" && c.rang !== "B") return false;
+    return true;
+  });
+  if (!pool.length) { alert("Pas de flashcards pour ce filtre."); return; }
+  const now = Date.now();
+  const recs = stats.fcards || {};
+  const weights = pool.map((c) => {
+    const r = recs[c.id] || {};
+    let w = 1;
+    if (r.due && r.due <= now) w += 3;
+    else if (!r.ok && !r.ko && !r.mastered) w += 1.5;
+    else if ((r.ko || 0) > (r.ok || 0)) w += 2;
+    if (r.mastered) w = 0.15;
+    if (c.rang === "A") w += 0.4;
+    return w;
+  });
+  const take = n >= pool.length ? pool.length : Math.min(n, pool.length);
+  const deck = n >= 999 ? shuffle(pool) : weightedSample(pool, weights, take);
+  fcardState = {
+    deck,
+    i: 0,
+    revealed: false,
+    known: 0,
+    unknown: 0,
+    itemId,
+    rang,
+  };
+  view = "fcards";
+  render();
+}
+
+function finishFcards() {
+  if (!fcardState || fcardState.done) { view = "fcards"; render(); return; }
+  const stats = loadStats();
+  const seen = fcardState.known + fcardState.unknown;
+  const gamify = applyGamification(stats, { n: Math.max(1, seen), exactN: fcardState.known, focus: false });
+  saveStats(stats);
+  fcardState = {
+    done: true,
+    summary: {
+      known: fcardState.known,
+      unknown: fcardState.unknown,
+      seen,
+      gamify,
+      itemId: fcardState.itemId,
+      rang: fcardState.rang,
+    },
+  };
+  view = "fcards";
+  render();
+}
+
+function renderFcards() {
+  const stats = loadStats();
+  const cards = FLASHCARDS.cards || [];
+  const prog = fcardProgress(stats);
+  const labels = { "221": "221 Athérome", "222": "222 FDR / prévention", "223": "223 Dyslipidémies", "224": "224 HTA" };
+
+  if (fcardState && fcardState.done) {
+    const s = fcardState.summary;
+    viewEl.innerHTML = `
+      <h1>Flashcards — terminé</h1>
+      ${xpBarHtml(stats, `<div class="xp-gain">+${s.gamify.gained} XP · ${s.known} OK / ${s.unknown} à revoir</div>`)}
+      <div class="card">
+        <div class="big-score">${s.known} / ${s.seen || 0}</div>
+        <p class="hint">Les cartes « à revoir » reviennent demain. 3 OK d'affilée = maîtrisée.</p>
+        <div class="actions">
+          <button type="button" id="fc-again">Encore une série</button>
+          <button type="button" class="secondary" id="fc-hub">Choisir un item</button>
+        </div>
+      </div>`;
+    $("fc-again").onclick = () => beginFcardsSession(s.itemId, s.rang);
+    $("fc-hub").onclick = () => { fcardState = null; renderFcards(); };
+    return;
+  }
+
+  if (fcardState && fcardState.deck && fcardState.deck.length) {
+    const c = fcardState.deck[fcardState.i];
+    const left = fcardState.deck.length - fcardState.i;
+    viewEl.innerHTML = `
+      <header class="quiz-bar">
+        <h1>Flashcards</h1>
+        <div class="meta">${fcardState.i + 1} / ${fcardState.deck.length} · ${esc(labels[c.item] || c.item)} · <span class="badge ${c.rang === "B" ? "b" : "a"}">Rang ${esc(c.rang || "A")}</span> · ${esc(c.theme || "")}</div>
+      </header>
+      <div class="card flash-card" id="fc-tap">
+        <div class="front ca-prompt">${esc(c.front)}</div>
+        ${fcardState.revealed
+          ? `<div class="ca-answer" style="margin-top:0.75rem">${esc(c.back)}</div>`
+          : `<p class="hint">Réponds à voix haute, puis tape pour révéler</p>`}
+      </div>
+      <div class="actions">
+        <button type="button" id="fc-ok" ${fcardState.revealed ? "" : "disabled"}>Je savais</button>
+        <button type="button" class="secondary" id="fc-ko" ${fcardState.revealed ? "" : "disabled"}>À revoir</button>
+        <button type="button" class="secondary" id="fc-stop">Stop (${left} restant${left > 1 ? "s" : ""})</button>
+      </div>`;
+    $("fc-tap").onclick = () => {
+      if (!fcardState.revealed) { fcardState.revealed = true; renderFcards(); }
+    };
+    const next = (known) => {
+      const st = loadStats();
+      markFcard(st, c.id, known);
+      saveStats(st);
+      if (known) fcardState.known++;
+      else fcardState.unknown++;
+      fcardState.i++;
+      fcardState.revealed = false;
+      if (fcardState.i >= fcardState.deck.length) finishFcards();
+      else renderFcards();
+    };
+    $("fc-ok").onclick = () => next(true);
+    $("fc-ko").onclick = () => next(false);
+    $("fc-stop").onclick = () => finishFcards();
+    return;
+  }
+
+  const byItem = {};
+  cards.forEach((c) => {
+    if (!byItem[c.item]) byItem[c.item] = { a: 0, b: 0, m: 0 };
+    if (c.rang === "B") byItem[c.item].b++;
+    else byItem[c.item].a++;
+    if ((stats.fcards || {})[c.id]?.mastered) byItem[c.item].m++;
+  });
+  const pct = prog.total ? Math.round(100 * prog.mastered / prog.total) : 0;
+  let html = `<h1>Flashcards — 221 à 224</h1>
+    <p class="sub">${prog.total} cartes · ${prog.mastered} maîtrisées (${pct} %) · ${prog.due ? prog.due + " à revoir · " : ""}Couverture quasi complète du cours Rang A (+ B utiles)</p>
+    <div class="xp-track" style="margin-bottom:1rem"><i style="width:${pct}%"></i></div>
+    <div class="card focus-hero" style="background:linear-gradient(145deg,#1f4d3a,#2d6b52);">
+      <h2>Série mixte — 25 cartes</h2>
+      <p>Priorité aux cartes dues et jamais vues. Rang A par défaut.</p>
+      <div class="actions">
+        <button type="button" id="fc-mix">Lancer 25 cartes (A)</button>
+        <button type="button" class="secondary" id="fc-mix-all">25 cartes A+B</button>
+      </div>
+    </div>`;
+  ["221", "222", "223", "224"].forEach((id) => {
+    const n = byItem[id];
+    if (!n) return;
+    const tot = n.a + n.b;
+    const mp = tot ? Math.round(100 * n.m / tot) : 0;
+    html += `<div class="card">
+      <h3 style="margin:0 0 0.35rem">${esc(labels[id])}</h3>
+      <p class="meta">${n.a} Rang A · ${n.b} Rang B · ${n.m}/${tot} maîtrisées (${mp} %)</p>
+      <div class="xp-track" style="margin:0.4rem 0 0.7rem"><i style="width:${mp}%"></i></div>
+      <div class="actions">
+        <button type="button" class="secondary pill" data-fc-item="${id}" data-fc-n="25">25 cartes</button>
+        <button type="button" class="secondary pill" data-fc-item="${id}" data-fc-n="999">Tout l'item (${tot})</button>
+      </div>
+    </div>`;
+  });
+  html += `<p class="hint">${esc(FLASHCARDS.note || "")}</p>`;
+  viewEl.innerHTML = html;
+  $("fc-mix").onclick = () => beginFcardsSession("all", "A", FCARDS_N);
+  $("fc-mix-all").onclick = () => beginFcardsSession("all", "all", FCARDS_N);
+  viewEl.querySelectorAll("[data-fc-item]").forEach((btn) => {
+    btn.onclick = () => beginFcardsSession(btn.getAttribute("data-fc-item"), "all", Number(btn.getAttribute("data-fc-n") || FCARDS_N));
+  });
 }
 
 function coursCardId(item, rang, idx) {
@@ -1961,6 +2165,7 @@ function renderSetup() {
       <button type="button" class="hub-btn primary" id="btn-focus"><strong>Focus 8 min</strong><span>8 QCM sur tes faiblesses · timer</span></button>
       <button type="button" class="hub-btn" id="btn-srs" ${pendingN ? "" : "disabled"}><strong>${dueN ? `SRS · ${dueN} dues` : pendingN ? `SRS · ${pendingN} en file` : "SRS vide"}</strong><span>${dueN ? "erreurs à revoir maintenant" : nextLbl || "remplis en ratant des QCM"}</span></button>
       <button type="button" class="hub-btn" id="btn-flash"><strong>Flash 60 s</strong><span>seuils · sigles · mnémos</span></button>
+      <button type="button" class="hub-btn primary" id="btn-fcards"><strong>Flashcards 221–224</strong><span>${(FLASHCARDS.cards || []).length} cartes · tout le cours</span></button>
       <button type="button" class="hub-btn" id="btn-to-mnemos"><strong>Mnémos</strong><span>${(MNEMOS.items || []).length} astuces · fun facts</span></button>
       <button type="button" class="hub-btn" id="btn-to-fiches"><strong>Fiches</strong><span>comparatifs · réflexes · pièges</span></button>
       <button type="button" class="hub-btn" id="btn-to-arbres"><strong>Arbres CAT</strong><span>Oui/Non comme au lit</span></button>
@@ -2037,6 +2242,7 @@ function renderSetup() {
   $("btn-focus").onclick = () => beginFocusSession();
   $("btn-srs").onclick = () => beginSrsSession();
   $("btn-flash").onclick = () => beginFlashSession();
+  $("btn-fcards").onclick = () => { fcardState = null; view = "fcards"; render(); };
   $("btn-to-mnemos").onclick = () => { view = "mnemos"; render(); };
   $("btn-ecg").onclick = () => { view = "ecg"; render(); };
   $("btn-ecos-hub").onclick = () => { ecosRun = null; view = "ecos"; render(); };
