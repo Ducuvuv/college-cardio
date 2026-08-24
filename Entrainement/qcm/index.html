@@ -184,7 +184,21 @@
       text-align: center; padding: 1.25rem; cursor: pointer; user-select: none;
     }
     .flash-card .front { font-size: 1.35rem; font-weight: 800; }
+    .flash-card .front.ca-prompt { font-size: 1.12rem; font-weight: 700; white-space: pre-wrap; line-height: 1.4; }
     .flash-card .back { font-size: 1.05rem; margin-top: 0.75rem; color: var(--accent); font-weight: 650; }
+    .flash-card .ca-answer { font-size: 1.02rem; font-weight: 600; line-height: 1.45; white-space: pre-wrap; }
+    .lexique-box {
+      margin-top: 0.75rem; padding: 0.55rem 0.65rem; border-radius: 10px;
+      background: rgba(42, 80, 120, 0.08); border: 1px solid var(--line);
+    }
+    .lexique-box h4 { margin: 0 0 0.4rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.75; }
+    .lexique-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.28rem; }
+    .lexique-list li { font-size: 0.88rem; line-height: 1.35; }
+    .lexique-list strong { font-weight: 800; color: var(--accent); }
+    .abbr-chip {
+      display: inline; border-bottom: 1px dotted var(--accent); cursor: help;
+      font-weight: 750;
+    }
     .mnemo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.65rem; }
     .mnemo-card {
       border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 0.85rem;
@@ -227,6 +241,7 @@
     .bar.warn > i { background: var(--warn); }
     .bar.bad > i { background: var(--bad); }
     img.qimg { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; margin: 0 0 1rem; background: #fff; }
+    img.qimg.ecg12 { width: 100%; max-width: 100%; border-radius: 6px; }
     .err { color: var(--bad); }
     .table-wrap { overflow-x: auto; }
     .tx-table { font-size: 0.82rem; }
@@ -847,16 +862,48 @@ function ecgImagePool() {
 function beginEcgImageSession() {
   clearFocusTicker();
   pipeline = null;
-  const pool = shuffle(ecgImagePool());
+  // Drill image classique : exclut les 12D (mode dédié)
+  const pool = shuffle(
+    ecgImagePool().filter((q) =>
+      !(q.images || []).some((im) => String(im.src || "").includes("12lead-"))
+    )
+  );
   if (!pool.length) { alert("Pas de QCM ECG avec image."); return; }
   const n = Math.min(pool.length, 24);
   session = {
     phase: "quiz",
     focus: false,
+    srs: false,
+    pipeline: false,
     ecg: true,
     ecgImg: true,
     items: [...new Set(pool.slice(0, n).map((q) => q.item))],
     qs: pool.slice(0, n).map((q) => ({ ...q, picked: [], revealed: false })),
+    i: 0,
+  };
+  view = "quiz";
+  render();
+}
+
+function beginEcg12Session() {
+  clearFocusTicker();
+  pipeline = null;
+  const pool = shuffle(
+    BANK.questions.filter((q) =>
+      (q.images || []).some((im) => String(im.src || "").includes("images/ecg/12lead-"))
+    )
+  );
+  if (!pool.length) { alert("Pas encore de QCM 12 dérivations. Rebuild bank ?"); return; }
+  session = {
+    phase: "quiz",
+    focus: false,
+    srs: false,
+    pipeline: false,
+    ecg: true,
+    ecgImg: true,
+    ecg12: true,
+    items: [...new Set(pool.map((q) => q.item))],
+    qs: pool.map((q) => ({ ...q, picked: [], revealed: false })),
     i: 0,
   };
   view = "quiz";
@@ -891,6 +938,7 @@ async function boot() {
     catch { TX = { groups: [] }; }
     try { SIGLES = await (await fetch("sigles.json")).json(); }
     catch { SIGLES = { items: [] }; }
+    _sigleIndex = null;
     try { FICHES = await (await fetch("fiches.json")).json(); }
     catch { FICHES = { comparatifs: [], reflexes: [], pieges: [], seuils: [] }; }
     try { COURS = await (await fetch("cours.json")).json(); }
@@ -1135,6 +1183,149 @@ function coursBlock(text) {
   return "Point clé";
 }
 
+/** Question de face pour le cours actif (évite un simple « ??? »). */
+function coursPrompt(text, block) {
+  const t = String(text || "").trim().replace(/\s+/g, " ");
+  if (!t) return "Que retenir sur ce point ?";
+  const ask = (topic, hint) => {
+    const h = hint || (
+      block === "Seuils / chiffres" ? "chiffres / seuils"
+      : block === "Traitement" ? "traitement / CAT"
+      : block === "Urgence" ? "urgence / réflexe"
+      : block === "Diagnostic" ? "critères / sémiologie"
+      : block === "Définition / mécanisme" ? "définition / mécanisme"
+      : "point clé"
+    );
+    return `Que retenir sur « ${topic} » ?\n(${h})`;
+  };
+  const colon = t.match(/^(.{2,72}?)\s*:\s+/);
+  if (colon) return ask(colon[1].replace(/\s+$/, ""));
+  const eq = t.match(/^(.{2,48}?)\s*=\s+/);
+  if (eq) return ask(eq[1], "signification / détail");
+  const def = t.match(/^(Le|La|Les|L'|Un|Une)\s+(.{3,55}?)\s+(est|sont|correspond|associe|vise|évalue|comprend|inclut)\b/i);
+  if (def) return ask(`${def[1]} ${def[2]}`.replace(/\s+/g, " ").trim());
+  const acro = t.match(/^((?:[A-ZÀ-Ü0-9]{2,}(?:[₂₂]?[A-Z0-9–-]*)*(?:\s*\/\s*[A-ZÀ-Ü0-9]{2,})*)+)\b/);
+  if (acro && acro[1].length <= 40) return ask(acro[1], "signification / CAT");
+  const words = t.split(" ");
+  const n = Math.min(8, Math.max(4, Math.floor(words.length * 0.28)));
+  let head = words.slice(0, n).join(" ");
+  head = head.replace(/[,;:]$/, "");
+  return `Développe / complète :\n« ${head}… »`;
+}
+
+/** Termes pédagogiques fréquents (pas dans la liste liminaire des sigles). */
+const HARD_WORDS = {
+  "reperfusion": "Réouverture urgente de l’artère coronaire (angioplastie / fibrinolyse)",
+  "miroir": "Sous-décalage ST opposé au sus-décalage (signe de STEMI vrai)",
+  "discordance": "T et ST de polarité opposée au QRS (souvent secondaire à un bloc de branche)",
+  "préexcitation": "Activation ventriculaire trop précoce via une voie accessoire (WPW)",
+  "onde δ": "Empâtement du début du QRS dans le WPW (delta)",
+  "onde delta": "Empâtement du début du QRS dans le WPW",
+  "échappement": "Rythme de secours (jonctionnel ~40–60 ou ventriculaire ~15–30) si le nœud sinusal lâche",
+  "cardioversion": "Choc électrique (ou médicament) pour rétablir le rythme sinusal",
+  "fibrinolyse": "Médicament qui dissout le caillot (si PCI trop loin / trop tard)",
+  "angioplastie": "Dilatation coronaire + stent (PCI)",
+  "coronarographie": "Radio des coronaires avec cathéter (coro)",
+  "troponine": "Marqueur sanguin de nécrose myocardique",
+  "tamponnade": "Compression du cœur par un épanchement péricardique abondant",
+  "pouls paradoxal": "Baisse de PAS ≥ 10 mmHg à l’inspiration (tamponnade)",
+  "alternance électrique": "QRS qui alterne d’amplitude (gros épanchement péricardique)",
+  "sous-PQ": "Sous-décalage du segment PQ/PR (très évocateur de péricardite)",
+  "Pardee": "Sus-ST qui « englobe » l’onde T (lésion ischémique typique)",
+  "Sgarbossa": "Critères ECG pour suspecter un STEMI malgré un BBG",
+  "Wellens": "Ondes T bi/phasiques V2–V3 = SCA ST− imminente (coro urgente)",
+  "Mobitz": "Types de BAV du 2e degré (1 = Wenckebach, 2 = P bloquée inopinée)",
+  "Wenckebach": "BAV 2 Mobitz 1 : PR qui s’allonge puis une P bloquée",
+  "Sokolow": "Indice d’HVG : SV1 + RV5/V6 > 35 mm",
+  "CHA₂DS₂-VA": "Score de risque d’AVC dans la FA (sans point « femme »)",
+  "CHA2DS2-VA": "Score de risque d’AVC dans la FA (sans point « femme »)",
+  "HAS-BLED": "Score de risque hémorragique sous anticoagulant",
+  "HFrEF": "IC à FEVG réduite (≤ 40 %)",
+  "HFpEF": "IC à FEVG préservée (≥ 50 %)",
+  "NYHA": "Classification fonctionnelle de l’IC (I → IV)",
+  "super-Wolff": "FA conduite très vite par une voie accessoire (urgence, pas d’adénosine)",
+};
+
+let _sigleIndex = null;
+function sigleIndex() {
+  if (_sigleIndex) return _sigleIndex;
+  const map = new Map();
+  for (const s of (SIGLES.items || [])) {
+    if (!s.abbr || !s.def) continue;
+    const key = String(s.abbr).toLowerCase();
+    if (!map.has(key) || String(s.abbr).length > String(map.get(key).abbr).length) {
+      map.set(key, { abbr: s.abbr, def: s.def });
+    }
+  }
+  for (const [k, def] of Object.entries(HARD_WORDS)) {
+    const key = k.toLowerCase();
+    if (!map.has(key)) map.set(key, { abbr: k, def, hard: true });
+  }
+  _sigleIndex = map;
+  return map;
+}
+
+function findLexiqueHits(text) {
+  const raw = String(text || "");
+  if (!raw) return [];
+  const map = sigleIndex();
+  const keys = [...map.keys()].sort((a, b) => b.length - a.length);
+  const hits = [];
+  const seen = new Set();
+  const lower = raw.toLowerCase();
+  for (const key of keys) {
+    if (key.length < 2) continue;
+    const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    // Frontière souple : pas une lettre/chiffre de chaque côté
+    const re = new RegExp(`(?<![A-Za-zÀ-ÿ0-9₂])${escaped}(?![A-Za-zÀ-ÿ0-9₂])`, "i");
+    if (!re.test(raw) && !lower.includes(key)) continue;
+    if (!re.test(raw)) continue;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    hits.push(map.get(key));
+    if (hits.length >= 12) break;
+  }
+  return hits;
+}
+
+function lexiqueHtml(text) {
+  const hits = findLexiqueHits(text);
+  if (!hits.length) return "";
+  const rows = hits.map((h) => `<li><strong>${esc(h.abbr)}</strong> — ${esc(h.def)}</li>`).join("");
+  return `<div class="lexique-box"><h4>Lexique de la carte</h4><ul class="lexique-list">${rows}</ul></div>`;
+}
+
+function annotateAbbrHtml(text) {
+  const hits = findLexiqueHits(text);
+  if (!hits.length) return esc(text);
+  // Annoter du plus long au plus court, une fois chacun
+  const parts = [{ t: String(text || ""), esc: false }];
+  for (const h of hits) {
+    const next = [];
+    for (const p of parts) {
+      if (p.esc) { next.push(p); continue; }
+      const escaped = String(h.abbr).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const re = new RegExp(`(?<![A-Za-zÀ-ÿ0-9₂])(${escaped})(?![A-Za-zÀ-ÿ0-9₂])`, "i");
+      const m = re.exec(p.t);
+      if (!m) { next.push(p); continue; }
+      const before = p.t.slice(0, m.index);
+      const mid = p.t.slice(m.index, m.index + m[0].length);
+      const after = p.t.slice(m.index + m[0].length);
+      if (before) next.push({ t: before, esc: false });
+      next.push({ t: mid, esc: true, title: h.def });
+      if (after) next.push({ t: after, esc: false });
+    }
+    parts.length = 0;
+    parts.push(...next);
+  }
+  return parts.map((p) => {
+    if (p.esc && p.title) {
+      return `<span class="abbr-chip" title="${esc(p.title)}">${esc(p.t)}</span>`;
+    }
+    return esc(p.t);
+  }).join("");
+}
+
 function coursCardWeight(stats, card, itemId) {
   const rec = (stats.coursCards || {})[card.id] || {};
   let w = itemWeakness(itemId) + 0.35;
@@ -1152,24 +1343,28 @@ function buildCoursDeck({ itemId = "all", rang = "A", n = COURS_ACTIVE_N } = {})
     if (itemId !== "all" && c.item !== itemId) continue;
     if (rang === "A" || rang === "all") {
       (c.rangA || []).forEach((text, i) => {
+        const block = coursBlock(text);
         cards.push({
           id: coursCardId(c.item, "A", i),
           item: c.item,
           label: c.label,
           rang: "A",
-          block: coursBlock(text),
+          block,
+          prompt: coursPrompt(text, block),
           text,
         });
       });
     }
     if (rang === "B" || rang === "all") {
       (c.rangB || []).forEach((text, i) => {
+        const block = coursBlock(text);
         cards.push({
           id: coursCardId(c.item, "B", i),
           item: c.item,
           label: c.label,
           rang: "B",
-          block: coursBlock(text),
+          block,
+          prompt: coursPrompt(text, block),
           text,
         });
       });
@@ -1565,16 +1760,33 @@ function renderCoursActive() {
     </header>
     ${inPipe ? pipeStepsHtml("cours", true) : ""}
     <div class="card flash-card" id="ca-tap">
-      <p class="hint" style="margin:0 0 0.5rem">${esc(c.block)} — ${esc(c.label)}</p>
-      <div class="front">${coursActiveState.revealed ? esc(c.text) : "???"}</div>
-      ${coursActiveState.revealed ? "" : `<p class="hint">Rappelle-toi le point, puis tape pour révéler</p>`}
+      <p class="hint" style="margin:0 0 0.5rem">${esc(c.block)} · ${esc(c.label)}</p>
+      ${coursActiveState.revealed
+        ? `<p class="hint" style="margin:0 0 0.45rem;opacity:0.85">${esc((c.prompt || "").split("\n")[0])}</p>
+           <div class="ca-answer">${annotateAbbrHtml(c.text)}</div>
+           ${lexiqueHtml(c.text)}
+           <p class="hint" style="margin:0.55rem 0 0">Tap sur un mot souligné = définition. Lexique auto en bas.</p>`
+        : `<div class="front ca-prompt">${esc(c.prompt || "Que retenir sur ce point ?")}</div>
+           <p class="hint">Réponds à voix haute, puis tape pour révéler la réponse</p>`}
     </div>
     <div class="actions">
       <button type="button" id="ca-ok" ${coursActiveState.revealed ? "" : "disabled"}>Je savais</button>
       <button type="button" class="secondary" id="ca-ko" ${coursActiveState.revealed ? "" : "disabled"}>À revoir</button>
       <button type="button" class="secondary" id="ca-stop">${inPipe ? "Passer aux QCM" : `Stop (${left} restant${left > 1 ? "s" : ""})`}</button>
     </div>`;
-  $("ca-tap").onclick = () => { coursActiveState.revealed = true; renderCoursActive(); };
+  $("ca-tap").onclick = (e) => {
+    const chip = e.target.closest?.(".abbr-chip");
+    if (chip) {
+      e.stopPropagation();
+      const def = chip.getAttribute("title");
+      if (def) alert(`${chip.textContent} — ${def}`);
+      return;
+    }
+    if (!coursActiveState.revealed) {
+      coursActiveState.revealed = true;
+      renderCoursActive();
+    }
+  };
   const nextCard = (known) => {
     const stats = loadStats();
     markCoursCard(stats, c.id, known);
@@ -1941,7 +2153,10 @@ function renderQuiz() {
     </header>
     <div class="card ${showCorrection ? "revealed" : ""}">
       <p class="stem">${esc(q.prompt)}</p>
-      ${(q.images || []).map((im) => `<img class="qimg" alt="${esc(im.alt)}" src="${esc(im.src)}" />`).join("")}
+      ${(q.images || []).map((im) => {
+        const is12 = String(im.src || "").includes("12lead-");
+        return `<img class="qimg${is12 ? " ecg12" : ""}" alt="${esc(im.alt || "ECG")}" src="${esc(im.src)}" />`;
+      }).join("")}
       <div id="choices">${choices}</div>
       <div class="score-box ${showCorrection ? "show" : ""}">${scoreBox}</div>
       <div class="actions">
@@ -2763,11 +2978,12 @@ function renderEcgHub() {
   let html = `<h2>ECG — Cours & rappels</h2>
     <p class="sub">Item 231 · ${nA} points cours · ${ecgImgN || ecgN} QCM drill · tracés SVG pédagogiques</p>
     <div class="hub-grid" style="margin-bottom:1rem">
-      <button type="button" class="hub-btn primary" id="ecg-drill-img"><strong>Drill avec tracés</strong><span>${Math.min(24, ecgImgN || ecgN)} Q · images SVG</span></button>
+      <button type="button" class="hub-btn primary" id="ecg-drill-12"><strong>Lecture 12 dérivations</strong><span>Tu lis le tracé → tu devines</span></button>
+      <button type="button" class="hub-btn" id="ecg-drill-img"><strong>Drill 1 dérivation</strong><span>Tracés sans spoil · QCM</span></button>
       <button type="button" class="hub-btn" id="ecg-drill-txt"><strong>Drill texte</strong><span>${Math.min(ECG_N, ecgN)} Q · sans image</span></button>
       <button type="button" class="hub-btn" id="ecg-cours-actif"><strong>Cours actif 231</strong><span>12 points · révèle avant correction</span></button>
-      <button type="button" class="hub-btn" id="ecg-to-cours"><strong>Cours complet</strong><span>231 ECG · Rang A + B</span></button>
-    </div>`;
+    </div>
+    <p class="hint" style="margin-top:-0.35rem">Les images n’affichent plus le diagnostic — seulement les dérivations (DI…V6).</p>`;
   if ((r.methode || []).length) {
     html += `<div class="card"><h3 style="margin:0 0 0.5rem">Méthode de lecture (7 étapes)</h3><ol style="margin:0;padding-left:1.2rem">`;
     r.methode.forEach((p) => { html += `<li style="margin-bottom:0.35rem">${esc(p)}</li>`; });
@@ -2800,10 +3016,10 @@ function renderEcgHub() {
   }
   html += `<p class="hint">Cours collège détaillé : onglet Cours → filtre 231 · Fiches → Réflexes/Pièges item 231</p>`;
   viewEl.innerHTML = html;
+  $("ecg-drill-12").onclick = () => beginEcg12Session();
   $("ecg-drill-img").onclick = () => beginEcgImageSession();
   $("ecg-drill-txt").onclick = () => beginEcgSession();
   $("ecg-cours-actif").onclick = () => beginCoursActive("231", "A");
-  $("ecg-to-cours").onclick = () => { localStorage.setItem("cours-item", "231"); view = "cours"; render(); };
 }
 
 function renderCours() {

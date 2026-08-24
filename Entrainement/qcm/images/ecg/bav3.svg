@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" role="img">
-  <title>BAV du 3e degré</title>
-  <desc>Dissociation auriculo-ventriculaire · QRS fins, échappement jonctionnel</desc>
+  <title>ECG schéma (diagnostic masqué)</title>
+  <desc>Tracé pédagogique sans diagnostic affiché. Dérivation DII.</desc>
   <rect width="800" height="140" fill="#fff"/>
   <line x1="0" y1="0" x2="0" y2="140" stroke="#fde8e8" stroke-width="1"/>
 <line x1="10" y1="0" x2="10" y2="140" stroke="#fef5f5" stroke-width="1"/>
@@ -96,8 +96,7 @@
 <line x1="0" y1="110" x2="800" y2="110" stroke="#fef5f5" stroke-width="1"/>
 <line x1="0" y1="120" x2="800" y2="120" stroke="#fef5f5" stroke-width="1"/>
 <line x1="0" y1="130" x2="800" y2="130" stroke="#fef5f5" stroke-width="1"/>
-  <polyline fill="none" stroke="#b91c1c" stroke-width="2.2" stroke-linejoin="round" points="20,70 28,62 36,70 36,70 40,70 44,70 48,70 52,70 56,70 60,70 64,70 66,74 71,108 80,40 86,70 86,70 90,70 94,70 98,70 102,70 106,70 110,70 114,70 118,70 121,70 129,62 137,70 137,70 141,70 145,70 149,70 153,70 157,70 161,70 165,70 167,74 172,108 181,40 187,70 187,70 191,70 195,70 199,70 203,70 207,70 211,70 215,70 219,70 222,70 230,62 238,70 238,70 242,70 246,70 250,70 254,70 258,70 262,70 266,70 268,74 273,108 282,40 288,70 288,70 292,70 296,70 300,70 304,70 308,70 312,70 316,70 320,70 323,70 331,62 339,70 339,70 343,70 347,70 351,70 355,70 359,70 363,70 367,70 369,74 374,108 383,40 389,70 389,70 393,70 397,70 401,70 405,70 409,70 413,70 417,70 421,70"/>
-  
-  <text x="12" y="18" font-family="Manrope, sans-serif" font-size="13" font-weight="700" fill="#1a2a22">BAV du 3e degré</text>
-  <text x="12" y="34" font-family="Manrope, sans-serif" font-size="11" fill="#5a6a60">Dissociation auriculo-ventriculaire · QRS fins, échappement jonctionnel</text>
+  <text x="12" y="20" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#445">DII</text>
+  <text x="12" y="36" font-family="system-ui,sans-serif" font-size="11" fill="#889">Schéma pédagogique — lis le tracé</text>
+  <polyline fill="none" stroke="#b91c1c" stroke-width="2.0" stroke-linejoin="round" points="40.0,70.0 53.9,63.0 67.8,70.0 73.4,73.0 84.5,98.0 106.8,60.0 123.5,70.0 129.0,70.0 142.9,63.0 156.8,70.0 156.8,70.0 168.0,70.0 179.1,70.0 190.2,70.0 201.4,70.0 212.5,70.0 218.0,70.0 232.0,63.0 245.9,70.0 268.1,73.0 279.2,98.0 301.5,60.0 307.1,70.0 318.2,70.0 321.0,63.0 334.9,70.0 334.9,70.0 346.0,70.0 357.1,70.0 368.3,70.0 379.4,70.0 390.5,70.0 396.1,70.0 410.0,63.0 423.9,70.0 423.9,70.0 435.0,70.0 446.2,70.0 457.3,70.0 462.9,73.0 474.0,98.0 485.1,70.0 496.2,60.0 499.0,63.0 512.9,70.0 512.9,70.0 512.9,70.0 524.1,70.0 535.2,70.0 546.3,70.0 557.4,70.0 568.6,70.0 574.1,70.0 588.0,63.0 602.0,70.0 602.0,70.0 613.1,70.0 624.2,70.0 635.3,70.0 646.5,70.0 657.6,70.0 657.6,73.0 663.2,70.0 668.7,98.0 677.1,63.0 691.0,60.0 691.0,70.0 707.7,70.0 707.7,70.0 718.8,70.0 729.9,70.0 741.1,70.0 752.2,70.0 752.2,70.0 766.1,63.0 780.0,70.0"/>
 </svg>
