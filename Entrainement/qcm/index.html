@@ -266,6 +266,28 @@
     .trap .bad-box .lab { color: var(--bad); }
     .trap .ok-box .lab { color: var(--ok); }
     .seuil-val { font-size: 1.05rem; font-weight: 800; color: var(--accent); margin: 0 0 0.15rem; }
+    .ecos-vignette {
+      white-space: pre-wrap; font-size: 0.92rem; line-height: 1.5;
+      background: #eef4f0; border-radius: 10px; padding: 0.85rem 1rem; margin: 0 0 1rem;
+      border-left: 4px solid var(--accent);
+    }
+    .ecos-step-title { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--accent); margin: 0 0 0.5rem; }
+    .ecos-progress { display: flex; gap: 0.35rem; margin-bottom: 0.85rem; flex-wrap: wrap; }
+    .ecos-dot { width: 0.65rem; height: 0.65rem; border-radius: 50%; background: var(--line); }
+    .ecos-dot.done { background: var(--ok); }
+    .ecos-dot.cur { background: var(--accent); box-shadow: 0 0 0 2px #c5dfd3; }
+    .edn-hero {
+      background: linear-gradient(145deg, #2d1f5c, #4a3080); color: #fff; border: none;
+    }
+    .edn-hero h2 { color: rgba(255,255,255,0.95); text-transform: none; font-size: 1.15rem; }
+    .edn-big { font-size: 2.4rem; font-weight: 800; line-height: 1; margin: 0.25rem 0; }
+    .edn-parts { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.55rem; }
+    .edn-parts span { font-size: 0.72rem; font-weight: 650; padding: 0.2rem 0.5rem; border-radius: 999px; background: rgba(255,255,255,0.15); }
+    .oral-front {
+      font-size: 1.08rem; font-weight: 650; min-height: 4.5rem; padding: 1rem;
+      background: #eef4f0; border-radius: 10px; margin: 0 0 0.75rem;
+    }
+    .oral-answer { font-size: 0.95rem; color: var(--ink); white-space: pre-wrap; }
   </style>
 </head>
 <body>
@@ -275,6 +297,8 @@
       <li><button type="button" id="tab-cours">Cours</button></li>
       <li><button type="button" id="tab-notions">Notions</button></li>
       <li><button type="button" id="tab-arbres">CAT</button></li>
+      <li><button type="button" id="tab-ecos">ECOS</button></li>
+      <li><button type="button" id="tab-oral">Oral</button></li>
       <li><button type="button" id="tab-tx">Traitements</button></li>
       <li><button type="button" id="tab-fiches">Fiches</button></li>
       <li><button type="button" id="tab-sigles">Sigles</button></li>
@@ -294,6 +318,9 @@ let COURS = [];
 let NOTIONS = [];
 let ARBRES = [];
 let TROUS = { totalGaps: 0, byItem: {} };
+let ECOS = [];
+let ecosRun = null;
+let oralState = null;
 let view = "setup";
 let arbreState = null; // { id, stepId }
 let session = null;
@@ -312,6 +339,10 @@ const FOCUS_MS = 8 * 60 * 1000;
 const FLASH_MS = 60 * 1000;
 const COURS_ACTIVE_N = 12;
 const PIPE_QCM_N = 5;
+const EXAM_N = 40;
+const EXAM_MS = 60 * 60 * 1000;
+const ECG_N = 20;
+const ORAL_N = 12;
 
 const $ = (id) => document.getElementById(id);
 const viewEl = $("view");
@@ -329,9 +360,10 @@ function loadStats() {
       srs: s.srs || {},
       coursCards: s.coursCards || {},
       pipelines: s.pipelines || {},
+      exams: s.exams || [],
     };
   } catch {
-    return { byItem: {}, sessions: [], xp: 0, streak: 0, bestStreak: 0, lastDay: null, srs: {}, coursCards: {}, pipelines: {} };
+    return { byItem: {}, sessions: [], xp: 0, streak: 0, bestStreak: 0, lastDay: null, srs: {}, coursCards: {}, pipelines: {}, exams: [] };
   }
 }
 function saveStats(s) { localStorage.setItem(STORE, JSON.stringify(s)); }
@@ -562,6 +594,7 @@ function poolFor(ids) {
     if (rangMode !== "all" && qRang(q) !== rangMode) return false;
     if (themeMode === "traitement" && q.theme !== "traitement") return false;
     if (themeMode === "trou" && q.theme !== "trou") return false;
+    if (themeMode === "ecg" && q.theme !== "ecg") return false;
     return true;
   });
 }
@@ -605,7 +638,7 @@ function weightedSample(pool, weights, n) {
 }
 
 function focusRemainingMs() {
-  if (!session || !session.focus || !session.endsAt) return 0;
+  if (!session || !session.endsAt) return 0;
   return Math.max(0, session.endsAt - Date.now());
 }
 
@@ -619,12 +652,13 @@ function formatFocusClock(ms) {
 function startFocusTicker() {
   clearFocusTicker();
   focusTicker = setInterval(() => {
-    if (!session || !session.focus || session.phase !== "quiz") { clearFocusTicker(); return; }
+    if (!session || session.phase !== "quiz" || (!session.focus && !session.exam)) { clearFocusTicker(); return; }
     const el = $("focus-clock");
     const left = focusRemainingMs();
     if (el) {
       el.textContent = formatFocusClock(left);
-      el.classList.toggle("warn", left <= 60_000);
+      const warnAt = session.exam ? 5 * 60_000 : 60_000;
+      el.classList.toggle("warn", left <= warnAt);
     }
     if (left <= 0) {
       clearFocusTicker();
@@ -717,6 +751,121 @@ function beginTrousSession(itemId = null) {
   render();
 }
 
+function beginExamSession() {
+  clearFocusTicker();
+  pipeline = null;
+  const prev = { originMode, formatMode, rangMode, themeMode };
+  originMode = "both";
+  formatMode = "all";
+  rangMode = "A";
+  themeMode = "all";
+  const ids = BANK.items.map((it) => it.id);
+  const pool = poolFor(ids).filter((q) => q.theme !== "trou");
+  if (pool.length < 10) {
+    originMode = prev.originMode;
+    formatMode = prev.formatMode;
+    rangMode = prev.rangMode;
+    themeMode = prev.themeMode;
+    alert("Pas assez de questions pour un examen blanc.");
+    return;
+  }
+  const byItem = {};
+  for (const q of pool) (byItem[q.item] ||= []).push(q);
+  const picked = [];
+  const used = new Set();
+  let round = 0;
+  while (picked.length < EXAM_N && round < 12) {
+    for (const id of shuffle([...ids])) {
+      if (picked.length >= EXAM_N) break;
+      const arr = byItem[id];
+      if (!arr || !arr.length) continue;
+      const q = arr[Math.floor(Math.random() * arr.length)];
+      if (used.has(q.id)) continue;
+      used.add(q.id);
+      picked.push(q);
+    }
+    round++;
+  }
+  if (picked.length < EXAM_N) {
+    for (const q of shuffle(pool)) {
+      if (picked.length >= EXAM_N) break;
+      if (used.has(q.id)) continue;
+      used.add(q.id);
+      picked.push(q);
+    }
+  }
+  session = {
+    phase: "quiz",
+    exam: true,
+    focus: false,
+    items: [...new Set(picked.map((q) => q.item))],
+    qs: picked.slice(0, EXAM_N).map((q) => ({ ...q, picked: [], revealed: false, locked: false })),
+    i: 0,
+    endsAt: Date.now() + EXAM_MS,
+    startedAt: Date.now(),
+  };
+  originMode = prev.originMode;
+  formatMode = prev.formatMode;
+  rangMode = prev.rangMode;
+  themeMode = prev.themeMode;
+  view = "quiz";
+  render();
+  startFocusTicker();
+}
+
+function ecgPool() {
+  return BANK.questions.filter((q) => {
+    if (q.theme === "ecg") return true;
+    const blob = `${q.prompt} ${q.explanation}`.toLowerCase();
+    return q.item === "231" && /\becg\b|segment st|onde p|bav|qrs|fibrillation|s1q3|torsade|flutter|qt/.test(blob);
+  });
+}
+
+function ecgImagePool() {
+  if (!BANK) return [];
+  return BANK.questions.filter((q) => (q.images || []).some((im) => String(im.src || "").includes("images/ecg/")));
+}
+
+function beginEcgImageSession() {
+  clearFocusTicker();
+  pipeline = null;
+  const pool = shuffle(ecgImagePool());
+  if (!pool.length) { alert("Pas de QCM ECG avec image."); return; }
+  const n = Math.min(pool.length, 14);
+  session = {
+    phase: "quiz",
+    focus: false,
+    ecg: true,
+    ecgImg: true,
+    items: [...new Set(pool.slice(0, n).map((q) => q.item))],
+    qs: pool.slice(0, n).map((q) => ({ ...q, picked: [], revealed: false })),
+    i: 0,
+  };
+  view = "quiz";
+  render();
+}
+
+function beginEcgSession() {
+  clearFocusTicker();
+  pipeline = null;
+  const imgPool = ecgImagePool();
+  let pool = shuffle(ecgImagePool().length ? imgPool : ecgPool());
+  if (!pool.length) { alert("Banque ECG vide."); return; }
+  const n = Math.min(ECG_N, pool.length);
+  session = {
+    phase: "quiz",
+    focus: false,
+    srs: false,
+    pipeline: false,
+    ecg: true,
+    items: [...new Set(pool.slice(0, n).map((q) => q.item))],
+    qs: pool.slice(0, n).map((q) => ({ ...q, picked: [], revealed: false })),
+    i: 0,
+  };
+  view = "quiz";
+  render();
+}
+
 async function boot() {
   try {
     BANK = await (await fetch("bank.json")).json();
@@ -739,6 +888,10 @@ async function boot() {
     try {
       TROUS = await (await fetch("trous.json")).json();
     } catch { TROUS = { totalGaps: 0, byItem: {} }; }
+    try {
+      const e = await (await fetch("ecos.json")).json();
+      ECOS = e.cases || [];
+    } catch { ECOS = []; }
   } catch (e) {
     viewEl.innerHTML = `<div class="card err">Impossible de charger <code>bank.json</code>. Lance <code>lancer.bat</code>.</div>`;
     return;
@@ -752,6 +905,8 @@ async function boot() {
   $("tab-cours").onclick = () => { view = "cours"; render(); };
   $("tab-notions").onclick = () => { view = "notions"; render(); };
   $("tab-arbres").onclick = () => { arbreState = null; view = "arbres"; render(); };
+  $("tab-ecos").onclick = () => { ecosRun = null; view = "ecos"; render(); };
+  $("tab-oral").onclick = () => { oralState = null; view = "oral"; render(); };
   $("tab-tx").onclick = () => { view = "traitements"; render(); };
   $("tab-fiches").onclick = () => { view = "fiches"; render(); };
   $("tab-sigles").onclick = () => { view = "sigles"; render(); };
@@ -760,11 +915,13 @@ async function boot() {
 }
 
 function render() {
-  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "notions" || view === "arbres");
-  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches", "cours", "notions", "cours-active", "flash", "arbres"].includes(view));
+  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "notions" || view === "arbres" || view === "ecos" || view === "ecos-play" || view === "oral");
+  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "fiches", "cours", "notions", "cours-active", "flash", "arbres", "ecos", "ecos-play", "oral"].includes(view));
   $("tab-cours").classList.toggle("active", view === "cours" || view === "cours-active");
   $("tab-notions").classList.toggle("active", view === "notions");
   $("tab-arbres").classList.toggle("active", view === "arbres");
+  $("tab-ecos").classList.toggle("active", view === "ecos" || view === "ecos-play");
+  $("tab-oral").classList.toggle("active", view === "oral");
   $("tab-tx").classList.toggle("active", view === "traitements");
   $("tab-fiches").classList.toggle("active", view === "fiches");
   $("tab-sigles").classList.toggle("active", view === "sigles");
@@ -778,6 +935,9 @@ function render() {
   else if (view === "cours") renderCours();
   else if (view === "notions") renderNotions();
   else if (view === "arbres") renderArbres();
+  else if (view === "ecos") renderEcos();
+  else if (view === "ecos-play") renderEcosPlay();
+  else if (view === "oral") renderOral();
   else if (view === "fiches") renderFiches();
   else if (view === "sigles") renderSigles();
   else renderSuivi();
@@ -1016,6 +1176,115 @@ function coursProgressForItem(stats, c) {
   check(c.item, "A", (c.rangA || []).length);
   check(c.item, "B", (c.rangB || []).length);
   return { total, mastered, due };
+}
+
+function ednReadyForItem(stats, itemId) {
+  const it = BANK.items.find((x) => x.id === itemId);
+  const s = stats.byItem[itemId] || { seen: 0, exact: 0, pts: 0, max: 0 };
+  let qcm = 0;
+  if (s.seen >= 3) {
+    const exactR = s.exact / s.seen;
+    const ptsR = s.max ? s.pts / s.max : exactR;
+    qcm = Math.round(100 * (0.55 * exactR + 0.45 * ptsR));
+  } else if (s.seen) qcm = Math.min(40, s.seen * 8);
+  const cours = COURS.find((c) => c.item === itemId);
+  let coursPct = 0;
+  if (cours) {
+    const p = coursProgressForItem(stats, cours);
+    coursPct = p.total ? Math.round(100 * p.mastered / p.total) : 0;
+  }
+  const pipe = !!(stats.pipelines || {})[itemId];
+  const pipePct = pipe ? 100 : 0;
+  const itemSrs = Object.entries(stats.srs || {}).filter(([, v]) => v.item === itemId && (v.due || 0) <= Date.now()).length;
+  const srsPct = Math.max(0, 100 - itemSrs * 20);
+  const gaps = trousCount(itemId);
+  const trousPct = gaps ? Math.max(0, 100 - gaps * 12) : 100;
+  const pct = Math.round(
+    qcm * 0.32 + coursPct * 0.23 + pipePct * 0.25 + srsPct * 0.1 + trousPct * 0.1
+  );
+  return { pct, qcm, coursPct, pipePct, pipe, srsPct, trousPct, label: it?.label || itemId, itemId };
+}
+
+function ednReadyGlobal(stats) {
+  const items = BANK.items.map((it) => ednReadyForItem(stats, it.id));
+  const avg = items.length
+    ? Math.round(items.reduce((n, x) => n + x.pct, 0) / items.length)
+    : 0;
+  const exams = stats.exams || [];
+  const bestExam = exams.length ? Math.max(...exams.map((e) => e.pct || 0)) : null;
+  const examBonus = bestExam != null ? Math.round(bestExam * 0.25) : 0;
+  const global = Math.min(100, Math.round(avg * 0.75 + examBonus));
+  let tier = "Externe";
+  if (global >= 85) tier = "EDN beast";
+  else if (global >= 75) tier = "CNEC ready";
+  else if (global >= 60) tier = "Résident";
+  else if (global >= 40) tier = "Interne";
+  const weakest = items.slice().sort((a, b) => a.pct - b.pct).slice(0, 3);
+  return { global, avg, bestExam, tier, items, weakest };
+}
+
+function ednReadyHtml(stats) {
+  const g = ednReadyGlobal(stats);
+  const examTxt = g.bestExam != null ? ` · examen ${g.bestExam}%` : "";
+  const parts = g.weakest.map((w) => `${w.label.replace(/^(\d+\w*)\s*/, "$1 ")} ${w.pct}%`).join(" · ");
+  return `<div class="card edn-hero focus-hero">
+    <h2>EDN ready</h2>
+    <div class="edn-big">${g.global}%</div>
+    <p style="margin:0;opacity:0.92">${esc(g.tier)}${examTxt} · moyenne items ${g.avg}%</p>
+    <div class="edn-parts">
+      <span>QCM</span><span>Cours</span><span>Pipeline</span><span>SRS</span><span>Trous</span>
+    </div>
+    ${parts ? `<p style="opacity:0.82;font-size:0.82rem;margin:0.55rem 0 0">À muscler : ${esc(parts)}</p>` : ""}
+  </div>`;
+}
+
+function buildOralDeck(n = ORAL_N) {
+  const stats = loadStats();
+  const deck = [];
+  for (const c of COURS) {
+    const w = itemWeakness(c.item) + (UNESS.includes(c.item) ? 0.15 : 0);
+    (c.rangA || []).forEach((text, i) => {
+      deck.push({
+        id: `oral-${c.item}-A-${i}`,
+        item: c.item,
+        prompt: `[${c.label}] Point essentiel Rang A — réponds à voix haute :`,
+        answer: text,
+        w: w + (coursProgressForItem(stats, c).due ? 0.2 : 0),
+      });
+    });
+  }
+  for (const r of FICHES.reflexes || []) {
+    if (!r.item) continue;
+    deck.push({
+      id: `oral-ref-${r.item}-${deck.length}`,
+      item: r.item,
+      prompt: `Réflexe EDN — ${itemLabel(r.item)} :`,
+      answer: r.reflexe || r.text || "",
+      w: itemWeakness(r.item) + 0.1,
+    });
+  }
+  for (const p of (FICHES.pieges || []).slice(0, 20)) {
+    deck.push({
+      id: `oral-piege-${p.item}-${deck.length}`,
+      item: p.item,
+      prompt: `Piège vs réflexe — ${itemLabel(p.item)}. Quel est le réflexe ?`,
+      answer: `${p.reflexe || ""} (piège : ${p.piege || ""})`,
+      w: itemWeakness(p.item) + 0.12,
+    });
+  }
+  if (!deck.length) return [];
+  const weights = deck.map((d) => d.w);
+  return weightedSample(deck, weights, Math.min(n, deck.length));
+}
+
+function beginOralSession() {
+  clearFocusTicker();
+  pipeline = null;
+  const deck = buildOralDeck();
+  if (!deck.length) { alert("Pas de contenu oral (cours requis)."); return; }
+  oralState = { deck, i: 0, revealed: false, known: 0, unknown: 0 };
+  view = "oral";
+  render();
 }
 
 function pickPipelineItem() {
@@ -1268,14 +1537,27 @@ function decideNextAction() {
   const stats = loadStats();
   const due = srsDueIds(stats).length;
   const hour = new Date().getHours();
+  const g = ednReadyGlobal(stats);
   if (due > 0) return { kind: "srs", label: "SRS erreurs dues" };
+  const lastExam = (stats.exams || [])[0];
+  const examOld = !lastExam || Date.now() - lastExam.ts > 7 * 86400000;
+  if (examOld && (g.bestExam == null || g.bestExam < 70)) {
+    return { kind: "exam", label: "Examen blanc EDN" };
+  }
+  const w0 = g.weakest[0];
+  if (w0 && !w0.pipe && w0.pct < 55) {
+    return { kind: "pipeline", id: w0.itemId, label: `Pipeline · ${w0.label}` };
+  }
+  if (w0 && w0.coursPct < 40) {
+    return { kind: "oral", id: w0.itemId, label: `Oral · ${w0.label}` };
+  }
   const pipeId = pickPipelineItem();
-  const pipeLabel = itemLabel(pipeId);
   if (!stats.lastDay || stats.lastDay !== dayKey()) {
-    return { kind: "pipeline", id: pipeId, label: `Pipeline · ${pipeLabel}` };
+    return { kind: "pipeline", id: pipeId, label: `Pipeline · ${itemLabel(pipeId)}` };
   }
   if (hour >= 22 || hour < 8) return { kind: "flash", label: "Flash 60 s (léger)" };
-  return { kind: "pipeline", id: pipeId, label: `Pipeline · ${pipeLabel}` };
+  if (g.global >= 60 && examOld) return { kind: "exam", label: "Examen blanc — entraînement" };
+  return { kind: "pipeline", id: pipeId, label: `Pipeline · ${itemLabel(pipeId)}` };
 }
 
 function runDecidedAction(act) {
@@ -1283,6 +1565,9 @@ function runDecidedAction(act) {
   else if (act.kind === "flash") beginFlashSession();
   else if (act.kind === "micro") beginMicroSession(act.id, 5);
   else if (act.kind === "pipeline") beginPipeline(act.id || null);
+  else if (act.kind === "exam") beginExamSession();
+  else if (act.kind === "oral") beginOralSession();
+  else if (act.kind === "ecos") { ecosRun = null; view = "ecos"; render(); }
   else beginFocusSession();
 }
 
@@ -1321,11 +1606,19 @@ function renderSetup() {
     .slice(0, 4)
     .map(([id, x]) => `${(x.label || id).replace(/^(\d+\w*)\s*/, "$1 ")} (${x.n})`)
     .join(" · ");
+  const lastExam = (stats.exams || [])[0];
+  const examHist = lastExam
+    ? `Dernier : ${lastExam.pct}% · ${lastExam.exact}/${lastExam.n} · ${Math.round((lastExam.durationMs || 0) / 60000)} min`
+    : "Pas encore passé";
+  const ecgN = BANK ? ecgPool().length : 0;
+  const ecgImgN = BANK ? ecgImagePool().length : 0;
+  const ecosN = ECOS.length;
 
   viewEl.innerHTML = `
     <h1>Cardio — mode dopamine utile</h1>
     <p class="sub">Un bouton. Pas de menu à nerd-out. Le reste est en dessous si tu veux.</p>
     ${xpBarHtml(stats)}
+    ${ednReadyHtml(stats)}
     <div class="card focus-hero">
       <h2>L’app décide</h2>
       <p>Maintenant : <strong>${esc(decided.label)}</strong></p>
@@ -1350,12 +1643,23 @@ function renderSetup() {
         <button type="button" id="btn-trous" ${trousN ? "" : "disabled"}>Combler ${trousN || "0"} trou${trousN > 1 ? "s" : ""}</button>
       </div>
     </div>
+    <div class="card focus-hero" style="background:linear-gradient(145deg,#1a3d5c,#2a5080);">
+      <h2>Examen blanc EDN</h2>
+      <p>${EXAM_N} questions · 60 min · Rang A · tous items · pas de retour · correction à la fin</p>
+      <p style="opacity:0.85;font-size:0.82rem;margin:0.55rem 0 0">${esc(examHist)} · Seuil monstre ≥ 80 % · EDN ok ≥ 70 %</p>
+      <div class="actions">
+        <button type="button" id="btn-exam">Lancer l'examen blanc</button>
+      </div>
+    </div>
     <div class="hub-grid">
       <button type="button" class="hub-btn primary" id="btn-focus"><strong>Focus 8 min</strong><span>8 QCM sur tes faiblesses · timer</span></button>
       <button type="button" class="hub-btn" id="btn-srs" ${pendingN ? "" : "disabled"}><strong>${dueN ? `SRS · ${dueN} dues` : pendingN ? `SRS · ${pendingN} en file` : "SRS vide"}</strong><span>${dueN ? "erreurs à revoir maintenant" : nextLbl || "remplis en ratant des QCM"}</span></button>
       <button type="button" class="hub-btn" id="btn-flash"><strong>Flash 60 s</strong><span>seuils + sigles · hit rapide</span></button>
       <button type="button" class="hub-btn" id="btn-to-fiches"><strong>Fiches</strong><span>comparatifs · réflexes · pièges</span></button>
       <button type="button" class="hub-btn" id="btn-to-arbres"><strong>Arbres CAT</strong><span>Oui/Non comme au lit</span></button>
+      <button type="button" class="hub-btn" id="btn-ecg"><strong>Drill ECG</strong><span>${ecgImgN || ecgN} Q · ${ecgImgN ? "avec tracés" : "texte"}</span></button>
+      <button type="button" class="hub-btn" id="btn-ecos-hub"><strong>ECOS</strong><span>${ecosN} cas · vignette + stations</span></button>
+      <button type="button" class="hub-btn" id="btn-oral-hub"><strong>Mode oral</strong><span>${ORAL_N} cartes · réponds à voix haute</span></button>
     </div>
     <div class="card">
       <h2>Heatmap items</h2>
@@ -1405,6 +1709,7 @@ function renderSetup() {
             <option value="all"${themeMode === "all" ? " selected" : ""}>Tous</option>
             <option value="traitement"${themeMode === "traitement" ? " selected" : ""}>Traitements / médicaments</option>
             <option value="trou"${themeMode === "trou" ? " selected" : ""}>Trous collège</option>
+            <option value="ecg"${themeMode === "ecg" ? " selected" : ""}>ECG</option>
           </select>
         </div>
         <div class="field">
@@ -1420,9 +1725,13 @@ function renderSetup() {
   $("btn-auto").onclick = () => runDecidedAction(decided);
   $("btn-pipeline").onclick = () => beginPipeline(pipePick);
   $("btn-trous").onclick = () => beginTrousSession();
+  $("btn-exam").onclick = () => beginExamSession();
   $("btn-focus").onclick = () => beginFocusSession();
   $("btn-srs").onclick = () => beginSrsSession();
   $("btn-flash").onclick = () => beginFlashSession();
+  $("btn-ecg").onclick = () => beginEcgImageSession();
+  $("btn-ecos-hub").onclick = () => { ecosRun = null; view = "ecos"; render(); };
+  $("btn-oral-hub").onclick = () => beginOralSession();
   $("btn-to-fiches").onclick = () => { view = "fiches"; render(); };
   $("btn-to-arbres").onclick = () => { arbreState = null; view = "arbres"; render(); };
   viewEl.querySelectorAll("[data-heat]").forEach((btn) => {
@@ -1484,33 +1793,35 @@ function renderQuiz() {
   const kind = q.kind === "QRU" ? "QRU" : "QRM";
   const origin = q.origin === "nouveau" ? "neuve" : "QI livre";
   const format = q.format === "cas_clinique" ? "cas clinique" : "standard";
-  const theme = q.theme === "traitement" ? " · ttt" : q.theme === "trou" ? " · trou" : "";
-  if (revealed && !q._sc) q._sc = scoreQ(q, q.picked);
+  const theme = q.theme === "traitement" ? " · ttt" : q.theme === "trou" ? " · trou" : q.theme === "ecg" ? " · ecg" : "";
+  const showCorrection = revealed && !session.exam;
+  if (showCorrection && !q._sc) q._sc = scoreQ(q, q.picked);
 
   let choices = "";
   for (const o of q.options) {
     const should = cor.has(o.letter);
     const did = sel.has(o.letter);
     let cls = "choice";
-    if (revealed) {
+    if (showCorrection) {
       if (should) cls += did ? " reveal-ok" : " reveal-miss";
       else if (did) cls += " reveal-bad";
     }
     const pcz = (q.pcz || []).includes(o.letter) ? " · PCZ" : "";
     const scz = (q.scz || []).includes(o.letter) ? " · SCZ" : "";
     const extra = o.why ? ` — ${esc(o.why)}` : "";
-    const why = revealed
+    const why = showCorrection
       ? `<span class="why"><span class="mark ${should ? "ok" : "bad"}">${should ? "Vrai" : "Faux"}</span>${pcz}${scz}${extra}</span>`
       : `<span class="why"></span>`;
     const type = q.kind === "QRU" ? "radio" : "checkbox";
+    const disabled = showCorrection || (session.exam && q.locked);
     choices += `<label class="${cls}" data-letter="${o.letter}">
-      <input type="${type}" name="choice" value="${o.letter}" ${did ? "checked" : ""} ${revealed ? "disabled" : ""} />
+      <input type="${type}" name="choice" value="${o.letter}" ${did ? "checked" : ""} ${disabled ? "disabled" : ""} />
       <span><strong>${o.letter}.</strong> ${esc(o.text)}${why}</span>
     </label>`;
   }
 
   let scoreBox = "";
-  if (revealed) {
+  if (showCorrection) {
     const sc = q._sc;
     const pickedTxt = q.picked.length ? q.picked.join(", ") : "(rien)";
     const reflex = (() => {
@@ -1531,34 +1842,46 @@ function renderQuiz() {
     scoreBox += `<p class="hint" style="margin-top:0.55rem"><a href="#" id="link-cours">Cours ${esc(String(q.item))}</a> · <a href="#" id="link-fiche">Fiche réflexe</a></p>`;
   }
 
-  const left = session.focus ? focusRemainingMs() : null;
-  const timerHtml = session.focus
-    ? `<span class="focus-timer${left !== null && left <= 60_000 ? " warn" : ""}" id="focus-clock">${formatFocusClock(left || 0)}</span>`
+  const left = (session.focus || session.exam) ? focusRemainingMs() : null;
+  const timerHtml = (session.focus || session.exam)
+    ? `<span class="focus-timer${left !== null && left <= (session.exam ? 5 * 60_000 : 60_000) ? " warn" : ""}" id="focus-clock">${formatFocusClock(left || 0)}</span>`
     : "";
+  const quizTitle = session.exam ? "Examen blanc EDN"
+    : session.ecgImg ? "ECG avec tracé"
+    : session.ecg ? "Drill ECG"
+    : session.pipeline ? (session.srs ? "Pipeline · Erreurs" : "Pipeline · QCM")
+    : session.trous ? "Trous collège"
+    : session.focus ? "Focus 8 min"
+    : session.srs ? "SRS — erreurs"
+    : session.micro ? "Micro-notion"
+    : "Session en cours";
+  const validateLbl = session.exam
+    ? (session.i === n - 1 ? "Terminer l'examen" : "Valider → suivant")
+    : "Valider / Corrigé";
 
   viewEl.innerHTML = `
     <header class="quiz-bar">
-      <h1>${session.pipeline ? (session.srs ? "Pipeline · Erreurs" : "Pipeline · QCM") : session.trous ? "Trous collège" : session.focus ? "Focus 8 min" : session.srs ? "SRS — erreurs" : session.micro ? "Micro-notion" : "Session en cours"}</h1>
+      <h1>${quizTitle}</h1>
       <div style="display:flex;gap:0.65rem;align-items:center;flex-wrap:wrap">
         ${timerHtml}
-        <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · rang ${qRang(q)} · ${kind} · ${format}${theme} · ${origin}</div>
+        <div class="meta">${session.i + 1} / ${n} · ${itemLabel(q.item)} · rang ${qRang(q)} · ${kind} · ${format}${theme} · ${origin}${session.exam ? " · pas de retour" : ""}</div>
       </div>
     </header>
-    <div class="card ${revealed ? "revealed" : ""}">
+    <div class="card ${showCorrection ? "revealed" : ""}">
       <p class="stem">${esc(q.prompt)}</p>
       ${(q.images || []).map((im) => `<img class="qimg" alt="${esc(im.alt)}" src="${esc(im.src)}" />`).join("")}
       <div id="choices">${choices}</div>
-      <div class="score-box ${revealed ? "show" : ""}">${scoreBox}</div>
+      <div class="score-box ${showCorrection ? "show" : ""}">${scoreBox}</div>
       <div class="actions">
-        <button type="button" id="btn-validate" ${revealed ? "disabled" : ""}>Valider / Corrigé</button>
-        <button type="button" class="secondary" id="btn-next" ${revealed ? "" : "disabled"}>${session.i === n - 1 ? "Résultat" : "Suivant"}</button>
-        <button type="button" class="secondary" id="btn-abort">${session.focus ? "Stop Focus" : "Abandonner"}</button>
+        <button type="button" id="btn-validate" ${showCorrection || (session.exam && q.locked) ? "disabled" : ""}>${validateLbl}</button>
+        ${session.exam ? "" : `<button type="button" class="secondary" id="btn-next" ${showCorrection ? "" : "disabled"}>${session.i === n - 1 ? "Résultat" : "Suivant"}</button>`}
+        <button type="button" class="secondary" id="btn-abort">${session.focus ? "Stop Focus" : session.exam ? "Quitter l'examen" : "Abandonner"}</button>
       </div>
     </div>`;
 
-  if (session.focus) startFocusTicker();
+  if (session.focus || session.exam) startFocusTicker();
 
-  if (!revealed) {
+  if (!showCorrection && !(session.exam && q.locked)) {
     viewEl.querySelectorAll("#choices input").forEach((inp) => {
       inp.onchange = () => {
         if (q.kind === "QRU") q.picked = [inp.value];
@@ -1572,11 +1895,17 @@ function renderQuiz() {
       } else {
         q.picked = [...viewEl.querySelectorAll("#choices input:checked")].map((i) => i.value).sort();
       }
+      if (session.exam) {
+        q.locked = true;
+        if (session.i === n - 1) finishSession();
+        else { session.i++; renderQuiz(); }
+        return;
+      }
       q.revealed = true;
       q._sc = scoreQ(q, q.picked);
       renderQuiz();
     };
-  } else {
+  } else if (!session.exam) {
     $("btn-next").onclick = () => {
       if (session.i === n - 1) finishSession();
       else { session.i++; render(); }
@@ -1599,7 +1928,12 @@ function renderQuiz() {
     };
   }
   $("btn-abort").onclick = () => {
-    const done = session.qs.some((x) => x.revealed);
+    if (session.exam) {
+      if (!confirm("Terminer l'examen maintenant ? Les questions non validées compteront comme fausses.")) return;
+      finishSession();
+      return;
+    }
+    const done = session.qs.some((x) => x.revealed || x.locked);
     if (done) finishSession();
     else {
       clearFocusTicker();
@@ -1613,6 +1947,12 @@ function renderQuiz() {
 
 function finishSession() {
   clearFocusTicker();
+  if (session.exam) {
+    for (const q of session.qs) {
+      q.revealed = true;
+      q._sc = scoreQ(q, q.picked || []);
+    }
+  }
   const answered = session.qs.filter((q) => q.revealed);
   if (!answered.length) { session = null; view = "setup"; render(); return; }
   const stats = loadStats();
@@ -1626,19 +1966,31 @@ function finishSession() {
     const b = perItem[q.item] ||= { n: 0, exact: 0, pts: 0, max: 0 };
     b.n++; b.exact += sc.exact ? 1 : 0; b.pts += sc.pts; b.max += sc.max;
   }
-  const rec = { ts: Date.now(), n: answered.length, exact: exactN, pts, max, items: session.items, focus: !!session.focus };
+  const rec = { ts: Date.now(), n: answered.length, exact: exactN, pts, max, items: session.items, focus: !!session.focus, exam: !!session.exam };
   stats.sessions.unshift(rec);
   stats.sessions = stats.sessions.slice(0, 40);
+  if (session.exam) {
+    const pct = answered.length ? Math.round(100 * exactN / answered.length) : 0;
+    stats.exams.unshift({
+      ts: Date.now(),
+      n: answered.length,
+      exact: exactN,
+      pct,
+      durationMs: Date.now() - (session.startedAt || Date.now()),
+    });
+    stats.exams = stats.exams.slice(0, 20);
+  }
   for (const [id, b] of Object.entries(perItem)) {
     const cur = stats.byItem[id] ||= { seen: 0, exact: 0, pts: 0, max: 0 };
     cur.seen += b.n; cur.exact += b.exact; cur.pts += b.pts; cur.max += b.max;
     cur.last = rec.ts;
   }
   for (const q of answered) {
+    if (session.exam) continue;
     if (q._sc && q._sc.exact) scheduleRight(stats, q);
     else scheduleWrong(stats, q);
   }
-  const gamify = applyGamification(stats, { n: answered.length, exactN, focus: !!session.focus });
+  const gamify = applyGamification(stats, { n: answered.length, exactN, focus: !!session.focus || !!session.exam });
   const wasPipeline = !!session.pipeline;
   const pipeStep = pipeline ? pipeline.step : null;
   let pipelineDone = false;
@@ -1663,17 +2015,25 @@ function finishSession() {
     pipelineStep: pipeStep,
     pipelineItem: pipeline ? pipeline.itemId : null,
     pipelineDone,
+    exam: !!session.exam,
+    examDurationMs: session.exam ? Date.now() - (session.startedAt || Date.now()) : 0,
+    ecg: !!session.ecg,
   };
   view = "results";
   render();
 }
 
 function renderResults() {
-  const { exactN, pts, max, perItem, n, gamify, pipeline: wasPipe, pipelineStep, pipelineItem, pipelineDone } = session.summary;
+  const { exactN, pts, max, perItem, n, gamify, pipeline: wasPipe, pipelineStep, pipelineItem, pipelineDone, exam, examDurationMs, ecg } = session.summary;
   const pct = n ? Math.round(100 * exactN / n) : 0;
   const wrong = (session.answered || session.qs).filter((q) => q.revealed && q._sc && !q._sc.exact);
   let feedback;
-  if (pipelineDone) feedback = `Item ${itemLabel(pipelineItem)} verrouillé. Tu peux enchaîner un autre pipeline ou un Focus.`;
+  if (exam) {
+    if (pct >= 80) feedback = "Monstre EDN — niveau examen blanc atteint. Tu peux enchaîner une 2e simu dans 48 h pour consolider.";
+    else if (pct >= 70) feedback = "Seuil EDN ok — solide. Repasse les items faibles puis refais un blanc visant 80 %.";
+    else if (pct >= 50) feedback = "Mi-parcours — reprends pipeline + trous sur les items les plus rouges avant le prochain blanc.";
+    else feedback = "Sous le seuil — priorise Cours actif + 10 QCM/item sur 3 items faibles, puis refais un blanc.";
+  } else if (pipelineDone) feedback = `Item ${itemLabel(pipelineItem)} verrouillé. Tu peux enchaîner un autre pipeline ou un Focus.`;
   else if (wasPipe && pipelineStep === "qcm" && wrong.length) feedback = "Pipeline : prochaine étape = refaire les erreurs (SRS). Puis l’item sera marqué OK.";
   else if (wasPipe && pipelineStep === "qcm" && !wrong.length) feedback = "Sans erreur : item verrouillé directement. Beau travail.";
   else if (pct >= 85) feedback = "Très bon niveau sur ce lot. Tu maîtrises bien les notions tirées — garde un rythme de révision courte pour figer.";
@@ -1724,9 +2084,9 @@ function renderResults() {
     : "";
 
   viewEl.innerHTML = `
-    <h1>${pipeDoneNow ? "Pipeline — item OK" : wasPipe ? (session.srs ? "Pipeline — erreurs" : "Pipeline — QCM") : session.trous ? "Trous combles" : session.focus ? "Focus terminé" : session.srs ? "SRS terminé" : "Résultat"}</h1>
+    <h1>${pipeDoneNow ? "Pipeline — item OK" : exam ? "Examen blanc — résultat" : ecg ? "Drill ECG terminé" : wasPipe ? (session.srs ? "Pipeline — erreurs" : "Pipeline — QCM") : session.trous ? "Trous combles" : session.focus ? "Focus terminé" : session.srs ? "SRS terminé" : "Résultat"}</h1>
     ${pipeBar}
-    <p class="sub">${wasPipe ? `Pipeline · ${esc(itemLabel(pipelineItem || session.items[0]))} · ` : session.trous ? "Trous collège · " : session.focus ? "Session Focus · " : session.srs ? "Révision espacée · " : ""}${session.items.length} item${session.items.length > 1 ? "s" : ""} · ${n} question${n > 1 ? "s" : ""}${wrong.length ? ` · ${wrong.length} remis dans le carnet (1→3→7 j)` : ""}</p>
+    <p class="sub">${exam ? `Examen blanc · ${Math.round((examDurationMs || 0) / 60000)} min · ` : ecg ? "Drill ECG · " : wasPipe ? `Pipeline · ${esc(itemLabel(pipelineItem || session.items[0]))} · ` : session.trous ? "Trous collège · " : session.focus ? "Session Focus · " : session.srs ? "Révision espacée · " : ""}${session.items.length} item${session.items.length > 1 ? "s" : ""} · ${n} question${n > 1 ? "s" : ""}${exam ? "" : wrong.length ? ` · ${wrong.length} remis dans le carnet (1→3→7 j)` : ""}</p>
     ${xpBarHtml(loadStats(), gainHtml)}
     <div class="card">
       <div class="meta">Score</div>
@@ -1750,7 +2110,11 @@ function renderResults() {
             ? `<button type="button" id="pipe-again">Autre pipeline</button>`
             : session.focus
               ? `<button type="button" id="again-focus">Encore un Focus</button>`
-              : session.trous
+              : exam
+                ? `<button type="button" id="again-exam">Refaire un examen blanc</button>`
+                : ecg
+                  ? `<button type="button" id="again-ecg">Encore ECG</button>`
+                  : session.trous
                 ? `<button type="button" id="again-trous">Encore les trous</button>`
                 : session.srs
                 ? `<button type="button" id="again-srs" ${srsPendingCount(statsNow) ? "" : "disabled"}>Continuer SRS${dueLeft ? ` (${dueLeft})` : ""}</button>`
@@ -1767,6 +2131,8 @@ function renderResults() {
     pipeline = null;
     $("pipe-again").onclick = () => beginPipeline();
   } else if (session.focus) $("again-focus").onclick = () => beginFocusSession();
+  else if (exam) $("again-exam").onclick = () => beginExamSession();
+  else if (ecg) $("again-ecg").onclick = () => beginEcgSession();
   else if (session.trous) $("again-trous").onclick = () => beginTrousSession();
   else if (session.srs) $("again-srs").onclick = () => beginSrsSession();
   else $("again").onclick = () => beginSession(session.items, n);
@@ -1842,6 +2208,7 @@ function renderTraitements() {
 
 function renderSuivi() {
   const stats = loadStats();
+  const g = ednReadyGlobal(stats);
   const cible = BANK.cible || { seenHigh: 12, pctHigh: 80, seenOther: 8, pctOther: 70 };
   const rows = BANK.items.map((it) => {
     const s = stats.byItem[it.id] || { seen: 0, exact: 0, pts: 0, max: 0 };
@@ -1849,7 +2216,8 @@ function renderSuivi() {
     const needSeen = it.highYield ? cible.seenHigh : cible.seenOther;
     const needPct = it.highYield ? cible.pctHigh : cible.pctOther;
     const ready = s.seen >= needSeen && pct !== null && pct >= needPct;
-    return { ...it, ...s, pct, needSeen, needPct, ready };
+    const edn = ednReadyForItem(stats, it.id);
+    return { ...it, ...s, pct, needSeen, needPct, ready, ednPct: edn.pct, pipe: edn.pipe };
   });
   const high = rows.filter((r) => r.highYield);
   const other = rows.filter((r) => !r.highYield);
@@ -1862,12 +2230,13 @@ function renderSuivi() {
   for (const r of rows) {
     const cls = r.ready ? "" : r.pct == null ? "bad" : r.pct >= r.needPct ? "warn" : "bad";
     const bar = r.pct == null ? "—" : `<span class="bar ${cls}"><i style="width:${r.pct}%"></i></span> ${r.pct} %`;
-    body += `<tr><td>${r.label}${r.highYield ? " · prio" : ""}</td><td>${r.needSeen}/${r.needPct}%</td><td>${r.seen}${r.ready ? " OK" : ""}</td><td>${r.seen ? r.exact + "/" + r.seen : "—"}</td><td>${bar}</td></tr>`;
+    body += `<tr><td>${r.label}${r.highYield ? " · prio" : ""}${r.pipe ? " 🔒" : ""}</td><td>${r.ednPct}%</td><td>${r.needSeen}/${r.needPct}%</td><td>${r.seen}${r.ready ? " OK" : ""}</td><td>${r.seen ? r.exact + "/" + r.seen : "—"}</td><td>${bar}</td></tr>`;
   }
 
   viewEl.innerHTML = `
     <h1>Suivi</h1>
-    <p class="sub">${highOk}/${high.length} items prio au seuil · ${otherOk}/${other.length} autres · ${veryGood ? "très bon niveau" : "pas encore au seuil"}.</p>
+    <p class="sub">EDN ready global : <strong>${g.global}%</strong> (${esc(g.tier)}) · ${highOk}/${high.length} items prio · ${otherOk}/${other.length} autres.</p>
+    ${ednReadyHtml(stats)}
     ${xpBarHtml(stats, `<div class="meta" style="grid-column:1/-1">Meilleure série : ${stats.bestStreak || 0} jour${(stats.bestStreak || 0) > 1 ? "s" : ""} · SRS : ${srsDueIds(stats).length} due${srsDueIds(stats).length > 1 ? "s" : ""} / ${srsPendingCount(stats)} en file</div>`)}
     <div class="card">
       <h2>Carnet SRS</h2>
@@ -1881,7 +2250,7 @@ function renderSuivi() {
       <p class="hint" style="margin-top:0">Prio : ${cible.seenHigh} vues et ${cible.pctHigh} %. Autres : ${cible.seenOther} vues et ${cible.pctOther} %. ${stats.sessions.length} session(s) ici.</p>
       ${weak.length ? `<div class="weak-tags" style="margin-bottom:0.75rem">${weak.map((w) => `<span class="chip">${w.label}</span>`).join("")}</div>
         <div class="actions" style="margin-top:0"><button type="button" id="drill">Session 20 Q sur ces items</button></div>` : ""}
-      <table style="margin-top:12px"><thead><tr><th>Item</th><th>Cible</th><th>Vues</th><th>Exactes</th><th>Options</th></tr></thead><tbody>${body}</tbody></table>
+      <table style="margin-top:12px"><thead><tr><th>Item</th><th>EDN</th><th>Cible</th><th>Vues</th><th>Exactes</th><th>Options</th></tr></thead><tbody>${body}</tbody></table>
       <div class="actions">
         <button type="button" class="secondary" id="reset">Réinitialiser le suivi</button>
       </div>
@@ -1995,6 +2364,216 @@ function syntheseHtml(itemId) {
   }
   html += `</div>`;
   return html;
+}
+
+function beginEcosCase(caseId) {
+  const c = ECOS.find((x) => x.id === caseId);
+  if (!c) return;
+  ecosRun = { case: c, stepI: 0, picked: [], revealed: false, results: [], hintShown: false };
+  view = "ecos-play";
+  render();
+}
+
+function renderOral() {
+  if (!oralState) {
+    viewEl.innerHTML = `
+      <h2>Mode oral</h2>
+      <p class="sub">Comme à l'EDN : lis la question, réponds à voix haute, révèle, auto-évalue.</p>
+      <div class="card">
+        <p class="hint">${ORAL_N} cartes tirées de tes points faibles (cours Rang A, réflexes, pièges).</p>
+        <div class="actions">
+          <button type="button" id="oral-start">Lancer ${ORAL_N} cartes</button>
+          <button type="button" class="secondary" id="oral-home">Accueil</button>
+        </div>
+      </div>`;
+    $("oral-start").onclick = () => beginOralSession();
+    $("oral-home").onclick = () => { view = "setup"; render(); };
+    return;
+  }
+  const card = oralState.deck[oralState.i];
+  const left = oralState.deck.length - oralState.i;
+  viewEl.innerHTML = `
+    <h2>Mode oral · ${oralState.i + 1} / ${oralState.deck.length}</h2>
+    <p class="meta">${itemLabel(card.item)} · ${oralState.known} ok · ${oralState.unknown} à revoir</p>
+    <div class="card flash-card" id="oral-tap">
+      <p class="hint" style="margin:0 0 0.5rem">${esc(card.prompt)}</p>
+      <div class="oral-front">${oralState.revealed ? `<div class="oral-answer">${esc(card.answer)}</div>` : "??? — réponds à voix haute puis tape pour révéler"}</div>
+    </div>
+    <div class="actions">
+      <button type="button" id="oral-ok" ${oralState.revealed ? "" : "disabled"}>Je savais</button>
+      <button type="button" class="secondary" id="oral-ko" ${oralState.revealed ? "" : "disabled"}>À revoir</button>
+      <button type="button" class="secondary" id="oral-stop">Stop (${left} restant${left > 1 ? "s" : ""})</button>
+    </div>`;
+  $("oral-tap").onclick = () => { oralState.revealed = true; renderOral(); };
+  const next = (known) => {
+    if (known) oralState.known++;
+    else oralState.unknown++;
+    oralState.i++;
+    oralState.revealed = false;
+    if (oralState.i >= oralState.deck.length) {
+      viewEl.innerHTML = `
+        <h2>Oral terminé</h2>
+        <div class="card"><div class="big-score">${oralState.known} / ${oralState.deck.length}</div>
+        <p>${oralState.known >= oralState.deck.length * 0.75 ? "Belle restitution — continue demain." : "Relis les points « à revoir » en Cours actif."}</p>
+        <div class="actions">
+          <button type="button" id="oral-again">Encore ${ORAL_N}</button>
+          <button type="button" class="secondary" id="oral-done">Accueil</button>
+        </div></div>`;
+      $("oral-again").onclick = () => beginOralSession();
+      $("oral-done").onclick = () => { oralState = null; view = "setup"; render(); };
+      return;
+    }
+    renderOral();
+  };
+  $("oral-ok").onclick = () => next(true);
+  $("oral-ko").onclick = () => next(false);
+  $("oral-stop").onclick = () => { oralState = null; view = "setup"; render(); };
+}
+
+function renderEcos() {
+  let list = "";
+  for (const c of ECOS) {
+    const n = (c.steps || []).length;
+    const badge = c.pasAPas ? `<span class="meta"> · pas à pas</span>` : "";
+    list += `<div class="card" style="margin-bottom:0.85rem">
+      <h3 style="margin:0 0 0.35rem;font-size:1rem;color:var(--ink)">${esc(c.label || c.id)}${badge}</h3>
+      <p class="meta" style="margin:0 0 0.6rem">${n} station${n > 1 ? "s" : ""} · item ${esc(String(c.item))}</p>
+      <p style="font-size:0.9rem;margin:0 0 0.75rem;color:var(--muted)">${esc((c.vignette || "").split("\n")[0].slice(0, 120))}…</p>
+      <button type="button" class="secondary pill" data-ecos-id="${esc(c.id)}">Commencer le cas</button>
+    </div>`;
+  }
+  viewEl.innerHTML = `
+    <h2>ECOS — Cas cliniques</h2>
+    <p class="sub">Vignette complète puis questions station par station, avec correction après chaque réponse.</p>
+    ${ECOS.length ? list : `<p class="hint">Fichier <code>ecos.json</code> manquant.</p>`}
+    <div class="actions"><button type="button" class="secondary" id="ecos-home">Retour accueil</button></div>`;
+  viewEl.querySelectorAll("[data-ecos-id]").forEach((btn) => {
+    btn.onclick = () => beginEcosCase(btn.getAttribute("data-ecos-id"));
+  });
+  $("ecos-home").onclick = () => { view = "setup"; render(); };
+}
+
+function renderEcosPlay() {
+  if (!ecosRun) { view = "ecos"; render(); return; }
+  const c = ecosRun.case;
+  const steps = c.steps || [];
+  const step = steps[ecosRun.stepI];
+  if (!step) { renderEcosDone(); return; }
+  const revealed = ecosRun.revealed;
+  const cor = new Set(step.correct || []);
+  const sel = new Set(ecosRun.picked || []);
+  const kind = step.kind === "QRU" ? "QRU" : "QRM";
+  let sc = null;
+  if (revealed) {
+    sc = scoreQ({ kind: step.kind, options: step.options, correct: step.correct, pcz: step.pcz || [], scz: step.scz || [] }, ecosRun.picked);
+  }
+  const dots = steps.map((_, i) => {
+    let cls = "ecos-dot";
+    if (i < ecosRun.stepI) cls += " done";
+    if (i === ecosRun.stepI) cls += " cur";
+    return `<span class="${cls}"></span>`;
+  }).join("");
+  let choices = "";
+  for (const o of step.options || []) {
+    const should = cor.has(o.letter);
+    const did = sel.has(o.letter);
+    let cls = "choice";
+    if (revealed) {
+      if (should) cls += did ? " reveal-ok" : " reveal-miss";
+      else if (did) cls += " reveal-bad";
+    }
+    const type = step.kind === "QRU" ? "radio" : "checkbox";
+    choices += `<label class="${cls}"><input type="${type}" name="ecos-choice" value="${o.letter}" ${did ? "checked" : ""} ${revealed ? "disabled" : ""} /><span><strong>${o.letter}.</strong> ${esc(o.text)}</span></label>`;
+  }
+  let scoreBox = "";
+  if (revealed && sc) {
+    scoreBox = sc.exact
+      ? `<strong>OK</strong> — ${esc(step.explanation)}`
+      : `<strong>À revoir</strong> — corrigé ${step.correct.join(", ")}. ${esc(step.explanation)}`;
+  }
+  const hintHtml = step.hint && !revealed
+    ? `<p class="hint" id="ecos-hint" style="${ecosRun.hintShown ? "" : "display:none"}"><strong>Indice :</strong> ${esc(step.hint)}</p>`
+    : "";
+  viewEl.innerHTML = `
+    <h2>${esc(c.label || c.id)}</h2>
+    <div class="ecos-progress">${dots}</div>
+    <div class="card">
+      <div class="ecos-vignette">${esc(c.vignette || "")}</div>
+      ${(c.images || []).map((im) => `<img class="qimg" alt="${esc(im.alt)}" src="${esc(im.src)}" />`).join("")}
+      <div class="ecos-step-title">${esc(step.title || `Station ${ecosRun.stepI + 1}`)} · ${kind}</div>
+      <p class="stem">${esc(step.prompt)}</p>
+      ${hintHtml}
+      <div id="ecos-choices">${choices}</div>
+      <div class="score-box ${revealed ? "show" : ""}">${scoreBox}</div>
+      <div class="actions">
+        ${step.hint && !revealed ? `<button type="button" class="secondary" id="ecos-hint-btn">${ecosRun.hintShown ? "Masquer indice" : "Indice ECOS"}</button>` : ""}
+        <button type="button" id="ecos-validate" ${revealed ? "disabled" : ""}>${revealed ? "Corrigé" : "Valider"}</button>
+        <button type="button" class="secondary" id="ecos-next" ${revealed ? "" : "disabled"}>${ecosRun.stepI === steps.length - 1 ? "Bilan cas" : "Station suivante"}</button>
+        <button type="button" class="secondary" id="ecos-quit">Quitter</button>
+      </div>
+    </div>`;
+  if (!revealed) {
+    const hintBtn = $("ecos-hint-btn");
+    if (hintBtn) hintBtn.onclick = () => {
+      ecosRun.hintShown = !ecosRun.hintShown;
+      renderEcosPlay();
+    };
+    viewEl.querySelectorAll("#ecos-choices input").forEach((inp) => {
+      inp.onchange = () => {
+        if (step.kind === "QRU") ecosRun.picked = [inp.value];
+        else ecosRun.picked = [...viewEl.querySelectorAll("#ecos-choices input:checked")].map((i) => i.value).sort();
+      };
+    });
+    $("ecos-validate").onclick = () => {
+      if (step.kind === "QRU") {
+        const one = viewEl.querySelector("#ecos-choices input:checked");
+        ecosRun.picked = one ? [one.value] : [];
+      } else {
+        ecosRun.picked = [...viewEl.querySelectorAll("#ecos-choices input:checked")].map((i) => i.value).sort();
+      }
+      const sc2 = scoreQ({ kind: step.kind, options: step.options, correct: step.correct, pcz: step.pcz || [], scz: step.scz || [] }, ecosRun.picked);
+      ecosRun.results.push({ title: step.title, exact: sc2.exact });
+      ecosRun.revealed = true;
+      renderEcosPlay();
+    };
+  } else {
+    $("ecos-next").onclick = () => {
+      if (ecosRun.stepI >= steps.length - 1) renderEcosDone();
+      else {
+        ecosRun.stepI++;
+        ecosRun.picked = [];
+        ecosRun.revealed = false;
+        ecosRun.hintShown = false;
+        renderEcosPlay();
+      }
+    };
+  }
+  $("ecos-quit").onclick = () => { ecosRun = null; view = "ecos"; render(); };
+}
+
+function renderEcosDone() {
+  const c = ecosRun.case;
+  const exactN = ecosRun.results.filter((r) => r.exact).length;
+  const n = ecosRun.results.length;
+  const pct = n ? Math.round(100 * exactN / n) : 0;
+  const rows = ecosRun.results.map((r) =>
+    `<li>${r.exact ? "✓" : "✗"} ${esc(r.title || "Station")}</li>`
+  ).join("");
+  viewEl.innerHTML = `
+    <h2>Cas terminé — ${esc(c.label || c.id)}</h2>
+    <div class="card">
+      <div class="big-score">${exactN} / ${n}</div>
+      <p>${pct} % · ${pct >= 75 ? "Très bon raisonnement clinique." : pct >= 50 ? "Relis les stations ratées." : "Reprends le cours item puis refais le cas."}</p>
+      <ul>${rows}</ul>
+      <div class="actions">
+        <button type="button" id="ecos-retry">Refaire ce cas</button>
+        <button type="button" class="secondary" id="ecos-list">Autres cas ECOS</button>
+        <button type="button" class="secondary" id="ecos-setup">Accueil</button>
+      </div>
+    </div>`;
+  $("ecos-retry").onclick = () => beginEcosCase(c.id);
+  $("ecos-list").onclick = () => { ecosRun = null; view = "ecos"; render(); };
+  $("ecos-setup").onclick = () => { ecosRun = null; view = "setup"; render(); };
 }
 
 function renderArbres() {

@@ -106,5 +106,62 @@
       { "id": "h-crt", "q": "Resynchronisation (CRT).", "end": true, "cat": true },
       { "id": "h-ok", "q": "Éducation, régime, vaccins, traiter les comorbidités.", "end": true }
     ]
+  },
+  {
+    "id": "hta",
+    "label": "224 HTA — urgence / traitement",
+    "item": "224",
+    "root": "HTA au cabinet / aux urgences",
+    "steps": [
+      { "id": "t1", "q": "Urgence hypertensive avec atteinte d'organe (neuro, coro, rénale, hématique) ?", "yes": "t-urg", "no": "t2" },
+      { "id": "t-urg", "q": "Hospitalisation USIC. PA ↓ modérée (10–15 % 1re h). IV : urapidil, nicardipine ou labétalol.", "end": true, "cat": true },
+      { "id": "t2", "q": "Objectif PA < 140/90 (< 130/80 si diabète, IRC, CV élevé) ?", "yes": "t3", "no": "t3", "auto": true },
+      { "id": "t3", "q": "1re intention : IEC ou ARA2 (sauf CI). Associer thiazide ou IC dihydropyridinique si besoin.", "yes": "t4", "no": "t4", "auto": true },
+      { "id": "t4", "q": "HTA résistante (≥ 3 classes dont diurétique) ?", "yes": "t-resist", "no": "t-educ" },
+      { "id": "t-resist", "q": "Spironolactone si K+ OK. Bilan cause secondaire si jeune / résistant.", "end": true, "cat": true },
+      { "id": "t-educ", "q": "Régime hyposodé, AP, sevrage tabac, observance.", "end": true }
+    ]
+  },
+  {
+    "id": "endocardite",
+    "label": "152 Endocardite",
+    "item": "152",
+    "root": "Endocardite suspectée",
+    "steps": [
+      { "id": "e1", "q": "Critères de Duke modifiés remplis ou très probable ?", "yes": "e2", "no": "e-doubt" },
+      { "id": "e-doubt", "q": "Hémocultures × 3 avant ATB si stable. ETT puis ETO si prothèse / suspicion élevée.", "end": true, "cat": true },
+      { "id": "e2", "q": "Instabilité / choc / embolie majeure / abcès ?", "yes": "e-urg", "no": "e3" },
+      { "id": "e-urg", "q": "USIC + ATB IV immédiat après prélèvements. Chirurgie si indication (insuffisance, abcès, grosse végétation).", "end": true, "cat": true },
+      { "id": "e3", "q": "Endocardite native vs prothèse ?", "yes": "e-prot", "no": "e-native" },
+      { "id": "e-native", "q": "ATB IV adapté au germe (strepto, staph…). Durée 2–6 sem selon germe.", "end": true, "cat": true },
+      { "id": "e-prot", "q": "ETO obligatoire. ATB prolongés. Chirurgie fréquente si staph ou complication.", "end": true, "cat": true }
+    ]
+  },
+  {
+    "id": "ra-serre",
+    "label": "233 RA serrée symptomatique",
+    "item": "233RA",
+    "root": "RA serrée symptomatique",
+    "steps": [
+      { "id": "r1", "q": "Syncope / OAP / angor réfractaire / dysfonction VG sévère ?", "yes": "r-urg", "no": "r2" },
+      { "id": "r-urg", "q": "Indication chirurgicale ou TAVI en urgence relative. Hospitalisation.", "end": true, "cat": true },
+      { "id": "r2", "q": "RA très serrée (surface < 1 cm² ou gradient moyen ≥ 40 mmHg) ?", "yes": "r3", "no": "r-suiv" },
+      { "id": "r3", "q": "Symptômes d'effort (NYHA II+) ?", "yes": "r-indic", "no": "r-suiv" },
+      { "id": "r-indic", "q": "Indication de remplacement valvulaire (chirurgie ou TAVI selon score).", "end": true, "cat": true },
+      { "id": "r-suiv", "q": "Surveillance ETT annuelle. Épreuve d'effort si discordance clinique/echo.", "end": true }
+    ]
+  },
+  {
+    "id": "saignement-aod",
+    "label": "330 Saignement sous AOD",
+    "item": "330",
+    "root": "Saignement sous anticoagulant",
+    "steps": [
+      { "id": "a1", "q": "Saignement majeur / instabilité hémodynamique ?", "yes": "a-maj", "no": "a2" },
+      { "id": "a-maj", "q": "Arrêt AOD + prise en charge hémorragique. Antidote si disponible (idarucizumab dabigatran, andexanet rivaroxaban/apixaban).", "end": true, "cat": true },
+      { "id": "a2", "q": "Saignement mineur ?", "yes": "a-min", "no": "a3" },
+      { "id": "a-min", "q": "Traitement local. Reprise AOD rapidement si possible après contrôle.", "end": true },
+      { "id": "a3", "q": "Rechercher cause (ulcère, polype, trauma). Rebalancement bénéfice/risque thrombotique.", "end": true, "cat": true }
+    ]
   }
 ]

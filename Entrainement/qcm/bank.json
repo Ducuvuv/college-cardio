@@ -88,9 +88,9 @@
       "id": "224",
       "label": "224 HTA",
       "group": "I — Athérome",
-      "nNouveau": 37,
+      "nNouveau": 39,
       "nCollege": 5,
-      "n": 37,
+      "n": 39,
       "highYield": false
     },
     {
@@ -106,9 +106,9 @@
       "id": "339",
       "label": "339 SCA / angor",
       "group": "I — Athérome",
-      "nNouveau": 53,
+      "nNouveau": 56,
       "nCollege": 6,
-      "n": 53,
+      "n": 56,
       "highYield": true
     },
     {
@@ -178,45 +178,45 @@
       "id": "342",
       "label": "342 Malaises / syncope",
       "group": "III — Rythme",
-      "nNouveau": 34,
+      "nNouveau": 35,
       "nCollege": 5,
-      "n": 34,
+      "n": 35,
       "highYield": true
     },
     {
       "id": "231",
       "label": "231 ECG",
       "group": "III — Rythme",
-      "nNouveau": 40,
+      "nNouveau": 60,
       "nCollege": 5,
-      "n": 40,
+      "n": 60,
       "highYield": true
     },
     {
       "id": "232",
       "label": "232 FA",
       "group": "III — Rythme",
-      "nNouveau": 44,
+      "nNouveau": 45,
       "nCollege": 5,
-      "n": 44,
+      "n": 45,
       "highYield": true
     },
     {
       "id": "236",
       "label": "236 Conduction",
       "group": "III — Rythme",
-      "nNouveau": 31,
+      "nNouveau": 35,
       "nCollege": 6,
-      "n": 31,
+      "n": 35,
       "highYield": false
     },
     {
       "id": "237",
       "label": "237 Palpitations",
       "group": "III — Rythme",
-      "nNouveau": 25,
+      "nNouveau": 26,
       "nCollege": 5,
-      "n": 25,
+      "n": 26,
       "highYield": false
     },
     {
@@ -241,18 +241,18 @@
       "id": "226",
       "label": "226 TVP / EP",
       "group": "V — MTEV",
-      "nNouveau": 44,
+      "nNouveau": 46,
       "nCollege": 5,
-      "n": 44,
+      "n": 46,
       "highYield": true
     },
     {
       "id": "235",
       "label": "235 Péricardite",
       "group": "VI — Divers",
-      "nNouveau": 23,
+      "nNouveau": 25,
       "nCollege": 5,
-      "n": 23,
+      "n": 25,
       "highYield": false
     },
     {
@@ -275,20 +275,21 @@
     }
   ],
   "origins": {
-    "nouveau": 793,
+    "nouveau": 829,
     "college": 121
   },
   "formats": {
-    "standard": 839,
+    "standard": 875,
     "cas_clinique": 75
   },
   "rangs": {
-    "A": 831,
+    "A": 867,
     "B": 83
   },
   "themes": {
     "autre": 515,
-    "traitement": 385,
+    "traitement": 388,
+    "ecg": 33,
     "trou": 14
   },
   "cible": {
@@ -27128,6 +27129,1523 @@
       "images": [],
       "format": "standard",
       "theme": "",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-001",
+      "item": "231",
+      "kind": "QRU",
+      "n": 1,
+      "prompt": "ECG : absence d'ondes P, activité atriale anarchique, intervalles RR irréguliers, QRS fins. FC moyenne 110/min. Quel diagnostic ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fibrillation atriale"
+        },
+        {
+          "letter": "B",
+          "text": "Flutter atrial"
+        },
+        {
+          "letter": "C",
+          "text": "Tachycardie jonctionnelle"
+        },
+        {
+          "letter": "D",
+          "text": "Extrasystoles ventriculaires"
+        },
+        {
+          "letter": "E",
+          "text": "Rythme sinusal régulier"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "FA : pas d'ondes P, RR irréguliers, QRS fins (conduction normale).",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-002",
+      "item": "231",
+      "kind": "QRU",
+      "n": 2,
+      "prompt": "ECG : sus-décalage du ST concave vers le haut, diffus (I, II, aVL, aVF, V2–V6), sous-décalage du segment PQ. Quel diagnostic le plus probable ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "IDM ST+ antérieur"
+        },
+        {
+          "letter": "B",
+          "text": "Péricardite aiguë"
+        },
+        {
+          "letter": "C",
+          "text": "Embolie pulmonaire"
+        },
+        {
+          "letter": "D",
+          "text": "Hyperkaliémie"
+        },
+        {
+          "letter": "E",
+          "text": "Syndrome de Brugada"
+        }
+      ],
+      "correct": [
+        "B"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST diffus concave sans miroir + sous-décalage PQ = péricardite. IDM ST+ = miroir + territoire.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-003",
+      "item": "231",
+      "kind": "QRU",
+      "n": 3,
+      "prompt": "ECG : sus-décalage ST 3 mm en V2–V4, sous-décalage réciproque en inférieur (DII, DIII, aVF). Quel territoire ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Antérieur (IVA)"
+        },
+        {
+          "letter": "B",
+          "text": "Inférieur (CD)"
+        },
+        {
+          "letter": "C",
+          "text": "Latéral (Cx)"
+        },
+        {
+          "letter": "D",
+          "text": "Septal isolé"
+        },
+        {
+          "letter": "E",
+          "text": "Postérieur pur"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST+ antérieur V2–V4. Réciproque inférieur classique.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-004",
+      "item": "231",
+      "kind": "QRU",
+      "n": 4,
+      "prompt": "ECG : sus-décalage ST 2 mm en DII, DIII, aVF ; sous-décalage réciproque en antérieur. FC 52/min. Quelle conduite immédiate devant douleur persistante ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Coronarographie en urgence (IDM ST+ inférieur)"
+        },
+        {
+          "letter": "B",
+          "text": "Anticoagulation seule et avis cardiologique différé"
+        },
+        {
+          "letter": "C",
+          "text": "Scanner thoracique avant tout"
+        },
+        {
+          "letter": "D",
+          "text": "Bêtabloquant IV en première intention"
+        },
+        {
+          "letter": "E",
+          "text": "Attendre la troponine avant toute décision"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST+ inférieur = urgence coronaire. Bradycardie possible (nœud sinusal/AV).",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "236-N-lot_ecg-005",
+      "item": "236",
+      "kind": "QRU",
+      "n": 5,
+      "prompt": "ECG : BAV du 2e degré Mobitz 2, QRS larges 130 ms, FC ventriculaire 45/min. Quelle conduite ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Surveillance si asymptomatique"
+        },
+        {
+          "letter": "B",
+          "text": "Atropine puis stimulation transcutanée si besoin ; indication de pacemaker"
+        },
+        {
+          "letter": "C",
+          "text": "Amiodarone IV"
+        },
+        {
+          "letter": "D",
+          "text": "Adénosine"
+        },
+        {
+          "letter": "E",
+          "text": "Bêtabloquant pour ralentir"
+        }
+      ],
+      "correct": [
+        "B"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mobitz 2 + QRS larges = indication pacemaker. Risque de BAV complet.",
+      "images": [],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "236-N-lot_ecg-006",
+      "item": "236",
+      "kind": "QRU",
+      "n": 6,
+      "prompt": "ECG : dissociation auriculo-ventriculaire complète, QRS fins, fréquence ventriculaire 38/min. Quel diagnostic ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "BAV du 3e degré avec échappement jonctionnel"
+        },
+        {
+          "letter": "B",
+          "text": "BAV du 1er degré"
+        },
+        {
+          "letter": "C",
+          "text": "Tachycardie sinusale"
+        },
+        {
+          "letter": "D",
+          "text": "FA lente"
+        },
+        {
+          "letter": "E",
+          "text": "Extrasystole auriculaire bloquée"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV 3 : P et QRS indépendants. QRS fins = échappement jonctionnel/nodal.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-007",
+      "item": "231",
+      "kind": "QRU",
+      "n": 7,
+      "prompt": "ECG : tachycardie régulière 180/min, QRS fins 80 ms, pas d'ondes P visibles, pseudo-rythme sinusal en début de trace. Diagnostic le plus probable ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tachycardie ventriculaire"
+        },
+        {
+          "letter": "B",
+          "text": "Tachycardie supraventriculaire (RP ou RAV)"
+        },
+        {
+          "letter": "C",
+          "text": "FA rapide"
+        },
+        {
+          "letter": "D",
+          "text": "Flutter 1:1"
+        },
+        {
+          "letter": "E",
+          "text": "Torsades de pointes"
+        }
+      ],
+      "correct": [
+        "B"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tachycardie régulière QRS fins sans P = TSV. FA = irrégulière.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "226-N-lot_ecg-008",
+      "item": "226",
+      "kind": "QRU",
+      "n": 8,
+      "prompt": "ECG : tachycardie sinusale 105/min, onde S profonde en DIII, QRS fin, onde T négative V1–V3. Contexte : dyspnée aiguë post-immobilisation. Quel diagnostic oriente l'ECG ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Embolie pulmonaire"
+        },
+        {
+          "letter": "B",
+          "text": "Péricardite"
+        },
+        {
+          "letter": "C",
+          "text": "IDM antérieur"
+        },
+        {
+          "letter": "D",
+          "text": "Hyperkaliémie"
+        },
+        {
+          "letter": "E",
+          "text": "BAV complet"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "S1Q3 + T négatives antérieures + tachycardie = EP (signes inconstants mais classiques).",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-009",
+      "item": "231",
+      "kind": "QRM",
+      "n": 9,
+      "prompt": "ECG : QRS 140 ms, aspect rSR' en V1, onde S large en V5–V6. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bloc de branche droit complet"
+        },
+        {
+          "letter": "B",
+          "text": "QRS > 120 ms"
+        },
+        {
+          "letter": "C",
+          "text": "Bloc de branche gauche complet"
+        },
+        {
+          "letter": "D",
+          "text": "Peut masquer un SCA sous-jacent : reprendre l'ECG en comparant aux antérieurs"
+        },
+        {
+          "letter": "E",
+          "text": "Indication systématique de pacemaker"
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBD : rSR' V1, S large latéral. BBG = QRS large + HBAG. BBD peut masquer l'ischémie antérieure.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-010",
+      "item": "231",
+      "kind": "QRM",
+      "n": 10,
+      "prompt": "ECG : QRS 130 ms, déviation axiale gauche < −30°, notché en V5–V6. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bloc de branche gauche complet"
+        },
+        {
+          "letter": "B",
+          "text": "Peut être associé à une cardiopathie hypertrophique ou ischémique"
+        },
+        {
+          "letter": "C",
+          "text": "Bloc de branche droit"
+        },
+        {
+          "letter": "D",
+          "text": "Critère Sokolow-Lyon utilisable tel quel pour HVG"
+        },
+        {
+          "letter": "E",
+          "text": "En cas de BBG nouveau, penser SCA et comparer aux ECG antérieurs"
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBG : QRS large + HBAG. BBG nouveau = SCA possible. Sokolow altéré si BBG.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "224-N-lot_ecg-011",
+      "item": "224",
+      "kind": "QRU",
+      "n": 11,
+      "prompt": "ECG : index Sokolow-Lyon S V1 + R V5 = 38 mm, strain pattern en latéral (ST-T négatif V5–V6). Patient HTA connu. Interprétation ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypertrophie ventriculaire gauche liée à l'HTA"
+        },
+        {
+          "letter": "B",
+          "text": "ECG normal"
+        },
+        {
+          "letter": "C",
+          "text": "IDM aigu antérieur"
+        },
+        {
+          "letter": "D",
+          "text": "Péricardite"
+        },
+        {
+          "letter": "E",
+          "text": "Hyperkaliémie"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sokolow > 35 mm + strain = HVG. ETT pour confirmer et évaluer la fonction.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-012",
+      "item": "231",
+      "kind": "QRU",
+      "n": 12,
+      "prompt": "ECG : ondes T très pointues, symétriques, larges en antérieur ; QRS élargi ; absence d'onde P. Kaliémie 7,2 mmol/L. Quel trouble ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hyperkaliémie sévère"
+        },
+        {
+          "letter": "B",
+          "text": "Hypokaliémie"
+        },
+        {
+          "letter": "C",
+          "text": "Hypocalcémie"
+        },
+        {
+          "letter": "D",
+          "text": "Péricardite"
+        },
+        {
+          "letter": "E",
+          "text": "Syndrome de Brugada type 1"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ondes T en tente + élargissement QRS + K+ élevé = hyperkaliémie. Urgence.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-013",
+      "item": "231",
+      "kind": "QRU",
+      "n": 13,
+      "prompt": "ECG : QTc 520 ms, polymorphisme de l'axe, pauses suivies de salves de tachycardie à QRS torsadés. Quel diagnostic ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Torsades de pointes sur QT long"
+        },
+        {
+          "letter": "B",
+          "text": "FA"
+        },
+        {
+          "letter": "C",
+          "text": "Flutter atrial"
+        },
+        {
+          "letter": "D",
+          "text": "TV monomorphe soutenue"
+        },
+        {
+          "letter": "E",
+          "text": "BAV 1"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Torsades = TV polymorphe sur QT long. Causes : médicaments, hypokaliémie, hypomagnésémie.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-014",
+      "item": "231",
+      "kind": "QRU",
+      "n": 14,
+      "prompt": "ECG : activité atriale régulière ~300/min, ondes en dents de scie en inférieur (II, III, aVF), conduction AV variable (2:1 puis 4:1). QRS fins. Diagnostic ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Flutter atrial"
+        },
+        {
+          "letter": "B",
+          "text": "Fibrillation atriale"
+        },
+        {
+          "letter": "C",
+          "text": "Tachycardie sinusale"
+        },
+        {
+          "letter": "D",
+          "text": "Tachycardie ventriculaire"
+        },
+        {
+          "letter": "E",
+          "text": "Rythme junctionnel accéléré"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Flutter : ondes F en dents de scie, conduction AV variable. Ablation isthme cavo-tricuspidien si symptomatique.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "339-N-lot_ecg-015",
+      "item": "339",
+      "kind": "QRU",
+      "n": 15,
+      "prompt": "ECG : sous-décalage horizontal du ST ≥ 0,5 mm en antérieur + troponine élevée. Pas de sus-décalage. Diagnostic ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "SCA ST- (NSTEMI si troponine+)"
+        },
+        {
+          "letter": "B",
+          "text": "Angor stable"
+        },
+        {
+          "letter": "C",
+          "text": "Péricardite"
+        },
+        {
+          "letter": "D",
+          "text": "EP"
+        },
+        {
+          "letter": "E",
+          "text": "Normal"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST- + troponine = NSTEMI. Stratégie invasive selon le risque (GRACE, hémodynamique).",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-016",
+      "item": "231",
+      "kind": "QRU",
+      "n": 16,
+      "prompt": "ECG : PR 240 ms, QRS 90 ms, 1 onde P pour 1 QRS, rythme sinusal 70/min. Diagnostic ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "BAV du 1er degré"
+        },
+        {
+          "letter": "B",
+          "text": "BAV du 2e degré Mobitz 1"
+        },
+        {
+          "letter": "C",
+          "text": "BAV du 3e degré"
+        },
+        {
+          "letter": "D",
+          "text": "Syndrome de Wolff-Parkinson-White"
+        },
+        {
+          "letter": "E",
+          "text": "ECG normal"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "PR > 200 ms, conduction 1:1 = BAV 1. Souvent bénin si asymptomatique.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-017",
+      "item": "231",
+      "kind": "QRU",
+      "n": 17,
+      "prompt": "ECG : PR court < 120 ms, delta en début de QRS, QRS 110 ms. Tachycardie régulière 200/min. Quel syndrome ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Wolff-Parkinson-White"
+        },
+        {
+          "letter": "B",
+          "text": "BBD isolé"
+        },
+        {
+          "letter": "C",
+          "text": "BAV 1"
+        },
+        {
+          "letter": "D",
+          "text": "FA"
+        },
+        {
+          "letter": "E",
+          "text": "Péricardite"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "WPW : PR court + onde delta. TSV : éviter vérapamil/adénosine si FA sur voie accessoire (préférer procainamide/électrique).",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "342-N-lot_ecg-018",
+      "item": "342",
+      "kind": "QRU",
+      "n": 18,
+      "prompt": "ECG devant syncope : pauses sinusales > 3 s, FC de base 38/min, QRS fins. Quelle cause cardiaque ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dysfonction sinusale"
+        },
+        {
+          "letter": "B",
+          "text": "Crise d'épilepsie"
+        },
+        {
+          "letter": "C",
+          "text": "Hypotension orthostatique seule"
+        },
+        {
+          "letter": "D",
+          "text": "Crise de panique"
+        },
+        {
+          "letter": "E",
+          "text": "Hyperventilation"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Pauses > 3 s ou bradycardie < 40 éveillé = dysfonction sinusale. Indication pacemaker si symptomatique.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-019",
+      "item": "231",
+      "kind": "QRU",
+      "n": 19,
+      "prompt": "ECG : tachycardie régulière 160/min, QRS larges 160 ms, dissociation AV. Patient hémodynamiquement instable. Conduite ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Choc électrique synchronisé en urgence"
+        },
+        {
+          "letter": "B",
+          "text": "Adénosine IV"
+        },
+        {
+          "letter": "C",
+          "text": "Vérapamil IV"
+        },
+        {
+          "letter": "D",
+          "text": "Observation 24 h"
+        },
+        {
+          "letter": "E",
+          "text": "Atropine seule"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "TV avec instabilité = cardioversion électrique immédiate. Adénosine/vérapamil contre-indiqués en TV.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-020",
+      "item": "231",
+      "kind": "QRM",
+      "n": 20,
+      "prompt": "ECG normal chez adulte asymptomatique : PR 160 ms, QRS 85 ms, axe +60°, QTc 410 ms, pas d'anomalie ST-T. Quelles propositions sont exactes ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L'ECG est dans les limites de la normale"
+        },
+        {
+          "letter": "B",
+          "text": "PR normal entre 120 et 200 ms"
+        },
+        {
+          "letter": "C",
+          "text": "QRS < 120 ms"
+        },
+        {
+          "letter": "D",
+          "text": "Un ECG normal exclut tout SCA en cours"
+        },
+        {
+          "letter": "E",
+          "text": "L'axe entre −30° et +90° est normal"
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ECG normal ne exclut pas SCA ST- (> 30 % ont ECG normal ou non spécifique).",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "235-N-lot_ecg-021",
+      "item": "235",
+      "kind": "QRU",
+      "n": 21,
+      "prompt": "ECG : microvoltage diffus, alternance électrique (amplitude QRS variable), tachycardie sinusale. Écho : épanchement péricardique abondant. Quel signe ECG ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Alternance électrique (tamponnade)"
+        },
+        {
+          "letter": "B",
+          "text": "Onde delta"
+        },
+        {
+          "letter": "C",
+          "text": "Signe de Brugada"
+        },
+        {
+          "letter": "D",
+          "text": "Ondes U géantes"
+        },
+        {
+          "letter": "E",
+          "text": "Hypertrophie auriculaire gauche seule"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Alternance électrique + microvoltage = épanchement abondant / tamponnade.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg-022",
+      "item": "231",
+      "kind": "QRU",
+      "n": 22,
+      "prompt": "ECG : sous-décalage ST horizontal 1 mm en V4–V6, onde T aplatie ; pas de douleur actuelle. Antécédent de diabète. Signification ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anomalie ST-T pouvant traduire une ischémie silencieuse — à corréler à la clinique et à l'effort"
+        },
+        {
+          "letter": "B",
+          "text": "Péricardite aiguë certaine"
+        },
+        {
+          "letter": "C",
+          "text": "EP certaine"
+        },
+        {
+          "letter": "D",
+          "text": "ECG normal"
+        },
+        {
+          "letter": "E",
+          "text": "Hyperkaliémie"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST-T horizontal/plat = ischémie possible, surtout diabétique. Epreuve d'effort / imagerie selon contexte.",
+      "images": [],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg_images-001",
+      "item": "231",
+      "kind": "QRU",
+      "n": 1,
+      "prompt": "Quel diagnostic correspond à cet ECG ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rythme sinusal normal"
+        },
+        {
+          "letter": "B",
+          "text": "Fibrillation atriale"
+        },
+        {
+          "letter": "C",
+          "text": "BAV du 3e degré"
+        },
+        {
+          "letter": "D",
+          "text": "Tachycardie ventriculaire"
+        },
+        {
+          "letter": "E",
+          "text": "IDM ST+ antérieur"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ondes P visibles, QRS fins réguliers, ST isoélectrique = rythme sinusal normal.",
+      "images": [
+        {
+          "alt": "ECG — rythme sinusal normal",
+          "src": "images/ecg/normal.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg_images-002",
+      "item": "231",
+      "kind": "QRU",
+      "n": 2,
+      "prompt": "Interprétation de cet ECG :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fibrillation atriale"
+        },
+        {
+          "letter": "B",
+          "text": "Flutter atrial 2:1"
+        },
+        {
+          "letter": "C",
+          "text": "Extrasystoles auriculaires"
+        },
+        {
+          "letter": "D",
+          "text": "Tachycardie sinusale"
+        },
+        {
+          "letter": "E",
+          "text": "Rythme junctionnel"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Absence d'ondes P, activité atriale anarchique, RR irréguliers = FA.",
+      "images": [
+        {
+          "alt": "ECG — fibrillation atriale",
+          "src": "images/ecg/fa.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "339-N-lot_ecg_images-003",
+      "item": "339",
+      "kind": "QRU",
+      "n": 3,
+      "prompt": "Devant une douleur thoracique aiguë, cet ECG oriente vers :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "SCA ST+ antérieur — urgence de revascularisation"
+        },
+        {
+          "letter": "B",
+          "text": "Péricardite aiguë"
+        },
+        {
+          "letter": "C",
+          "text": "Embolie pulmonaire"
+        },
+        {
+          "letter": "D",
+          "text": "Angor stable"
+        },
+        {
+          "letter": "E",
+          "text": "ECG normal"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Sus-décalage ST territorial antérieur = SCA ST+ → angioplastie ou fibrinolyse en urgence.",
+      "images": [
+        {
+          "alt": "ECG — sus-décalage ST antérieur",
+          "src": "images/ecg/stemi-anterior.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "339-N-lot_ecg_images-004",
+      "item": "339",
+      "kind": "QRU",
+      "n": 4,
+      "prompt": "Douleur thoracique + ECG suivant. Territoire en jeu ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inférieur (CD) — envisager coronaire droite"
+        },
+        {
+          "letter": "B",
+          "text": "Antérieur (IVA)"
+        },
+        {
+          "letter": "C",
+          "text": "Latéral (Cx) pur"
+        },
+        {
+          "letter": "D",
+          "text": "Pas d'ischémie"
+        },
+        {
+          "letter": "E",
+          "text": "Péricardite seule"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST+ en DII–DIII–aVF = territoire inférieur. Surveiller BAV ou BS liés à la CD.",
+      "images": [
+        {
+          "alt": "ECG — sus-décalage ST inférieur",
+          "src": "images/ecg/stemi-inferior.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "235-N-lot_ecg_images-005",
+      "item": "235",
+      "kind": "QRU",
+      "n": 5,
+      "prompt": "Fièvre, douleur thoracique positionnelle, ECG ci-dessous. Diagnostic ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Péricardite aiguë"
+        },
+        {
+          "letter": "B",
+          "text": "IDM ST+ antérieur"
+        },
+        {
+          "letter": "C",
+          "text": "Embolie pulmonaire"
+        },
+        {
+          "letter": "D",
+          "text": "Hyperkaliémie"
+        },
+        {
+          "letter": "E",
+          "text": "BBG neuf"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "ST diffus concave sans miroir + sous-décalage PQ = péricardite. Troponine peut être modérément élevée.",
+      "images": [
+        {
+          "alt": "ECG — péricardite",
+          "src": "images/ecg/pericarditis.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "236-N-lot_ecg_images-006",
+      "item": "236",
+      "kind": "QRU",
+      "n": 6,
+      "prompt": "Syncope + ECG. Conduite à tenir en urgence ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Surveillance + indication de pacemaker ; atropine/stimulation si bradycardie mal tolérée"
+        },
+        {
+          "letter": "B",
+          "text": "Adénosine IV"
+        },
+        {
+          "letter": "C",
+          "text": "Amiodarone en bolus"
+        },
+        {
+          "letter": "D",
+          "text": "High dose bêtabloquant"
+        },
+        {
+          "letter": "E",
+          "text": "Aucune prise en charge spécifique"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BAV 3 symptomatique = stimulation transcutanée + pacemaker. QRS fins = échappement jonctionnel.",
+      "images": [
+        {
+          "alt": "ECG — BAV 3",
+          "src": "images/ecg/bav3.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "traitement",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "236-N-lot_ecg_images-007",
+      "item": "236",
+      "kind": "QRU",
+      "n": 7,
+      "prompt": "Cet ECG montre :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "BAV du 2e degré Mobitz 2 — risque de BAV complet"
+        },
+        {
+          "letter": "B",
+          "text": "BAV du 1er degré"
+        },
+        {
+          "letter": "C",
+          "text": "Mobitz 1 (Wenckebach)"
+        },
+        {
+          "letter": "D",
+          "text": "FA"
+        },
+        {
+          "letter": "E",
+          "text": "Rythme sinusal normal"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Mobitz 2 = bloc soudain d'une onde P sans allongement progressif du PR. Indication pacemaker si symptomatique ou QRS larges.",
+      "images": [
+        {
+          "alt": "ECG — Mobitz 2",
+          "src": "images/ecg/mobitz2.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg_images-008",
+      "item": "231",
+      "kind": "QRU",
+      "n": 8,
+      "prompt": "QRS larges avec aspect typique en V1. Diagnostic ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bloc de branche droit complet"
+        },
+        {
+          "letter": "B",
+          "text": "Bloc de branche gauche complet"
+        },
+        {
+          "letter": "C",
+          "text": "TV monomorphe"
+        },
+        {
+          "letter": "D",
+          "text": "WPW"
+        },
+        {
+          "letter": "E",
+          "text": "ECG normal"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBD : QRS ≥ 120 ms, rSR' en V1, S large latéral. Peut masquer un SCA antérieur — comparer aux ECG antérieurs.",
+      "images": [
+        {
+          "alt": "ECG — BBD",
+          "src": "images/ecg/rbbb.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "224-N-lot_ecg_images-009",
+      "item": "224",
+      "kind": "QRU",
+      "n": 9,
+      "prompt": "HTA chronique — ECG :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bloc de branche gauche complet"
+        },
+        {
+          "letter": "B",
+          "text": "Bloc de branche droit"
+        },
+        {
+          "letter": "C",
+          "text": "FA"
+        },
+        {
+          "letter": "D",
+          "text": "Rythme sinusal normal"
+        },
+        {
+          "letter": "E",
+          "text": "Flutter"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "BBG : QRS large + HBAG. BBG neuf = penser SCA et comparer aux tracés antérieurs.",
+      "images": [
+        {
+          "alt": "ECG — BBG",
+          "src": "images/ecg/lbbb.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "232-N-lot_ecg_images-010",
+      "item": "232",
+      "kind": "QRU",
+      "n": 10,
+      "prompt": "Palpitations — ECG :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Flutter atrial"
+        },
+        {
+          "letter": "B",
+          "text": "Fibrillation atriale"
+        },
+        {
+          "letter": "C",
+          "text": "Tachycardie sinusale"
+        },
+        {
+          "letter": "D",
+          "text": "TV"
+        },
+        {
+          "letter": "E",
+          "text": "BAV 3"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ondes F en dents de scie, conduction AV variable. Ablation de l'isthme si symptomatique ou mal toléré.",
+      "images": [
+        {
+          "alt": "ECG — flutter",
+          "src": "images/ecg/flutter.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg_images-011",
+      "item": "231",
+      "kind": "QRU",
+      "n": 11,
+      "prompt": "Palpitations + malaises. ECG :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tachycardie ventriculaire"
+        },
+        {
+          "letter": "B",
+          "text": "TSV à QRS fins"
+        },
+        {
+          "letter": "C",
+          "text": "FA rapide"
+        },
+        {
+          "letter": "D",
+          "text": "Flutter 2:1"
+        },
+        {
+          "letter": "E",
+          "text": "Rythme sinusal"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Tachycardie régulière QRS larges = TV jusqu'à preuve du contraire. Instabilité → choc électrique synchronisé.",
+      "images": [
+        {
+          "alt": "ECG — TV",
+          "src": "images/ecg/vt.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "231-N-lot_ecg_images-012",
+      "item": "231",
+      "kind": "QRU",
+      "n": 12,
+      "prompt": "Insuffisance rénale + ECG :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hyperkaliémie sévère"
+        },
+        {
+          "letter": "B",
+          "text": "Hypokaliémie"
+        },
+        {
+          "letter": "C",
+          "text": "Péricardite"
+        },
+        {
+          "letter": "D",
+          "text": "Angor stable"
+        },
+        {
+          "letter": "E",
+          "text": "ECG normal"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "Ondes T pointues + élargissement QRS = hyperkaliémie. Urgence : calcium, insuline-glucose, résine, dialyse si besoin.",
+      "images": [
+        {
+          "alt": "ECG — hyperkaliémie",
+          "src": "images/ecg/hyperkalemia.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "226-N-lot_ecg_images-013",
+      "item": "226",
+      "kind": "QRU",
+      "n": 13,
+      "prompt": "Dyspnée aiguë post-voyage — ECG :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Signes indirects d'embolie pulmonaire (S1Q3, T négatives)"
+        },
+        {
+          "letter": "B",
+          "text": "IDM ST+ antérieur"
+        },
+        {
+          "letter": "C",
+          "text": "Péricardite"
+        },
+        {
+          "letter": "D",
+          "text": "BAV complet"
+        },
+        {
+          "letter": "E",
+          "text": "ECG strictement normal obligatoire en EP"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "EP : ECG souvent normal ou tachycardie sinusale ; S1Q3 et T négatives antérieures possibles mais inconstants.",
+      "images": [
+        {
+          "alt": "ECG — signes EP",
+          "src": "images/ecg/ep.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
+      "origin": "nouveau",
+      "rang": "A"
+    },
+    {
+      "id": "237-N-lot_ecg_images-014",
+      "item": "237",
+      "kind": "QRU",
+      "n": 14,
+      "prompt": "Palpitations chez sujet jeune — ECG :",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Syndrome de Wolff-Parkinson-White"
+        },
+        {
+          "letter": "B",
+          "text": "BBD isolé"
+        },
+        {
+          "letter": "C",
+          "text": "BAV 1"
+        },
+        {
+          "letter": "D",
+          "text": "FA"
+        },
+        {
+          "letter": "E",
+          "text": "Normal"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
+      "pcz": [],
+      "scz": [],
+      "explanation": "PR court + onde delta. En FA sur voie accessoire : éviter adénosine/vérapamil → procainamide ou cardioversion.",
+      "images": [
+        {
+          "alt": "ECG — WPW",
+          "src": "images/ecg/wpw.svg"
+        }
+      ],
+      "format": "standard",
+      "theme": "ecg",
       "origin": "nouveau",
       "rang": "A"
     },

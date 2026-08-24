@@ -1,0 +1,486 @@
+{
+  "cases": [
+    {
+      "id": "ecos-sca-st",
+      "item": "339",
+      "label": "ECOS · Douleur thoracique ST+",
+      "pasAPas": true,
+      "vignette": "M. Durand, 61 ans, tabac actif, HTA, dyslipidémie.\nConsulte aux urgences pour douleur rétrosternale constrictive depuis 1 h 30, au repos, irradiant au bras gauche, 8/10, non soulagée par 2 prises de trinitrine.\n\nÀ l'examen : pâleur, diaphorèse. FC 92/min, PA 148/88 mmHg, SpO2 96 % air ambiant. Auscultation cardiopulmonaire normale. Pas de signe de défaillance VG.",
+      "images": [{"alt": "ECG admission", "src": "images/ecg/stemi-anterior.svg"}],
+      "steps": [
+        {
+          "title": "Station 1 — Priorisation",
+          "hint": "Pense urgence coronaire : ECG + aspirine + filière SCA, pas de scanner d'abord.",
+          "prompt": "Quelles actions sont indiquées dans les 10 premières minutes ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "ECG 12 dérivations (déjà réalisé) et appel du cardiologue / activation filière SCA"},
+            {"letter": "B", "text": "Aspirine en charge si pas de contre-indication"},
+            {"letter": "C", "text": "Scanner thoracique avant toute décision thérapeutique"},
+            {"letter": "D", "text": "Antalgiques morphiniques si douleur persistante"},
+            {"letter": "E", "text": "Attendre le résultat de la troponine avant toute revascularisation"}
+          ],
+          "correct": ["A", "B", "D"],
+          "explanation": "SCA ST+ = urgence. Aspirine + filière SCA + antalgie. Jamais retarder la reperfusion pour un scanner ou une troponine."
+        },
+        {
+          "title": "Station 2 — Diagnostic ECG",
+          "prompt": "Interprétation de l'ECG et diagnostic principal ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "SCA ST+ antérieur"},
+            {"letter": "B", "text": "Péricardite aiguë"},
+            {"letter": "C", "text": "Angor stable"},
+            {"letter": "D", "text": "Embolie pulmonaire"},
+            {"letter": "E", "text": "Douleur musculo-squelettique"}
+          ],
+          "correct": ["A"],
+          "explanation": "Sus-décalage ST territorial antérieur + clinique typique = SCA ST+."
+        },
+        {
+          "title": "Station 3 — Stratégie",
+          "prompt": "Stratégie de revascularisation privilégiée si centre équipé à 45 min ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Angioplastie primaire en urgence"},
+            {"letter": "B", "text": "Coronarographie différée à J+3"},
+            {"letter": "C", "text": "Test d'effort avant décision"},
+            {"letter": "D", "text": "Traitement médical seul sans reperfusion"},
+            {"letter": "E", "text": "IRM cardiaque en première intention"}
+          ],
+          "correct": ["A"],
+          "explanation": "Angioplastie primaire si disponible dans les délais. Fibrinolyse si impossible dans le délai cible."
+        },
+        {
+          "title": "Station 4 — Traitement",
+          "prompt": "Traitements associés au SCA ST+ traité par angioplastie ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Bithérapie antiagrégante (aspirine + ticagrélor ou prasugrel)"},
+            {"letter": "B", "text": "Anticoagulation parentérale selon protocole du centre"},
+            {"letter": "C", "text": "Statine haute dose"},
+            {"letter": "D", "text": "Aspirine seule pendant 12 mois sans second antiagrégant"},
+            {"letter": "E", "text": "Bêtabloquant IV systématique quel que soit l'état hémodynamique"}
+          ],
+          "correct": ["A", "B", "C"],
+          "explanation": "DAPT + anticoagulation per-procédure + statine. Bêtabloquant si pas de choc/IC aiguë. Pas de mono-aspirine seule."
+        }
+      ]
+    },
+    {
+      "id": "ecos-ep",
+      "item": "226",
+      "label": "ECOS · Dyspnée aiguë / EP",
+      "vignette": "Mme L., 54 ans, obésité (IMC 34), sans antécédent cardiaque connu.\nDyspnée brutale depuis 2 h après un vol Paris–New York (11 h), avec douleur latéralisée droite pleurétique.\n\nFC 108/min, PA 118/76 mmHg, SpO2 91 % air ambiant, température 37,2 °C.\nAuscultation : crépitants bases droites. Membres inférieurs : pas de signe TVP clinique.\nD-dimères demandés.",
+      "images": [{"alt": "ECG", "src": "images/ecg/ep.svg"}],
+      "steps": [
+        {
+          "title": "Station 1 — Probabilité clinique",
+          "prompt": "Score de Wells ou probabilité clinique : éléments qui augmentent la probabilité d'EP ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Signes cliniques de TVP"},
+            {"letter": "B", "text": "Fréquence cardiaque > 100/min"},
+            {"letter": "C", "text": "Immobilisation / voyage récent > 4 h"},
+            {"letter": "D", "text": "Douleur thoracique pleurétique"},
+            {"letter": "E", "text": "ECG normal exclut l'EP"}
+          ],
+          "correct": ["B", "C", "D"],
+          "explanation": "Wells : TVP clinique, FC, immobilisation, hémoptysie, cancer, chirurgie récente… ECG normal n'exclut pas l'EP."
+        },
+        {
+          "title": "Station 2 — Stratégie diagnostique",
+          "prompt": "Probabilité clinique intermédiaire ou élevée. Conduite diagnostique ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Angioscanner thoracique en urgence"},
+            {"letter": "B", "text": "D-dimères seuls suffisent pour exclure"},
+            {"letter": "C", "text": "Radio thorax normale exclut l'EP"},
+            {"letter": "D", "text": "Épreuve d'effort"},
+            {"letter": "E", "text": "Coronarographie"}
+          ],
+          "correct": ["A"],
+          "explanation": "Probabilité non faible → imagerie (angio-TDM). D-dimères utiles si probabilité faible."
+        },
+        {
+          "title": "Station 3 — Traitement",
+          "prompt": "EP confirmée, PA 118/76, pas de signe de choc. Traitement initial ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Anticoagulation (HBPM ou AOD selon filière)"},
+            {"letter": "B", "text": "Oxygénothérapie si SpO2 < 90 %"},
+            {"letter": "C", "text": "Thrombolyse systématique chez tous les patients"},
+            {"letter": "D", "text": "Rechercher facteur déclenchant (voyage, immobilisation)"},
+            {"letter": "E", "text": "Fibrinolyse si choc ou détresse hémodynamique"}
+          ],
+          "correct": ["A", "B", "D", "E"],
+          "explanation": "Anticoagulation pour EP non massive. Thrombolyse si choc/obstruction massive. Pas de lytique systématique si stable."
+        }
+      ]
+    },
+    {
+      "id": "ecos-syncope-bav",
+      "item": "342",
+      "label": "ECOS · Syncope / BAV",
+      "vignette": "Homme 79 ans, antécédent d'HTA et de diabète type 2.\nSyncope brutale sans prodrome, récupération immédiate. Pas de douleur thoracique.\nTroisième épisode en 2 mois.\n\nÀ l'examen : FC 38/min, PA 110/65 mmHg, conscience normale. Pas de souffle caractéristique.\nECG au SAU :",
+      "images": [{"alt": "ECG BAV 3", "src": "images/ecg/bav3.svg"}],
+      "steps": [
+        {
+          "title": "Station 1 — Diagnostic ECG",
+          "prompt": "Interprétation ECG ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "BAV du 3e degré"},
+            {"letter": "B", "text": "BAV du 1er degré"},
+            {"letter": "C", "text": "Fibrillation atriale lente"},
+            {"letter": "D", "text": "Rythme sinusal normal"},
+            {"letter": "E", "text": "Tachycardie ventriculaire"}
+          ],
+          "correct": ["A"],
+          "explanation": "Dissociation AV complète = BAV 3. Syncope à l'effort ou bradycardie = cause cardiaque."
+        },
+        {
+          "title": "Station 2 — Étiologie",
+          "prompt": "Causes fréquentes de BAV du haut degré chez le sujet âgé ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Dégénérescence fibrosique du système de conduction"},
+            {"letter": "B", "text": "Ischémie myocardique (SCA, séquelle d'IDM)"},
+            {"letter": "C", "text": "Dysfonctionnement de pacemaker"},
+            {"letter": "D", "text": "Crise d'épilepsie"},
+            {"letter": "E", "text": "Hyperventilation psychogène"}
+          ],
+          "correct": ["A", "B", "C"],
+          "explanation": "BAV : dégénérescence du tissu de conduction, ischémie, médicaments, dyskaliémies, dysfonction sonde."
+        },
+        {
+          "title": "Station 3 — Prise en charge",
+          "prompt": "Conduite à tenir devant syncope + BAV 3 ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Hospitalisation et indication de pacemaker"},
+            {"letter": "B", "text": "Stimulation transcutanée si bradycardie mal tolérée"},
+            {"letter": "C", "text": "Rechercher cause réversible (médicament, dyskaliémie)"},
+            {"letter": "D", "text": "Sortie avec surveillance ambulatoire seule"},
+            {"letter": "E", "text": "Atropine peut être tentée en urgence transitoire"}
+          ],
+          "correct": ["A", "B", "C", "E"],
+          "explanation": "BAV 3 symptomatique = pacemaker. Atropine/stimulation en attente. Rechercher cause réversible."
+        }
+      ]
+    },
+    {
+      "id": "ecos-fa",
+      "item": "232",
+      "label": "ECOS · FA découvert",
+      "vignette": "Femme 74 ans, HTA, insuffisance rénale modérée (DFG 48).\nPalpitations depuis 48 h, dyspnée d'effort modérée. Pas de douleur thoracique.\n\nFC 118/min irrégulière, PA 132/80 mmHg, pas de signe d'IC décompensée.\nECG :",
+      "images": [{"alt": "ECG FA", "src": "images/ecg/fa.svg"}],
+      "steps": [
+        {
+          "title": "Station 1 — Diagnostic",
+          "prompt": "Diagnostic ECG ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Fibrillation atriale"},
+            {"letter": "B", "text": "Flutter atrial"},
+            {"letter": "C", "text": "Tachycardie sinusale"},
+            {"letter": "D", "text": "Extrasystoles ventriculaires"},
+            {"letter": "E", "text": "BAV 2"}
+          ],
+          "correct": ["A"],
+          "explanation": "Pas d'ondes P, RR irréguliers = FA. Durée > 48 h change la stratégie de cardioversion."
+        },
+        {
+          "title": "Station 2 — Bilan initial",
+          "prompt": "Bilan de première intention devant FA ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Échocardiographie (recherche cardiopathie, FEVG)"},
+            {"letter": "B", "text": "Bilan thyroïdien"},
+            {"letter": "C", "text": "Score CHA₂DS₂-VA pour risque embolique"},
+            {"letter": "D", "text": "IRM cérébrale systématique avant anticoagulation"},
+            {"letter": "E", "text": "Ionogramme sanguin"}
+          ],
+          "correct": ["A", "B", "C", "E"],
+          "explanation": "ETT + CHA₂DS₂-VA + recherche facteur déclenchant (thyroïde, alcool, infection). Anticoagulation selon score."
+        },
+        {
+          "title": "Station 3 — Anticoagulation",
+          "prompt": "CHA₂DS₂-VA = 4 (âge ≥ 75, HTA, sexe féminin, DFG modéré compté selon score). Conduite ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Anticoagulation orale recommandée (AOD ou AVK)"},
+            {"letter": "B", "text": "Aspirine seule suffit"},
+            {"letter": "C", "text": "Pas d'anticoagulation chez la femme"},
+            {"letter": "D", "text": "Anticoagulation contre-indiquée si DFG < 60"},
+            {"letter": "E", "text": "Surveillance sans traitement"}
+          ],
+          "correct": ["A"],
+          "explanation": "CHA₂DS₂-VA ≥ 2 (homme) ou ≥ 3 (femme) → anticoagulation. Adapter AOD au DFG."
+        },
+        {
+          "title": "Station 4 — Contrôle FC",
+          "prompt": "Objectif de contrôle de la fréquence cardiaque à la marche ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "FC < 110/min à la marche"},
+            {"letter": "B", "text": "FC < 60/min au repos obligatoire"},
+            {"letter": "C", "text": "Pas d'objectif chiffré"},
+            {"letter": "D", "text": "FC > 120/min acceptable"},
+            {"letter": "E", "text": "Cardioversion immédiate sans ETO si > 48 h"}
+          ],
+          "correct": ["A"],
+          "explanation": "Objectif collège : FC < 110/min à la marche. Cardioversion si > 48 h : ETO ou anticoagulation préalable."
+        }
+      ]
+    },
+    {
+      "id": "ecos-pericardite",
+      "item": "235",
+      "label": "ECOS · Péricardite",
+      "vignette": "Homme 28 ans, virologie récente (rhume il y a 10 jours).\nDouleur thoracique rétrosternale majorée en décubitus et à l'inspiration profonde, soulagée penché en avant.\nFièvre 38 °C.\n\nFC 88/min, PA 120/75 mmHg. Froitement péricardique audible. Pas de signe de tamponnade.\nTroponine légèrement élevée (2× normale).",
+      "images": [{"alt": "ECG péricardite", "src": "images/ecg/pericarditis.svg"}],
+      "steps": [
+        {
+          "title": "Station 1 — Diagnostic",
+          "prompt": "Diagnostic le plus probable ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Péricardite aiguë virale"},
+            {"letter": "B", "text": "IDM ST+ antérieur"},
+            {"letter": "C", "text": "Dissection aortique"},
+            {"letter": "D", "text": "Embolie pulmonaire"},
+            {"letter": "E", "text": "Pneumothorax"}
+          ],
+          "correct": ["A"],
+          "explanation": "Douleur positionnelle + froissement + ECG typique = péricardite. Troponine modérée possible (myopéricardite)."
+        },
+        {
+          "title": "Station 2 — ECG",
+          "prompt": "Signes ECG évocateurs de péricardite ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Sus-décalage ST diffus concave sans miroir"},
+            {"letter": "B", "text": "Sous-décalage du segment PQ"},
+            {"letter": "C", "text": "Sus-décalage ST avec miroir réciproque territorial"},
+            {"letter": "D", "text": "Microvoltage et alternance électrique si épanchement abondant"},
+            {"letter": "E", "text": "Onde delta"}
+          ],
+          "correct": ["A", "B", "D"],
+          "explanation": "Péricardite : ST diffus, PQ bas. Miroir = plutôt IDM. Alternance = épanchement/tamponnade."
+        },
+        {
+          "title": "Station 3 — Traitement",
+          "prompt": "Traitement de la péricardite aiguë non compliquée ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "AINS (ibuprofène ou aspirine) + colchicine"},
+            {"letter": "B", "text": "Repos relatif"},
+            {"letter": "C", "text": "Anticoagulation systématique à dose curative"},
+            {"letter": "D", "text": "Échocardiographie pour quantifier l'épanchement"},
+            {"letter": "E", "text": "Corticoïdes en première intention chez tous"}
+          ],
+          "correct": ["A", "B", "D"],
+          "explanation": "AINS + colchicine. ETT pour épanchement. Corticoïdes si échec ou contre-indication AINS, pas en 1re intention systématique."
+        }
+      ]
+    },
+    {
+      "id": "ecos-ic",
+      "item": "234",
+      "label": "ECOS · IC aiguë",
+      "pasAPas": true,
+      "vignette": "Femme 68 ans, HTA, diabète, antécédent d'IDM il y a 5 ans (FEVG connue à 35 %).\nDyspnée progressive depuis 5 jours, orthopnée, prise de poids 3 kg.\nConsulte aux urgences pour dyspnée de repos.\n\nFC 105/min, PA 168/98 mmHg, SpO2 88 % air ambiant, crépitants bilatéraux jusqu'aux champs moyens, turgescence jugulaire, OMI bilatéraux.\nECG : tachycardie sinusale, HVG, pas de sus-décalage ST aigu.",
+      "images": [],
+      "steps": [
+        {
+          "title": "Station 1 — Diagnostic",
+          "prompt": "Syndrome clinique principal ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Insuffisance cardiaque aiguë décompensée"},
+            {"letter": "B", "text": "Embolie pulmonaire isolée"},
+            {"letter": "C", "text": "Pneumonie communautaire seule"},
+            {"letter": "D", "text": "Crise d'asthme"},
+            {"letter": "E", "text": "Anémie sévère seule"}
+          ],
+          "correct": ["A"],
+          "explanation": "Dyspnée + crépitants + OMI + TJ = IC décompensée. Contexte cardiaque connu."
+        },
+        {
+          "title": "Station 2 — Bilan urgent",
+          "prompt": "Examens et mesures immédiats ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Oxygénothérapie / VNI si détresse"},
+            {"letter": "B", "text": "BNP ou NT-proBNP"},
+            {"letter": "C", "text": "Échocardiographie en urgence si instabilité"},
+            {"letter": "D", "text": "Coronarographie systématique avant tout traitement"},
+            {"letter": "E", "text": "Ionogramme, créatinine, troponine selon contexte"}
+          ],
+          "correct": ["A", "B", "C", "E"],
+          "explanation": "O2/VNI + BNP + ETT si besoin + bilan métabolique. Coronarographie si SCA associé, pas systématique."
+        },
+        {
+          "title": "Station 3 — Traitement",
+          "prompt": "Traitement de 1re intention de l'OAP cardiogénique hypertendu ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Diurétique de l'anse IV (furosémide)"},
+            {"letter": "B", "text": "Dérivés nitrés si PAS > 90 mmHg"},
+            {"letter": "C", "text": "Morphine systématique chez tous"},
+            {"letter": "D", "text": "Restriction sodée et surveillance diurèse"},
+            {"letter": "E", "text": "Bêtabloquant IV en phase aiguë décompensée"}
+          ],
+          "correct": ["A", "B", "D"],
+          "explanation": "Furosémide + nitrés si HTA. Morphine plus réservée. Bêtabloquant IV contre-indiqué en décompensation aiguë."
+        },
+        {
+          "title": "Station 4 — Fond",
+          "prompt": "Traitements de fond HFrEF à réévaluer après stabilisation ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "IEC/ARA2 ou sacubitril-valsartan"},
+            {"letter": "B", "text": "Bêtabloquant titré une fois euvolémique"},
+            {"letter": "C", "text": "Antagoniste des récepteurs minéralocorticoïdes si FEVG ≤ 35 %"},
+            {"letter": "D", "text": "Inhibiteur SGLT2"},
+            {"letter": "E", "text": "Diurétique seul suffit à long terme sans autre pilier"}
+          ],
+          "correct": ["A", "B", "C", "D"],
+          "explanation": "4 piliers HFrEF : IEC/ARNI, bêtabloquant, ARM, iSGLT2. Diurétique symptomatique, pas pilier pronostic seul."
+        }
+      ]
+    },
+    {
+      "id": "ecos-endocardite",
+      "item": "152",
+      "label": "ECOS · Endocardite",
+      "pasAPas": true,
+      "vignette": "Homme 45 ans, usager de drogue IV, fièvre 39 °C depuis 10 jours, frissons, douleur lombaire.\nNouveau souffle diastolique 3/6 bord gauche sternum. Petechies conjonctivales. Splénomégalie.\nHémocultures en cours. CRP 180 mg/L.",
+      "images": [],
+      "steps": [
+        {
+          "title": "Station 1 — Hypothèse",
+          "hint": "Fièvre + nouveau souffle + signes périphériques = endocardite jusqu'à preuve du contraire.",
+          "prompt": "Diagnostic le plus probable ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Endocardite infectieuse"},
+            {"letter": "B", "text": "Grippe"},
+            {"letter": "C", "text": "Pyélonéphrite seule"},
+            {"letter": "D", "text": "Embolie pulmonaire"},
+            {"letter": "E", "text": "Lupus"}
+          ],
+          "correct": ["A"],
+          "explanation": "Tableau typique : fièvre + souffle nouveau + signes périphériques (Janeway, Roth, splénomégalie)."
+        },
+        {
+          "title": "Station 2 — Bilan",
+          "hint": "Hémocultures AVANT antibiotiques si possible.",
+          "prompt": "Bilan immédiat ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Hémocultures × 3 avant ATB si stable"},
+            {"letter": "B", "text": "ETT puis ETO si haute suspicion"},
+            {"letter": "C", "text": "Scanner cérébral si symptômes neuro"},
+            {"letter": "D", "text": "Antibiothérapie probabiliste immédiate si choc ou gravité"},
+            {"letter": "E", "text": "IRM cérébrale systématique chez tous"}
+          ],
+          "correct": ["A", "B", "C", "D"],
+          "explanation": "HC + ETT/ETO + ATB adaptés. IRM cérébrale si signes neuro, pas systématique."
+        },
+        {
+          "title": "Station 3 — Germe",
+          "prompt": "Hémocultures positives à Staphylococcus aureus. Conduite ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Antibiothérapie IV prolongée ; évaluer indication chirurgicale"},
+            {"letter": "B", "text": "Amoxicilline PO 5 jours"},
+            {"letter": "C", "text": "Surveillance sans ATB"},
+            {"letter": "D", "text": "Anticoagulation curative systématique"},
+            {"letter": "E", "text": "Arrêt des drogues suffit"}
+          ],
+          "correct": ["A"],
+          "explanation": "Staph aureus = endocardite grave, ATB IV longue durée, chirurgie fréquente."
+        }
+      ]
+    },
+    {
+      "id": "ecos-tvp",
+      "item": "226",
+      "label": "ECOS · TVP / EP bas risque",
+      "pasAPas": true,
+      "vignette": "Femme 62 ans, cancer du sein en rémission, jambe gauche gonflée, chaude, douloureuse depuis 48 h.\nMollet gauche + 3 cm vs droit. Homans douteux. FC 88/min, PA 125/70, SpO2 97 %.\nD-dimères élevés.",
+      "images": [],
+      "steps": [
+        {
+          "title": "Station 1 — TVP",
+          "hint": "Score de Wells clinique + D-dimères si probabilité faible.",
+          "prompt": "Probabilité clinique TVP élevée. Examen de référence ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Écho-Doppler veineux des MI"},
+            {"letter": "B", "text": "Angioscanner thorax en 1er"},
+            {"letter": "C", "text": "Radio du genou"},
+            {"letter": "D", "text": "IRM cardiaque"},
+            {"letter": "E", "text": "Aucun examen si D-dimères élevés"}
+          ],
+          "correct": ["A"],
+          "explanation": "Suspicion TVP → echo-Doppler veineux en première intention."
+        },
+        {
+          "title": "Station 2 — Traitement TVP",
+          "prompt": "TVP poplitée confirmée, pas de signe EP. Traitement ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Anticoagulation (HBPM ou AOD)"},
+            {"letter": "B", "text": "Bas de contention après anticoagulation"},
+            {"letter": "C", "text": "Fibrinolyse systématique"},
+            {"letter": "D", "text": "Durée min 3 mois, adapter au contexte (cancer = prolonger)"},
+            {"letter": "E", "text": "Repos strict au lit 2 semaines obligatoire"}
+          ],
+          "correct": ["A", "B", "D"],
+          "explanation": "Anticoagulation + contention. Pas de lytique si TVP sans masse proximale haute risque."
+        }
+      ]
+    },
+    {
+      "id": "ecos-hta",
+      "item": "224",
+      "label": "ECOS · HTA aux urgences",
+      "vignette": "Homme 55 ans, HTA connue mal observée. Céphalées, PA 220/120 mmHg, pas de déficit neuro, fond d'œil sans papilloedème.\nCréatinine normale. Pas de douleur thoracique. ECG : HVG.",
+      "images": [],
+      "steps": [
+        {
+          "title": "Station 1 — Urgence ?",
+          "hint": "Urgence hypertensive = HTA + atteinte d'organe aiguë. Ici : pas de lésion aiguë évidente.",
+          "prompt": "Classification ? (QRU)",
+          "kind": "QRU",
+          "options": [
+            {"letter": "A", "text": "Hypertension sévère sans urgence hypertensive (pas d'atteinte aiguë d'organe)"},
+            {"letter": "B", "text": "Urgence hypertensive avec encéphalopathie"},
+            {"letter": "C", "text": "Hypotension artérielle"},
+            {"letter": "D", "text": "Choc cardiogénique"},
+            {"letter": "E", "text": "Dissection aortique certaine"}
+          ],
+          "correct": ["A"],
+          "explanation": "PA très élevée sans atteinte aiguë d'organe = HTA sévère, pas urgence hypertensive."
+        },
+        {
+          "title": "Station 2 — Conduite",
+          "prompt": "Prise en charge ? (QRM)",
+          "kind": "QRM",
+          "options": [
+            {"letter": "A", "text": "Réintroduction / optimisation traitement oral"},
+            {"letter": "B", "text": "Pas de baisse brutale agressive de PA si pas d'urgence"},
+            {"letter": "C", "text": "Nitrés IV en bolus systématique"},
+            {"letter": "D", "text": "Surveillance, éducation, consultation rapprochée"},
+            {"letter": "E", "text": "Objectif long terme < 140/90 (< 130/80 si haut risque)"}
+          ],
+          "correct": ["A", "B", "D", "E"],
+          "explanation": "Pas d'urgence → réintroduire/modifier le traitement oral, pas de chute brutale de PA."
+        }
+      ]
+    }
+  ]
+}
