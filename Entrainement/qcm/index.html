@@ -214,6 +214,37 @@
     }
     .vig-q .qtext { font-weight: 700; margin: 0 0 0.45rem; }
     .vig-ans { margin-top: 0.45rem; }
+    .recap-list { display: grid; gap: 0.55rem; }
+    .recap-card {
+      text-align: left; width: 100%; border: 1px solid var(--line); border-radius: 12px;
+      padding: 0.75rem 0.9rem; background: var(--card); cursor: pointer; font: inherit; color: inherit;
+    }
+    .recap-card:hover { border-color: var(--accent); }
+    .recap-body {
+      line-height: 1.5; font-size: 0.95rem;
+      background: #f4f7f5; border-radius: 10px; padding: 0.85rem 0.95rem; margin: 0.75rem 0;
+    }
+    .recap-body h3 {
+      font-size: 0.92rem; margin: 1rem 0 0.45rem; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.03em;
+    }
+    .recap-body h3:first-child { margin-top: 0; }
+    .recap-body p { margin: 0 0 0.55rem; }
+    .recap-body ul { margin: 0 0 0.65rem; padding-left: 1.15rem; }
+    .recap-body li { margin-bottom: 0.35rem; }
+    .indisp-list { display: grid; gap: 0.55rem; }
+    .indisp-card {
+      text-align: left; width: 100%; border: 1px solid var(--line); border-radius: 12px;
+      padding: 0.75rem 0.9rem; background: var(--card); cursor: pointer; font: inherit; color: inherit;
+    }
+    .indisp-card:hover { border-color: var(--accent); }
+    .indisp-block { margin: 0.75rem 0; }
+    .indisp-block h3 { font-size: 0.88rem; margin: 0 0 0.45rem; text-transform: uppercase; letter-spacing: 0.03em; }
+    .indisp-block.ind h3 { color: var(--ok); }
+    .indisp-block.inacc h3 { color: var(--bad); }
+    .indisp-block ul { margin: 0; padding-left: 1.15rem; }
+    .indisp-block li { margin-bottom: 0.4rem; line-height: 1.45; font-size: 0.94rem; }
+    .indisp-block li ul { margin-top: 0.25rem; }
     .mnemo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.65rem; }
     .mnemo-card {
       border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 0.85rem;
@@ -344,6 +375,8 @@
       <li><button type="button" id="tab-arbres">CAT</button></li>
       <li><button type="button" id="tab-ecos">ECOS</button></li>
       <li><button type="button" id="tab-vignettes">Vignettes</button></li>
+      <li><button type="button" id="tab-recap">Récap</button></li>
+      <li><button type="button" id="tab-indisp">Indisp.</button></li>
       <li><button type="button" id="tab-oral">Oral</button></li>
       <li><button type="button" id="tab-tx">Traitements</button></li>
       <li><button type="button" id="tab-fiches">Fiches</button></li>
@@ -369,6 +402,10 @@ let ECOS = [];
 let ECG_RAPPELS = null;
 let MNEMOS = { items: [] };
 let VIGNETTES = { vignettes: [], note: "" };
+let RECAP = { recaps: [], note: "" };
+let INDISP = { items: [], note: "" };
+let recapState = null; // { item } or null = list
+let indispState = null;
 let FLASHCARDS = { cards: [], items: [] };
 let fcardState = null; // { deck, i, revealed, known, unknown, itemId }
 let vignetteState = null; // { id: itemId } or null = list
@@ -989,6 +1026,12 @@ async function boot() {
       VIGNETTES = await (await fetch("vignettes.json")).json();
     } catch { VIGNETTES = { vignettes: [], note: "" }; }
     try {
+      RECAP = await (await fetch("recap.json")).json();
+    } catch { RECAP = { recaps: [], note: "" }; }
+    try {
+      INDISP = await (await fetch("notions_indispensables.json")).json();
+    } catch { INDISP = { items: [], note: "" }; }
+    try {
       FLASHCARDS = await (await fetch("flashcards_lot1.json")).json();
     } catch { FLASHCARDS = { cards: [], items: [] }; }
   } catch (e) {
@@ -1007,6 +1050,8 @@ async function boot() {
   $("tab-arbres").onclick = () => { arbreState = null; view = "arbres"; render(); };
   $("tab-ecos").onclick = () => { ecosRun = null; view = "ecos"; render(); };
   $("tab-vignettes").onclick = () => { vignetteState = null; view = "vignettes"; render(); };
+  $("tab-recap").onclick = () => { recapState = null; view = "recap"; render(); };
+  $("tab-indisp").onclick = () => { indispState = null; view = "indisp"; render(); };
   $("tab-oral").onclick = () => { oralState = null; view = "oral"; render(); };
   $("tab-tx").onclick = () => { view = "traitements"; render(); };
   $("tab-fiches").onclick = () => { view = "fiches"; render(); };
@@ -1017,14 +1062,16 @@ async function boot() {
 }
 
 function render() {
-  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "ecg" || view === "mnemos" || view === "vignettes" || view === "fcards" || view === "notions" || view === "arbres" || view === "ecos" || view === "ecos-play" || view === "oral");
-  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "mnemos", "vignettes", "fiches", "cours", "ecg", "notions", "cours-active", "flash", "fcards", "arbres", "ecos", "ecos-play", "oral"].includes(view));
+  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "ecg" || view === "mnemos" || view === "vignettes" || view === "recap" || view === "indisp" || view === "fcards" || view === "notions" || view === "arbres" || view === "ecos" || view === "ecos-play" || view === "oral");
+  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "mnemos", "vignettes", "recap", "indisp", "fiches", "cours", "ecg", "notions", "cours-active", "flash", "fcards", "arbres", "ecos", "ecos-play", "oral"].includes(view));
   $("tab-cours").classList.toggle("active", view === "cours" || view === "cours-active");
   $("tab-ecg").classList.toggle("active", view === "ecg");
   $("tab-notions").classList.toggle("active", view === "notions");
   $("tab-arbres").classList.toggle("active", view === "arbres");
   $("tab-ecos").classList.toggle("active", view === "ecos" || view === "ecos-play");
   $("tab-vignettes").classList.toggle("active", view === "vignettes");
+  $("tab-recap").classList.toggle("active", view === "recap");
+  $("tab-indisp").classList.toggle("active", view === "indisp");
   $("tab-oral").classList.toggle("active", view === "oral");
   $("tab-tx").classList.toggle("active", view === "traitements");
   $("tab-fiches").classList.toggle("active", view === "fiches");
@@ -1045,6 +1092,8 @@ function render() {
   else if (view === "ecos") renderEcos();
   else if (view === "ecos-play") renderEcosPlay();
   else if (view === "vignettes") renderVignettes();
+  else if (view === "recap") renderRecap();
+  else if (view === "indisp") renderIndisp();
   else if (view === "oral") renderOral();
   else if (view === "fiches") renderFiches();
   else if (view === "sigles") renderSigles();
@@ -2172,6 +2221,8 @@ function renderSetup() {
       <button type="button" class="hub-btn" id="btn-ecg"><strong>ECG</strong><span>Rappels · drill ${ecgImgN || ecgN} Q</span></button>
       <button type="button" class="hub-btn" id="btn-ecos-hub"><strong>ECOS</strong><span>${ecosN} cas · vignette + stations</span></button>
       <button type="button" class="hub-btn" id="btn-vignettes-hub"><strong>Vignettes collège</strong><span>${(VIGNETTES.vignettes || []).length} cas · Q + réponses</span></button>
+      <button type="button" class="hub-btn" id="btn-recap-hub"><strong>Récap collège</strong><span>${(RECAP.recaps || []).length} items · Points fin de chapitre</span></button>
+      <button type="button" class="hub-btn" id="btn-indisp-hub"><strong>Indisp. / Inacc.</strong><span>${(INDISP.items || []).length} items · fin de chapitre</span></button>
       <button type="button" class="hub-btn" id="btn-oral-hub"><strong>Mode oral</strong><span>${ORAL_N} cartes · réponds à voix haute</span></button>
     </div>
     <div class="card">
@@ -2247,6 +2298,8 @@ function renderSetup() {
   $("btn-ecg").onclick = () => { view = "ecg"; render(); };
   $("btn-ecos-hub").onclick = () => { ecosRun = null; view = "ecos"; render(); };
   $("btn-vignettes-hub").onclick = () => { vignetteState = null; view = "vignettes"; render(); };
+  $("btn-recap-hub").onclick = () => { recapState = null; view = "recap"; render(); };
+  $("btn-indisp-hub").onclick = () => { indispState = null; view = "indisp"; render(); };
   $("btn-oral-hub").onclick = () => beginOralSession();
   $("btn-to-fiches").onclick = () => { view = "fiches"; render(); };
   $("btn-to-arbres").onclick = () => { arbreState = null; view = "arbres"; render(); };
@@ -3020,6 +3073,178 @@ function renderVignettes() {
     btn.onclick = () => {
       vignetteState = { item: btn.getAttribute("data-vig"), revealed: {} };
       renderVignettes();
+    };
+  });
+}
+
+function recapHtml(text) {
+  if (!text) return "";
+  const blocks = text.split(/\n\n+/);
+  let html = "";
+  let inList = false;
+  const closeList = () => {
+    if (inList) { html += "</ul>"; inList = false; }
+  };
+  const inline = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  for (const block of blocks) {
+    const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
+    if (!lines.length) continue;
+    if (lines[0].startsWith("### ")) {
+      closeList();
+      html += `<h3>${inline(lines[0].slice(4))}</h3>`;
+      lines.shift();
+    }
+    for (const line of lines) {
+      if (line.startsWith("- ")) {
+        if (!inList) { html += "<ul>"; inList = true; }
+        html += `<li>${inline(line.slice(2))}</li>`;
+      } else {
+        closeList();
+        html += `<p>${inline(line)}</p>`;
+      }
+    }
+  }
+  closeList();
+  return html;
+}
+
+function renderRecap() {
+  const list = RECAP.recaps || [];
+  const qFilter = (window._recapQ || "").trim().toLowerCase();
+  if (recapState && recapState.item) {
+    const r = list.find((x) => String(x.item) === String(recapState.item));
+    if (!r) { recapState = null; renderRecap(); return; }
+    viewEl.innerHTML = `<h1>${esc(r.label)}</h1>
+      <p class="sub">Récapitulatif « Points » — fin de chapitre collège · texte intégral</p>
+      <div class="actions" style="margin-bottom:0.75rem">
+        <button type="button" class="secondary" id="recap-back">← Tous les récaps</button>
+        <button type="button" class="secondary" id="recap-cours">Cours actif · ${esc(itemLabel(r.item))}</button>
+      </div>
+      <div class="recap-body">${recapHtml(r.text)}</div>
+      <p class="hint">${esc(RECAP.note || "")}</p>`;
+    $("recap-back").onclick = () => { recapState = null; renderRecap(); };
+    $("recap-cours").onclick = () => beginCoursActive(r.item, "A");
+    const hasInd = (INDISP.items || []).some((x) => String(x.item) === String(r.item));
+    if (hasInd) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "secondary";
+      btn.id = "recap-indisp";
+      btn.textContent = "Indisp. / Inacc.";
+      viewEl.querySelector(".actions").appendChild(btn);
+      btn.onclick = () => { indispState = { item: r.item }; view = "indisp"; render(); };
+    }
+    return;
+  }
+  const shown = list.filter((r) => {
+    if (!qFilter) return true;
+    const blob = [r.label, r.item, r.text].join(" ").toLowerCase();
+    return blob.includes(qFilter);
+  });
+  let html = `<h1>Récapitulatifs collège</h1>
+    <p class="sub">${list.length} items · section « Points » en fin de chapitre · lecture complète</p>
+    <div class="card">
+      <input class="search" id="recap-q" type="search" placeholder="HTA, FA, endocardite, SCA…" value="${esc(window._recapQ || "")}" />
+      <p class="hint">${shown.length} item${shown.length > 1 ? "s" : ""}. ${esc(RECAP.note || "")}</p>
+    </div>
+    <div class="recap-list">`;
+  shown.forEach((r) => {
+    const preview = (r.text || "").replace(/^#+\s+/gm, "").replace(/^[-•]\s+/gm, "").replace(/\n+/g, " ").slice(0, 160);
+    html += `<button type="button" class="recap-card" data-recap="${esc(r.item)}">
+      <strong>${esc(r.label)}</strong>
+      <span style="display:block;font-size:0.88rem;opacity:0.88;margin-top:0.35rem">${esc(preview)}…</span>
+    </button>`;
+  });
+  html += `</div>`;
+  if (!shown.length) html += `<p class="hint">Aucun récap.</p>`;
+  viewEl.innerHTML = html;
+  const inp = $("recap-q");
+  if (inp) {
+    inp.focus();
+    inp.oninput = () => { window._recapQ = inp.value; renderRecap(); };
+  }
+  viewEl.querySelectorAll("[data-recap]").forEach((btn) => {
+    btn.onclick = () => {
+      recapState = { item: btn.getAttribute("data-recap") };
+      renderRecap();
+    };
+  });
+}
+
+function notionItemHtml(text) {
+  const inline = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  const parts = text.split("\n  • ");
+  if (parts.length === 1) return inline(text);
+  let html = inline(parts[0]);
+  html += "<ul>";
+  for (let i = 1; i < parts.length; i++) html += `<li>${inline(parts[i])}</li>`;
+  html += "</ul>";
+  return html;
+}
+
+function renderIndisp() {
+  const list = INDISP.items || [];
+  const qFilter = (window._indispQ || "").trim().toLowerCase();
+  if (indispState && indispState.item) {
+    const it = list.find((x) => String(x.item) === String(indispState.item));
+    if (!it) { indispState = null; renderIndisp(); return; }
+    const ind = it.indispensables || [];
+    const inacc = it.inacceptables || [];
+    let body = "";
+    if (ind.length) {
+      body += `<div class="indisp-block ind ok-box"><h3>Notions indispensables (${ind.length})</h3><ul>`;
+      ind.forEach((t) => { body += `<li>${notionItemHtml(t)}</li>`; });
+      body += `</ul></div>`;
+    }
+    if (inacc.length) {
+      body += `<div class="indisp-block inacc bad-box"><h3>Notions inacceptables (${inacc.length})</h3><ul>`;
+      inacc.forEach((t) => { body += `<li>${notionItemHtml(t)}</li>`; });
+      body += `</ul></div>`;
+    }
+    viewEl.innerHTML = `<h1>${esc(it.label)}</h1>
+      <p class="sub">Notions indispensables & inacceptables — ce que le collège exige de savoir / ne pas faire</p>
+      <div class="actions" style="margin-bottom:0.75rem">
+        <button type="button" class="secondary" id="indisp-back">← Tous les items</button>
+        <button type="button" class="secondary" id="indisp-recap">Récap · ${esc(itemLabel(it.item))}</button>
+      </div>
+      ${body}
+      <p class="hint">${esc(INDISP.note || "")}</p>`;
+    $("indisp-back").onclick = () => { indispState = null; renderIndisp(); };
+    $("indisp-recap").onclick = () => { recapState = { item: it.item }; view = "recap"; render(); };
+    return;
+  }
+  const shown = list.filter((it) => {
+    if (!qFilter) return true;
+    const blob = [it.label, it.item, ...(it.indispensables || []), ...(it.inacceptables || [])].join(" ").toLowerCase();
+    return blob.includes(qFilter);
+  });
+  let html = `<h1>Indispensables & inacceptables</h1>
+    <p class="sub">${list.length} items · section officielle fin de chapitre · vert = à savoir · rouge = fautes graves</p>
+    <div class="card">
+      <input class="search" id="indisp-q" type="search" placeholder="endocardite, LDL, HTA, FA…" value="${esc(window._indispQ || "")}" />
+      <p class="hint">${shown.length} item${shown.length > 1 ? "s" : ""}. Item 231 ECG : pas de section dans le collège (chapitre découpé).</p>
+    </div>
+    <div class="indisp-list">`;
+  shown.forEach((it) => {
+    const nI = (it.indispensables || []).length;
+    const nA = (it.inacceptables || []).length;
+    html += `<button type="button" class="indisp-card" data-indisp="${esc(it.item)}">
+      <strong>${esc(it.label)}</strong>
+      <span class="meta" style="display:block;margin-top:0.3rem">${nI} indispensable${nI > 1 ? "s" : ""} · ${nA} inacceptable${nA > 1 ? "s" : ""}</span>
+    </button>`;
+  });
+  html += `</div>`;
+  if (!shown.length) html += `<p class="hint">Aucun item.</p>`;
+  viewEl.innerHTML = html;
+  const inp = $("indisp-q");
+  if (inp) {
+    inp.focus();
+    inp.oninput = () => { window._indispQ = inp.value; renderIndisp(); };
+  }
+  viewEl.querySelectorAll("[data-indisp]").forEach((btn) => {
+    btn.onclick = () => {
+      indispState = { item: btn.getAttribute("data-indisp") };
+      renderIndisp();
     };
   });
 }
