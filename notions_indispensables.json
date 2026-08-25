@@ -1,0 +1,359 @@
+{
+  "note": "Notions indispensables et inacceptables — fin de chapitre collège (après « Points »).",
+  "items": [
+    {
+      "item": "152",
+      "label": "152 Endocardite",
+      "indispensables": [
+        "Les cardiopathies à haut risque d'EI sont :\n  • les prothèses valvulaires (TAVI inclus) et matériels utilisés pour réparation valvulaire ;\n  • un antécédent d'endocardite ;\n  • une cardiopathie congénitale cyanogène ;\n  • toute cardiopathie congénitale réparée avec un matériel prothétique pendant les 6 mois après la procédure ou à vie s'il existe un shunt résiduel.",
+        "Les staphylocoques sont les germes le plus souvent retrouvés.",
+        "Les principales complications sont : insuffisance cardiaque, embolies systémiques, embolies pulmonaires septiques, anévrisme infectieux, hémorragie, choc septique, BAV (abcès septal), vascularite, foyers infectieux à distance (méningite, arthrite, spondylodiscite, abcès viscéraux, etc.).",
+        "Le diagnostic est évoqué devant une association fièvre + cardiopathie à risque, fièvre + souffle, ou fièvre + événement embolique.",
+        "Les hémocultures et l'échographie cardiaque transthoracique/transœsophagienne sont deux piliers du diagnostic.",
+        "Le traitement repose sur l'antibiothérapie (ou les antifongiques), l'identification d'indications chirurgicales, la prise en charge des complications, le traitement de la porte d'entrée et la surveillance.",
+        "Les principales indications chirurgicales pendant le traitement antibiotique (phase active) sont hémodynamiques, infectieuses et emboliques.",
+        "La prévention de l'EI repose sur des mesures non spécifiques d'éducation de tous les patients à risque (toutes les cardiopathies à risque d'EI) et l'utilisation d'une antibioprophylaxie uniquement chez les patients avec cardiopathie à haut risque devant subir des soins dentaires avec manipulation de la gencive ou de la région périapicale ou en cas d'effraction de la muqueuse (amoxicilline ou clindamycine 30-60 minutes avant)."
+      ],
+      "inacceptables": [
+        "Ne pas évoquer une El devant l'association d'une fièvre et d'un souffle cardiaque ou d'une cardiopathie à risque.",
+        "Ne pas évoquer l'EI devant les tableaux suivants : souffle et fièvre, AVC et fièvre, lombalgie et fièvre, purpura et fièvre.",
+        "Débuter les antibiotiques avant la réalisation d'hémocultures en cas de suspicion d'EI.",
+        "Prescrire de la pénicilline en cas d'allergie.",
+        "Oublier les mesures de prévention non médicamenteuses chez les patients à risque."
+      ]
+    },
+    {
+      "item": "153",
+      "label": "153 Prothèses",
+      "indispensables": [
+        "Il existe deux grands types de prothèses valvulaires : les prothèses mécaniques et les prothèses biologiques.",
+        "Parmi les prothèses biologiques (bioprothèses), on distingue les prothèses chirurgicales, implantées lors de la chirurgie, et les prothèses percutanées ou endoprothèses, implantées par cathétérisme interventionnel (TAVI ou TAVR : transcatheter aortic valve implantation ou replacement).",
+        "Les prothèses mécaniques sont prévues pour durer toute la vie du patient mais nécessitent un traitement anticoagulant à vie par antivitamine K (AVK), et exposent ainsi aux risques thromboemboliques de la prothèse et hémorragiques des AVK. L'INR doit être surveillé régulièrement et l'anticoagulation ajustée si besoin. Les anticoagulants oraux directs sont contre-indiqués en cas de prothèse valvulaire mécanique.",
+        "Les prothèses biologiques ne nécessitent pas d'anticoagulation par elle-même (sauf en postopératoire précoce) mais dégénèrent inéluctablement en se calcifiant, soit sous forme de sténose, soit sous forme de déchirure et fuite, nécessitant une réopération en moyenne 10 ans après implantation.",
+        "Les bioprothèses percutanées sont actuellement réservées aux patients inopérables ou à risque chirurgical quelque soit leur âge, et aux patients de plus de 75 ans quel que soit leur risque opératoire si l'anatomie est favorable.",
+        "Les prothèses, étant par nature des corps étrangers, présentent un risque accru d'endocardite infectieuse par rapport aux valves natives, et justifient une prophylaxie infectieuse soigneuse.",
+        "L'échocardiographie transthoracique est l'examen clé de la surveillance des prothèses valvulaires. L'imagerie multimodale (ETO, radiocinéma, scanner, etc.) est l'imagerie de recours en cas de bilan de dysfonction de prothèse.",
+        "Une prothèse valvulaire est un substitut imparfait de la valve native qui nécessite donc un suivi régulier, au minimum annuel, par un cardiologue."
+      ],
+      "inacceptables": [
+        "Prescrire des anticoagulants oraux directs à des patients porteurs de valve mécanique.",
+        "Prescrire une antibiothérapie à l'aveugle en cas de fièvre à un patient porteur de prothèse valvulaire.",
+        "Oublier l'éducation thérapeutique du patient porteur de prothèse valvulaire concernant la prévention de l'endocardite infectieuse et, le cas échéant, de l'anticoagulation efficace.",
+        "Ne pas penser à une endocardite infectieuse en cas de fièvre.",
+        "Ne pas référer à un spécialiste un patient porteur de prothèse valvulaire symptomatique.",
+        "Ne pas référer à un spécialiste un patient porteur de prothèse valvulaire avec un souffle de novo, que le patient soit symptomatique ou non.",
+        "Ne pas référer à un spécialiste un patient porteur de prothèse valvulaire pour son suivi annuel."
+      ]
+    },
+    {
+      "item": "203",
+      "label": "203 Dyspnée",
+      "indispensables": [
+        "Connaître la classification NYHA.",
+        "Connaître les signes de gravité devant une dyspnée aiguë.",
+        "Savoir la conduite à tenir devant une dyspnée aiguë.",
+        "Savoir aussi penser aux causes extracardiaques et extrapulmonaires de dyspnée (anémie, causes ORL, etc.)."
+      ],
+      "inacceptables": [
+        "Oublier les examens à prescrire en 1re intention devant une dyspnée aiguë."
+      ]
+    },
+    {
+      "item": "221",
+      "label": "221 Athérome",
+      "indispensables": [
+        "Connaître les quatre principaux territoires de la maladie athéromateuse (coronaire, carotide, artères des membres inférieurs, aorte abdominale)."
+      ],
+      "inacceptables": [
+        "Oublier l'aspirine et les statines en prévention secondaire."
+      ]
+    },
+    {
+      "item": "222",
+      "label": "222 FDR / prévention",
+      "indispensables": [
+        "Connaître les 6 facteurs de risque cardiovasculaire modifiables (tabac, diabète, HTA, dyslipidémie, facteurs psychosociaux, obésité) et les facteurs « protecteurs » (alimentation, activité physique).",
+        "Connaître la notion de risque cardiovasculaire global et les outils SCORE2, SCORE2-OP et SCORE-Diabetes.",
+        "Connaître les principaux conseils nutritionnels et le rôle bénéfique de l'activité physique."
+      ],
+      "inacceptables": [
+        "Oublier le BASIC (bêtabloquant, antiagrégant, statine, IEC, contrôle des facteurs de risque) après un accident coronarien.",
+        "Ne pas connaître l'objectif de LDL cholestérol (< 0,55 g/L) chez les sujets à très haut risque ou en prévention secondaire."
+      ]
+    },
+    {
+      "item": "223",
+      "label": "223 Dyslipidémies",
+      "indispensables": [
+        "Connaître les objectifs de LDL-C en fonction du risque cardiovasculaire établi par SCORE2 et des autres facteurs de risque."
+      ],
+      "inacceptables": []
+    },
+    {
+      "item": "224",
+      "label": "224 HTA",
+      "indispensables": [
+        "Avant de débuter un traitement antihypertenseur, il est indispensable de confirmer le diagnostic d'HTA en dehors du cabinet médical par AMT (de préférence) ou MAPA.",
+        "La stratégie thérapeutique dépend du niveau de PA, du niveau de risque cardiovasculaire et d'une éventuelle atteinte des organes cibles du patient.",
+        "Le bilan minimal comprend natrémie, kaliémie, créatininémie avec estimation de la filtration glomérulaire, glycémie à jeun, exploration d'une anomalie lipidique, ECG, recherche de protéinurie sur échantillon urinaire.",
+        "L'urgence hypertensive est une HTA sévère (grade 3) associée à une atteinte aiguë d'un organe cible.",
+        "L'HTA maligne associe une HTA élevée et un œdème papillaire (fond d'œil stade 4) et éventuellement d'autres atteintes d'organe (insuffisance cardiaque, rénale, trouble neurologique)."
+      ],
+      "inacceptables": [
+        "Ne pas mettre en place les bonnes conditions de mesures de la pression artérielle (AMT, MAPA).",
+        "Ne pas rechercher d'éléments orientant vers une cause secondaire ou de facteurs aggravants lors de la prise en charge initiale : souffle vasculaire abdominal, triade céphalées — palpitations — sueurs, causes toxiques (réglisse ou médicaments), contraception orale, consommation d'alcool, crampes fréquentes, hypokaliémie, syndrome d'apnées du sommeil, etc.",
+        "Ne pas atteindre les objectifs tensionnels recommandés en adaptant le traitement (bi, puis trithérapie et titration)."
+      ]
+    },
+    {
+      "item": "225",
+      "label": "225 AOMI / anévrismes",
+      "indispensables": [
+        "Chez un patient porteur d'un AOMI ou d'un anévrisme de l'aorte abdominale, penser à rechercher une maladie coronarienne sous-jacente ou une sténose carotidienne.",
+        "L'ischémie aiguë des membres inférieurs est une urgence, aucun examen ne doit faire retarder la prise en charge.",
+        "La rupture d'AAA est aussi une urgence absolue dont le diagnostic doit être confirmé par un scanner avant la prise en charge thérapeutique."
+      ],
+      "inacceptables": [
+        "Réaliser des examens d'imagerie inutiles retardant la prise en charge en cas d'ischémie aiguë de membre."
+      ]
+    },
+    {
+      "item": "226",
+      "label": "226 TVP / EP",
+      "indispensables": [
+        "Toujours évoquer l'EP devant une dyspnée aiguë ou d'apparition récente, un malaise ou une syncope, une douleur thoracique.",
+        "Examens d'orientation indispensables : radiographie thoracique, gazométrie artérielle et ECG.",
+        "L'angioscanner pulmonaire permet de confirmer le diagnostic.",
+        "L'échocardiographie, l'échodoppler veineux ou la scintigraphie de ventilation-perfusion peuvent aider au diagnostic dans certaines situations.",
+        "Devant une EP diagnostiquée ou simplement suspectée, l’existence d'une hypotension artérielle ou d'un état de choc doit être reconnue rapidement car cela guide la stratégie diagnostique et thérapeutique.",
+        "En l'absence de choc, la stratification du risque repose d'abord sur le score PESI et lorsque ce score est > 1, sur la mise en évidence de signes de souffrance VD.",
+        "Le traitement anticoagulant repose aujourd'hui, en l'absence d'insuffisance rénale, sur les HBPM avec relais immédiat par AVK et un chevauchement des 2 traitements pendant au moins 5 jours ou d’emblée un traitement par AOD anti-X."
+      ],
+      "inacceptables": [
+        "Méconnaître une EP devant une dyspnée isolée (la douleur thoracique est inconstante).",
+        "Doser les D-dimères lorsque la probabilité clinique d'EP est forte.",
+        "Omettre la thrombolyse devant une EP à haut risque sans contre-indication."
+      ]
+    },
+    {
+      "item": "230",
+      "label": "230 Douleur thoracique",
+      "indispensables": [
+        "Devant une douleur thoracique aiguë, toujours éliminer en premier une détresse vitale.",
+        "Puis éliminer les urgences cardiaques (PIED : péricardite, infarctus, embolie pulmonaire, dissection aortique)."
+      ],
+      "inacceptables": [
+        "Faire un dosage de la troponine avant de réaliser un ECG."
+      ]
+    },
+    {
+      "item": "232",
+      "label": "232 FA",
+      "indispensables": [
+        "Ne pas oublier l'ECG.",
+        "Penser aux maladies valvulaires dans l'enquête étiologique.",
+        "Évaluation du risque thromboembolique primordiale.",
+        "Ne pas utiliser le score CHA2DS2-VA en cas de FA avec prothèse valvulaire mécanique ou RM modéré à sévère en raison d'un risque d'emblée maximal, ou avant cardioversion en raison d'une anticoagulation obligatoire dans ce contexte.",
+        "Toujours peser le rapport bénéfice/risque de l'anticoagulation chronique et donc évaluer le risque hémorragique.",
+        "Ne pas confondre contrôle de fréquence et contrôle du rythme."
+      ],
+      "inacceptables": [
+        "(Voir cours.)"
+      ]
+    },
+    {
+      "item": "233IA",
+      "label": "233 IA",
+      "indispensables": [
+        "L'insuffisance aortique (IA) est une valvulopathie peu fréquente qui peut rester asymptomatique pendant de nombreuses années.",
+        "Les principales étiologies d'IA dans les pays occidentaux sont :\n  • la dystrophie valvulaire aortique ;\n  • la dilatation de l'aorte, notamment sur maladie annuloectasiante (penser au Marfan), avec risque de dissection ou de rupture de l'aorte ;\n  • la bicuspidie aortique (1 à 2 % de la population), cause fréquente d'IA. Elle expose au risque de sténose aortique à tout âge, à l'IA et à l'El, et peut s'accompagner d'une dilatation aortique ;\n  • l'endocardite infectieuse (El).",
+        "L'IA aiguë est le plus souvent due à une El, plus rarement à une dissection aortique ou à un traumatisme.",
+        "La découverte d'un souffle d'IA requiert un avis cardiologique que le patient soit symptomatique ou asymptomatique.",
+        "La surveillance des patients porteurs d'IA importante doit être régulière, tous les 6 mois à 1 an, par un cardiologue.",
+        "Le syndrome de Marfan nécessite un dépistage familial.",
+        "Il n'existe pas de traitement médicamenteux efficace dans l'IA.",
+        "L'indication opératoire de l'IA sévère est portée sur des critères cliniques et/ou échocardiographiques.",
+        "L'IA aiguë est souvent très symptomatique et conduit à la chirurgie.",
+        "La chirurgie de l'IA consiste en une réparation ou remplacement chirurgical de la valve aortique. Le remplacement percutané (TAVI) est parfois proposé quand les patients sont inopérables ou à très haut risque chirurgical.",
+        "La prophylaxie de l'EI est importante dans l'IA (hygiène buccodentaire, etc.)."
+      ],
+      "inacceptables": [
+        "Ne pas penser à l'endocardite infectieuse devant une IA aiguë fébrile.",
+        "Ne pas penser à la dissection aortique devant une IA aiguë chez un patient ayant présenté une douleur thoracique ou un AVC sans fièvre.",
+        "Ne pas évoquer la maladie de Marfan devant une IA avec maladie annuloectasiante.",
+        "Ne pas référer à un spécialiste un patient porteur d'une IA sévère symptomatique.",
+        "Ne pas référer à un spécialiste un patient porteur d'une IA sévère asymptomatique.",
+        "Traiter une IA symptomatique uniquement par des médicaments de l'insuffisance cardiaque.",
+        "Ne pas indiquer au patient de réaliser une prophylaxie de l'EI.",
+        "Prescrire de façon systématique des antibiotiques avant tout soin dentaire chez un patient porteur d'une IA.",
+        "Lansac",
+        "E,",
+        "Obadia",
+        "JF, Tribouilloy",
+        "C.",
+        "Cardiopathies valvulaires de l'adulte. Paris : Lavoisier",
+        "Médecine Sciences ; 2014.",
+        "Document Group. 2023 ESC guidelines for the management of endocarditis. Eur Heart",
+        "J 2023 ; 44 : 3948-4042. https://academic.oup.com/eurheartj/article/44/39/3948/7243107 for the imaging assessment of prosthetic heart valves : a report from the European Association of Cardiovascular Imaging endorsed by the Chinese Society of Echocardiography, the InterAmerican Society of Echocardiography, and the Brazilian Department of Cardiovascular",
+        "Imaging. Eur Heart J Cardiovasc Imaging 2016; 17 : 589-90. https://academic.oup.com/ ehjcimaging/artide/17/6/589/2240571",
+        "AHA guideline for the management of patients with valvular heart disease : executive summary : a report of the American College of Cardiology/American Heart Association",
+        "Joint Committee on Clinical Practice Guidelines. Circulation 2021 ; 143 : e35-e71. www. ahajournals.org/doi/fu11/10. 1 161/CIR.0000000000000932?rfr_dat=cr_pub++Opubmed&url_ ver =Z39.88-2003&rfr_id =ori %3 Arid %3Acrossref.org",
+        "Document Group; ESC Scientific Document Group. 2021 ESC/EACTS guidelines for the management of valvular heart disease. Eur Heart J 2022 ; 43 : 561-632. https://academic. oup.com/eurheartj/article/43/7/561/6358470"
+      ]
+    },
+    {
+      "item": "233IM",
+      "label": "233 IM",
+      "indispensables": [
+        "**Rang A.** On opère les patients symptomatiques ayant une IM importante (grade III ou IV).",
+        "On peut opérer les patients asymptomatiques ayant une IM importante quand il existe des signes échocardiographiques de mauvaise tolérance ou une fibrillation atriale.",
+        "La chirurgie de réparation valvulaire doit être privilégiée dans les prolapsus.",
+        "Ne pas oublier la coronarographie dans le bilan préopératoire."
+      ],
+      "inacceptables": [
+        "Oublier l'éducation thérapeutique du patient connu pour une IM concernant la prévention de l'endocardite infectieuse et, le cas échéant, une consultation urgente si apparaissent des symptômes à l'effort.",
+        "Ne pas penser à une endocardite infectieuse en cas de fièvre.",
+        "Ne pas référer à un spécialiste un patient porteur d'une IM symptomatique.",
+        "Ne pas référer à un spécialiste un patient d'une IM avec un souffle modifié, ou des symptômes nouveaux.",
+        "Ne pas référer à un spécialiste un patient porteur d’une IM pour son suivi annuel."
+      ]
+    },
+    {
+      "item": "233RA",
+      "label": "233 RA",
+      "indispensables": [
+        "**Rang A.** Ne pas oublier de vérifier les coronaires à partir d'un certain âge dans le bilan préopératoire.",
+        "Penser à évaluer la taille de l'aorte dans la bicuspidie."
+      ],
+      "inacceptables": [
+        "Oublier l'éducation thérapeutique du patient connu pour une sténose aortique concernant la prévention de l'endocardite infectieuse et, le cas échéant, une consultation urgente si apparaissent des symptômes à l'effort.",
+        "Ne pas penser à une endocardite infectieuse en cas de fièvre.",
+        "Ne pas adresser à un spécialiste un patient avec une sténose valvulaire aortique symptomatique.",
+        "Ne pas adresser à un spécialiste un patient qui a une sténose valvulaire avec un souffle modifié, ou de nouveaux symptômes.",
+        "Ne pas adresser à un spécialiste un patient ayant une sténose valvulaire pour son suivi annuel."
+      ]
+    },
+    {
+      "item": "234",
+      "label": "234 Insuffisance cardiaque",
+      "indispensables": [
+        "Devant une IC à FEVG abaissée, il faut toujours penser à éliminer une origine ischémique, par la réalisation d'une coronarographie (ou d'un coroscanner chez le sujet jeune).",
+        "Le traitement médical de l'IC à FEVG abaissée repose sur 5 classes thérapeutiques : diurétiques de l'anse de Henle pour contrôler les signes congestifs, bloqueurs du système rénine - angiotensine (IEC ou sacubitril/ valsartan ou encore ARA2 chez les intolérants aux IEC), bêtabloquants, antialdostérones (spironolactone ou éplérénone), gliflozines (dapagliflozine ou empagliflozine).",
+        "Les gliflozines sont hautement recommandées pour le traitement de l'insuffisance cardiaque à FEVG conservée.",
+        "L'OAP est une urgence cardiovasculaire dont la prise en charge doit être parfaitement connue.",
+        "Connaître les facteurs favorisant une poussée d'IC aiguë.",
+        "Prendre en compte et traiter les comorbidités."
+      ],
+      "inacceptables": [
+        "Méconnaître les médicaments contre-indiqués dans l'IC à FE altérée (vérapamil ou diltiazem, antiarythmiques de classe I comme la flécaïne), et ne pas savoir que les anti-inflammatoires non stéroïdiens doivent être évités.",
+        "Oublier les conseils de régime pauvre en sel."
+      ]
+    },
+    {
+      "item": "235",
+      "label": "235 Péricardite",
+      "indispensables": [
+        "Hospitalisation recommandée en cas de mauvaise tolérance clinique, fièvre > 38 °C, début subaigu, épanchement péricardique abondant ou résistance au traitement anti-inflammatoire au bout d'une semaine.",
+        "Autres facteurs devant aussi faire discuter une hospitalisation : patient immunodéprimé, patient sous anticoagulant, suites d'un traumatisme thoracique, présence d'une myocardite associée (ou augmentation de la troponine).",
+        "La tamponnade est une urgence médicochirurgicale qui nécessite une prise en charge en USIC et un drainage urgent (risque d'arrêt cardiocirculatoire)."
+      ],
+      "inacceptables": [
+        "Ne pas identifier les situations d'urgence et planifier leur prise en charge (tamponnade).",
+        "Recourir au traitement corticoïde en 1re intention."
+      ]
+    },
+    {
+      "item": "236",
+      "label": "236 Conduction",
+      "indispensables": [
+        "Ne pas oublier l'ECG.",
+        "Pour les blocs de branche : ne pas s'attarder sur les blocs incomplets de faible valeur clinique, considérer les blocs complets.",
+        "Association fréquente de la dysfonction sinusale à la FA dans le cadre de la maladie rythmique atriale."
+      ],
+      "inacceptables": [
+        "Oublier de rechercher une cause curable devant un trouble de conduction.",
+        "Ne pas rechercher de cardiopathie sous-jacente devant la découverte d'un BBG.",
+        "Méconnaître la conduite à tenir en urgence devant une bradycardie et les troubles conductifs à risque vital."
+      ]
+    },
+    {
+      "item": "237",
+      "label": "237 Palpitations",
+      "indispensables": [
+        "Notion électroclinique, c'est-à-dire la documentation du tracé ECG au moment des symptômes.",
+        "Existence ou non d'une cardiopathie sous-jacente.",
+        "Signes de gravité."
+      ],
+      "inacceptables": [
+        "S'orienter d'emblée vers des causes psychogènes sans avoir fait un bilan minimal."
+      ]
+    },
+    {
+      "item": "238",
+      "label": "238 Souffle enfant",
+      "indispensables": [
+        "Connaître les particularités de l'auscultation cardiaque de l'enfant.",
+        "Connaître les caractéristiques de l'examen cardiovasculaire de l'enfant.",
+        "Connaître les circonstances de découverte d'une cardiopathie chez l'enfant et les signes cliniques qui orientent vers ce diagnostic : cyanose ou défaillance cardiaque chez le nouveau-né, plus rarement chez le nourrisson, dyspnée, insuffisance cardiaque, difficultés de croissance dans la 2e enfance, malaises. Souvent, c'est la découverte d'un souffle asymptomatique qui motive la consultation.",
+        "Connaître les caractéristiques des souffles innocents, et leurs différents types."
+      ],
+      "inacceptables": [
+        "Méconnaître un souffle cardiaque en période néonatale qui, même si l'enfant est asymptomatique, est toujours potentiellement pathologique.",
+        "Ne pas adresser l'enfant à un cardiopédiatre en cas de cyanose, insuffisance cardiaque, retard staturopondéral non expliqué, HTA, anomalie des pouls fémoraux, frémissement précordial, dédoublement fixe du B2, éclat de B2, clic protosystolique ou galop."
+      ]
+    },
+    {
+      "item": "330",
+      "label": "330 Antithrombotiques",
+      "indispensables": [
+        "Ne pas oublier l'éducation du patient sous AVK et sous AOD.",
+        "Pas d'AOD dans les prothèses valvulaires mécaniques ou dans le RM.",
+        "Savoir faire un relais héparine-AVK."
+      ],
+      "inacceptables": [
+        "Prescrire une HBPM ou un AOD en cas d'insuffisance rénale sévère.",
+        "Prescrire un AOD dans les prothèses valvulaires mécaniques ou dans le rétrécissement mitral."
+      ]
+    },
+    {
+      "item": "331",
+      "label": "331 Arrêt cardiaque",
+      "indispensables": [
+        "La cause la plus fréquente des AC est la FV survenant au cours des cardiopathies ischémiques (SCA récent ou séquelles d'infarctus).",
+        "Pronostic et chances de survie sans séquelle faibles au-delà de 5 minutes de no-flow.",
+        "Les DSA permettent de délivrer un CEE en cas d'AC « chocable » (TV ou FV)."
+      ],
+      "inacceptables": [
+        "Ne pas connaître les mesures de survie ACD (libération des voies aériennes, massage cardiaque, défibrillation)."
+      ]
+    },
+    {
+      "item": "339",
+      "label": "339 SCA / angor",
+      "indispensables": [
+        "Devant toute douleur thoracique aiguë, un ECG doit être réalisé en urgence (dans les 10 minutes).",
+        "Le diagnostic d'IDM repose sur une élévation de la troponine au-dessus du 99e percentile avec au moins un critère associé (symptômes, ECG, imagerie ou thrombus en coronarographie).",
+        "Le SCA ST+ impose une reperfusion coronarienne urgente (angioplastie primaire ou fibrinolyse).",
+        "Le SCA NST avec troponine élevée relève d'une stratégie de revascularisation selon le risque (immédiat, précoce ou différé)."
+      ],
+      "inacceptables": [
+        "Retarder l'ECG ou la prise en charge d'un SCA ST+.",
+        "Ne pas interpréter le dosage de troponine dans son contexte clinique et temporel (courbe, heure de début des symptômes).",
+        "Omettre la double antiagrégation plaquettaire et l'anticoagulation dans le SCA."
+      ]
+    },
+    {
+      "item": "342",
+      "label": "342 Malaises / syncope",
+      "indispensables": [
+        "Connaître les principaux éléments permettant de faire le diagnostic différentiel des PDCB.",
+        "Savoir conduire un interrogatoire pour recueillir les éléments permettant d'orienter le diagnostic ddifférentiel et également les étiologies des syncopes.",
+        "Bien connaître les critères cliniques et paracliniques qui, devant une syncope, imposent une surveillance et un bilan en hospitalisation.",
+        "Une syncope n'est jamais banale chez un patient porteur d'une cardiopathie : un bilan complet s'impose avant de porter un diagnostic de syncope vasovagale, qui doit être un diagnostic d'élimination."
+      ],
+      "inacceptables": [
+        "(Voir cours.)"
+      ]
+    }
+  ]
+}
