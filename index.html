@@ -245,6 +245,21 @@
     .indisp-block ul { margin: 0; padding-left: 1.15rem; }
     .indisp-block li { margin-bottom: 0.4rem; line-height: 1.45; font-size: 0.94rem; }
     .indisp-block li ul { margin-top: 0.25rem; }
+    .arc-list { display: grid; gap: 0.55rem; }
+    .arc-card {
+      text-align: left; width: 100%; border: 1px solid var(--line); border-radius: 12px;
+      padding: 0.75rem 0.9rem; background: var(--card); cursor: pointer; font: inherit; color: inherit;
+    }
+    .arc-card:hover { border-color: var(--accent); }
+    .arc-stem {
+      white-space: pre-wrap; line-height: 1.45; font-size: 0.95rem;
+      background: #f4f7f5; border-radius: 10px; padding: 0.75rem 0.85rem; margin: 0.75rem 0;
+    }
+    .arc-q {
+      border: 1px solid var(--line); border-radius: 10px; padding: 0.65rem 0.75rem; margin-bottom: 0.55rem;
+    }
+    .arc-q .qlabel { font-size: 0.78rem; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: 0.03em; margin: 0 0 0.25rem; }
+    .arc-corr { white-space: pre-wrap; line-height: 1.45; font-size: 0.92rem; }
     .mnemo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.65rem; }
     .mnemo-card {
       border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 0.85rem;
@@ -377,6 +392,7 @@
       <li><button type="button" id="tab-vignettes">Vignettes</button></li>
       <li><button type="button" id="tab-recap">Récap</button></li>
       <li><button type="button" id="tab-indisp">Indisp.</button></li>
+      <li><button type="button" id="tab-arcs">ARC</button></li>
       <li><button type="button" id="tab-oral">Oral</button></li>
       <li><button type="button" id="tab-tx">Traitements</button></li>
       <li><button type="button" id="tab-fiches">Fiches</button></li>
@@ -404,8 +420,10 @@ let MNEMOS = { items: [] };
 let VIGNETTES = { vignettes: [], note: "" };
 let RECAP = { recaps: [], note: "" };
 let INDISP = { items: [], note: "" };
+let ARCS = { arcs: [], note: "" };
 let recapState = null; // { item } or null = list
 let indispState = null;
+let arcState = null; // { id, revealed }
 let FLASHCARDS = { cards: [], items: [] };
 let fcardState = null; // { deck, i, revealed, known, unknown, itemId }
 let vignetteState = null; // { id: itemId } or null = list
@@ -1032,6 +1050,9 @@ async function boot() {
       INDISP = await (await fetch("notions_indispensables.json")).json();
     } catch { INDISP = { items: [], note: "" }; }
     try {
+      ARCS = await (await fetch("arcs.json")).json();
+    } catch { ARCS = { arcs: [], note: "" }; }
+    try {
       FLASHCARDS = await (await fetch("flashcards_lot1.json")).json();
     } catch { FLASHCARDS = { cards: [], items: [] }; }
   } catch (e) {
@@ -1052,6 +1073,7 @@ async function boot() {
   $("tab-vignettes").onclick = () => { vignetteState = null; view = "vignettes"; render(); };
   $("tab-recap").onclick = () => { recapState = null; view = "recap"; render(); };
   $("tab-indisp").onclick = () => { indispState = null; view = "indisp"; render(); };
+  $("tab-arcs").onclick = () => { arcState = null; view = "arcs"; render(); };
   $("tab-oral").onclick = () => { oralState = null; view = "oral"; render(); };
   $("tab-tx").onclick = () => { view = "traitements"; render(); };
   $("tab-fiches").onclick = () => { view = "fiches"; render(); };
@@ -1062,8 +1084,8 @@ async function boot() {
 }
 
 function render() {
-  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "ecg" || view === "mnemos" || view === "vignettes" || view === "recap" || view === "indisp" || view === "fcards" || view === "notions" || view === "arbres" || view === "ecos" || view === "ecos-play" || view === "oral");
-  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "mnemos", "vignettes", "recap", "indisp", "fiches", "cours", "ecg", "notions", "cours-active", "flash", "fcards", "arbres", "ecos", "ecos-play", "oral"].includes(view));
+  document.querySelector("main").classList.toggle("wide", view === "fiches" || view === "cours" || view === "ecg" || view === "mnemos" || view === "vignettes" || view === "recap" || view === "indisp" || view === "arcs" || view === "fcards" || view === "notions" || view === "arbres" || view === "ecos" || view === "ecos-play" || view === "oral");
+  $("tab-setup").classList.toggle("active", !["suivi", "traitements", "sigles", "mnemos", "vignettes", "recap", "indisp", "arcs", "fiches", "cours", "ecg", "notions", "cours-active", "flash", "fcards", "arbres", "ecos", "ecos-play", "oral"].includes(view));
   $("tab-cours").classList.toggle("active", view === "cours" || view === "cours-active");
   $("tab-ecg").classList.toggle("active", view === "ecg");
   $("tab-notions").classList.toggle("active", view === "notions");
@@ -1072,6 +1094,7 @@ function render() {
   $("tab-vignettes").classList.toggle("active", view === "vignettes");
   $("tab-recap").classList.toggle("active", view === "recap");
   $("tab-indisp").classList.toggle("active", view === "indisp");
+  $("tab-arcs").classList.toggle("active", view === "arcs");
   $("tab-oral").classList.toggle("active", view === "oral");
   $("tab-tx").classList.toggle("active", view === "traitements");
   $("tab-fiches").classList.toggle("active", view === "fiches");
@@ -1094,6 +1117,7 @@ function render() {
   else if (view === "vignettes") renderVignettes();
   else if (view === "recap") renderRecap();
   else if (view === "indisp") renderIndisp();
+  else if (view === "arcs") renderArcs();
   else if (view === "oral") renderOral();
   else if (view === "fiches") renderFiches();
   else if (view === "sigles") renderSigles();
@@ -2223,6 +2247,7 @@ function renderSetup() {
       <button type="button" class="hub-btn" id="btn-vignettes-hub"><strong>Vignettes collège</strong><span>${(VIGNETTES.vignettes || []).length} cas · Q + réponses</span></button>
       <button type="button" class="hub-btn" id="btn-recap-hub"><strong>Récap collège</strong><span>${(RECAP.recaps || []).length} items · Points fin de chapitre</span></button>
       <button type="button" class="hub-btn" id="btn-indisp-hub"><strong>Indisp. / Inacc.</strong><span>${(INDISP.items || []).length} items · fin de chapitre</span></button>
+      <button type="button" class="hub-btn primary" id="btn-arcs-hub"><strong>ARC stage IMM</strong><span>${(ARCS.arcs || []).length} cas · correction + collège</span></button>
       <button type="button" class="hub-btn" id="btn-oral-hub"><strong>Mode oral</strong><span>${ORAL_N} cartes · réponds à voix haute</span></button>
     </div>
     <div class="card">
@@ -2300,6 +2325,7 @@ function renderSetup() {
   $("btn-vignettes-hub").onclick = () => { vignetteState = null; view = "vignettes"; render(); };
   $("btn-recap-hub").onclick = () => { recapState = null; view = "recap"; render(); };
   $("btn-indisp-hub").onclick = () => { indispState = null; view = "indisp"; render(); };
+  $("btn-arcs-hub").onclick = () => { arcState = null; view = "arcs"; render(); };
   $("btn-oral-hub").onclick = () => beginOralSession();
   $("btn-to-fiches").onclick = () => { view = "fiches"; render(); };
   $("btn-to-arbres").onclick = () => { arbreState = null; view = "arbres"; render(); };
@@ -3245,6 +3271,98 @@ function renderIndisp() {
     btn.onclick = () => {
       indispState = { item: btn.getAttribute("data-indisp") };
       renderIndisp();
+    };
+  });
+}
+
+function mdLite(text) {
+  return esc(text || "")
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\n/g, "<br>");
+}
+
+function renderArcs() {
+  const list = ARCS.arcs || [];
+  const qFilter = (window._arcQ || "").trim().toLowerCase();
+  if (arcState && arcState.id) {
+    const a = list.find((x) => x.id === arcState.id);
+    if (!a) { arcState = null; renderArcs(); return; }
+    const revealed = !!arcState.revealed;
+    let qs = "";
+    (a.questions || []).forEach((qa) => {
+      qs += `<div class="arc-q"><div class="qlabel">${esc(qa.label)}</div><div>${esc(qa.q)}</div></div>`;
+    });
+    let corr = "";
+    if (revealed) {
+      corr = `<div class="ok-box arc-corr" style="margin:0.75rem 0"><strong>Correction</strong><br>${mdLite(a.correction)}</div>`;
+      if ((a.points || []).length) {
+        corr += `<div class="card"><h3 style="margin:0 0 0.45rem">Points collège / R2C</h3><ul style="margin:0">`;
+        a.points.forEach((p) => { corr += `<li style="margin-bottom:0.3rem">${mdLite(p)}</li>`; });
+        corr += `</ul></div>`;
+      }
+      if ((a.indispensables || []).length) {
+        corr += `<div class="ok-box" style="margin-bottom:0.55rem"><strong>Indispensables</strong><ul style="margin:0.35rem 0 0">`;
+        a.indispensables.forEach((p) => { corr += `<li>${mdLite(p)}</li>`; });
+        corr += `</ul></div>`;
+      }
+      if ((a.inacceptables || []).length) {
+        corr += `<div class="bad-box" style="margin-bottom:0.55rem"><strong>Inacceptables</strong><ul style="margin:0.35rem 0 0">`;
+        a.inacceptables.forEach((p) => { corr += `<li>${mdLite(p)}</li>`; });
+        corr += `</ul></div>`;
+      }
+      if (a.message) corr += `<div class="card" style="border-left:4px solid var(--accent)"><strong>Message clé</strong><p style="margin:0.35rem 0 0">${mdLite(a.message)}</p></div>`;
+    }
+    viewEl.innerHTML = `<h1>ARC ${String(a.n).padStart(2, "0")} — ${esc(a.title)}</h1>
+      <p class="sub">${esc(a.theme)} · ${esc(a.niveau)} · ${esc(a.items || "")}</p>
+      <div class="actions" style="margin-bottom:0.75rem">
+        <button type="button" class="secondary" id="arc-back">← Tous les ARC</button>
+        ${revealed
+          ? `<button type="button" class="secondary" id="arc-hide">Masquer la correction</button>`
+          : `<button type="button" id="arc-reveal">Révéler la correction</button>`}
+      </div>
+      <div class="arc-stem">${esc(a.vignette)}</div>
+      <h2 style="font-size:1rem;margin:1rem 0 0.5rem">Questions (trame IMM)</h2>
+      ${qs}
+      ${corr}
+      <p class="hint">${esc(ARCS.note || "")}</p>`;
+    $("arc-back").onclick = () => { arcState = null; renderArcs(); };
+    const rev = $("arc-reveal");
+    if (rev) rev.onclick = () => { arcState.revealed = true; renderArcs(); };
+    const hide = $("arc-hide");
+    if (hide) hide.onclick = () => { arcState.revealed = false; renderArcs(); };
+    return;
+  }
+  const shown = list.filter((a) => {
+    if (!qFilter) return true;
+    const blob = [a.title, a.theme, a.niveau, a.items, a.vignette, a.message].join(" ").toLowerCase();
+    return blob.includes(qFilter);
+  });
+  let html = `<h1>ARC — Stage IMM</h1>
+    <p class="sub">${list.length} cas · réponds à voix haute (I→VI) · révèle ensuite correction + collège</p>
+    <div class="card">
+      <input class="search" id="arc-q" type="search" placeholder="SCA, FA, EP, endocardite, OAP…" value="${esc(window._arcQ || "")}" />
+      <p class="hint">${shown.length} ARC. ${esc(ARCS.note || "")}</p>
+    </div>
+    <div class="arc-list">`;
+  shown.forEach((a) => {
+    html += `<button type="button" class="arc-card" data-arc="${esc(a.id)}">
+      <strong>ARC ${String(a.n).padStart(2, "0")} — ${esc(a.title)}</strong>
+      <span class="meta" style="display:block;margin:0.25rem 0">${esc(a.theme)} · ${esc(a.niveau)}</span>
+      <span style="font-size:0.88rem;opacity:0.88">${esc((a.vignette || "").slice(0, 130))}…</span>
+    </button>`;
+  });
+  html += `</div>`;
+  if (!shown.length) html += `<p class="hint">Aucun ARC.</p>`;
+  viewEl.innerHTML = html;
+  const inp = $("arc-q");
+  if (inp) {
+    inp.focus();
+    inp.oninput = () => { window._arcQ = inp.value; renderArcs(); };
+  }
+  viewEl.querySelectorAll("[data-arc]").forEach((btn) => {
+    btn.onclick = () => {
+      arcState = { id: btn.getAttribute("data-arc"), revealed: false };
+      renderArcs();
     };
   });
 }

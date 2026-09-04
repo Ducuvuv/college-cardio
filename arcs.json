@@ -1,0 +1,793 @@
+{
+  "note": "22 ARC stage IMM — corrections + points collège R2C. Entraîne-toi avant de révéler.",
+  "arcs": [
+    {
+      "id": "arc-01",
+      "n": 1,
+      "title": "Douleur thoracique — triage PIED",
+      "theme": "Douleur thoracique",
+      "niveau": "Essentiel stage / oral",
+      "items": "item 230, item 339, item 226, item 235",
+      "file": "01-douleur-thoracique-pied.md",
+      "vignette": "Homme de 58 ans, tabagique 30 PA, HTA, diabète. Aux urgences à 2 h du matin pour oppression rétrosternale depuis 45 minutes, irradiant au bras gauche, sueurs, nausées. PA 145/88, FC 92/min, SpO2 97 % AA, apyrétique. Auscultation cardio-pulmonaire sans particularité. Pas d’œdème. Jambe gauche normale.",
+      "questions": [
+        {
+          "label": "I — Interrogatoire",
+          "q": "Quels éléments caractériser (LITHIASE) ? Quels FDR / traitements / allergies à chercher ?"
+        },
+        {
+          "label": "II — Examen",
+          "q": "Quels signes de gravité et différentiels cliniques rechercher ?"
+        },
+        {
+          "label": "III — Hypothèses",
+          "q": "Hiérarchise les hypothèses (PIED + autres)."
+        },
+        {
+          "label": "IV — Examens",
+          "q": "Quels examens en 1re intention, dans quel ordre ?"
+        },
+        {
+          "label": "V — Diagnostic",
+          "q": "Que décide-t-on avant même le résultat de la troponine ?"
+        },
+        {
+          "label": "VI — CAT",
+          "q": "Conduite immédiate ?"
+        }
+      ],
+      "correction": "**I.** Localisation rétrosternale, intensité EVA, type oppressif, horaire (début brutal / durée > 20 min), irradiation, facteurs aggravants/améliorants (effort, TNT, respiration, antéflexion), signes associés (sueurs, nausées, dyspnée, syncope). FDR : tabac, HTA, diabète, dyslipidémie, ATCD familiaux. Allergie iode. Traitements (aspirine, BB…).\n\n**II.** Gravité : détresse, choc, SpO2 basse, asymétrie tensionnelle, souffle d’IA nouveau, signes d’IVD (TJ, RHJ), frottement, jambe rouge. Pouls périphériques.\n\n**III. PIED** : Péricardite, Infarctus/SCA, Embolie pulmonaire, Dissection. Puis pneumothorax, pleurésie, digestif, anxiété (dernier).\n\n**IV.** **ECG avant troponine**, idéalement < 10 min, **18 dérivations** si douleur. Puis troponine us (répétée), bio, ± radio thorax si pas STEMI évident. ETT / angioscanner / coro selon orientation.\n\n**V.** Si ST+ systématisé + miroir → **STEMI** : reperfusion urgente **sans attendre** la troponine.\n\n**VI.** Scope, O2 si besoin, voie veineuse, aspirine (sauf CI), appeler le 15 / filière SCA, antalgie. Ne pas rassurer « c’est gastrique » sans ECG.",
+      "points": [
+        "Urgences CV = **PIED** (item 230).",
+        "**ECG avant troponine** ; 18D si douleur thoracique.",
+        "ST+ persistant > 20 min de douleur → reperfusion urgente.",
+        "Dissection : douleur déchirante postérieure, asymétrie TA, souffle d’IA.",
+        "Péricardite : antéflexion, frottement, ST diffus concave sans miroir, sous-PQ."
+      ],
+      "indispensables": [
+        "Ne pas appeler le 15 / retarder l’ECG devant une douleur thoracique suspecte."
+      ],
+      "inacceptables": [
+        "Attendre la troponine pour traiter un ST+.",
+        "Éliminer un SCA sur un ECG unique normal."
+      ],
+      "message": "Devant douleur thoracique : **ECG immédiat**, penser **PIED**, ne jamais attendre la tropo pour un STEMI."
+    },
+    {
+      "id": "arc-02",
+      "n": 2,
+      "title": "SCA ST+ — reperfusion",
+      "theme": "SCA",
+      "niveau": "Essentiel USIC",
+      "items": "item 339, item 230, item 330",
+      "file": "02-sca-stemi.md",
+      "vignette": "Femme de 64 ans, HTA, dyslipidémie. Douleur rétrosternale depuis 90 minutes. ECG : sus-ST 3 mm en V2–V4 avec miroir en DII–DIII–aVF. PA 130/80, FC 88, SpO2 96 %. Pas de souffle. Troponine non encore revenue.",
+      "questions": [
+        {
+          "label": "I–II",
+          "q": "Résume motif + éléments cliniques clés."
+        },
+        {
+          "label": "III",
+          "q": "Diagnostic ECG ? Territoire ?"
+        },
+        {
+          "label": "IV",
+          "q": "Examens / infos indispensables avant coro ?"
+        },
+        {
+          "label": "V–VI",
+          "q": "CAT préhospitalière / urgences et délais de reperfusion ? Traitement antithrombotique de base ?"
+        }
+      ],
+      "correction": "**Diagnostic :** STEMI **antérieur** (V2–V4) — urgence de reperfusion.\n\n**CAT :** filière SCA, aspirine + inhibiteur P2Y12 (ticagrelor/prasugrel selon contexte, sinon clopidogrel), anticoagulation parentérale selon protocole, antalgie, scope. **PCI primaire** = stratégie préférentielle ; délais collège : idéalement **PCI < 90 min** (selon filière ; connaître aussi fenêtre fibrinolyse si PCI impossible dans les délais).\n\n**Ne pas attendre** la troponine. Chercher complications précoces (FV, BAV, choc, rupture).\n\n**BASIC** en prévention secondaire après SCA : BB si indiqué, Antiagrégant, Statine, IEC/ARA2, Contrôle FDR.",
+      "points": [
+        "STEMI = ST+ systématisé + miroir ; reperfusion **urgente**.",
+        "Délais PCI / fibrinolyse : item 339 — à coller.",
+        "DAPT post-stent : connaître durées selon risque ischémique/hémorragique.",
+        "LDL cible prévention secondaire / très haut risque : **< 0,55 g/L**."
+      ],
+      "indispensables": [
+        "Reconnaître un STEMI et déclencher la reperfusion."
+      ],
+      "inacceptables": [
+        "Attendre la tropo.",
+        "Confondre péricardite (ST diffus sans miroir) et STEMI."
+      ],
+      "message": "STEMI = **montre** : filière + antiagrégants + PCI, tropo secondaire."
+    },
+    {
+      "id": "arc-03",
+      "n": 3,
+      "title": "SCA ST− / NSTEMI — stratification",
+      "theme": "SCA",
+      "niveau": "Essentiel",
+      "items": "item 339, item 330",
+      "file": "03-sca-nstemi.md",
+      "vignette": "Homme de 72 ans, diabétique, AOMI. Douleur thoracique d’effort depuis 48 h, épisode au repos de 30 min hier soir. ECG : sous-ST 1,5 mm V4–V6, ondes T négatives. Troponine us élevée ×2. PA 110/70, FC 78, pas de signe de choc. Créatinine 110 µmol/L.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "STEMI ou NSTEMI ? Pourquoi ?"
+        },
+        {
+          "label": "IV",
+          "q": "Quels critères de haut risque poussent à une coro précoce ?"
+        },
+        {
+          "label": "VI",
+          "q": "Traitement initial ? Objectifs secondaires ?"
+        }
+      ],
+      "correction": "**NSTEMI** : ischémie ECG sans ST+ persistant + tropo élevée.\n\nStratifier le risque (instabilité, douleur récurrente, sous-ST profond, tropo, diabète, IR, GRACE…). Coro selon urgence (immédiate si instable, précoce sinon).\n\nTraitement : AAP double (aspirine + P2Y12), anticoagulant, BB si besoin, statine forte dose, IEC. Surveillance USIC si haut risque.\n\nPiège : angor instable = même famille SCA ST− avec tropo négative — ne pas banaliser.",
+      "points": [
+        "SCA ST− = NSTEMI ou angor instable selon tropo.",
+        "Instabilité hémodynamique / électrique / douleur réfractaire → coro **urgente**.",
+        "DAPT + anticoagulation selon protocole SCA."
+      ],
+      "indispensables": [
+        "Stratifier le risque avant de « surveiller tranquillement »."
+      ],
+      "inacceptables": [
+        "Rassurer parce que « pas de ST+ »."
+      ],
+      "message": "Pas de ST+ ≠ bénin : **tropo + risque** décident la vitesse de la coro."
+    },
+    {
+      "id": "arc-04",
+      "n": 4,
+      "title": "IDM inférieur + extension VD",
+      "theme": "SCA",
+      "niveau": "Piège USIC",
+      "items": "item 339, item 231",
+      "file": "04-sca-vd-choc.md",
+      "vignette": "Homme de 60 ans. Douleur + ST+ en DII–DIII–aVF. PA 85/55, FC 50, poumons clairs, jugulaires turgescentes. V3R–V4R : ST+. Internat propose des dérivés nitrés IV pour « OAP ».",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Que suspectes-tu ? Triade ?"
+        },
+        {
+          "label": "IV",
+          "q": "Quelles dérivations manquent souvent ?"
+        },
+        {
+          "label": "VI",
+          "q": "Que faire / ne pas faire ?"
+        }
+      ],
+      "correction": "**IDM inférieur + extension VD.** Triade : hypotension + poumons clairs + TJ.\n\nEnregistrer **V3R–V4R**. Remplissage prudent, reperfusion, éviter vasodilatateurs/nitrés et diurétiques en 1re intention (aggravent la précharge VD).\n\nBAV nodal fréquent dans IDM inférieur → atropine si besoin.",
+      "points": [
+        "IDM inférieur → toujours penser VD (V3R–V4R).",
+        "Triade IDM VD : hypoTA + poumons clairs + TJ.",
+        "Nitrés **contre-indiqués** si IDM VD."
+      ],
+      "indispensables": [
+        "Suspecter l’extension VD devant un IDM inférieur hypotendu."
+      ],
+      "inacceptables": [
+        "Nitrés / diurétiques en 1re intention sur IDM VD."
+      ],
+      "message": "IDM inférieur hypotendu poumons clairs = **VD** jusqu’à preuve du contraire."
+    },
+    {
+      "id": "arc-05",
+      "n": 5,
+      "title": "Embolie pulmonaire — algo",
+      "theme": "EP",
+      "niveau": "Essentiel",
+      "items": "item 226, item 203, item 230",
+      "file": "05-ep-intermediaire.md",
+      "vignette": "Femme de 45 ans, pilule, voyage avion 12 h il y a 3 jours. Dyspnée brutale, douleur pleurale droite, SpO2 93 %, PA 125/75, FC 110. Mollet gauche chaud, douloureux. Radio thorax presque normale. D-dimères demandés « pour gagner du temps ».",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Probabilité clinique ? Score ?"
+        },
+        {
+          "label": "IV",
+          "q": "D-dimères utiles ici ? Quel examen de confirmation ?"
+        },
+        {
+          "label": "VI",
+          "q": "CAT selon stratification ?"
+        }
+      ],
+      "correction": "Probabilité **intermédiaire/forte** (pilule, voyage, tachycardie, dyspnée, TVP clinique) → **D-dimères inutiles** si forte ; si intermédiaire selon algo local, mais ne pas retarder. Confirmation : **angioscanner** (ou scintigraphie si CI). EDVMI utile.\n\nStratification : choc/hypotension = haut risque → USIC ± fibrinolyse. Sinon sPESI + signes VD (ETT, bio) pour intermédiaire haut/faible.\n\nTraitement : AOD ou HBPM→AVK selon contexte ; HBPM prolongée si cancer.",
+      "points": [
+        "Triade Virchow ; TVP → EP fréquente.",
+        "D-dimères **seulement** si proba faible/intermédiaire.",
+        "Haut risque = choc/hypotension.",
+        "Durée anticoagulation : 3 mois si facteur majeur transitoire, plus long si non provoquée."
+      ],
+      "indispensables": [
+        "Évoquer EP devant dyspnée + radio normale + contexte."
+      ],
+      "inacceptables": [
+        "D-dimères si proba forte.",
+        "Retarder l’angio devant une forte suspicion."
+      ],
+      "message": "EP : **proba clinique d’abord**, D-dimères ensuite seulement si utiles."
+    },
+    {
+      "id": "arc-06",
+      "n": 6,
+      "title": "EP à haut risque — choc",
+      "theme": "EP",
+      "niveau": "Urgence",
+      "items": "item 226, item 331",
+      "file": "06-ep-haut-risque.md",
+      "vignette": "Homme de 70 ans, cancer colorectal. Dyspnée brutale, PA 75/40, marbrures, SpO2 88 %, TJ. ECG : tachycardie sinusale, S1Q3. ETT au lit : VD dilaté, septum paradoxe.",
+      "questions": [
+        {
+          "label": "V",
+          "q": "Stratification ?"
+        },
+        {
+          "label": "VI",
+          "q": "Lieu + traitement ? Rôle de la fibrinolyse ?"
+        }
+      ],
+      "correction": "**EP haut risque** (choc/hypotension + signes VD). USIC/réa, anticoagulation IV (HNF souvent), **fibrinolyse** si pas de CI majeure, discussion embolectomie/assistance si échec.\n\nNe pas perdre de temps en examens non nécessaires si le tableau est clair.",
+      "points": [
+        "Haut risque EP = instabilité hémodynamique.",
+        "Fibrinolyse = option de sauvetage.",
+        "Cancer : HBPM souvent préférées au long cours."
+      ],
+      "indispensables": [
+        "Reconnaître le choc obstructif sur EP."
+      ],
+      "inacceptables": [
+        "Laisser en salle normale « en attendant l’angio » sans support."
+      ],
+      "message": "EP + choc = **réa + anticoag + fibrinolyse** (sauf CI)."
+    },
+    {
+      "id": "arc-07",
+      "n": 7,
+      "title": "FA — CHA₂DS₂-VA et ACO",
+      "theme": "FA",
+      "niveau": "Essentiel R2C",
+      "items": "item 232, item 330",
+      "file": "07-fa-anticoagulation.md",
+      "vignette": "Homme de 78 ans, HTA, diabète, AVC ischémique il y a 2 ans. FA permanente découverte, FC 78, asymptomatique. ETT : FEVG 55 %, OG dilatée. Créatinine normale. HAS-BLED 2.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Calculate CHA₂DS₂-VA (CNEC 3e éd.)."
+        },
+        {
+          "label": "VI",
+          "q": "Indication d’ACO ? AVK ou AOD ? Objectif FC ?"
+        }
+      ],
+      "correction": "Score (sans sexe) : C1 AVC=2, H=1, A âge≥75=2, D=1, V=0, A âge 65–74=0 → **CHA₂DS₂-VA ≥ 2** → **ACO indiqué**.\n\nPréférer **AOD** sauf valve mécanique / RM modéré-sévère. Contrôle FC (BB, digoxine, inhib. calcique non dihydro selon FEVG). Traiter FDR.\n\nPiège : ancienne CHA₂DS₂-VASc avec point femme — **CNEC = CHA₂DS₂-VA**.",
+      "points": [
+        "CHA₂DS₂-VA : 0 = pas d’ACO, 1 = discussion, ≥2 = ACO.",
+        "AOD CI si prothèse mécanique ou sténose mitrale significative.",
+        "Contrôle FC vs rythme selon symptômes / cœur structurel."
+      ],
+      "indispensables": [
+        "Savoir calculer et indiquer l’ACO."
+      ],
+      "inacceptables": [
+        "Oublier l’ACO après AVC sur FA.",
+        "AOD sur valve mécanique."
+      ],
+      "message": "FA = rythme **et** risque embolique : **CHA₂DS₂-VA → ACO**."
+    },
+    {
+      "id": "arc-08",
+      "n": 8,
+      "title": "FA rapide mal tolérée",
+      "theme": "FA",
+      "niveau": "USIC",
+      "items": "item 232, item 231",
+      "file": "08-fa-instable.md",
+      "vignette": "Femme de 82 ans. Palpitations + dyspnée. PA 80/50, FC 165 irrégulière, crépitants, SpO2 90 %. ECG : FA à QRS fins. Début inconnu.",
+      "questions": [
+        {
+          "label": "V",
+          "q": "Contrôle FC ou cardioversion ?"
+        },
+        {
+          "label": "VI",
+          "q": "Anticoagulation autour de la CV ?"
+        }
+      ],
+      "correction": "**Instabilité** (choc, OAP, ischémie) → **cardioversion électrique** en urgence, ne pas « attendre le ralentissement ».\n\nSi FA > 48 h ou durée inconnue : anticoaguer ; ETO pour exclure thrombus si CV programmée sans 3 semaines d’ACO. En urgence vitale : CV quand même + ACO.\n\nContrôle FC si stable (BB IV, digoxine si IC…).",
+      "points": [
+        "FA mal tolérée → CVE urgente.",
+        "Règle 48 h / ETO / 3 semaines d’ACO.",
+        "QRS fins irréguliers = FA jusqu’à preuve du contraire."
+      ],
+      "indispensables": [
+        "Reconnaître l’indication de CVE."
+      ],
+      "inacceptables": [
+        "Persister à ralentir une FA en choc."
+      ],
+      "message": "FA + instabilité = **choc électrique**, discussion anticoag en parallèle."
+    },
+    {
+      "id": "arc-09",
+      "n": 9,
+      "title": "Endocardite — fièvre + souffle",
+      "theme": "Endocardite",
+      "niveau": "Essentiel",
+      "items": "item 152, item 233IM",
+      "file": "09-endocardite-suspicion.md",
+      "vignette": "Homme de 55 ans, porteurs de bioprothèse aortique. Fièvre 38,8 °C depuis 8 jours, frissons. Nouveau souffle d’IA. Purpura jambier. CRP élevée. Internat veut « commencer amox pour pneumopathie » avant les hémocultures.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Pourquoi EI jusqu’à preuve du contraire ?"
+        },
+        {
+          "label": "IV",
+          "q": "Quels examens avant ATB ?"
+        },
+        {
+          "label": "VI",
+          "q": "Principes thérapeutiques ?"
+        }
+      ],
+      "correction": "**Fièvre + prothèse / souffle / emboles cutanés** = EI. Hémocultures **avant** ATB (sauf choc septique ultra-sévère avec prélèvements immédiats). ETT puis **ETO**. Critères de Duke. Chercher porte d’entrée.\n\nATB IV prolongée (4–6 sem), bactéricide, adaptée. Discuter chirurgie si IC, infection non contrôlée, risque embolique élevé. Heart Team.",
+      "points": [
+        "Haut risque EI : prothèses (TAVI inclus), ATCD EI, cyanogène, matériel réparé récent/shunt.",
+        "Hémocultures + écho = piliers.",
+        "Staph = germe le plus fréquent.",
+        "Indications chir : hémodynamiques, infectieuses, emboliques."
+      ],
+      "indispensables": [
+        "Évoquer EI si fièvre + souffle / cardiopathie à risque / embol."
+      ],
+      "inacceptables": [
+        "ATB avant hémocultures (hors extrême urgence).",
+        "Ignorer fièvre chez porteur de prothèse."
+      ],
+      "message": "Fièvre + valve = **hémocultures puis ETT/ETO**, ATB après."
+    },
+    {
+      "id": "arc-10",
+      "n": 10,
+      "title": "Endocardite — complications",
+      "theme": "Endocardite",
+      "niveau": "Hospitalier",
+      "items": "item 152, item 236",
+      "file": "10-endocardite-complications.md",
+      "vignette": "Patiente de 68 ans, EI mitrale à streptocoque en ATB depuis J5. Apparition d’un BAV 2 Mobitz 2, OAP, végétation 12 mm avec nouvelle IM sévère.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Quelles complications ?"
+        },
+        {
+          "label": "VI",
+          "q": "Que discuter en Heart Team ?"
+        }
+      ],
+      "correction": "Complications : **abcès septal** (BAV), **IC** sur IM aiguë, végétation emboligène. Indication chirurgicale probable (hémodynamique + infectieuse + embolique). Imagerie (ETO, scanner/TEP selon besoin). Ne pas attendre l’échec complet de l’ATB si instable.",
+      "points": [
+        "BAV nouveau sous EI → abcès jusqu’à preuve du contraire.",
+        "Embolies, IC, infection persistante = flags chirurgicaux."
+      ],
+      "indispensables": [
+        "Reconnaître les indications opératoires en phase active."
+      ],
+      "inacceptables": [
+        "Retarder la discussion chirurgicale devant IC / BAV / gros végétations."
+      ],
+      "message": "EI qui se complique = **chirurgie + ATB**, pas ATB seule."
+    },
+    {
+      "id": "arc-11",
+      "n": 11,
+      "title": "Rétrécissement aortique serré",
+      "theme": "Valvulopathies",
+      "niveau": "Consult + hospit",
+      "items": "item 233RA, item 238",
+      "file": "11-ra-serre.md",
+      "vignette": "Homme de 79 ans. Dyspnée d’effort, lipothymies à la marche, angor. Souffle systolique rude 4/6 au foyer aortique irradiant aux carotides, B2 diminué. ETT : Vmax Ao 4,5 m/s, surface 0,7 cm², FEVG 55 %.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Sévérité ? Symptômes clés ?"
+        },
+        {
+          "label": "VI",
+          "q": "Surveillance ou intervention ? TAVI vs chirurgie ?"
+        }
+      ],
+      "correction": "**RA serré symptomatique** (dyspnée, syncope/lipothymie, angor) → indication de remplacement (chirurgie ou **TAVI** selon âge/risque/anatomie, Heart Team).\n\nÉviter vasodilatateurs/hypotenseurs brutaux. Éducation : syncope d’effort = urgence. Bilan pré-TAVI : scanner, coronaires.",
+      "points": [
+        "Triade RA : dyspnée, angor, syncope.",
+        "Serré : critères écho (Vmax, gradient, surface) — plusieurs paramètres.",
+        "Symptomatique serré → intervention.",
+        "TAVI si âge élevé / haut risque / anatomie favorable."
+      ],
+      "indispensables": [
+        "Ne pas laisser un RA serré symptomatique en « surveillance seule »."
+      ],
+      "inacceptables": [
+        "Effort maximal / stress test dangereux sans avis si syncope d’effort."
+      ],
+      "message": "RA serré + symptômes = **valve** (chir ou TAVI), pas d’attente."
+    },
+    {
+      "id": "arc-12",
+      "n": 12,
+      "title": "Insuffisance mitrale — quand opérer",
+      "theme": "Valvulopathies",
+      "niveau": "Essentiel",
+      "items": "item 233IM, item 234",
+      "file": "12-im-indication.md",
+      "vignette": "Femme de 62 ans, prolapsus mitral. Dyspnée NYHA II–III. Souffle holosystolique apexo-axillaire. ETT : IM grade III–IV primaire, FEVG 55 %, DTS-VG 42 mm, PAPS 55 mmHg. Pas de FA.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Primaire ou secondaire ?"
+        },
+        {
+          "label": "VI",
+          "q": "Indication opératoire ? Plastie vs remplacement ?"
+        }
+      ],
+      "correction": "**IM primaire** significative symptomatique → chirurgie, **plastie** préférée si prolapsus. Même asymptomatique : opérer si FEVG ≤ 60 %, DTS ≥ 40 mm, HTP, FA…\n\nIM secondaire : traiter d’abord l’IC ; clip percutané sélectionné.\n\nCoronarographie préop si FDR/âge.",
+      "points": [
+        "Opérer IM importante symptomatique (III–IV).",
+        "Asymptomatique : seuils FEVG/DTS/PAPS/FA.",
+        "Plastie > remplacement si possible."
+      ],
+      "indispensables": [
+        "Savoir les indications chirurgicales IM primaire."
+      ],
+      "inacceptables": [
+        "Oublier l’éducation EI / fièvre chez patient avec IM.",
+        "Ne pas référer un IM symptomatique."
+      ],
+      "message": "IM primaire sévère + symptômes (ou retentissement écho) = **chirurgie, plastie d’abord**."
+    },
+    {
+      "id": "arc-13",
+      "n": 13,
+      "title": "OAP — IC aiguë",
+      "theme": "IC",
+      "niveau": "USIC",
+      "items": "item 234, item 203",
+      "file": "13-oap-ic-aigue.md",
+      "vignette": "Homme de 75 ans, HFrEF connue. Dyspnée brutale, orthopnée, TA 180/100, FC 110, SpO2 88 %, crépitants bilatéraux, œdèmes. ECG : sinusal. Tropo peu élevée. K+ 3,3 ; créat 130.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Congestion et/ou bas débit ?"
+        },
+        {
+          "label": "IV",
+          "q": "Examens ? Facteurs déclenchants ?"
+        },
+        {
+          "label": "VI",
+          "q": "CAT urgente ?"
+        }
+      ],
+      "correction": "**OAP hypertensif congestif** (pas de choc). O2 / VNI si besoin, **diurétique de l’anse IV**, dérivés nitrés si PA élevée et pas de CI, position demi-assise. Chercher trigger (infection, FA, ischémie, observance, HTA). BNP/ETT. Surveiller diurèse, poids, K+, créat.\n\nÉviter AINS. Pas de vérapamil/diltiazem / flécaïne si HFrEF.",
+      "points": [
+        "IC aiguë = congestion ± bas débit + trigger.",
+        "OAP = urgence : O2/VNI, diurétique, nitrés si HTA.",
+        "CHAMPIT pour triggers (selon mnémo collège/USIC)."
+      ],
+      "indispensables": [
+        "Savoir la CAT OAP.",
+        "Chercher un facteur déclenchant."
+      ],
+      "inacceptables": [
+        "AINS ; inhib. calcique brady / antiarythmiques I dans HFrEF."
+      ],
+      "message": "OAP : **position + O2/VNI + diurétique ± nitrés**, puis trouver le trigger."
+    },
+    {
+      "id": "arc-14",
+      "n": 14,
+      "title": "HFrEF — traitement de fond",
+      "theme": "IC",
+      "niveau": "Sortie / R2C",
+      "items": "item 234",
+      "file": "14-hfref-4-piliers.md",
+      "vignette": "Femme de 68 ans. HFrEF post-IDM, FEVG 32 %, NYHA II, euvolemic sous furosémide 40 mg. Sortie d’hospitalisation. Pas d’hyperK, créat OK, PA 118/70.",
+      "questions": [
+        {
+          "label": "VI",
+          "q": "Quelles classes « pronostiques » instaurer ? Rôle du diurétique ?"
+        }
+      ],
+      "correction": "**4 piliers HFrEF** : IEC/ARNI + BB + ARM + **SGLT2i (gliflozine)**. Diurétique d’anse = congestion (symptomatique), **pas** un 5e pilier pronostique.\n\nÉducation : régime pauvre en sel, poids quotidien, vaccins, activité adaptée. DAI/CRT selon indications (FEVG, QRS, BBG…).\n\nGliflozines aussi utiles en HFpEF (recommandées).",
+      "points": [
+        "HFrEF = 4 piliers.",
+        "Diurétique = congestion.",
+        "Sortie = éducation + suivi + réadaptation."
+      ],
+      "indispensables": [
+        "Connaître les 4 (ou 5 avec diurétique congestif) classes HFrEF."
+      ],
+      "inacceptables": [
+        "Oublier le régime sans sel / éducation.",
+        "CI médicamenteuses méconnues."
+      ],
+      "message": "HFrEF stable = **4 piliers** ; diurétique seulement si congestif."
+    },
+    {
+      "id": "arc-15",
+      "n": 15,
+      "title": "Syncope — BAV de haut degré",
+      "theme": "Syncope / conduction",
+      "niveau": "Urgence",
+      "items": "item 342, item 236, item 231",
+      "file": "15-syncope-bav.md",
+      "vignette": "Homme de 78 ans. Syncope sans prodrome, traumatisme facial. ECG : BAV 3, FC 35, QRS larges 140 ms. PA 100/60.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Syncope à risque ?"
+        },
+        {
+          "label": "VI",
+          "q": "CAT ? Indication de stimulation ?"
+        }
+      ],
+      "correction": "Syncope **cardiogénique** à haut risque (pas de prodrome, traumatisme, BAV 3 QRS larges). Scope, isoprénaline/entraînement temporaire si mal toléré, **stimulation définitive** indiquée. Chercher cause (ischémie, médicaments, hyperK, EI si fièvre…).\n\nSyncope d’effort = drapeau rouge (RA, HOCM, TV).",
+      "points": [
+        "BAV haut degré / pauses → pacemaker.",
+        "QRS larges + BAV 3 = échappement bas, plus dangereux.",
+        "Toujours ECG devant syncope."
+      ],
+      "indispensables": [
+        "Reconnaître syncope rythmique et indiquer le PM."
+      ],
+      "inacceptables": [
+        "Rassurer « malaise vagal » devant BAV 3."
+      ],
+      "message": "Syncope + BAV haut degré = **stimulation**, pas observation seule."
+    },
+    {
+      "id": "arc-16",
+      "n": 16,
+      "title": "Péricardite aiguë",
+      "theme": "Douleur thoracique",
+      "niveau": "Consult / urgences",
+      "items": "item 235, item 230",
+      "file": "16-pericardite.md",
+      "vignette": "Homme de 28 ans, sportif. Douleur thoracique positionnelle, améliorée en antéflexion, virose récente. Frottement. ECG : ST diffus concave, sous-PQ, pas de miroir. Tropo normale. ETT : épanchement minime.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Critères diagnostiques ? Différence STEMI ?"
+        },
+        {
+          "label": "VI",
+          "q": "Traitement ? Sport ? Hospitalisation ?"
+        }
+      ],
+      "correction": "Diagnostic si ≥ 2 critères : douleur typique, frottement, ECG typique, épanchement. Différencier STEMI (ST systématisé + miroir). Traitement : **AINS + colchicine**, repos, arrêt sport jusqu’à guérison. Hospitaliser si critères de gravité (fièvre, gros épanchement, myocardite, immunodépression, traumatisme…).",
+      "points": [
+        "ST diffus sans miroir + sous-PQ = péricardite.",
+        "AINS + colchicine ; repos sportif.",
+        "Tropo élevée → myopéricardite, ne pas manquer un SCA."
+      ],
+      "indispensables": [
+        "Connaître critères et traitement de 1re intention."
+      ],
+      "inacceptables": [
+        "Autoriser la compétition trop tôt.",
+        "Prendre une péricardite pour un STEMI (ou l’inverse)."
+      ],
+      "message": "Péricardite : **clinique + ECG**, AINS+colchicine, **sport stoppé**."
+    },
+    {
+      "id": "arc-17",
+      "n": 17,
+      "title": "Tamponnade",
+      "theme": "Urgences",
+      "niveau": "Urgence vitale",
+      "items": "item 235, item 230, item 342",
+      "file": "17-tamponnade.md",
+      "vignette": "Patiente de 54 ans, cancer sein. Dyspnée, PA 75/50, TJ, pouls paradoxal, bruits assourdis. ETT : épanchement 25 mm, compression OD, variations respiratoires mitrales.",
+      "questions": [
+        {
+          "label": "V",
+          "q": "Diagnostic ?"
+        },
+        {
+          "label": "VI",
+          "q": "CAT ?"
+        }
+      ],
+      "correction": "**Tamponnade** : clinique (Beck : hypoTA, TJ, bruits assourdis) + pouls paradoxal + ETT. Urgence : **drainage** (péricardiocentèse / chirurgical selon cause), remplissage prudent, éviter vasodilatation. Cause (néoplasie, post-IDM, EI, dissection…).",
+      "points": [
+        "Tamponnade = clinique + écho, pas seulement le mm d’épanchement.",
+        "Drainage urgent."
+      ],
+      "indispensables": [
+        "Reconnaître et faire drainer."
+      ],
+      "inacceptables": [
+        "Diurétiques / nitrés en 1re intention."
+      ],
+      "message": "Tamponnade = **drainer**, pas « surveiller l’épanchement »."
+    },
+    {
+      "id": "arc-18",
+      "n": 18,
+      "title": "Tachycardie à QRS larges",
+      "theme": "Rythme",
+      "niveau": "USIC",
+      "items": "item 231, item 237, item 331",
+      "file": "18-tv-qrs-larges.md",
+      "vignette": "Homme de 70 ans, IDM ancien. Palpitations, malaise. PA 75/45. ECG : tachycardie régulière 180/min, QRS 160 ms.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "TV ou aberrance ? Attitude ?"
+        },
+        {
+          "label": "VI",
+          "q": "CAT si instable ?"
+        }
+      ],
+      "correction": "**Toute tachycardie régulière à QRS larges = TV jusqu’à preuve du contraire**, surtout si cardiopathie. Instable → **CVE**. Stable → amiodarone / procainamide selon protocole, jamais inhibiteurs calciques / adénosine à l’aveugle si TV probable.\n\nNe pas confondre avec BBG « chronique » asymptomatique.",
+      "points": [
+        "QRS larges réguliers = TV d’abord.",
+        "Instabilité → choc électrique.",
+        "BB vs TV : le bloc de branche ne fait pas de bradycardie."
+      ],
+      "indispensables": [
+        "Traiter comme TV si doute."
+      ],
+      "inacceptables": [
+        "Adénosine / inhib. calcique sur TV."
+      ],
+      "message": "QRS larges + régulier = **TV** ; mal toléré = **choc**."
+    },
+    {
+      "id": "arc-19",
+      "n": 19,
+      "title": "Dissection aortique",
+      "theme": "Douleur thoracique",
+      "niveau": "Piège mortel",
+      "items": "item 230, item 225",
+      "file": "19-dissection-aortique.md",
+      "vignette": "Homme de 55 ans, HTA mal contrôlée. Douleur thoracique en coup de poignard migrant vers le dos. PA 190/100 bras droit, 140/80 bras gauche. Souffle d’IA. ECG peu modifié.",
+      "questions": [
+        {
+          "label": "III",
+          "q": "Orientation ?"
+        },
+        {
+          "label": "IV",
+          "q": "Examen de confirmation ?"
+        },
+        {
+          "label": "VI",
+          "q": "Cible tensionnelle / CAT ?"
+        }
+      ],
+      "correction": "**Dissection aortique** (type A si aorte ascendante → chirurgie urgente). Angioscanner (ou ETO). Contrôle brutal de la PA (PAS < 120) et de la FC (BB d’abord puis vasodilatateurs). Ne pas thrombolyser / anticoaguler comme un SCA. Chercher complications (IA, tamponnade, ischémie d’organe).",
+      "points": [
+        "Douleur migratrice + asymétrie TA + IA = dissection.",
+        "Type A = chirurgie.",
+        "PAS cible < 120 mmHg rapidement."
+      ],
+      "indispensables": [
+        "Évoquer la dissection dans le PIED."
+      ],
+      "inacceptables": [
+        "Fibrinolyse / PCI « SCA » sans y penser."
+      ],
+      "message": "Douleur déchirante + asymétrie TA = **scanner**, pas tropo seule."
+    },
+    {
+      "id": "arc-20",
+      "n": 20,
+      "title": "Préparer une sortie d’IC",
+      "theme": "IC / hospitalier",
+      "niveau": "Stage Cardio 4",
+      "items": "item 234, item 222",
+      "file": "20-sortie-ic.md",
+      "vignette": "M. X, J5 pour décompensation HFrEF. −4 kg, plus de crépitants, œdèmes discrets. Créat stable, K+ 4,6. Traitements : bisoprolol, sacubitril/valsartan, spironolactone, dapagliflozine, furosémide 60 mg. Demande « je peux partir ? ».",
+      "questions": [
+        {
+          "label": "II",
+          "q": "Quels critères cliniques/bio avant sortie ?"
+        },
+        {
+          "label": "VI",
+          "q": "Conseils et suivi ?"
+        }
+      ],
+      "correction": "Sortie si congestion contrôlée, stabilité hémodynamique/rénale, traitements pronostiques en place ou planifiés, éducation faite (poids, symptômes, sel, observance), RDV cardio/MG, ordonnance claire, ± réadaptation. Vérifier pas d’hyperK/IR sous ARM/IEC. Expliquer quand reconsulter.",
+      "points": [
+        "Sortie IC = clinique + bio + éducation + suivi.",
+        "4 piliers en place avant/après sortie."
+      ],
+      "indispensables": [
+        "Éducation thérapeutique à la sortie."
+      ],
+      "inacceptables": [
+        "Sortir encore très congestif « pour faire de la place »."
+      ],
+      "message": "Sortie IC = **sec + traité + éduqué + suivi calé**."
+    },
+    {
+      "id": "arc-21",
+      "n": 21,
+      "title": "Consultation — souffle à explorer",
+      "theme": "Ambulatoire",
+      "niveau": "Ambulatoire",
+      "items": "item 233RA, item 233IM, item 238",
+      "file": "21-consult-souffle.md",
+      "vignette": "Mme Y, 70 ans, adressée pour souffle découvert par le MG. Asymptomatique. Souffle systolique 3/6 foyer aortique. ECG : HVG. Que proposes-tu en consultation structurée (présentation 2–3 min) ?",
+      "questions": [
+        {
+          "label": "I–II",
+          "q": "Interrogatoire et examen ciblés ?"
+        },
+        {
+          "label": "III–IV",
+          "q": "Hypothèses et examens ?"
+        },
+        {
+          "label": "VI",
+          "q": "Message au senior ?"
+        }
+      ],
+      "correction": "Interroger dyspnée, angor, syncope, capacité d’effort, FDR. Caractériser le souffle (temps, foyer, irradiation, B2). Hypothèse principale : **RA** (± IM, CMH). ECG, ETT en 1re intention. Synthèse : « Souffle aortique + HVG → ETT pour sévérité/FEVG ; si RA serré symptomatique → Heart Team. »\n\nPrésentation 2–3 min selon trame ambulatoire.",
+      "points": [
+        "Souffle → caractériser + ETT.",
+        "Lien symptôme ↔ sévérité valve."
+      ],
+      "indispensables": [
+        "Savoir quand une ETT est indiquée devant un souffle."
+      ],
+      "inacceptables": [
+        "Rassurer sans ETT si souffle organique suspect."
+      ],
+      "message": "Souffle de l’adulte = **ETT**, puis sévérité + symptômes."
+    },
+    {
+      "id": "arc-22",
+      "n": 22,
+      "title": "USIC — externe actif devant douleur",
+      "theme": "Savoir-être / USIC",
+      "niveau": "Stage",
+      "items": "item 230, item 339, item 231",
+      "file": "22-usic-externe-actif.md",
+      "vignette": "Tu es en USIC. Ton patient coronarien J1 post-stent sonne : « j’ai mal à la poitrine ». Scope : sinusal 90/min, PA 125/70 sur le moniteur. L’interne est en coro.",
+      "questions": [
+        {
+          "label": "Attitude",
+          "q": "Que fais-tu concrètement (externe actif) ?"
+        },
+        {
+          "label": "Clinique",
+          "q": "Que cherches-tu ?"
+        },
+        {
+          "label": "Examens",
+          "q": "Que demandes-tu avant/pendant l’appel ?"
+        }
+      ],
+      "correction": "**Externe actif :** aller au lit, interrogatoire LITHIASE, examen (gravité, auscultation, congestion), **demander un ECG 12–18D immédiatement**, noter constantes, appeler l’interne en disant : « douleur, ECG demandé/en cours, constantes X, pas de choc ».\n\nNe pas : rester au bureau à transmettre « il a mal ».  \nDifférentiel J1 : ischémie/stent, péricardite post-IDM, anxiété, digesto…\n\nSurveiller complications mécaniques / rythmiques.",
+      "points": [
+        "Externe actif = voir + ECG + alerter avec données.",
+        "Douleur post-SCA = toujours reprendre l’algo PIED/SCA."
+      ],
+      "indispensables": [
+        "Savoir quand alerter en USIC."
+      ],
+      "inacceptables": [
+        "Déléguer sans voir le patient ni ECG."
+      ],
+      "message": "USIC : **au lit → ECG → appel structuré**, jamais transmission passive seule."
+    }
+  ]
+}
